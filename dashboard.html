@@ -1,0 +1,580 @@
+<title>WINTERNSHIP — Off-Cycle Spring 2027</title>
+<style>
+  :root {
+    --ground:        #f6f7f8;
+    --panel:         #ffffff;
+    --panel-2:       #eef1f3;
+    --line:          #d8dee3;
+    --line-soft:     #e7ecef;
+    --ink:           #16212b;
+    --ink-2:         #4a5a68;
+    --ink-3:         #7b8c99;
+    --warm:          #b4441f;
+    --warm-soft:     #f2e0d8;
+    --cold:          #2d6b7d;
+    --cold-soft:     #dceaee;
+    --ok:            #2f6b45;
+    --warn:          #8a6212;
+    --crit:          #a3301f;
+    --shadow:        0 1px 2px rgba(22,33,43,.06), 0 8px 24px -12px rgba(22,33,43,.18);
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground:#10161b; --panel:#171f26; --panel-2:#1e2830; --line:#2b3841; --line-soft:#222d35;
+      --ink:#e4ebf0; --ink-2:#a3b3bf; --ink-3:#6f8391;
+      --warm:#e8794c; --warm-soft:#3a241c; --cold:#6cb6cb; --cold-soft:#1a2d34;
+      --ok:#62b183; --warn:#d1a441; --crit:#e2705c;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#10161b; --panel:#171f26; --panel-2:#1e2830; --line:#2b3841; --line-soft:#222d35;
+    --ink:#e4ebf0; --ink-2:#a3b3bf; --ink-3:#6f8391;
+    --warm:#e8794c; --warm-soft:#3a241c; --cold:#6cb6cb; --cold-soft:#1a2d34;
+    --ok:#62b183; --warn:#d1a441; --crit:#e2705c;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+  }
+  :root[data-theme="light"] {
+    --ground:#f6f7f8; --panel:#ffffff; --panel-2:#eef1f3; --line:#d8dee3; --line-soft:#e7ecef;
+    --ink:#16212b; --ink-2:#4a5a68; --ink-3:#7b8c99;
+    --warm:#b4441f; --warm-soft:#f2e0d8; --cold:#2d6b7d; --cold-soft:#dceaee;
+    --ok:#2f6b45; --warn:#8a6212; --crit:#a3301f;
+    --shadow:0 1px 2px rgba(22,33,43,.06), 0 8px 24px -12px rgba(22,33,43,.18);
+  }
+
+  body { background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 40px 24px 80px; display: flex; flex-direction: column; gap: 32px; }
+
+  header { display: flex; flex-direction: column; gap: 10px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--warm); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .eyebrow .sep { color: var(--ink-3); }
+  h1 { font-family: var(--serif); font-size: clamp(30px, 5vw, 46px); line-height: 1.05; font-weight: 600; letter-spacing: -.015em; text-wrap: balance; }
+  .sub { color: var(--ink-2); max-width: 62ch; }
+
+  .hemis { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+  .hemi { padding: 12px 16px; display: flex; flex-direction: column; gap: 3px; }
+  .hemi.n { background: var(--cold-soft); }
+  .hemi.s { background: var(--warm-soft); }
+  .hemi b { font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+  .hemi.n b { color: var(--cold); }
+  .hemi.s b { color: var(--warm); }
+  .hemi p { font-size: 13px; color: var(--ink-2); }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+  .stat { background: var(--panel); padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; }
+  .stat .n { font-family: var(--mono); font-size: 26px; font-variant-numeric: tabular-nums; line-height: 1; letter-spacing: -.02em; }
+  .stat .l { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .stat.live .n { color: var(--ok); }
+  .stat.blocked .n { color: var(--crit); }
+  .stat.hot .n { color: var(--warm); }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  select, input[type="search"] { font-family: var(--sans); font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 7px 10px; min-width: 0; }
+  input[type="search"] { flex: 1 1 200px; }
+  select:focus-visible, input:focus-visible, button:focus-visible, th:focus-visible, a:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
+  .btn { font-family: var(--sans); font-size: 13px; cursor: pointer; color: var(--ink-2); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 7px 12px; }
+  .btn:hover { color: var(--ink); border-color: var(--ink-3); }
+  .count { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin-left: auto; font-variant-numeric: tabular-nums; }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--panel); box-shadow: var(--shadow); }
+  table { border-collapse: collapse; width: 100%; min-width: 1080px; }
+  thead th { position: sticky; top: 0; z-index: 2; background: var(--panel-2); border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); text-align: left; padding: 10px; white-space: nowrap; cursor: pointer; user-select: none; }
+  thead th:hover { color: var(--ink); }
+  thead th .arr { opacity: 0; }
+  thead th[aria-sort] { color: var(--ink); }
+  thead th[aria-sort] .arr { opacity: 1; color: var(--warm); }
+  tbody td { border-bottom: 1px solid var(--line-soft); padding: 9px 10px; vertical-align: top; font-size: 13.5px; }
+  tbody tr:hover { background: var(--panel-2); }
+  tbody tr td:first-child { border-left: 3px solid transparent; padding-left: 12px; }
+  tr[data-pri="High"] td:first-child { border-left-color: var(--warm); }
+  tr[data-pri="Med"]  td:first-child { border-left-color: var(--ink-3); }
+  tr[data-status="live"] td:first-child { border-left-color: var(--ok); }
+  .ref { font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .co { font-weight: 600; display: block; }
+  .co a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+  .co a:hover { border-bottom-color: var(--warm); color: var(--warm); }
+  .role { color: var(--ink-2); font-size: 12.5px; display: block; max-width: 34ch; }
+  .when { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); white-space: nowrap; }
+  .note { display: block; font-size: 11.5px; color: var(--ink-3); max-width: 40ch; margin-top: 3px; font-style: italic; }
+
+  .chip { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; white-space: nowrap; border: 1px solid transparent; }
+  .t-A { background: var(--cold-soft); color: var(--cold); border-color: var(--cold); }
+  .t-B { background: transparent; color: var(--ink-2); border-color: var(--line); }
+  .t-C { background: transparent; color: var(--ink-3); border-color: var(--line-soft); }
+  .s-live { color: var(--ok); border-color: currentColor; }
+  .s-monitor { color: var(--ink-3); border-color: var(--line); }
+  .s-blocked { color: var(--crit); border-color: currentColor; }
+  .s-drafting, .s-applied, .s-interviewing { color: var(--warn); border-color: currentColor; }
+  .s-closed { color: var(--ink-3); border-color: var(--line-soft); text-decoration: line-through; }
+  .m-Inperson { color: var(--warm); font-weight: 600; }
+  .m-Hybrid { color: var(--ink-2); }
+  .m-Remote { color: var(--ink-3); }
+
+  .meter { display: inline-flex; gap: 2px; align-items: center; }
+  .meter i { width: 5px; height: 12px; background: var(--line); border-radius: 1px; display: block; }
+  .meter.fit i.on { background: var(--cold); }
+  .meter.diff i.on { background: var(--warm); }
+  .meter em { font-family: var(--mono); font-size: 10px; color: var(--ink-3); font-style: normal; margin-left: 3px; }
+
+  .empty { padding: 40px; text-align: center; color: var(--ink-3); font-size: 14px; }
+
+  /* ---- timeline ---- */
+  .tl { display: flex; flex-direction: column; }
+  .tl-item { display: grid; grid-template-columns: 120px 24px 1fr; gap: 0 16px; }
+  .tl-date { text-align: right; padding: 18px 0 18px; }
+  .tl-date b { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); display: block; font-variant-numeric: tabular-nums; }
+  .tl-date span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+  .tl-spine { position: relative; }
+  .tl-spine::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--line); transform: translateX(-50%); }
+  .tl-item:first-child .tl-spine::before { top: 24px; }
+  .tl-item:last-child .tl-spine::before { bottom: calc(100% - 24px); }
+  .tl-dot { position: absolute; left: 50%; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: var(--ground); border: 2px solid var(--ink-3); transform: translateX(-50%); }
+  .tl-body { padding: 16px 0 20px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .tl-title { font-family: var(--serif); font-size: 18px; font-weight: 600; letter-spacing: -.005em; }
+  .tl-body ul { display: flex; flex-direction: column; gap: 5px; list-style: none; }
+  .tl-body li { font-size: 13.5px; color: var(--ink-2); padding-left: 14px; position: relative; max-width: 76ch; }
+  .tl-body li::before { content: "—"; position: absolute; left: 0; color: var(--ink-3); }
+  .tl-body li strong { color: var(--ink); font-weight: 600; }
+  .tl-body li code { font-family: var(--mono); font-size: 12px; background: var(--panel-2); padding: 1px 5px; border-radius: 2px; }
+  .tl-tag { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; align-self: flex-start; }
+
+  .tl-item.past .tl-date b, .tl-item.past .tl-title { color: var(--ink-3); }
+  .tl-item.past .tl-dot { border-color: var(--line); }
+  .tl-item.past .tl-tag { color: var(--ink-3); border-color: var(--line); }
+
+  .tl-item.now .tl-body { background: var(--panel); border: 1px solid var(--ok); border-radius: 3px; padding: 16px 18px; margin: 8px 0 20px; box-shadow: var(--shadow); }
+  .tl-item.now .tl-dot { background: var(--ok); border-color: var(--ok); width: 11px; height: 11px; }
+  .tl-item.now .tl-tag { color: var(--ok); border-color: currentColor; }
+  .tl-item.now .tl-date b { color: var(--ok); }
+
+  .tl-item.peak .tl-body { background: var(--warm-soft); border: 1px solid var(--warm); border-radius: 3px; padding: 16px 18px; margin: 8px 0 20px; }
+  .tl-item.peak .tl-dot { background: var(--warm); border-color: var(--warm); width: 11px; height: 11px; }
+  .tl-item.peak .tl-tag { color: var(--warm); border-color: currentColor; }
+  .tl-item.peak .tl-date b { color: var(--warm); }
+
+  .tl-item.window .tl-body { border-left: 3px solid var(--cold); padding-left: 14px; }
+  .tl-item.window .tl-dot { background: var(--cold); border-color: var(--cold); }
+  .tl-item.window .tl-tag { color: var(--cold); border-color: currentColor; }
+
+  h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
+  .sec { display: flex; flex-direction: column; gap: 14px; }
+  .sechead { display: flex; flex-direction: column; gap: 4px; }
+  .sechead p { font-size: 13.5px; color: var(--ink-2); max-width: 72ch; }
+
+  footer { border-top: 1px solid var(--line); padding-top: 16px; font-size: 12px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--mono); }
+
+  @media (max-width: 720px) {
+    .hemis { grid-template-columns: 1fr; }
+    .tl-item { grid-template-columns: 1fr; }
+    .tl-date { text-align: left; padding: 14px 0 0; }
+    .tl-spine { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">
+      <span>Off-cycle</span><span class="sep">/</span>
+      <span>Jan – Mar 2027</span><span class="sep">/</span>
+      <span>Swept 2026-08-02</span>
+    </div>
+    <h1>Winternship</h1>
+    <p class="sub">
+      Sam Rimland — UT Austin, Economics with a Statistics &amp; Data Science minor, Class of 2028.
+      Seeking a January-start off-cycle internship in data, growth, BD, partnerships, or product.
+      US work authorization only. In-person strongly preferred. Staying enrolled on a light load.
+    </p>
+  </header>
+
+  <div class="hemis">
+    <div class="hemi n">
+      <b>Northern — the off-season</b>
+      <p>Jan–Mar sits outside the summer cycle. Far fewer postings, and far fewer applicants. Startups post late — often at or after your start date — so outreach beats waiting.</p>
+    </div>
+    <div class="hemi s">
+      <b>Southern — peak summer</b>
+      <p>Australian summer internships run Dec–Feb, overlapping the window exactly. But the 2026/27 intake closed around May 2026. Startups and rolling cycles only.</p>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="sec">
+    <div class="sechead">
+      <h2>Pipeline</h2>
+      <p>
+        Sorted with live roles first, then dated openings, then outreach targets — within each,
+        highest priority on top. Tier A is applyable today. Tier B opens on a known date.
+        Tier C has no posting; those are direct-outreach targets, which for a January startup
+        start is the primary route, not the fallback. Fit scores marked
+        <span class="ref">~</span> are provisional until the resume is uploaded.
+      </p>
+    </div>
+
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search company, role, note…" aria-label="Search listings">
+      <select id="f-tier" aria-label="Filter by tier"><option value="">All tiers</option></select>
+      <select id="f-loc" aria-label="Filter by location"><option value="">All locations</option></select>
+      <select id="f-fn" aria-label="Filter by function"><option value="">All functions</option></select>
+      <select id="f-mode" aria-label="Filter by mode"><option value="">All modes</option></select>
+      <select id="f-status" aria-label="Filter by status"><option value="">All statuses</option></select>
+      <button class="btn" id="reset" type="button">Reset</button>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-k="rank" scope="col">Ref <span class="arr">▾</span></th>
+            <th data-k="company" scope="col">Company / Role <span class="arr">▾</span></th>
+            <th data-k="fn" scope="col">Function <span class="arr">▾</span></th>
+            <th data-k="loc" scope="col">Location <span class="arr">▾</span></th>
+            <th data-k="mode" scope="col">Mode <span class="arr">▾</span></th>
+            <th data-k="when" scope="col">Window / Opens <span class="arr">▾</span></th>
+            <th data-k="pay" scope="col">Pay <span class="arr">▾</span></th>
+            <th data-k="diff" scope="col">Difficulty <span class="arr">▾</span></th>
+            <th data-k="fit" scope="col">Fit <span class="arr">▾</span></th>
+            <th data-k="pri" scope="col">Priority <span class="arr">▾</span></th>
+            <th data-k="status" scope="col">Status <span class="arr">▾</span></th>
+          </tr>
+        </thead>
+        <tbody id="tb"></tbody>
+      </table>
+    </div>
+    <div class="empty" id="empty" hidden>No rows match those filters.</div>
+  </div>
+
+  <div class="sec">
+    <div class="sechead">
+      <h2>Timeline</h2>
+      <p>
+        Every date below is drawn from a verified source or a company's published cycle. Where a
+        window is a range rather than a fixed date, it says so — inventing a precise deadline
+        would be worse than useless. Rolling processes close when seats fill, not on the stated
+        deadline, so treat every "opens" date as the day to apply, not the day to start thinking.
+      </p>
+    </div>
+
+    <div class="tl">
+
+      <div class="tl-item past">
+        <div class="tl-date"><b>1 May 2026</b><span>Passed</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Closed</span>
+          <div class="tl-title">Australian 2026/27 summer intake closed</div>
+          <ul>
+            <li>Canva's Software Engineering internship for the <strong>Dec 2026 – Feb 2027</strong> program — the intake that matches your window — closed applications on this date.</li>
+            <li>Atlassian's ANZ recruiting for the same cycle ran <strong>Feb–Jun 2026</strong> and is likewise done.</li>
+            <li><strong>Consequence:</strong> the branded ANZ graduate programs are out for Jan 2027. Australia is still reachable through startups, rolling-cycle firms, and the Sydney banking summer analyst programs — but not through Canva or Atlassian.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item now">
+        <div class="tl-date"><b>Aug 2026</b><span>You are here</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Act this month</span>
+          <div class="tl-title">The four long-lead items</div>
+          <ul>
+            <li><strong>Upload the resume.</strong> Blocks real fit scoring and all per-role tailoring. Nothing downstream is fully useful until this exists.</li>
+            <li><strong>Email UT Austin Texas Global</strong> about signing a <em>convenio de prácticas</em>. This is a tripartite agreement between you, a Spanish employer, and the university — without the university's signature there is no legal path to Madrid or Barcelona. One email either unblocks four target companies or kills the market. Longest lead time of anything here.</li>
+            <li><strong>Start the Australian Work and Holiday visa (subclass 462)</strong> if Australia is in play. US citizens qualify at 18–30, partway through tertiary education counts, no government support letter needed, English test waived, ~AUD $640. It is <em>not</em> employer-sponsored, so you can and should apply before having an offer. The US allocation is capped near <strong>2,500 places a year and closes when hit</strong>.</li>
+            <li><strong>Confirm Masa eligibility</strong> for Israel — their programs require proof of Judaism. If you don't qualify, Israel closes and that effort reallocates.</li>
+            <li><strong>Apply to all live Tier A roles.</strong> Eight are open right now.</li>
+            <li><strong>Big 4 advisory spring applications open Aug–Sept.</strong> Deloitte, PwC, EY, KPMG all run analytics-flavored spring cycles. Rolling review — seats fill before the posted deadline.</li>
+            <li>Draft your cold-outreach templates now so September is execution, not writing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><b>1 Sept 2026</b><span>Fixed date</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Opens</span>
+          <div class="tl-title">Birthright Israel Excel registration opens</div>
+          <ul>
+            <li>Global Excel registration for <strong>Summer 2027</strong> opens on this exact date. Highly selective business and tech placements in Tel Aviv.</li>
+            <li><strong>Summer only</strong> — it does not serve a Jan–Mar window. Listed because if you'd take a strong summer placement instead, this is the single date to hit, and it is one of the few hard deadlines in the whole search.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><b>Sept 2026</b><span>Month</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Outreach begins</span>
+          <div class="tl-title">Cold outreach starts landing</div>
+          <ul>
+            <li><strong>Charles Schwab 2027 internship postings begin</strong>, running Sept through November. Austin-based, no relocation.</li>
+            <li><strong>Begin the Tier C outreach campaign</strong> — 37 target companies. August is dead: people are out, Q1 headcount isn't real to anyone yet. A September email lands on a desk that is actually thinking about January.</li>
+            <li>Lead with your availability, not your résumé. Q1 is when startups are understaffed and their summer interns have gone back to school. Frame it as solving their problem.</li>
+            <li>Big 4 advisory cycles continue from August.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><b>Sept – Oct 2026</b><span>Range</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Peak posting</span>
+          <div class="tl-title">Corporate posting season</div>
+          <ul>
+            <li>The densest posting window of the year across large employers — Amazon, Apple, the Big 4, and most structured corporate programs open here.</li>
+            <li>Most of this volume is Summer 2027, but <strong>spring and off-cycle roles ride the same recruiting calendar</strong>, so it's where the corporate side of your pipeline actually fills.</li>
+            <li><strong>Apply within 72 hours of a posting going live.</strong> Rolling review means a role with a March deadline can be effectively closed by October.</li>
+            <li>Push outreach hard through October and follow up on non-replies. One follow-up roughly doubles response rates and almost nobody sends it.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item peak">
+        <div class="tl-date"><b>Nov 2026</b><span>Highest leverage</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Do not miss</span>
+          <div class="tl-title">YC Winter 2027 batch begins</div>
+          <ul>
+            <li>The YC W27 batch starts this month. Those companies are typically <strong>one to four people</strong>, have just raised, and need generalists immediately.</li>
+            <li>Hiring processes are measured in <strong>days, not months</strong> — which is the only reason a November action can still produce a January start.</li>
+            <li>Your Jan–Mar availability is a feature to them, not a caveat. So is being a junior who wants to hustle rather than a senior who wants a title.</li>
+            <li><strong>Sweep <code>workatastartup.com</code> end to end</strong> and message founders directly. Not a filtered search — read the whole batch.</li>
+            <li>Also: Atlassian's ANZ recruiting for the <em>2027/28</em> cycle runs Feb–Jun 2027 if you'd consider a later stint.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><b>Dec 2026</b><span>Month</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Convert</span>
+          <div class="tl-title">Startups post Q1 roles; Australian summer starts</div>
+          <ul>
+            <li>US startups begin posting their Q1 needs. This is the earliest the job-board channel becomes genuinely productive for your window.</li>
+            <li><strong>Australian summer internships begin</strong> (Dec–Feb). Anything you land there starts now, not in January.</li>
+            <li>Close out offers. Avoid opening new threads over the holidays — response rates collapse from mid-December.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item window">
+        <div class="tl-date"><b>Jan – Mar 2027</b><span>Target window</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">The stint</span>
+          <div class="tl-title">Off-cycle internship runs</div>
+          <ul>
+            <li>Start. Flexible end date preferred — negotiate that up front rather than raising it in March.</li>
+            <li><strong>Keep a light sweep running.</strong> Startups post Q1 roles throughout January and February, so better options continue to appear after you've started. That's a real scenario worth being ready for.</li>
+            <li>Accounting and audit busy-season internships also run Jan–Apr. Wrong function for you, but they dominate the "Spring 2027" search results — filter past them.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date"><b>Apr 2027</b><span>If pursuing 2027/28</span></div>
+        <div class="tl-spine"><div class="tl-dot"></div></div>
+        <div class="tl-body">
+          <span class="tl-tag">Next cycle</span>
+          <div class="tl-title">Canva ANZ 2027/28 applications open</div>
+          <ul>
+            <li>Canva's next ANZ summer program (Dec 2027 – Feb 2028) opens applications around April 2027.</li>
+            <li>Relevant only if you'd take a second off-cycle stint in your senior year. Noted so the Australian cycle is legible end to end rather than looking arbitrary.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>Source of truth: jobs.md</span>
+    <span>Context: PROFILE.md</span>
+    <span>Re-verify links monthly — postings expire</span>
+  </footer>
+</div>
+
+<script>
+// [ref, tier, company, role, fn, loc, mode, when, pay, diff, fit, pri, status, url, note]
+const RAW = [
+["A1","A","Brilliant Infotech","Business Development Intern (Winter/Spring 2027)","BD","New York","In-person","Winter/Spring 2027 · rolling","Verify",2,3,"High","live","https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458","Rare verified Winter/Spring 2027 BD posting in NYC. Apply now."],
+["A2","A","Magnet Media","Social Media Intern (Spring 2027)","Growth","New York","In-person","Spring 2027 · rolling","Verify",2,2,"Med","live","https://www.interndock.com/tracker/guides/summer-2027-internship-drop-open-now","Marketing-adjacent, weaker fit — but a live NYC spring seat."],
+["A3","A","Glovo","Marketing Controller Intern — Growth &amp; Finance","Growth","Barcelona","In-person","Rolling","Paid",3,4,"Med","blocked","https://jobs.glovoapp.com/","Good fit, English-first workplace. Gated on the Spain convenio."],
+["A4","A","Deloitte","Audit &amp; Assurance Intern (Winter 2027)","Strategy","Multiple US","Hybrid","Jan–Apr 2027","Paid",3,2,"Low","live","https://www2.deloitte.com/us/en/careers/students.html","Real off-cycle timing, wrong function. Fallback only."],
+["A5","A","Delta Air Lines","Co-op, HR Analytics &amp; Insights (Spring 2027)","Data","Atlanta","In-person","Spring 2027 · rolling","Paid",3,4,"Low","live","https://jobright.ai/jobs/info/6a35e9d629c90c607e4e3fec","Strong function fit, but forbids concurrent enrollment and needs 3 alternating semesters. Atlanta."],
+["A6","A","Delta Air Lines","Co-op, Crew Resources — Data Analyst (Spring 2027)","Data","Atlanta","In-person","Spring 2027 · rolling","Paid",3,4,"Low","live","https://www.delta.com/us/en/careers/students-and-early-careers","Same enrollment conflict as A5. Among the few live Spring 2027 data roles that exist."],
+["A7","A","Medpace","Feasibility Informatics Intern/Co-op (Spring 2027)","Data","Cincinnati","In-person","Spring 2027 · rolling","Paid",2,3,"Low","live","https://www.medpace.com/careers/","Live and correctly timed; outside target markets."],
+["A8","A","Allied Global Marketing","Marketing &amp; Press Intern (Spring)","Growth","Chicago","In-person","Spring 2027 · rolling","Paid",2,2,"Low","live","https://simplify.jobs/l/Top-Winter-and-Spring-Internships","Live spring seat, adjacent function, outside target markets."],
+
+["B1","B","Charles Schwab","2027 Internship Program","Data","Austin","In-person","Opens Sept–Nov 2026","Paid",3,3,"High","monitor","https://www.schwabjobs.com/internship-academy","Austin-based, no relocation, dated opening. Set a September reminder."],
+["B2","B","Citi","Summer Analyst — Commercial Banking, APAC","BD","Sydney","In-person","10 wks · Dec–Feb","Paid",4,3,"Med","monitor","https://jobs.citi.com/","ANZ summer overlaps the window. Requires the 462 visa."],
+["B3","B","Bank of America","Global IB &amp; Capital Markets Summer Analyst 2026/27","Strategy","Sydney","In-person","Dec–Feb","Paid",5,2,"Low","monitor","https://careers.bankofamerica.com/en-us/students","Right dates, banking-track fit is weak against an econ+DS profile."],
+["B4","B","Big 4 advisory","Advisory &amp; Analytics spring intern","Data","Austin / NYC / SF","Hybrid","Opens Aug–Sept 2026","Paid",3,3,"High","monitor","https://www2.deloitte.com/us/en/careers/students.html","Deloitte, PwC, EY, KPMG all open advisory spring cycles now."],
+["B5","B","Wayfair","Data Science Co-op (Jan start)","Data","Boston","In-person","Precedent: Jan 5 – Jun 19","$27.50/hr",3,4,"Med","monitor","https://www.wayfair.com/careers","Runs Jan-start data co-ops annually. Watch from September for the 2027 posting."],
+["B6","B","Birthright Israel Excel","Business / Tech Fellowship","BD","Tel Aviv","In-person","Opens Sept 1 2026 · summer only","Stipend",5,4,"Low","monitor","https://birthrightisraelexcel.com/college-students/","Strong program, wrong season — does not serve Jan–Mar."],
+["B7","B","Masa / Career Israel","Tel Aviv internship placement","Strategy","Tel Aviv","In-person","4–6 mo · 8-wk track","Subsidized",3,3,"Low","blocked","https://www.masaisrael.org/job_cat/internship-en/","Duration mismatch plus proof-of-Judaism requirement. Confirm eligibility first."],
+["B8","B","Atlassian","ANZ Summer Internship 2027/28","PM","Sydney","In-person","Opens now · runs Nov 2027–Feb 2028","Paid",5,3,"Low","monitor","https://www.atlassian.com/company/careers/earlycareers","Applications open now but it's the following year's cycle."],
+["B9","B","Canva","ANZ Summer Internship 2027/28","PM","Sydney","In-person","Opens ~Apr 2027 · runs Dec 2027–Feb 2028","Paid",5,3,"Low","monitor","https://www.lifeatcanva.com/en/jobs/","The 2026/27 intake closed 1 May 2026. Next cycle only."],
+
+["C1","C","Ramp","Founder&#39;s associate / growth / biz ops","Growth","New York","In-person","Outreach","Paid",5,4,"High","monitor","https://ramp.com/careers","Known for hiring generalist hustlers; deeply quantitative culture."],
+["C2","C","Mercury","Growth or data associate","Growth","New York","In-person","Outreach","Paid",4,4,"High","monitor","https://mercury.com/jobs","Fintech with real data and GTM functions."],
+["C3","C","Attentive","Growth / analytics","Growth","New York","In-person","Outreach","Paid",3,4,"High","monitor","https://www.attentive.com/careers","Quantitative marketing org — direct econ+stats fit."],
+["C4","C","Vanta","Partnerships / BD","Partnerships","New York","In-person","Outreach","Paid",4,4,"High","monitor","https://www.vanta.com/careers","Partnerships-heavy motion, fast growth."],
+["C5","C","Alloy","BD / partnerships","BD","New York","In-person","Outreach","Paid",3,4,"High","monitor","https://www.alloy.com/careers","Fintech infrastructure with a small BD team — easier to reach."],
+["C6","C","Datadog","Data science","Data","New York","In-person","Outreach","Paid",4,3,"Med","monitor","https://careers.datadoghq.com/","Structured analytics org; more process, less hustle."],
+["C7","C","Oscar Health","Data / strategy","Data","New York","In-person","Outreach","Paid",3,4,"High","monitor","https://www.hioscar.com/careers","Econ/stats fit with a human-centered mission."],
+["C8","C","Justworks","BD / growth","BD","New York","In-person","Outreach","Paid",2,4,"High","monitor","https://www.justworks.com/careers","HR tech, social culture, reachable BD org."],
+["C9","C","Sardine","Data / strategy","Data","New York","In-person","Outreach","Paid",3,4,"Med","monitor","https://www.sardine.ai/careers","Fraud and risk AI — quantitative and applied."],
+["C10","C","Dorsia","Growth / partnerships","Growth","New York","In-person","Outreach","Paid",3,4,"Med","monitor","https://wellfound.com/","Consumer, NYC-native, social product. Listed on Wellfound."],
+
+["C11","C","Rippling","Growth / biz ops","Growth","San Francisco","In-person","Outreach","Paid",5,4,"High","monitor","https://www.rippling.com/careers","Confirmed to run off-cycle Winter 2027 internships — the structure exists. Ask for a business-side seat."],
+["C12","C","Scale AI","Growth / strategy","Growth","San Francisco","In-person","Outreach","Paid",5,4,"High","monitor","https://scale.com/careers","AI, hustle culture, strong GTM org."],
+["C13","C","Notion","PM / growth","PM","San Francisco","In-person","Outreach","Paid",5,4,"Med","monitor","https://www.notion.so/careers","Human-centered product, PM-heavy — matches the stated angle."],
+["C14","C","Retool","BD / growth","BD","San Francisco","In-person","Outreach","Paid",4,4,"Med","monitor","https://retool.com/careers","Technical-adjacent GTM: sell to developers without being one."],
+["C15","C","Sierra AI","Partnerships / growth","Partnerships","San Francisco","In-person","Outreach","Paid",5,4,"Med","monitor","https://sierra.ai/careers","Applied, human-centered AI. Small and early."],
+["C16","C","Brex","Growth / data","Growth","San Francisco","In-person","Outreach","Paid",4,4,"Med","monitor","https://www.brex.com/careers","Quantitative growth organization."],
+["C17","C","Dedalus Labs","Growth / BD","Growth","San Francisco","In-person","Outreach","$20–25/hr",2,4,"High","monitor","https://wellfound.com/","Early-stage AI/cloud; already posted a 2027 intern role. Small enough to ask about off-cycle."],
+["C18","C","YC W27 batch","Founder&#39;s associate","BD","San Francisco","In-person","Sweep from Nov 2026","Paid",2,5,"High","monitor","https://www.workatastartup.com/","Highest-leverage row here. Batch starts Nov 2026 — 1–4 person companies, freshly funded, hiring in days."],
+
+["C19","C","ICON","Strategy / BD","Strategy","Austin","In-person","Outreach","Paid",3,3,"Med","monitor","https://www.iconbuild.com/careers","3D-printed construction, Austin-native."],
+["C20","C","Self Financial","Data / growth","Data","Austin","In-person","Outreach","Paid",2,4,"High","monitor","https://www.self.inc/careers","Mission-driven fintech, quantitative, no relocation."],
+["C21","C","AlertMedia","BD / partnerships","BD","Austin","In-person","Outreach","Paid",2,4,"High","monitor","https://www.alertmedia.com/careers","Austin SaaS with a strong BD org and a reachable team."],
+["C22","C","Osano","Growth / BD","Growth","Austin","In-person","Outreach","Paid",2,4,"High","monitor","https://www.osano.com/company/careers","Privacy SaaS, small teams, generalist-friendly."],
+["C23","C","Firefly Aerospace","Strategy / biz ops","Strategy","Austin","In-person","Outreach","Paid",4,3,"Med","monitor","https://fireflyspace.com/careers/","High-profile Austin-area, genuine hustle culture."],
+["C24","C","H-E-B Digital","Data science","Data","Austin","In-person","Outreach","Paid",3,3,"Med","monitor","https://careers.heb.com/","Large Austin employer with a real analytics org."],
+["C25","C","Indeed","Data science","Data","Austin","In-person","Outreach","Paid",3,4,"High","monitor","https://www.indeed.jobs/","Austin HQ, large data org, has an economics research team."],
+
+["C26","C","Airwallex","Growth / BD","Growth","Melbourne","In-person","Outreach","Paid",4,4,"Med","monitor","https://www.airwallex.com/careers","Fintech with Melbourne roots and global GTM. Needs the 462 visa."],
+["C27","C","SafetyCulture","BD / partnerships","BD","Sydney","In-person","Outreach","Paid",3,4,"Med","monitor","https://safetyculture.com/careers/","Strong commercial org, rolling hiring."],
+["C28","C","Linktree","Growth / data","Growth","Melbourne","In-person","Outreach","Paid",3,4,"Med","monitor","https://linktr.ee/s/about/careers/","Consumer growth, quantitative."],
+["C29","C","Immutable","Partnerships / BD","Partnerships","Sydney","In-person","Outreach","Paid",3,3,"Low","monitor","https://www.immutable.com/careers","Fast-moving Sydney company."],
+["C30","C","Employment Hero","Growth / BD","Growth","Sydney","In-person","Outreach","Paid",3,4,"Med","monitor","https://employmenthero.com/careers/","Sydney HR tech with aggressive growth targets."],
+["C31","C","SEEK Grad","ANZ internship board","Data","Sydney","In-person","Sweep monthly","—",1,3,"Med","monitor","https://au.gradconnection.com/internships/business-and-commerce/sydney/","98 open business/commerce roles in Sydney at last check."],
+
+["C32","C","TravelPerk (Perk)","Growth / BD","Growth","Barcelona","In-person","Outreach","Paid",4,4,"Med","blocked","https://www.travelperk.com/careers/","English-first, 50+ nationalities. Gated on the convenio."],
+["C33","C","Factorial","Growth / data","Growth","Barcelona","In-person","Outreach","Paid",4,4,"Med","blocked","https://factorialhr.com/careers","HR tech unicorn with Barcelona and Madrid offices."],
+["C34","C","Typeform","Growth / PM","PM","Barcelona","In-person","Outreach","Paid",4,4,"Med","blocked","https://www.typeform.com/careers/","Product-led growth — a clean fit if Spain unblocks."],
+["C35","C","Glovo","Growth / data","Growth","Barcelona","In-person","Outreach","Paid",3,4,"Med","blocked","https://jobs.glovoapp.com/","Also has a live posting — see A3."],
+
+["C36","C","Destination Israel","Placement — 1,200-company database","Strategy","Tel Aviv","In-person","2-month tracks","Varies",3,3,"Low","blocked","https://www.destinationisrael.com/","The 2-month track is the only shape that fits Jan–Mar. Confirm a winter cohort exists."],
+["C37","C","TAU International","Tel Aviv University placement","Strategy","Tel Aviv","In-person","Program-dated","Varies",3,3,"Low","blocked","https://international.tau.ac.il/Summer_Internship_Program","English-language placement across business and tech."]
+];
+
+const K = ["ref","tier","company","role","fn","loc","mode","when","pay","diff","fit","pri","status","url","note"];
+const PRI_ORDER = { High: 3, Med: 2, Low: 1 };
+const STATUS_ORDER = { live: 0, interviewing: 1, drafting: 2, applied: 3, monitor: 4, blocked: 5, closed: 6 };
+
+const ROWS = RAW.map(r => {
+  const o = Object.fromEntries(K.map((k, i) => [k, r[i]]));
+  // Default ordering: actionable first, then by priority, then by tier.
+  o.rank = STATUS_ORDER[o.status] * 1000 + (3 - PRI_ORDER[o.pri]) * 100 + o.tier.charCodeAt(0);
+  return o;
+});
+
+const el = id => document.getElementById(id);
+
+const stats = [
+  ["live",    ROWS.filter(r => r.status === "live").length,   "Live now"],
+  ["hot",     ROWS.filter(r => r.pri === "High").length,      "High priority"],
+  ["",        ROWS.filter(r => r.tier === "B").length,        "Opens on a date"],
+  ["",        ROWS.filter(r => r.tier === "C").length,        "Outreach targets"],
+  ["blocked", ROWS.filter(r => r.status === "blocked").length,"Blocked on visa"],
+  ["",        ROWS.length,                                     "Total tracked"]
+];
+el("stats").innerHTML = stats.map(([cls, n, l]) =>
+  `<div class="stat ${cls}"><span class="n">${n}</span><span class="l">${l}</span></div>`).join("");
+
+const FILTERS = { "f-tier": "tier", "f-loc": "loc", "f-fn": "fn", "f-mode": "mode", "f-status": "status" };
+for (const [id, key] of Object.entries(FILTERS)) {
+  const vals = [...new Set(ROWS.map(r => r[key]))].sort();
+  el(id).insertAdjacentHTML("beforeend", vals.map(v => `<option value="${v}">${v}</option>`).join(""));
+}
+
+let sortKey = "rank", sortDir = 1;
+
+function meter(n, cls) {
+  let s = `<span class="meter ${cls}">`;
+  for (let i = 1; i <= 5; i++) s += `<i class="${i <= n ? "on" : ""}"></i>`;
+  return s + `<em>${n}${cls === "fit" ? "~" : ""}</em></span>`;
+}
+
+function render() {
+  const q = el("q").value.trim().toLowerCase();
+  const rows = ROWS.filter(r => {
+    for (const [id, key] of Object.entries(FILTERS)) {
+      const v = el(id).value;
+      if (v && r[key] !== v) return false;
+    }
+    if (!q) return true;
+    return (r.company + " " + r.role + " " + r.note + " " + r.loc + " " + r.fn).toLowerCase().includes(q);
+  });
+
+  rows.sort((a, b) => {
+    let x = a[sortKey], y = b[sortKey];
+    if (sortKey === "pri") { x = PRI_ORDER[x]; y = PRI_ORDER[y]; }
+    if (sortKey === "status") { x = STATUS_ORDER[x]; y = STATUS_ORDER[y]; }
+    const c = (typeof x === "number") ? x - y : String(x).localeCompare(String(y));
+    return c * sortDir || a.rank - b.rank;
+  });
+
+  el("tb").innerHTML = rows.map(r => `
+    <tr data-pri="${r.pri}" data-status="${r.status}">
+      <td><span class="ref">${r.ref}</span> <span class="chip t-${r.tier}">${r.tier}</span></td>
+      <td>
+        <span class="co"><a href="${r.url}" target="_blank" rel="noopener">${r.company}</a></span>
+        <span class="role">${r.role}</span>
+        <span class="note">${r.note}</span>
+      </td>
+      <td>${r.fn}</td>
+      <td>${r.loc}</td>
+      <td class="m-${r.mode.replace("-", "")}">${r.mode}</td>
+      <td class="when">${r.when}</td>
+      <td class="when">${r.pay}</td>
+      <td>${meter(r.diff, "diff")}</td>
+      <td>${meter(r.fit, "fit")}</td>
+      <td><strong>${r.pri}</strong></td>
+      <td><span class="chip s-${r.status}">${r.status}</span></td>
+    </tr>`).join("");
+
+  el("empty").hidden = rows.length > 0;
+  el("count").textContent = `${rows.length} of ${ROWS.length}`;
+}
+
+document.querySelectorAll("thead th").forEach(th => {
+  th.tabIndex = 0;
+  const go = () => {
+    const k = th.dataset.k;
+    sortDir = (sortKey === k) ? -sortDir : (["diff", "fit", "pri"].includes(k) ? -1 : 1);
+    sortKey = k;
+    document.querySelectorAll("thead th").forEach(o => { o.removeAttribute("aria-sort"); o.querySelector(".arr").textContent = "▾"; });
+    th.setAttribute("aria-sort", sortDir === 1 ? "ascending" : "descending");
+    th.querySelector(".arr").textContent = sortDir === 1 ? "▴" : "▾";
+    render();
+  };
+  th.addEventListener("click", go);
+  th.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+});
+
+el("q").addEventListener("input", render);
+Object.keys(FILTERS).forEach(id => el(id).addEventListener("change", render));
+el("reset").addEventListener("click", () => {
+  el("q").value = "";
+  Object.keys(FILTERS).forEach(id => el(id).value = "");
+  render();
+});
+
+render();
+</script>

@@ -1,0 +1,7 @@
+# Your resume is a personal document — kept out of the repo by default.
+# The monitoring agent doesn't need it; fit scoring happens locally.
+# Delete these two lines if you'd rather version it in a private repo.
+resume/*.pdf
+resume/*.docx
+
+.DS_Store
