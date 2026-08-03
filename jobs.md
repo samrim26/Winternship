@@ -244,6 +244,17 @@ track is the only realistic shape for Jan–Mar; confirm a winter cohort exists 
 
 ---
 
+## Automated monitoring
+
+A cloud routine — **WINTERNSHIP weekly job sweep** (`trig_01FJifiSN9LgKwExGsBCo3BZ`) — runs every
+**Monday at 09:00 ET** and sweeps the boards above for new off-cycle roles matching the profile.
+It reports new findings with difficulty/fit/priority already scored. Manage it at
+<https://claude.ai/code/routines/trig_01FJifiSN9LgKwExGsBCo3BZ>.
+
+It currently runs **report-only** — it can't write to this folder because it executes in a cloud
+sandbox. Once this repo is pushed to GitHub, add the repo as a source and it will commit new rows
+into this file directly.
+
 ## Maintenance
 
 - **Re-verify every link monthly.** Postings expire fast; Tier A will rot quickest.
