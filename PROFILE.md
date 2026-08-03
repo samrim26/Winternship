@@ -38,10 +38,28 @@ statistics, and data science tooling.*
 
 | | |
 |---|---|
-| **Start** | January 2027 |
-| **End** | ~March 2027, **flexible end date preferred** |
+| **Target start** | **Monday 4 January 2027** |
+| **Target end** | **Friday 12 March 2027** (10 weeks) |
+| **Hard stop** | **1 April 2027 — study abroad in Japan begins.** Non-negotiable. |
 | **Type** | Off-cycle / spring / winter internship or short-term role |
 | **Enrollment** | **Staying enrolled**, light/online course load — *not* taking a leave of absence |
+
+### The March deadline is a hard filter, not a preference
+
+Sam begins a study-abroad semester in **Japan on 1 April 2027**. Anything that cannot finish by
+**mid-March** is disqualified, regardless of how good it otherwise looks. This kills:
+
+- Most US "Spring" internships, which run **January–April or January–May**
+- All co-op programs on a January–June cycle
+- Masa / Career Israel (4–6 months)
+- Anything summer-cycle in either hemisphere
+
+**Flexibility of the end date is therefore a first-class scoring dimension**, tracked as its own
+column. Small startups score High (you set the dates). Structured corporate programs score Low.
+
+**Disclose the end date in the first conversation, every time.** A firm date is a feature to a
+startup scoping a ten-week project and a dealbreaker only at programs that were never a fit.
+Discovering it in February is what damages a reference.
 
 This is the single most filtering criterion. The overwhelming majority of internships
 are summer-cycle. Off-cycle roles exist but are rarely surfaced by aggregators, which
@@ -70,6 +88,7 @@ Priority markets, all acceptable:
 - **New York City**
 - **San Francisco / Bay Area**
 - **Austin** (home market — lowest logistics cost)
+- **Tokyo** (see below — strategically strongest, given the April relocation)
 - **Australia** — anywhere (Sydney, Melbourne, Brisbane)
 - **Madrid**
 - **Barcelona**
@@ -156,7 +175,45 @@ internship in Spain, and what lead time they need. **Do this early — this is t
 pole.** If the answer is no, Spain drops off the list and that effort reallocates to
 Australia and the US markets.
 
-### 🇮🇱 Israel — `PROGRAM-ONLY, LIKELY BLOCKED FOR THIS WINDOW`
+### 🇯🇵 Japan (Tokyo) — `OPEN, UNPAID ONLY` *(and strategically the strongest option)*
+
+Sam relocates to Japan on 1 April 2027 regardless. That makes Tokyo arguably the most logical
+market on the list — but one constraint shapes everything.
+
+- **Japan has no working-holiday agreement with the United States.** Unlike Australia, there is
+  no self-sponsored route to paid work.
+- **Paid** internships require a **Designated Activities** visa, sponsored by the employer. Few
+  companies will run that process for a ten-week stint.
+- **Unpaid** internships of **90 days or less**, for students enrolled at an overseas university,
+  can be done on **Temporary Visitor** status. **4 Jan – 12 Mar is 68 days — comfortably inside.**
+- Longer unpaid arrangements use a *Cultural Activities* visa; not needed at this length.
+- Once on a student visa from April, part-time work up to **28 hours/week** is permitted with
+  permission — so a January unpaid stint **can convert to paid part-time work at the same company
+  in spring**.
+
+**Why unpaid is worth it here specifically:** no second relocation, a network built before the
+semester starts, a Japanese company on the résumé while studying there, and a conversion path to
+paid work in April. Few unpaid roles clear that bar.
+
+**Positioning:** lead with the April relocation. It removes their biggest objections at once — no
+visa sponsorship, no housing, no flight risk, and someone who remains in-country afterward. Target
+companies with overseas ambitions, where a native English speaker is a concrete asset. Don't claim
+Japanese ability; English-first companies exist and are the right target.
+
+**Sources to work:** [Coral Capital](https://coralcap.co/) (Tokyo VC publishing in English, portfolio
+job board — best entry point), [Japan Dev](https://japan-dev.com/), [TokyoDev](https://www.tokyodev.com/),
+[iAgora Tokyo](https://www.iagora.com/work/en/jobs-and-internships/for-english-speakers/japan/tokyo).
+Roughly 70% of Japanese startups are headquartered in Tokyo.
+
+### 🇮🇱 Israel — `BLOCKED FOR THIS WINDOW`
+
+**Now fully blocked by the March deadline**, independent of the eligibility question. Masa requires
+5+ months; Career Israel runs 4–6. Only Destination Israel's 2-month track could theoretically fit,
+and a January cohort is unconfirmed. Deprioritize.
+
+Prior analysis retained below for reference.
+
+### 🇮🇱 Israel — prior analysis
 
 No realistic path to direct sponsorship for a 3-month internship. The viable route is a
 structured program that handles the visa — chiefly **Masa Israel Journey** and

@@ -3,6 +3,31 @@
 > Source of truth for `dashboard.html`. Edit the `Status` column by hand as you apply.
 > Last swept: **2026-08-02**
 
+## 🔴 Scope: Jan 4 – Mar 12, 2027 only
+
+**Hard stop: study abroad in Japan begins 1 April 2027.** Anything that cannot finish by mid-March
+is out of scope, however good it looks. Target window is **Mon 4 Jan → Fri 12 Mar 2027** (10 weeks,
+19 days of buffer).
+
+**Removed in the 2026-08-02 revision** for running past mid-March or falling outside the target
+markets — recorded so they aren't re-added by a future sweep:
+
+| Removed | Why |
+|---|---|
+| Delta Air Lines co-ops (HR Analytics; Crew Resources) | Spring co-op runs past March, forbids concurrent enrollment, requires 3 alternating semesters, Atlanta |
+| Medpace Feasibility Informatics | Spring co-op ends after March; Cincinnati |
+| Allied Global Marketing | Chicago, outside target markets |
+| Deloitte Audit & Assurance (Winter 2027) | Jan–Apr, ends after the deadline |
+| Wayfair Data Science Co-op | Jan 5 – Jun 19, ends three months late |
+| Birthright Israel Excel | Summer only |
+| Masa / Career Israel | 4–6 month minimum |
+| Atlassian & Canva ANZ 2027/28 | Wrong year entirely |
+| TAU International | Summer program |
+
+**Added:** Tokyo as a target market — see the Japan section of `PROFILE.md`. Sam relocates to Japan
+1 April regardless, which makes a Jan–Mar Tokyo stint uniquely low-friction, at the cost of being
+realistically unpaid on Temporary Visitor status.
+
 ---
 
 ## ⚠️ Read this first — the timing reality

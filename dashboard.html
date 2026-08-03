@@ -1,28 +1,15 @@
 <title>WINTERNSHIP — Off-Cycle Spring 2027</title>
 <style>
   :root {
-    --ground:        #f6f7f8;
-    --panel:         #ffffff;
-    --panel-2:       #eef1f3;
-    --line:          #d8dee3;
-    --line-soft:     #e7ecef;
-    --ink:           #16212b;
-    --ink-2:         #4a5a68;
-    --ink-3:         #7b8c99;
-    --warm:          #b4441f;
-    --warm-soft:     #f2e0d8;
-    --cold:          #2d6b7d;
-    --cold-soft:     #dceaee;
-    --ok:            #2f6b45;
-    --warn:          #8a6212;
-    --crit:          #a3301f;
-    --shadow:        0 1px 2px rgba(22,33,43,.06), 0 8px 24px -12px rgba(22,33,43,.18);
-
-    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --ground:#f6f7f8; --panel:#ffffff; --panel-2:#eef1f3; --line:#d8dee3; --line-soft:#e7ecef;
+    --ink:#16212b; --ink-2:#4a5a68; --ink-3:#7b8c99;
+    --warm:#b4441f; --warm-soft:#f2e0d8; --cold:#2d6b7d; --cold-soft:#dceaee;
+    --ok:#2f6b45; --warn:#8a6212; --crit:#a3301f;
+    --shadow:0 1px 2px rgba(22,33,43,.06), 0 8px 24px -12px rgba(22,33,43,.18);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   }
-
   @media (prefers-color-scheme: dark) {
     :root {
       --ground:#10161b; --panel:#171f26; --panel-2:#1e2830; --line:#2b3841; --line-soft:#222d35;
@@ -47,205 +34,191 @@
     --shadow:0 1px 2px rgba(22,33,43,.06), 0 8px 24px -12px rgba(22,33,43,.18);
   }
 
-  body { background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 1400px; margin: 0 auto; padding: 40px 24px 80px; display: flex; flex-direction: column; gap: 32px; }
+  body { background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:1440px; margin:0 auto; padding:40px 24px 80px; display:flex; flex-direction:column; gap:32px; }
 
-  header { display: flex; flex-direction: column; gap: 10px; border-bottom: 2px solid var(--ink); padding-bottom: 18px; }
-  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--warm); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-  .eyebrow .sep { color: var(--ink-3); }
-  h1 { font-family: var(--serif); font-size: clamp(30px, 5vw, 46px); line-height: 1.05; font-weight: 600; letter-spacing: -.015em; text-wrap: balance; }
-  .sub { color: var(--ink-2); max-width: 62ch; }
+  header { display:flex; flex-direction:column; gap:10px; border-bottom:2px solid var(--ink); padding-bottom:18px; }
+  .eyebrow { font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--warm); display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .eyebrow .sep { color:var(--ink-3); }
+  h1 { font-family:var(--serif); font-size:clamp(30px,5vw,46px); line-height:1.05; font-weight:600; letter-spacing:-.015em; text-wrap:balance; }
+  .sub { color:var(--ink-2); max-width:64ch; }
 
-  .hemis { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
-  .hemi { padding: 12px 16px; display: flex; flex-direction: column; gap: 3px; }
-  .hemi.n { background: var(--cold-soft); }
-  .hemi.s { background: var(--warm-soft); }
-  .hemi b { font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
-  .hemi.n b { color: var(--cold); }
-  .hemi.s b { color: var(--warm); }
-  .hemi p { font-size: 13px; color: var(--ink-2); }
+  .window-bar { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:3px; overflow:hidden; }
+  .wb { background:var(--panel); padding:13px 16px; display:flex; flex-direction:column; gap:3px; }
+  .wb b { font-family:var(--mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); }
+  .wb span { font-family:var(--mono); font-size:15px; font-variant-numeric:tabular-nums; letter-spacing:-.01em; }
+  .wb.stop { background:var(--warm-soft); }
+  .wb.stop b, .wb.stop span { color:var(--warm); }
+  .wb.go { background:var(--cold-soft); }
+  .wb.go b, .wb.go span { color:var(--cold); }
 
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
-  .stat { background: var(--panel); padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; }
-  .stat .n { font-family: var(--mono); font-size: 26px; font-variant-numeric: tabular-nums; line-height: 1; letter-spacing: -.02em; }
-  .stat .l { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
-  .stat.live .n { color: var(--ok); }
-  .stat.blocked .n { color: var(--crit); }
-  .stat.hot .n { color: var(--warm); }
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:3px; overflow:hidden; }
+  .stat { background:var(--panel); padding:14px 16px; display:flex; flex-direction:column; gap:2px; }
+  .stat .n { font-family:var(--mono); font-size:26px; font-variant-numeric:tabular-nums; line-height:1; letter-spacing:-.02em; }
+  .stat .l { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); }
+  .stat.live .n { color:var(--ok); }
+  .stat.blocked .n { color:var(--crit); }
+  .stat.hot .n { color:var(--warm); }
 
-  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  select, input[type="search"] { font-family: var(--sans); font-size: 13px; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 7px 10px; min-width: 0; }
-  input[type="search"] { flex: 1 1 200px; }
-  select:focus-visible, input:focus-visible, button:focus-visible, th:focus-visible, a:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
-  .btn { font-family: var(--sans); font-size: 13px; cursor: pointer; color: var(--ink-2); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 7px 12px; }
-  .btn:hover { color: var(--ink); border-color: var(--ink-3); }
-  .count { font-family: var(--mono); font-size: 12px; color: var(--ink-3); margin-left: auto; font-variant-numeric: tabular-nums; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  select, input[type="search"] { font-family:var(--sans); font-size:13px; color:var(--ink); background:var(--panel); border:1px solid var(--line); border-radius:3px; padding:7px 10px; min-width:0; }
+  input[type="search"] { flex:1 1 180px; }
+  select:focus-visible, input:focus-visible, button:focus-visible, th:focus-visible, a:focus-visible, textarea:focus-visible { outline:2px solid var(--warm); outline-offset:2px; }
+  .btn { font-family:var(--sans); font-size:13px; cursor:pointer; color:var(--ink-2); background:var(--panel); border:1px solid var(--line); border-radius:3px; padding:7px 12px; }
+  .btn:hover { color:var(--ink); border-color:var(--ink-3); }
+  .btn.primary { background:var(--ink); color:var(--ground); border-color:var(--ink); font-weight:600; }
+  .btn.primary:hover { opacity:.85; color:var(--ground); }
+  .count { font-family:var(--mono); font-size:12px; color:var(--ink-3); margin-left:auto; font-variant-numeric:tabular-nums; }
 
-  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--panel); box-shadow: var(--shadow); }
-  table { border-collapse: collapse; width: 100%; min-width: 1080px; }
-  thead th { position: sticky; top: 0; z-index: 2; background: var(--panel-2); border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); text-align: left; padding: 10px; white-space: nowrap; cursor: pointer; user-select: none; }
-  thead th:hover { color: var(--ink); }
-  thead th .arr { opacity: 0; }
-  thead th[aria-sort] { color: var(--ink); }
-  thead th[aria-sort] .arr { opacity: 1; color: var(--warm); }
-  tbody td { border-bottom: 1px solid var(--line-soft); padding: 9px 10px; vertical-align: top; font-size: 13.5px; }
-  tbody tr:hover { background: var(--panel-2); }
-  tbody tr td:first-child { border-left: 3px solid transparent; padding-left: 12px; }
-  tr[data-pri="High"] td:first-child { border-left-color: var(--warm); }
-  tr[data-pri="Med"]  td:first-child { border-left-color: var(--ink-3); }
-  tr[data-status="live"] td:first-child { border-left-color: var(--ok); }
-  .ref { font-family: var(--mono); font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .co { font-weight: 600; display: block; }
-  .co a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
-  .co a:hover { border-bottom-color: var(--warm); color: var(--warm); }
-  .role { color: var(--ink-2); font-size: 12.5px; display: block; max-width: 34ch; }
-  .when { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); white-space: nowrap; }
-  .note { display: block; font-size: 11.5px; color: var(--ink-3); max-width: 40ch; margin-top: 3px; font-style: italic; }
+  .banner { display:none; border-left:3px solid var(--ok); background:var(--panel); border-top:1px solid var(--line); border-right:1px solid var(--line); border-bottom:1px solid var(--line); border-radius:0 3px 3px 0; padding:11px 15px; font-size:13px; color:var(--ink-2); }
+  .banner.on { display:block; }
+  .banner strong { color:var(--ink); }
 
-  .chip { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; white-space: nowrap; border: 1px solid transparent; }
-  .t-A { background: var(--cold-soft); color: var(--cold); border-color: var(--cold); }
-  .t-B { background: transparent; color: var(--ink-2); border-color: var(--line); }
-  .t-C { background: transparent; color: var(--ink-3); border-color: var(--line-soft); }
-  .s-live { color: var(--ok); border-color: currentColor; }
-  .s-monitor { color: var(--ink-3); border-color: var(--line); }
-  .s-blocked { color: var(--crit); border-color: currentColor; }
-  .s-drafting, .s-applied, .s-interviewing { color: var(--warn); border-color: currentColor; }
-  .s-closed { color: var(--ink-3); border-color: var(--line-soft); text-decoration: line-through; }
-  .m-Inperson { color: var(--warm); font-weight: 600; }
-  .m-Hybrid { color: var(--ink-2); }
-  .m-Remote { color: var(--ink-3); }
+  .tablewrap { overflow-x:auto; border:1px solid var(--line); border-radius:3px; background:var(--panel); box-shadow:var(--shadow); }
+  table { border-collapse:collapse; width:100%; min-width:1260px; }
+  thead th { position:sticky; top:0; z-index:2; background:var(--panel-2); border-bottom:1px solid var(--line); font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); text-align:left; padding:10px 9px; white-space:nowrap; cursor:pointer; user-select:none; }
+  thead th:hover { color:var(--ink); }
+  thead th .arr { opacity:0; }
+  thead th[aria-sort] { color:var(--ink); }
+  thead th[aria-sort] .arr { opacity:1; color:var(--warm); }
+  tbody td { border-bottom:1px solid var(--line-soft); padding:9px; vertical-align:top; font-size:13px; }
+  tbody tr:hover { background:var(--panel-2); }
+  tbody tr td:first-child { border-left:3px solid transparent; padding-left:11px; }
+  tr[data-pri="High"] td:first-child { border-left-color:var(--warm); }
+  tr[data-pri="Med"] td:first-child { border-left-color:var(--ink-3); }
+  tr[data-status="live"] td:first-child { border-left-color:var(--ok); }
+  .ref { font-family:var(--mono); font-size:11px; color:var(--ink-3); font-variant-numeric:tabular-nums; }
+  .co { font-weight:600; display:block; }
+  .co a { color:inherit; text-decoration:none; border-bottom:1px solid var(--line); }
+  .co a:hover { border-bottom-color:var(--warm); color:var(--warm); }
+  .role { color:var(--ink-2); font-size:12.5px; display:block; max-width:32ch; }
+  .note { display:block; font-size:11.5px; color:var(--ink-3); max-width:38ch; margin-top:3px; font-style:italic; }
+  .dt { font-family:var(--mono); font-size:11.5px; color:var(--ink-2); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .dt.prop { color:var(--ink-3); font-style:italic; }
 
-  .meter { display: inline-flex; gap: 2px; align-items: center; }
-  .meter i { width: 5px; height: 12px; background: var(--line); border-radius: 1px; display: block; }
-  .meter.fit i.on { background: var(--cold); }
-  .meter.diff i.on { background: var(--warm); }
-  .meter em { font-family: var(--mono); font-size: 10px; color: var(--ink-3); font-style: normal; margin-left: 3px; }
+  .chip { display:inline-block; font-family:var(--mono); font-size:10px; letter-spacing:.06em; text-transform:uppercase; padding:2px 6px; border-radius:2px; white-space:nowrap; border:1px solid transparent; }
+  .t-A { background:var(--cold-soft); color:var(--cold); border-color:var(--cold); }
+  .t-B { background:transparent; color:var(--ink-2); border-color:var(--line); }
+  .t-C { background:transparent; color:var(--ink-3); border-color:var(--line-soft); }
+  .s-live { color:var(--ok); border-color:currentColor; }
+  .s-monitor { color:var(--ink-3); border-color:var(--line); }
+  .s-blocked { color:var(--crit); border-color:currentColor; }
+  .s-drafting,.s-applied,.s-interviewing { color:var(--warn); border-color:currentColor; }
+  .s-closed { color:var(--ink-3); border-color:var(--line-soft); text-decoration:line-through; }
+  .fx-High { color:var(--ok); font-weight:600; }
+  .fx-Med { color:var(--warn); }
+  .fx-Low { color:var(--crit); }
+  .m-Inperson { color:var(--warm); font-weight:600; }
+  .m-Hybrid { color:var(--ink-2); }
+  .m-Remote { color:var(--ink-3); }
 
-  .empty { padding: 40px; text-align: center; color: var(--ink-3); font-size: 14px; }
+  .meter { display:inline-flex; gap:2px; align-items:center; }
+  .meter i { width:5px; height:12px; background:var(--line); border-radius:1px; display:block; }
+  .meter.fit i.on { background:var(--cold); }
+  .meter.diff i.on { background:var(--warm); }
+  .meter.prst i.on { background:var(--ink-3); }
+  .meter em { font-family:var(--mono); font-size:10px; color:var(--ink-3); font-style:normal; margin-left:3px; }
+  .delta { font-family:var(--mono); font-size:10px; margin-left:2px; }
+  .delta.up { color:var(--ok); }
+  .delta.dn { color:var(--crit); }
 
-  /* ---- timeline ---- */
-  .tl { display: flex; flex-direction: column; }
-  .tl-item { display: grid; grid-template-columns: 120px 24px 1fr; gap: 0 16px; }
-  .tl-date { text-align: right; padding: 18px 0 18px; }
-  .tl-date b { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); display: block; font-variant-numeric: tabular-nums; }
-  .tl-date span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
-  .tl-spine { position: relative; }
-  .tl-spine::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--line); transform: translateX(-50%); }
-  .tl-item:first-child .tl-spine::before { top: 24px; }
-  .tl-item:last-child .tl-spine::before { bottom: calc(100% - 24px); }
-  .tl-dot { position: absolute; left: 50%; top: 22px; width: 9px; height: 9px; border-radius: 50%; background: var(--ground); border: 2px solid var(--ink-3); transform: translateX(-50%); }
-  .tl-body { padding: 16px 0 20px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-  .tl-title { font-family: var(--serif); font-size: 18px; font-weight: 600; letter-spacing: -.005em; }
-  .tl-body ul { display: flex; flex-direction: column; gap: 5px; list-style: none; }
-  .tl-body li { font-size: 13.5px; color: var(--ink-2); padding-left: 14px; position: relative; max-width: 76ch; }
-  .tl-body li::before { content: "—"; position: absolute; left: 0; color: var(--ink-3); }
-  .tl-body li strong { color: var(--ink); font-weight: 600; }
-  .tl-body li code { font-family: var(--mono); font-size: 12px; background: var(--panel-2); padding: 1px 5px; border-radius: 2px; }
-  .tl-tag { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; border: 1px solid; align-self: flex-start; }
+  .empty { padding:40px; text-align:center; color:var(--ink-3); font-size:14px; }
 
-  .tl-item.past .tl-date b, .tl-item.past .tl-title { color: var(--ink-3); }
-  .tl-item.past .tl-dot { border-color: var(--line); }
-  .tl-item.past .tl-tag { color: var(--ink-3); border-color: var(--line); }
+  .tl { display:flex; flex-direction:column; }
+  .tl-item { display:grid; grid-template-columns:120px 24px 1fr; gap:0 16px; }
+  .tl-date { text-align:right; padding:18px 0; }
+  .tl-date b { font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink); display:block; font-variant-numeric:tabular-nums; }
+  .tl-date span { font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); }
+  .tl-spine { position:relative; }
+  .tl-spine::before { content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--line); transform:translateX(-50%); }
+  .tl-item:first-child .tl-spine::before { top:24px; }
+  .tl-item:last-child .tl-spine::before { bottom:calc(100% - 24px); }
+  .tl-dot { position:absolute; left:50%; top:22px; width:9px; height:9px; border-radius:50%; background:var(--ground); border:2px solid var(--ink-3); transform:translateX(-50%); }
+  .tl-body { padding:16px 0 20px; display:flex; flex-direction:column; gap:8px; min-width:0; }
+  .tl-title { font-family:var(--serif); font-size:18px; font-weight:600; letter-spacing:-.005em; }
+  .tl-body ul { display:flex; flex-direction:column; gap:5px; list-style:none; }
+  .tl-body li { font-size:13.5px; color:var(--ink-2); padding-left:14px; position:relative; max-width:76ch; }
+  .tl-body li::before { content:"—"; position:absolute; left:0; color:var(--ink-3); }
+  .tl-body li strong { color:var(--ink); font-weight:600; }
+  .tl-body code { font-family:var(--mono); font-size:12px; background:var(--panel-2); padding:1px 5px; border-radius:2px; }
+  .tl-tag { font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; padding:2px 7px; border-radius:2px; border:1px solid; align-self:flex-start; }
+  .tl-item.past .tl-date b, .tl-item.past .tl-title { color:var(--ink-3); }
+  .tl-item.past .tl-dot { border-color:var(--line); }
+  .tl-item.past .tl-tag { color:var(--ink-3); border-color:var(--line); }
+  .tl-item.now .tl-body { background:var(--panel); border:1px solid var(--ok); border-radius:3px; padding:16px 18px; margin:8px 0 20px; box-shadow:var(--shadow); }
+  .tl-item.now .tl-dot { background:var(--ok); border-color:var(--ok); width:11px; height:11px; }
+  .tl-item.now .tl-tag { color:var(--ok); border-color:currentColor; }
+  .tl-item.now .tl-date b { color:var(--ok); }
+  .tl-item.peak .tl-body { background:var(--warm-soft); border:1px solid var(--warm); border-radius:3px; padding:16px 18px; margin:8px 0 20px; }
+  .tl-item.peak .tl-dot { background:var(--warm); border-color:var(--warm); width:11px; height:11px; }
+  .tl-item.peak .tl-tag { color:var(--warm); border-color:currentColor; }
+  .tl-item.peak .tl-date b { color:var(--warm); }
+  .tl-item.window .tl-body { border-left:3px solid var(--cold); padding-left:14px; }
+  .tl-item.window .tl-dot { background:var(--cold); border-color:var(--cold); }
+  .tl-item.window .tl-tag { color:var(--cold); border-color:currentColor; }
 
-  .tl-item.now .tl-body { background: var(--panel); border: 1px solid var(--ok); border-radius: 3px; padding: 16px 18px; margin: 8px 0 20px; box-shadow: var(--shadow); }
-  .tl-item.now .tl-dot { background: var(--ok); border-color: var(--ok); width: 11px; height: 11px; }
-  .tl-item.now .tl-tag { color: var(--ok); border-color: currentColor; }
-  .tl-item.now .tl-date b { color: var(--ok); }
+  .folds { display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:3px; overflow:hidden; }
+  details { background:var(--panel); }
+  details > summary { cursor:pointer; list-style:none; padding:13px 16px; display:flex; align-items:baseline; gap:12px; font-family:var(--sans); font-size:15px; font-weight:600; color:var(--ink); }
+  details > summary::-webkit-details-marker { display:none; }
+  details > summary::before { content:"+"; font-family:var(--mono); font-size:15px; color:var(--warm); width:12px; flex:none; line-height:1; }
+  details[open] > summary::before { content:"\2212"; }
+  details > summary:hover { background:var(--panel-2); }
+  details > summary .tag { margin-left:auto; font-family:var(--mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); font-weight:400; flex:none; }
+  details > summary .tag.crit { color:var(--warm); }
+  .fold-body { padding:0 16px 20px 40px; display:flex; flex-direction:column; gap:14px; }
+  .fold-body > p { font-size:13.5px; color:var(--ink-2); max-width:74ch; }
+  .fold-body h4 { font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--warm); padding-bottom:4px; border-bottom:1px solid var(--line-soft); }
+  .fold-body ul { display:flex; flex-direction:column; gap:6px; list-style:none; }
+  .fold-body li { font-size:13.5px; color:var(--ink-2); padding-left:15px; position:relative; max-width:76ch; }
+  .fold-body li::before { content:"\2022"; position:absolute; left:2px; color:var(--ink-3); }
+  .fold-body li strong { color:var(--ink); font-weight:600; }
+  .fold-body a { color:var(--cold); text-decoration:none; border-bottom:1px solid var(--line); }
+  .fold-body a:hover { border-bottom-color:var(--cold); }
+  .fold-body code { font-family:var(--mono); font-size:12px; background:var(--panel-2); padding:1px 5px; border-radius:2px; }
+  .fold-body .grp { display:flex; flex-direction:column; gap:7px; }
+  .callout { border-left:3px solid var(--warm); background:var(--warm-soft); padding:11px 14px; font-size:13px; color:var(--ink-2); border-radius:0 3px 3px 0; max-width:76ch; }
+  .callout strong { color:var(--ink); }
 
-  .tl-item.peak .tl-body { background: var(--warm-soft); border: 1px solid var(--warm); border-radius: 3px; padding: 16px 18px; margin: 8px 0 20px; }
-  .tl-item.peak .tl-dot { background: var(--warm); border-color: var(--warm); width: 11px; height: 11px; }
-  .tl-item.peak .tl-tag { color: var(--warm); border-color: currentColor; }
-  .tl-item.peak .tl-date b { color: var(--warm); }
+  .rank { display:flex; flex-direction:column; gap:1px; background:var(--line-soft); border:1px solid var(--line-soft); border-radius:3px; overflow:hidden; }
+  .rank-row { background:var(--panel); padding:12px 14px; display:grid; grid-template-columns:26px 1fr; gap:12px; }
+  .rank-row .num { font-family:var(--mono); font-size:15px; color:var(--warm); font-variant-numeric:tabular-nums; line-height:1.3; }
+  .rank-row .rb { display:flex; flex-direction:column; gap:5px; min-width:0; }
+  .rank-row .rh { display:flex; gap:9px; align-items:baseline; flex-wrap:wrap; }
+  .rank-row .rh b { font-size:14.5px; }
+  .rank-row .rh .meta { font-family:var(--mono); font-size:10.5px; color:var(--ink-3); letter-spacing:.05em; text-transform:uppercase; }
+  .rank-row p { font-size:13px; color:var(--ink-2); max-width:78ch; }
+  .rank-row .say { font-size:12.5px; color:var(--ink-2); border-left:2px solid var(--cold); padding-left:10px; font-style:italic; max-width:78ch; }
 
-  .tl-item.window .tl-body { border-left: 3px solid var(--cold); padding-left: 14px; }
-  .tl-item.window .tl-dot { background: var(--cold); border-color: var(--cold); }
-  .tl-item.window .tl-tag { color: var(--cold); border-color: currentColor; }
+  .resume { border:1px solid var(--line); border-radius:3px; background:var(--panel); box-shadow:var(--shadow); display:flex; flex-direction:column; }
+  .resume-head { display:flex; align-items:center; gap:12px; padding:14px 18px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  .resume-head .dot { width:8px; height:8px; border-radius:50%; background:var(--warn); flex:none; }
+  .resume.filled .resume-head .dot { background:var(--ok); }
+  .resume-head b { font-family:var(--serif); font-size:17px; font-weight:600; }
+  .resume-head .state { font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--warn); }
+  .resume.filled .resume-head .state { color:var(--ok); }
+  .resume-head .acts { margin-left:auto; display:flex; gap:8px; }
+  .resume-body { padding:16px 18px; display:flex; flex-direction:column; gap:12px; }
+  .resume-body p { font-size:13.5px; color:var(--ink-2); max-width:74ch; }
+  textarea { font-family:var(--mono); font-size:12.5px; line-height:1.55; color:var(--ink); background:var(--ground); border:1px solid var(--line); border-radius:3px; padding:12px; width:100%; min-height:220px; resize:vertical; }
+  .saved-note { font-family:var(--mono); font-size:11px; color:var(--ink-3); }
+  .resume-render { white-space:pre-wrap; font-family:var(--mono); font-size:12.5px; line-height:1.6; color:var(--ink-2); background:var(--ground); border:1px solid var(--line-soft); border-radius:3px; padding:14px; overflow-x:auto; max-height:340px; overflow-y:auto; }
+  .steps { display:flex; flex-direction:column; gap:8px; list-style:none; counter-reset:s; }
+  .steps li { font-size:13.5px; color:var(--ink-2); padding-left:26px; position:relative; counter-increment:s; max-width:74ch; }
+  .steps li::before { content:counter(s); position:absolute; left:0; top:1px; font-family:var(--mono); font-size:10px; color:var(--warm); border:1px solid var(--line); border-radius:50%; width:17px; height:17px; display:grid; place-items:center; }
 
-  h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; letter-spacing: -.01em; }
-  .sec { display: flex; flex-direction: column; gap: 14px; }
-  .sechead { display: flex; flex-direction: column; gap: 4px; }
-  .sechead p { font-size: 13.5px; color: var(--ink-2); max-width: 72ch; }
+  h2 { font-family:var(--serif); font-size:22px; font-weight:600; letter-spacing:-.01em; }
+  .sec { display:flex; flex-direction:column; gap:14px; }
+  .sechead { display:flex; flex-direction:column; gap:4px; }
+  .sechead p { font-size:13.5px; color:var(--ink-2); max-width:74ch; }
+  footer { border-top:1px solid var(--line); padding-top:16px; font-size:12px; color:var(--ink-3); display:flex; flex-wrap:wrap; gap:6px 18px; font-family:var(--mono); }
 
-  /* ---- foldables ---- */
-  .folds { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
-  details { background: var(--panel); }
-  details > summary {
-    cursor: pointer; list-style: none; padding: 13px 16px;
-    display: flex; align-items: baseline; gap: 12px;
-    font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--ink);
+  @media (max-width:720px) {
+    .tl-item { grid-template-columns:1fr; }
+    .tl-date { text-align:left; padding:14px 0 0; }
+    .tl-spine { display:none; }
   }
-  details > summary::-webkit-details-marker { display: none; }
-  details > summary::before {
-    content: "+"; font-family: var(--mono); font-size: 15px; color: var(--warm);
-    width: 12px; flex: none; line-height: 1;
-  }
-  details[open] > summary::before { content: "\2212"; }
-  details > summary:hover { background: var(--panel-2); }
-  details > summary .tag {
-    margin-left: auto; font-family: var(--mono); font-size: 10px; letter-spacing: .08em;
-    text-transform: uppercase; color: var(--ink-3); font-weight: 400; flex: none;
-  }
-  details > summary .tag.crit { color: var(--warm); }
-  .fold-body { padding: 0 16px 20px 40px; display: flex; flex-direction: column; gap: 14px; }
-  .fold-body > p { font-size: 13.5px; color: var(--ink-2); max-width: 74ch; }
-  .fold-body h4 {
-    font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
-    color: var(--warm); padding-bottom: 4px; border-bottom: 1px solid var(--line-soft);
-  }
-  .fold-body ul { display: flex; flex-direction: column; gap: 6px; list-style: none; }
-  .fold-body li { font-size: 13.5px; color: var(--ink-2); padding-left: 15px; position: relative; max-width: 76ch; }
-  .fold-body li::before { content: "\2022"; position: absolute; left: 2px; color: var(--ink-3); }
-  .fold-body li strong { color: var(--ink); font-weight: 600; }
-  .fold-body a { color: var(--cold); text-decoration: none; border-bottom: 1px solid var(--line); }
-  .fold-body a:hover { border-bottom-color: var(--cold); }
-  .fold-body code { font-family: var(--mono); font-size: 12px; background: var(--panel-2); padding: 1px 5px; border-radius: 2px; }
-  .fold-body .grp { display: flex; flex-direction: column; gap: 7px; }
-  .callout {
-    border-left: 3px solid var(--warm); background: var(--warm-soft);
-    padding: 11px 14px; font-size: 13px; color: var(--ink-2); border-radius: 0 3px 3px 0; max-width: 76ch;
-  }
-  .callout strong { color: var(--ink); }
-
-  /* ---- resume panel ---- */
-  .resume { border: 1px solid var(--line); border-radius: 3px; background: var(--panel); box-shadow: var(--shadow); display: flex; flex-direction: column; }
-  .resume-head { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
-  .resume-head .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warn); flex: none; }
-  .resume.filled .resume-head .dot { background: var(--ok); }
-  .resume-head b { font-family: var(--serif); font-size: 17px; font-weight: 600; }
-  .resume-head .state { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--warn); }
-  .resume.filled .resume-head .state { color: var(--ok); }
-  .resume-head .acts { margin-left: auto; display: flex; gap: 8px; }
-  .resume-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
-  .resume-body p { font-size: 13.5px; color: var(--ink-2); max-width: 74ch; }
-  textarea {
-    font-family: var(--mono); font-size: 12.5px; line-height: 1.55; color: var(--ink);
-    background: var(--ground); border: 1px solid var(--line); border-radius: 3px;
-    padding: 12px; width: 100%; min-height: 220px; resize: vertical;
-  }
-  textarea:focus-visible { outline: 2px solid var(--warm); outline-offset: -1px; }
-  .btn.primary { background: var(--ink); color: var(--ground); border-color: var(--ink); font-weight: 600; }
-  .btn.primary:hover { opacity: .85; color: var(--ground); }
-  .saved-note { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
-  .resume-render { white-space: pre-wrap; font-family: var(--mono); font-size: 12.5px; line-height: 1.6; color: var(--ink-2); background: var(--ground); border: 1px solid var(--line-soft); border-radius: 3px; padding: 14px; overflow-x: auto; }
-  .steps { display: flex; flex-direction: column; gap: 8px; }
-  .steps li { font-size: 13.5px; color: var(--ink-2); padding-left: 26px; position: relative; counter-increment: s; max-width: 74ch; }
-  .steps { list-style: none; counter-reset: s; }
-  .steps li::before {
-    content: counter(s); position: absolute; left: 0; top: 1px;
-    font-family: var(--mono); font-size: 10px; color: var(--warm);
-    border: 1px solid var(--line); border-radius: 50%; width: 17px; height: 17px;
-    display: grid; place-items: center;
-  }
-
-  footer { border-top: 1px solid var(--line); padding-top: 16px; font-size: 12px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--mono); }
-
-  @media (max-width: 720px) {
-    .hemis { grid-template-columns: 1fr; }
-    .tl-item { grid-template-columns: 1fr; }
-    .tl-date { text-align: left; padding: 14px 0 0; }
-    .tl-spine { display: none; }
-  }
-  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  @media (prefers-reduced-motion: reduce) { * { transition:none !important; animation:none !important; } }
 </style>
 
 <div class="wrap">
@@ -253,26 +226,23 @@
   <header>
     <div class="eyebrow">
       <span>Off-cycle</span><span class="sep">/</span>
-      <span>Jan – Mar 2027</span><span class="sep">/</span>
+      <span>Winter &amp; Spring 2027 only</span><span class="sep">/</span>
       <span>Swept 2026-08-02</span>
     </div>
     <h1>Winternship</h1>
     <p class="sub">
       Sam Rimland — UT Austin, Economics with a Statistics &amp; Data Science minor, Class of 2028.
-      Seeking a January-start off-cycle internship in data, growth, BD, partnerships, or product.
-      US work authorization only. In-person strongly preferred. Staying enrolled on a light load.
+      Ten weeks, in person, starting January. Hard stop in mid-March: study abroad in Japan begins
+      April 1. US work authorization only.
     </p>
   </header>
 
-  <div class="hemis">
-    <div class="hemi n">
-      <b>Northern — the off-season</b>
-      <p>Jan–Mar sits outside the summer cycle. Far fewer postings, and far fewer applicants. Startups post late — often at or after your start date — so outreach beats waiting.</p>
-    </div>
-    <div class="hemi s">
-      <b>Southern — peak summer</b>
-      <p>Australian summer internships run Dec–Feb, overlapping the window exactly. But the 2026/27 intake closed around May 2026. Startups and rolling cycles only.</p>
-    </div>
+  <div class="window-bar">
+    <div class="wb go"><b>Target start</b><span>Mon 4 Jan 2027</span></div>
+    <div class="wb go"><b>Target end</b><span>Fri 12 Mar 2027</span></div>
+    <div class="wb"><b>Duration</b><span>10 weeks</span></div>
+    <div class="wb"><b>Buffer</b><span>19 days</span></div>
+    <div class="wb stop"><b>Hard stop — Japan</b><span>Thu 1 Apr 2027</span></div>
   </div>
 
   <div class="stats" id="stats"></div>
@@ -281,20 +251,21 @@
     <div class="sechead">
       <h2>Pipeline</h2>
       <p>
-        Sorted with live roles first, then dated openings, then outreach targets — within each,
-        highest priority on top. Tier A is applyable today. Tier B opens on a known date.
-        Tier C has no posting; those are direct-outreach targets, which for a January startup
-        start is the primary route, not the fallback. Fit scores marked
-        <span class="ref">~</span> are provisional until the resume is uploaded.
+        Live roles first, then dated openings, then outreach targets; highest priority within each.
+        Everything outside the Jan–Mar 2027 window has been removed — no summer roles, no 2027/28
+        Australian cycle, nothing ending after mid-March. <strong>Flex</strong> is the odds they'll
+        accept your end date; it matters more than usual because yours is immovable.
       </p>
     </div>
+
+    <div class="banner" id="match-banner"></div>
 
     <div class="controls">
       <input type="search" id="q" placeholder="Search company, role, note…" aria-label="Search listings">
       <select id="f-tier" aria-label="Filter by tier"><option value="">All tiers</option></select>
       <select id="f-loc" aria-label="Filter by location"><option value="">All locations</option></select>
       <select id="f-fn" aria-label="Filter by function"><option value="">All functions</option></select>
-      <select id="f-mode" aria-label="Filter by mode"><option value="">All modes</option></select>
+      <select id="f-flex" aria-label="Filter by flexibility"><option value="">All flexibility</option></select>
       <select id="f-status" aria-label="Filter by status"><option value="">All statuses</option></select>
       <button class="btn" id="reset" type="button">Reset</button>
       <span class="count" id="count"></span>
@@ -309,8 +280,11 @@
             <th data-k="fn" scope="col">Function <span class="arr">▾</span></th>
             <th data-k="loc" scope="col">Location <span class="arr">▾</span></th>
             <th data-k="mode" scope="col">Mode <span class="arr">▾</span></th>
-            <th data-k="when" scope="col">Window / Opens <span class="arr">▾</span></th>
+            <th data-k="start" scope="col">Start <span class="arr">▾</span></th>
+            <th data-k="end" scope="col">End <span class="arr">▾</span></th>
+            <th data-k="flex" scope="col">Flex <span class="arr">▾</span></th>
             <th data-k="pay" scope="col">Pay <span class="arr">▾</span></th>
+            <th data-k="prst" scope="col">Prestige <span class="arr">▾</span></th>
             <th data-k="diff" scope="col">Difficulty <span class="arr">▾</span></th>
             <th data-k="fit" scope="col">Fit <span class="arr">▾</span></th>
             <th data-k="pri" scope="col">Priority <span class="arr">▾</span></th>
@@ -327,15 +301,13 @@
     <div class="sechead">
       <h2>Timeline</h2>
       <p>
-        Every date below is drawn from a verified source or a company's published cycle. Where a
-        window is a range rather than a fixed date, it says so — inventing a precise deadline
-        would be worse than useless. Rolling processes close when seats fill, not on the stated
-        deadline, so treat every "opens" date as the day to apply, not the day to start thinking.
+        Dates are from verified sources or a company's published cycle. Ranges say so — inventing
+        precision would be worse than useless. Rolling processes close when seats fill, not on the
+        stated deadline, so read every "opens" date as the day to apply.
       </p>
     </div>
 
     <div class="tl">
-
       <div class="tl-item past">
         <div class="tl-date"><b>1 May 2026</b><span>Passed</span></div>
         <div class="tl-spine"><div class="tl-dot"></div></div>
@@ -343,9 +315,8 @@
           <span class="tl-tag">Closed</span>
           <div class="tl-title">Australian 2026/27 summer intake closed</div>
           <ul>
-            <li>Canva's Software Engineering internship for the <strong>Dec 2026 – Feb 2027</strong> program — the intake that matches your window — closed applications on this date.</li>
-            <li>Atlassian's ANZ recruiting for the same cycle ran <strong>Feb–Jun 2026</strong> and is likewise done.</li>
-            <li><strong>Consequence:</strong> the branded ANZ graduate programs are out for Jan 2027. Australia is still reachable through startups, rolling-cycle firms, and the Sydney banking summer analyst programs — but not through Canva or Atlassian.</li>
+            <li>Canva's internship for the Dec 2026 – Feb 2027 program — the intake matching your window — closed on this date. Atlassian's ANZ recruiting for the same cycle ran Feb–Jun 2026.</li>
+            <li>Australia survives only through startups, rolling-cycle firms, and the Sydney summer analyst programs.</li>
           </ul>
         </div>
       </div>
@@ -355,28 +326,13 @@
         <div class="tl-spine"><div class="tl-dot"></div></div>
         <div class="tl-body">
           <span class="tl-tag">Act this month</span>
-          <div class="tl-title">The four long-lead items</div>
+          <div class="tl-title">The long-lead items</div>
           <ul>
-            <li><strong>Upload the resume.</strong> Blocks real fit scoring and all per-role tailoring. Nothing downstream is fully useful until this exists.</li>
-            <li><strong>Email UT Austin Texas Global</strong> about signing a <em>convenio de prácticas</em>. This is a tripartite agreement between you, a Spanish employer, and the university — without the university's signature there is no legal path to Madrid or Barcelona. One email either unblocks four target companies or kills the market. Longest lead time of anything here.</li>
-            <li><strong>Start the Australian Work and Holiday visa (subclass 462)</strong> if Australia is in play. US citizens qualify at 18–30, partway through tertiary education counts, no government support letter needed, English test waived, ~AUD $640. It is <em>not</em> employer-sponsored, so you can and should apply before having an offer. The US allocation is capped near <strong>2,500 places a year and closes when hit</strong>.</li>
-            <li><strong>Confirm Masa eligibility</strong> for Israel — their programs require proof of Judaism. If you don't qualify, Israel closes and that effort reallocates.</li>
-            <li><strong>Apply to all live Tier A roles.</strong> Eight are open right now.</li>
-            <li><strong>Big 4 advisory spring applications open Aug–Sept.</strong> Deloitte, PwC, EY, KPMG all run analytics-flavored spring cycles. Rolling review — seats fill before the posted deadline.</li>
-            <li>Draft your cold-outreach templates now so September is execution, not writing.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-date"><b>1 Sept 2026</b><span>Fixed date</span></div>
-        <div class="tl-spine"><div class="tl-dot"></div></div>
-        <div class="tl-body">
-          <span class="tl-tag">Opens</span>
-          <div class="tl-title">Birthright Israel Excel registration opens</div>
-          <ul>
-            <li>Global Excel registration for <strong>Summer 2027</strong> opens on this exact date. Highly selective business and tech placements in Tel Aviv.</li>
-            <li><strong>Summer only</strong> — it does not serve a Jan–Mar window. Listed because if you'd take a strong summer placement instead, this is the single date to hit, and it is one of the few hard deadlines in the whole search.</li>
+            <li><strong>Upload the resume.</strong> Blocks real fit scoring and every per-role tailoring pass.</li>
+            <li><strong>Email UT Austin Texas Global</strong> about a <em>convenio de prácticas</em>. Without the university's signature there is no legal route to Madrid or Barcelona. One email decides the market.</li>
+            <li><strong>Ask Texas Global about Japan in the same email.</strong> You're already going in April — find out whether they'll support a January arrival, and whether your program's visa can start earlier.</li>
+            <li><strong>Start the Australian 462 visa</strong> if Australia is in play. Not employer-sponsored, so apply before you have an offer. US allocation caps near 2,500 and closes when hit.</li>
+            <li>Apply to live Tier A roles. Draft outreach templates now so September is sending, not writing.</li>
           </ul>
         </div>
       </div>
@@ -388,10 +344,10 @@
           <span class="tl-tag">Outreach begins</span>
           <div class="tl-title">Cold outreach starts landing</div>
           <ul>
-            <li><strong>Charles Schwab 2027 internship postings begin</strong>, running Sept through November. Austin-based, no relocation.</li>
-            <li><strong>Begin the Tier C outreach campaign</strong> — 37 target companies. August is dead: people are out, Q1 headcount isn't real to anyone yet. A September email lands on a desk that is actually thinking about January.</li>
-            <li>Lead with your availability, not your résumé. Q1 is when startups are understaffed and their summer interns have gone back to school. Frame it as solving their problem.</li>
-            <li>Big 4 advisory cycles continue from August.</li>
+            <li><strong>Charles Schwab 2027 postings begin</strong>, running through November. Austin-based, no relocation.</li>
+            <li><strong>Begin the outreach campaign.</strong> August is dead — people are away and Q1 headcount isn't real to anyone yet. A September email reaches someone actually thinking about January.</li>
+            <li>Lead with the dates, not the résumé. Jan 4 to Mar 12 is the offer.</li>
+            <li>Big 4 advisory spring cycles continue from August.</li>
           </ul>
         </div>
       </div>
@@ -403,10 +359,9 @@
           <span class="tl-tag">Peak posting</span>
           <div class="tl-title">Corporate posting season</div>
           <ul>
-            <li>The densest posting window of the year across large employers — Amazon, Apple, the Big 4, and most structured corporate programs open here.</li>
-            <li>Most of this volume is Summer 2027, but <strong>spring and off-cycle roles ride the same recruiting calendar</strong>, so it's where the corporate side of your pipeline actually fills.</li>
-            <li><strong>Apply within 72 hours of a posting going live.</strong> Rolling review means a role with a March deadline can be effectively closed by October.</li>
-            <li>Push outreach hard through October and follow up on non-replies. One follow-up roughly doubles response rates and almost nobody sends it.</li>
+            <li>Densest posting window of the year. Most volume is Summer 2027, but off-cycle roles ride the same calendar.</li>
+            <li><strong>Apply within 72 hours.</strong> Rolling review means a role with a March deadline can be effectively closed by October.</li>
+            <li>Follow up on non-replies. One follow-up roughly doubles response rates and almost nobody sends it.</li>
           </ul>
         </div>
       </div>
@@ -418,11 +373,9 @@
           <span class="tl-tag">Do not miss</span>
           <div class="tl-title">YC Winter 2027 batch begins</div>
           <ul>
-            <li>The YC W27 batch starts this month. Those companies are typically <strong>one to four people</strong>, have just raised, and need generalists immediately.</li>
-            <li>Hiring processes are measured in <strong>days, not months</strong> — which is the only reason a November action can still produce a January start.</li>
-            <li>Your Jan–Mar availability is a feature to them, not a caveat. So is being a junior who wants to hustle rather than a senior who wants a title.</li>
-            <li><strong>Sweep <code>workatastartup.com</code> end to end</strong> and message founders directly. Not a filtered search — read the whole batch.</li>
-            <li>Also: Atlassian's ANZ recruiting for the <em>2027/28</em> cycle runs Feb–Jun 2027 if you'd consider a later stint.</li>
+            <li>Companies of one to four people, freshly funded, needing generalists immediately. Hiring measured in <strong>days</strong> — the only reason a November action still yields a January start.</li>
+            <li>A fixed 10-week block is easy for them to say yes to. It's a project, not a headcount decision.</li>
+            <li><strong>Sweep <code>workatastartup.com</code> end to end</strong> and message founders directly. Read the whole batch, don't filter.</li>
           </ul>
         </div>
       </div>
@@ -434,40 +387,39 @@
           <span class="tl-tag">Convert</span>
           <div class="tl-title">Startups post Q1 roles; Australian summer starts</div>
           <ul>
-            <li>US startups begin posting their Q1 needs. This is the earliest the job-board channel becomes genuinely productive for your window.</li>
-            <li><strong>Australian summer internships begin</strong> (Dec–Feb). Anything you land there starts now, not in January.</li>
-            <li>Close out offers. Avoid opening new threads over the holidays — response rates collapse from mid-December.</li>
+            <li>US startups begin posting Q1 needs — the earliest the job-board channel is genuinely productive for this window.</li>
+            <li>Australian summer internships begin. Anything there starts in December, not January.</li>
+            <li><strong>Get the March 12 end date in writing</strong> before you accept. Verbal flexibility evaporates.</li>
           </ul>
         </div>
       </div>
 
       <div class="tl-item window">
-        <div class="tl-date"><b>Jan – Mar 2027</b><span>Target window</span></div>
+        <div class="tl-date"><b>4 Jan – 12 Mar</b><span>The window</span></div>
         <div class="tl-spine"><div class="tl-dot"></div></div>
         <div class="tl-body">
-          <span class="tl-tag">The stint</span>
-          <div class="tl-title">Off-cycle internship runs</div>
+          <span class="tl-tag">10 weeks</span>
+          <div class="tl-title">The stint</div>
           <ul>
-            <li>Start. Flexible end date preferred — negotiate that up front rather than raising it in March.</li>
-            <li><strong>Keep a light sweep running.</strong> Startups post Q1 roles throughout January and February, so better options continue to appear after you've started. That's a real scenario worth being ready for.</li>
-            <li>Accounting and audit busy-season internships also run Jan–Apr. Wrong function for you, but they dominate the "Spring 2027" search results — filter past them.</li>
+            <li>Ten weeks, Monday to Friday. Long enough to own a real project, short enough that a startup can absorb you without a headcount fight.</li>
+            <li>Keep a light sweep running — startups post Q1 roles through January and February, so a better option can still appear after you've started.</li>
           </ul>
         </div>
       </div>
 
       <div class="tl-item">
-        <div class="tl-date"><b>Apr 2027</b><span>If pursuing 2027/28</span></div>
+        <div class="tl-date"><b>1 Apr 2027</b><span>Immovable</span></div>
         <div class="tl-spine"><div class="tl-dot"></div></div>
         <div class="tl-body">
-          <span class="tl-tag">Next cycle</span>
-          <div class="tl-title">Canva ANZ 2027/28 applications open</div>
+          <span class="tl-tag">Hard stop</span>
+          <div class="tl-title">Study abroad in Japan begins</div>
           <ul>
-            <li>Canva's next ANZ summer program (Dec 2027 – Feb 2028) opens applications around April 2027.</li>
-            <li>Relevant only if you'd take a second off-cycle stint in your senior year. Noted so the Australian cycle is legible end to end rather than looking arbitrary.</li>
+            <li>Nineteen days of buffer after March 12 — enough for travel, visa collection, and a wrap-up week if something overruns.</li>
+            <li><strong>Disclose the end date in the first conversation, every time.</strong> A firm date is a feature to a startup scoping a project and a dealbreaker only to programs you didn't want anyway. Discovering it in February is what damages a reference.</li>
+            <li>Japan roles carry a bonus you can't get anywhere else: no second relocation, and the stint feeds straight into the semester.</li>
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -475,89 +427,195 @@
     <div class="sechead">
       <h2>Preparation</h2>
       <p>
-        What to learn, build, read, and rehearse between now and January — organized by the
-        function you're applying into. The honest summary: you have roughly five months, which is
-        more than enough, and the binding constraint is <strong>SQL</strong>, not anything about
-        your major. An economics degree with a stats minor is a strong hand for these roles. It
-        just has to be legible to a recruiter screening on keywords.
+        What to learn, build, read, and rehearse before January, organized by function. The honest
+        summary: five months is more than enough, and the binding constraint is <strong>SQL</strong>,
+        not your major. Economics with a stats minor is a strong hand — it just has to be legible to
+        a recruiter screening on keywords.
       </p>
     </div>
 
     <div class="folds">
 
       <details open>
-        <summary>Start here — the five-month plan <span class="tag crit">Read first</span></summary>
+        <summary>Cold-email targets — ranked by odds <span class="tag crit">Start here</span></summary>
         <div class="fold-body">
           <p>
-            Sequenced so each thing you learn is usable in the applications you're sending that
-            same month. Don't study in parallel with applying — study <em>ahead</em> of applying.
+            Ranked by <strong>probability of a yes</strong>, not by prestige. The ranking multiplies
+            three things: can you reach a decision-maker directly, do they need generalist help in
+            Q1, and does your profile match without a stretch. Big names rank lower here — not
+            because they're worse, but because a cold email to Ramp goes into a queue and a cold
+            email to a 12-person startup goes to a founder's phone.
           </p>
-          <div class="grp">
-            <h4>August — close the SQL gap</h4>
-            <ul>
-              <li><strong>SQL is the single highest-return thing you can do</strong>, and it isn't close. It's the keyword that gets an econ major past an analytics résumé screen, and it's the live-coded portion of nearly every data interview. Three to four weeks of daily practice is genuinely enough to interview well.</li>
-              <li>Get to the point where <code>JOIN</code>, <code>GROUP BY</code>, CTEs, and <strong>window functions</strong> are automatic. Window functions are the actual dividing line — most candidates stall there, so fluency reads as real experience.</li>
-              <li>In parallel, draft your outreach templates. September is for sending, not writing.</li>
-            </ul>
+          <div class="callout">
+            <strong>This ranking is profile-based until your resume lands.</strong> Paste it into the
+            Resume panel below and the Fit column re-ranks by keyword overlap; upload the PDF and ask
+            Claude for a real rescoring. Positions 1–4 are unlikely to move much — they're ranked on
+            reachability, which your resume doesn't change.
           </div>
-          <div class="grp">
-            <h4>September — build the portfolio project, start outreach</h4>
-            <ul>
-              <li>One end-to-end analysis you can talk about for ten minutes. It does more work in an interview than any coursework line on your résumé.</li>
-              <li>Begin the Tier C outreach campaign. Roles won't be posted yet; that's the point.</li>
-            </ul>
+
+          <div class="rank">
+            <div class="rank-row"><div class="num">1</div><div class="rb">
+              <div class="rh"><b>YC Winter 2027 batch</b><span class="meta">SF · pre-seed · Nov 2026</span></div>
+              <p>Not one company — roughly 250. One to four people each, funded weeks earlier, no recruiting function, and an acute need for anyone who will do undefined work. Highest hit rate available to you by a wide margin, and the only channel where a fixed 10-week block is unambiguously attractive rather than something to negotiate around.</p>
+              <p class="say">"I'm free January 4 through March 12, full-time, in SF. I've been using [product] and noticed [specific thing]. Want a pair of hands on it?"</p>
+            </div></div>
+            <div class="rank-row"><div class="num">2</div><div class="rb">
+              <div class="rh"><b>Dedalus Labs</b><span class="meta">SF · early-stage AI · $20–25/hr</span></div>
+              <p>Already posted a 2027 intern role, so the budget exists and the objection is pre-cleared. Small enough that asking about a January block reaches whoever decides. Applied AI matches your stated interest without requiring research credentials.</p>
+              <p class="say">Reference their existing intern posting directly and ask whether an off-cycle version is possible.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">3</div><div class="rb">
+              <div class="rh"><b>Osano</b><span class="meta">Austin · Series B · privacy SaaS</span></div>
+              <p>Austin means no relocation, no visa, and the ability to offer an in-person coffee — which converts far better than any email. Small teams, generalist-friendly, low inbound competition compared to coastal startups.</p>
+              <p class="say">Lead with being local and available in person. That alone puts you ahead of a remote applicant pool.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">4</div><div class="rb">
+              <div class="rh"><b>AlertMedia</b><span class="meta">Austin · late-stage · strong BD org</span></div>
+              <p>Real BD organization, Austin-based, and large enough to have budget but not so large that it's process-bound. BD is the function where a junior can generate measurable value inside ten weeks, which makes the ask easy to say yes to.</p>
+              <p class="say">Offer something countable: "I'll build you a qualified prospect list in a segment you're not covering."</p>
+            </div></div>
+            <div class="rank-row"><div class="num">5</div><div class="rb">
+              <div class="rh"><b>Self Financial</b><span class="meta">Austin · fintech · mission-driven</span></div>
+              <p>Credit-building fintech — genuinely economics-adjacent, so your coursework is directly relevant rather than tangentially so. Austin again: no logistics, in-person possible.</p>
+              <p class="say">Connect your econ background to their actual problem — consumer credit access is a subject you can speak about with real substance.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">6</div><div class="rb">
+              <div class="rh"><b>Alloy</b><span class="meta">NYC · Series C · fintech infra</span></div>
+              <p>Small BD team at a company big enough to be credible on a résumé. Fintech infrastructure rewards someone who can hold both a technical conversation and a commercial one.</p>
+              <p class="say">Name a specific customer segment you'd go after and why.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">7</div><div class="rb">
+              <div class="rh"><b>Justworks</b><span class="meta">NYC · late-stage · HR tech</span></div>
+              <p>Social culture, accessible BD organization, and a lower difficulty rating than most NYC names on your list. A realistic in-person NYC option.</p>
+              <p class="say">Culture fit is a real screen here — let some personality into the email.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">8</div><div class="rb">
+              <div class="rh"><b>LayerX</b><span class="meta">Tokyo · Series B · English-friendly</span></div>
+              <p>The Japan play. A January–March Tokyo stint flows directly into your April semester — no second relocation, and you arrive with a network already built. Realistically unpaid on a Temporary Visitor status, which is exactly the case where unpaid earns its keep.</p>
+              <p class="say">Lead with the fact that you're relocating to Japan regardless. That makes you cheaper and lower-risk than any other foreign candidate.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">9</div><div class="rb">
+              <div class="rh"><b>Dorsia</b><span class="meta">NYC · early · consumer</span></div>
+              <p>Consumer product, NYC-native, small enough to reach the founder. Growth and partnerships work at a consumer company is social and fast-moving — matches what you said you want.</p>
+              <p class="say">Use the product first. For a consumer company this is non-negotiable and immediately obvious if you haven't.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">10</div><div class="rb">
+              <div class="rh"><b>Sardine</b><span class="meta">NYC · Series C · fraud &amp; risk AI</span></div>
+              <p>Quantitative and applied — statistics used against a real adversarial problem. Better fit for the stats minor than most "data" roles, which are often reporting jobs in disguise.</p>
+              <p class="say">Bring a statistical observation, not enthusiasm about AI.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">11</div><div class="rb">
+              <div class="rh"><b>Ubie</b><span class="meta">Tokyo · health AI · English-friendly</span></div>
+              <p>Second Japan option. Health AI with an international orientation and a track record of hiring non-Japanese speakers. Same relocation logic as LayerX.</p>
+              <p class="say">Same framing: you're moving to Japan anyway, so you're a low-risk hire.</p>
+            </div></div>
+            <div class="rank-row"><div class="num">12</div><div class="rb">
+              <div class="rh"><b>Attentive</b><span class="meta">NYC · late-stage · quantitative marketing</span></div>
+              <p>Best pure-fit company on the list for an econ-plus-stats profile — growth work that is genuinely statistical. Ranked twelfth only because scale means a cold email is likelier to land in a queue than on a desk.</p>
+              <p class="say">Find the specific growth or analytics lead on LinkedIn. Do not use the careers form.</p>
+            </div></div>
           </div>
-          <div class="grp">
-            <h4>October — interview mechanics</h4>
-            <ul>
-              <li>Write and rehearse six to eight <strong>STAR stories</strong> that cover conflict, failure, leadership, ambiguity, persuasion, and quantitative impact. Same stories, recombined — you don't need one per question.</li>
-              <li>Start case practice for whichever track you're targeting hardest.</li>
-              <li>Peak corporate posting season. Apply within 72 hours of anything going live.</li>
-            </ul>
+
+          <h4>Rules that raise the hit rate</h4>
+          <ul>
+            <li><strong>Five sentences.</strong> Longer emails get read later, which means never.</li>
+            <li><strong>Open with an observation about their product, not about yourself.</strong> Sign up, use it, find one real thing. This single move separates you from everyone attaching a résumé.</li>
+            <li><strong>State the dates in the first line.</strong> January 4 to March 12, full-time, in person. Specificity reads as someone who has thought it through.</li>
+            <li><strong>Ask for something small</strong> — 15 minutes, not a job. The yes is easier and the conversation is where the job actually happens.</li>
+            <li><strong>Send Tuesday to Thursday, early morning their time.</strong> Follow up once after five business days. Then stop.</li>
+            <li><strong>Email the founder at seed stage, the function lead past Series B.</strong> A CEO at 300 people won't read it; a CEO at 12 will.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Japan — the strategic case and the visa reality <span class="tag crit">New</span></summary>
+        <div class="fold-body">
+          <p>
+            You're moving to Japan on April 1 regardless. That turns Tokyo from an exotic option into
+            arguably the most logical market on this list — and it comes with one hard constraint
+            that shapes everything.
+          </p>
+          <h4>The visa reality</h4>
+          <ul>
+            <li><strong>Japan has no working-holiday agreement with the United States.</strong> Unlike Australia, there is no self-sponsored route to paid work.</li>
+            <li><strong>Paid</strong> internships require a <em>Designated Activities</em> visa, sponsored by the employer. Possible, but few companies will run that process for ten weeks.</li>
+            <li><strong>Unpaid</strong> internships of 90 days or less, for students enrolled at an overseas university, can be done on <em>Temporary Visitor</em> status. <strong>Jan 4 to Mar 12 is 68 days — comfortably inside that limit.</strong></li>
+            <li>Longer unpaid arrangements use a <em>Cultural Activities</em> visa; not needed at your length.</li>
+            <li>Once you're on a student visa from April, you can work part-time up to 28 hours a week with permission — so a January unpaid stint can convert into paid part-time work in the same company from spring.</li>
+          </ul>
+          <div class="callout">
+            <strong>This is the case where unpaid is worth it.</strong> You said unpaid is acceptable when
+            strategically valuable. A Tokyo stint costs no second relocation, builds a network before
+            your semester starts, gives you a Japanese company on your résumé while you study there,
+            and can convert to paid part-time work in April. Few unpaid roles clear that bar. This one does.
           </div>
-          <div class="grp">
-            <h4>November — the YC sweep</h4>
-            <ul>
-              <li>Highest-leverage month. Startup interviews are conversational rather than structured, so what matters is fluency about <em>their</em> product and market, not framework recall.</li>
-              <li>Read the batch. Message founders directly. Speed beats polish here.</li>
-            </ul>
-          </div>
-          <div class="grp">
-            <h4>December — convert</h4>
-            <ul>
-              <li>Close offers. Negotiate the flexible end date up front, before you start, never in March.</li>
-            </ul>
-          </div>
+          <h4>Where to look</h4>
+          <ul>
+            <li><a href="https://japan-dev.com/" target="_blank" rel="noopener">Japan Dev</a> and <a href="https://www.tokyodev.com/" target="_blank" rel="noopener">TokyoDev</a> — English-first Japanese tech jobs. Engineering-skewed, but the companies listed are exactly the ones that hire foreigners in any function.</li>
+            <li><a href="https://coralcap.co/" target="_blank" rel="noopener">Coral Capital</a> — Tokyo VC that publishes in English and runs a portfolio job board. The single best entry point into the English-friendly Japanese startup scene.</li>
+            <li><a href="https://www.iagora.com/work/en/jobs-and-internships/for-english-speakers/japan/tokyo" target="_blank" rel="noopener">iAgora Tokyo</a> — English-speaker roles and internships.</li>
+            <li>Around 70% of Japanese startups are headquartered in Tokyo, and the internationally-oriented ones actively want native English speakers for overseas market work.</li>
+          </ul>
+          <h4>How to position</h4>
+          <ul>
+            <li><strong>Lead with the April relocation.</strong> It removes their biggest objections at once — no visa sponsorship, no housing, no flight risk, and someone who'll still be in the country afterward.</li>
+            <li>Target companies with overseas ambitions. A native English speaker who can write their market research, localize their copy, or handle international partnerships is a scarce and concrete asset.</li>
+            <li>Don't claim Japanese ability you don't have. English-first companies exist and are the right target; overstating language skill fails immediately.</li>
+            <li>Say the words "unpaid is fine" early if it is. It removes the budget conversation entirely and is the fastest path to yes.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>The five-month plan</summary>
+        <div class="fold-body">
+          <p>Sequenced so each thing you learn is usable in the applications you send that month. Study ahead of applying, not alongside it.</p>
+          <div class="grp"><h4>August — close the SQL gap</h4><ul>
+            <li><strong>SQL is the highest-return thing you can do</strong>, and it isn't close. It's the keyword that gets an econ major past an analytics screen and the live-coded part of nearly every data interview. Three to four weeks of daily practice is genuinely enough.</li>
+            <li>Get <code>JOIN</code>, <code>GROUP BY</code>, CTEs, and <strong>window functions</strong> automatic. Window functions are the dividing line — most candidates stall there, so fluency reads as real experience.</li>
+            <li>Draft outreach templates. September is for sending.</li>
+          </ul></div>
+          <div class="grp"><h4>September — build the project, start outreach</h4><ul>
+            <li>One end-to-end analysis you can talk about for ten minutes. Does more work in an interview than any coursework line.</li>
+            <li>Begin outreach. Roles won't be posted yet — that's the point.</li>
+          </ul></div>
+          <div class="grp"><h4>October — interview mechanics</h4><ul>
+            <li>Write and rehearse six to eight <strong>STAR stories</strong> covering conflict, failure, leadership, ambiguity, persuasion, and quantified impact. They recombine to cover almost anything.</li>
+            <li>Case practice for your hardest-targeted track. Apply within 72 hours of any posting.</li>
+          </ul></div>
+          <div class="grp"><h4>November — the YC sweep</h4><ul>
+            <li>Startup interviews are conversational. What matters is fluency about their product and market, not framework recall.</li>
+          </ul></div>
+          <div class="grp"><h4>December — convert</h4><ul>
+            <li>Close offers. Get March 12 in writing before you accept.</li>
+          </ul></div>
         </div>
       </details>
 
       <details>
         <summary>SQL — the gate <span class="tag crit">Priority 1</span></summary>
         <div class="fold-body">
-          <p>
-            Required for every data and growth role on your list, and quietly expected in BD and PM
-            roles at data-literate companies. This is the one item where being self-taught is
-            completely normal and nobody will ask where you learned it.
-          </p>
+          <p>Required for every data and growth role here, and quietly expected in BD and PM roles at data-literate companies. The one item where being self-taught is completely normal.</p>
           <h4>Learn</h4>
           <ul>
-            <li>Core: <code>SELECT</code>, <code>WHERE</code>, <code>GROUP BY</code>, <code>HAVING</code>, all four <code>JOIN</code> types, subqueries, CTEs (<code>WITH</code>).</li>
-            <li><strong>Window functions</strong> — <code>ROW_NUMBER</code>, <code>RANK</code>, <code>LAG</code>/<code>LEAD</code>, running totals, <code>PARTITION BY</code>. Where most candidates stop and where interviews concentrate.</li>
-            <li>Applied patterns: cohort retention, funnel conversion by step, month-over-month growth, deduplication, finding the nth-highest value.</li>
+            <li>Core: <code>SELECT</code>, <code>WHERE</code>, <code>GROUP BY</code>, <code>HAVING</code>, all four <code>JOIN</code> types, subqueries, CTEs.</li>
+            <li><strong>Window functions</strong> — <code>ROW_NUMBER</code>, <code>RANK</code>, <code>LAG</code>/<code>LEAD</code>, running totals, <code>PARTITION BY</code>.</li>
+            <li>Applied patterns: cohort retention, funnel conversion by step, month-over-month growth, deduplication, nth-highest value.</li>
             <li>Enough schema literacy to ask "what's the grain of this table?" — that question alone signals experience.</li>
           </ul>
           <h4>Practice</h4>
           <ul>
-            <li><a href="https://mode.com/sql-tutorial/" target="_blank" rel="noopener">Mode's SQL Tutorial</a> — free, browser-based, business-analytics framing rather than CS framing. Best starting point for you specifically.</li>
-            <li><a href="https://datalemur.com/" target="_blank" rel="noopener">DataLemur</a> — real interview questions from real companies, free tier is substantial.</li>
-            <li><a href="https://www.stratascratch.com/" target="_blank" rel="noopener">StrataScratch</a> — company-tagged problems, good for targeted prep.</li>
-            <li>Daily beats weekly. Thirty minutes a day for four weeks outperforms four long weekends.</li>
+            <li><a href="https://mode.com/sql-tutorial/" target="_blank" rel="noopener">Mode's SQL Tutorial</a> — free, browser-based, business-analytics framing rather than CS framing. Best start for you specifically.</li>
+            <li><a href="https://datalemur.com/" target="_blank" rel="noopener">DataLemur</a> — real interview questions, substantial free tier.</li>
+            <li><a href="https://www.stratascratch.com/" target="_blank" rel="noopener">StrataScratch</a> — company-tagged problems.</li>
+            <li>Thirty minutes daily for four weeks beats four long weekends.</li>
           </ul>
           <h4>Interview form</h4>
           <ul>
-            <li>Live-coded in a shared editor, 20–30 minutes, usually two to three questions escalating in difficulty.</li>
-            <li><strong>Narrate as you write.</strong> They're evaluating how you decompose a problem more than whether the syntax runs. Saying "I'll get the per-user first purchase, then join back" is worth more than silently producing correct output.</li>
-            <li>Ask about edge cases before writing: nulls, duplicates, ties. Volunteering that is a senior signal.</li>
+            <li>Live-coded, 20–30 minutes, two to three escalating questions.</li>
+            <li><strong>Narrate as you write.</strong> They're evaluating decomposition more than syntax.</li>
+            <li>Ask about nulls, duplicates, and ties before writing. Volunteering that is a senior signal.</li>
           </ul>
         </div>
       </details>
@@ -565,22 +623,17 @@
       <details>
         <summary>Python, spreadsheets, and BI tooling <span class="tag">Priority 2</span></summary>
         <div class="fold-body">
-          <p>
-            You need working fluency, not software engineering. Nobody is asking you to pass a
-            LeetCode gauntlet for an analytics internship — they're asking whether you can load a
-            messy CSV and answer a question with it.
-          </p>
+          <p>Working fluency, not software engineering. The question is whether you can load a messy CSV and answer something with it.</p>
           <h4>Learn</h4>
           <ul>
-            <li><strong>pandas</strong> — read, merge, groupby, pivot, handle missing data. This is 80% of the job.</li>
-            <li>Basic plotting (matplotlib or seaborn) and Jupyter notebooks as a working medium.</li>
-            <li><strong>Spreadsheets, seriously.</strong> Pivot tables, <code>INDEX/MATCH</code> or <code>XLOOKUP</code>, and building a clean model. Underrated — at startups and in BD roles, more real analysis happens in a spreadsheet than anywhere else.</li>
-            <li>One BI tool at a conversational level: <strong>Tableau</strong> or <strong>Looker</strong>. Enough to say what a dashboard should show and why.</li>
+            <li><strong>pandas</strong> — read, merge, groupby, pivot, handle missing data. Eighty percent of the job.</li>
+            <li>Basic plotting and Jupyter notebooks as a working medium.</li>
+            <li><strong>Spreadsheets, seriously.</strong> Pivot tables, <code>XLOOKUP</code>, clean models. At startups and in BD, more real analysis happens here than anywhere else.</li>
+            <li>One BI tool conversationally: <strong>Tableau</strong> or <strong>Looker</strong>.</li>
           </ul>
-          <h4>Skip for now</h4>
+          <h4>Skip</h4>
           <ul>
-            <li>Machine learning, deep learning, and MLOps. Not what these roles hire for, and claiming them invites questions you can't win.</li>
-            <li>Software engineering fundamentals beyond writing readable scripts.</li>
+            <li>Machine learning and MLOps. Not what these roles hire for, and claiming it invites questions you can't win.</li>
           </ul>
         </div>
       </details>
@@ -588,23 +641,19 @@
       <details>
         <summary>Statistics &amp; experimentation — your edge <span class="tag">Your strength</span></summary>
         <div class="fold-body">
-          <p>
-            This is where the stats minor earns its keep. Most growth and BD candidates cannot
-            explain a confidence interval. Most data candidates can't explain one to a
-            non-technical stakeholder. Being able to do both is the entire pitch.
-          </p>
+          <p>Where the stats minor earns its keep. Most growth candidates can't explain a confidence interval; most data candidates can't explain one to a non-technical stakeholder. Doing both is the entire pitch.</p>
           <h4>Sharpen</h4>
           <ul>
-            <li><strong>A/B testing end to end</strong>: hypothesis, randomization, sample size and power, minimum detectable effect, when to stop, what breaks when you peek at results early.</li>
-            <li>Interpreting regression output for a business audience — coefficient meaning, what R² does and doesn't tell you, why correlation isn't causation in a way that doesn't sound like a textbook.</li>
-            <li>Selection bias, survivorship bias, Simpson's paradox. Econometrics gives you these already; the skill is naming them in a product context.</li>
-            <li>The multiple-comparisons problem — why testing twenty metrics guarantees a false positive.</li>
+            <li><strong>A/B testing end to end</strong>: hypothesis, randomization, sample size and power, minimum detectable effect, when to stop, what breaks when you peek early.</li>
+            <li>Interpreting regression for a business audience — coefficients, what R² does and doesn't say, causation without sounding like a textbook.</li>
+            <li>Selection bias, survivorship bias, Simpson's paradox. Econometrics gives you these; the skill is naming them in a product context.</li>
+            <li>Multiple comparisons — why testing twenty metrics guarantees a false positive.</li>
           </ul>
           <h4>Interview form</h4>
           <ul>
-            <li>"Explain a p-value to a product manager who doesn't know statistics." Asked constantly. Rehearse it out loud until it's 30 seconds and jargon-free.</li>
-            <li>"We ran a test, the result was significant, should we ship?" The correct answer explores effect size, cost, duration, and novelty effects — not just the p-value.</li>
-            <li>"This metric dropped 15% overnight. What do you do?" A diagnostic case. Structure it: is it real or instrumentation, is it all users or a segment, what changed on that date.</li>
+            <li>"Explain a p-value to a PM who doesn't know statistics." Asked constantly. Rehearse until it's 30 seconds and jargon-free.</li>
+            <li>"The result was significant, should we ship?" The right answer explores effect size, cost, duration, novelty effects.</li>
+            <li>"This metric dropped 15% overnight." Structure it: real or instrumentation, all users or a segment, what changed that day.</li>
           </ul>
         </div>
       </details>
@@ -612,61 +661,57 @@
       <details>
         <summary>Growth <span class="tag">Ramp · Attentive · Brex · Linktree</span></summary>
         <div class="fold-body">
-          <p>Quantitative marketing. The closest function to your natural combination, and the one where the econ background is a differentiator rather than something to explain away.</p>
+          <p>Quantitative marketing. Closest function to your natural combination, and where the econ background is a differentiator rather than something to explain.</p>
           <h4>Know</h4>
           <ul>
-            <li>The funnel: acquisition, activation, retention, referral, revenue. Know which stage a given company is actually constrained by — that's the question behind most growth interviews.</li>
-            <li><strong>Retention curves.</strong> Understand why a curve that flattens means product-market fit and one that decays to zero means you have a leaky bucket, not a growth problem.</li>
-            <li>LTV, CAC, payback period, and why CAC-to-LTV ratios mislead when growth is fast.</li>
-            <li>Cohort analysis, north star metrics, and the difference between a vanity metric and an actionable one.</li>
-            <li>Channel basics: paid vs organic vs referral vs sales-led, and product-led growth as a motion.</li>
+            <li>The funnel: acquisition, activation, retention, referral, revenue. Know which stage a company is actually constrained by — that's the question behind most growth interviews.</li>
+            <li><strong>Retention curves.</strong> A curve that flattens means product-market fit; one that decays to zero means a leaky bucket, not a growth problem.</li>
+            <li>LTV, CAC, payback period, and why CAC-to-LTV misleads when growth is fast.</li>
+            <li>Cohort analysis, north star metrics, vanity versus actionable metrics.</li>
+            <li>Channels: paid, organic, referral, sales-led, and product-led growth as a motion.</li>
           </ul>
           <h4>Read</h4>
           <ul>
-            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> — the default shared vocabulary of growth and product people. Free tier is plenty. If you read one thing, read this.</li>
-            <li><a href="https://andrewchen.com/" target="_blank" rel="noopener">Andrew Chen's essays</a> — network effects, growth loops, cold-start problems.</li>
-            <li>Reforge writes the best growth material anywhere; the courses are expensive, but their public essays are free and worth reading.</li>
+            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> — the shared vocabulary of growth and product. If you read one thing, read this.</li>
+            <li><a href="https://andrewchen.com/" target="_blank" rel="noopener">Andrew Chen</a> — network effects, growth loops, cold-start problems.</li>
+            <li>Reforge's public essays are free and the best growth material anywhere.</li>
           </ul>
           <h4>Interview form</h4>
           <ul>
-            <li>"How would you grow [our product]?" — Don't list tactics. Identify the constraint first, then propose experiments against it, with the metric you'd move and how you'd measure it.</li>
-            <li>Estimation and sizing questions. Show your assumptions explicitly; the number matters less than whether your reasoning is auditable.</li>
+            <li>"How would you grow our product?" Don't list tactics. Identify the constraint, propose experiments against it, name the metric and how you'd measure.</li>
+            <li>Estimation questions — show assumptions explicitly; auditable reasoning beats the number.</li>
             <li>Expect a SQL screen attached. Growth roles are data roles wearing a marketing hat.</li>
           </ul>
         </div>
       </details>
 
       <details>
-        <summary>Business development &amp; sales <span class="tag">Alloy · Justworks · AlertMedia · SafetyCulture</span></summary>
+        <summary>Business development &amp; sales <span class="tag">Alloy · Justworks · AlertMedia</span></summary>
         <div class="fold-body">
-          <p>
-            The most learnable track on this list and the one where hustle substitutes most
-            directly for credentials. It's also the one where a junior can produce measurable
-            value inside a three-month window, which makes it an easier ask for a January start.
-          </p>
+          <p>Most learnable track here, and the one where hustle substitutes most directly for credentials. Also where a junior can produce measurable value inside ten weeks — which makes it the easiest ask for a fixed window.</p>
           <h4>Know</h4>
           <ul>
-            <li>The pipeline: prospecting, qualification, discovery, demo, proposal, negotiation, close. Know what happens at each stage and what causes deals to stall.</li>
-            <li>Qualification frameworks — <strong>MEDDIC</strong> and <strong>BANT</strong>. Know them well enough to name them; interviewers use them as shorthand.</li>
-            <li>The difference between inbound and outbound, and between an SDR (books meetings) and an AE (closes). Startups blur these; know which you're being offered.</li>
-            <li>CRM mechanics — Salesforce or HubSpot. Even surface familiarity helps.</li>
-            <li><strong>Founder-led sales</strong> at early-stage companies: no playbook exists yet, and you'd be helping write it. That's the pitch to a seed-stage startup.</li>
+            <li>The pipeline: prospecting, qualification, discovery, demo, proposal, negotiation, close. Know what stalls deals at each stage.</li>
+            <li><strong>MEDDIC</strong> and <strong>BANT</strong> — know them well enough to name them; interviewers use them as shorthand.</li>
+            <li>SDR (books meetings) versus AE (closes). Startups blur these; know which you're being offered.</li>
+            <li>CRM mechanics — Salesforce or HubSpot. Surface familiarity helps.</li>
+            <li><strong>Founder-led sales</strong>: no playbook exists yet and you'd help write it. That's the pitch to a seed-stage company.</li>
           </ul>
           <h4>Read</h4>
           <ul>
-            <li><em>Founding Sales</em> by Pete Kazanjy — free online, written specifically for startup sales from zero. The single most relevant book for the roles you're targeting.</li>
-            <li><em>SPIN Selling</em> for discovery question technique; <em>The Challenger Sale</em> for the framing most B2B teams reference.</li>
+            <li><em>Founding Sales</em> by Pete Kazanjy — free online, written for startup sales from zero. Most relevant book for your targets.</li>
+            <li><em>SPIN Selling</em> for discovery technique; <em>The Challenger Sale</em> for the framing most B2B teams reference.</li>
           </ul>
           <h4>Interview form</h4>
           <ul>
-            <li><strong>Mock cold call or role-play.</strong> Extremely common and it is where most candidates fall apart. Practice out loud with a friend. Being bad at this is fine; being visibly unwilling to try is disqualifying.</li>
-            <li>"Sell me this pen" variants — the real test is whether you ask questions before pitching. Most people pitch. Don't.</li>
-            <li>They're screening for coachability and resilience above polish. Say what you'd do differently after a rejection.</li>
+            <li><strong>Mock cold call or role-play.</strong> Extremely common, and where most candidates fall apart. Practice out loud. Being bad is fine; being unwilling to try is disqualifying.</li>
+            <li>"Sell me this pen" — the real test is whether you ask questions before pitching. Most people pitch.</li>
+            <li>They screen for coachability over polish. Say what you'd do differently after a rejection.</li>
           </ul>
           <div class="callout">
-            <strong>Do this before any BD interview:</strong> actually cold-email ten people this month
-            about anything. Being able to say "I sent 40 cold emails and 6 replied, here's what I
-            changed after the first 20" beats every framework you could memorize.
+            <strong>Before any BD interview:</strong> cold-email ten real people this month. "I sent 40 cold
+            emails, 6 replied, here's what I changed after the first 20" beats every framework you
+            could memorize — and it doubles as your actual job search.
           </div>
         </div>
       </details>
@@ -674,18 +719,18 @@
       <details>
         <summary>Strategic partnerships <span class="tag">Vanta · Immutable · Sierra</span></summary>
         <div class="fold-body">
-          <p>Hardest track to study for and the one with the fewest junior openings — usually staffed by people who did BD first. Worth targeting where a company is explicitly partnership-led.</p>
+          <p>Hardest to study for, fewest junior openings — usually staffed by people who did BD first. Worth targeting only where a company is explicitly partnership-led.</p>
           <h4>Know</h4>
           <ul>
-            <li>Partnership types: <strong>channel/reseller</strong> (they sell for you), <strong>technology/integration</strong> (products connect), <strong>co-marketing</strong>, and <strong>strategic alliances</strong>. Confusing these is the tell of someone who hasn't done it.</li>
-            <li>Why companies partner instead of building or buying — distribution access, credibility, filling a product gap.</li>
-            <li>How partnerships get measured: sourced pipeline, influenced revenue, integration adoption. Notoriously hard to attribute, and saying so shows you understand the function.</li>
-            <li>Basic contract vocabulary: MSA, SLA, revenue share, exclusivity, term and termination.</li>
+            <li>Types: <strong>channel/reseller</strong>, <strong>technology/integration</strong>, <strong>co-marketing</strong>, <strong>strategic alliances</strong>. Confusing these is the tell of someone who hasn't done it.</li>
+            <li>Why companies partner instead of building or buying — distribution, credibility, product gaps.</li>
+            <li>Measurement: sourced pipeline, influenced revenue, integration adoption. Notoriously hard to attribute, and saying so shows you understand the function.</li>
+            <li>Contract vocabulary: MSA, SLA, revenue share, exclusivity, term and termination.</li>
           </ul>
           <h4>Preparation</h4>
           <ul>
-            <li>Pick a target company and map its actual partner ecosystem from its own site — integrations page, partner directory, press releases. Walking in with that map is a stronger opener than any framework.</li>
-            <li>Then form a view: which partner is underleveraged, and what would you do about it? Have one specific answer ready.</li>
+            <li>Map a target's partner ecosystem from its own site — integrations page, partner directory, press releases. Walking in with that map beats any framework.</li>
+            <li>Then form a view: which partner is underleveraged, and what would you do about it?</li>
           </ul>
         </div>
       </details>
@@ -693,25 +738,24 @@
       <details>
         <summary>Product management <span class="tag">Notion · Typeform</span></summary>
         <div class="fold-body">
-          <p>The most competitive track per seat, and the one where being pre-senior hurts most — most APM programs recruit graduating seniors. Realistic as a startup role, hard as a branded program.</p>
+          <p>Most competitive per seat, and where being pre-senior hurts most — APM programs recruit graduating seniors. Realistic as a startup role, hard as a branded program.</p>
           <h4>Know</h4>
           <ul>
-            <li><strong>Product sense</strong> — the ability to reason from a user problem to a solution and defend the tradeoff. Not memorizable; developed by critiquing products deliberately.</li>
-            <li>Prioritization frameworks (RICE, impact/effort) as vocabulary, not as a crutch. Reciting a framework instead of thinking is the classic failure mode.</li>
-            <li>Writing specs, defining success metrics before launch, and knowing what a PM actually does versus what they're imagined to do.</li>
-            <li>Enough technical literacy to talk credibly with engineers: what an API is, what a database does, why something is hard.</li>
+            <li><strong>Product sense</strong> — reasoning from a user problem to a solution and defending the tradeoff. Developed by critiquing products deliberately, not memorized.</li>
+            <li>Prioritization frameworks as vocabulary, not a crutch. Reciting a framework instead of thinking is the classic failure.</li>
+            <li>Writing specs, defining success metrics before launch, knowing what a PM actually does.</li>
+            <li>Enough technical literacy to talk credibly with engineers.</li>
           </ul>
           <h4>Read</h4>
           <ul>
-            <li><em>Decode and Conquer</em> (Lewis Lin) and <em>Cracking the PM Interview</em> (McDowell &amp; Bavaro) — the two standards.</li>
-            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> again; it's as much a PM resource as a growth one.</li>
-            <li><a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> for strategic reasoning about why products and business models work.</li>
+            <li><em>Decode and Conquer</em> (Lewis Lin) and <em>Cracking the PM Interview</em> — the two standards.</li>
+            <li><a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> for strategic reasoning about why business models work.</li>
           </ul>
           <h4>Interview form</h4>
           <ul>
-            <li>Product design: "Design X for Y user." Structure it — clarify the goal, pick a user segment, list their pain points, propose solutions, choose one and say why, define the success metric.</li>
-            <li>Product critique: "What's your favorite product and how would you improve it?" Pick something unglamorous you genuinely use. Everyone picks Spotify.</li>
-            <li>Analytical: "Metric X dropped, diagnose it." Overlaps heavily with the data track — your advantage.</li>
+            <li>Product design: clarify the goal, pick a segment, list pain points, propose solutions, choose one and justify, define the metric.</li>
+            <li>Critique: pick something unglamorous you genuinely use. Everyone picks Spotify.</li>
+            <li>Analytical diagnosis — overlaps with the data track. Your advantage.</li>
           </ul>
         </div>
       </details>
@@ -719,33 +763,24 @@
       <details>
         <summary>The startup generalist track <span class="tag crit">Highest leverage</span></summary>
         <div class="fold-body">
-          <p>
-            Founder's associate, chief of staff, first business hire. Given your November YC sweep,
-            this is the most probable path to an actual January start — so prepare for it hardest,
-            even though it's the least formalized.
-          </p>
+          <p>Founder's associate, chief of staff, first business hire. Given the November YC sweep, the most probable route to an actual January start — so prepare hardest here, despite it being least formalized.</p>
           <h4>Know</h4>
           <ul>
-            <li>How early-stage companies work: what pre-seed, seed, Series A actually mean, what runway is, what a founder is worried about at each stage.</li>
+            <li>How early-stage works: what pre-seed, seed, and Series A mean, what runway is, what a founder worries about at each stage.</li>
             <li>Why a two-person company hires a generalist — they're drowning, not building a career ladder. Your pitch is <em>relief</em>, not potential.</li>
-            <li>Enough of everything: pull a number, write a cold email, take a customer call, put together a deck, keep a spreadsheet honest.</li>
+            <li>Enough of everything: pull a number, write a cold email, take a customer call, build a deck, keep a spreadsheet honest.</li>
           </ul>
           <h4>Read</h4>
           <ul>
-            <li><a href="https://www.ycombinator.com/library" target="_blank" rel="noopener">The YC Library</a> and Startup School — free, and it is exactly the worldview your interviewer holds.</li>
-            <li><a href="https://paulgraham.com/articles.html" target="_blank" rel="noopener">Paul Graham's essays</a> — <em>Do Things That Don't Scale</em> and <em>Default Alive or Default Dead</em> in particular.</li>
+            <li><a href="https://www.ycombinator.com/library" target="_blank" rel="noopener">The YC Library</a> and Startup School — free, and exactly the worldview your interviewer holds.</li>
+            <li><a href="https://paulgraham.com/articles.html" target="_blank" rel="noopener">Paul Graham's essays</a> — <em>Do Things That Don't Scale</em> and <em>Default Alive or Default Dead</em>.</li>
           </ul>
           <h4>Interview form</h4>
           <ul>
-            <li>A conversation, not a structured loop. Often the founder, often 30 minutes, often a decision the same week.</li>
+            <li>A conversation, often with the founder, often 30 minutes, often decided that week.</li>
             <li>They screen for: can you start immediately, will you do unglamorous work, do you understand what they're building, will you need managing.</li>
-            <li><strong>Come with a specific observation about their product.</strong> Sign up, use it, find something broken or missing, mention it. That single move separates you from everyone sending a résumé.</li>
+            <li><strong>Come with a specific observation about their product.</strong> Sign up, use it, find something broken. That move separates you from everyone sending a résumé.</li>
           </ul>
-          <div class="callout">
-            <strong>Your Q1 availability is the pitch.</strong> Their summer interns went back to school
-            in September, they're understaffed through Q1, and almost nobody is available in
-            January. Lead the email with the dates, not with your GPA.
-          </div>
         </div>
       </details>
 
@@ -754,25 +789,23 @@
         <div class="fold-body">
           <h4>Behavioral</h4>
           <ul>
-            <li><strong>STAR</strong>: situation, task, action, result. Write six to eight stories covering conflict, failure, leadership, ambiguity, persuasion, and quantified impact. They recombine to cover almost any question.</li>
-            <li>Always quantify the result. "Grew the club from 15 to 60 members" lands; "helped grow the club" doesn't.</li>
-            <li>Have a real failure story with a real lesson. "I'm a perfectionist" is a wasted answer.</li>
+            <li><strong>STAR</strong>: situation, task, action, result. Six to eight stories covering conflict, failure, leadership, ambiguity, persuasion, quantified impact.</li>
+            <li>Always quantify. "Grew the club from 15 to 60" lands; "helped grow the club" doesn't.</li>
+            <li>Have a real failure with a real lesson. "I'm a perfectionist" is a wasted answer.</li>
           </ul>
           <h4>Technical screens</h4>
           <ul>
-            <li>SQL live-coding: 20–30 minutes, two to three escalating questions, narrate throughout.</li>
-            <li>Take-home analysis: a messy dataset and an open question. Graded on framing and communication far more than technique. Lead with the answer, then the method.</li>
+            <li>SQL live-coding, 20–30 minutes, narrate throughout.</li>
+            <li>Take-home analysis: graded on framing and communication far more than technique. Lead with the answer, then the method.</li>
           </ul>
           <h4>Case &amp; product</h4>
           <ul>
-            <li>Structure out loud before diving in. State assumptions. Check in: "does that framing make sense before I go deeper?"</li>
-            <li>Silence is the enemy — thinking out loud is the deliverable.</li>
+            <li>Structure out loud before diving in. State assumptions. Check in before going deeper. Silence is the enemy.</li>
           </ul>
           <h4>Your questions for them</h4>
           <ul>
-            <li>Ask what success looks like at 30 and 90 days. Signals you're thinking about delivery, not just getting hired.</li>
-            <li>For a three-month stint specifically: "What would you want done by March?" Reframes you as someone who ships.</li>
-            <li>Never ask something answerable from their homepage.</li>
+            <li>"What would you want done by March 12?" — reframes you as someone who ships, and surfaces the end-date conversation on your terms.</li>
+            <li>Ask what success looks like at 30 days. Never ask what their homepage answers.</li>
           </ul>
         </div>
       </details>
@@ -780,79 +813,66 @@
       <details>
         <summary>What to build — one portfolio project</summary>
         <div class="fold-body">
-          <p>
-            One real project does more than three more courses. It gives every interview a concrete
-            thing to discuss and proves the skills your transcript only implies.
-          </p>
+          <p>One real project beats three more courses. It gives every interview a concrete thing to discuss and proves what your transcript only implies.</p>
           <h4>What makes it work</h4>
           <ul>
             <li><strong>A real question with a real answer</strong>, not a tutorial rerun. "I analyzed Austin housing permit data to test whether new supply moved rents" beats a Titanic notebook by a mile.</li>
             <li>Messy public data, so you demonstrate cleaning — the actual job.</li>
-            <li>Uses SQL or pandas, contains at least one statistical claim you defend, and ends with a recommendation rather than a chart dump.</li>
-            <li>Written up in a README a non-technical reader can follow. The writing is half the signal.</li>
+            <li>SQL or pandas, one statistical claim you defend, and a recommendation rather than a chart dump.</li>
+            <li>A README a non-technical reader can follow. The writing is half the signal.</li>
           </ul>
-          <h4>Angles that fit you specifically</h4>
+          <h4>Angles that fit you</h4>
           <ul>
-            <li>Anything economic — labor markets, housing, pricing, elasticity. Plays your major as a strength rather than a detour.</li>
-            <li>Something about a company you're targeting: model their pricing page, size their market, analyze their public reviews. Doubles as outreach material.</li>
-            <li>Public datasets: BLS, Census, FRED, city open-data portals, Kaggle for structured sets.</li>
+            <li>Anything economic — labor markets, housing, pricing, elasticity. Plays your major as a strength.</li>
+            <li>Something about a target company: model their pricing, size their market, analyze public reviews. Doubles as outreach material.</li>
+            <li><strong>Japan angle:</strong> analyze a market you're about to live in. Instant credibility with every Tokyo company you email.</li>
+            <li>Datasets: BLS, Census, FRED, city open-data portals, e-Stat for Japan.</li>
           </ul>
-          <div class="callout">
-            <strong>Scope it to two weekends.</strong> An unfinished ambitious project is worth nothing;
-            a finished narrow one is worth a lot. Ship it, then write it up.
-          </div>
+          <div class="callout"><strong>Scope it to two weekends.</strong> An unfinished ambitious project is worth nothing; a finished narrow one is worth a lot.</div>
         </div>
       </details>
 
       <details>
         <summary>News &amp; staying current</summary>
         <div class="fold-body">
-          <p>
-            Not for its own sake — so you can hold a conversation with a founder about their market
-            without sounding like you skimmed their homepage that morning. Twenty minutes a day.
-          </p>
+          <p>So you can hold a conversation with a founder about their market without sounding like you skimmed their homepage. Twenty minutes a day.</p>
           <h4>Core</h4>
           <ul>
-            <li><a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> (Ben Thompson) — the best strategic analysis in tech. Free Monday articles are enough.</li>
-            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> — product and growth, and the vocabulary your interviewers use.</li>
-            <li><a href="https://www.theinformation.com/" target="_blank" rel="noopener">The Information</a> — best original reporting in tech. Paywalled, but they run steep student pricing; worth asking.</li>
+            <li><a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> — best strategic analysis in tech. Free Monday articles suffice.</li>
+            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> — product and growth vocabulary your interviewers use.</li>
+            <li><a href="https://www.theinformation.com/" target="_blank" rel="noopener">The Information</a> — best original reporting. Steep student pricing; worth asking.</li>
             <li><a href="https://www.axios.com/newsletters/axios-pro-rata" target="_blank" rel="noopener">Axios Pro Rata</a> — daily funding and M&amp;A in five minutes. Free.</li>
-            <li><a href="https://www.notboring.co/" target="_blank" rel="noopener">Not Boring</a> (Packy McCormick) — long-form company deep dives, genuinely fun to read.</li>
+            <li><a href="https://www.notboring.co/" target="_blank" rel="noopener">Not Boring</a> — long-form company deep dives.</li>
           </ul>
           <h4>By market</h4>
           <ul>
-            <li><strong>AI:</strong> Import AI (Jack Clark) and The Batch (Andrew Ng) — both free, both keep you literate without pretending to be a researcher.</li>
-            <li><strong>Fintech:</strong> Fintech Brainfood (Simon Taylor). Directly relevant to Ramp, Mercury, Brex, Alloy, Airwallex.</li>
+            <li><strong>AI:</strong> Import AI (Jack Clark) and The Batch (Andrew Ng). Free, keep you literate without pretending to be a researcher.</li>
+            <li><strong>Fintech:</strong> Fintech Brainfood. Directly relevant to Ramp, Mercury, Brex, Alloy, Airwallex.</li>
+            <li><strong>Japan:</strong> <a href="https://coralcap.co/" target="_blank" rel="noopener">Coral Capital's blog</a> and Nikkei Asia. Start now — six months of context makes you sound like you belong there.</li>
             <li><strong>Austin:</strong> Austin Inno and Austin Business Journal.</li>
-            <li><strong>Australia:</strong> Australian Financial Review tech section, Startup Daily, SmartCompany. Read these before any ANZ interview — the market has its own reference points.</li>
-            <li><strong>Spain:</strong> Novobrief and El Referente cover the Barcelona and Madrid startup scenes.</li>
+            <li><strong>Australia:</strong> AFR tech section, Startup Daily, SmartCompany.</li>
           </ul>
-          <div class="callout">
-            <strong>Follow founders, not publications.</strong> For any company you're targeting, find the
-            founder on X or LinkedIn and read their last six months. It's the highest-density
-            preparation available and it's free.
-          </div>
+          <div class="callout"><strong>Follow founders, not publications.</strong> For any target company, read the founder's last six months on X or LinkedIn. Highest-density preparation available, and free.</div>
         </div>
       </details>
 
       <details>
         <summary>How to research a company before applying</summary>
         <div class="fold-body">
-          <p>Thirty focused minutes per company. Do this before writing any outreach email — it's the difference between a reply and silence.</p>
+          <p>Thirty focused minutes. The difference between a reply and silence.</p>
           <h4>The pass</h4>
           <ul>
             <li><strong>Use the product.</strong> Sign up for the free tier. Non-negotiable, and almost nobody does it.</li>
-            <li><strong>Read their other job postings.</strong> What they're hiring for reveals what they're struggling with — three sales roles and no engineers means distribution is the constraint.</li>
-            <li>Pricing page — tells you the customer, the deal size, and whether it's self-serve or sales-led.</li>
-            <li>Engineering and company blog — what they're proud of.</li>
-            <li>Crunchbase — last round, size, date, investors. A company that raised recently is hiring; one that raised 30 months ago may not be.</li>
-            <li>Founder podcast appearances. Founders repeat their strategy verbatim across interviews; twenty minutes gives you their exact framing.</li>
+            <li><strong>Read their other job postings.</strong> What they hire for reveals what they're struggling with — three sales roles and no engineers means distribution is the constraint.</li>
+            <li>Pricing page — the customer, the deal size, self-serve versus sales-led.</li>
+            <li>Crunchbase — last round, size, date. Recently funded means hiring; 30 months ago may not.</li>
+            <li>Founder podcast appearances. They repeat their strategy verbatim; twenty minutes gives you their exact framing.</li>
           </ul>
           <h4>Turn it into an email</h4>
           <ul>
-            <li>Open with the specific observation, not with yourself. "Your onboarding asks for a company size before explaining the product — I'd guess that's costing activation" earns a reply.</li>
-            <li>State the dates plainly: available January through March, flexible on the end.</li>
-            <li>One concrete offer of what you'd do. Short. Five sentences total, not fifteen.</li>
+            <li>Open with the observation, not yourself. "Your onboarding asks for company size before explaining the product — I'd guess that costs activation" earns a reply.</li>
+            <li>State the dates plainly: January 4 to March 12, in person.</li>
+            <li>One concrete offer. Five sentences total.</li>
           </ul>
         </div>
       </details>
@@ -864,9 +884,10 @@
     <div class="sechead">
       <h2>Resume</h2>
       <p>
-        Every Fit score on this page is provisional until this is filled in. Paste the text below
-        to keep it alongside the tracker — it saves in this browser so it survives refreshes and
-        redeploys.
+        Paste your resume text and the <strong>Difficulty</strong> and <strong>Fit</strong> columns
+        re-score against it by keyword overlap. It's a heuristic, not a substitute for a real
+        rescoring — but it re-ranks the pipeline immediately and shows which roles your background
+        actually reaches. Saved in this browser only; never uploaded.
       </p>
     </div>
 
@@ -882,14 +903,11 @@
       </div>
       <div class="resume-body">
         <div id="r-empty">
-          <p style="margin-bottom:12px">
-            Paste your resume as plain text — open the PDF, select all, copy. Formatting doesn't
-            matter; the content does.
-          </p>
+          <p style="margin-bottom:12px">Open the PDF, select all, copy, paste. Formatting doesn't matter — the words do.</p>
           <textarea id="r-input" placeholder="Paste resume text here…" aria-label="Resume text"></textarea>
           <div style="display:flex; gap:8px; align-items:center; margin-top:10px; flex-wrap:wrap">
-            <button class="btn primary" id="r-save" type="button">Save resume</button>
-            <span class="saved-note" id="r-hint">Stored locally in this browser only — never uploaded.</span>
+            <button class="btn primary" id="r-save" type="button">Save &amp; re-score</button>
+            <span class="saved-note" id="r-hint">Stored locally in this browser only.</span>
           </div>
         </div>
         <div id="r-filled" hidden>
@@ -898,18 +916,19 @@
         </div>
 
         <div style="border-top:1px solid var(--line-soft); padding-top:14px; margin-top:4px">
-          <h4 style="font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--warm); padding-bottom:8px">
-            To actually update the tracker
-          </h4>
+          <h4 style="font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--warm); padding-bottom:8px">How the re-scoring works, and its limits</h4>
           <p style="margin-bottom:10px">
-            Saving here keeps a copy in front of you, but the scoring lives in the repo. To get real
-            Fit scores and per-role tailoring:
+            Each role carries a set of keywords. Pasting your resume matches against them: strong
+            overlap raises Fit and lowers Difficulty, weak overlap does the reverse. Hover any
+            adjusted score to see which keywords matched. <strong>It only sees words, not
+            judgment</strong> — it can't tell a semester project from two years of work. For real
+            scoring:
           </p>
           <ol class="steps">
             <li>Drop the PDF into the <code>resume/</code> folder in your WINTERNSHIP directory.</li>
-            <li>Tell Claude it's there. It fills the resume section of <code>PROFILE.md</code>, rewrites the keyword bank from your actual experience, and recomputes every Fit score — dropping the provisional <code>~</code> markers.</li>
-            <li>Ask for per-role tailoring on your top priorities: which bullets to lead with, which keywords from the posting to mirror, and which gaps to address.</li>
-            <li>The weekly sweep agent then reads <code>PROFILE.md</code> too, so every new role it finds gets scored against your real background instead of an estimate.</li>
+            <li>Tell Claude it's there. It fills <code>PROFILE.md</code>, rewrites the keyword bank from your actual experience, and recomputes every Fit score properly.</li>
+            <li>Ask for per-role tailoring on your top priorities — which bullets to lead with, which posting keywords to mirror, which gaps to address.</li>
+            <li>The weekly sweep agent reads <code>PROFILE.md</code> too, so every new role it finds gets scored against your real background.</li>
           </ol>
         </div>
       </div>
@@ -919,118 +938,154 @@
   <footer>
     <span>Source of truth: jobs.md</span>
     <span>Context: PROFILE.md</span>
-    <span>Re-verify links monthly — postings expire</span>
+    <span>Window: 4 Jan – 12 Mar 2027</span>
+    <span>Re-verify links monthly</span>
   </footer>
 </div>
 
 <script>
-// [ref, tier, company, role, fn, loc, mode, when, pay, diff, fit, pri, status, url, note]
+// [ref,tier,company,role,fn,loc,mode,start,end,flex,pay,prst,diff,fit,pri,status,url,note,keywords]
 const RAW = [
-["A1","A","Brilliant Infotech","Business Development Intern (Winter/Spring 2027)","BD","New York","In-person","Winter/Spring 2027 · rolling","Verify",2,3,"High","live","https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458","Rare verified Winter/Spring 2027 BD posting in NYC. Apply now."],
-["A2","A","Magnet Media","Social Media Intern (Spring 2027)","Growth","New York","In-person","Spring 2027 · rolling","Verify",2,2,"Med","live","https://www.interndock.com/tracker/guides/summer-2027-internship-drop-open-now","Marketing-adjacent, weaker fit — but a live NYC spring seat."],
-["A3","A","Glovo","Marketing Controller Intern — Growth &amp; Finance","Growth","Barcelona","In-person","Rolling","Paid",3,4,"Med","blocked","https://jobs.glovoapp.com/","Good fit, English-first workplace. Gated on the Spain convenio."],
-["A4","A","Deloitte","Audit &amp; Assurance Intern (Winter 2027)","Strategy","Multiple US","Hybrid","Jan–Apr 2027","Paid",3,2,"Low","live","https://www2.deloitte.com/us/en/careers/students.html","Real off-cycle timing, wrong function. Fallback only."],
-["A5","A","Delta Air Lines","Co-op, HR Analytics &amp; Insights (Spring 2027)","Data","Atlanta","In-person","Spring 2027 · rolling","Paid",3,4,"Low","live","https://jobright.ai/jobs/info/6a35e9d629c90c607e4e3fec","Strong function fit, but forbids concurrent enrollment and needs 3 alternating semesters. Atlanta."],
-["A6","A","Delta Air Lines","Co-op, Crew Resources — Data Analyst (Spring 2027)","Data","Atlanta","In-person","Spring 2027 · rolling","Paid",3,4,"Low","live","https://www.delta.com/us/en/careers/students-and-early-careers","Same enrollment conflict as A5. Among the few live Spring 2027 data roles that exist."],
-["A7","A","Medpace","Feasibility Informatics Intern/Co-op (Spring 2027)","Data","Cincinnati","In-person","Spring 2027 · rolling","Paid",2,3,"Low","live","https://www.medpace.com/careers/","Live and correctly timed; outside target markets."],
-["A8","A","Allied Global Marketing","Marketing &amp; Press Intern (Spring)","Growth","Chicago","In-person","Spring 2027 · rolling","Paid",2,2,"Low","live","https://simplify.jobs/l/Top-Winter-and-Spring-Internships","Live spring seat, adjacent function, outside target markets."],
+["A1","A","Brilliant Infotech","Business Development Intern (Winter/Spring 2027)","BD","New York","In-person","Jan 2027 (TBC)","Mar 2027 (TBC)","High","Verify",1,2,3,"High","live","https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458","Rare verified Winter/Spring 2027 BD posting in NYC. Small firm, so dates are negotiable.",["business development","sales","outreach","crm","excel","communication"]],
+["A2","A","Magnet Media","Social Media Intern (Spring 2027)","Growth","New York","In-person","Jan 2027 (TBC)","Mar 2027 (TBC)","High","Verify",2,2,2,"Med","live","https://www.interndock.com/tracker/guides/summer-2027-internship-drop-open-now","Marketing-adjacent, weaker fit, but a live NYC spring seat with flexible dates.",["social media","marketing","content","analytics","campaign"]],
+["A3","A","Glovo","Marketing Controller Intern — Growth &amp; Finance","Growth","Barcelona","In-person","Rolling","Negotiable","Med","Paid",4,3,4,"Med","blocked","https://jobs.glovoapp.com/","Strong fit, English-first workplace. Gated entirely on the Spain convenio.",["excel","financial modeling","analytics","sql","growth","marketing","forecasting"]],
 
-["B1","B","Charles Schwab","2027 Internship Program","Data","Austin","In-person","Opens Sept–Nov 2026","Paid",3,3,"High","monitor","https://www.schwabjobs.com/internship-academy","Austin-based, no relocation, dated opening. Set a September reminder."],
-["B2","B","Citi","Summer Analyst — Commercial Banking, APAC","BD","Sydney","In-person","10 wks · Dec–Feb","Paid",4,3,"Med","monitor","https://jobs.citi.com/","ANZ summer overlaps the window. Requires the 462 visa."],
-["B3","B","Bank of America","Global IB &amp; Capital Markets Summer Analyst 2026/27","Strategy","Sydney","In-person","Dec–Feb","Paid",5,2,"Low","monitor","https://careers.bankofamerica.com/en-us/students","Right dates, banking-track fit is weak against an econ+DS profile."],
-["B4","B","Big 4 advisory","Advisory &amp; Analytics spring intern","Data","Austin / NYC / SF","Hybrid","Opens Aug–Sept 2026","Paid",3,3,"High","monitor","https://www2.deloitte.com/us/en/careers/students.html","Deloitte, PwC, EY, KPMG all open advisory spring cycles now."],
-["B5","B","Wayfair","Data Science Co-op (Jan start)","Data","Boston","In-person","Precedent: Jan 5 – Jun 19","$27.50/hr",3,4,"Med","monitor","https://www.wayfair.com/careers","Runs Jan-start data co-ops annually. Watch from September for the 2027 posting."],
-["B6","B","Birthright Israel Excel","Business / Tech Fellowship","BD","Tel Aviv","In-person","Opens Sept 1 2026 · summer only","Stipend",5,4,"Low","monitor","https://birthrightisraelexcel.com/college-students/","Strong program, wrong season — does not serve Jan–Mar."],
-["B7","B","Masa / Career Israel","Tel Aviv internship placement","Strategy","Tel Aviv","In-person","4–6 mo · 8-wk track","Subsidized",3,3,"Low","blocked","https://www.masaisrael.org/job_cat/internship-en/","Duration mismatch plus proof-of-Judaism requirement. Confirm eligibility first."],
-["B8","B","Atlassian","ANZ Summer Internship 2027/28","PM","Sydney","In-person","Opens now · runs Nov 2027–Feb 2028","Paid",5,3,"Low","monitor","https://www.atlassian.com/company/careers/earlycareers","Applications open now but it's the following year's cycle."],
-["B9","B","Canva","ANZ Summer Internship 2027/28","PM","Sydney","In-person","Opens ~Apr 2027 · runs Dec 2027–Feb 2028","Paid",5,3,"Low","monitor","https://www.lifeatcanva.com/en/jobs/","The 2026/27 intake closed 1 May 2026. Next cycle only."],
+["B1","B","Charles Schwab","2027 Internship Program","Data","Austin","In-person","Jan 2027 (TBC)","Confirm ≤ Mar 12","Low","Paid",4,3,3,"High","monitor","https://www.schwabjobs.com/internship-academy","Austin-based, no relocation. Structured program — verify the end date before applying.",["excel","data analysis","finance","sql","reporting","stakeholder"]],
+["B2","B","Citi","Summer Analyst — Commercial Banking, APAC","BD","Sydney","In-person","~Dec 2026","~Feb 2027","Low","Paid",5,4,3,"Med","monitor","https://jobs.citi.com/","10 weeks, Dec–Feb. Ends before your deadline. Requires the 462 visa.",["financial modeling","excel","credit","analysis","client","banking"]],
+["B3","B","Bank of America","Global IB &amp; Capital Markets Summer Analyst","Strategy","Sydney","In-person","~Dec 2026","~Feb 2027","Low","Paid",5,5,2,"Low","monitor","https://careers.bankofamerica.com/en-us/students","Right dates, but banking-track fit is weak against an econ+DS profile.",["financial modeling","valuation","excel","banking","accounting"]],
+["B4","B","Big 4 advisory","Advisory &amp; Analytics spring intern","Data","Austin / NYC / SF","Hybrid","Jan 2027","Confirm ≤ Mar 12","Low","Paid",4,3,3,"High","monitor","https://www2.deloitte.com/us/en/careers/students.html","Opens Aug–Sept. Spring cycles often run to April — confirm the end date first.",["excel","data analysis","sql","consulting","stakeholder","powerpoint"]],
 
-["C1","C","Ramp","Founder&#39;s associate / growth / biz ops","Growth","New York","In-person","Outreach","Paid",5,4,"High","monitor","https://ramp.com/careers","Known for hiring generalist hustlers; deeply quantitative culture."],
-["C2","C","Mercury","Growth or data associate","Growth","New York","In-person","Outreach","Paid",4,4,"High","monitor","https://mercury.com/jobs","Fintech with real data and GTM functions."],
-["C3","C","Attentive","Growth / analytics","Growth","New York","In-person","Outreach","Paid",3,4,"High","monitor","https://www.attentive.com/careers","Quantitative marketing org — direct econ+stats fit."],
-["C4","C","Vanta","Partnerships / BD","Partnerships","New York","In-person","Outreach","Paid",4,4,"High","monitor","https://www.vanta.com/careers","Partnerships-heavy motion, fast growth."],
-["C5","C","Alloy","BD / partnerships","BD","New York","In-person","Outreach","Paid",3,4,"High","monitor","https://www.alloy.com/careers","Fintech infrastructure with a small BD team — easier to reach."],
-["C6","C","Datadog","Data science","Data","New York","In-person","Outreach","Paid",4,3,"Med","monitor","https://careers.datadoghq.com/","Structured analytics org; more process, less hustle."],
-["C7","C","Oscar Health","Data / strategy","Data","New York","In-person","Outreach","Paid",3,4,"High","monitor","https://www.hioscar.com/careers","Econ/stats fit with a human-centered mission."],
-["C8","C","Justworks","BD / growth","BD","New York","In-person","Outreach","Paid",2,4,"High","monitor","https://www.justworks.com/careers","HR tech, social culture, reachable BD org."],
-["C9","C","Sardine","Data / strategy","Data","New York","In-person","Outreach","Paid",3,4,"Med","monitor","https://www.sardine.ai/careers","Fraud and risk AI — quantitative and applied."],
-["C10","C","Dorsia","Growth / partnerships","Growth","New York","In-person","Outreach","Paid",3,4,"Med","monitor","https://wellfound.com/","Consumer, NYC-native, social product. Listed on Wellfound."],
-
-["C11","C","Rippling","Growth / biz ops","Growth","San Francisco","In-person","Outreach","Paid",5,4,"High","monitor","https://www.rippling.com/careers","Confirmed to run off-cycle Winter 2027 internships — the structure exists. Ask for a business-side seat."],
-["C12","C","Scale AI","Growth / strategy","Growth","San Francisco","In-person","Outreach","Paid",5,4,"High","monitor","https://scale.com/careers","AI, hustle culture, strong GTM org."],
-["C13","C","Notion","PM / growth","PM","San Francisco","In-person","Outreach","Paid",5,4,"Med","monitor","https://www.notion.so/careers","Human-centered product, PM-heavy — matches the stated angle."],
-["C14","C","Retool","BD / growth","BD","San Francisco","In-person","Outreach","Paid",4,4,"Med","monitor","https://retool.com/careers","Technical-adjacent GTM: sell to developers without being one."],
-["C15","C","Sierra AI","Partnerships / growth","Partnerships","San Francisco","In-person","Outreach","Paid",5,4,"Med","monitor","https://sierra.ai/careers","Applied, human-centered AI. Small and early."],
-["C16","C","Brex","Growth / data","Growth","San Francisco","In-person","Outreach","Paid",4,4,"Med","monitor","https://www.brex.com/careers","Quantitative growth organization."],
-["C17","C","Dedalus Labs","Growth / BD","Growth","San Francisco","In-person","Outreach","$20–25/hr",2,4,"High","monitor","https://wellfound.com/","Early-stage AI/cloud; already posted a 2027 intern role. Small enough to ask about off-cycle."],
-["C18","C","YC W27 batch","Founder&#39;s associate","BD","San Francisco","In-person","Sweep from Nov 2026","Paid",2,5,"High","monitor","https://www.workatastartup.com/","Highest-leverage row here. Batch starts Nov 2026 — 1–4 person companies, freshly funded, hiring in days."],
-
-["C19","C","ICON","Strategy / BD","Strategy","Austin","In-person","Outreach","Paid",3,3,"Med","monitor","https://www.iconbuild.com/careers","3D-printed construction, Austin-native."],
-["C20","C","Self Financial","Data / growth","Data","Austin","In-person","Outreach","Paid",2,4,"High","monitor","https://www.self.inc/careers","Mission-driven fintech, quantitative, no relocation."],
-["C21","C","AlertMedia","BD / partnerships","BD","Austin","In-person","Outreach","Paid",2,4,"High","monitor","https://www.alertmedia.com/careers","Austin SaaS with a strong BD org and a reachable team."],
-["C22","C","Osano","Growth / BD","Growth","Austin","In-person","Outreach","Paid",2,4,"High","monitor","https://www.osano.com/company/careers","Privacy SaaS, small teams, generalist-friendly."],
-["C23","C","Firefly Aerospace","Strategy / biz ops","Strategy","Austin","In-person","Outreach","Paid",4,3,"Med","monitor","https://fireflyspace.com/careers/","High-profile Austin-area, genuine hustle culture."],
-["C24","C","H-E-B Digital","Data science","Data","Austin","In-person","Outreach","Paid",3,3,"Med","monitor","https://careers.heb.com/","Large Austin employer with a real analytics org."],
-["C25","C","Indeed","Data science","Data","Austin","In-person","Outreach","Paid",3,4,"High","monitor","https://www.indeed.jobs/","Austin HQ, large data org, has an economics research team."],
-
-["C26","C","Airwallex","Growth / BD","Growth","Melbourne","In-person","Outreach","Paid",4,4,"Med","monitor","https://www.airwallex.com/careers","Fintech with Melbourne roots and global GTM. Needs the 462 visa."],
-["C27","C","SafetyCulture","BD / partnerships","BD","Sydney","In-person","Outreach","Paid",3,4,"Med","monitor","https://safetyculture.com/careers/","Strong commercial org, rolling hiring."],
-["C28","C","Linktree","Growth / data","Growth","Melbourne","In-person","Outreach","Paid",3,4,"Med","monitor","https://linktr.ee/s/about/careers/","Consumer growth, quantitative."],
-["C29","C","Immutable","Partnerships / BD","Partnerships","Sydney","In-person","Outreach","Paid",3,3,"Low","monitor","https://www.immutable.com/careers","Fast-moving Sydney company."],
-["C30","C","Employment Hero","Growth / BD","Growth","Sydney","In-person","Outreach","Paid",3,4,"Med","monitor","https://employmenthero.com/careers/","Sydney HR tech with aggressive growth targets."],
-["C31","C","SEEK Grad","ANZ internship board","Data","Sydney","In-person","Sweep monthly","—",1,3,"Med","monitor","https://au.gradconnection.com/internships/business-and-commerce/sydney/","98 open business/commerce roles in Sydney at last check."],
-
-["C32","C","TravelPerk (Perk)","Growth / BD","Growth","Barcelona","In-person","Outreach","Paid",4,4,"Med","blocked","https://www.travelperk.com/careers/","English-first, 50+ nationalities. Gated on the convenio."],
-["C33","C","Factorial","Growth / data","Growth","Barcelona","In-person","Outreach","Paid",4,4,"Med","blocked","https://factorialhr.com/careers","HR tech unicorn with Barcelona and Madrid offices."],
-["C34","C","Typeform","Growth / PM","PM","Barcelona","In-person","Outreach","Paid",4,4,"Med","blocked","https://www.typeform.com/careers/","Product-led growth — a clean fit if Spain unblocks."],
-["C35","C","Glovo","Growth / data","Growth","Barcelona","In-person","Outreach","Paid",3,4,"Med","blocked","https://jobs.glovoapp.com/","Also has a live posting — see A3."],
-
-["C36","C","Destination Israel","Placement — 1,200-company database","Strategy","Tel Aviv","In-person","2-month tracks","Varies",3,3,"Low","blocked","https://www.destinationisrael.com/","The 2-month track is the only shape that fits Jan–Mar. Confirm a winter cohort exists."],
-["C37","C","TAU International","Tel Aviv University placement","Strategy","Tel Aviv","In-person","Program-dated","Varies",3,3,"Low","blocked","https://international.tau.ac.il/Summer_Internship_Program","English-language placement across business and tech."]
+["C1","C","YC W27 batch","Founder&#39;s associate / generalist","BD","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,2,5,"High","monitor","https://www.workatastartup.com/","Batch starts Nov 2026. 1–4 person companies hiring in days. Highest hit rate available.",["excel","sql","python","research","writing","outreach","analysis","startup"]],
+["C2","C","Dedalus Labs","Growth / BD","Growth","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","$20–25/hr",2,2,4,"High","monitor","https://wellfound.com/","Already posted a 2027 intern role, so budget exists. Small enough to ask about off-cycle.",["ai","growth","outreach","analytics","sql","startup"]],
+["C3","C","Osano","Growth / BD","Growth","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",2,2,4,"High","monitor","https://www.osano.com/company/careers","Privacy SaaS, small teams, generalist-friendly. Austin — you can offer coffee in person.",["growth","marketing","saas","analytics","excel","outreach"]],
+["C4","C","AlertMedia","BD / partnerships","BD","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",2,2,4,"High","monitor","https://www.alertmedia.com/careers","Real BD org, Austin-based, reachable team. BD produces countable value in 10 weeks.",["business development","sales","crm","salesforce","outreach","pipeline"]],
+["C5","C","Self Financial","Data / growth","Data","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,2,4,"High","monitor","https://www.self.inc/careers","Credit-building fintech — genuinely economics-adjacent. No relocation.",["economics","sql","python","data analysis","fintech","credit","statistics"]],
+["C6","C","Alloy","BD / partnerships","BD","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,3,4,"High","monitor","https://www.alloy.com/careers","Fintech infrastructure with a small BD team — easier to reach than most NYC names.",["business development","fintech","partnerships","sql","outreach","api"]],
+["C7","C","Justworks","BD / growth","BD","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,2,4,"High","monitor","https://www.justworks.com/careers","HR tech, social culture, accessible BD org. Realistic in-person NYC option.",["business development","sales","crm","outreach","communication"]],
+["C8","C","LayerX","BD / growth","BD","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Likely unpaid",4,3,4,"High","monitor","https://layerx.co.jp/en","Japan play. Flows straight into your April semester — no second relocation.",["business development","english","market research","analytics","startup","writing"]],
+["C9","C","Dorsia","Growth / partnerships","Growth","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,3,4,"Med","monitor","https://wellfound.com/","Consumer, NYC-native, social product. Small enough to reach the founder.",["growth","consumer","partnerships","social media","analytics"]],
+["C10","C","Sardine","Data / strategy","Data","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,3,4,"Med","monitor","https://www.sardine.ai/careers","Fraud and risk AI — statistics against a real adversarial problem.",["statistics","python","sql","risk","fraud","data analysis","modeling"]],
+["C11","C","Ubie","BD / market research","BD","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Likely unpaid",3,3,4,"Med","monitor","https://ubiehealth.com/","Health AI with international orientation. Hires non-Japanese speakers.",["english","market research","healthcare","analytics","business development"]],
+["C12","C","Attentive","Growth / analytics","Growth","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",4,3,4,"High","monitor","https://www.attentive.com/careers","Best pure-fit for econ+stats. Large enough that email lands in a queue, so find the lead.",["sql","python","growth","marketing analytics","a/b testing","statistics","cohort"]],
+["C13","C","Ramp","Founder&#39;s associate / growth / biz ops","Growth","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",5,5,4,"High","monitor","https://ramp.com/careers","Hires generalist hustlers; deeply quantitative culture. Very high bar.",["sql","excel","financial modeling","growth","analytics","fintech","operations"]],
+["C14","C","Mercury","Growth / data associate","Growth","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"High","monitor","https://mercury.com/jobs","Fintech with real data and GTM functions.",["sql","growth","fintech","analytics","python","banking"]],
+["C15","C","Rippling","Growth / biz ops","Growth","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",5,5,4,"High","monitor","https://www.rippling.com/careers","Confirmed to run off-cycle Winter 2027 internships — the structure exists. Ask for a business seat.",["sql","operations","growth","analytics","saas","excel"]],
+["C16","C","Vanta","Partnerships / BD","Partnerships","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","monitor","https://www.vanta.com/careers","Partnerships-heavy motion, fast growth.",["partnerships","business development","saas","compliance","outreach"]],
+["C17","C","Oscar Health","Data / strategy","Data","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,3,4,"High","monitor","https://www.hioscar.com/careers","Econ/stats fit with a human-centered mission.",["sql","statistics","economics","healthcare","data analysis","python"]],
+["C18","C","Scale AI","Growth / strategy","Growth","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",5,5,4,"Med","monitor","https://scale.com/careers","AI, hustle culture, strong GTM org. Very high bar.",["ai","growth","strategy","sql","analytics","gtm"]],
+["C19","C","Brex","Growth / data","Growth","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","monitor","https://www.brex.com/careers","Quantitative growth organization.",["sql","growth","fintech","analytics","excel","experimentation"]],
+["C20","C","Retool","BD / growth","BD","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","monitor","https://retool.com/careers","Technical-adjacent GTM: sell to developers without being one.",["business development","saas","developer tools","outreach","technical"]],
+["C21","C","Notion","PM / growth","PM","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",5,5,4,"Med","monitor","https://www.notion.so/careers","Human-centered product, PM-heavy — matches your stated angle.",["product management","growth","user research","analytics","writing"]],
+["C22","C","Sierra AI","Partnerships / growth","Partnerships","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",4,5,4,"Med","monitor","https://sierra.ai/careers","Applied, human-centered AI. Small and early — reachable.",["ai","partnerships","growth","startup","outreach"]],
+["C23","C","Datadog","Data science","Data","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Low","Paid",5,4,3,"Med","monitor","https://careers.datadoghq.com/","Structured analytics org; more process, less hustle, less date flexibility.",["sql","python","data science","statistics","analytics"]],
+["C24","C","Indeed","Data science","Data","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,3,4,"High","monitor","https://www.indeed.jobs/","Austin HQ, large data org, has an economics research team — unusually direct fit.",["economics","sql","python","statistics","data science","labor"]],
+["C25","C","H-E-B Digital","Data science","Data","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,3,3,"Med","monitor","https://careers.heb.com/","Large Austin employer with a real analytics org.",["sql","data analysis","retail","excel","python"]],
+["C26","C","ICON","Strategy / BD","Strategy","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",3,3,3,"Med","monitor","https://www.iconbuild.com/careers","3D-printed construction, Austin-native.",["strategy","business development","excel","research","operations"]],
+["C27","C","Firefly Aerospace","Strategy / biz ops","Strategy","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,3,"Med","monitor","https://fireflyspace.com/careers/","High-profile Austin-area, genuine hustle culture.",["strategy","operations","excel","analysis","aerospace"]],
+["C28","C","Mercari","Data / growth","Data","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Likely unpaid",5,4,4,"Med","monitor","https://careers.mercari.com/","Japan's best-known consumer tech company. English-friendly, international team.",["sql","data analysis","growth","consumer","marketplace","english"]],
+["C29","C","SmartNews","Growth / data","Growth","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Likely unpaid",4,4,4,"Med","monitor","https://about.smartnews.com/en/careers/","US–Japan bridge company. Native English is a concrete asset for their overseas market.",["growth","data analysis","sql","media","english","marketing"]],
+["C30","C","SmartHR","Growth / BD","Growth","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Likely unpaid",3,3,3,"Med","monitor","https://smarthr.co.jp/en/","HR SaaS unicorn, expanding internationally.",["saas","growth","business development","english","analytics"]],
+["C31","C","Money Forward","Data / fintech","Data","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Likely unpaid",4,4,3,"Med","monitor","https://corp.moneyforward.com/en/","Fintech with a large data organization. Econ background is directly relevant.",["fintech","sql","data analysis","economics","finance"]],
+["C32","C","Coral Capital portfolio","Various — startup generalist","BD","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Likely unpaid",3,2,4,"High","monitor","https://coralcap.co/","Tokyo VC publishing in English with a portfolio job board. Best entry point to English-friendly Japanese startups.",["startup","english","business development","research","analytics"]],
+["C33","C","Airwallex","Growth / BD","Growth","Melbourne","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","monitor","https://www.airwallex.com/careers","Fintech with Melbourne roots and global GTM. Needs the 462 visa.",["fintech","growth","business development","sql","payments"]],
+["C34","C","SafetyCulture","BD / partnerships","BD","Sydney","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,3,4,"Med","monitor","https://safetyculture.com/careers/","Strong commercial org, rolling hiring. Needs the 462 visa.",["business development","saas","partnerships","crm","outreach"]],
+["C35","C","Linktree","Growth / data","Growth","Melbourne","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,3,4,"Med","monitor","https://linktr.ee/s/about/careers/","Consumer growth, quantitative. Needs the 462 visa.",["growth","consumer","analytics","sql","social media"]],
+["C36","C","Employment Hero","Growth / BD","Growth","Sydney","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,3,4,"Med","monitor","https://employmenthero.com/careers/","Sydney HR tech with aggressive growth targets. Needs the 462 visa.",["growth","saas","business development","hr","analytics"]],
+["C37","C","Immutable","Partnerships / BD","Partnerships","Sydney","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,3,3,"Low","monitor","https://www.immutable.com/careers","Fast-moving Sydney company. Needs the 462 visa.",["partnerships","business development","web3","outreach"]],
+["C38","C","SEEK Grad","ANZ internship board","Data","Sydney","In-person","Varies","Varies","Med","—",1,1,3,"Med","monitor","https://au.gradconnection.com/internships/business-and-commerce/sydney/","Board, not a company. 98 open business/commerce roles in Sydney at last check.",["business","commerce","analytics"]],
+["C39","C","TravelPerk (Perk)","Growth / BD","Growth","Barcelona","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","blocked","https://www.travelperk.com/careers/","English-first, 50+ nationalities. Gated on the convenio.",["growth","business development","saas","travel","analytics"]],
+["C40","C","Factorial","Growth / data","Growth","Barcelona","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","blocked","https://factorialhr.com/careers","HR tech unicorn, Barcelona and Madrid offices. Gated on the convenio.",["growth","sql","hr","saas","analytics"]],
+["C41","C","Typeform","Growth / PM","PM","Barcelona","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,4,4,"Med","blocked","https://www.typeform.com/careers/","Product-led growth — clean fit if Spain unblocks.",["product management","growth","saas","analytics","user research"]],
+["C42","C","Destination Israel","Placement — 1,200-company database","Strategy","Tel Aviv","In-person","Jan 2027 (TBC)","2-month track","Med","Varies",3,3,3,"Low","blocked","https://www.destinationisrael.com/","The 2-month track is the only shape fitting Jan–Mar. Confirm a winter cohort exists.",["business","strategy","research","english"]]
 ];
 
-const K = ["ref","tier","company","role","fn","loc","mode","when","pay","diff","fit","pri","status","url","note"];
-const PRI_ORDER = { High: 3, Med: 2, Low: 1 };
-const STATUS_ORDER = { live: 0, interviewing: 1, drafting: 2, applied: 3, monitor: 4, blocked: 5, closed: 6 };
+const K = ["ref","tier","company","role","fn","loc","mode","start","end","flex","pay","prst","diff","fit","pri","status","url","note","kw"];
+const PRI_ORDER = { High:3, Med:2, Low:1 };
+const FLEX_ORDER = { High:3, Med:2, Low:1 };
+const STATUS_ORDER = { live:0, interviewing:1, drafting:2, applied:3, monitor:4, blocked:5, closed:6 };
 
 const ROWS = RAW.map(r => {
-  const o = Object.fromEntries(K.map((k, i) => [k, r[i]]));
-  // Default ordering: actionable first, then by priority, then by tier.
-  o.rank = STATUS_ORDER[o.status] * 1000 + (3 - PRI_ORDER[o.pri]) * 100 + o.tier.charCodeAt(0);
+  const o = Object.fromEntries(K.map((k,i) => [k, r[i]]));
+  o.rank = STATUS_ORDER[o.status]*1000 + (3 - PRI_ORDER[o.pri])*100 + o.tier.charCodeAt(0);
+  o.baseDiff = o.diff; o.baseFit = o.fit;
+  o.adjDiff = o.diff; o.adjFit = o.fit; o.matched = null;
   return o;
 });
 
 const el = id => document.getElementById(id);
+const clamp = n => Math.max(1, Math.min(5, n));
 
-const stats = [
-  ["live",    ROWS.filter(r => r.status === "live").length,   "Live now"],
-  ["hot",     ROWS.filter(r => r.pri === "High").length,      "High priority"],
-  ["",        ROWS.filter(r => r.tier === "B").length,        "Opens on a date"],
-  ["",        ROWS.filter(r => r.tier === "C").length,        "Outreach targets"],
-  ["blocked", ROWS.filter(r => r.status === "blocked").length,"Blocked on visa"],
-  ["",        ROWS.length,                                     "Total tracked"]
-];
-el("stats").innerHTML = stats.map(([cls, n, l]) =>
-  `<div class="stat ${cls}"><span class="n">${n}</span><span class="l">${l}</span></div>`).join("");
+// ---- resume-driven re-scoring ----
+const KEY = "winternship.resume";
+let resumeText = "";
 
-const FILTERS = { "f-tier": "tier", "f-loc": "loc", "f-fn": "fn", "f-mode": "mode", "f-status": "status" };
-for (const [id, key] of Object.entries(FILTERS)) {
+function readResume() {
+  try { const s = JSON.parse(localStorage.getItem(KEY) || "null"); return s && s.text ? s : null; }
+  catch (_) { return null; }
+}
+
+function rescore() {
+  const hay = resumeText.toLowerCase();
+  ROWS.forEach(r => {
+    if (!hay) { r.adjDiff = r.baseDiff; r.adjFit = r.baseFit; r.matched = null; return; }
+    const hits = r.kw.filter(k => hay.includes(k.toLowerCase()));
+    const ratio = r.kw.length ? hits.length / r.kw.length : 0;
+    const bump = ratio >= 0.6 ? 1 : (ratio <= 0.2 ? -1 : 0);
+    r.adjFit = clamp(r.baseFit + bump);
+    r.adjDiff = clamp(r.baseDiff - (ratio >= 0.6 ? 1 : 0));
+    r.matched = hits;
+    r.ratio = ratio;
+  });
+
+  const b = el("match-banner");
+  if (!hay) { b.classList.remove("on"); b.textContent = ""; return; }
+  const up = ROWS.filter(r => r.adjFit > r.baseFit).length;
+  const dn = ROWS.filter(r => r.adjFit < r.baseFit).length;
+  b.classList.add("on");
+  b.innerHTML = "<strong>Scored against your resume.</strong> " + up + " roles moved up, " + dn +
+    " moved down by keyword overlap. Hover a score to see the matches. This is a word-matching " +
+    "heuristic — it can't tell a semester project from two years of work. Ask Claude to rescore properly.";
+}
+
+// ---- stats ----
+function paintStats() {
+  const s = [
+    ["live",    ROWS.filter(r => r.status === "live").length,   "Live now"],
+    ["hot",     ROWS.filter(r => r.pri === "High").length,      "High priority"],
+    ["",        ROWS.filter(r => r.flex === "High").length,     "Flexible end date"],
+    ["",        ROWS.filter(r => r.loc === "Tokyo").length,     "Tokyo"],
+    ["blocked", ROWS.filter(r => r.status === "blocked").length,"Blocked on visa"],
+    ["",        ROWS.length,                                     "Total tracked"]
+  ];
+  el("stats").innerHTML = s.map(([c,n,l]) =>
+    `<div class="stat ${c}"><span class="n">${n}</span><span class="l">${l}</span></div>`).join("");
+}
+paintStats();
+
+const FILTERS = { "f-tier":"tier", "f-loc":"loc", "f-fn":"fn", "f-flex":"flex", "f-status":"status" };
+for (const [id,key] of Object.entries(FILTERS)) {
   const vals = [...new Set(ROWS.map(r => r[key]))].sort();
   el(id).insertAdjacentHTML("beforeend", vals.map(v => `<option value="${v}">${v}</option>`).join(""));
 }
 
 let sortKey = "rank", sortDir = 1;
 
-function meter(n, cls) {
-  let s = `<span class="meter ${cls}">`;
+function meter(n, cls, base, matched) {
+  let s = `<span class="meter ${cls}"`;
+  if (matched && matched.length) s += ` title="Matched: ${matched.join(", ")}"`;
+  s += ">";
   for (let i = 1; i <= 5; i++) s += `<i class="${i <= n ? "on" : ""}"></i>`;
-  return s + `<em>${n}${cls === "fit" ? "~" : ""}</em></span>`;
+  s += `<em>${n}${!resumeText && cls === "fit" ? "~" : ""}</em>`;
+  if (base != null && n !== base) {
+    s += `<span class="delta ${n > base ? "up" : "dn"}">${n > base ? "↑" : "↓"}</span>`;
+  }
+  return s + "</span>";
 }
 
 function render() {
   const q = el("q").value.trim().toLowerCase();
   const rows = ROWS.filter(r => {
-    for (const [id, key] of Object.entries(FILTERS)) {
+    for (const [id,key] of Object.entries(FILTERS)) {
       const v = el(id).value;
       if (v && r[key] !== v) return false;
     }
@@ -1038,10 +1093,13 @@ function render() {
     return (r.company + " " + r.role + " " + r.note + " " + r.loc + " " + r.fn).toLowerCase().includes(q);
   });
 
-  rows.sort((a, b) => {
+  rows.sort((a,b) => {
     let x = a[sortKey], y = b[sortKey];
-    if (sortKey === "pri") { x = PRI_ORDER[x]; y = PRI_ORDER[y]; }
+    if (sortKey === "pri")    { x = PRI_ORDER[x];    y = PRI_ORDER[y]; }
+    if (sortKey === "flex")   { x = FLEX_ORDER[x];   y = FLEX_ORDER[y]; }
     if (sortKey === "status") { x = STATUS_ORDER[x]; y = STATUS_ORDER[y]; }
+    if (sortKey === "fit")    { x = a.adjFit;        y = b.adjFit; }
+    if (sortKey === "diff")   { x = a.adjDiff;       y = b.adjDiff; }
     const c = (typeof x === "number") ? x - y : String(x).localeCompare(String(y));
     return c * sortDir || a.rank - b.rank;
   });
@@ -1056,11 +1114,14 @@ function render() {
       </td>
       <td>${r.fn}</td>
       <td>${r.loc}</td>
-      <td class="m-${r.mode.replace("-", "")}">${r.mode}</td>
-      <td class="when">${r.when}</td>
-      <td class="when">${r.pay}</td>
-      <td>${meter(r.diff, "diff")}</td>
-      <td>${meter(r.fit, "fit")}</td>
+      <td class="m-${r.mode.replace("-","")}">${r.mode}</td>
+      <td class="dt${r.start.indexOf("Jan 2027") === 0 || r.start === "Rolling" || r.start === "Varies" ? " prop" : ""}">${r.start}</td>
+      <td class="dt">${r.end}</td>
+      <td class="fx-${r.flex}">${r.flex}</td>
+      <td class="dt">${r.pay}</td>
+      <td>${meter(r.prst, "prst")}</td>
+      <td>${meter(r.adjDiff, "diff", r.baseDiff, r.matched)}</td>
+      <td>${meter(r.adjFit, "fit", r.baseFit, r.matched)}</td>
       <td><strong>${r.pri}</strong></td>
       <td><span class="chip s-${r.status}">${r.status}</span></td>
     </tr>`).join("");
@@ -1073,7 +1134,7 @@ document.querySelectorAll("thead th").forEach(th => {
   th.tabIndex = 0;
   const go = () => {
     const k = th.dataset.k;
-    sortDir = (sortKey === k) ? -sortDir : (["diff", "fit", "pri"].includes(k) ? -1 : 1);
+    sortDir = (sortKey === k) ? -sortDir : (["diff","fit","pri","flex","prst"].includes(k) ? -1 : 1);
     sortKey = k;
     document.querySelectorAll("thead th").forEach(o => { o.removeAttribute("aria-sort"); o.querySelector(".arr").textContent = "▾"; });
     th.setAttribute("aria-sort", sortDir === 1 ? "ascending" : "descending");
@@ -1092,45 +1153,39 @@ el("reset").addEventListener("click", () => {
   render();
 });
 
-render();
-
-// ---- resume panel (localStorage only; no upload, no network) ----
-const KEY = "winternship.resume";
+// ---- resume panel ----
 const rPanel = el("resume");
 
 function paintResume() {
-  let saved = null;
-  try { saved = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (_) { saved = null; }
+  const saved = readResume();
+  const has = !!(saved && saved.text.trim());
+  resumeText = has ? saved.text : "";
 
-  const has = saved && saved.text && saved.text.trim();
-  rPanel.classList.toggle("filled", !!has);
-  el("r-state").textContent = has ? "Added" : "Not added";
-  el("r-empty").hidden = !!has;
+  rPanel.classList.toggle("filled", has);
+  el("r-state").textContent = has ? "Added — scores adjusted" : "Not added";
+  el("r-empty").hidden = has;
   el("r-filled").hidden = !has;
   el("r-edit").hidden = !has;
   el("r-clear").hidden = !has;
-
   if (has) {
     el("r-render").textContent = saved.text;
     el("r-when").textContent = "Saved " + new Date(saved.at).toLocaleString();
   }
+  rescore();
+  render();
 }
 
 el("r-save").addEventListener("click", () => {
   const text = el("r-input").value.trim();
   if (!text) { el("r-hint").textContent = "Nothing to save — paste the text first."; return; }
-  try {
-    localStorage.setItem(KEY, JSON.stringify({ text, at: Date.now() }));
-  } catch (_) {
-    el("r-hint").textContent = "Couldn't save — browser storage is unavailable or full.";
-    return;
-  }
+  try { localStorage.setItem(KEY, JSON.stringify({ text, at: Date.now() })); }
+  catch (_) { el("r-hint").textContent = "Couldn't save — browser storage unavailable or full."; return; }
   paintResume();
+  el("resume").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 el("r-edit").addEventListener("click", () => {
-  let saved = null;
-  try { saved = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (_) {}
+  const saved = readResume();
   el("r-input").value = saved ? saved.text : "";
   rPanel.classList.remove("filled");
   el("r-empty").hidden = false;
@@ -1142,7 +1197,7 @@ el("r-clear").addEventListener("click", () => {
   if (!confirm("Remove the saved resume text from this browser?")) return;
   localStorage.removeItem(KEY);
   el("r-input").value = "";
-  el("r-hint").textContent = "Stored locally in this browser only — never uploaded.";
+  el("r-hint").textContent = "Stored locally in this browser only.";
   paintResume();
 });
 
