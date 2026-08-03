@@ -166,6 +166,77 @@
   .sechead { display: flex; flex-direction: column; gap: 4px; }
   .sechead p { font-size: 13.5px; color: var(--ink-2); max-width: 72ch; }
 
+  /* ---- foldables ---- */
+  .folds { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+  details { background: var(--panel); }
+  details > summary {
+    cursor: pointer; list-style: none; padding: 13px 16px;
+    display: flex; align-items: baseline; gap: 12px;
+    font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--ink);
+  }
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary::before {
+    content: "+"; font-family: var(--mono); font-size: 15px; color: var(--warm);
+    width: 12px; flex: none; line-height: 1;
+  }
+  details[open] > summary::before { content: "\2212"; }
+  details > summary:hover { background: var(--panel-2); }
+  details > summary .tag {
+    margin-left: auto; font-family: var(--mono); font-size: 10px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--ink-3); font-weight: 400; flex: none;
+  }
+  details > summary .tag.crit { color: var(--warm); }
+  .fold-body { padding: 0 16px 20px 40px; display: flex; flex-direction: column; gap: 14px; }
+  .fold-body > p { font-size: 13.5px; color: var(--ink-2); max-width: 74ch; }
+  .fold-body h4 {
+    font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--warm); padding-bottom: 4px; border-bottom: 1px solid var(--line-soft);
+  }
+  .fold-body ul { display: flex; flex-direction: column; gap: 6px; list-style: none; }
+  .fold-body li { font-size: 13.5px; color: var(--ink-2); padding-left: 15px; position: relative; max-width: 76ch; }
+  .fold-body li::before { content: "\2022"; position: absolute; left: 2px; color: var(--ink-3); }
+  .fold-body li strong { color: var(--ink); font-weight: 600; }
+  .fold-body a { color: var(--cold); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .fold-body a:hover { border-bottom-color: var(--cold); }
+  .fold-body code { font-family: var(--mono); font-size: 12px; background: var(--panel-2); padding: 1px 5px; border-radius: 2px; }
+  .fold-body .grp { display: flex; flex-direction: column; gap: 7px; }
+  .callout {
+    border-left: 3px solid var(--warm); background: var(--warm-soft);
+    padding: 11px 14px; font-size: 13px; color: var(--ink-2); border-radius: 0 3px 3px 0; max-width: 76ch;
+  }
+  .callout strong { color: var(--ink); }
+
+  /* ---- resume panel ---- */
+  .resume { border: 1px solid var(--line); border-radius: 3px; background: var(--panel); box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .resume-head { display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .resume-head .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warn); flex: none; }
+  .resume.filled .resume-head .dot { background: var(--ok); }
+  .resume-head b { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+  .resume-head .state { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--warn); }
+  .resume.filled .resume-head .state { color: var(--ok); }
+  .resume-head .acts { margin-left: auto; display: flex; gap: 8px; }
+  .resume-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+  .resume-body p { font-size: 13.5px; color: var(--ink-2); max-width: 74ch; }
+  textarea {
+    font-family: var(--mono); font-size: 12.5px; line-height: 1.55; color: var(--ink);
+    background: var(--ground); border: 1px solid var(--line); border-radius: 3px;
+    padding: 12px; width: 100%; min-height: 220px; resize: vertical;
+  }
+  textarea:focus-visible { outline: 2px solid var(--warm); outline-offset: -1px; }
+  .btn.primary { background: var(--ink); color: var(--ground); border-color: var(--ink); font-weight: 600; }
+  .btn.primary:hover { opacity: .85; color: var(--ground); }
+  .saved-note { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .resume-render { white-space: pre-wrap; font-family: var(--mono); font-size: 12.5px; line-height: 1.6; color: var(--ink-2); background: var(--ground); border: 1px solid var(--line-soft); border-radius: 3px; padding: 14px; overflow-x: auto; }
+  .steps { display: flex; flex-direction: column; gap: 8px; }
+  .steps li { font-size: 13.5px; color: var(--ink-2); padding-left: 26px; position: relative; counter-increment: s; max-width: 74ch; }
+  .steps { list-style: none; counter-reset: s; }
+  .steps li::before {
+    content: counter(s); position: absolute; left: 0; top: 1px;
+    font-family: var(--mono); font-size: 10px; color: var(--warm);
+    border: 1px solid var(--line); border-radius: 50%; width: 17px; height: 17px;
+    display: grid; place-items: center;
+  }
+
   footer { border-top: 1px solid var(--line); padding-top: 16px; font-size: 12px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--mono); }
 
   @media (max-width: 720px) {
@@ -400,6 +471,451 @@
     </div>
   </div>
 
+  <div class="sec">
+    <div class="sechead">
+      <h2>Preparation</h2>
+      <p>
+        What to learn, build, read, and rehearse between now and January — organized by the
+        function you're applying into. The honest summary: you have roughly five months, which is
+        more than enough, and the binding constraint is <strong>SQL</strong>, not anything about
+        your major. An economics degree with a stats minor is a strong hand for these roles. It
+        just has to be legible to a recruiter screening on keywords.
+      </p>
+    </div>
+
+    <div class="folds">
+
+      <details open>
+        <summary>Start here — the five-month plan <span class="tag crit">Read first</span></summary>
+        <div class="fold-body">
+          <p>
+            Sequenced so each thing you learn is usable in the applications you're sending that
+            same month. Don't study in parallel with applying — study <em>ahead</em> of applying.
+          </p>
+          <div class="grp">
+            <h4>August — close the SQL gap</h4>
+            <ul>
+              <li><strong>SQL is the single highest-return thing you can do</strong>, and it isn't close. It's the keyword that gets an econ major past an analytics résumé screen, and it's the live-coded portion of nearly every data interview. Three to four weeks of daily practice is genuinely enough to interview well.</li>
+              <li>Get to the point where <code>JOIN</code>, <code>GROUP BY</code>, CTEs, and <strong>window functions</strong> are automatic. Window functions are the actual dividing line — most candidates stall there, so fluency reads as real experience.</li>
+              <li>In parallel, draft your outreach templates. September is for sending, not writing.</li>
+            </ul>
+          </div>
+          <div class="grp">
+            <h4>September — build the portfolio project, start outreach</h4>
+            <ul>
+              <li>One end-to-end analysis you can talk about for ten minutes. It does more work in an interview than any coursework line on your résumé.</li>
+              <li>Begin the Tier C outreach campaign. Roles won't be posted yet; that's the point.</li>
+            </ul>
+          </div>
+          <div class="grp">
+            <h4>October — interview mechanics</h4>
+            <ul>
+              <li>Write and rehearse six to eight <strong>STAR stories</strong> that cover conflict, failure, leadership, ambiguity, persuasion, and quantitative impact. Same stories, recombined — you don't need one per question.</li>
+              <li>Start case practice for whichever track you're targeting hardest.</li>
+              <li>Peak corporate posting season. Apply within 72 hours of anything going live.</li>
+            </ul>
+          </div>
+          <div class="grp">
+            <h4>November — the YC sweep</h4>
+            <ul>
+              <li>Highest-leverage month. Startup interviews are conversational rather than structured, so what matters is fluency about <em>their</em> product and market, not framework recall.</li>
+              <li>Read the batch. Message founders directly. Speed beats polish here.</li>
+            </ul>
+          </div>
+          <div class="grp">
+            <h4>December — convert</h4>
+            <ul>
+              <li>Close offers. Negotiate the flexible end date up front, before you start, never in March.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>SQL — the gate <span class="tag crit">Priority 1</span></summary>
+        <div class="fold-body">
+          <p>
+            Required for every data and growth role on your list, and quietly expected in BD and PM
+            roles at data-literate companies. This is the one item where being self-taught is
+            completely normal and nobody will ask where you learned it.
+          </p>
+          <h4>Learn</h4>
+          <ul>
+            <li>Core: <code>SELECT</code>, <code>WHERE</code>, <code>GROUP BY</code>, <code>HAVING</code>, all four <code>JOIN</code> types, subqueries, CTEs (<code>WITH</code>).</li>
+            <li><strong>Window functions</strong> — <code>ROW_NUMBER</code>, <code>RANK</code>, <code>LAG</code>/<code>LEAD</code>, running totals, <code>PARTITION BY</code>. Where most candidates stop and where interviews concentrate.</li>
+            <li>Applied patterns: cohort retention, funnel conversion by step, month-over-month growth, deduplication, finding the nth-highest value.</li>
+            <li>Enough schema literacy to ask "what's the grain of this table?" — that question alone signals experience.</li>
+          </ul>
+          <h4>Practice</h4>
+          <ul>
+            <li><a href="https://mode.com/sql-tutorial/" target="_blank" rel="noopener">Mode's SQL Tutorial</a> — free, browser-based, business-analytics framing rather than CS framing. Best starting point for you specifically.</li>
+            <li><a href="https://datalemur.com/" target="_blank" rel="noopener">DataLemur</a> — real interview questions from real companies, free tier is substantial.</li>
+            <li><a href="https://www.stratascratch.com/" target="_blank" rel="noopener">StrataScratch</a> — company-tagged problems, good for targeted prep.</li>
+            <li>Daily beats weekly. Thirty minutes a day for four weeks outperforms four long weekends.</li>
+          </ul>
+          <h4>Interview form</h4>
+          <ul>
+            <li>Live-coded in a shared editor, 20–30 minutes, usually two to three questions escalating in difficulty.</li>
+            <li><strong>Narrate as you write.</strong> They're evaluating how you decompose a problem more than whether the syntax runs. Saying "I'll get the per-user first purchase, then join back" is worth more than silently producing correct output.</li>
+            <li>Ask about edge cases before writing: nulls, duplicates, ties. Volunteering that is a senior signal.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Python, spreadsheets, and BI tooling <span class="tag">Priority 2</span></summary>
+        <div class="fold-body">
+          <p>
+            You need working fluency, not software engineering. Nobody is asking you to pass a
+            LeetCode gauntlet for an analytics internship — they're asking whether you can load a
+            messy CSV and answer a question with it.
+          </p>
+          <h4>Learn</h4>
+          <ul>
+            <li><strong>pandas</strong> — read, merge, groupby, pivot, handle missing data. This is 80% of the job.</li>
+            <li>Basic plotting (matplotlib or seaborn) and Jupyter notebooks as a working medium.</li>
+            <li><strong>Spreadsheets, seriously.</strong> Pivot tables, <code>INDEX/MATCH</code> or <code>XLOOKUP</code>, and building a clean model. Underrated — at startups and in BD roles, more real analysis happens in a spreadsheet than anywhere else.</li>
+            <li>One BI tool at a conversational level: <strong>Tableau</strong> or <strong>Looker</strong>. Enough to say what a dashboard should show and why.</li>
+          </ul>
+          <h4>Skip for now</h4>
+          <ul>
+            <li>Machine learning, deep learning, and MLOps. Not what these roles hire for, and claiming them invites questions you can't win.</li>
+            <li>Software engineering fundamentals beyond writing readable scripts.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Statistics &amp; experimentation — your edge <span class="tag">Your strength</span></summary>
+        <div class="fold-body">
+          <p>
+            This is where the stats minor earns its keep. Most growth and BD candidates cannot
+            explain a confidence interval. Most data candidates can't explain one to a
+            non-technical stakeholder. Being able to do both is the entire pitch.
+          </p>
+          <h4>Sharpen</h4>
+          <ul>
+            <li><strong>A/B testing end to end</strong>: hypothesis, randomization, sample size and power, minimum detectable effect, when to stop, what breaks when you peek at results early.</li>
+            <li>Interpreting regression output for a business audience — coefficient meaning, what R² does and doesn't tell you, why correlation isn't causation in a way that doesn't sound like a textbook.</li>
+            <li>Selection bias, survivorship bias, Simpson's paradox. Econometrics gives you these already; the skill is naming them in a product context.</li>
+            <li>The multiple-comparisons problem — why testing twenty metrics guarantees a false positive.</li>
+          </ul>
+          <h4>Interview form</h4>
+          <ul>
+            <li>"Explain a p-value to a product manager who doesn't know statistics." Asked constantly. Rehearse it out loud until it's 30 seconds and jargon-free.</li>
+            <li>"We ran a test, the result was significant, should we ship?" The correct answer explores effect size, cost, duration, and novelty effects — not just the p-value.</li>
+            <li>"This metric dropped 15% overnight. What do you do?" A diagnostic case. Structure it: is it real or instrumentation, is it all users or a segment, what changed on that date.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Growth <span class="tag">Ramp · Attentive · Brex · Linktree</span></summary>
+        <div class="fold-body">
+          <p>Quantitative marketing. The closest function to your natural combination, and the one where the econ background is a differentiator rather than something to explain away.</p>
+          <h4>Know</h4>
+          <ul>
+            <li>The funnel: acquisition, activation, retention, referral, revenue. Know which stage a given company is actually constrained by — that's the question behind most growth interviews.</li>
+            <li><strong>Retention curves.</strong> Understand why a curve that flattens means product-market fit and one that decays to zero means you have a leaky bucket, not a growth problem.</li>
+            <li>LTV, CAC, payback period, and why CAC-to-LTV ratios mislead when growth is fast.</li>
+            <li>Cohort analysis, north star metrics, and the difference between a vanity metric and an actionable one.</li>
+            <li>Channel basics: paid vs organic vs referral vs sales-led, and product-led growth as a motion.</li>
+          </ul>
+          <h4>Read</h4>
+          <ul>
+            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> — the default shared vocabulary of growth and product people. Free tier is plenty. If you read one thing, read this.</li>
+            <li><a href="https://andrewchen.com/" target="_blank" rel="noopener">Andrew Chen's essays</a> — network effects, growth loops, cold-start problems.</li>
+            <li>Reforge writes the best growth material anywhere; the courses are expensive, but their public essays are free and worth reading.</li>
+          </ul>
+          <h4>Interview form</h4>
+          <ul>
+            <li>"How would you grow [our product]?" — Don't list tactics. Identify the constraint first, then propose experiments against it, with the metric you'd move and how you'd measure it.</li>
+            <li>Estimation and sizing questions. Show your assumptions explicitly; the number matters less than whether your reasoning is auditable.</li>
+            <li>Expect a SQL screen attached. Growth roles are data roles wearing a marketing hat.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Business development &amp; sales <span class="tag">Alloy · Justworks · AlertMedia · SafetyCulture</span></summary>
+        <div class="fold-body">
+          <p>
+            The most learnable track on this list and the one where hustle substitutes most
+            directly for credentials. It's also the one where a junior can produce measurable
+            value inside a three-month window, which makes it an easier ask for a January start.
+          </p>
+          <h4>Know</h4>
+          <ul>
+            <li>The pipeline: prospecting, qualification, discovery, demo, proposal, negotiation, close. Know what happens at each stage and what causes deals to stall.</li>
+            <li>Qualification frameworks — <strong>MEDDIC</strong> and <strong>BANT</strong>. Know them well enough to name them; interviewers use them as shorthand.</li>
+            <li>The difference between inbound and outbound, and between an SDR (books meetings) and an AE (closes). Startups blur these; know which you're being offered.</li>
+            <li>CRM mechanics — Salesforce or HubSpot. Even surface familiarity helps.</li>
+            <li><strong>Founder-led sales</strong> at early-stage companies: no playbook exists yet, and you'd be helping write it. That's the pitch to a seed-stage startup.</li>
+          </ul>
+          <h4>Read</h4>
+          <ul>
+            <li><em>Founding Sales</em> by Pete Kazanjy — free online, written specifically for startup sales from zero. The single most relevant book for the roles you're targeting.</li>
+            <li><em>SPIN Selling</em> for discovery question technique; <em>The Challenger Sale</em> for the framing most B2B teams reference.</li>
+          </ul>
+          <h4>Interview form</h4>
+          <ul>
+            <li><strong>Mock cold call or role-play.</strong> Extremely common and it is where most candidates fall apart. Practice out loud with a friend. Being bad at this is fine; being visibly unwilling to try is disqualifying.</li>
+            <li>"Sell me this pen" variants — the real test is whether you ask questions before pitching. Most people pitch. Don't.</li>
+            <li>They're screening for coachability and resilience above polish. Say what you'd do differently after a rejection.</li>
+          </ul>
+          <div class="callout">
+            <strong>Do this before any BD interview:</strong> actually cold-email ten people this month
+            about anything. Being able to say "I sent 40 cold emails and 6 replied, here's what I
+            changed after the first 20" beats every framework you could memorize.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Strategic partnerships <span class="tag">Vanta · Immutable · Sierra</span></summary>
+        <div class="fold-body">
+          <p>Hardest track to study for and the one with the fewest junior openings — usually staffed by people who did BD first. Worth targeting where a company is explicitly partnership-led.</p>
+          <h4>Know</h4>
+          <ul>
+            <li>Partnership types: <strong>channel/reseller</strong> (they sell for you), <strong>technology/integration</strong> (products connect), <strong>co-marketing</strong>, and <strong>strategic alliances</strong>. Confusing these is the tell of someone who hasn't done it.</li>
+            <li>Why companies partner instead of building or buying — distribution access, credibility, filling a product gap.</li>
+            <li>How partnerships get measured: sourced pipeline, influenced revenue, integration adoption. Notoriously hard to attribute, and saying so shows you understand the function.</li>
+            <li>Basic contract vocabulary: MSA, SLA, revenue share, exclusivity, term and termination.</li>
+          </ul>
+          <h4>Preparation</h4>
+          <ul>
+            <li>Pick a target company and map its actual partner ecosystem from its own site — integrations page, partner directory, press releases. Walking in with that map is a stronger opener than any framework.</li>
+            <li>Then form a view: which partner is underleveraged, and what would you do about it? Have one specific answer ready.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>Product management <span class="tag">Notion · Typeform</span></summary>
+        <div class="fold-body">
+          <p>The most competitive track per seat, and the one where being pre-senior hurts most — most APM programs recruit graduating seniors. Realistic as a startup role, hard as a branded program.</p>
+          <h4>Know</h4>
+          <ul>
+            <li><strong>Product sense</strong> — the ability to reason from a user problem to a solution and defend the tradeoff. Not memorizable; developed by critiquing products deliberately.</li>
+            <li>Prioritization frameworks (RICE, impact/effort) as vocabulary, not as a crutch. Reciting a framework instead of thinking is the classic failure mode.</li>
+            <li>Writing specs, defining success metrics before launch, and knowing what a PM actually does versus what they're imagined to do.</li>
+            <li>Enough technical literacy to talk credibly with engineers: what an API is, what a database does, why something is hard.</li>
+          </ul>
+          <h4>Read</h4>
+          <ul>
+            <li><em>Decode and Conquer</em> (Lewis Lin) and <em>Cracking the PM Interview</em> (McDowell &amp; Bavaro) — the two standards.</li>
+            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> again; it's as much a PM resource as a growth one.</li>
+            <li><a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> for strategic reasoning about why products and business models work.</li>
+          </ul>
+          <h4>Interview form</h4>
+          <ul>
+            <li>Product design: "Design X for Y user." Structure it — clarify the goal, pick a user segment, list their pain points, propose solutions, choose one and say why, define the success metric.</li>
+            <li>Product critique: "What's your favorite product and how would you improve it?" Pick something unglamorous you genuinely use. Everyone picks Spotify.</li>
+            <li>Analytical: "Metric X dropped, diagnose it." Overlaps heavily with the data track — your advantage.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>The startup generalist track <span class="tag crit">Highest leverage</span></summary>
+        <div class="fold-body">
+          <p>
+            Founder's associate, chief of staff, first business hire. Given your November YC sweep,
+            this is the most probable path to an actual January start — so prepare for it hardest,
+            even though it's the least formalized.
+          </p>
+          <h4>Know</h4>
+          <ul>
+            <li>How early-stage companies work: what pre-seed, seed, Series A actually mean, what runway is, what a founder is worried about at each stage.</li>
+            <li>Why a two-person company hires a generalist — they're drowning, not building a career ladder. Your pitch is <em>relief</em>, not potential.</li>
+            <li>Enough of everything: pull a number, write a cold email, take a customer call, put together a deck, keep a spreadsheet honest.</li>
+          </ul>
+          <h4>Read</h4>
+          <ul>
+            <li><a href="https://www.ycombinator.com/library" target="_blank" rel="noopener">The YC Library</a> and Startup School — free, and it is exactly the worldview your interviewer holds.</li>
+            <li><a href="https://paulgraham.com/articles.html" target="_blank" rel="noopener">Paul Graham's essays</a> — <em>Do Things That Don't Scale</em> and <em>Default Alive or Default Dead</em> in particular.</li>
+          </ul>
+          <h4>Interview form</h4>
+          <ul>
+            <li>A conversation, not a structured loop. Often the founder, often 30 minutes, often a decision the same week.</li>
+            <li>They screen for: can you start immediately, will you do unglamorous work, do you understand what they're building, will you need managing.</li>
+            <li><strong>Come with a specific observation about their product.</strong> Sign up, use it, find something broken or missing, mention it. That single move separates you from everyone sending a résumé.</li>
+          </ul>
+          <div class="callout">
+            <strong>Your Q1 availability is the pitch.</strong> Their summer interns went back to school
+            in September, they're understaffed through Q1, and almost nobody is available in
+            January. Lead the email with the dates, not with your GPA.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>Interview formats — what each actually looks like</summary>
+        <div class="fold-body">
+          <h4>Behavioral</h4>
+          <ul>
+            <li><strong>STAR</strong>: situation, task, action, result. Write six to eight stories covering conflict, failure, leadership, ambiguity, persuasion, and quantified impact. They recombine to cover almost any question.</li>
+            <li>Always quantify the result. "Grew the club from 15 to 60 members" lands; "helped grow the club" doesn't.</li>
+            <li>Have a real failure story with a real lesson. "I'm a perfectionist" is a wasted answer.</li>
+          </ul>
+          <h4>Technical screens</h4>
+          <ul>
+            <li>SQL live-coding: 20–30 minutes, two to three escalating questions, narrate throughout.</li>
+            <li>Take-home analysis: a messy dataset and an open question. Graded on framing and communication far more than technique. Lead with the answer, then the method.</li>
+          </ul>
+          <h4>Case &amp; product</h4>
+          <ul>
+            <li>Structure out loud before diving in. State assumptions. Check in: "does that framing make sense before I go deeper?"</li>
+            <li>Silence is the enemy — thinking out loud is the deliverable.</li>
+          </ul>
+          <h4>Your questions for them</h4>
+          <ul>
+            <li>Ask what success looks like at 30 and 90 days. Signals you're thinking about delivery, not just getting hired.</li>
+            <li>For a three-month stint specifically: "What would you want done by March?" Reframes you as someone who ships.</li>
+            <li>Never ask something answerable from their homepage.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>What to build — one portfolio project</summary>
+        <div class="fold-body">
+          <p>
+            One real project does more than three more courses. It gives every interview a concrete
+            thing to discuss and proves the skills your transcript only implies.
+          </p>
+          <h4>What makes it work</h4>
+          <ul>
+            <li><strong>A real question with a real answer</strong>, not a tutorial rerun. "I analyzed Austin housing permit data to test whether new supply moved rents" beats a Titanic notebook by a mile.</li>
+            <li>Messy public data, so you demonstrate cleaning — the actual job.</li>
+            <li>Uses SQL or pandas, contains at least one statistical claim you defend, and ends with a recommendation rather than a chart dump.</li>
+            <li>Written up in a README a non-technical reader can follow. The writing is half the signal.</li>
+          </ul>
+          <h4>Angles that fit you specifically</h4>
+          <ul>
+            <li>Anything economic — labor markets, housing, pricing, elasticity. Plays your major as a strength rather than a detour.</li>
+            <li>Something about a company you're targeting: model their pricing page, size their market, analyze their public reviews. Doubles as outreach material.</li>
+            <li>Public datasets: BLS, Census, FRED, city open-data portals, Kaggle for structured sets.</li>
+          </ul>
+          <div class="callout">
+            <strong>Scope it to two weekends.</strong> An unfinished ambitious project is worth nothing;
+            a finished narrow one is worth a lot. Ship it, then write it up.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>News &amp; staying current</summary>
+        <div class="fold-body">
+          <p>
+            Not for its own sake — so you can hold a conversation with a founder about their market
+            without sounding like you skimmed their homepage that morning. Twenty minutes a day.
+          </p>
+          <h4>Core</h4>
+          <ul>
+            <li><a href="https://stratechery.com/" target="_blank" rel="noopener">Stratechery</a> (Ben Thompson) — the best strategic analysis in tech. Free Monday articles are enough.</li>
+            <li><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter</a> — product and growth, and the vocabulary your interviewers use.</li>
+            <li><a href="https://www.theinformation.com/" target="_blank" rel="noopener">The Information</a> — best original reporting in tech. Paywalled, but they run steep student pricing; worth asking.</li>
+            <li><a href="https://www.axios.com/newsletters/axios-pro-rata" target="_blank" rel="noopener">Axios Pro Rata</a> — daily funding and M&amp;A in five minutes. Free.</li>
+            <li><a href="https://www.notboring.co/" target="_blank" rel="noopener">Not Boring</a> (Packy McCormick) — long-form company deep dives, genuinely fun to read.</li>
+          </ul>
+          <h4>By market</h4>
+          <ul>
+            <li><strong>AI:</strong> Import AI (Jack Clark) and The Batch (Andrew Ng) — both free, both keep you literate without pretending to be a researcher.</li>
+            <li><strong>Fintech:</strong> Fintech Brainfood (Simon Taylor). Directly relevant to Ramp, Mercury, Brex, Alloy, Airwallex.</li>
+            <li><strong>Austin:</strong> Austin Inno and Austin Business Journal.</li>
+            <li><strong>Australia:</strong> Australian Financial Review tech section, Startup Daily, SmartCompany. Read these before any ANZ interview — the market has its own reference points.</li>
+            <li><strong>Spain:</strong> Novobrief and El Referente cover the Barcelona and Madrid startup scenes.</li>
+          </ul>
+          <div class="callout">
+            <strong>Follow founders, not publications.</strong> For any company you're targeting, find the
+            founder on X or LinkedIn and read their last six months. It's the highest-density
+            preparation available and it's free.
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>How to research a company before applying</summary>
+        <div class="fold-body">
+          <p>Thirty focused minutes per company. Do this before writing any outreach email — it's the difference between a reply and silence.</p>
+          <h4>The pass</h4>
+          <ul>
+            <li><strong>Use the product.</strong> Sign up for the free tier. Non-negotiable, and almost nobody does it.</li>
+            <li><strong>Read their other job postings.</strong> What they're hiring for reveals what they're struggling with — three sales roles and no engineers means distribution is the constraint.</li>
+            <li>Pricing page — tells you the customer, the deal size, and whether it's self-serve or sales-led.</li>
+            <li>Engineering and company blog — what they're proud of.</li>
+            <li>Crunchbase — last round, size, date, investors. A company that raised recently is hiring; one that raised 30 months ago may not be.</li>
+            <li>Founder podcast appearances. Founders repeat their strategy verbatim across interviews; twenty minutes gives you their exact framing.</li>
+          </ul>
+          <h4>Turn it into an email</h4>
+          <ul>
+            <li>Open with the specific observation, not with yourself. "Your onboarding asks for a company size before explaining the product — I'd guess that's costing activation" earns a reply.</li>
+            <li>State the dates plainly: available January through March, flexible on the end.</li>
+            <li>One concrete offer of what you'd do. Short. Five sentences total, not fifteen.</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sechead">
+      <h2>Resume</h2>
+      <p>
+        Every Fit score on this page is provisional until this is filled in. Paste the text below
+        to keep it alongside the tracker — it saves in this browser so it survives refreshes and
+        redeploys.
+      </p>
+    </div>
+
+    <div class="resume" id="resume">
+      <div class="resume-head">
+        <span class="dot"></span>
+        <b>Resume</b>
+        <span class="state" id="r-state">Not added</span>
+        <span class="acts">
+          <button class="btn" id="r-edit" type="button" hidden>Edit</button>
+          <button class="btn" id="r-clear" type="button" hidden>Clear</button>
+        </span>
+      </div>
+      <div class="resume-body">
+        <div id="r-empty">
+          <p style="margin-bottom:12px">
+            Paste your resume as plain text — open the PDF, select all, copy. Formatting doesn't
+            matter; the content does.
+          </p>
+          <textarea id="r-input" placeholder="Paste resume text here…" aria-label="Resume text"></textarea>
+          <div style="display:flex; gap:8px; align-items:center; margin-top:10px; flex-wrap:wrap">
+            <button class="btn primary" id="r-save" type="button">Save resume</button>
+            <span class="saved-note" id="r-hint">Stored locally in this browser only — never uploaded.</span>
+          </div>
+        </div>
+        <div id="r-filled" hidden>
+          <div class="resume-render" id="r-render"></div>
+          <p class="saved-note" id="r-when" style="margin-top:10px"></p>
+        </div>
+
+        <div style="border-top:1px solid var(--line-soft); padding-top:14px; margin-top:4px">
+          <h4 style="font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--warm); padding-bottom:8px">
+            To actually update the tracker
+          </h4>
+          <p style="margin-bottom:10px">
+            Saving here keeps a copy in front of you, but the scoring lives in the repo. To get real
+            Fit scores and per-role tailoring:
+          </p>
+          <ol class="steps">
+            <li>Drop the PDF into the <code>resume/</code> folder in your WINTERNSHIP directory.</li>
+            <li>Tell Claude it's there. It fills the resume section of <code>PROFILE.md</code>, rewrites the keyword bank from your actual experience, and recomputes every Fit score — dropping the provisional <code>~</code> markers.</li>
+            <li>Ask for per-role tailoring on your top priorities: which bullets to lead with, which keywords from the posting to mirror, and which gaps to address.</li>
+            <li>The weekly sweep agent then reads <code>PROFILE.md</code> too, so every new role it finds gets scored against your real background instead of an estimate.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <span>Source of truth: jobs.md</span>
     <span>Context: PROFILE.md</span>
@@ -577,4 +1093,58 @@ el("reset").addEventListener("click", () => {
 });
 
 render();
+
+// ---- resume panel (localStorage only; no upload, no network) ----
+const KEY = "winternship.resume";
+const rPanel = el("resume");
+
+function paintResume() {
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (_) { saved = null; }
+
+  const has = saved && saved.text && saved.text.trim();
+  rPanel.classList.toggle("filled", !!has);
+  el("r-state").textContent = has ? "Added" : "Not added";
+  el("r-empty").hidden = !!has;
+  el("r-filled").hidden = !has;
+  el("r-edit").hidden = !has;
+  el("r-clear").hidden = !has;
+
+  if (has) {
+    el("r-render").textContent = saved.text;
+    el("r-when").textContent = "Saved " + new Date(saved.at).toLocaleString();
+  }
+}
+
+el("r-save").addEventListener("click", () => {
+  const text = el("r-input").value.trim();
+  if (!text) { el("r-hint").textContent = "Nothing to save — paste the text first."; return; }
+  try {
+    localStorage.setItem(KEY, JSON.stringify({ text, at: Date.now() }));
+  } catch (_) {
+    el("r-hint").textContent = "Couldn't save — browser storage is unavailable or full.";
+    return;
+  }
+  paintResume();
+});
+
+el("r-edit").addEventListener("click", () => {
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (_) {}
+  el("r-input").value = saved ? saved.text : "";
+  rPanel.classList.remove("filled");
+  el("r-empty").hidden = false;
+  el("r-filled").hidden = true;
+  el("r-input").focus();
+});
+
+el("r-clear").addEventListener("click", () => {
+  if (!confirm("Remove the saved resume text from this browser?")) return;
+  localStorage.removeItem(KEY);
+  el("r-input").value = "";
+  el("r-hint").textContent = "Stored locally in this browser only — never uploaded.";
+  paintResume();
+});
+
+paintResume();
 </script>
