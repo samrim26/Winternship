@@ -271,14 +271,18 @@ track is the only realistic shape for Jan–Mar; confirm a winter cohort exists 
 
 ## Automated monitoring
 
-A cloud routine — **WINTERNSHIP weekly job sweep** (`trig_01FJifiSN9LgKwExGsBCo3BZ`) — runs every
-**Monday at 09:00 ET** and sweeps the boards above for new off-cycle roles matching the profile.
-It reports new findings with difficulty/fit/priority already scored. Manage it at
+A cloud routine — **WINTERNSHIP daily job sweep** (`trig_01FJifiSN9LgKwExGsBCo3BZ`) — runs
+**every day at 09:00 ET**. It clones this repo, reads `PROFILE.md` for scoring context, sweeps the
+boards above, writes new rows into this file and the `RAW` array in `dashboard.html`, marks expired
+roles `closed`, and pushes. Manage it at
 <https://claude.ai/code/routines/trig_01FJifiSN9LgKwExGsBCo3BZ>.
 
-It currently runs **report-only** — it can't write to this folder because it executes in a cloud
-sandbox. Once this repo is pushed to GitHub, add the repo as a source and it will commit new rows
-into this file directly.
+Two things it can't do: publish the dashboard Artifact (needs a manual republish after it adds
+rows), and score against a resume that isn't in `PROFILE.md` yet.
+
+**Expect empty days.** The agent is instructed that finding nothing is the correct outcome and to
+make no commit at all rather than pad the tracker. Yield stays near zero until November 2026, when
+the YC Winter batch lands.
 
 ## Maintenance
 
