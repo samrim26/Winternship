@@ -204,6 +204,29 @@ Search these titles at each: `founder's associate` · `chief of staff` · `growt
 > want Australia at all, start the visa before you have an offer — it's a working-holiday visa,
 > not employer-sponsored, so it doesn't require one.
 
+### Japan (Tokyo)
+
+`OPEN, UNPAID ONLY.` Sam relocates to Japan 1 April regardless, which makes a Jan–Mar Tokyo stint
+uniquely low-friction: no second relocation, a network built before the semester, and a conversion
+path to paid part-time work (28 hrs/week) once he's on a student visa in April. Unpaid internships
+of ≤90 days on Temporary Visitor status are permitted for students enrolled at an overseas
+university — the window is 68 days. See `PROFILE.md` → Location Feasibility.
+
+**Positioning:** lead with the April relocation. It removes visa sponsorship, housing, and
+flight-risk objections at once. Target companies with overseas ambitions where native English is a
+concrete asset. Don't claim Japanese ability.
+
+| # | Company | Why it fits | Function target | Prestige | Diff | Fit | Status | Careers |
+|---|---|---|---|---|---|---|---|---|
+| C8 | LayerX | Series B, English-friendly, strong commercial org | BD, Growth | 4 | 3 | ~4 | monitor | [layerx.co.jp](https://layerx.co.jp/en) |
+| C11 | Ubie | Health AI, international orientation, hires non-Japanese speakers | BD, Market research | 3 | 3 | ~4 | monitor | [ubiehealth.com](https://ubiehealth.com/) |
+| C28 | Mercari | Japan's best-known consumer tech company, international team | Data, Growth | 5 | 4 | ~4 | monitor | [careers.mercari.com](https://careers.mercari.com/) |
+| C29 | SmartNews | US–Japan bridge company; native English is a concrete asset | Growth, Data | 4 | 4 | ~4 | monitor | [about.smartnews.com](https://about.smartnews.com/en/careers/) |
+| C30 | SmartHR | HR SaaS unicorn expanding internationally | Growth, BD | 3 | 3 | ~3 | monitor | [smarthr.co.jp](https://smarthr.co.jp/en/) |
+| C31 | Money Forward | Fintech with a large data org — econ background directly relevant | Data, Fintech | 4 | 4 | ~3 | monitor | [corp.moneyforward.com](https://corp.moneyforward.com/en/) |
+| C32 | Coral Capital portfolio | Tokyo VC publishing in English with a portfolio job board. Best entry point to English-friendly Japanese startups. | Startup generalist | 3 | 2 | ~4 | monitor | [coralcap.co](https://coralcap.co/) |
+| C58 | Sansan | B2B SaaS with international ambitions; English market research valued | BD, Research | 4 | 3 | ~4 | monitor | [corp-sansan.com](https://jp.corp-sansan.com/en/) |
+
 ### Spain
 
 | # | Company | Why it fits | Function target | Stage | Diff | Fit | Status | Careers |
