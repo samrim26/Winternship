@@ -44,4 +44,4 @@ Each is one message that either unblocks a market or closes it. All were open as
 
 1. **UT Austin Texas Global** — will they sign a *convenio de prácticas*? Gates Madrid and Barcelona entirely. Ask about Japan in the same email.
 2. **Australian Work and Holiday visa (subclass 462)** — US citizens qualify, but the allocation is capped near 2,500 a year and closes when hit. Not employer-sponsored, so it can be started before an offer exists.
-3. **Masa eligibility** — determines whether Israel is reachable at all.
+3. **Japan** — Tokyo is open but unpaid-only (no US working-holiday agreement; ≤90 days on Temporary Visitor status). Worth pursuing precisely *because* of the April relocation. Israel is now closed — every program-mediated route needs 4+ months and cannot finish by 12 March.
