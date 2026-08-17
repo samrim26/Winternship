@@ -9,7 +9,7 @@
 is out of scope, however good it looks. Target window is **Mon 4 Jan → Fri 12 Mar 2027** (10 weeks,
 19 days of buffer).
 
-**Removed in the 2026-08-02 revision** for running past mid-March or falling outside the target
+**Removed from every table below** (2026-08-02 revision) for running past mid-March or falling outside the target
 markets — recorded so they aren't re-added by a future sweep:
 
 | Removed | Why |
@@ -92,27 +92,15 @@ recomputed once the resume is uploaded.
 | A1 | Brilliant Infotech | Business Development Intern (Winter/Spring 2027) | BD | New York, NY | In-person | Small | Winter/Spring 2027 | Rolling | Unclear — verify | 2 | ~3 | **High** | not started | [LinkedIn](https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458) |
 | A2 | Magnet Media | Social Media Intern (Spring 2027) | Growth/Marketing | New York, NY | In-person | Small | Spring 2027 | Rolling | Verify | 2 | ~2 | Med | not started | [InternDock](https://www.interndock.com/tracker/guides/summer-2027-internship-drop-open-now) |
 | A3 | Glovo | Marketing Controller Intern — Growth & Finance | Growth/Data | Barcelona | In-person | Unicorn | Rolling | Rolling | Paid | 3 | ~4 | Med* | not started | [Glovo careers](https://jobs.glovoapp.com/) |
-| A4 | Deloitte | Audit & Assurance Intern (Winter 2027) | Audit | Multiple US | Hybrid | Big 4 | Jan–Apr 2027 | Rolling | Paid | 3 | ~2 | Low | not started | [Deloitte careers](https://www2.deloitte.com/us/en/careers/students.html) |
-| A5 | Delta Air Lines | Co-op, HR Analytics & Insights (Spring 2027) | Data | Atlanta, GA | In-person | Enterprise | Spring 2027 | Rolling | Paid | 3 | ~4 | Low‖ | not started | [Jobright](https://jobright.ai/jobs/info/6a35e9d629c90c607e4e3fec) |
-| A6 | Delta Air Lines | Co-op, Crew Resources — Data Analyst (Spring 2027) | Data | Atlanta, GA | In-person | Enterprise | Spring 2027 | Rolling | Paid | 3 | ~4 | Low‖ | not started | [Delta Early Careers](https://www.delta.com/us/en/careers/students-and-early-careers) |
-| A7 | Medpace | Feasibility Informatics Intern/Co-op (Spring 2027) | Data | Cincinnati, OH | In-person | Enterprise | Spring 2027 | Rolling | Paid | 2 | ~3 | Low | not started | [Medpace careers](https://www.medpace.com/careers/) |
-| A8 | Allied Global Marketing | Marketing & Press Intern (Spring) | Growth | Chicago, IL | In-person | Mid | Spring 2027 | Rolling | Paid | 2 | ~2 | Low | not started | [Simplify](https://simplify.jobs/l/Top-Winter-and-Spring-Internships) |
 
 \* **A3 Priority capped by the Spain convenio blocker** — see `PROFILE.md` → Location Feasibility.
 Resolve the UT Austin question before investing time here.
 
-‖ **A5/A6 conflict with your enrollment decision.** Delta's co-op explicitly states: *"Student
-cannot actively take any courses and work as a Co-op/Intern at the same time."* It also requires
-**three alternating semesters** (Spring 2027, Fall 2027, Summer 2028) and is onsite in Atlanta —
-outside your target markets. Listed because they're among the very few live Spring 2027 *data*
-roles in existence right now, and because they show the constraint biting: structured corporate
-co-ops are where "staying enrolled" costs you. Startups won't ask.
 
-> **The co-op channel is worth understanding even if Delta isn't the answer.** Co-op programs
-> (Northeastern-style) run Jan–June and companies post them for January starts — Wayfair ran a
-> Data Science Co-op Jan 5 – Jun 19 at $27.50/hr in Boston. That's exactly your shape. Search
-> `co-op` as a keyword alongside `intern`; it surfaces a different set of postings. The catch is
-> the same full-time-enrollment clause, so read each posting's fine print.
+> **The co-op channel is still worth searching even though Delta and Wayfair failed the date test.**
+> Co-op programs run Jan–June and are posted for January starts, so `co-op` as a keyword surfaces a
+> different set of postings than `intern`. Nearly all of them run past mid-March and many forbid
+> concurrent enrollment — read the fine print before investing time, but search the term.
 
 ---
 
@@ -124,18 +112,11 @@ co-ops are where "staying enrolled" costs you. Startups won't ask.
 | B2 | Citi | Summer Analyst — Commercial Banking, APAC | BD/Strategy | Sydney, AU | In-person | Rolling | 10 wks, Dec–Feb | Paid | 4 | ~3 | Med | monitor | [Citi Careers](https://jobs.citi.com/) |
 | B3 | Bank of America | Global IB & Capital Markets Summer Analyst 2026/27 | Finance | Sydney, AU | In-person | Rolling | Dec–Feb | Paid | 5 | ~2 | Low | monitor | [BofA Careers](https://careers.bankofamerica.com/en-us/students) |
 | B4 | Big 4 advisory (Deloitte / PwC / EY / KPMG) | Advisory & Analytics spring intern | Data/Strategy | Austin, NYC, SF | Hybrid | **Aug–Sept 2026** | Jan–Apr 2027 | Paid | 3 | ~3 | **High** | monitor | search each careers site |
-| B5 | Birthright Israel Excel | Business/Tech Fellowship — Tel Aviv | BD/PM | Tel Aviv | In-person | **Sept 1, 2026** | **Summer only** | Stipend | 5 | ~4 | Low† | monitor | [Excel](https://birthrightisraelexcel.com/college-students/) |
-| B6 | Masa / Career Israel | Tel Aviv internship placement | Various | Tel Aviv | In-person | Rolling | 4–6 mo / 8 wk track | Subsidized | 3 | ~3 | Low† | blocked | [Masa](https://www.masaisrael.org/job_cat/internship-en/) |
-| B7 | Atlassian | ANZ Summer Internship 2027/28 | PM/Data | Sydney, AU | In-person | **late Aug–Sept 2026** | **Nov 2027–Feb 2028** | Paid | 5 | ~3 | Low‡ | monitor | [Atlassian Early Careers](https://www.atlassian.com/company/careers/earlycareers) |
-| B8 | Canva | ANZ Summer Internship 2027/28 | PM/Data | Sydney, AU | In-person | ~April 2027 | **Dec 2027–Feb 2028** | Paid | 5 | ~3 | Low‡ | monitor | [Canva Careers](https://www.lifeatcanva.com/en/jobs/) |
 
-† **Israel roles are summer-weighted and Masa requires proof of Judaism** — confirm your
-eligibility before spending time here (`PROFILE.md` open question). Excel is summer-only, so
-it does not serve the Jan–Mar window at all; listed because registration opens Sept 1, 2026
-if you'd consider Summer 2027 instead.
 
-‡ **Wrong year for your window** — these are the 2027/28 ANZ cycle (Nov 2027 onward). Listed
-because applications open *now* and they're worth taking if you'd accept a later stint.
+**Confirm the end date on every Tier B row before applying.** B1 and B4 are structured programs whose
+spring cycles commonly run into April or May. If they cannot finish by 12 March, they are out —
+see the scope note at the top of this file.
 
 ---
 
@@ -231,10 +212,11 @@ becomes a strong market. If not, delete this section and reallocate to Australia
 | # | Company / Route | Why it fits | Function target | Diff | Fit | Status | Link |
 |---|---|---|---|---|---|---|---|
 | C36 | Destination Israel | Runs a 1,200-company Israeli internship database; has 2-month tracks | Various | 3 | ~3 | blocked† | [destinationisrael.com](https://www.destinationisrael.com/) |
-| C37 | TAU International | Tel Aviv University internship placement, English-language | Business/Tech | 3 | ~3 | blocked† | [international.tau.ac.il](https://international.tau.ac.il/Summer_Internship_Program) |
 
-† Gated on Masa/program eligibility **and** duration mismatch. Destination Israel's 2-month
-track is the only realistic shape for Jan–Mar; confirm a winter cohort exists before pursuing.
+† **Israel is effectively closed for this window.** The March 12 deadline rules out every
+program-mediated route independent of the eligibility question — Masa needs 5+ months, Career
+Israel 4–6. Destination Israel's 2-month track is the only shape that could fit, and a January
+cohort is unconfirmed. Deprioritize unless something changes.
 
 ---
 
