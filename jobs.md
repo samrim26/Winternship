@@ -1,7 +1,7 @@
 # Job Tracker — Off-Cycle Spring 2027
 
 > Source of truth for `dashboard.html`. Edit the `Status` column by hand as you apply.
-> Last swept: **2026-08-02**
+> Last swept: **2026-08-17**
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -238,6 +238,38 @@ track is the only realistic shape for Jan–Mar; confirm a winter cohort exists 
 
 ---
 
+### Technical-adjacent & business development (added 2026-08-17)
+
+Sam wants to sit close to engineering without being an engineer. That is a defined lane with real
+titles: **solutions engineer / sales engineer** (pre-sales), **solutions architect**, **technical
+account manager**, **deployment strategist**, **developer relations**, **partnerships at an API
+company**, and **product / revenue operations**. These screen for translation ability rather than
+implementation ability, they are customer-facing and social, and SQL plus product curiosity is
+genuinely enough to enter. See the *Technical-adjacent lane* section of `dashboard.html`.
+
+| # | Company | Role target | Function | Location | Flex | Prestige | Diff | Fit | Careers |
+|---|---|---|---|---|---|---|---|---|---|
+| C43 | Plaid | Partnerships / solutions | Partnerships | New York | High | 5 | 4 | 5 | [plaid.com](https://plaid.com/careers/) |
+| C44 | MongoDB | Solutions / BD | BD | New York | Med | 5 | 4 | 4 | [mongodb.com](https://www.mongodb.com/careers) |
+| C45 | Modal Labs | BD / growth | BD | New York | High | 3 | 2 | 5 | [modal.com](https://modal.com/careers) |
+| C46 | Hightouch | GTM / solutions | Growth | San Francisco | High | 3 | 3 | 5 | [hightouch.com](https://hightouch.com/careers) |
+| C47 | Hex | Growth / solutions | Growth | San Francisco | High | 3 | 3 | 5 | [hex.tech](https://hex.tech/careers/) |
+| C48 | Amplitude | Solutions consultant / growth | Growth | San Francisco | Med | 4 | 3 | 5 | [amplitude.com](https://amplitude.com/careers) |
+| C49 | Twilio | Solutions engineering / BD | BD | San Francisco | Med | 4 | 4 | 4 | [twilio.com](https://www.twilio.com/en-us/company/jobs) |
+| C50 | Vercel | DevRel / solutions | BD | San Francisco | High | 4 | 4 | 4 | [vercel.com](https://vercel.com/careers) |
+| C51 | Baseten | GTM / BD | BD | San Francisco | High | 3 | 2 | 5 | [baseten.co](https://www.baseten.co/careers/) |
+| C52 | Stripe | Partner / BD | Partnerships | San Francisco | Low | 5 | 5 | 4 | [stripe.com](https://stripe.com/jobs) |
+| C53 | SailPoint | BD / solutions | BD | Austin | Med | 3 | 3 | 4 | [sailpoint.com](https://www.sailpoint.com/company/careers/) |
+| C54 | CrowdStrike | BD / sales development | BD | Austin | Low | 5 | 4 | 3 | [crowdstrike.com](https://www.crowdstrike.com/careers/) |
+| C55 | Procore | BD / partnerships | BD | Austin | Med | 4 | 3 | 4 | [procore.com](https://careers.procore.com/) |
+| C56 | Braze | BD / solutions | BD | New York | Med | 4 | 3 | 4 | [braze.com](https://www.braze.com/company/careers) |
+| C57 | LangChain | DevRel / BD | BD | San Francisco | High | 4 | 3 | 4 | [langchain.com](https://www.langchain.com/careers) |
+| C58 | Sansan | BD / market research | BD | Tokyo | Med | 4 | 3 | 4 | [corp-sansan.com](https://jp.corp-sansan.com/en/) |
+
+**Highest-fit of the batch:** Plaid, Modal, Hightouch, Hex, Amplitude, Baseten. All either sell to
+data teams (so the stats minor is the qualification) or are small enough that a cold email reaches
+someone who decides.
+
 ## Boards to sweep monthly
 
 | Board | Why | Sweep cadence |
@@ -283,6 +315,23 @@ rows), and score against a resume that isn't in `PROFILE.md` yet.
 **Expect empty days.** The agent is instructed that finding nothing is the correct outcome and to
 make no commit at all rather than pad the tracker. Yield stays near zero until November 2026, when
 the YC Winter batch lands.
+
+## ⚠️ Known issue — sweep agent network access
+
+As of **2026-08-17** the daily sweep runs successfully but its cloud environment's egress proxy
+**blocks almost every source in the boards list** — Wellfound, Simplify, Built In, GradConnection,
+**Work at a Startup**, Greenhouse and Ashby job boards, Coral Capital, TokyoDev, Japan Dev, LinkedIn,
+and most company careers pages all return `EGRESS_BLOCKED`. Only `github.com` and the web-search
+tool are reachable.
+
+The agent is behaving correctly — it refuses to record a role it could not actually see, so it has
+added nothing rather than adding unverified rows. But it is running at a fraction of its intended
+coverage.
+
+**This must be fixed before November 2026**, when the YC Winter 2027 batch lands and
+`workatastartup.com` becomes the highest-value source in the whole search. Fix by widening the
+environment's network allowlist in the Claude Code web environment settings, or by pointing the
+routine at an environment with broader egress.
 
 ## Maintenance
 
