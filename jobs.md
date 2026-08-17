@@ -5,7 +5,7 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-17**
+> Last swept: **2026-08-17** (full manual sweep)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -96,6 +96,13 @@ recomputed once the resume is uploaded.
 | A1 | Brilliant Infotech | Business Development Intern (Winter/Spring 2027) | BD | New York, NY | In-person | Small | Winter/Spring 2027 | Rolling | Unclear — verify | 2 | ~3 | **High** | not started | [LinkedIn](https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458) |
 | A2 | Magnet Media | Social Media Intern (Spring 2027) | Growth/Marketing | New York, NY | In-person | Small | Spring 2027 | Rolling | Verify | 2 | ~2 | Med | not started | [InternDock](https://www.interndock.com/tracker/guides/summer-2027-internship-drop-open-now) |
 | A3 | Glovo | Marketing Controller Intern — Growth & Finance | Growth/Data | Barcelona | In-person | Unicorn | Rolling | Rolling | Paid | 3 | ~4 | Med* | not started | [Glovo careers](https://jobs.glovoapp.com/) |
+| A4 | Zipline | Community Engagement Intern (Spring 2027) | Growth/Community | Austin, TX | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $30/hr | 3 | ~4 | **High** | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline/jobs/63567774-community-engagement-intern-summer-2026) |
+
+**A4 — the one that got away, maybe.** Zipline's Spring 2027 Community Engagement Intern is Austin,
+in-person, $30/hr, and community/partnerships work — a genuinely good fit. But the Spring term runs
+**January to April**, four weeks past your hard stop. Zipline runs this role seasonally in several
+cities, so it is worth one email asking whether a 4 Jan – 12 Mar version is possible. Recorded as
+`conflict` rather than dropped, because "probably no" is your call to make, not the tracker's.
 
 \* **A3 Priority capped by the Spain convenio blocker** — see `PROFILE.md` → Location Feasibility.
 Resolve the UT Austin question before investing time here.
@@ -267,7 +274,8 @@ someone who decides.
 | [Otta / Welcome to the Jungle](https://app.otta.com/) | Strong filters, Europe coverage | Monthly |
 | [SEEK Grad (ANZ)](https://au.gradconnection.com/) | Australian internships | Monthly |
 | [Simplify — Winter & Spring list](https://simplify.jobs/l/Top-Winter-and-Spring-Internships) | Dedicated off-cycle list, 230 roles added in a week at last check. Skews engineering/healthcare — filter hard. | Biweekly |
-| [SimplifyJobs off-season repo](https://github.com/SimplifyJobs/Summer2027-Internships) | Community-maintained, updated daily, has a dedicated **Off-Season README**. Best signal-to-noise of any free source. | **Weekly** |
+| [SimplifyJobs off-season README (raw)](https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/README-Off-Season.md) | Community-maintained, updated daily. **Verified 2026-08-17: the Winter/Spring 2027 list is ~100% software engineering — zero business, data or growth roles.** That single fact explains why off-season sweeps come back empty. Use the raw URL; the github.com page is not fetchable by the agent. | **Weekly** |
+| [Intern Insider — Winter 2027](https://interninsider.me/internships/terms/winter-2027) | ~400 open Winter 2027 roles across ~170 companies, updated continuously. Reachable by the agent. Mostly finance/consulting/engineering, but the best single source of genuinely winter-term postings. | **Weekly** |
 | [sndsh404 off-season repo](https://github.com/sndsh404/summer-2027-internships) | Second community repo; explicitly covers off-season data/product roles | Biweekly |
 | [intern-list.com](https://www.intern-list.com/da-intern-list) | Daily-updated data analyst intern list | Weekly |
 | [Wayfair careers](https://www.wayfair.com/careers) | Runs Jan-start Data Science co-ops (Jan 5 – Jun 19 precedent, $27.50/hr) | Monthly from Sept |
@@ -302,22 +310,37 @@ rows), and score against a resume that isn't in `PROFILE.md` yet.
 make no commit at all rather than pad the tracker. Yield stays near zero until November 2026, when
 the YC Winter batch lands.
 
-## ⚠️ Known issue — sweep agent network access
+## ⚠️ Sweep agent network access
 
-As of **2026-08-17** the daily sweep runs successfully but its cloud environment's egress proxy
-**blocks almost every source in the boards list** — Wellfound, Simplify, Built In, GradConnection,
-**Work at a Startup**, Greenhouse and Ashby job boards, Coral Capital, TokyoDev, Japan Dev, LinkedIn,
-and most company careers pages all return `EGRESS_BLOCKED`. Only `github.com` and the web-search
-tool are reachable.
+The daily sweep's cloud environment blocks most of the open web through an egress proxy.
 
-The agent is behaving correctly — it refuses to record a role it could not actually see, so it has
-added nothing rather than adding unverified rows. But it is running at a fraction of its intended
-coverage.
+**Reachable:** `WebSearch` (server-side, never blocked), `raw.githubusercontent.com`, `github.com`,
+`interninsider.me`.
+**Blocked:** wellfound.com, simplify.jobs, builtin\*.com, au.gradconnection.com, **workatastartup.com**,
+greenhouse.io, ashbyhq.com, linkedin.com, coralcap.co, tokyodev.com, japan-dev.com, most company
+career pages.
 
-**This must be fixed before November 2026**, when the YC Winter 2027 batch lands and
-`workatastartup.com` becomes the highest-value source in the whole search. Fix by widening the
-environment's network allowlist in the Claude Code web environment settings, or by pointing the
-routine at an environment with broader egress.
+**Mitigated, not solved.** The agent now (a) probes the allowlist at the start of every run and
+adapts, (b) leads with web search rather than direct fetches, (c) uses `raw.githubusercontent.com`
+URLs instead of github.com pages, and (d) **records unverifiable leads as `unverified` instead of
+discarding them** — with the real URL, so you can open it in a normal browser. Every run now prints
+an access report.
+
+**Still needs fixing before November 2026**, when `workatastartup.com` becomes the highest-value
+source in the search. Widen the allowlist in the Claude Code web environment settings for the
+environment this routine uses, or point the routine at one with broader egress.
+
+## Statuses
+
+| Status | Meaning |
+|---|---|
+| `live` | Verified open posting. Apply. |
+| `unverified` | Real lead, posting page could not be opened from the sweep environment. URL is good — **open it yourself**. Scores provisional. |
+| `conflict` | Good role, dates clash with the 12 March stop. Worth asking whether a shorter version exists. |
+| `drafting` / `applied` / `interviewing` | Your pipeline. Edit by hand. |
+| `monitor` | Nothing to apply to yet — dated opening or outreach target. |
+| `blocked` | Gated on an unresolved prerequisite (visa, convenio, eligibility). |
+| `closed` | Expired or rejected. Kept for history. |
 
 ## Maintenance
 

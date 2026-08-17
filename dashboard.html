@@ -87,6 +87,8 @@
   tr[data-pri="High"] td:first-child { border-left-color:var(--warm); }
   tr[data-pri="Med"] td:first-child { border-left-color:var(--ink-3); }
   tr[data-status="live"] td:first-child { border-left-color:var(--ok); }
+  tr[data-status="unverified"] td:first-child { border-left-color:var(--warn); }
+  tr[data-status="conflict"] td:first-child { border-left-color:var(--crit); }
   .ref { font-family:var(--mono); font-size:11px; color:var(--ink-3); font-variant-numeric:tabular-nums; }
   .co { font-weight:600; display:block; }
   .co a { color:inherit; text-decoration:none; border-bottom:1px solid var(--line); }
@@ -103,6 +105,8 @@
   .s-live { color:var(--ok); border-color:currentColor; }
   .s-monitor { color:var(--ink-3); border-color:var(--line); }
   .s-blocked { color:var(--crit); border-color:currentColor; }
+  .s-unverified { color:var(--warn); border-color:currentColor; background:var(--warm-soft); }
+  .s-conflict { color:var(--crit); border-color:currentColor; background:var(--warm-soft); }
   .s-drafting,.s-applied,.s-interviewing { color:var(--warn); border-color:currentColor; }
   .s-closed { color:var(--ink-3); border-color:var(--line-soft); text-decoration:line-through; }
   .fx-High { color:var(--ok); font-weight:600; }
@@ -1061,13 +1065,14 @@ const RAW = [
 ["C55","C","Procore","BD / partnerships","BD","Austin","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,3,4,"High","monitor","https://careers.procore.com/","Construction software with an Austin office. Vertical SaaS — you learn an industry alongside the product.",["saas","business development","partnerships","construction","crm","technical"]],
 ["C56","C","Braze","BD / solutions","BD","New York","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",4,3,4,"High","monitor","https://www.braze.com/company/careers","Customer-engagement platform, NYC. Solutions work here is heavily analytical — segmentation, campaign measurement.",["marketing technology","sql","analytics","business development","saas","segmentation"]],
 ["C57","C","LangChain","DevRel / BD","BD","San Francisco","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Paid",4,3,4,"Med","monitor","https://www.langchain.com/careers","AI tooling, small team, enormous developer community. Reachable, and applied-AI adjacent without needing research chops.",["ai","llm","developer relations","developer tools","community","technical","startup"]],
-["C58","C","Sansan","BD / market research","BD","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Likely unpaid",4,3,4,"Med","monitor","https://jp.corp-sansan.com/en/","Japanese B2B SaaS with international ambitions. English-language market research is a concrete asset there.",["saas","business development","market research","english","b2b","analytics"]]
+["C58","C","Sansan","BD / market research","BD","Tokyo","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Likely unpaid",4,3,4,"Med","monitor","https://jp.corp-sansan.com/en/","Japanese B2B SaaS with international ambitions. English-language market research is a concrete asset there.",["saas","business development","market research","english","b2b","analytics"]],
+["A4","A","Zipline","Community Engagement Intern (Spring 2027)","Growth","Austin","In-person","Jan 2027","Apr 2027 \u26a0","Med","$30/hr",4,3,4,"High","conflict","https://jobs.techstars.com/companies/zipline/jobs/63567774-community-engagement-intern-summer-2026","Austin, in-person, $30/hr, community and partnerships work. But the Spring 2027 term runs January to April \u2014 four weeks past your hard stop. Zipline runs this seasonally, so ask whether a 4 Jan\u201312 Mar version is possible. Worth the email.",["community","partnerships","social media","events","outreach","growth","communication"]]
 ];
 
 const K = ["ref","tier","company","role","fn","loc","mode","start","end","flex","pay","prst","diff","fit","pri","status","url","note","kw"];
 const PRI_ORDER = { High:3, Med:2, Low:1 };
 const FLEX_ORDER = { High:3, Med:2, Low:1 };
-const STATUS_ORDER = { live:0, interviewing:1, drafting:2, applied:3, monitor:4, blocked:5, closed:6 };
+const STATUS_ORDER = { live:0, unverified:1, conflict:2, interviewing:3, drafting:4, applied:5, monitor:6, blocked:7, closed:8 };
 
 const ROWS = RAW.map(r => {
   const o = Object.fromEntries(K.map((k,i) => [k, r[i]]));
