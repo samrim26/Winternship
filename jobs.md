@@ -1,6 +1,10 @@
 # Job Tracker — Off-Cycle Spring 2027
 
 > Source of truth for `dashboard.html`. Edit the `Status` column by hand as you apply.
+>
+> **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
+> this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
+> continue from the highest ref in that array — not from this file.
 > Last swept: **2026-08-17**
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
