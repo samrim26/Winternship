@@ -5,7 +5,7 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-17** (full manual sweep)
+> Last swept: **2026-08-18** (automated sweep — access allowlist widened significantly, see below)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -93,10 +93,26 @@ recomputed once the resume is uploaded.
 
 | # | Company | Role | Function | Location | Mode | Stage | Window | Deadline | Pay | Diff | Fit | Priority | Status | Link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| A1 | Brilliant Infotech | Business Development Intern (Winter/Spring 2027) | BD | New York, NY | In-person | Small | Winter/Spring 2027 | Rolling | Unclear — verify | 2 | ~3 | **High** | not started | [LinkedIn](https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458) |
+| A1 | Brilliant Infotech (Brilliant Agency) | Business Development Intern (Winter/Spring 2027) | BD | New York, NY (title) / Council Bluffs, IA (JD) | **Remote** | Small | Jan 11 2027 – May/June 2027 ⚠ | Rolling | $250/mo equipment stipend | 2 | ~2 | Low | conflict | [LinkedIn](https://www.linkedin.com/jobs/view/business-development-internship-winter-spring-2027-at-brilliant-infotech-inc-4445733458) |
 | A2 | Magnet Media | Social Media Intern (Spring 2027) | Growth/Marketing | New York, NY | In-person | Small | Spring 2027 | Rolling | Verify | 2 | ~2 | Med | not started | [InternDock](https://www.interndock.com/tracker/guides/summer-2027-internship-drop-open-now) |
 | A3 | Glovo | Marketing Controller Intern — Growth & Finance | Growth/Data | Barcelona | In-person | Unicorn | Rolling | Rolling | Paid | 3 | ~4 | Med* | not started | [Glovo careers](https://jobs.glovoapp.com/) |
 | A4 | Zipline | Community Engagement Intern (Spring 2027) | Growth/Community | Austin, TX | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $30/hr | 3 | ~4 | **High** | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline/jobs/63567774-community-engagement-intern-summer-2026) |
+| A5 | Dalus (YC W25) | GTM Intern | GTM | SF / Melbourne, AU / Munich / Remote | Remote | YC W25 | Rolling, part-time | Rolling | $18–25/hr | 2 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/99648) |
+| A6 | Uplane (YC F25) | Business Development Intern | BD | San Francisco (or Berlin/Remote) | In-person | YC F25 | Rolling, 3-mo min ⚠ | Rolling | $4K/mo | 2 | ~5 | Med | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/97366) |
+| A7 | Uplane (YC F25) | AI Marketing Strategist Intern | Growth | San Francisco | In-person | YC F25 | Rolling, 4-mo min ⚠ | Rolling | $4K/mo | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/93708) |
+| A8 | GutGutGoose (YC S26) | Growth Intern (founding team) | Growth | San Francisco | In-person | YC S26 | "Beginning whenever you can" | Rolling | $19–25/hr | 1 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/102677) |
+| A9 | Lambda Robotics (YC F26) | Founding GTM | Growth | San Francisco | In-person | YC F26 | Rolling | Rolling | $6–9K/mo | 3 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/104228) |
+| A10 | Naive (YC P25) | Growth Engineer Intern | Growth | SF / Remote | Hybrid | YC P25 | Rolling | Rolling | $20–40/hr | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/94648) |
+| A11 | Claim Health (YC P25) | Content Marketing Intern | Growth | New York, NY | In-person | YC P25 | 10–12 wks, rolling | Rolling | Stipend | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/94958) |
+| A12 | Mosaic (YC W25) | Growth Intern | Growth | San Francisco | In-person | YC W25 | Rolling | Rolling | $5–10K/mo | 3 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/74610) |
+| A13 | DeepAware AI (YC S25) | BD / Marketing / Ops Intern (3 openings) | BD | San Francisco | In-person | YC S25 | Rolling | Rolling | Not listed | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/100904) |
+| A14 | Celonis | Business Development Representative Sales Intern (Part-Time) | BD | New York, NY | Hybrid | Public | Unconfirmed | Unconfirmed | $58,240 (FTE-annualized, PT title) | 3 | ~4 | Med | live | [Built In NYC](https://www.builtinnyc.com/job/business-development-representative-sales-intern-part-time/10648137) |
+| A15 | UT Austin Athletics | Video and Analytics Intern — Baseball | Data | Austin, TX | In-person | On-campus | Winter/Spring 2027 (tagged) | TBC | Unconfirmed | 1 | ~2 | Med | live | [UT Workday](https://utaustin.wd1.myworkdayjobs.com/utstudent/job/UT-MAIN-CAMPUS/Video-and-Analytics-Intern--Baseball_R_00047706) |
+| A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
+| A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | In-person/Remote | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | blocked | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
+| A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
+| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (unconfirmed) | In-person (assumed) | Enterprise | Unconfirmed | Unconfirmed | Presumed paid | 3 | ~4 | Low | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A20 | Agentio | Creator Partnerships Intern | Partnerships | New York, NY | In-person | Early | Unconfirmed | Unconfirmed | $20/hr | 2 | ~3 | Low | live | [Built In NYC](https://www.builtinnyc.com/job/creator-partnerships-intern/8048359) |
 
 **A4 — the one that got away, maybe.** Zipline's Spring 2027 Community Engagement Intern is Austin,
 in-person, $30/hr, and community/partnerships work — a genuinely good fit. But the Spring term runs
@@ -106,6 +122,55 @@ cities, so it is worth one email asking whether a 4 Jan – 12 Mar version is po
 
 \* **A3 Priority capped by the Spain convenio blocker** — see `PROFILE.md` → Location Feasibility.
 Resolve the UT Austin question before investing time here.
+
+**A1 — corrected 2026-08-18.** LinkedIn access opened this sweep and the posting reads very
+differently in full: it's **remote**, not in-person (the NY title is misleading — the actual
+employer, Brilliant Agency, is a fully remote PR firm; the job header even shows Council Bluffs,
+IA), and the term is **January 11 – May or June 2027**, well past the hard stop. Downgraded from
+`live`/High priority to `conflict`/Low. Kept rather than deleted per the never-drop rule.
+
+**A5 — Dalus is the best new find of this sweep.** The posting for its GTM Intern explicitly says
+the role **"fits around your studies"** — a direct, named solution to the stay-enrolled constraint
+that almost nothing else in this tracker offers. Multi-location (SF, Melbourne AU, Munich, remote),
+hourly, and $18–25/hr. Confirm which location is actually available before applying.
+
+**A6/A7 — Uplane's two intern roles both carry minimum-duration language** ("at least three months"
+/ "at least four months") that, starting Jan 4, runs into April and May respectively — past the hard
+stop. Function fit is excellent (BD is a top-ranked function; the AI Marketing Strategist role is a
+strong Growth fit) and it's a tiny YC startup, so a shortened 10-week ask is plausible. Worth the
+email, same logic as A4/A16.
+
+**A13 — DeepAware AI has three parallel intern openings** (BD/Partnerships, Marketing, Operations),
+all on-site SF, all YC S25. Pick whichever function fits best; only one row was added to keep the
+table from tripling for one company.
+
+**A15 — UT Austin's own Baseball Video and Analytics Intern posting is the single cleanest date
+match found this sweep** — it explicitly tags both Winter 2027 and Spring 2027 terms. Sports
+analytics is a narrow niche versus the target functions and Fit is scored accordingly, but it's
+zero-relocation-cost, on your own campus, and easy to hold alongside a primary internship.
+
+**A16 — a second, separate Zipline internship**, this one in South San Francisco
+(Strategic Engagements & Events, $34/hr) rather than Austin (A4). Same seasonal Jan–April overrun.
+The Techstars req page wouldn't render for the sweep agent — find the live posting directly.
+
+**A17 — blocked on the same Spain convenio question as every other Barcelona/Madrid row.** Small
+early-stage company (Axo Longevity), visa sponsorship mentioned as available in the posting, but
+no dates disclosed.
+
+**A18 — Datadog's Winter PM Intern session is real and dated** (Jan 4 – Apr 23, 2027) but overruns
+the hard stop by three weeks. Separate from Datadog's existing Tier C Data Science outreach target.
+
+**A19 — IBM's Technology Sales Engineer Intern title is an excellent functional match**
+(sales engineer / solutions engineer is explicitly on the wanted list), but eligibility language
+("degree completed by start date") suggests this may be an entry-level *program* aimed at
+near-graduates rather than a short internship for an enrolled junior. Location and exact dates
+could not be confirmed from what the sweep could retrieve — the live posting is on careers.ibm.com.
+Verify before investing time.
+
+**A20 — Agentio's Creator Partnerships Intern is a direct Partnerships-function match** (NYC, paid,
+in-office) but the posting asks for candidates "ideally graduating in '25 or '26" — near-graduation,
+not a rising junior. No season/term stated either. Real mismatch signal; included per the
+never-drop rule.
 
 
 > **The co-op channel is still worth searching even though Delta and Wayfair failed the date test.**
@@ -226,6 +291,10 @@ concrete asset. Don't claim Japanese ability.
 | C31 | Money Forward | Fintech with a large data org — econ background directly relevant | Data, Fintech | 4 | 4 | ~3 | monitor | [corp.moneyforward.com](https://corp.moneyforward.com/en/) |
 | C32 | Coral Capital portfolio | Tokyo VC publishing in English with a portfolio job board. Best entry point to English-friendly Japanese startups. | Startup generalist | 3 | 2 | ~4 | monitor | [coralcap.co](https://coralcap.co/) |
 | C58 | Sansan | B2B SaaS with international ambitions; English market research valued | BD, Research | 4 | 3 | ~4 | monitor | [corp-sansan.com](https://jp.corp-sansan.com/en/) |
+| C59 | MarqVision | Coral Capital portfolio, global brand-protection SaaS with active Seoul/SF/London/Tokyo hiring on Greenhouse — real signal of an English-operating team | BD, Partnerships, CS | 2 | 2 | ~4 | monitor | [marqvision.com](https://www.marqvision.com/) |
+| C60 | GITAI | Space robotics; careers page explicitly seeks "business development professionals," not just engineers. Tokyo HQ, but current open reqs are all LA-based | BD | 3 | 2 | ~3 | monitor | [gitai.tech/careers](https://gitai.tech/careers/) |
+| C61 | Shippio | Coral Capital portfolio, international freight-forwarding SaaS — trade with overseas partners is core to the business | BD, Market research | 2 | 2 | ~4 | monitor | [shippio.io](https://www.shippio.io/) |
+| C62 | Authlete | Coral Capital portfolio, OAuth/API infrastructure sold globally to developers — English-first docs, developer-relations/BD adjacency | BD, DevRel | 2 | 2 | ~4 | monitor | [authlete.com](https://www.authlete.com/) |
 
 ### Spain
 
@@ -335,23 +404,36 @@ the YC Winter batch lands.
 
 ## ⚠️ Sweep agent network access
 
-The daily sweep's cloud environment blocks most of the open web through an egress proxy.
+**Major update, 2026-08-18: the allowlist was widened substantially since the previous sweep.**
+Re-probed and verified with real fetches (not just status codes — a proxy block page can return 200
+too, so every domain below was confirmed by actually reading returned content):
 
-**Reachable:** `WebSearch` (server-side, never blocked), `raw.githubusercontent.com`, `github.com`,
-`interninsider.me`.
-**Blocked:** wellfound.com, simplify.jobs, builtin\*.com, au.gradconnection.com, **workatastartup.com**,
-greenhouse.io, ashbyhq.com, linkedin.com, coralcap.co, tokyodev.com, japan-dev.com, most company
-career pages.
+**Now reachable (confirmed 2026-08-18):** `WebSearch` (server-side, never blocked),
+`raw.githubusercontent.com`, `github.com`, `interninsider.me`, **`workatastartup.com`** (the
+highest-leverage source once the YC W27 batch lands in November — and it's already producing real
+leads even pre-batch), **`wellfound.com`**, **`simplify.jobs`** (server-side-rendered listings only —
+see caveat below), **`builtinnyc.com` / `builtinaustin.com` / `builtinsf.com`**,
+**`linkedin.com`** (individual job posting pages fetch cleanly), **`coralcap.co`**,
+**`tokyodev.com`**, **`japan-dev.com`**, `job-boards.greenhouse.io` (redirects to greenhouse.com,
+both load).
 
-**Mitigated, not solved.** The agent now (a) probes the allowlist at the start of every run and
-adapts, (b) leads with web search rather than direct fetches, (c) uses `raw.githubusercontent.com`
-URLs instead of github.com pages, and (d) **records unverifiable leads as `unverified` instead of
-discarding them** — with the real URL, so you can open it in a normal browser. Every run now prints
-an access report.
+**Still worth checking each run, not yet confirmed:** `au.gradconnection.com`, `jobs.ashbyhq.com`
+(returned 404 on a bare root-path probe — inconclusive, try a real job URL next time).
 
-**Still needs fixing before November 2026**, when `workatastartup.com` becomes the highest-value
-source in the search. Widen the allowlist in the Claude Code web environment settings for the
-environment this routine uses, or point the routine at one with broader egress.
+**Partial/caveat:** `simplify.jobs` is a client-rendered SPA — the server only pre-renders the first
+~30 of 324 listings (sorted by recency); everything past that is loaded by client-side JS calling an
+undocumented backend API. Headless-browser automation (Playwright/Chromium) to drive the real filter
+UI was attempted and failed with `ERR_CONNECTION_RESET` at the TLS layer for **all** HTTPS traffic
+through the proxy, not just this site — so this is a proxy limitation on headless-browser traffic
+specifically, not a Simplify-specific block. `curl`/`WebFetch` work fine on this and every other
+domain. Wellfound has the same SPA issue for its search/filter UI specifically — search/filter query
+params don't actually filter when fetched directly; individual job-detail-page URLs do fetch
+correctly, so discovery has to route through WebSearch/Google-indexed URLs and then verify each one
+individually. A large fraction of Wellfound's indexed results turned out to be dead (410/404) —
+its search index is stale, verify every lead individually rather than trusting search snippets.
+
+**If this list has drifted by the next run, re-probe and update it here** — do not assume the old
+"blocked" list from before 2026-08-18 is still accurate.
 
 ## Statuses
 
