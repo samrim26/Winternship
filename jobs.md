@@ -5,7 +5,7 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-18** (second automated sweep same day — full board sweep + Tier A re-verification)
+> Last swept: **2026-08-19** (daily sweep — 6 parallel board sweeps + 1 targeted correction)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -111,7 +111,12 @@ recomputed once the resume is uploaded.
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
 | A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
-| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Research Triangle Park, NC | In-person | Enterprise | Unconfirmed | Closes 1 Sep 2026 | Presumed paid | 3 | ~4 | Low | closed | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | In-person | Enterprise | Unconfirmed | Closes 1 Sep 2026 | Presumed paid | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
+| A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
+| A66 | Peakflo | Sales Development Representative (SDR) Intern (Paid) | Sales | India | Remote | YC W22 | 6-mo min ⚠ | Rolling | ₹240–300K/yr | 1 | ~1 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/82428) |
+| A67 | Closure | Product Manager Summer 2027 Intern | PM | San Francisco, CA | In-person | YC W25 | Summer 2027 ⚠ | Unconfirmed | $4–8K/mo | 2 | ~4 | Low | conflict | [YC](https://www.ycombinator.com/companies/closure) |
+| A68 | Tesla | Data Engineer Intern, Cell Engineering | Data | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/278622) |
 | A20 | Agentio | Creator Partnerships Intern | Partnerships | New York, NY | In-person | Early | Unconfirmed | Unconfirmed | $20/hr | 2 | ~3 | Low | live | [Built In NYC](https://www.builtinnyc.com/job/creator-partnerships-intern/8048359) |
 | A21 | Crustdata (YC F24) | AI Solutions Engineering Intern | Solutions Engineer | Brooklyn, NY | In-person | YC F24 | Rolling | ~Aug 26 2026 (confirm) | $4–6K/mo | 3 | ~5 | **High** | live | [YC](https://www.ycombinator.com/companies/crustdata/jobs/0W1EW1X-ai-solutions-engineering-intern) |
 | A22 | CertiK | Business Development Intern / Ambassador | BD | New York, NY | In-person | Public/late-stage | Rolling | Rolling | $1K/mo (5 hrs/wk) | 2 | ~3 | Low | live | [Lever](https://jobs.lever.co/certik/f78c7502-51a9-4c9e-b367-9871411b15df) |
@@ -225,6 +230,38 @@ brand/access clears the strategically-valuable-unpaid bar.
 tracks, "no experience required," pay hedged as "may become paid"). Included as a low-priority
 option since it's genuinely open, fresh, and remote-flexible.
 
+**A19 — corrected 2026-08-19, re-opened.** The 2026-08-18 close relied on a single mirror showing
+only Research Triangle Park, NC. A separate WayUp mirror of the same req lists a much longer
+location set — **Austin, San Francisco, and New York are all included** alongside RTP, Dallas,
+Chicago, Atlanta, DC, Irvine, and Durham — confirmed via direct web search of the posting text.
+IBM's own careers site still would not load directly for the sweep, so status moves to
+`unverified` rather than `live`, but the target-location objection that closed it no longer holds.
+Priority raised Low → Med. **Deadline (1 Sep 2026) is inside three weeks — act soon if pursuing.**
+
+**A64 — a third, separate Zipline internship**, distinct from the Austin Community Engagement (A4)
+and South SF Strategic Engagements (A16) roles already tracked. Supply-chain BI/reporting work
+(SQL, Python, Tableau, Power BI) is a direct DS/analytics skill match, but it carries the same
+Jan–Apr/May overrun as the other two Zipline rows. Series C, so date flexibility is uncertain —
+worth asking directly rather than assuming, same as A4/A16/A6/A7.
+
+**A65/A66 — Peakflo's two intern roles (YC W22)** are both remote and priced for India-based
+candidates in rupees (~$4–6K/yr equivalent) even though the posting says US citizenship/visa isn't
+required. The PM role (A65) is a clean function match at low pay; the SDR role (A66) is deprioritized
+by function (pure SDR) and carries a 6-month minimum that overruns the window. Included per the
+never-drop rule; both are low priority on every axis.
+
+**A67 — Closure's PM Intern (YC W25, 10-person startup)** is dated Summer 2027 — a full season past
+the window, not a slight overrun. Strong PM fit and small enough that an earlier/shorter stint is
+plausible to negotiate; worth an email rather than a straight application. No direct job-page ID
+could be located — the company page is linked instead.
+
+**A68 — Tesla Data Engineer Intern (Cell Engineering)** surfaced via the SimplifyJobs off-season
+README, which as of this sweep now carries real Data Science/AI/ML and PM sections that didn't
+exist on 2026-08-17 — worth re-checking regularly going forward. Tagged for both Winter 2027 and
+Spring 2027 terms (good window signal), but the function is manufacturing/cell-engineering data
+engineering rather than core growth/BD/analytics. Tesla's careers site is JS-rendered; pay, exact
+dates, and mode could not be fetched directly — status `unverified`.
+
 
 > **The co-op channel is still worth searching even though Delta and Wayfair failed the date test.**
 > Co-op programs run Jan–June and are posted for January starts, so `co-op` as a keyword surfaces a
@@ -303,6 +340,7 @@ Search these titles at each: `founder's associate` · `chief of staff` · `growt
 | C23 | Firefly Aerospace | High-profile Austin-area, hustle culture | Strategy, Biz Ops | Late-stage | 4 | ~3 | monitor | [firefly.com/careers](https://fireflyspace.com/careers/) |
 | C24 | H-E-B Digital | Large Austin employer, real analytics org | Data Science | Enterprise | 3 | ~3 | monitor | [careers.heb.com](https://careers.heb.com/) |
 | C25 | Indeed | Austin HQ, huge data org, econ research team | Data Science | Enterprise | 3 | ~4 | monitor | [indeed.jobs](https://www.indeed.jobs/) |
+| C69 | Zello | Real SQL/Snowflake/dbt/Omni-BI analytics intern req exists, but it's a Fall 2026 cohort ending early December — ask directly about a winter/spring cohort | Data | Mid-size | 2 | ~4 | monitor | [Built In listing](https://builtin.com/job/analytics-intern/10488836) |
 
 > **Austin is your cheapest shot on goal.** No relocation, no visa, and you can take in-person
 > meetings while enrolled. If the light course load turns out heavier than expected, Austin
@@ -313,7 +351,7 @@ Search these titles at each: `founder's associate` · `chief of staff` · `growt
 | # | Company | Why it fits | Function target | Stage | Diff | Fit | Status | Careers |
 |---|---|---|---|---|---|---|---|---|
 | C26 | Airwallex | Fintech, Melbourne roots, global GTM | Growth, BD | Late-stage | 4 | ~4 | monitor | [airwallex.com/careers](https://www.airwallex.com/careers) |
-| C27 | SafetyCulture | Sydney, strong commercial org | BD, Partnerships | Late-stage | 3 | ~4 | monitor | [safetyculture.com/careers](https://safetyculture.com/careers/) |
+| C27 | SafetyCulture (now Mitti) | Sydney, strong commercial org | BD, Partnerships | Late-stage | 3 | ~4 | monitor | [mitti.com/safetyculture](https://mitti.com/safetyculture) |
 | C28 | Linktree | Melbourne, consumer growth | Growth, Data | Late-stage | 3 | ~4 | monitor | [linktr.ee/careers](https://linktr.ee/s/about/careers/) |
 | C29 | Immutable | Sydney, fast-moving | Partnerships, BD | Late-stage | 3 | ~3 | monitor | [immutable.com/careers](https://www.immutable.com/careers) |
 | C30 | Employment Hero | Sydney HR tech, aggressive growth | Growth, BD | Late-stage | 3 | ~4 | monitor | [employmenthero.com/careers](https://employmenthero.com/careers/) |
@@ -408,6 +446,17 @@ genuinely enough to enter. See the *Technical-adjacent lane* section of `dashboa
 **Highest-fit of the batch:** Plaid, Modal, Hightouch, Hex, Amplitude, Baseten. All either sell to
 data teams (so the stats minor is the qualification) or are small enough that a cold email reaches
 someone who decides.
+
+**2026-08-19 sweep note — Tokyo, Australia, and the targeted technical-adjacent title search
+all came back empty again**, confirming the 2026-08-18 findings still hold: Coral Capital remains a
+directory not a job board, Japan Dev/TokyoDev remain engineering-first, GradConnection's Sydney/
+Melbourne/Brisbane counts are unchanged (95/96/70) with zero startup listings, and direct Ashby/
+Greenhouse API checks against ~35 named dev-tool/API companies produced zero live Solutions
+Engineer/DevRel/RevOps/TAM/Chief-of-Staff intern reqs — Spring 2027 postings for these titles simply
+haven't opened yet. One new Tokyo source was checked and ruled out: iAgora surfaced a ByteDance/
+BytePlus Sales Intern (Tokyo, English-friendly, BD-adjacent) but it requires a 3-month minimum
+commitment against Sam's 68-day window — not addable. SafetyCulture (C27, Australia table above)
+rebranded to **Mitti** on 2026-08-11; no live internship req either name, still a cold-outreach target.
 
 **2026-08-18 sweep note — Tokyo and Australia came back empty.** Coral Capital's site is a company
 directory plus the fund's own hiring page, not a browsable portfolio job board — no per-company
