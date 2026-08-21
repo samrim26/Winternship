@@ -75,11 +75,30 @@ programs at large firms explicitly require leave — those get flagged in `jobs.
 Ranked, roughly, by interest:
 
 1. **Data science / data analytics** — direct fit with the stats & DS minor
-2. **Growth** — quantitative + commercial, strong econ fit
-3. **Business development**
-4. **Strategic partnerships**
-5. **Product management** (APM / PM intern)
-6. **Sales** (prefer strategic/enterprise over pure SDR volume work)
+2. **Strategy** — two distinct lanes, both open:
+   - **Economic consulting** (Analysis Group, Cornerstone Research, Charles River Associates,
+     Compass Lexecon). Litigation, antitrust and policy work built on econometrics. **The closest
+     match on the whole board to an econ major with a stats minor** — the coursework *is* the job.
+     They recruit this exact profile and staff case-by-case, so an off-cycle block is easier for
+     them to absorb than for a fixed-cohort programme.
+   - **Strategy & Operations** (Uber, DoorDash, Flexport) and **Deployment Strategist** (Palantir).
+     Own a metric, find why it moved, ship the fix. Heavy SQL plus commercial judgement.
+3. **Growth** — quantitative + commercial, strong econ fit
+4. **Business development**
+5. **Strategic partnerships**
+6. **Technical-adjacent commercial** — solutions/sales engineering, solutions architect, technical
+   account management, developer relations, partnerships at API companies, product ops, revenue ops
+7. **Product management** (APM / PM intern)
+8. **Sales** (prefer strategic/enterprise over pure SDR volume work)
+
+### Explicitly NOT wanted
+
+**Social media, content marketing, and community management.** No social media coordinator, content
+intern, community manager, or creator/influencer marketing roles.
+
+The line is substance, not job title: *producing posts and managing channels* is out; *analysing and
+moving metrics* is in. Quantitative growth stays firmly in scope — growth analytics, experimentation,
+funnel and retention work, and lifecycle or performance marketing where the work is genuinely data.
 
 ### Locations
 

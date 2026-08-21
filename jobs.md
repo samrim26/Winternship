@@ -659,6 +659,29 @@ its search index is stale, verify every lead individually rather than trusting s
 **If this list has drifted by the next run, re-probe and update it here** — do not assume the old
 "blocked" list from before 2026-08-18 is still accurate.
 
+## Scope rules
+
+**Wanted functions:** data science/analytics · **strategy** (economic consulting + Strategy & Ops) ·
+growth · business development · strategic partnerships · technical-adjacent commercial (solutions
+and sales engineering, DevRel, technical account management, product/revenue ops) · product
+management · sales.
+
+**Excluded outright:**
+
+| Excluded | Why |
+|---|---|
+| Social media, content marketing, community management, creator/influencer marketing | Sam does not want this work. The test is substance, not title: producing posts and managing channels is out; analysing and moving metrics is in. Quantitative growth stays in scope. |
+| Anything that cannot finish by **Fri 12 Mar 2027** | Japan study abroad starts 1 April. Immovable. |
+| Anything on the removed-roles table above | Already rejected; do not re-add. |
+
+Closed on 2026-08-21 under the social-media rule: **A2 Magnet Media** (Social Media Intern),
+**A11 Claim Health** (Content Marketing Intern), **A20 Agentio** (Creator Partnerships Intern).
+Kept as `closed` rather than deleted so a future sweep does not re-add them.
+
+**Strategy added 2026-08-21** — see `PROFILE.md`. Economic consulting (C72–C75) is the standout:
+it is the only category where an econ major with a stats minor is the *preferred* candidate rather
+than an adjacent one.
+
 ## Statuses
 
 | Status | Meaning |
