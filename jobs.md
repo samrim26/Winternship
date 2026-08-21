@@ -5,7 +5,7 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-20** (daily sweep — 5 parallel board sweeps + 1 re-verification pass over all "live" Tier A rows)
+> Last swept: **2026-08-21** (daily sweep — 4 parallel board sweeps + 1 re-verification pass over 13 "live"/"unverified" Tier A rows)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -105,7 +105,7 @@ recomputed once the resume is uploaded.
 | A10 | Naive (YC P25) | Growth Engineer Intern | Growth | SF / Remote | Hybrid | YC P25 | Rolling | Rolling | $20–40/hr | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/94648) |
 | A11 | Claim Health (YC P25) | Content Marketing Intern | Growth | New York, NY | In-person | YC P25 | 10–12 wks, rolling | Rolling | Stipend | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/94958) |
 | A12 | Mosaic (YC W25) | Growth Intern | Growth | San Francisco | In-person | YC W25 | Rolling | Rolling | $5–10K/mo | 3 | ~4 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/74610) |
-| A13 | DeepAware AI (YC S25) | BD / Marketing / Ops Intern (3 openings) | BD | San Francisco | In-person | YC S25 | Rolling | Rolling | Not listed | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/100904) |
+| A13 | DeepAware AI (YC S25) | Business Development Intern | BD | San Francisco | In-person | YC S25 | Rolling | Rolling | Not listed | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/100904) |
 | A14 | Celonis | Business Development Representative Sales Intern (Part-Time) | BD | New York, NY | Hybrid | Public | Unconfirmed | Unconfirmed | $58,240 (FTE-annualized, PT title) | 3 | ~4 | Med | live | [Built In NYC](https://www.builtinnyc.com/job/business-development-representative-sales-intern-part-time/10648137) |
 | A15 | UT Austin Athletics | Video and Analytics Intern — Baseball | Data | Austin, TX | In-person | On-campus | Winter/Spring 2027 (tagged) | TBC | Unconfirmed | 1 | ~2 | Low | unverified | [UT Workday](https://utaustin.wd1.myworkdayjobs.com/utstudent/job/UT-MAIN-CAMPUS/Video-and-Analytics-Intern--Baseball_R_00047706) |
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
@@ -119,7 +119,7 @@ recomputed once the resume is uploaded.
 | A68 | Tesla | Data Engineer Intern, Cell Engineering | Data | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/278622) |
 | A20 | Agentio | Creator Partnerships Intern | Partnerships | New York, NY | In-person | Early | Unconfirmed | Unconfirmed | $20/hr | 2 | ~3 | Low | live | [Built In NYC](https://www.builtinnyc.com/job/creator-partnerships-intern/8048359) |
 | A21 | Crustdata (YC F24) | AI Solutions Engineering Intern | Solutions Engineer | Brooklyn, NY | In-person | YC F24 | Rolling | ~Aug 26 2026 (confirm) | $4–6K/mo | 3 | ~5 | **High** | closed | [YC](https://www.ycombinator.com/companies/crustdata/jobs/0W1EW1X-ai-solutions-engineering-intern) |
-| A22 | CertiK | Business Development Intern / Ambassador | BD | New York, NY | In-person | Public/late-stage | Rolling | Rolling | $1K/mo (5 hrs/wk) | 2 | ~3 | Low | closed | [Lever](https://jobs.lever.co/certik/f78c7502-51a9-4c9e-b367-9871411b15df) |
+| A22 | CertiK | Business Development Intern / Ambassador | BD | New York, NY | Hybrid | Public/late-stage | Rolling | Rolling | $1K/mo (5 hrs/wk) | 2 | ~3 | Low | live | [Lever](https://jobs.lever.co/certik/241dde9b-95d6-4eda-a207-a149934b16e1) |
 | A23 | Chubb | Data Analyst Intern | Data | New York, NY (2 locations) | In-person | Enterprise | Unconfirmed | Unconfirmed | $20–34/hr | 3 | ~4 | Med | unverified | [Built In](https://builtin.com/job/data-analyst-intern/8731657) |
 | A24 | Lieberman Research Worldwide | Market Research Intern — Quantitative Team | Data | Great Neck, NY | **Remote** | Established | Rolling, year-round | Rolling | $20/hr (~28 hrs/wk) | 2 | ~4 | Low | live | [Built In](https://builtin.com/job/market-research-intern-year-round-quantitative-team/10317459) |
 | A25 | SOUKMEDIA | B2B Growth & Demand Generation Intern | Growth | Remote (US) | Remote | Unconfirmed | 3 months, start TBC | Unconfirmed | Unconfirmed | 2 | ~4 | Low | unverified | [Built In](https://builtin.com/job/b2b-growth-demand-generation-intern/10474143) |
@@ -141,6 +141,26 @@ recomputed once the resume is uploaded.
 | A79 | Zeminent | Business Development & Lead Generation Intern | BD | Remote (Gurgaon, India hrs) | Remote | Small | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4436924-business-development-lead-generation-intern) |
 | A80 | Notion | Data Science Intern (Winter 2027) | Data | San Francisco, CA | Unconfirmed | Late-stage | Winter 2027 (season confirmed) | Unconfirmed | Unconfirmed | 5 | ~5 | **High** | unverified | [Ashby](https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application) |
 | A81 | LinkedIn | Global Sales Organization Intern | Sales | San Francisco, CA | In-person | Public | Rolling, unconfirmed | Unconfirmed | Paid (amount unconfirmed) | 4 | ~3 | Med | unverified | [Intern Insider](https://interninsider.me/internships/linkedin/global-sales-organization-intern-5793c9fa-ccc5-4abd-b1f5-b57f77f18a37) |
+| A82 | Soren | Growth Intern | Growth | San Francisco, CA | In-person | Startup | Rolling | Unconfirmed | $6–11K/mo | 2 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/102000) |
+| A83 | Relling | Business Operations Intern | Data/Ops | San Francisco, CA | In-person | Startup (hardware, ex-SpaceX/NASA) | Rolling | Unconfirmed | $20–100/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/97830) |
+| A84 | Dedalus Labs | Growth Intern (posted as Summer 2027) | Growth/DevRel | San Francisco, CA | In-person | Early-stage AI infra | Summer 2027 ⚠ | Unconfirmed | $4–8K/mo | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/98002) |
+| A85 | Dedalus Labs | Product Manager Intern (posted as Summer 2027) | PM | San Francisco, CA | In-person | Early-stage AI infra | Summer 2027 ⚠ | Unconfirmed | $4–8K/mo | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/98000) |
+| A86 | Sixtyfour | Growth Intern (posted as Fall 2026) | Growth | San Francisco, CA | In-person | Startup (compliance-data AI) | Fall 2026 ⚠ | Unconfirmed | $30–50/hr | 2 | ~3 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/105487) |
+| A87 | GutGutGoose | Growth (founding team) — new posting | Growth | San Francisco, CA | In-person | YC S26 | Trial + FT decision Sept 20 2026 ⚠ | Unconfirmed | $19–22/hr trial → $120K+ FT | 1 | ~3 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/105105) |
+| A88 | FairwAI | Project Management Fellow | PM/Partnerships | Remote (NYC/SF/Austin listed) | **Remote** | Early | 3–6 mo, flexible start | Rolling | Unpaid | 2 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3251810-project-management-fellow) |
+| A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
+| A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
+| A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | **Aug 26 2026** | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
+| A92 | TraceRoot.AI (YC S25) | GTM Engineer Intern | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | **Aug 24 2026** | $4–6K/mo | 2 | ~5 | **High** | unverified | [Intern Insider](https://interninsider.me/internships/traceroot-ai-yc-s25/gtm-engineer-intern-03c5b43a-ee8e-4598-b355-c6d94ca8b3bb) |
+| A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
+| A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Nov 1 2026 | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
+| A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
+| A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
+| A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Unconfirmed | Unconfirmed | 3 | ~3 | Low | unverified | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
+| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | **Aug 26 2026** | Unconfirmed | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/cresta/data-science-intern-customer-success-490d780d-8bb3-4f00-972e-f3795aad65fe) |
+| A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
+| A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | **Aug 26 2026** | Unconfirmed | 2 | ~4 | Low | unverified | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
+| A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | live | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
@@ -300,7 +320,49 @@ structurally incompatible with the window and unlikely to move. **A77, A78** car
 date-uncertainty flags per the substance-over-title and never-guess-away rules rather than being
 silently included or dropped.
 
-**Tokyo and Australia came back empty again.** Coral Capital confirmed still directory/talent-
+**2026-08-21 sweep — 20 new Tier A rows (A82–A101), one new Tier C target (C71), two corrections,
+one reopen, and three imminent deadlines surfaced.** Re-verification of 13 previously live/unverified
+Tier A rows found: **A13 corrected** — the live posting's actual title is "Business Development
+Intern," not "BD/Marketing/Ops Intern (3 openings)"; content is 100% BD, no marketing/ops
+responsibilities appear anywhere — title/scope overstated in the prior entry. **A22 reopened** — the
+tracked Lever URL was still showing the wrong-region (Hong Kong/Shenzhen) listing that closed it on
+2026-08-20, but a fresh New York/Hybrid listing of the same role was found at a new URL
+(`241dde9b-...`) and swapped in. **A19 (IBM)** confirmed still open — expires 1 Sept 2026, ~11 days
+out at sweep time, act soon. **A21 (Crustdata) and A12 (Mosaic) confirmed still dead**, no
+replacements found, left closed. The other nine re-checked rows (A9, A10, A11, A14, A20, A24, A65,
+A75, A80) held exactly as tracked.
+
+**Best new finds:** **A96 (Crowe Global)**, an Austin AI-adoption-consulting internship explicitly
+titled "Winter 2027" with ongoing applications and strong pay ($27–42/hr) — the cleanest term-match
+of the whole sweep. **A92 (TraceRoot.AI, YC S25)**, a technical-adjacent GTM Engineer role (funnel
+instrumentation, outbound automation, dev-community growth, $4–6K/mo) that's close to an exact match
+for the technical-adjacent lane. **A82 (Soren)**, a cross-functional SF growth generalist role at
+$6–11K/mo with no stated duration minimum. **A101 (Advancy Partners)**, a boutique Sydney strategy-
+consulting internship with genuinely flexible 2–6 month dates — the small-firm-sets-its-own-dates
+profile Australia has been missing.
+
+**Three postings carry deadlines inside the next five days** — flagging prominently since they'd
+otherwise be missed before the next sweep: **A92 (TraceRoot.AI)** closes **Aug 24 2026**; **A91
+(Trellis AI)**, **A98 (Cresta)**, and **A100 (APX/Aster)** all close **Aug 26 2026**. All four were
+found only on Intern Insider, which doesn't expose external application URLs — apply through the
+Intern Insider listing page directly.
+
+**Six rows carry a `conflict` status from this sweep** (A84, A85 Dedalus Labs; A86 Sixtyfour; A87
+GutGutGoose new posting; A99 Scale AI) — all dated Summer 2027 or Fall 2026, outside the window, kept
+per the never-drop rule since the underlying companies/functions are strong fits and worth a direct
+ask about a Jan–Mar slot. **A89 (Peggy)** is flagged ambiguous on purpose: titled "Growth & PR Intern"
+but the substance is journalist/influencer media-placement outreach — closer to PR/comms than
+quantitative growth, included with the flag rather than guessed away.
+
+**Considered and excluded per the hard-exclusion rules, not padded in:** Comena's GTM Associate
+Intern (Munich, Germany — real BD/outbound fit but outside the target-location list); Point72's
+Quantitative Developer Intern (NYC, dates align unusually well with the window, but "Developer"
+implies real software/quant engineering depth outside the target functions); HeyGen's Growth
+Marketing Intern (Los Angeles — strong brand/function fit but outside the target-location list, and
+LA isn't an adjacent metro to SF/Bay Area).
+
+**Tokyo and Australia came back empty again** for the named Tokyo sources, but produced one new
+Australia lead. Coral Capital confirmed still directory/talent-
 matching only (checked all three career-adjacent pages, not just the homepage) — no portfolio job
 board exists to sweep. Japan Dev and TokyoDev remain structurally engineering-first with no BD/
 Growth/Partnerships/Solutions-Engineer/DevRel category; the only internship on either site (HENNGE's
@@ -358,6 +420,7 @@ Search these titles at each: `founder's associate` · `chief of staff` · `growt
 | C10 | Dorsia | Consumer, NYC-native, social product | Growth, Partnerships | Early | 3 | ~4 | monitor | [Wellfound](https://wellfound.com/) |
 | C63 | EINO | Techstars-backed SaaS, North Williamsburg, real GTM Intern req found (currently closed) | Growth, GTM | Early | 2 | ~4 | monitor | [Techstars board](https://jobs.techstars.com/companies/eino/jobs/63449764-gtm-intern) |
 | C70 | NBCUniversal | SimplifyJobs README tags a Winter/Spring 2027 Advertising & Partnerships Ad Products Intern — genuine Partnerships-function match, but the source repo's application link is paywalled and no live URL could be recovered this sweep | Partnerships | Enterprise | 4 | ~4 | monitor | [nbcunicareers.com](https://www.nbcunicareers.com/) |
+| C71 | Actively | Confirmed to run a generalist Founder's Associate / Business Operations function — a live Wellfound req is real but is a full-time, $140–175K role requiring 1–3 yrs PE/banking/consulting experience, not an internship. Worth a cold email asking about a junior/shorter version rather than applying to the listed req | Biz Ops, Founder's Associate | Early | 3 | ~3 | monitor | [Wellfound](https://wellfound.com/jobs/4064957-business-operations-founder-s-associate) |
 
 ### San Francisco / Bay Area
 
