@@ -5,7 +5,10 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-21** (daily sweep — 4 parallel board sweeps + 1 re-verification pass over 13 "live"/"unverified" Tier A rows)
+> Last swept: **2026-08-22** (daily sweep — re-verification of imminent-deadline and 2026-08-21 Tier A
+> rows, direct check of economic consulting firms C72–C75 + 2 new peers, direct check of Uber/
+> DoorDash/Flexport/Palantir, quick YC/Wellfound sweep. No new Tier A postings; corrections only —
+> see 2026-08-22 sweep notes below.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -151,13 +154,13 @@ recomputed once the resume is uploaded.
 | A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | **Aug 26 2026** | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
-| A92 | TraceRoot.AI (YC S25) | GTM Engineer Intern | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | **Aug 24 2026** | $4–6K/mo | 2 | ~5 | **High** | unverified | [Intern Insider](https://interninsider.me/internships/traceroot-ai-yc-s25/gtm-engineer-intern-03c5b43a-ee8e-4598-b355-c6d94ca8b3bb) |
+| A92 | TraceRoot.AI (YC S25) | GTM Engineer Intern | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | **Aug 24 2026** | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
 | A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
 | A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Nov 1 2026 | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
 | A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Unconfirmed | Unconfirmed | 3 | ~3 | Low | unverified | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
-| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | **Aug 26 2026** | Unconfirmed | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/cresta/data-science-intern-customer-success-490d780d-8bb3-4f00-972e-f3795aad65fe) |
+| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | **Aug 26 2026** | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
 | A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | **Aug 26 2026** | Unconfirmed | 2 | ~4 | Low | unverified | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
 | A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | live | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
@@ -377,6 +380,48 @@ read "2026/27," the right cycle). **Tooling note for future sweeps: `WebFetch` n
 > different set of postings than `intern`. Nearly all of them run past mid-March and many forbid
 > concurrent enrollment — read the fine print before investing time, but search the term.
 
+**2026-08-22 sweep — re-verification pass over the imminent-deadline and 2026-08-21 rows, plus
+sweeps of economic consulting, YC/Wellfound, and Uber/DoorDash/Flexport/Palantir. No new Tier A
+postings surfaced (YC W27 batch doesn't land until November; Wellfound's search index continues to
+turn up mostly dead 410s on new queries) — the day's yield is corrections.**
+
+**A92 (TraceRoot.AI) upgraded `unverified` → `live`** — independently confirmed via the primary YC
+company jobs page, which matches the Intern Insider mirror exactly (SF/remote hybrid, ≥3 days
+onsite, $4–6K/mo, "best applied by Aug 24"). Link swapped to the YC listing, which also exposes a
+direct Work at a Startup apply route — Intern Insider's lack of an external URL is no longer a
+blocker for this one. **Deadline is one to two days out — act immediately if pursuing.**
+
+**A98 (Cresta) upgraded `unverified` → `live`** — found and confirmed the actual Greenhouse posting
+(`job-boards.greenhouse.io/cresta/jobs/5213417008`), independent of Intern Insider. Remote US, data
+science on the customer-success team; pay still unconfirmed on the primary source. Link swapped to
+the direct Greenhouse URL.
+
+**A91 (Trellis AI) — discrepancy found, left `unverified` pending a direct check.** The Intern
+Insider mirror still shows "Apply Now," but Trellis AI's own current YC company jobs board (7 open
+roles) no longer lists a Business Operations Intern req at all — only Head of Business Ops and other
+full-time roles. The aggregator's Aug 26 deadline may be stale. Treat this one as lower-confidence
+than the other three imminent-deadline rows; check trellis.ai's careers page directly before relying
+on the Intern Insider apply link.
+
+**A100 (APX/Aster) — still unverified beyond Intern Insider.** Attempted to corroborate via a direct
+company URL: APX/Aster isn't a YC company, `tokenjobs.io` returned no listing content, and
+`asterdex.com` blocked the fetch outright (HTTP 403). No independent confirmation either way — status
+and Aug 26 2026 deadline unchanged, confidence unchanged (real lead, unverified beyond the aggregator).
+
+**Uber, DoorDash, Flexport, and Palantir (C76–C79) checked directly — none has converted from a
+cold-outreach target to a live posting.** Uber's board has no Strategy & Operations internship listed;
+DoorDash's internship track is Summer-2026-only (ML/design/SWE, no S&O); Flexport's Strategy/Ops
+analyst roles are all full-time, not internships; Palantir's two "Deployment Strategist, Internship"
+Lever postings (NY and DC) both explicitly show "no longer available." All four remain `monitor`/
+cold-outreach — the play is still a direct approach in Sept–Oct, not waiting for a posting.
+
+**Economic consulting (C72–C75) direct sweep, plus two new peer firms added — see the new section
+above.** No live winter/spring 2027 posting exists at Analysis Group, Cornerstone, Compass Lexecon,
+Brattle, or NERA as of this check; CRA has a live internship track but it's EU-only and
+Master's/PhD-only, not addable. **C102 (Brattle)** and **C103 (NERA)** added as peer cold-outreach
+targets. This whole lane stays a September cold-outreach play, exactly as `PROFILE.md` describes it
+— these firms simply don't post off-cycle internships on a rolling job board the way startups do.
+
 ---
 
 ## Tier B — Opens on a known date
@@ -523,6 +568,51 @@ becomes a strong market. If not, delete this section and reallocate to Australia
 program-mediated route independent of the eligibility question — Masa needs 5+ months, Career
 Israel 4–6. Destination Israel's 2-month track is the only shape that could fit, and a January
 cohort is unconfirmed. Deprioritize unless something changes.
+
+---
+
+### Economic consulting & Strategy & Operations (added 2026-08-21, synced to this file 2026-08-22)
+
+Economic consulting is the single best functional match on the whole board — an econ major with a
+stats minor *is* the qualification these firms recruit for, and they staff case-by-case rather than
+running a fixed cohort, so an off-cycle block is a realistic ask. **Search these firms and their
+peers every run.** Strategy & Operations (Uber/DoorDash/Flexport) and Deployment Strategist
+(Palantir) are the second lane — own a metric, find why it moved, ship the fix.
+
+**Correction 2026-08-22:** these ten rows (C72–C81) were added to `dashboard.html`'s `RAW` array on
+2026-08-21 but never synced into this file — a gap in that sweep. Backfilled here now, unchanged.
+
+| # | Company | Role target | Function | Location | Flex | Prestige | Diff | Fit | Careers |
+|---|---|---|---|---|---|---|---|---|---|
+| C72 | Analysis Group | Analyst intern — economic consulting | Strategy | New York | Med | 4 | 3 | ~5 | [analysisgroup.com](https://www.analysisgroup.com/careers/) |
+| C73 | Cornerstone Research | Analyst intern — economic & data analysis | Strategy | New York | Med | 4 | 4 | ~5 | [cornerstone.com](https://www.cornerstone.com/careers/) |
+| C74 | Charles River Associates | Consulting intern — economics | Strategy | New York | Med | 4 | 3 | ~5 | [crai.com](https://www.crai.com/careers/) |
+| C75 | Compass Lexecon | Economic analyst intern | Strategy | New York | Med | 4 | 3 | ~4 | [compasslexecon.com](https://www.compasslexecon.com/careers/) |
+| C76 | Uber | Strategy & Operations | Strategy | San Francisco | Med | 5 | 4 | ~4 | [uber.com/careers](https://www.uber.com/us/en/careers/) |
+| C77 | DoorDash | Strategy & Operations | Strategy | New York | Med | 5 | 4 | ~4 | [careers.doordash.com](https://careers.doordash.com/) |
+| C78 | Flexport | Strategy / biz ops | Strategy | San Francisco | Med | 4 | 4 | ~4 | [flexport.com/careers](https://www.flexport.com/careers/) |
+| C79 | Palantir | Deployment Strategist | Strategy | New York | Low | 5 | 5 | ~4 | [palantir.com/careers](https://www.palantir.com/careers/) |
+| C80 | Anduril | Strategy / business operations | Strategy | Austin | Med | 5 | 4 | ~3 | [anduril.com/careers](https://www.anduril.com/careers/) |
+| C81 | Tesla | Business operations / strategy | Strategy | Austin | Low | 5 | 4 | ~3 | [tesla.com/careers](https://www.tesla.com/careers) |
+| C102 | Brattle Group | Analyst intern — economic consulting | Strategy | New York | Med | 4 | 3 | ~4 | [brattle.com/careers](https://www.brattle.com/careers/) |
+| C103 | NERA Economic Consulting | Analyst intern — economic consulting | Strategy | New York | Low | 4 | 4 | ~4 | [nera.com](https://www.nera.com/open-roles.html) |
+
+**New 2026-08-22: C102 (Brattle) and C103 (NERA)**, added as peer economic-consulting outreach
+targets per the "search these firms and their peers" instruction — same logic as C72–C75.
+
+**2026-08-22 sweep of C72–C75 direct — no live winter/spring 2027 posting at any of the four.**
+Analysis Group and Cornerstone Research show only generic summer-program descriptions with no
+individual reqs. Compass Lexecon's careers page routes through a Workday portal that would not
+render for the sweep — external sources confirm a summer-only track, but could not independently
+verify. **Charles River Associates (C74)** is the one firm with a live rolling internship right now
+— three "Intern (European Competition practice)" reqs in Brussels, Düsseldorf, and Munich — but they
+explicitly require a Master's/PhD in economics and EU work authorization, and the location is outside
+the target list, so none is addable against this profile. Worth noting for future sweeps: CRA's live
+board also showed a now-expired "Analyst Intern (Labor & Employment practice) — Winter/Spring 2026"
+req, confirming the firm has run a US winter/spring cohort before — re-check periodically for a 2027
+successor. Brattle (C102) and NERA (C103) also show summer-only tracks at time of check; NERA's
+program additionally requires final-year ("2027 grad") standing, which a rising junior doesn't meet
+— both kept as cold-outreach targets on the strength of the firm/function fit, not a live posting.
 
 ---
 
