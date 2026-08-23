@@ -5,10 +5,9 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-22** (daily sweep — re-verification of imminent-deadline and 2026-08-21 Tier A
-> rows, direct check of economic consulting firms C72–C75 + 2 new peers, direct check of Uber/
-> DoorDash/Flexport/Palantir, quick YC/Wellfound sweep. No new Tier A postings; corrections only —
-> see 2026-08-22 sweep notes below.)
+> Last swept: **2026-08-23** (daily sweep — re-verification of A91/A92/A98/A100 and A82/A83/A88/A96/
+> A101, full sweep of Work at a Startup, Wellfound, Simplify, BuiltIn (NYC/Austin/SF), Tokyo and
+> Australia sources. No new Tier A postings; corrections only — see 2026-08-23 sweep notes below.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -153,16 +152,16 @@ recomputed once the resume is uploaded.
 | A88 | FairwAI | Project Management Fellow | PM/Partnerships | Remote (NYC/SF/Austin listed) | **Remote** | Early | 3–6 mo, flexible start | Rolling | Unpaid | 2 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3251810-project-management-fellow) |
 | A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
-| A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | **Aug 26 2026** | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
-| A92 | TraceRoot.AI (YC S25) | GTM Engineer Intern | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | **Aug 24 2026** | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
+| A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
+| A92 | TraceRoot.AI (YC S25) | GTM Engineer Intern | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
 | A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
 | A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Nov 1 2026 | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
 | A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Unconfirmed | Unconfirmed | 3 | ~3 | Low | unverified | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
-| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | **Aug 26 2026** | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
+| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
-| A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | **Aug 26 2026** | Unconfirmed | 2 | ~4 | Low | unverified | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
+| A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Unconfirmed, low confidence | Unconfirmed | 2 | ~4 | Low | unverified | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
 | A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | live | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
@@ -414,6 +413,36 @@ DoorDash's internship track is Summer-2026-only (ML/design/SWE, no S&O); Flexpor
 analyst roles are all full-time, not internships; Palantir's two "Deployment Strategist, Internship"
 Lever postings (NY and DC) both explicitly show "no longer available." All four remain `monitor`/
 cold-outreach — the play is still a direct approach in Sept–Oct, not waiting for a posting.
+
+**2026-08-23 sweep — corrections only, no new Tier A rows.** Re-verified the four imminent-deadline
+rows from 2026-08-22 (A91, A92, A98, A100) plus five rows added 2026-08-21 not yet double-checked
+(A82, A83, A88, A96, A101). Also swept Work at a Startup, Wellfound, Simplify, BuiltIn (all three
+metros), Coral Capital, Japan Dev, TokyoDev, and Australian sources (gradconnection plus AirTree's
+and Blackbird's VC portfolio boards, checked for the first time) for new postings — all came back
+empty of genuinely new, verified, in-scope candidates. One Work at a Startup lead (Operations Intern
+at DeepAware AI, `100906`, admin/facilities ops not strategic ops) was found but not added — too weak
+a function fit to clear the quality bar.
+
+**A91 (Trellis AI) closed, definitively this time.** The specific YC job URL now 404s, and Trellis
+AI's own current jobs list (confirmed again) has no internship req of any kind — only full-time
+roles. The Intern Insider listing was carrying a dead posting. Closed rather than left `unverified`.
+
+**A92 (TraceRoot.AI) and A98 (Cresta) — deadlines corrected to "unconfirmed."** Both roles are
+confirmed genuinely open (YC page still has a working Apply button for A92; Cresta's Greenhouse form
+is live and functional for A98), so `live` status stands — but neither company's own posting states
+the Aug 24 / Aug 26 2026 deadline this tracker had been carrying. Those dates likely came from the
+aggregator (Intern Insider) rather than the source. Treat both as rolling/no fixed deadline unless a
+firmer date turns up; no need to rush applying past when they'd normally be submitted anyway.
+
+**A100 (APX/Aster) — confidence lowered further, kept `unverified`.** Exhausted every reasonable
+independent channel (Ashby, LinkedIn, BNB Chain job board, company sites) with no corroboration
+found. Intern Insider itself shows the listing as "posted 87 days ago," a staleness signal on top of
+the earlier no-second-source problem. Still kept per the never-drop rule since the URL and function
+match are real, but this is now a low-confidence lead — verify directly before investing time.
+
+**A82, A83, A88, A96, A101 — all confirmed accurate, no drift.** Pay, location, mode, and stated
+duration all matched exactly what was tracked; none had rotted (Wellfound listings in particular
+often do, but A88 held).
 
 **Economic consulting (C72–C75) direct sweep, plus two new peer firms added — see the new section
 above.** No live winter/spring 2027 posting exists at Analysis Group, Cornerstone, Compass Lexecon,
