@@ -5,12 +5,12 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-24** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
-> SimplifyJobs off-season README, Intern Insider, economic consulting firms (Analysis Group,
-> Cornerstone, CRA, Compass Lexecon, Brattle, NERA + peers Bates White, Edgeworth, Secretariat, BRG),
-> Strategy & Ops targets (Uber, DoorDash, Flexport, Palantir, Anduril, Tesla), BuiltIn (NYC/Austin/SF),
-> Tokyo and Australia sources (incl. AirTree, Blackbird — both 404, no portfolio job board exists at
-> either). No new Tier A/B/C postings; corrections only — see 2026-08-24 sweep notes below.)
+> Last swept: **2026-08-25** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
+> SimplifyJobs off-season README, Intern Insider (winter-2027 and spring-2027, the latter not yet
+> populated), economic consulting firms + peers, Strategy & Ops targets (Uber, DoorDash, Flexport,
+> Palantir, Anduril, Tesla), BuiltIn (NYC/Austin/SF), Tokyo and Australia sources. No new Tier A/B/C
+> postings; two real corrections — Notion's Winter 2027 window actually runs into April, and IBM's
+> deadline is confirmed live — see 2026-08-25 sweep notes below.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -116,7 +116,7 @@ recomputed once the resume is uploaded.
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
 | A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
-| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | In-person | Enterprise | Unconfirmed | **Urgent — may already be closed** (see note) | Presumed paid | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | In-person | Enterprise | Unconfirmed | **Sept 1 2026 (confirmed)** | Presumed paid | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
 | A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
 | A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
 | A66 | Peakflo | Sales Development Representative (SDR) Intern (Paid) | Sales | India | Remote | YC W22 | 6-mo min ⚠ | Rolling | ₹240–300K/yr | 1 | ~1 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/82428) |
@@ -144,7 +144,7 @@ recomputed once the resume is uploaded.
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
 | A79 | Zeminent | Business Development & Lead Generation Intern | BD | Remote (Gurgaon, India hrs) | Remote | Small | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4436924-business-development-lead-generation-intern) |
-| A80 | Notion | Data Science Intern (Winter 2027) | Data | San Francisco, CA | Unconfirmed | Late-stage | Winter 2027 (season confirmed) | Unconfirmed | $55/hr (Bachelor's) / $59/hr (Master's) | 5 | ~5 | **High** | unverified | [Ashby](https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application) |
+| A80 | Notion | Data Science Intern (Winter 2027) | Data | San Francisco, CA / New York, NY | In-person | Late-stage | Jan–Apr 2027 ⚠ | Unconfirmed | $55/hr (Bachelor's) / $59/hr (Master's) | 5 | ~5 | Med | conflict | [Ashby](https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application) |
 | A81 | LinkedIn | Global Sales Organization Intern | Sales | San Francisco, CA | In-person | Public | Rolling, unconfirmed | Unconfirmed | Paid (amount unconfirmed) | 4 | ~3 | Med | unverified | [Intern Insider](https://interninsider.me/internships/linkedin/global-sales-organization-intern-5793c9fa-ccc5-4abd-b1f5-b57f77f18a37) |
 | A82 | Soren | Growth Intern | Growth | San Francisco, CA | In-person | Startup | Rolling | Unconfirmed | $6–11K/mo | 2 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/102000) |
 | A83 | Relling | Business Operations Intern | Data/Ops | San Francisco, CA | In-person | Startup (hardware, ex-SpaceX/NASA) | Rolling | Unconfirmed | $20–100/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/97830) |
@@ -467,6 +467,44 @@ posted 7 Aug 2026 and "anticipated to remain posted for 15 days," i.e. roughly 2
 passed by this sweep. IBM's own careers page is still blocked by an AWS WAF bot-check and could not
 be read directly to resolve the discrepancy. Treat this as more urgent than the tracked date rather
 than waiting for 1 Sept.
+
+**2026-08-25 sweep — no new Tier A/B/C rows, two real corrections, one confidence downgrade.**
+Full sweep of Work at a Startup, Wellfound, Simplify, the SimplifyJobs off-season README, and Intern
+Insider (winter-2027 and spring-2027) surfaced nothing new that clears the quality bar — Wellfound's
+SEO role pages (`/role/l/{role}/{location}`) were tried as a workaround for its broken search/filter
+UI and turned up a Faire Data Science Intern (requires current Master's/PhD + top-venue ML
+publications, not addable) and a Workhelix Forward-Deployed Strategist (a strong functional match but
+full-time, 4+ yrs experience required, not an internship). The SimplifyJobs README's three
+target-location/target-window matches (NBCUniversal PM, Crusoe PM, Disney Insights & Analytics) are
+all marked closed (🔒) in the source. Economic consulting and Strategy & Ops targets (Analysis Group,
+Cornerstone, CRA, Compass Lexecon, Brattle, NERA, Bates White, Edgeworth, Secretariat, BRG, Uber,
+DoorDash, Flexport, Palantir, Anduril, Tesla) re-checked directly — no live winter/spring 2027 posting
+at any of them; Palantir's Deployment Strategist internship cohorts run May–September, confirmed not
+a January fit. Tokyo (Coral Capital, Japan Dev, TokyoDev) and Australia (GradConnection, 403'd
+directly but search-checked) came back empty as usual.
+
+**A80 (Notion) corrected — downgraded from `unverified`/High to `conflict`/Med.** The tracked
+"Winter 2027 (season confirmed)" window undersold a real problem: independent corroboration (a
+BuiltIn NYC mirror plus other sources, since Ashby's own posting page is JS-rendered and won't yield
+body text to a direct fetch) confirms the internship runs **January through April 2027**, working
+in-person out of the SF or NYC office — a 3–4 week overrun past the 12 Mar hard stop. Still a strong
+role on every other axis (confirmed $55–59/hr pay, direct stats/econ qualification match, prestige
+brand already a Tier C target) — worth an email asking whether a shorter Jan–Mar slice is possible,
+same play as A18 (Datadog) and the Zipline rows.
+
+**A19 (IBM) corrected — deadline confirmed real, urgency flag resolved.** The 2026-08-24 worry that
+the listing might have already expired (per a stale WayUp snapshot) is resolved: a fresh check of the
+Clemson mirror shows an active "Apply Now" button and explicit text that the listing "Expires on
+September 1, 2026." IBM's own careers page remains blocked by AWS WAF and unreadable directly.
+Deadline is about a week out from this sweep — apply soon if pursuing.
+
+**A100 (APX/Aster) — confidence lowered further, still kept per the never-drop rule.** Checked BNB
+Chain's own Aster company job board directly this sweep — it currently lists **zero** open positions
+at Aster, including no Developer Relations Intern req. Combined with the existing 87+-day staleness
+signal on Intern Insider and three prior sweeps finding no corroboration anywhere else, this is now a
+likely-dead lead. Left `unverified` rather than closed since the original Intern Insider posting
+itself was not directly re-checked today (only independent corroboration sources were), but treat
+this as low-confidence — verify directly via Intern Insider before investing any time.
 
 **Economic consulting (C72–C75) direct sweep, plus two new peer firms added — see the new section
 above.** No live winter/spring 2027 posting exists at Analysis Group, Cornerstone, Compass Lexecon,
