@@ -5,12 +5,12 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-25** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
-> SimplifyJobs off-season README, Intern Insider (winter-2027 and spring-2027, the latter not yet
-> populated), economic consulting firms + peers, Strategy & Ops targets (Uber, DoorDash, Flexport,
-> Palantir, Anduril, Tesla), BuiltIn (NYC/Austin/SF), Tokyo and Australia sources. No new Tier A/B/C
-> postings; two real corrections — Notion's Winter 2027 window actually runs into April, and IBM's
-> deadline is confirmed live — see 2026-08-25 sweep notes below.)
+> Last swept: **2026-08-26** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
+> SimplifyJobs off-season README, Intern Insider (via sitemap facet pages), economic consulting
+> firms + peers, Strategy & Ops targets (Uber, DoorDash, Flexport, Palantir, Anduril, Tesla), Tokyo
+> and Australia sources. **6 new Tier A rows (A104–A109)** — best find is Direct Agents (A104),
+> a conflict-free Strategy & Ops role in NYC. No corrections needed; all 17 spot-checked existing
+> rows confirmed accurate — see 2026-08-26 sweep notes below.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -166,6 +166,12 @@ recomputed once the resume is uploaded.
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
 | A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Unconfirmed, low confidence | Unconfirmed | 2 | ~4 | Low | unverified | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
 | A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | live | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
+| A104 | Direct Agents | AI Business Strategy & Operations Intern | Strategy | New York, NY | In-person | Established (2003) | Rolling, no stated minimum | Rolling | Unconfirmed | 2 | ~4 | High | live | [Intern Insider](https://interninsider.me/internships/direct-agents/ai-business-strategy-operations-intern-115edaa5-1508-48e8-a5b2-84ba5a0a7cb2) |
+| A105 | Zipline | Sales Operations Analyst Intern | Data | South San Francisco, CA | In-person | Series C | Winter 2027 (Jan–Apr 2027) ⚠ | Rolling | $40/hr | 3 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/sales-operations-analyst-intern-a2453a3e-deb9-4b6c-85be-2ee8537a8374) |
+| A106 | Zipline | Marketing Intern (Spring 2027) | Growth | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 2 | ~3 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/marketing-intern-spring-2027-7ac4e305-f77d-4616-b338-8bd9297b29a7) |
+| A107 | Zipline | Operations Experience Intern (Spring 2027) | Strategy | South San Francisco, CA | In-person | Series C | Winter 2027 (Jan–Apr 2027) ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/operations-experience-intern-spring-2027-404887f1-5384-4506-a2a2-6500b67f8fd6) |
+| A108 | Ekimetrics | 6-Month Internship in Strategy & Data Science | Strategy | New York, NY | In-person | Boutique consultancy | Rolling start, 6-month commitment ⚠ | Rolling | Paid (amount unconfirmed) | 3 | ~5 | Med | conflict | [Intern Insider](https://interninsider.me/internships/ekimetrics/6-months-internship-in-strategy-data-science-049dcc50-7033-4fa0-a0a4-e1e74bc773af) |
+| A109 | Qureos | Business Development Intern | BD | New York, NY | In-person | Unconfirmed | Rolling | Unconfirmed | Unconfirmed | 1 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/qureos/business-development-intern-d9aec99e-36ef-43d6-8692-aacf913d8029) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
@@ -512,6 +518,49 @@ Brattle, or NERA as of this check; CRA has a live internship track but it's EU-o
 Master's/PhD-only, not addable. **C102 (Brattle)** and **C103 (NERA)** added as peer cold-outreach
 targets. This whole lane stays a September cold-outreach play, exactly as `PROFILE.md` describes it
 — these firms simply don't post off-cycle internships on a rolling job board the way startups do.
+
+**2026-08-26 sweep — 6 new Tier A rows (A104–A109), no corrections needed, all 17 spot-checked
+rows confirmed accurate.** Full sweep of Work at a Startup, Wellfound, Simplify, the SimplifyJobs
+off-season README, and Intern Insider (worked around its client-rendered term pages via the site's
+sitemap facet URLs — e.g. `/internships/roles/{role}/{location}` — a technique worth reusing).
+Economic consulting, Strategy & Ops targets (Uber, DoorDash, Flexport, Palantir, Anduril, Tesla),
+Tokyo (Coral Capital, Japan Dev, TokyoDev), and Australia (GradConnection, still 403ing direct
+fetches) all re-checked directly — no live winter/spring 2027 posting anywhere in those lanes; one
+near-miss noted below. Also re-verified: the 9 previously `live` Work at a Startup / Wellfound rows
+(A5, A9, A10, A13, A65, A75, A82, A83, A88) and 8 time-sensitive rows (A14, A19, A22, A92, A96, A98,
+A100, A101) — **all 17 confirmed accurate, no drift.** A19 (IBM)'s Sept 1 2026 deadline is
+independently re-confirmed and still 6 days out at time of sweep.
+
+**Best new find: A104 (Direct Agents)** — an AI Business Strategy & Operations Intern role at an
+established NYC marketing/media agency, dashboards + AI-tooling + process work for account teams.
+Clean fit with no date conflict (rolling, no stated minimum duration) — the first genuinely
+conflict-free new Strategy-function add in several sweeps.
+
+**A105–A107 add three more distinct Zipline internships** (Sales Operations Analyst, Marketing
+Intern, Operations Experience Intern), found via Intern Insider — bringing the tracked Zipline count
+to seven, all carrying the same Jan–Apr 2027 overrun as A4/A16/A64. Kept per the strong-fit/dates-
+clash rule (`conflict`, not dropped) since Zipline is a Series C company where a shorter Jan–Mar ask
+remains plausible, same logic as the existing four Zipline rows.
+
+**A108 (Ekimetrics)** is an excellent functional match — a boutique strategy/data-science
+consultancy doing Python/R modeling presented directly to clients, arguably the second-closest
+econ+stats match on the board after the litigation-consulting firms — but its stated 6-month
+minimum overruns the window by roughly four months. `conflict`/Med rather than dropped; worth an
+email asking about a 10-week slice.
+
+**A109 (Qureos)** is a real BD-scoped posting but reads as a generic/templated listing (evergreen
+copy, stale posting date) — kept as `unverified` with the caveat rather than treated as fully
+confirmed, per the never-drop rule.
+
+**Considered and excluded, not padded in:** Audax Group's Data Engineer Co-op (Boston/NYC, tagged
+Winter 2027) — the title leans toward the excluded pure-software-engineering lane rather than
+analytics, and co-ops at this firm likely run a full ~6-month cycle past the hard stop; doubly
+marginal, so left out per the quality-bar rule rather than added as a weak row. Also excluded this
+sweep: Genentech's South SF ops internship (requires current Master's/PhD enrollment — fails
+eligibility), Blueprint's remote Growth Marketing SEO & Content Intern (sits on the excluded
+content-creation side of the substance test), and several Summer-2027/Fall-2026-dated postings
+(Ephemeris Net, LinkedIn SF Ad Ops, SAP Palo Alto iXp ×2, Databricks PM, Mars & Co., Rystad Energy,
+FTI Consulting ×2, Corient, Praytell, Jomboy Media, Tessera Labs) that don't clear the window filter.
 
 ---
 
