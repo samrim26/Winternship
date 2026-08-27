@@ -5,12 +5,16 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-26** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
-> SimplifyJobs off-season README, Intern Insider (via sitemap facet pages), economic consulting
-> firms + peers, Strategy & Ops targets (Uber, DoorDash, Flexport, Palantir, Anduril, Tesla), Tokyo
-> and Australia sources. **6 new Tier A rows (A104–A109)** — best find is Direct Agents (A104),
-> a conflict-free Strategy & Ops role in NYC. No corrections needed; all 17 spot-checked existing
-> rows confirmed accurate — see 2026-08-26 sweep notes below.)
+> Last swept: **2026-08-27** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
+> SimplifyJobs off-season README (via raw markdown, not WebFetch summarization), Intern Insider,
+> BuiltIn (all three metros), economic consulting firms + peers (incl. Edgeworth, Secretariat, Bates
+> White), Strategy & Ops targets (Uber, DoorDash, Flexport, Palantir, Anduril, Tesla), Tokyo (Coral
+> Capital, Japan Dev, TokyoDev) and Australia (GradConnection) sources, plus a 10-row re-verification
+> pass on existing Tier A rows. **2 new Tier A rows (A110–A111)**, both `conflict` — see 2026-08-27
+> sweep notes below. **Two real corrections: A23 (Chubb) and A67 (Closure) both confirmed expired,
+> closed.** A70 (Base Power) upgraded unverified → live. Economic consulting / Strategy & Ops lane
+> remains a dead end on live postings — still cold-outreach only. Tokyo and Australia came back
+> empty again.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -120,12 +124,12 @@ recomputed once the resume is uploaded.
 | A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
 | A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
 | A66 | Peakflo | Sales Development Representative (SDR) Intern (Paid) | Sales | India | Remote | YC W22 | 6-mo min ⚠ | Rolling | ₹240–300K/yr | 1 | ~1 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/82428) |
-| A67 | Closure | Product Manager Summer 2027 Intern | PM | San Francisco, CA | In-person | YC W25 | Summer 2027 ⚠ | Unconfirmed | $4–8K/mo | 2 | ~4 | Low | conflict | [YC](https://www.ycombinator.com/companies/closure) |
+| A67 | Closure | Product Manager Summer 2027 Intern | PM | San Francisco, CA | In-person | YC W25 | Summer 2027 ⚠ | Unconfirmed | $4–8K/mo | 2 | ~4 | Low | closed | [YC](https://www.ycombinator.com/companies/closure) |
 | A68 | Tesla | Data Engineer Intern, Cell Engineering | Data | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/278622) |
 | A20 | Agentio | Creator Partnerships Intern | Partnerships | New York, NY | In-person | Early | Unconfirmed | Unconfirmed | $20/hr | 2 | ~3 | Low | live | [Built In NYC](https://www.builtinnyc.com/job/creator-partnerships-intern/8048359) |
 | A21 | Crustdata (YC F24) | AI Solutions Engineering Intern | Solutions Engineer | Brooklyn, NY | In-person | YC F24 | Rolling | ~Aug 26 2026 (confirm) | $4–6K/mo | 3 | ~5 | **High** | closed | [YC](https://www.ycombinator.com/companies/crustdata/jobs/0W1EW1X-ai-solutions-engineering-intern) |
 | A22 | CertiK | Business Development Intern / Ambassador | BD | New York, NY | Hybrid | Public/late-stage | Rolling | Rolling | $1K/mo (5 hrs/wk) | 2 | ~3 | Low | live | [Lever](https://jobs.lever.co/certik/241dde9b-95d6-4eda-a207-a149934b16e1) |
-| A23 | Chubb | Data Analyst Intern | Data | New York, NY (2 locations) | In-person | Enterprise | Unconfirmed | Unconfirmed | $20–34/hr | 3 | ~4 | Med | unverified | [Built In](https://builtin.com/job/data-analyst-intern/8731657) |
+| A23 | Chubb | Data Analyst Intern | Data | New York, NY (2 locations) | In-person | Enterprise | Unconfirmed | Unconfirmed | $20–34/hr | 3 | ~4 | Med | closed | [Built In](https://builtin.com/job/data-analyst-intern/8731657) |
 | A24 | Lieberman Research Worldwide | Market Research Intern — Quantitative Team | Data | Great Neck, NY | **Remote** | Established | Rolling, year-round | Rolling | $20/hr (~28 hrs/wk) | 2 | ~4 | Low | live | [Built In](https://builtin.com/job/market-research-intern-year-round-quantitative-team/10317459) |
 | A25 | SOUKMEDIA | B2B Growth & Demand Generation Intern | Growth | Remote (US) | Remote | Unconfirmed | 3 months, start TBC | Unconfirmed | Unconfirmed | 2 | ~4 | Low | unverified | [Built In](https://builtin.com/job/b2b-growth-demand-generation-intern/10474143) |
 | A26 | Treasure | Go-To-Market Intern | Growth | San Francisco (2 locations) | Hybrid | Unconfirmed | Unconfirmed | Unconfirmed | $25–30/hr | 2 | ~3 | Low | unverified | [Built In](https://builtin.com/job/go-market-intern/10651661) |
@@ -134,7 +138,7 @@ recomputed once the resume is uploaded.
 | A29 | Rocket Internet SE | Founders' Associate Intern | BD | San Francisco | In-person | Global | Unconfirmed | Unconfirmed | Unpaid | 3 | ~4 | Med | unverified | [Built In](https://builtin.com/job/founders-associate-intern/6196290) |
 | A30 | Guidepoint | Business Development Intern | BD | New York, NY | In-person | Public | Unconfirmed | Unconfirmed | ~$25K (program stipend) | 3 | ~3 | Low | unverified | [Built In](https://builtin.com/job/business-development-intern-class-2028/10728729) |
 | A31 | Global Pathways AI | Product & Go-to-Market Internship | PM | San Francisco | Remote | Early | Rolling | Rolling | Unpaid (may become paid) | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4570560-product-go-to-market-internship-opportunities) |
-| A70 | Base Power Company | Growth Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Rolling | Unconfirmed | 2 | ~4 | Med | unverified | [Built In Austin](https://www.builtinaustin.com/job/growth-intern/10000211) |
+| A70 | Base Power Company | Growth Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Rolling | Unconfirmed | 2 | ~4 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/growth-intern/10000211) |
 | A71 | Zettabyte Inc | Growth Operations Intern | Growth | Bay Area, CA | Flexible | Startup | 3–6 mo, flexible | Rolling | Unconfirmed | 2 | ~4 | Med | unverified | [Built In SF](https://www.builtinsf.com/job/growth-operations-intern/8794820) |
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
@@ -172,6 +176,8 @@ recomputed once the resume is uploaded.
 | A107 | Zipline | Operations Experience Intern (Spring 2027) | Strategy | South San Francisco, CA | In-person | Series C | Winter 2027 (Jan–Apr 2027) ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/operations-experience-intern-spring-2027-404887f1-5384-4506-a2a2-6500b67f8fd6) |
 | A108 | Ekimetrics | 6-Month Internship in Strategy & Data Science | Strategy | New York, NY | In-person | Boutique consultancy | Rolling start, 6-month commitment ⚠ | Rolling | Paid (amount unconfirmed) | 3 | ~5 | Med | conflict | [Intern Insider](https://interninsider.me/internships/ekimetrics/6-months-internship-in-strategy-data-science-049dcc50-7033-4fa0-a0a4-e1e74bc773af) |
 | A109 | Qureos | Business Development Intern | BD | New York, NY | In-person | Unconfirmed | Rolling | Unconfirmed | Unconfirmed | 1 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/qureos/business-development-intern-d9aec99e-36ef-43d6-8692-aacf913d8029) |
+| A110 | The Walt Disney Company | ABC News Insights and Analytics Intern (Spring 2027) | Data | New York, NY | In-person | Enterprise | Jan–Jun 2027 ⚠ | Rolling | $23/hr | 4 | ~4 | Low | conflict | [Disney Workday](https://disney.wd5.myworkdayjobs.com/disneycareer/job/New-York-NY-USA/ABC-News-Insights-and-Analytics-Intern--Spring-2027_10158500) |
+| A111 | Motive | Sales Development Intern | Sales | Austin, TX | Hybrid | Startup | Summer 2027 ⚠ (as posted) | Unconfirmed | Unconfirmed | 2 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/gomotive/jobs/8431778002) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
@@ -518,6 +524,76 @@ Brattle, or NERA as of this check; CRA has a live internship track but it's EU-o
 Master's/PhD-only, not addable. **C102 (Brattle)** and **C103 (NERA)** added as peer cold-outreach
 targets. This whole lane stays a September cold-outreach play, exactly as `PROFILE.md` describes it
 — these firms simply don't post off-cycle internships on a rolling job board the way startups do.
+
+**2026-08-27 sweep — 2 new Tier A rows (A110–A111), two corrections, one status upgrade, econ
+consulting/Strategy & Ops lane confirmed still dead.** Full sweep of Work at a Startup, Wellfound,
+Simplify, the SimplifyJobs off-season README (fetched as raw markdown directly, avoiding the
+truncation WebFetch's summarizer was causing), Intern Insider, and BuiltIn (all three metros) —
+plus direct checks of every economic consulting firm and Strategy & Ops target, and Tokyo/Australia
+sources — surfaced two new conflict-flagged leads and no clean live adds.
+
+**Corrections — A23 (Chubb) and A67 (Closure) both closed.** Chubb's Data Analyst Intern posting
+was removed from the board as of 2026-08-26 — no longer live (the tracked "New York, NY (2
+locations)" was in any case never independently confirmed as NYC; the posting only ever said "2
+locations"). Closure's YC company jobs page now lists 7 full-time roles and zero internships of any
+kind — the PM Intern listing appears to have been pulled entirely. Both kept per the never-drop rule.
+
+**A70 (Base Power Company) upgraded `unverified` → `live`** — re-confirmed open, reposted within
+the last week. No other field changed.
+
+**A19 (IBM) — re-confirmed still live and unchanged, but the Sept 1 2026 deadline is now 5 days
+out.** No drift on any tracked field. Act this week if pursuing.
+
+**A80 (Notion) — re-check inconclusive, left as-is.** The Ashby application page is JS-rendered and
+would not yield location/pay/mode detail to a direct fetch on two attempts. The existing
+`conflict`/Med status (confirmed Jan–Apr 2027 window, a 3–4 week overrun) stands unchanged since it
+was independently corroborated in the 2026-08-25 sweep; a manual browser check would be the only way
+to fully re-verify pay/location this round.
+
+**New: A110 (Walt Disney Company / ABC News) and A111 (Motive).** A110 is a genuinely new posting
+(posted 2026-08-26, verified directly via Disney's Workday API) for an ABC News Insights and
+Analytics Intern in NYC — strong quantitative fit (Excel, Tableau-adjacent audience research,
+"Junior or Senior year preferred," $23/hr confirmed) but an explicit six-month Jan–Jun 2027 fixed
+program with no flexible-dates language, overrunning the hard stop by ~2.5 months — `conflict`, not
+addable as-is, though the Disney/ABC brand may be worth an email asking about a shortened slice.
+A111 (Motive) is a Sales Development Intern in Austin found fresh on Built In Austin (verified on
+Greenhouse) — home-market fit, but the posting states "Summer internship" with no Jan–Mar option;
+`conflict`, worth a direct ask given the no-relocation advantage.
+
+**Econ consulting and Strategy & Ops (C72–C81, C102–C103) re-checked directly — still no live
+winter/spring 2027 posting anywhere in either lane.** Two peer firms checked for the first time
+(Edgeworth Economics, Secretariat) plus Bates White: Edgeworth has a live "Summer Economist" role
+but requires 1–3 years of prior econ-consulting experience and is summer-only — not addable for an
+entry-level rising-junior ask. Secretariat and Bates White are both summer-only with no off-cycle
+track. On the Strategy & Ops side, Anduril has a real "Strategy and Partnerships Intern" req that
+matches the profile well, but it's closed and based in Costa Mesa, CA — not Austin, not addable.
+Uber's S&O internship is confirmed summer-2027-only; DoorDash, Flexport, and Tesla show no
+internship-level Strategy/Ops postings at all; Palantir's Deployment Strategist Internship req
+pages 403'd on direct fetch this round, so the prior May–Sept timing finding is unconfirmed either
+way, not re-verified. This lane stays a September–October cold-outreach play as planned.
+
+**Tokyo and Australia came back empty again, confirming every prior finding still holds.** Coral
+Capital's `/jobs/` path 404s (still a directory, not a board); Japan Dev remains ~89% engineering by
+listing count with no BD/growth/partnerships category; TokyoDev's "Growth Marketing" filter surfaces
+only software-engineering-titled roles, none of them internships. GradConnection's Sydney
+business-and-commerce board (94 listings, fetched directly via curl) is still 100% Big-4/big-bank/
+large-corporate branded graduate programs with zero startup listings.
+
+**Considered and excluded, not padded in:** Buju.ai's Founding Marketing & Growth Intern (Wellfound,
+Mountain View, hybrid, "flexible around classes") — genuinely enrollment-friendly like A5 (Dalus),
+but the posting explicitly lists running the company's website and social media alongside growth
+experiments, sitting on the excluded side of the substance test with pay terms unclear; left out
+rather than added at Priority Low per the quality-bar rule. Also excluded: CreativeMode's "Growth
+Hacking Intern" (SF, but explicitly social-media/influencer/community work for a gaming platform);
+Motive's own Wellfound/YC mirrors (duplicate of the BuiltIn/Greenhouse listing already added as
+A111); several wrong-season BuiltIn/Intern Insider postings (Capital One, Mastercard, Raytheon
+Canada, GE Appliances, Coastal).
+
+**Tooling note:** Work at a Startup job pages returned only the `<title>` tag to WebFetch on every
+job ID tried this sweep (including a previously-confirmed-working one), and direct `curl` returned
+HTTP 406 even with a browser user-agent — a regression from prior sweeps. Re-test next run in case
+it's transient; WebSearch snippets remained usable as a fallback for discovery. Wellfound individual
+job pages continued to fetch fine when live, and cleanly returned HTTP 410 when dead.
 
 **2026-08-26 sweep — 6 new Tier A rows (A104–A109), no corrections needed, all 17 spot-checked
 rows confirmed accurate.** Full sweep of Work at a Startup, Wellfound, Simplify, the SimplifyJobs
