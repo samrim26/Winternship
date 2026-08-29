@@ -5,16 +5,16 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-27** (daily sweep — full sweep of Work at a Startup, Wellfound, Simplify,
-> SimplifyJobs off-season README (via raw markdown, not WebFetch summarization), Intern Insider,
-> BuiltIn (all three metros), economic consulting firms + peers (incl. Edgeworth, Secretariat, Bates
-> White), Strategy & Ops targets (Uber, DoorDash, Flexport, Palantir, Anduril, Tesla), Tokyo (Coral
-> Capital, Japan Dev, TokyoDev) and Australia (GradConnection) sources, plus a 10-row re-verification
-> pass on existing Tier A rows. **2 new Tier A rows (A110–A111)**, both `conflict` — see 2026-08-27
-> sweep notes below. **Two real corrections: A23 (Chubb) and A67 (Closure) both confirmed expired,
-> closed.** A70 (Base Power) upgraded unverified → live. Economic consulting / Strategy & Ops lane
-> remains a dead end on live postings — still cold-outreach only. Tokyo and Australia came back
-> empty again.)
+> Last swept: **2026-08-29** (daily sweep — new-source sweep of Work at a Startup, Wellfound,
+> Simplify, the SimplifyJobs off-season README, Intern Insider, BuiltIn (all three metros), economic
+> consulting firms, Tokyo, and Australia/GradConnection, plus a targeted re-verification pass on 10
+> time-sensitive existing rows. **1 new Tier A row (A114)** — a third TikTok Sydney role, `unverified`
+> (its detail page 403'd on every attempt). **Three real corrections: A104 (Direct Agents) closed —
+> re-opening its own tracked URL now shows Culver City, CA, not NYC, failing the location filter
+> outright; A100 (APX/Aster) closed — its own listing metadata reveals an already-expired Nov 2025
+> deadline, confirming it was dead rather than merely unverifiable; A19 (IBM) mode corrected to
+> Hybrid and pay confirmed at $71,100–$130,350/yr** via an independent mirror, deadline re-confirmed
+> Sept 1 2026 (~4 days out — act now). Every other source came back empty of new in-scope leads.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -120,7 +120,7 @@ recomputed once the resume is uploaded.
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
 | A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
-| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | In-person | Enterprise | Unconfirmed | **Sept 1 2026 (confirmed)** | Presumed paid | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | Hybrid | Enterprise | Unconfirmed | **Sept 1 2026 (confirmed, ~4 days out)** | $71,100–$130,350/yr | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
 | A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
 | A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
 | A66 | Peakflo | Sales Development Representative (SDR) Intern (Paid) | Sales | India | Remote | YC W22 | 6-mo min ⚠ | Rolling | ₹240–300K/yr | 1 | ~1 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/82428) |
@@ -168,9 +168,9 @@ recomputed once the resume is uploaded.
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Unconfirmed | Unconfirmed | 3 | ~3 | Low | unverified | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
 | A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
-| A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Unconfirmed, low confidence | Unconfirmed | 2 | ~4 | Low | unverified | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
+| A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Expired (Nov 24 2025) | Unconfirmed | 2 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
 | A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | live | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
-| A104 | Direct Agents | AI Business Strategy & Operations Intern | Strategy | New York, NY | In-person | Established (2003) | Rolling, no stated minimum | Rolling | Unconfirmed | 2 | ~4 | High | live | [Intern Insider](https://interninsider.me/internships/direct-agents/ai-business-strategy-operations-intern-115edaa5-1508-48e8-a5b2-84ba5a0a7cb2) |
+| A104 | Direct Agents | AI Business Strategy & Operations Intern | Strategy | Culver City, CA | In-person | Established (2003) | Rolling, no stated minimum | Rolling | Unconfirmed | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/direct-agents/ai-business-strategy-operations-intern-115edaa5-1508-48e8-a5b2-84ba5a0a7cb2) |
 | A105 | Zipline | Sales Operations Analyst Intern | Data | South San Francisco, CA | In-person | Series C | Winter 2027 (Jan–Apr 2027) ⚠ | Rolling | $40/hr | 3 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/sales-operations-analyst-intern-a2453a3e-deb9-4b6c-85be-2ee8537a8374) |
 | A106 | Zipline | Marketing Intern (Spring 2027) | Growth | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 2 | ~3 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/marketing-intern-spring-2027-7ac4e305-f77d-4616-b338-8bd9297b29a7) |
 | A107 | Zipline | Operations Experience Intern (Spring 2027) | Strategy | South San Francisco, CA | In-person | Series C | Winter 2027 (Jan–Apr 2027) ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/operations-experience-intern-spring-2027-404887f1-5384-4506-a2a2-6500b67f8fd6) |
@@ -178,6 +178,9 @@ recomputed once the resume is uploaded.
 | A109 | Qureos | Business Development Intern | BD | New York, NY | In-person | Unconfirmed | Rolling | Unconfirmed | Unconfirmed | 1 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/qureos/business-development-intern-d9aec99e-36ef-43d6-8692-aacf913d8029) |
 | A110 | The Walt Disney Company | ABC News Insights and Analytics Intern (Spring 2027) | Data | New York, NY | In-person | Enterprise | Jan–Jun 2027 ⚠ | Rolling | $23/hr | 4 | ~4 | Low | conflict | [Disney Workday](https://disney.wd5.myworkdayjobs.com/disneycareer/job/New-York-NY-USA/ABC-News-Insights-and-Analytics-Intern--Spring-2027_10158500) |
 | A111 | Motive | Sales Development Intern | Sales | Austin, TX | Hybrid | Startup | Summer 2027 ⚠ (as posted) | Unconfirmed | Unconfirmed | 2 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/gomotive/jobs/8431778002) |
+| A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | Closing 25 Dec 2026 | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-2/) |
+| A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
+| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Unconfirmed | Enterprise | Unconfirmed; sibling listing suggests Nov/Dec 2026 start ⚠ | Unconfirmed; likely 6-mo ⚠ | Unconfirmed | 4 | ~3 | Low | unverified | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
@@ -524,6 +527,122 @@ Brattle, or NERA as of this check; CRA has a live internship track but it's EU-o
 Master's/PhD-only, not addable. **C102 (Brattle)** and **C103 (NERA)** added as peer cold-outreach
 targets. This whole lane stays a September cold-outreach play, exactly as `PROFILE.md` describes it
 — these firms simply don't post off-cycle internships on a rolling job board the way startups do.
+
+**2026-08-28 sweep — 2 new Tier A rows (A112–A113), Australia lane's first genuinely new company in
+several sweeps, no corrections needed.** Full sweep of Work at a Startup, Wellfound, Simplify, the
+SimplifyJobs off-season README, Intern Insider (winter-2027 and spring-2027 term pages), BuiltIn
+(all three metros), economic consulting firms (quick recheck of Analysis Group, Cornerstone, CRA,
+Compass Lexecon, Brattle, NERA — all still summer-only/no internship, unchanged), Tokyo (Coral
+Capital, Japan Dev, TokyoDev), and Australia (GradConnection Sydney, fetched via `curl` with a
+browser user-agent since `WebFetch` still 403s the domain).
+
+**Best find: A112 (TikTok, Client Solution Intern, GBS AU).** GradConnection's Sydney
+business-and-commerce board, previously checked repeatedly and found "100% Big-4/big-bank/large-
+corporate programs," this time surfaced two TikTok internship listings that hadn't appeared before.
+The Client Solution Intern role (TikTok's Global Business Solutions/ad-sales org) is consultative
+selling plus real analytics — campaign performance analysis, media-metrics reporting, Excel — a
+genuine Sales/BD-with-quant-substance fit. Two things make it a standout: the posting text literally
+instructs applicants to "clearly state your availability in your resume (Start date, End date)," an
+explicit invitation to propose a custom Jan–Mar slice that almost nothing else in this tracker
+offers; and its work-rights list names "Australian Working Visa" alongside citizen/PR/student-visa
+options — a direct match to the subclass 462 working-holiday route `PROFILE.md` confirms Sam is
+eligible for. Verified by opening the actual GradConnection posting directly (not a search snippet),
+which required a `curl`+browser-UA workaround since `WebFetch` 403s this domain. No external ATS
+link exists — applications go through GradConnection's own login/apply flow, so the GradConnection
+URL is the correct application link. Mode (in-person vs. hybrid) is not explicitly stated on this
+particular posting, unlike a same-company SWE listing found alongside it that does require ≥3
+days/week on-site — flagged rather than assumed.
+
+**A113 (TikTok, Revenue Product Operations Intern, TikTok LIVE-Revenue) is a second, separate TikTok
+Sydney posting from the same sweep**, PM/product-ops flavored (data monitoring systems, A/B testing,
+user research feeding product strategy) — but its qualifications section explicitly requires
+"Available to undertake a 6-month internship commitment," a hard, stated-not-inferred conflict with
+the 10-week window. Kept per the strong-fit/dates-clash rule rather than dropped; TikTok's Global
+Business Solutions internship program is confirmed to exist and run in Sydney with international
+work rights, so a direct ask about a shorter Jan–Mar arrangement is plausible given A112 already
+demonstrates the same employer accepting candidate-proposed dates on a sibling role. A third listing
+title, "AI Product Manager Intern (TikTok Live-Revenue) - 2027 Start," was seen in the same
+GradConnection feed but not independently opened — likely the same team, not confirmed as a distinct
+requisition, not added per the never-guess-away rule.
+
+**Every other source came back empty of new in-scope leads.** The SimplifyJobs off-season README
+(fetched raw) now shows only Disney software-engineering roles in its readable section — no new
+data/strategy/growth/BD/PM matches. Intern Insider's winter-2027 and spring-2027 term pages surfaced
+nothing beyond already-tracked companies or wrong-location/wrong-function postings (HOOPP and RBC in
+Toronto; Disney Park Yield Optimization in Florida; Deloitte GPS analyst roles; a Brooklyn seasonal
+strategy internship at BSE Global that turned out to be sports-league/community-facing, not
+quantitative). BuiltIn (all three metros) surfaced only already-tracked companies (Notion, Celonis,
+Motive, Zipline, Zello, Datadog, Cloudflare-titled roles outside target functions) or wrong-season
+postings (Capital One and Mastercard Summer 2027, BDO Winter 2028). Work at a Startup continued the
+406/title-only regression from the 2026-08-27 sweep on direct fetch; WebSearch fallback surfaced only
+already-tracked companies (Dedalus Labs, Novaflow) and Summer-2027-dated postings (Domu Technology,
+CTGT). Wellfound WebSearch surfaced only unrelated small remote BD/growth internships that didn't
+independently verify as fresh or in-scope (Remotely Good, PipeLoom, TaskLabs, Polar) — none opened
+cleanly enough to clear the quality bar. Targeted searches for "founder's associate," "chief of
+staff," "solutions engineer," "sales engineer," "developer relations," "revenue operations," and
+"business analyst" intern titles crossed with the target cities returned nothing new and dated for
+the window — mostly Summer 2027 corporate postings or generic aggregator noise. Tokyo (Coral Capital,
+Japan Dev, TokyoDev) held exactly as every prior sweep found it: no BD/growth/partnerships/solutions-
+engineering internship category exists on any of the three, only the same HENNGE full-stack SWE
+listing.
+
+**2026-08-29 sweep — 1 new Tier A row (A114), three real corrections, no other new leads.**
+Re-swept Work at a Startup, Wellfound, Simplify, the SimplifyJobs off-season README, Intern Insider,
+BuiltIn (all three metros), economic consulting firms, Tokyo, and Australia/GradConnection. In
+parallel, ran a targeted re-verification pass on 10 time-sensitive existing rows (A9, A19, A70, A80,
+A82, A92, A98, A100, A101, A104) rather than a full re-check of every live row.
+
+**New: A114 (TikTok, AI Product Manager Intern, TikTok Live-Revenue), Sydney.** A third, distinct
+TikTok Sydney role found in GradConnection's search-results feed alongside the already-tracked A112/
+A113, same LIVE-Revenue team as A113. The individual job page 403'd on every attempt — only generic
+TikTok company boilerplate could be recovered, no req-specific dates or pay — so this is `unverified`
+per the never-drop rule rather than guessed at. Circumstantial signals (a description snippet tied to
+this listing family mentioning a Nov/Dec 2026 start, and a related TikTok LIVE posting elsewhere
+citing a 6-month commitment) suggest it likely shares A113's conflict, but that's not confirmed from
+the primary source. Open the GradConnection URL directly before investing time.
+
+**Correction — A104 (Direct Agents) closed, real location error.** Re-opening the tracked Intern
+Insider URL directly now shows the location verbatim as "Culver City, California, United States" —
+not New York as tracked since 2026-08-26. Culver City is Los Angeles-area, outside every target
+market and not an adjacent metro to SF/Bay Area (same logic that excluded HeyGen in an earlier
+sweep). Downgraded from `live`/High to `closed`/Low on the location filter; the role itself still
+appears open, so it's worth re-adding if a genuine NYC-office req from this company ever surfaces.
+
+**Correction — A100 (APX/Aster) closed, confirmed dead rather than merely unverifiable.** The Intern
+Insider listing's own metadata now reveals an application deadline of "Nov 24" — 2025, already ten
+months past. Combined with four prior sweeps finding zero independent corroboration anywhere
+(Ashby, LinkedIn, BNB Chain's own Aster board showing zero open roles, tokenjobs.io, asterdex.com)
+and an 87+-day staleness flag on the listing itself, this is now closed rather than kept as a
+low-confidence `unverified` lead.
+
+**Correction — A19 (IBM) mode and pay updated, deadline re-confirmed.** The Sept 1 2026 deadline is
+verbatim-confirmed via the Clemson mirror ("Expires on September 1, 2026") — about 4 days out at this
+sweep, act now if pursuing. A WayUp mirror of the identical requisition (job ID 128345, retitled
+there "Technical Sales Engineer Intern" — same req) newly discloses **hybrid** mode and pay of
+**$71,100–$130,350/yr**, both corrected in from prior "In-person"/"Presumed paid" placeholders.
+IBM's own careers.ibm.com page still returns empty content — unreadable, not just WAF-blocked — so
+this remains sourced from independent mirrors rather than the primary listing, hence still
+`unverified` overall.
+
+**Nine other re-verified rows (A9, A70, A80, A82, A92, A98, A101) held with no drift** — A9 (Lambda
+Robotics) and A82 (Soren) both still return title-only on direct Work at a Startup fetch (the ongoing
+406/JS-shell regression) but are independently confirmed open and unchanged via the YC company jobs
+page fallback. A70 (Base Power) was found freshly reposted 8 days ago. A92 (TraceRoot.AI) and A98
+(Cresta) both confirmed still live and unchanged. A101 (Advancy) confirmed unchanged. A80 (Notion)
+remains genuinely unverifiable beyond a search-confirmed existence check — Ashby's JS-rendered page
+still won't yield pay/date/status detail to any direct fetch; the tracked `conflict`/Med status
+stands unchanged from the 2026-08-25 corroboration.
+
+**Everything else came back empty of new in-scope leads.** Work at a Startup's direct-fetch
+regression (406/title-only) continued; WebSearch fallback surfaced only already-tracked companies or
+wrong-window postings. Wellfound, Simplify, and the SimplifyJobs off-season README surfaced nothing
+new past what's already tracked or excluded. Intern Insider surfaced one candidate that was checked
+and excluded: BSE Global's "China Business Strategy Seasonal Internship" (Brooklyn, NY) — verified
+directly to run Oct 14 2026 – May 13 2027 (7 months, hard window failure) and require Mandarin
+fluency plus NBA-specific depth aimed at seniors/grad students. BuiltIn (all three metros) and
+economic consulting firms confirmed unchanged (still no live winter/spring 2027 posting in the econ
+consulting lane). Tokyo (Coral Capital, Japan Dev, TokyoDev) unchanged — no BD/growth/strategy/PM
+category exists on any of the three.
 
 **2026-08-27 sweep — 2 new Tier A rows (A110–A111), two corrections, one status upgrade, econ
 consulting/Strategy & Ops lane confirmed still dead.** Full sweep of Work at a Startup, Wellfound,
