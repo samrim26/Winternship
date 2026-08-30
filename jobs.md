@@ -5,16 +5,19 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-29** (daily sweep — new-source sweep of Work at a Startup, Wellfound,
-> Simplify, the SimplifyJobs off-season README, Intern Insider, BuiltIn (all three metros), economic
-> consulting firms, Tokyo, and Australia/GradConnection, plus a targeted re-verification pass on 10
-> time-sensitive existing rows. **1 new Tier A row (A114)** — a third TikTok Sydney role, `unverified`
-> (its detail page 403'd on every attempt). **Three real corrections: A104 (Direct Agents) closed —
-> re-opening its own tracked URL now shows Culver City, CA, not NYC, failing the location filter
-> outright; A100 (APX/Aster) closed — its own listing metadata reveals an already-expired Nov 2025
-> deadline, confirming it was dead rather than merely unverifiable; A19 (IBM) mode corrected to
-> Hybrid and pay confirmed at $71,100–$130,350/yr** via an independent mirror, deadline re-confirmed
-> Sept 1 2026 (~4 days out — act now). Every other source came back empty of new in-scope leads.)
+> Last swept: **2026-08-30** (daily sweep — no new Tier A/B/C rows, but one real status upgrade and
+> two corrections. Swept Work at a Startup (still title-only on direct fetch, WebSearch fallback used),
+> Wellfound, the SimplifyJobs off-season README, Intern Insider (winter-2027 and spring-2027 term
+> pages), BuiltIn (all three metros), and economic consulting firms (Analysis Group, Cornerstone)
+> directly — all came back empty of new in-scope leads, consistent with every prior sweep. **A114
+> (TikTok AI Product Manager Intern, Sydney) upgraded `unverified` → `live`** — a curl-with-browser-UA
+> fetch recovered the full posting (WebFetch itself still 403s GradConnection), confirming a Dec 2026
+> approx. start, no stated minimum-duration requirement, an explicit invitation to state custom
+> start/end dates, and "Australian Working Visa" (subclass 462) in the accepted work-rights list.
+> **A80 (Notion) dates sharpened** from a general "Jan–Apr 2027" to confirmed **Jan 25 – Apr 16, 2027**
+> via a BuiltIn SF mirror — still `conflict`, now with a precise 5-week overrun instead of an estimate.
+> **A19 (IBM) re-confirmed live and unchanged — deadline is now ~2 days out (Sept 1 2026), act
+> today/tomorrow if pursuing.**)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -120,7 +123,7 @@ recomputed once the resume is uploaded.
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
 | A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
-| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | Hybrid | Enterprise | Unconfirmed | **Sept 1 2026 (confirmed, ~4 days out)** | $71,100–$130,350/yr | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | Hybrid | Enterprise | Unconfirmed | **Sept 1 2026 (confirmed, ~2 days out — act today/tomorrow)** | $71,100–$130,350/yr | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
 | A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
 | A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
 | A66 | Peakflo | Sales Development Representative (SDR) Intern (Paid) | Sales | India | Remote | YC W22 | 6-mo min ⚠ | Rolling | ₹240–300K/yr | 1 | ~1 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/82428) |
@@ -148,7 +151,7 @@ recomputed once the resume is uploaded.
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
 | A79 | Zeminent | Business Development & Lead Generation Intern | BD | Remote (Gurgaon, India hrs) | Remote | Small | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4436924-business-development-lead-generation-intern) |
-| A80 | Notion | Data Science Intern (Winter 2027) | Data | San Francisco, CA / New York, NY | In-person | Late-stage | Jan–Apr 2027 ⚠ | Unconfirmed | $55/hr (Bachelor's) / $59/hr (Master's) | 5 | ~5 | Med | conflict | [Ashby](https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application) |
+| A80 | Notion | Data Science Intern (Winter 2027) | Data | San Francisco, CA / New York, NY | In-person | Late-stage | **Jan 25 2027** | **Apr 16 2027 ⚠** | $55/hr (Bachelor's) / $59/hr (Master's) | 5 | ~5 | Med | conflict | [Ashby](https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application) |
 | A81 | LinkedIn | Global Sales Organization Intern | Sales | San Francisco, CA | In-person | Public | Rolling, unconfirmed | Unconfirmed | Paid (amount unconfirmed) | 4 | ~3 | Med | unverified | [Intern Insider](https://interninsider.me/internships/linkedin/global-sales-organization-intern-5793c9fa-ccc5-4abd-b1f5-b57f77f18a37) |
 | A82 | Soren | Growth Intern | Growth | San Francisco, CA | In-person | Startup | Rolling | Unconfirmed | $6–11K/mo | 2 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/102000) |
 | A83 | Relling | Business Operations Intern | Data/Ops | San Francisco, CA | In-person | Startup (hardware, ex-SpaceX/NASA) | Rolling | Unconfirmed | $20–100/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/97830) |
@@ -180,7 +183,7 @@ recomputed once the resume is uploaded.
 | A111 | Motive | Sales Development Intern | Sales | Austin, TX | Hybrid | Startup | Summer 2027 ⚠ (as posted) | Unconfirmed | Unconfirmed | 2 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/gomotive/jobs/8431778002) |
 | A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | Closing 25 Dec 2026 | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-2/) |
 | A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
-| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Unconfirmed | Enterprise | Unconfirmed; sibling listing suggests Nov/Dec 2026 start ⚠ | Unconfirmed; likely 6-mo ⚠ | Unconfirmed | 4 | ~3 | Low | unverified | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
+| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Unconfirmed | Enterprise | Dec 2026 (approx) | Confirm ≤ Mar 12 (candidate states own dates) | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
@@ -585,6 +588,38 @@ the window — mostly Summer 2027 corporate postings or generic aggregator noise
 Japan Dev, TokyoDev) held exactly as every prior sweep found it: no BD/growth/partnerships/solutions-
 engineering internship category exists on any of the three, only the same HENNGE full-stack SWE
 listing.
+
+**2026-08-30 sweep — no new Tier A/B/C rows, one status upgrade, two corrections.** Full sweep of
+Work at a Startup (WebSearch fallback — direct fetch still returns only page-header text, no listings),
+Wellfound, the SimplifyJobs off-season README, Intern Insider (winter-2027 and spring-2027 term pages),
+BuiltIn (all three metros), and economic consulting firms (Analysis Group, Cornerstone Research
+checked directly this round) surfaced nothing new that clears the quality bar — every result was
+either already tracked, wrong-season (Summer/Fall 2026-27), or a generic summer-analyst track with no
+off-cycle option, matching the pattern of every sweep since 2026-08-22. Tokyo (Japan Dev, TokyoDev,
+Coral Capital) checked again via search — still no BD/growth/strategy/PM internship category exists
+on any of the three, only the same HENNGE full-stack SWE listing.
+
+**A114 (TikTok, AI Product Manager Intern, Sydney) upgraded `unverified` → `live`.** The job page still
+403s a direct WebFetch, but `curl` with a browser user-agent recovered the full rendered posting
+(React's embedded JSON state, not just the HTML shell) — the same workaround already noted for
+GradConnection in earlier sweeps. Confirmed: position start date "Dec 2026 (approx)", closing date
+25 Dec 2026 3:59pm; the posting does **not** state a 6-month minimum the way sibling A113 does — instead
+it carries the identical "please clearly state your availability in your resume, including your start
+and end dates" language already seen on A112, inviting a candidate-proposed Jan–Mar slice. The
+work-rights list includes "Australian Working Visa" alongside citizen/PR/student-visa options — a
+direct match to the subclass 462 route `PROFILE.md` confirms Sam is eligible for. No pay disclosed.
+Priority raised Low → Med, Flex raised Low → High.
+
+**A80 (Notion) — dates sharpened from an estimate to a confirmed range.** A BuiltIn SF mirror now
+states the Winter 2027 Data Science Intern program runs **January 25 – April 16, 2027** exactly,
+replacing the previous "Jan–Apr 2027" approximation carried since 2026-08-25. Still a 5-week overrun
+past the 12 Mar hard stop — `conflict`/Med stands, now with a firm date instead of a range estimate.
+
+**A19 (IBM) — re-confirmed live and unchanged, deadline now urgent.** The Clemson mirror still shows
+"Expires on September 1, 2026" verbatim, unchanged across three consecutive sweeps. That deadline is
+now roughly **2 days out** — the most time-critical row in the entire tracker. IBM's own careers.ibm.com
+page remains unreadable (empty response) on every attempt so far this month; status stays `unverified`
+from the primary source despite the mirror's consistency.
 
 **2026-08-29 sweep — 1 new Tier A row (A114), three real corrections, no other new leads.**
 Re-swept Work at a Startup, Wellfound, Simplify, the SimplifyJobs off-season README, Intern Insider,
