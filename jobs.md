@@ -5,17 +5,28 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-08-31** (daily sweep — **1 new Tier A row (A115, Workiva)**, two data-integrity
-> corrections (A11, A20 status desync between this file and `dashboard.html`), and a full
-> re-verification pass on A19 plus six other `live` rows (A5, A10, A13, A14, A96, A97) — all held with
-> no drift. **A19 (IBM) deadline confirmed still Sept 1 2026 — that is TODAY/TOMORROW, the single most
-> time-critical row in the tracker.** Swept Work at a Startup (still 406/title-only on direct fetch,
-> WebSearch fallback used), Wellfound, the SimplifyJobs off-season README (downloaded raw and
-> programmatically filtered for target functions × Winter/Spring 2027 tags — the most thorough pass on
-> this source yet), Intern Insider (winter-2027 and spring-2027 term pages), BuiltIn (all three
-> metros), GradConnection Sydney, economic consulting firms (CRA, Compass Lexecon, Brattle, NERA),
-> Uber/Palantir directly, and Tokyo sources — all came back empty of new in-scope leads except
-> Workiva, consistent with the pattern of every prior sweep.)
+> Last swept: **2026-09-01** (daily sweep — **two closures from re-verifying all 19 `live` rows**:
+> **A19 (IBM) has expired** — the Clemson mirror that held steady across three prior sweeps now
+> confirms "Expires on September 1, 2026" (today) and IBM's own SmartRecruiters/careers listing is
+> gone; **A24 (Lieberman Research Worldwide) was pulled** — Built In shows it "removed at 10:52 a.m.
+> UTC on Friday, Aug 28, 2026." The other 17 `live` rows (A5, A9, A10, A13, A14, A22, A65, A70, A75,
+> A82, A83, A88, A92, A96, A98, A101, A112, A114) held with no drift; A112/A114 (TikTok) both
+> re-confirmed closing 25 Dec 2026, 3:59pm Sydney via direct curl+UA fetch of the embedded JSON.
+> **No new Tier A/B rows this sweep** — WorkAtStartup (still 406 direct, WebSearch fallback: Dexter
+> Founders' Associate is Berlin and Wardstone BD Intern is Los Angeles, both outside target markets,
+> so neither was added), Wellfound, the SimplifyJobs off-season README (grepped programmatically for
+> target functions × NYC/SF/Austin/Tokyo/Sydney/Madrid/Barcelona × Winter/Spring 2027 — surfaced only
+> an NBCUniversal Academic Year posting, see C70 below), Intern Insider, BuiltIn (all three metros),
+> GradConnection Sydney (all new Business & Commerce postings are Nov/Dec-2026-start "2026/27 Summer"
+> vacation programs — same structural conflict as Canva/Atlassian, not re-added individually), the
+> five economic consulting firms (Analysis Group, Cornerstone, CRA, Compass Lexecon, Brattle — all
+> confirmed to run Summer-only analyst programs with no off-cycle track, consistent with prior
+> sweeps), NAB's Sydney Summer Intern Program (Finance & Strategy — Nov 23 2026 – Jan 29 2027, starts
+> during Sam's enrolled fall semester, not added), and Tokyo sources (TokyoDev/Japan Dev remain
+> software-engineering-only) — all came back empty of addable new leads. **One Tier C row resolved**:
+> C70 (NBCUniversal) had its vague README-only note replaced with the concrete finding that the role
+> is a Sept–Apr academic-year commitment whose current req has already expired — reclassified
+> `monitor` → `conflict`.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -121,7 +132,7 @@ recomputed once the resume is uploaded.
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
 | A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
-| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | Hybrid | Enterprise | Unconfirmed | **Sept 1 2026 (confirmed, ~2 days out — act today/tomorrow)** | $71,100–$130,350/yr | 3 | ~4 | Med | unverified | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
+| A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | Hybrid | Enterprise | Unconfirmed | Expired Sept 1 2026 | $71,100–$130,350/yr | 3 | ~4 | Med | closed | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
 | A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
 | A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
 | A66 | Peakflo | Sales Development Representative (SDR) Intern (Paid) | Sales | India | Remote | YC W22 | 6-mo min ⚠ | Rolling | ₹240–300K/yr | 1 | ~1 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/82428) |
@@ -131,7 +142,7 @@ recomputed once the resume is uploaded.
 | A21 | Crustdata (YC F24) | AI Solutions Engineering Intern | Solutions Engineer | Brooklyn, NY | In-person | YC F24 | Rolling | ~Aug 26 2026 (confirm) | $4–6K/mo | 3 | ~5 | **High** | closed | [YC](https://www.ycombinator.com/companies/crustdata/jobs/0W1EW1X-ai-solutions-engineering-intern) |
 | A22 | CertiK | Business Development Intern / Ambassador | BD | New York, NY | Hybrid | Public/late-stage | Rolling | Rolling | $1K/mo (5 hrs/wk) | 2 | ~3 | Low | live | [Lever](https://jobs.lever.co/certik/241dde9b-95d6-4eda-a207-a149934b16e1) |
 | A23 | Chubb | Data Analyst Intern | Data | New York, NY (2 locations) | In-person | Enterprise | Unconfirmed | Unconfirmed | $20–34/hr | 3 | ~4 | Med | closed | [Built In](https://builtin.com/job/data-analyst-intern/8731657) |
-| A24 | Lieberman Research Worldwide | Market Research Intern — Quantitative Team | Data | Great Neck, NY | **Remote** | Established | Rolling, year-round | Rolling | $20/hr (~28 hrs/wk) | 2 | ~4 | Low | live | [Built In](https://builtin.com/job/market-research-intern-year-round-quantitative-team/10317459) |
+| A24 | Lieberman Research Worldwide | Market Research Intern — Quantitative Team | Data | Great Neck, NY | **Remote** | Established | Rolling, year-round | Rolling | $20/hr (~28 hrs/wk) | 2 | ~4 | Low | closed | [Built In](https://builtin.com/job/market-research-intern-year-round-quantitative-team/10317459) |
 | A25 | SOUKMEDIA | B2B Growth & Demand Generation Intern | Growth | Remote (US) | Remote | Unconfirmed | 3 months, start TBC | Unconfirmed | Unconfirmed | 2 | ~4 | Low | unverified | [Built In](https://builtin.com/job/b2b-growth-demand-generation-intern/10474143) |
 | A26 | Treasure | Go-To-Market Intern | Growth | San Francisco (2 locations) | Hybrid | Unconfirmed | Unconfirmed | Unconfirmed | $25–30/hr | 2 | ~3 | Low | unverified | [Built In](https://builtin.com/job/go-market-intern/10651661) |
 | A27 | Anthelion Capital | Quant Developer / Quant Research Intern | Data | New York, NY | In-person | Unconfirmed | Dec 2026 – Feb 2027 (TBC) ⚠ | Unconfirmed | $1.8–2K/wk | 4 | ~3 | Low | conflict | [Built In](https://builtin.com/job/quant-developer-quant-research-intern-2026-2027/10359304) |
@@ -588,6 +599,60 @@ Japan Dev, TokyoDev) held exactly as every prior sweep found it: no BD/growth/pa
 engineering internship category exists on any of the three, only the same HENNGE full-stack SWE
 listing.
 
+**2026-09-01 sweep — no new Tier A/B rows, two closures from full `live`-row re-verification, one
+Tier C row resolved.** Re-verified all 19 rows currently marked `live`: A5, A9, A10, A13, A65, A75,
+A82, A83, A88 (WorkAtStartup/Wellfound — still 406/title-only on direct fetch, so confirmed via
+WebSearch fallback against each company's YC jobs page instead) all still open, no field drift. A14
+(Celonis), A22 (CertiK — recovered full content via curl+browser-UA after a WebFetch 403), A70 (Base
+Power, "Reposted 12 Days Ago"), A92 (TraceRoot.AI), A96 (Crowe Global), A98 (Cresta), and A101
+(Advancy Partners) all independently re-opened and confirmed unchanged. A112 and A114 (TikTok) both
+re-confirmed via direct curl+UA fetch of the GradConnection page's embedded JSON: closing date is
+25 Dec 2026, 3:59pm Sydney time on both, matching what was already tracked. **Two closures:** A19
+(IBM) — the Clemson mirror that had held "Expires on September 1, 2026" verbatim across four sweeps
+now confirms that date has arrived; a fresh WebFetch of the same mirror reads "the job listing
+Expires on September 1, 2026 ... This position is no longer accepting applications," and IBM's own
+SmartRecruiters/careers listing could not be found at all. Closed rather than left `unverified` —
+the deadline was the one fact this row was always going to resolve cleanly. A24 (Lieberman Research
+Worldwide) — WebFetch on the Built In listing now reads "this job was removed at 10:52 a.m. (UTC) on
+Friday, Aug 28, 2026"; no replacement listing found.
+
+New-lead sweep across all ten sources came back empty of addable rows, but surfaced enough on two
+near-misses and one existing Tier C target to be worth recording rather than silently dropping.
+**Wardstone (YC F25), Business Development Intern – Space and Missile Defense** (found via
+WorkAtStartup WebSearch, $6–10K/mo, US-citizenship-required which Sam clears) is based in
+**Los Angeles, CA** — not one of the target metros or an adjacent one (LA is not Bay Area-adjacent
+the way Oakland or Palo Alto is) — so it was left off per the location hard exclusion rather than
+added as a stretch. **Dexter (YC), Founders' Associate Intern** is Berlin-only, same exclusion.
+**NAB's Sydney Summer Intern Program – Finance and Strategy** runs 23 Nov 2026 – 29 Jan 2027 — genuinely
+inside the broader window on the back end, but it starts six weeks before Sam's target date, during
+his enrolled fall semester, the same structural mismatch already documented for Canva/Atlassian in
+the Australia section above — not added as its own row for the same reason those weren't. The five
+target economic-consulting firms (Analysis Group, Cornerstone Research, CRA, Compass Lexecon,
+Brattle) were checked directly again: all run Summer-only analyst/associate programs with
+application windows opening Aug–Oct 2026 for a Summer 2027 start, no off-cycle track exists at any
+of them — consistent with every prior sweep of this lane, C72–C75/C102 kept as-is. The SimplifyJobs
+off-season README was downloaded raw and grepped programmatically for target functions crossed with
+every target city and Winter 2027/Spring 2027 tags; the only match outside already-tracked
+companies was an NBCUniversal "Academic Year" internship family (Advertising & Partnerships Ad
+Products Intern, Data Science & Analytics Intern, Peacock Customer Journey – Decision Sciences
+Intern) — chased down to a concrete finding below rather than added as a new row, since the existing
+C70 already tracks this company/function. GradConnection Sydney's Business & Commerce category
+returned nothing beyond already-tracked TikTok postings and more "2026/27 Summer" vacation programs
+(CommBank, KPMG, EY, Pitcher Partners) on the same Nov/Dec-2026-start cycle already ruled structurally
+out. BuiltIn (all three metros), Intern Insider, and Tokyo sources (Coral Capital 404s at the URL
+tried, Japan Dev, TokyoDev) returned nothing new in scope — Tokyo remains software-engineering-only
+on every source checked to date.
+
+**C70 (NBCUniversal) resolved from a vague README pointer to a concrete, dated finding.** The
+Advertising & Partnerships Ad Products Intern is not a Winter/Spring-specific req — it's NBCU's
+"Academic Year" program, confirmed via WebSearch to run **Sept 2026 – Apr 2027** (two full semesters,
+16–24 hrs/wk, $19/hr), a hard conflict with the Jan 4–Mar 12 window on both ends regardless of when
+Sam could start. The specific SmartRecruiters requisition found (744000121820063) was then opened
+directly and confirmed expired — this cohort's applications already closed earlier in 2026. Status
+changed `monitor` → `conflict` with the dated note kept in place so this doesn't get re-discovered
+as "new" on a future sweep; still worth a direct ask to NBCU about a standalone Jan–Mar arrangement,
+since the fit on function (Partnerships) and seniority is otherwise real.
+
 **2026-08-31 sweep — 1 new Tier A row (A115), two data-integrity corrections, no closures.**
 Re-verified A19 (IBM, urgent) plus six other `live` Tier A rows not re-checked in the last couple of
 sweeps (A5 Dalus, A10 Naive, A13 DeepAware AI, A14 Celonis, A96 Crowe Global, A97 Cadence Design
@@ -905,7 +970,7 @@ Search these titles at each: `founder's associate` · `chief of staff` · `growt
 | C9 | Sardine | Fraud/risk AI, quantitative | Data, Strategy | Series C | 3 | ~4 | monitor | [sardine.ai/careers](https://www.sardine.ai/careers) |
 | C10 | Dorsia | Consumer, NYC-native, social product | Growth, Partnerships | Early | 3 | ~4 | monitor | [Wellfound](https://wellfound.com/) |
 | C63 | EINO | Techstars-backed SaaS, North Williamsburg, real GTM Intern req found (currently closed) | Growth, GTM | Early | 2 | ~4 | monitor | [Techstars board](https://jobs.techstars.com/companies/eino/jobs/63449764-gtm-intern) |
-| C70 | NBCUniversal | SimplifyJobs README tags a Winter/Spring 2027 Advertising & Partnerships Ad Products Intern — genuine Partnerships-function match, but the source repo's application link is paywalled and no live URL could be recovered this sweep | Partnerships | Enterprise | 4 | ~4 | monitor | [nbcunicareers.com](https://www.nbcunicareers.com/) |
+| C70 | NBCUniversal | Resolved 2026-09-01: this is NBCU's "Academic Year" internship program (Advertising & Partnerships Ad Products Intern, plus siblings like Data Science & Analytics Intern and Peacock Customer Journey – Decision Sciences Intern), not a Winter/Spring-specific req. Confirmed dates run **Sept 2026 – Apr 2027** (two full semesters, 16–24 hrs/wk, $19/hr), a hard structural conflict with the Jan 4–Mar 12 window on both ends. The specific SmartRecruiters req found (744000121820063) has already expired — this cohort's applications closed in spring 2026. Kept as a Tier C outreach target since NBCU clearly runs Partnerships/Data internships at the right seniority; worth asking directly whether a standalone Jan–Mar block is possible, since the standing req structurally won't be | Partnerships | Enterprise | 4 | ~4 | conflict | [nbcunicareers.com](https://www.nbcunicareers.com/) |
 | C71 | Actively | Confirmed to run a generalist Founder's Associate / Business Operations function — a live Wellfound req is real but is a full-time, $140–175K role requiring 1–3 yrs PE/banking/consulting experience, not an internship. Worth a cold email asking about a junior/shorter version rather than applying to the listed req | Biz Ops, Founder's Associate | Early | 3 | ~3 | monitor | [Wellfound](https://wellfound.com/jobs/4064957-business-operations-founder-s-associate) |
 
 ### San Francisco / Bay Area
