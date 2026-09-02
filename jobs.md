@@ -5,7 +5,11 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-01** (daily sweep — **two closures from re-verifying all 19 `live` rows**:
+> Last swept: **2026-09-02** (daily sweep — full re-verification of all 18 `live` Tier A rows plus a
+> fresh sweep of every source; see the dated note below the Tier A table for details. No new Tier A/B
+> rows and no closures; one new Tier C outreach target (C116, BuildPass) and three field corrections
+> on existing live rows.)
+> Prior: **2026-09-01** (daily sweep — **two closures from re-verifying all 19 `live` rows**:
 > **A19 (IBM) has expired** — the Clemson mirror that held steady across three prior sweeps now
 > confirms "Expires on September 1, 2026" (today) and IBM's own SmartRecruiters/careers listing is
 > gone; **A24 (Lieberman Research Worldwide) was pulled** — Built In shows it "removed at 10:52 a.m.
@@ -155,7 +159,7 @@ recomputed once the resume is uploaded.
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
-| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA / India | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
+| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Conflicting — see note ⚠ | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
 | A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
@@ -172,7 +176,7 @@ recomputed once the resume is uploaded.
 | A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
-| A92 | TraceRoot.AI (YC S25) | GTM Engineer Intern | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
+| A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
 | A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
 | A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Nov 1 2026 | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
 | A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
@@ -599,6 +603,64 @@ Japan Dev, TokyoDev) held exactly as every prior sweep found it: no BD/growth/pa
 engineering internship category exists on any of the three, only the same HENNGE full-stack SWE
 listing.
 
+**2026-09-02 sweep — no new Tier A/B rows, no closures, three field corrections on `live` rows, one
+new Tier C outreach target.** Re-verified all 18 rows currently marked `live` (A5, A9, A10, A13, A14,
+A22, A65, A70, A75, A82, A83, A88, A92, A96, A98, A101, A112, A114). `workatastartup.com` job pages
+kept returning a JS-only shell to WebFetch/plain curl as in prior sweeps, so the run leaned on
+`curl` with a full browser User-Agent, which now recovers the underlying Inertia.js JSON — a more
+reliable source than prose scraping and worth keeping as the default technique for that domain going
+forward. 15 of 18 rows confirmed fully unchanged (several with pay figures re-confirmed that were
+already tracked, not new). Three real corrections:
+
+- **A13 (DeepAware AI)** — the posting now displays under the name "DeepAware AI (Robotics Center of
+  Silicon Valley)," an apparent rebrand or DBA. SF in-person and BD scope unchanged; the listing now
+  also notes it's open to full-time as well as intern candidates. No status change, note-only.
+- **A75 (Surface Labs)** — location narrowed: the tracked "San Francisco, CA / India" option is
+  confirmed **SF/Remote(US) only**, with an explicit US-citizen/visa-only note — India was never
+  actually available to Sam anyway, but the row is corrected for accuracy. More importantly, the
+  same structured listing data now states pay of **$10–20K/month**, directly contradicting the
+  "commission-only, no base ⚠" text this row has carried since 2026-08-20. Left unresolved rather
+  than silently overwritten — one of these two pay claims is stale, unclear which — pay field changed
+  to "Conflicting — see note ⚠" pending a direct check before relying on either figure.
+- **A92 (TraceRoot.AI)** — same URL, renamed role: "GTM Engineer Intern" → **"Developer Marketing
+  Intern"**, confirmed via direct WebFetch (technical writing + developer-focused marketing, same
+  $4–6K/mo, same hybrid/3-days-onsite arrangement). Substance still reads as technical-adjacent
+  GTM/DevRel work, not the excluded content-marketing lane, so kept `live` — but the title drift is
+  worth watching on future sweeps in case the role substance shifts along with the name.
+
+**New: C116 (BuildPass), Founder's Associate, Austin, TX — Tier C outreach target only, no live
+posting found.** Australian construction-tech SaaS (~$5M seed 2024, ~10% MoM growth) that has
+recently opened a US presence in Austin — Sam's home market. Turned up only via aggregator search
+snippets (ZipRecruiter, CB Insights, a Texas Association of Builders member listing) describing a
+Founder's Associate role — drafting business cases, turning data into insights, sales-prospect
+follow-up — a high-signal generalist title `PROFILE.md` calls out by name. No live application URL
+exists on any channel tried (company site, LinkedIn, Ashby, Greenhouse, Lever) — `buildpass.ai/us/about-us`
+doesn't mention the role at all and routes applicants to LinkedIn or `hello@buildpass.ai` directly.
+Dates, pay, and duration are entirely unconfirmed, including whether this is internship-length at
+all. Added to Tier C rather than Tier A since there is no posting to mark `unverified` against — this
+is a cold-email target, per the company's own stated preference for direct outreach.
+
+**Everything else came back empty of new in-scope leads, matching the pattern of most recent
+sweeps.** Work at a Startup (curl+UA and WebSearch), Wellfound, Simplify, the SimplifyJobs off-season
+README (parsed programmatically — no Strategy/Growth/BD/Partnerships/Sales section exists in that
+repo at all; only Data Science and PM tables are relevant, and every target-city/target-window row in
+those two was already excluded for wrong season, locked status, or non-internship duration), Intern
+Insider (both winter-2027 and spring-2027 term pages returned HTTP 429 on every attempt today,
+including after backoff — not checked this sweep, retry next time), BuiltIn (all three metros),
+GradConnection Sydney (both `curl`+UA and WebFetch hit a JS shell / 429 today — worth retrying the
+curl+UA technique that has worked in prior sweeps), and Tokyo sources (Coral Capital, Japan Dev,
+TokyoDev — still zero non-engineering internships on any of the three) all came back empty.
+Re-checked the five core economic consulting firms plus peers directly (Analysis Group, Cornerstone,
+CRA, Compass Lexecon, Brattle, NERA) — CRA's Greenhouse board shows exactly one open internship req,
+Brussels/Düsseldorf/Munich-only (EU work authorization required), no change from prior sweeps; the
+rest remain summer-only. Uber, DoorDash, Flexport, and Palantir re-checked — Palantir's Deployment
+Strategist internship explicitly requires the applicant's *final* internship before a 2026
+graduation, disqualifying a rising junior outright; no other change. One candidate considered and
+excluded: a "Growth & Partnerships Intern" role at Tackle (YC-backed) surfaced in search, but both
+the Work at a Startup and YC company-page URLs 404'd/redirected to the wrong company on every attempt
+— could not confirm the posting is even still real, so not added; flagged here in case a working link
+resurfaces on a future sweep.
+
 **2026-09-01 sweep — no new Tier A/B rows, two closures from full `live`-row re-verification, one
 Tier C row resolved.** Re-verified all 19 rows currently marked `live`: A5, A9, A10, A13, A65, A75,
 A82, A83, A88 (WorkAtStartup/Wellfound — still 406/title-only on direct fetch, so confirmed via
@@ -1003,6 +1065,7 @@ Search these titles at each: `founder's associate` · `chief of staff` · `growt
 | C24 | H-E-B Digital | Large Austin employer, real analytics org | Data Science | Enterprise | 3 | ~3 | monitor | [careers.heb.com](https://careers.heb.com/) |
 | C25 | Indeed | Austin HQ, huge data org, econ research team | Data Science | Enterprise | 3 | ~4 | monitor | [indeed.jobs](https://www.indeed.jobs/) |
 | C69 | Zello | Real SQL/Snowflake/dbt/Omni-BI analytics intern req exists, but it's a Fall 2026 cohort ending early December — ask directly about a winter/spring cohort | Data | Mid-size | 2 | ~4 | monitor | [Built In listing](https://builtin.com/job/analytics-intern/10488836) |
+| C116 | BuildPass | Australian construction-tech SaaS (~$5M seed 2024, ~10% MoM growth) that recently opened a US presence in Austin — home market. Aggregator snippets describe a Founder's Associate role (business cases, data-driven insights, sales-prospect follow-up), but no live application URL exists anywhere; company site routes to LinkedIn/email only. Cold-outreach target, not a verified posting | Strategy, Founder's Associate | Early (seed) | 2 | ~4 | monitor | [buildpass.ai](https://buildpass.ai/us/about-us) |
 
 > **Austin is your cheapest shot on goal.** No relocation, no visa, and you can take in-person
 > meetings while enrolled. If the light course load turns out heavier than expected, Austin
