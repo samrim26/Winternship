@@ -5,3 +5,6 @@ resume/*.pdf
 resume/*.docx
 
 .DS_Store
+
+# Claude Code agent worktrees / session scratch data — not repo content
+.claude/
