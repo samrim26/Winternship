@@ -5,7 +5,30 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-03** (daily sweep — full re-verification of all 17 `live` Tier A rows via
+> Last swept: **2026-09-05** (daily sweep — **4 new Tier A rows (A117–A120)**, all four sourced from
+> Workiva/Zipline/MTA via Intern Insider's company/role-facet pages and the SimplifyJobs off-season
+> README's Data Science section. **One real correction**: **A115 (Workiva)** — the direct req URL that
+> eluded every sweep since 2026-08-31 was found via Intern Insider's own company page
+> (`interninsider.me/companies/workiva`), confirming the Commercial Strategy Intern's Winter 2027 term
+> starts **Monday, January 4, 2027** and closes Sept 27, 2026. **New rows**: **A117** (Workiva Product
+> Management Intern, Spring 2027, $40/hr, unverified — flagged for a "software development experience"
+> qualification mismatch) and **A118** (Workiva Intern – Partnerships, Winter 2027, NYC hub, unverified)
+> are siblings from the same 22-req Workiva company page, both confirmed Jan 4 2027 start, both closing
+> Sept 27 2026. **A119** (Zipline Commercial Strategy & Operations Intern) is a new Austin, TX location
+> for an eighth tracked Zipline req — explicitly offers a "Winter 2027" term, kept `conflict` since
+> every other Zipline "Winter 2027"-labeled req (A105, A107) has independently confirmed that means
+> Jan–Apr. **A120** (MTA EAM Analyst Intern, Brooklyn NY, Data, $19/hr) is a public-sector NYC find
+> independently verified live on MTA's own Jobvite ATS, in-person, `live`. **No closures.** Sweep of
+> economic consulting added **nera.com checked directly for the first time** — its own FAQ confirms
+> final-year-undergrad/grad-only, no off-cycle track, consistent with C103's existing finding; the
+> other five firms unchanged. Palantir's two live Deployment Strategist reqs re-confirmed Paris and
+> Honolulu; Uber/DoorDash unchanged; Tokyo unchanged (Coral Capital's `/jobs/` path now 404s outright).
+> **Considered and excluded**: Google's NYC-area Data Analytics Apprenticeship (requires *not* being
+> enrolled, 18-month program — hard exclusion); ZS Associates' SF strategy/analytics intern reqs
+> (confirmed Summer-2027-only, 11 weeks, via WebSearch corroboration); VelocityEHS's "Austin" CX
+> intern (actually remote/Oakville ON, Jan–Apr overrun); CommBank's Sydney PM/Business & Commerce
+> summer program (Nov 2026 start, same enrolled-fall-semester conflict as every other ANZ program).)
+> Prior: **2026-09-03** (daily sweep — full re-verification of all 17 `live` Tier A rows via
 > WebFetch/curl+UA, plus a fresh sweep of every listed source. No closures, no new Tier A/B/C rows.
 > **Two field corrections**: **A10 (Naive)** — mode corrected from "Hybrid" to "In-person or Remote"
 > (the posting's SF and Remote(US) options are a candidate's either/or choice, not a blended
@@ -33,28 +56,6 @@
 > fresh sweep of every source; see the dated note below the Tier A table for details. No new Tier A/B
 > rows and no closures; one new Tier C outreach target (C116, BuildPass) and three field corrections
 > on existing live rows.)
-> Prior: **2026-09-01** (daily sweep — **two closures from re-verifying all 19 `live` rows**:
-> **A19 (IBM) has expired** — the Clemson mirror that held steady across three prior sweeps now
-> confirms "Expires on September 1, 2026" (today) and IBM's own SmartRecruiters/careers listing is
-> gone; **A24 (Lieberman Research Worldwide) was pulled** — Built In shows it "removed at 10:52 a.m.
-> UTC on Friday, Aug 28, 2026." The other 17 `live` rows (A5, A9, A10, A13, A14, A22, A65, A70, A75,
-> A82, A83, A88, A92, A96, A98, A101, A112, A114) held with no drift; A112/A114 (TikTok) both
-> re-confirmed closing 25 Dec 2026, 3:59pm Sydney via direct curl+UA fetch of the embedded JSON.
-> **No new Tier A/B rows this sweep** — WorkAtStartup (still 406 direct, WebSearch fallback: Dexter
-> Founders' Associate is Berlin and Wardstone BD Intern is Los Angeles, both outside target markets,
-> so neither was added), Wellfound, the SimplifyJobs off-season README (grepped programmatically for
-> target functions × NYC/SF/Austin/Tokyo/Sydney/Madrid/Barcelona × Winter/Spring 2027 — surfaced only
-> an NBCUniversal Academic Year posting, see C70 below), Intern Insider, BuiltIn (all three metros),
-> GradConnection Sydney (all new Business & Commerce postings are Nov/Dec-2026-start "2026/27 Summer"
-> vacation programs — same structural conflict as Canva/Atlassian, not re-added individually), the
-> five economic consulting firms (Analysis Group, Cornerstone, CRA, Compass Lexecon, Brattle — all
-> confirmed to run Summer-only analyst programs with no off-cycle track, consistent with prior
-> sweeps), NAB's Sydney Summer Intern Program (Finance & Strategy — Nov 23 2026 – Jan 29 2027, starts
-> during Sam's enrolled fall semester, not added), and Tokyo sources (TokyoDev/Japan Dev remain
-> software-engineering-only) — all came back empty of addable new leads. **One Tier C row resolved**:
-> C70 (NBCUniversal) had its vague README-only note replaced with the concrete finding that the role
-> is a Sept–Apr academic-year commitment whose current req has already expired — reclassified
-> `monitor` → `conflict`.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -221,7 +222,11 @@ recomputed once the resume is uploaded.
 | A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | Closing 25 Dec 2026 | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-2/) |
 | A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
 | A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Unconfirmed | Enterprise | Dec 2026 (approx) | Confirm ≤ Mar 12 (candidate states own dates) | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
-| A115 | Workiva | Commercial Strategy Intern (Winter 2027 cycle) | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | "Winter 2027" tagged; historically Jan-start, part-time (20 hrs/wk) | Sibling Spring 2027 req closes Sept 27 2026 (unconfirmed for this title) | ~$22/hr (per sibling req; unconfirmed on this title) | 2 | ~4 | Med | unverified | [Workiva Internships](https://www.workiva.com/careers/internships) |
+| A115 | Workiva | Commercial Strategy Intern (Winter 2027 cycle) | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | **Confirmed: Winter 2027 term starts Jan 4, 2027**, 15–20 hrs/wk | **Sept 27 2026 (confirmed on this exact posting)** | Unconfirmed on this title | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/commercial-strategy-intern-8a881fb9-e31b-4b13-98cd-c67aadac2ade) |
+| A117 | Workiva | Product Management Intern (Spring 2027 cycle) | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | $40/hr | 2 | ~3 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/product-management-intern-57ede0f8-ae81-466d-aea5-01f0ac3e17a5) |
+| A118 | Workiva | Intern – Partnerships (Winter 2027 cycle) | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: Winter 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/intern-partnerships-1e922333-06b0-4297-9902-2f9dad6cbfdd) |
+| A119 | Zipline | Commercial Strategy & Operations Intern (Winter 2027 term) | Strategy | Austin, TX (+ Houston/Phoenix/San Antonio/Dallas/LA) | In-person | Series C | "Winter 2027" term offered (sibling reqs A105/A107 confirm Zipline's Winter 2027 label = Jan–Apr) ⚠ | Rolling | Paid (amount unconfirmed) | 2 | ~4 | Med | conflict | [Intern Insider](https://interninsider.me/internships/zipline/commercial-strategy-operations-intern-d75db0e8-2047-4484-b916-c7909405d22d) |
+| A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent | Data | Brooklyn, NY | In-person | Public agency | Confirm ≤ Jan 2027 (tagged "Spring 2027" by aggregator; primary posting states no exact dates) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
@@ -626,6 +631,88 @@ the window — mostly Summer 2027 corporate postings or generic aggregator noise
 Japan Dev, TokyoDev) held exactly as every prior sweep found it: no BD/growth/partnerships/solutions-
 engineering internship category exists on any of the three, only the same HENNGE full-stack SWE
 listing.
+
+**2026-09-05 sweep — 4 new Tier A rows (A117–A120), one real correction, no closures.** Full sweep
+of Work at a Startup (curl+UA — still 406, direct-fetch regression continues unchanged), Wellfound,
+Simplify, the SimplifyJobs off-season README (downloaded raw and grepped programmatically — Product
+Management and Data Science/AI/ML sections both checked in full), Intern Insider (worked the
+`/internships/roles/{role}` facet pages this time instead of the term pages, which only server-render
+a first slice — `consulting-strategy`, `data-science`, `product-management`,
+`sales-business-development`, and `operations-supply-chain` facets pulled 65 full listings apiece),
+BuiltIn (all three metros), economic consulting firms (Analysis Group, Cornerstone, CRA, Compass
+Lexecon, Brattle, and **NERA direct via nera.com/open-roles.html, checked for the first time this
+run** — its own FAQ confirms "summer internships to final-year undergraduate candidates as well as
+current master's and PhD students," consistent with C103's existing final-year-only finding), Uber/
+DoorDash/Flexport/Palantir (Palantir's two live Deployment Strategist Lever reqs re-confirmed Paris
+and Honolulu, unchanged from prior sweeps), Tokyo (Coral Capital's `/jobs/` path now 404s outright;
+Japan Dev and TokyoDev unchanged — HENNGE/Morningstar SWE-only), and GradConnection Sydney (curl+UA)
+all swept.
+
+**Correction — A115 (Workiva) URL finally resolved.** Every prior sweep back to 2026-08-31 could not
+find a working direct req URL for the Commercial Strategy Intern title itself. This sweep found it by
+browsing Intern Insider's company page directly (`interninsider.me/companies/workiva`, 22 open reqs)
+rather than the term-facet pages that only surface a partial slice — the exact posting
+(`commercial-strategy-intern-8a881fb9-...`) confirms **Winter 2027 term starts Monday, January 4,
+2027**, 15–20 hrs/week, primarily remote with hybrid near an office hub, closing **September 27,
+2026**. Link swapped in. Pay remains unconfirmed on this exact title (no `baseSalary` field on the
+listing); end date remains unconfirmed beyond "Winter 2027," so status stays `unverified`/Med.
+
+**Best new finds: A117 and A118, two more Workiva Winter/Spring 2027 reqs from the same 22-req
+company page, both with confirmed direct URLs and a confirmed Jan 4, 2027 start** — direct evidence
+the company's whole multi-function Winter 2027 cohort (Sales Analytics, Sales Planning, Partnerships,
+Commercial Strategy, Product Management, Data Analytics, and more) starts on Sam's exact target date.
+**A117 (Product Management Intern)** is Spring 2027, $40/hr confirmed, 15–20 hrs/wk, remote with
+hybrid option — but its qualifications list "prior experience in software development," a lean toward
+the excluded engineering side rather than product-analytics; kept but fit trimmed to ~3 for the
+mismatch. **A118 (Intern – Partnerships)** is Winter 2027, paid (amount unconfirmed), and is the one
+Workiva req in the batch with an explicit `jobLocation` of New York City rather than just "US" —
+Salesforce/Crossbeam partner-data work, a clean Partnerships-function match. Both close **September
+27, 2026**, same as A115 and the sibling Data Analytics req — an internal application-window signal
+worth acting on soon if pursuing any of the three. The company's own careers page remains an
+unfetchable client-rendered SPA; Intern Insider is the only working source for all three.
+
+**A119 (Zipline), a fourth distinct location for an eighth tracked Zipline internship — Austin, TX.**
+Every prior Zipline row (A4, A16, A64, A105–A107) is South San Francisco; this "Commercial Strategy &
+Operations Intern" req lists Austin, TX first among six locations (Houston, Phoenix, San Antonio,
+Dallas, LA) and explicitly offers a **"Winter 2027"** term alongside Summer 2027 — real SQL/Excel/
+dashboard-and-forecasting Strategy & Ops work, a direct match to the Uber/DoorDash-style lane
+`PROFILE.md` calls out, in Sam's home market. Kept `conflict` rather than `live`: every other
+Zipline req naming a "Winter 2027" term (A105, A107) has independently confirmed that label actually
+means Jan–Apr, a five-week overrun; this exact req doesn't restate its own dates, so the overrun is
+inferred from company pattern, not confirmed on this posting — flagged accordingly, worth the same
+direct-ask play as the other seven Zipline rows given the Austin location removes the relocation cost
+entirely.
+
+**A120 (MTA), a new public-sector NYC data-analytics find via the SimplifyJobs README's Data Science
+section** — the README's "Spring 2027"-tagged EAM (Enterprise Assets Management) Analyst Intern,
+Emerging Talent posting was independently verified live and open on MTA's own Jobvite ATS: Brooklyn,
+NY, explicitly **in-person** ("all internship positions are onsite and require regular, in-person
+attendance"), $19/hr undergrad ($21/hr grad), real SQL/data-transformation/EAM-systems work. Kept
+`live` since the primary source is confirmed real and open; the only gap is that MTA's own posting
+states no explicit start/end dates at all — "Spring 2027" is an aggregator tag, not primary-sourced —
+so Window carries a `Confirm ≤` flag rather than a firm range. A sibling req at the same pay
+(**Technology Support Intern, Emerging Talent**, also Brooklyn, Power Platform/dashboard work rather
+than SQL) was found alongside it and not added separately to avoid padding — mention it if reaching
+out to MTA directly.
+
+**Considered and excluded, not padded in.** Google's "Data Analytics Apprentice – February 2027
+Start" (NYC among 4 locations, surfaced via the SimplifyJobs README) is disqualifying on two axes at
+once: it explicitly requires *not* currently being enrolled in a degree program, and it's an 18-month
+Department-of-Labor apprenticeship, nowhere near a 10-week shape — a hard exclusion, not a stretch.
+ZS Associates' "Strategy Insights & Planning Associate" and "Decision Analytics Associate" intern
+reqs (BuiltIn SF, deadline Oct 1 2026) are a strong econ/stats-consulting function match, but WebSearch
+corroboration confirms ZS's internship program is an 11-week **Summer 2027** cohort with applications
+opening Sept–Nov 2026 for that cycle — no off-cycle track exists, same structural problem as the
+economic-consulting lane. VelocityEHS's "Customer Experience Intern (Spring 2027)," despite appearing
+on Built In Austin, is actually remote/open-to-US-or-Canada with an optional hybrid option in
+Oakville, Ontario — not Austin at all — and runs Jan–Apr 2027 (14–16 weeks), both a location
+mismatch and an overrun; not added. A second GradConnection listing for CommBank's "2026/27 Summer
+Intern Program: Product Management, Business & Commerce" (Sydney) was checked directly and confirmed
+to start Nov 2026 — the same enrolled-fall-semester conflict that has excluded every other ANZ
+big-corporate program this year. PwC's "Deals – CMAAS Intern – Winter 2027" (NYC, $29.25–$48/hr,
+found on Built In NYC) confirms Big 4 firms have started posting their 2027 cycle on schedule per the
+recruiting calendar, but doesn't warrant its own row beyond the existing generic B4 monitor entry
+since no Big 4 program has ever been found to close before April.
 
 **2026-09-02 sweep — no new Tier A/B rows, no closures, three field corrections on `live` rows, one
 new Tier C outreach target.** Re-verified all 18 rows currently marked `live` (A5, A9, A10, A13, A14,
