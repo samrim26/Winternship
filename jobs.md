@@ -5,7 +5,32 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-07** (daily sweep — full network access confirmed (all 5 sanity-check
+> Last swept: **2026-09-08** (daily sweep — full network access confirmed (all 5 sanity-check
+> domains returned 200/200/200/302/200, no regressions). Re-verified all 19 `live` Tier A rows
+> (A5, A9, A10, A13, A14, A22, A65, A70, A75, A82, A83, A88, A92, A96, A98, A101, A112, A114,
+> A120): 18 held with no drift; **one closure — A101 (Advancy Partners, Sydney Strategy Consulting
+> Intern)**. The tracked URL now 404s and the specific 2026-intake posting is gone from Advancy's
+> live careers listing (which now shows only Shanghai/Singapore/Thailand APAC roles plus an
+> unrelated experienced-hire Sydney req) — closed, kept per the never-drop rule. **One minor
+> fill-in**: A114 (TikTok AI PM Intern, Sydney)'s Mode confirmed **Hybrid** via a LinkedIn mirror
+> (previously Unconfirmed) — not a discrepancy, just newly available information. Fresh sweep of
+> all ten sources (workatastartup, wellfound, simplify.jobs, the six named economic-consulting
+> firms' own careers pages, the SimplifyJobs off-season README, Intern Insider Winter/Spring 2027
+> term pages, BuiltIn NYC/Austin/SF, GradConnection Sydney, Tokyo sources, and Uber/DoorDash/
+> Flexport/Palantir) surfaced **no new candidates that clear the bar**. Economic consulting:
+> Analysis Group and Cornerstone remain JS-gated with no roles visible; CRA's Greenhouse board now
+> renders (unlike prior sweeps) but shows Summer 2027 only (Boston/Chicago/NY/Houston/Oakland/
+> Dallas/DC) — hard-excluded, no off-cycle track; Compass Lexecon and Brattle unreachable again;
+> NERA unchanged from its confirmed final-year-only finding. Palantir's Deployment Strategist reqs
+> unchanged (Paris/Honolulu, wrong locations). Uber has no Strategy & Ops intern listings;
+> DoorDash's board 404'd direct and a stale-looking "Intern, Growth and Strategy" listing found via
+> search could not be dated/verified, not added; Flexport's only current internship is Tradelane
+> Operations in Shenzhen (wrong location). Tokyo sources (coralcap, japan-dev, tokyodev) remain
+> structurally SWE-only — japan-dev.com's only listing is a HENNGE Full Stack internship. One
+> BuiltIn find checked and excluded: VelocityEHS's Customer Experience Intern (Spring 2027,
+> remote US/Canada) runs Jan–Apr 2027 (14–16 weeks, overruns the hard stop) and doesn't map to a
+> priority function. No new Tier A/B/C rows this sweep.)
+> Prior: **2026-09-07** (daily sweep — full network access confirmed (all 5 sanity-check
 > domains returned 200/301/302, no regressions); all 19 `live` Tier A rows (A5, A9, A10, A13, A14,
 > A22, A65, A70, A75, A82, A83, A88, A92, A96, A98, A101, A112, A114, A120) re-verified against their
 > live postings — every one still open, no closures. **Two corrections**: **A120 (MTA)** — location
@@ -233,7 +258,7 @@ recomputed once the resume is uploaded.
 | A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
 | A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Expired (Nov 24 2025) | Unconfirmed | 2 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
-| A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | live | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
+| A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | closed | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
 | A104 | Direct Agents | AI Business Strategy & Operations Intern | Strategy | Culver City, CA | In-person | Established (2003) | Rolling, no stated minimum | Rolling | Unconfirmed | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/direct-agents/ai-business-strategy-operations-intern-115edaa5-1508-48e8-a5b2-84ba5a0a7cb2) |
 | A105 | Zipline | Sales Operations Analyst Intern | Data | South San Francisco, CA | In-person | Series C | Winter 2027 (Jan–Apr 2027) ⚠ | Rolling | $40/hr | 3 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/sales-operations-analyst-intern-a2453a3e-deb9-4b6c-85be-2ee8537a8374) |
 | A106 | Zipline | Marketing Intern (Spring 2027) | Growth | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 2 | ~3 | Low | conflict | [Intern Insider](https://interninsider.me/internships/zipline/marketing-intern-spring-2027-7ac4e305-f77d-4616-b338-8bd9297b29a7) |
@@ -244,7 +269,7 @@ recomputed once the resume is uploaded.
 | A111 | Motive | Sales Development Intern | Sales | Austin, TX | Hybrid | Startup | Summer 2027 ⚠ (as posted) | Unconfirmed | Unconfirmed | 2 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/gomotive/jobs/8431778002) |
 | A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | Closing 25 Dec 2026 | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-2/) |
 | A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
-| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Unconfirmed | Enterprise | Dec 2026 (approx); candidate states own start/end dates | Closing 25 Dec 2026 | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
+| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Hybrid | Enterprise | Dec 2026 (approx); candidate states own start/end dates | Closing 25 Dec 2026 | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
 | A115 | Workiva | Commercial Strategy Intern (Winter 2027 cycle) | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | **Confirmed: Winter 2027 term starts Jan 4, 2027**, 15–20 hrs/wk | **Sept 27 2026 (confirmed on this exact posting)** | Unconfirmed on this title | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/commercial-strategy-intern-8a881fb9-e31b-4b13-98cd-c67aadac2ade) |
 | A117 | Workiva | Product Management Intern (Spring 2027 cycle) | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | $40/hr | 2 | ~3 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/product-management-intern-57ede0f8-ae81-466d-aea5-01f0ac3e17a5) |
 | A118 | Workiva | Intern – Partnerships (Winter 2027 cycle) | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: Winter 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/intern-partnerships-1e922333-06b0-4297-9902-2f9dad6cbfdd) |
