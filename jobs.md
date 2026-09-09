@@ -5,31 +5,34 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-08** (daily sweep — full network access confirmed (all 5 sanity-check
-> domains returned 200/200/200/302/200, no regressions). Re-verified all 19 `live` Tier A rows
-> (A5, A9, A10, A13, A14, A22, A65, A70, A75, A82, A83, A88, A92, A96, A98, A101, A112, A114,
-> A120): 18 held with no drift; **one closure — A101 (Advancy Partners, Sydney Strategy Consulting
-> Intern)**. The tracked URL now 404s and the specific 2026-intake posting is gone from Advancy's
-> live careers listing (which now shows only Shanghai/Singapore/Thailand APAC roles plus an
-> unrelated experienced-hire Sydney req) — closed, kept per the never-drop rule. **One minor
-> fill-in**: A114 (TikTok AI PM Intern, Sydney)'s Mode confirmed **Hybrid** via a LinkedIn mirror
-> (previously Unconfirmed) — not a discrepancy, just newly available information. Fresh sweep of
-> all ten sources (workatastartup, wellfound, simplify.jobs, the six named economic-consulting
-> firms' own careers pages, the SimplifyJobs off-season README, Intern Insider Winter/Spring 2027
-> term pages, BuiltIn NYC/Austin/SF, GradConnection Sydney, Tokyo sources, and Uber/DoorDash/
-> Flexport/Palantir) surfaced **no new candidates that clear the bar**. Economic consulting:
-> Analysis Group and Cornerstone remain JS-gated with no roles visible; CRA's Greenhouse board now
-> renders (unlike prior sweeps) but shows Summer 2027 only (Boston/Chicago/NY/Houston/Oakland/
-> Dallas/DC) — hard-excluded, no off-cycle track; Compass Lexecon and Brattle unreachable again;
-> NERA unchanged from its confirmed final-year-only finding. Palantir's Deployment Strategist reqs
-> unchanged (Paris/Honolulu, wrong locations). Uber has no Strategy & Ops intern listings;
-> DoorDash's board 404'd direct and a stale-looking "Intern, Growth and Strategy" listing found via
-> search could not be dated/verified, not added; Flexport's only current internship is Tradelane
-> Operations in Shenzhen (wrong location). Tokyo sources (coralcap, japan-dev, tokyodev) remain
-> structurally SWE-only — japan-dev.com's only listing is a HENNGE Full Stack internship. One
-> BuiltIn find checked and excluded: VelocityEHS's Customer Experience Intern (Spring 2027,
-> remote US/Canada) runs Jan–Apr 2027 (14–16 weeks, overruns the hard stop) and doesn't map to a
-> priority function. No new Tier A/B/C rows this sweep.)
+> Last swept: **2026-09-09** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions). Re-verified all 18 `live` Tier A rows (A5, A9, A10, A13, A14, A22, A65, A70, A75,
+> A82, A83, A88, A92, A96, A98, A112, A114, A120) via direct fetch (curl+browser-UA for
+> workatastartup.com, jobs.lever.co, and au.gradconnection.com, which all block plain WebFetch):
+> **17 held with no drift, 0 closures. One correction — A75 (Surface Labs)**: the India remote
+> option (dropped in the 2026-09-02 correction) is back — the YC posting now reads "fully remote,
+> work from anywhere in the US or India"; location field broadened accordingly. The commission-only
+> pay structure (no base) is reconfirmed, and the $10–20K/mo figure is clarified as YC's own
+> realistic-earnings estimate for that commission structure, not a separate base-pay field, so it's
+> now folded into the pay cell rather than flagged as conflicting. Fresh sweep of all ten sources
+> (workatastartup, wellfound, simplify.jobs, the six named economic-consulting firms' own careers
+> pages, the SimplifyJobs off-season README, Intern Insider term and role-facet pages, BuiltIn
+> NYC/Austin/SF, GradConnection Sydney, Tokyo sources, and Uber/DoorDash/Flexport/Palantir)
+> surfaced **no new candidates that clear the bar**. Economic consulting: Analysis Group and
+> Cornerstone remain JS-gated with no roles visible; CRA's Greenhouse board moved to a new slug
+> (`charlesriverassociates`, the old `crai` slug 404s — worth updating source notes) and shows only
+> Summer 2026/2027 reqs, no off-cycle track; Compass Lexecon's Workday board and Brattle wouldn't
+> render; NERA unchanged, final-year-only. Palantir's two Deployment Strategist reqs unchanged
+> (Paris/Honolulu). Uber's board is JS-gated with no content this sweep (treat as unverified-empty,
+> not confirmed-dry); DoorDash's Greenhouse board (454 total jobs) has zero postings containing
+> "intern" anywhere — confirmed dry directly; Flexport's careers page is JS-gated, no list rendered.
+> One WorkAtStartup lead checked and excluded: Wardstone's Business Development Intern (Space and
+> Missile Defense) is real and open but Los Angeles (wrong metro) and requires "Senior and above"
+> class standing — Sam is a rising junior, disqualifying. Tokyo sources (japan-dev, tokyodev)
+> remain structurally SWE/PM-only, zero BD/Growth/Partnerships/Sales/DevRel listings on either;
+> Coral Capital's `/jobs/` path is now a hard 404, confirmed dead again. No new Tier A/B/C rows
+> this sweep.)
 > Prior: **2026-09-07** (daily sweep — full network access confirmed (all 5 sanity-check
 > domains returned 200/301/302, no regressions); all 19 `live` Tier A rows (A5, A9, A10, A13, A14,
 > A22, A65, A70, A75, A82, A83, A88, A92, A96, A98, A101, A112, A114, A120) re-verified against their
@@ -232,7 +235,7 @@ recomputed once the resume is uploaded.
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
-| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
+| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | Fully remote (US or India) | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ (OTE ~$10–18K/mo) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
 | A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
