@@ -5,7 +5,58 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-09** (daily sweep — full network access confirmed (workatastartup.com 301,
+> Last swept: **2026-09-10** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions). Re-verified all 18 `live` Tier A rows (A5, A9, A10, A13, A14, A22, A65, A70, A75,
+> A82, A83, A88, A92, A96, A98, A112, A114, A120): **all 18 held with no drift, 0 closures, 0
+> corrections.** WorkAtStartup's direct-fetch 406/title-only regression (present since 2026-08-27)
+> continues on all nine A5/A9/A10/A13/A65/A75/A82/A83/A92 job-page fetches, but every title/company
+> confirmed unchanged via WebFetch and (for A92) the YC company jobs page, which also confirmed pay
+> ($4–6K/mo), hybrid ≥3-days-onsite mode, and open status. `jobs.lever.co` (A22) recovered fully via
+> curl+browser-UA — New York, Hybrid, $1,000/mo, 5 hrs/week, unchanged. `au.gradconnection.com`
+> (A112, A114) recovered via curl+browser-UA — both still show "Closing in 3 months" (~Dec 2026,
+> consistent with the tracked 25 Dec 2026 date), Sydney, Australian Working Visa still listed among
+> accepted work-rights categories. A14 (Celonis), A70 (Base Power), A96 (Crowe Global), A98 (Cresta),
+> A88 (FairwAI), A120 (MTA) all re-confirmed via direct WebFetch, no field drift.
+>
+> **New: A121 (Ankura), University Intern, Forensic Data & Analytics — New York, NY, `unverified`,
+> Strategy/Data function, imminent deadline.** Found via Intern Insider's company page
+> (`interninsider.me/companies/ankura`), then opened directly (not a search snippet): on-site NYC,
+> $34/hr, rolling start (no fixed term stated, unlike the sibling "Turnaround & Restructuring" req
+> which is explicitly tagged Summer 2027 — this one carries no such tag), SQL/Python/Tableau data
+> cleansing and visualization work supporting regulatory investigations and litigation — a genuine
+> forensic/litigation-consulting analog to the Analysis Group/Cornerstone/CRA lane `PROFILE.md` calls
+> out, and Economics is explicitly named among qualifying majors. **Deadline is September 12, 2026 —
+> two days from this sweep — flagging loudly.** Could not independently corroborate beyond Intern
+> Insider: Ankura's own Workday board (`ankura.wd5.myworkdayjobs.com`) 403'd on both WebFetch and the
+> Workday CXS API via curl, so status is `unverified` rather than `live` per the never-guess-away
+> rule. One data point worth noting: the posting states a graduation-date requirement of "December
+> 2027 – June 2028," which a UT Austin Class of 2028 candidate falls inside — not disqualifying, but
+> suggests this may be pitched as a near-grad conversion-track internship rather than a pure
+> off-cycle slot; worth confirming directly given the tight deadline.
+>
+> Fresh sweep of all ten sources found nothing else that clears the quality bar. Economic consulting:
+> Analysis Group and Cornerstone remain JS-gated with no roles visible; Charles River Associates
+> (`charlesriverassociates` Greenhouse slug) unchanged — Brussels/Düsseldorf/Munich EU-only interns;
+> Compass Lexecon's Workday board still won't render; Brattle 403'd again; NERA's FAQ still states
+> summer/final-year-only. Intern Insider's role-facet pages (`consulting-strategy`,
+> `sales-business-development`, `data-science`, `product-management`, `operations-supply-chain`)
+> were pulled in full this time rather than the truncated term pages — surfaced Ankura (added above)
+> plus two near-misses checked and excluded: Coinbase's Associate Product Manager Intern (SF) states
+> outright "12-week internship during summer 2027," a hard exclusion; NTT DATA's Sydney "Marketing
+> Intern" (via a fresh GradConnection pass) is a 6-month placement targeting an early-November-2026
+> start — same enrolled-fall-semester-conflict-plus-overrun pattern that has excluded every other ANZ
+> corporate program this year. SimplifyJobs off-season README (fetched raw) shows the same
+> engineering-skewed Product Management/Data Science sections as every recent sweep, nothing new
+> in-scope. Uber, DoorDash (`careersatdoordash.com` now 403s WebFetch directly — a new redirect
+> target worth noting for future sweeps), Flexport (one open intern req found, Tradelane Operations
+> Intern in Shenzhen — wrong location, not addable), and Palantir (two Deployment Strategist reqs,
+> still explicitly requiring a 2026 graduation date, disqualifying a rising junior) all re-checked,
+> no change. Tokyo (Coral Capital's `/jobs/` still 404s, Japan Dev still zero internships of any
+> kind, TokyoDev still MorningStar/HENNGE engineering-only) and BuiltIn (all three metros — every
+> business-function listing found was Summer 2027, mostly Coinbase/PwC/Cox Enterprises) came back
+> structurally unchanged.)
+> Prior: **2026-09-09** (daily sweep — full network access confirmed (workatastartup.com 301,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions). Re-verified all 18 `live` Tier A rows (A5, A9, A10, A13, A14, A22, A65, A70, A75,
 > A82, A83, A88, A92, A96, A98, A112, A114, A120) via direct fetch (curl+browser-UA for
@@ -278,6 +329,42 @@ recomputed once the resume is uploaded.
 | A118 | Workiva | Intern – Partnerships (Winter 2027 cycle) | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: Winter 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/intern-partnerships-1e922333-06b0-4297-9902-2f9dad6cbfdd) |
 | A119 | Zipline | Commercial Strategy & Operations Intern (Winter 2027 term) | Strategy | Austin, TX (+ Houston/Phoenix/San Antonio/Dallas/LA) | In-person | Series C | "Winter 2027" term offered (sibling reqs A105/A107 confirm Zipline's Winter 2027 label = Jan–Apr) ⚠ | Rolling | Paid (amount unconfirmed) | 2 | ~4 | Med | conflict | [Intern Insider](https://interninsider.me/internships/zipline/commercial-strategy-operations-intern-d75db0e8-2047-4484-b916-c7909405d22d) |
 | A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent | Data | New York, NY (Manhattan) | In-person | Public agency | Confirm ≤ Jan 2027 (tagged "Spring 2027" by aggregator; primary posting states no exact dates) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
+| A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | **Sept 12 2026** | $34/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/ankura/university-intern-forensic-data-analytics-93ad1bbc-1021-4bc3-8941-af23523da08a) |
+
+**2026-09-10 sweep — 1 new Tier A row (A121), no corrections, no closures.** Full re-verification of
+all 18 `live` rows found zero drift (see the header summary above for detail); this is the first
+sweep in several days with no field corrections at all. New-lead sweep of all ten sources surfaced
+one genuinely new, time-sensitive candidate.
+
+**A121 (Ankura), University Intern, Forensic Data & Analytics — New York, NY.** Found by browsing
+Intern Insider's Ankura company page directly rather than the term-facet pages (which don't surface
+this title), then opening the specific listing rather than trusting the company-page summary. Ankura
+is a global advisory/consulting firm; this role is forensic accounting and litigation-support data
+work — SQL, Python, and Tableau for data cleansing, analysis, and visualization feeding regulatory
+investigations and litigation matters — genuinely the same functional lane as the Analysis
+Group/Cornerstone/CRA economic-consulting targets `PROFILE.md` calls out by name, with Economics
+explicitly listed among qualifying majors alongside CS, Math, Finance, and Accounting. On-site, paid
+$34/hr, no stated season/term (unlike its own sibling req, "University Intern, Strategic Finance,
+Turnaround & Restructuring," which is explicitly tagged Summer 2027 — this listing carries no such
+tag, a real signal it may run on a different cycle). **Deadline is September 12, 2026 — two days out
+at time of sweep, the most time-critical row in the tracker right now.** Kept `unverified` rather
+than `live`: Ankura's own Workday board (`ankura.wd5.myworkdayjobs.com`) returned 403 on both a
+direct fetch and the underlying CXS API via curl, so the primary source could not independently
+corroborate the term/dates — Intern Insider's own listing page is the only source, opened directly
+rather than via search snippet. One nuance worth flagging before investing time: the posting states
+a graduation-date requirement of "December 2027 – June 2028," which a UT Austin Class of 2028
+candidate satisfies, but the phrasing reads like a near-graduate conversion-track internship rather
+than a pure off-cycle slot — confirm the actual internship dates directly given how little time
+remains before the deadline.
+
+**Everything else came back empty of new in-scope leads.** Full detail (economic consulting,
+Uber/DoorDash/Flexport/Palantir, Tokyo, BuiltIn, SimplifyJobs, GradConnection) is in the header
+summary above rather than repeated here — nothing beyond A121 cleared the quality bar. Two near-miss
+checks worth recording: Coinbase's Associate Product Manager Intern (SF) explicitly states a
+12-week Summer 2027 program — hard-excluded, not a stretch. NTT DATA's Sydney "Marketing Intern"
+(GradConnection) is a real, open, 6-month placement — but targets an early-November-2026 start
+(during Sam's enrolled fall semester) and runs 6 months past that, the same structural mismatch that
+has excluded every other ANZ corporate program this year — not added.
 
 **A2, A4, A8 — closed 2026-08-18, re-verification sweep.** A2 (Magnet Media) is titled "Social Media
 Intern," a hard exclusion per `PROFILE.md` — it should not have been tracked live in the first place.
