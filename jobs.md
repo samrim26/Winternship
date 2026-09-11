@@ -5,7 +5,46 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-10** (daily sweep — full network access confirmed (workatastartup.com 301,
+> Last swept: **2026-09-11** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions). **Two closures**: **A94 (NewForm)** BD intern — posting now reads "Applications
+> closed on August 26, 2026"; the tracked Nov 1 2026 deadline was stale. **A97 (Cadence Design
+> Systems)** AI & Strategic Marketing Intern — Built In Austin shows the listing was removed Aug 31
+> 2026. **One correction, upgraded to live: A121 (Ankura)** — got past the Workday 403 via the CXS
+> API directly (req R104943, `canApply: true`), confirming the role is real: $34/hr, NYC on-site,
+> posted Sept 9 2026, matching Intern Insider on every field checked. But Ankura's own record has
+> **no application-deadline field set** (a sibling NY req, R104925, does carry one, so the field is
+> known to render when present) — the Sept 12 2026 deadline sourced from Intern Insider is **not
+> corroborated by the primary source** and is downgraded to unverified/likely wrong; status moved
+> from `unverified` to `live` since the posting itself is now confirmed, deadline framing changed
+> from imminent to rolling. New from the primary posting: requires permanent US work authorization,
+> no visa sponsorship of any kind (fine for Sam), graduation window Dec 2027–June 2028 (matches
+> Class of 2028); term dates (does it fit Jan–Mar 2027) are still not stated anywhere on the posting.
+> Re-verified the remaining 17 `live`/`unverified` Tier A rows with near-term relevance (A5, A9,
+> A10, A13, A14, A65, A70, A75, A82, A83, A92, A93, A95, A96, A98, A112, A114, A115, A117, A118,
+> A119, A120): all held with no drift. Note on A5/A9/A10/A13/A65/A75/A82/A83 (workatastartup.com):
+> the persistent 406/title-only issue on direct fetch was worked around this run with a fuller
+> browser header set — worth using that approach going forward rather than flagging it as an access
+> problem each sweep. Fresh sweep of all ten sources for new roles: **nothing found that clears the
+> quality bar.** Economic consulting — Analysis Group, Cornerstone, Charles River Associates
+> (Greenhouse), Compass Lexecon, Brattle, and NERA were all checked directly again; every one runs
+> only a Summer analyst/associate track (10–12 weeks, June–Aug), no off-cycle Jan–Mar option; CRA's
+> two open intern reqs remain Europe-only (Brussels/Düsseldorf/Munich). Palantir's Deployment
+> Strategist req could not be relocated this run (worth a direct `jobs.lever.co/palantir` crawl next
+> time rather than the general careers page). Uber/DoorDash/Flexport: no qualifying Strategy & Ops
+> reqs surfaced; DoorDash's `careersatdoordash.com` continues Cloudflare-blocking both WebFetch and
+> curl. GradConnection Sydney business/commerce: no new TikTok reqs beyond A112/A114 (one duplicate
+> URL for A112, not a distinct role); everything else on the page is Big-4 vacationer programs
+> (1–4 weeks) or wrong-function, not addable. BuiltIn NYC/Austin/SF: all relevant listings found were
+> tagged Summer 2027 (hard-excluded); one partial hit, VelocityEHS Customer Experience Intern
+> (Spring 2027, remote US/Canada, Jan–Apr 2027), excluded on both dates (runs past Mar 12) and
+> function (CX/support, not tracked). Tokyo: `japan-dev.com` now loads past Cloudflare but is a
+> heavy client-rendered app not parseable from raw HTML in the time available this run — genuinely
+> unverified rather than confirmed dry, worth a JS-capable fetch next time; `coralcap.co/jobs` and
+> TokyoDev unchanged from prior sweeps. WorkAtStartup and Wellfound `/jobs` both showed zero
+> internships today (pre-YC-Winter-2027-batch, as expected before November). SimplifyJobs off-season
+> README and Intern Insider term/facet pages unchanged, no new matches.)
+> Prior: **2026-09-10** (daily sweep — full network access confirmed (workatastartup.com 301,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions). Re-verified all 18 `live` Tier A rows (A5, A9, A10, A13, A14, A22, A65, A70, A75,
 > A82, A83, A88, A92, A96, A98, A112, A114, A120): **all 18 held with no drift, 0 closures, 0
@@ -305,10 +344,10 @@ recomputed once the resume is uploaded.
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
 | A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
 | A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
-| A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Nov 1 2026 | Unconfirmed | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
+| A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Closed Aug 26 2026 | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
 | A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
-| A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Unconfirmed | Unconfirmed | 3 | ~3 | Low | unverified | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
+| A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Removed Aug 31 2026 | Unconfirmed | 3 | ~3 | Low | closed | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
 | A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
 | A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Expired (Nov 24 2025) | Unconfirmed | 2 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
@@ -329,7 +368,7 @@ recomputed once the resume is uploaded.
 | A118 | Workiva | Intern – Partnerships (Winter 2027 cycle) | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: Winter 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/intern-partnerships-1e922333-06b0-4297-9902-2f9dad6cbfdd) |
 | A119 | Zipline | Commercial Strategy & Operations Intern (Winter 2027 term) | Strategy | Austin, TX (+ Houston/Phoenix/San Antonio/Dallas/LA) | In-person | Series C | "Winter 2027" term offered (sibling reqs A105/A107 confirm Zipline's Winter 2027 label = Jan–Apr) ⚠ | Rolling | Paid (amount unconfirmed) | 2 | ~4 | Med | conflict | [Intern Insider](https://interninsider.me/internships/zipline/commercial-strategy-operations-intern-d75db0e8-2047-4484-b916-c7909405d22d) |
 | A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent | Data | New York, NY (Manhattan) | In-person | Public agency | Confirm ≤ Jan 2027 (tagged "Spring 2027" by aggregator; primary posting states no exact dates) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
-| A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | **Sept 12 2026** | $34/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/ankura/university-intern-forensic-data-analytics-93ad1bbc-1021-4bc3-8941-af23523da08a) |
+| A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $34/hr | 3 | ~4 | Med | live | [Ankura Workday, req R104943](https://ankura.wd5.myworkdayjobs.com/Ankura/job/New-York-NY/University-Intern--Forensic-Data---Analytics_R104943) |
 
 **2026-09-10 sweep — 1 new Tier A row (A121), no corrections, no closures.** Full re-verification of
 all 18 `live` rows found zero drift (see the header summary above for detail); this is the first
