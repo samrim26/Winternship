@@ -5,7 +5,54 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-11** (daily sweep — full network access confirmed (workatastartup.com 301,
+> Last swept: **2026-09-12** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions). **No closures.** **Three corrections, all confirmations rather than reversals:**
+> **A121 (Ankura)** — today, 2026-09-12, was the exact date Intern Insider's aggregator-sourced
+> "deadline" pointed to. Re-checked the primary Workday record directly via the CXS API (req
+> R104943): still open (`canApply: true`), and the posting's JSON schema still has no
+> `applicationDeadline`/`closeDate` field at all — the disputed date has now passed with nothing
+> appearing on the primary source, so treat Intern Insider's Sept 12 2026 date as confirmed-wrong
+> rather than merely unverified. **A13 (DeepAware AI)** — the "Robotics Center of Silicon Valley"
+> rebrand suspected since 2026-09-02 is now confirmed: the entire live posting body only ever says
+> "Robotics Center of Silicon Valley," no mention of "DeepAware" survives outside the YC company
+> record name. Also newly noticed: `sponsorsVisa: "Will sponsor"`. **A92 (TraceRoot.AI)** — same
+> `sponsorsVisa: "Will sponsor"` field newly noticed; also flagging a soft date signal worth asking
+> about directly — the posting's own copy now reads "You won't own everything in one summer,"
+> suggesting the role may be framed around a full-summer stint even though no explicit start/end
+> dates are stated (not a confirmed conflict, no status change). Full re-verification of all 19
+> `live` Tier A rows (A5, A9, A10, A13, A14, A22, A65, A70, A75, A82, A83, A88, A92, A96, A98, A112,
+> A114, A120, A121) via direct fetch — the nine workatastartup.com/YC rows via curl+browser-UA (all
+> 200s, no Cloudflare/403 this run — the client-rendered-SPA issue is fully resolved by the UA
+> workaround, not a systemic blocker), the remaining ten via WebFetch/curl: all held, with only the
+> three items above rising above cosmetic drift. **Two new Tier A rows added, both `unverified`/
+> `conflict` per the never-silently-drop rule** rather than dropped for being hard to confirm:
+> **A122 (Tesla, Data Engineer Intern, Fleet Analytics, Palo Alto)** — a distinct req from the
+> already-tracked A68 (Cell Engineering); tesla.com 403s all direct fetch as usual; function reads
+> as pipeline/ETL-leaning rather than core analytics, scored the same cautious fit as A68. **A123
+> (Zipline, Data Analytics Intern (Spring 2027), South San Francisco)** — a ninth distinct Zipline
+> req, JS-rendered and unconfirmable directly; kept `conflict` on the same sibling-pattern reasoning
+> already used for A119, since every other Zipline Winter/Spring-2027-tagged req tracked here has
+> independently confirmed a Jan–Apr overrun. Fresh sweep of all ten sources otherwise found nothing
+> that clears the quality bar: economic consulting firms (Analysis Group, Cornerstone, CRA, Compass
+> Lexecon, Brattle, NERA) checked again directly, all confirmed summer-only or wrong-location, no
+> change from prior sweeps — Cornerstone's 2027 program doesn't even open until March 1 2027.
+> workatastartup.com and wellfound.com's general listing/search pages are pure client-rendered React
+> with no server-side job data — full board browsing needs login/JS execution neither tool has, so
+> today's YC/Wellfound new-lead coverage was search-index-only, not a live crawl (same caveat noted
+> in the header for future runs; the per-row curl+UA re-verification workaround above doesn't help
+> here since it needs a known job URL, not a listing page). Tokyo: `coralcap.co/jobs` confirmed
+> genuinely dead this run (404 on both `/jobs` and `/jobs/`, root domain still 200) rather than
+> merely unparseable as previously logged; `japan-dev.com` and `tokyodev.com/jobs` both loaded fully
+> today (no Cloudflare block) but surfaced only wrong-function or Japan-residents-only postings.
+> SimplifyJobs off-season README (parsed programmatically, 372 candidate rows checked) and Intern
+> Insider term/facet pages: no new matches beyond what's already tracked. Two ambiguous items
+> checked and excluded on the merits rather than added: PwC "Deals - CMAAS Intern - Winter 2027"
+> (BuiltIn NYC) requires an Accounting degree and CPA-exam eligibility, a hard mismatch for
+> Econ/Stats; several GradConnection Sydney rows (ANZ Summer Intern EOI, SG Fleet Treasury
+> Operations, Dept. of the Treasury) excluded on wrong start year or an Australian-citizenship
+> requirement Sam doesn't meet.)
+> Prior: **2026-09-11** (daily sweep — full network access confirmed (workatastartup.com 301,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions). **Two closures**: **A94 (NewForm)** BD intern — posting now reads "Applications
 > closed on August 26, 2026"; the tracked Nov 1 2026 deadline was stale. **A97 (Cadence Design
@@ -369,6 +416,42 @@ recomputed once the resume is uploaded.
 | A119 | Zipline | Commercial Strategy & Operations Intern (Winter 2027 term) | Strategy | Austin, TX (+ Houston/Phoenix/San Antonio/Dallas/LA) | In-person | Series C | "Winter 2027" term offered (sibling reqs A105/A107 confirm Zipline's Winter 2027 label = Jan–Apr) ⚠ | Rolling | Paid (amount unconfirmed) | 2 | ~4 | Med | conflict | [Intern Insider](https://interninsider.me/internships/zipline/commercial-strategy-operations-intern-d75db0e8-2047-4484-b916-c7909405d22d) |
 | A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent | Data | New York, NY (Manhattan) | In-person | Public agency | Confirm ≤ Jan 2027 (tagged "Spring 2027" by aggregator; primary posting states no exact dates) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
 | A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $34/hr | 3 | ~4 | Med | live | [Ankura Workday, req R104943](https://ankura.wd5.myworkdayjobs.com/Ankura/job/New-York-NY/University-Intern--Forensic-Data---Analytics_R104943) |
+| A122 | Tesla | Data Engineer Intern, Fleet Analytics | Data | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283138) |
+| A123 | Zipline | Data Analytics Intern (Spring 2027) | Data | South San Francisco, CA | In-person | Series C | Jan 2027 (inferred); Spring 2027 tag | Apr 2027 ⚠ (inferred from sibling reqs) | Unconfirmed | 3 | ~4 | Low | conflict | [Zipline careers](https://www.zipline.com/open-roles/7990420003) |
+
+**2026-09-12 sweep — 2 new Tier A rows (A122, A123, both access-blocked/inferred rather than
+directly confirmed), 3 confirmations (A121, A13, A92), no closures.** Full detail is in the header
+summary above; per-row notes below.
+
+**A121 (Ankura) — disputed deadline confirmed wrong, not just unverified.** Today is the exact date
+Intern Insider claimed as the deadline. The primary Workday source (CXS API, req R104943) still
+shows the role open with no deadline field in its schema at all — the date has now passed with
+nothing materializing on the source of record.
+
+**A13 (DeepAware AI) — "Robotics Center of Silicon Valley" rebrand confirmed.** No longer a
+suspicion: the live posting's entire body text only ever uses the new name. `sponsorsVisa: "Will
+sponsor"` also newly noticed on this posting.
+
+**A92 (TraceRoot.AI) — visa sponsorship confirmed, one date flag.** `sponsorsVisa: "Will sponsor"`
+noticed. Also: the posting's own copy now includes "You won't own everything in one summer" — worth
+asking directly about a Jan–Mar slice before assuming the role is truly open-ended on dates. Not a
+confirmed conflict, no status change.
+
+**A122 (Tesla), Data Engineer Intern, Fleet Analytics — Palo Alto, CA. Added `unverified`.** A
+distinct req (283138) from the already-tracked A68 (Cell Engineering, req 278622), tagged Winter
+2027/Spring 2027. tesla.com 403s all direct fetch (WebFetch and curl, multiple UA/header
+combinations) — same as A68 and every prior sweep's experience with this domain. Function reads as
+pipeline/ETL/SWE-leaning "Data Engineer" work rather than the analytics core of the target Data
+function, so scored the same cautious `~3` fit as A68 rather than assumed strong. Kept per the
+never-silently-drop rule rather than dropped for being unverifiable.
+
+**A123 (Zipline), Data Analytics Intern (Spring 2027) — South San Francisco, CA. Added
+`conflict`.** A ninth distinct Zipline req (7990420003), separate from A4/A16/A64/A105/A106/A107/
+A119. The page is JS-rendered and returned no body text via WebFetch or curl — this specific req's
+dates are not independently confirmed. But every other Zipline "Spring 2027"/"Winter 2027"-tagged
+req tracked here has confirmed a Jan–Apr overrun past the Mar 12 cutoff, the same sibling-pattern
+reasoning already used to justify A119's `conflict` status without a direct per-req confirmation.
+Applied the same logic here rather than adding it `live` on an assumption or dropping it outright.
 
 **2026-09-10 sweep — 1 new Tier A row (A121), no corrections, no closures.** Full re-verification of
 all 18 `live` rows found zero drift (see the header summary above for detail); this is the first
