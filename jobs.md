@@ -5,7 +5,112 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-12** (daily sweep — full network access confirmed (workatastartup.com 301,
+> Last swept: **2026-09-13** (daily sweep — full network access confirmed (all fetches returned
+> content: simplify.jobs 200, raw.githubusercontent.com SimplifyJobs off-season README 200 (37,394
+> lines, fetched raw and parsed programmatically with grep/python rather than relying on WebFetch's
+> summarization, which had truncated the PM/DS sections on the first pass), interninsider.me role-facet
+> pages 200 (all five), interninsider.me term pages (winter-2027, spring-2027) 200, builtinnyc.com/
+> builtinaustin.com/builtinsf.com 200, no regressions). **Three new Tier A rows, all Tesla, all
+> `unverified` per the standing tesla.com-403 pattern rather than dropped:** **A124 (Commercial
+> Charging Product Management Intern, Energy Engineering, Palo Alto)** — the first Tesla PM-function
+> req tracked (existing A68/A122 are both Data Engineer); tagged "Winter 2027, Spring 2027" in the
+> SimplifyJobs README, freshly posted (README's own "age" column: 1 day), job 283156. tesla.com 403s
+> as usual for every direct-fetch attempt (WebFetch and curl, browser-UA); WebSearch corroborates the
+> role family exists (prior-cycle sibling postings for the same Energy/Commercial-Charging PM req
+> paid $20–50/hr) but could not confirm this specific req's pay, exact dates, or mode. **A125 (Data
+> Engineer Intern, Fleet Data – Self-Driving, Palo Alto)** — a third distinct Tesla Data Engineer req
+> alongside A68 (Cell Engineering) and A122 (Fleet Analytics); tagged "Spring 2027," 2 days old, job
+> 281612; same 403/unconfirmed pattern. **A126 (Machine Learning Engineer Intern, Charging Data
+> Modeling, Palo Alto)** — tagged "Winter 2027, Spring 2027," 11 days old, job 281940; leans ML-eng
+> rather than analytics, scored the same cautious Fit as A68/A122 rather than assumed strong; same
+> 403/unconfirmed pattern. None of the three could be corroborated beyond the SimplifyJobs listing
+> itself — kept per the never-silently-drop rule. **One lead checked and excluded**: BeamNG GmbH's
+> "Business Development Intern" (surfaced via Intern Insider's sales-business-development facet,
+> Economics named as a qualifying major) was pulled via Workable's own JSON API after the linked
+> apply URL 404'd (the correct current shortcode is 4EB1B41E44, published 2026-09-11) — the role is
+> real but its own `locations` field allows telecommuting only from Germany, Netherlands, France,
+> Singapore, Sweden, and the UK; the US is not among them, so it is not actually open to a
+> US-based remote applicant and was excluded on that basis rather than added as ambiguous. Fresh
+> sweep of all four required source groups otherwise surfaced nothing new that clears the quality
+> bar: Simplify's own landing page (`Top-Winter-and-Spring-Internships`) is dominated by non-target
+> functions (pharmacy, engineering, culinary, one lone "Strategy Intern" at UofL Health in Louisville
+> — wrong location, wrong-size hospital-system context); the SimplifyJobs off-season README's PM and
+> DS tables were parsed in full this time (11,449–28,735, ~370 rows) rather than summarized, and
+> beyond the three Tesla rows above, every other target-location row found was stale (Fall 2026,
+> Spring 2026, or Summer 2026 tags — the README does not purge closed-cycle rows) or wrong-function
+> (Cadence/Micron/Marvell/Pinterest/Adobe SWE-ML-research, MTA's "Technology Support Intern" which is
+> IT helpdesk not analytics); the README continues to carry no BD/Strategy/Growth/Partnerships
+> category at all, consistent with every prior sweep. Intern Insider's five role-facet pages returned
+> a substantially different mix than recent sweeps — mostly large-corporate Summer-2027 blue-collar/
+> audit-adjacent postings (RSM, Grainger, Sherwin-Williams, CHS, Citizens, Cox, Coinbase, Roblox,
+> Tencent) rather than the startup/finance-adjacent rows prior sweeps found on the same URLs,
+> suggesting the site's crawl/cache rotated; spot-checked the most promising target-location matches
+> (Lyft Data Analyst/Data Science Intern NYC+SF, Cox PM Intern Austin, Tencent PM Intern Palo Alto)
+> via WebSearch and all three confirmed Summer 2026/2027, hard-excluded. Intern Insider's winter-2027
+> and spring-2027 term pages (3,438 and 215 total listings respectively) were also pulled directly;
+> both show only their "60 most relevant" without a function filter in the fetched view and surfaced
+> no additional target-function rows beyond what the facet pages already covered — full coverage of
+> either term page would need the site's own filter UI (login/JS), a standing limitation noted in
+> prior sweeps. BuiltIn NYC/Austin/SF: NYC and SF pages returned mostly Summer 2027 Coinbase/PwC/
+> Kensho/Atlassian postings (all hard-excluded on term) plus PwC Strategy& Consulting Intern (Summer
+> 2027, also hard-excluded); Austin's internship page had zero postings in any target function today
+> (all engineering/manufacturing/audit).
+>
+> **Full re-verification of all live/unverified Tier A rows was run in parallel with the above and
+> found two real drifts, no closures.** The 9 workatastartup.com/YC rows (A5, A9, A10, A13, A65, A75,
+> A82, A83, A92) were re-checked via a new, better method — each job page's embedded Inertia.js
+> `data-page` JSON, which exposes structured `salaryRange`/`equityRange`/`location`/`sponsorsVisa`
+> fields directly rather than relying on rendered text — worth keeping as the standard approach going
+> forward. **A75 (Surface Labs)** — structured OTE ceiling is now $20K/mo (was $18K), and a
+> previously-untracked equity range (0.01–1.00%) is now visible; pay field updated. **A92
+> (TraceRoot.AI)** — the structured location field now also lists "Remote (US; CA)" alongside San
+> Francisco, but the posting's own description text still explicitly requires "in person... at least
+> 3 days a week," so the real onsite requirement is unchanged and Mode stays Hybrid; noted for the
+> record. A9 (Lambda Robotics) surfaced a previously-untracked equity range (0.25–1.00%), not added to
+> the Pay field since it's incidental, not a drift. A5, A10, A13, A65, A82, A83 held with zero drift.
+> The remaining 10 live rows (A14 Celonis, A22 CertiK, A70 Base Power, A88 FairwAI, A96 Crowe Global,
+> A98 Cresta, A112/A114 TikTok, A120 MTA, A121 Ankura) were also re-verified directly (curl+UA for the
+> two GradConnection/TikTok rows, the Workday CXS API for Ankura) and **all ten held with zero drift**
+> — Ankura's req still has no `applicationDeadline` field, consistent with the 2026-09-12 finding.
+> (One flag chased down and closed out: A112/A114's GradConnection page exposes a platform-wide
+> work-rights dropdown listing "Australian Working Visa," "Bridging Visa," etc. — this is site-wide
+> settings metadata, not a job-specific restriction (`workRights` on the campaign itself is an empty,
+> unloaded array), so it isn't a real signal either way about whether TikTok's own screening accepts
+> Sam's subclass 462 visa; no status change, but worth confirming directly if he gets to application
+> stage.) workatastartup.com's and wellfound.com's general listing pages remain pure client-rendered
+> carousels of full-time senior engineering roles regardless of query-string role/type filters — no
+> new-lead coverage possible from either without login/JS, the same standing limitation as every
+> recent sweep.
+>
+> **Economic consulting and Strategy & Ops targets re-checked directly, no off-cycle track found
+> anywhere (expected, standing result).** Analysis Group: summer-only, `/careers/students/` and
+> `/careers/internships/` both 404. Cornerstone: its own page now states verbatim "Applications for
+> 2027 programs will open on March 1, 2027" (confirms the prior finding rather than reversing it).
+> Charles River Associates: found 3 additional US intern reqs on `crai.com/cra-careers/jobs/` not
+> previously tracked (Management Advisory; Accounting/Business/Finance Consulting; Cyber/Forensic Tech
+> Analyst/Associate) — all explicitly Summer 2027, so not addable to this tracker's window, but noted
+> for a future summer-cycle list. Compass Lexecon: Workday tenant identified
+> (`fticonsulting.wd108.myworkdayjobs.com/CompassLexeconCareers/`) but still fully JS-gated, unreadable
+> directly. Brattle: still 403s on WebFetch and curl+UA alike. NERA: FAQ's "off-cycle" question is
+> answered only with the final-year/grad-only summer program description — no actual off-cycle track
+> exists despite the question's wording. Palantir: crawled `jobs.lever.co/palantir` directly — every
+> "Deployment Strategist" req is full-time (Tel Aviv, Copenhagen, London, Singapore, Sydney, Japan×3,
+> Korea, Spain, UK/US Gov); no internship req exists for this title at all. Uber: JS-gated; web search
+> corroborates a Strategy & Operations Analyst Intern title but as a 12-week Summer 2027 program.
+> DoorDash: `careersatdoordash.com` still Cloudflare-blocks direct fetch; confirmed summer-only via web
+> search. Flexport: 173 open roles, only one internship company-wide (Tradelane Ops, Shenzhen) — no
+> Strategy/BizOps internship exists.
+>
+> **Tokyo and Australia re-checked directly, nothing new.** `coralcap.co/jobs` and `/jobs/` both still
+> 404 (root domain still 200) — confirmed dead again. `japan-dev.com/jobs` and `tokyodev.com/jobs` both
+> rendered fully (no Cloudflare block) but every non-engineering listing found was either full-time or
+> Japan-residents-only/fluent-Japanese-required; the only internships on either site are pure software
+> engineering (MorningStar, HENNGE). `au.gradconnection.com`'s Sydney business/commerce page (curl+UA,
+> 200) was parsed via its embedded `window.__initialState__` JSON directly this run — a cleaner method
+> than raw-text parsing, worth reusing — and confirmed all 22 live campaigns are already-tracked TikTok
+> reqs or already-excluded Big-4/accounting/wrong-year/wrong-function programs; zero new candidates.
+>
+> Prior: **2026-09-12** (daily sweep — full network access confirmed (workatastartup.com 301,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions). **No closures.** **Three corrections, all confirmations rather than reversals:**
 > **A121 (Ankura)** — today, 2026-09-12, was the exact date Intern Insider's aggregator-sourced
@@ -372,7 +477,7 @@ recomputed once the resume is uploaded.
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
-| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | Fully remote (US or India) | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ (OTE ~$10–18K/mo) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
+| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | Fully remote (US or India) | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
 | A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
@@ -418,6 +523,45 @@ recomputed once the resume is uploaded.
 | A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $34/hr | 3 | ~4 | Med | live | [Ankura Workday, req R104943](https://ankura.wd5.myworkdayjobs.com/Ankura/job/New-York-NY/University-Intern--Forensic-Data---Analytics_R104943) |
 | A122 | Tesla | Data Engineer Intern, Fleet Analytics | Data | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283138) |
 | A123 | Zipline | Data Analytics Intern (Spring 2027) | Data | South San Francisco, CA | In-person | Series C | Jan 2027 (inferred); Spring 2027 tag | Apr 2027 ⚠ (inferred from sibling reqs) | Unconfirmed | 3 | ~4 | Low | conflict | [Zipline careers](https://www.zipline.com/open-roles/7990420003) |
+| A124 | Tesla | Commercial Charging Product Management Intern, Energy Engineering | PM | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed (sibling reqs ~$20–50/hr) | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283156) |
+| A125 | Tesla | Data Engineer Intern, Fleet Data – Self-Driving | Data | Palo Alto, CA | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/281612) |
+| A126 | Tesla | Machine Learning Engineer Intern, Charging Data Modeling | Data (ML-eng skew) | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/281940) |
+
+**2026-09-13 sweep — 3 new Tier A rows (A124, A125, A126, all Tesla, all access-blocked/inferred),
+1 exclusion checked (BeamNG), no closures.** Full detail is in the header summary above; per-row
+notes below.
+
+**A124 (Tesla), Commercial Charging Product Management Intern, Energy Engineering — Palo Alto, CA.**
+Added `unverified`. Sourced from the SimplifyJobs off-season README's Product Management table
+(parsed programmatically this run rather than summarized, after the first WebFetch pass on the same
+URL truncated before reaching the PM/DS sections). Tagged "Winter 2027, Spring 2027," 1 day old per
+the README's own age column, job 283156. This is the first Tesla PM-function req tracked — the two
+existing Tesla rows (A68, A122) are both Data Engineer. tesla.com 403s on every direct-fetch attempt
+(WebFetch and curl with a browser UA), consistent with every prior sweep's experience with this
+domain; WebSearch found no cached copy of this exact req but did surface prior-cycle sibling postings
+for the same Energy/Commercial-Charging PM family paying $20–50/hr, not confirmed for this specific
+req. Pay, exact term dates, and mode remain unconfirmed.
+
+**A125 (Tesla), Data Engineer Intern, Fleet Data – Self-Driving — Palo Alto, CA.** Added
+`unverified`. Same source and method as A124; tagged "Spring 2027," 2 days old, job 281612. A third
+distinct Tesla Data Engineer req alongside A68 (Cell Engineering) and A122 (Fleet Analytics) — kept
+per the instruction that a clearly-distinct new req at an already-tracked company still counts. Same
+403/unconfirmed pattern as A124; not upgraded to `conflict` since (unlike Zipline's A105/A107/A119
+sibling pattern) no Tesla req in this tracker has independently confirmed a Jan–Apr overrun.
+
+**A126 (Tesla), Machine Learning Engineer Intern, Charging Data Modeling — Palo Alto, CA.** Added
+`unverified`. Same source and method; tagged "Winter 2027, Spring 2027," 11 days old, job 281940.
+Leans ML-engineering rather than core analytics, so scored the same cautious Fit as A68/A122 rather
+than assumed strong. Same 403/unconfirmed pattern.
+
+**Excluded: BeamNG GmbH, Business Development Intern (remote).** Surfaced via Intern Insider's
+sales-business-development facet page, with Economics explicitly named among qualifying majors — a
+promising signal on paper. The linked apply URL (shortcode BF01D9961F) 404'd; found the live posting
+via Workable's own JSON widget API instead (current shortcode 4EB1B41E44, published 2026-09-11,
+function tagged "Business Development"). The posting's own `locations` field allows telecommuting
+only from Germany, the Netherlands, France, Singapore, Sweden, and the UK — the US is not among the
+permitted remote countries, so this is not actually open to a US-based applicant despite reading as a
+plain remote role at first glance. Excluded as a genuine mismatch rather than flagged ambiguous.
 
 **2026-09-12 sweep — 2 new Tier A rows (A122, A123, both access-blocked/inferred rather than
 directly confirmed), 3 confirmations (A121, A13, A92), no closures.** Full detail is in the header
