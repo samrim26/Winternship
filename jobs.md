@@ -5,7 +5,56 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-13** (daily sweep — full network access confirmed (all fetches returned
+> Last swept: **2026-09-14** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions). **One correction, one new Tier A row, no closures.**
+>
+> **A75 (Surface Labs) corrected** — re-verified via the posting's embedded Inertia.js `data-page`
+> JSON: the India remote option (already flip-flopped 2026-09-02→2026-09-09) is dropped again, and
+> San Francisco is now listed as an explicit physical location alongside Remote (US) rather than the
+> role reading as fully remote. Location field updated to "San Francisco, CA / Remote (US)"; Mode
+> updated from Remote to "In-person or Remote" — an either/or choice, not a blended hybrid, matching
+> the same distinction already applied to A10 (Naive). Pay/equity fields (commission-only, OTE
+> $10–20K/mo, 0.01–1.00% equity) unchanged.
+>
+> **Full re-verification of all 19 `live` Tier A rows** (A5, A9, A10, A13, A14, A22, A65, A70, A75,
+> A82, A83, A88, A92, A96, A98, A112, A114, A120, A121), via curl+browser-UA parsing each posting's
+> embedded structured JSON where available (Inertia `data-page` for the 8 workatastartup.com/YC rows
+> and A92; the Workday CXS API directly for A121; `window.__initialState__` string-search for
+> A112/A114) and plain WebFetch for the rest: **18 held with zero drift, only A75 above changed. Zero
+> closures** — every row still open/applyable.
+>
+> **New: A127 (The Boring Company), Operations Internships — Business/Project Development track,
+> Winter/Spring 2027, Bastrop, TX (also Las Vegas NV / Nashville TN), `unverified`.** Confirmed
+> directly on `boringcompany.com/careers`, a primary source, under its "University Internships"
+> group — title, six team options (Business/Project Development, Purchasing, Accounting & Finance,
+> Operations, Corporate Affairs, plus an Engineering track not relevant here), the three named
+> locations, and in-office mode are all confirmed there, distinct from the company's separate Fall
+> 2026 cohort listing. The actual application page (`jobs.gem.com`) is JS-rendered and returned no
+> content on direct fetch; team/description detail was corroborated only via a cached third-party
+> mirror whose own URL slug reads "summer-2025" and cached term field reads "Winter/Spring 2026" —
+> strongly suggesting an evergreen req template reused every cohort rather than fresh 2027 copy. So
+> only the title/teams/locations/mode are treated as reliable; exact start/end dates and pay are
+> unconfirmed for this specific cycle — dates set to `Confirm ≤ Mar 12` and Fit kept provisional.
+> Business/Project Development is the closest fit to BD; Purchasing/Operations read as Strategy &
+> Ops. Bastrop is an Austin-adjacent metro per `PROFILE.md`.
+>
+> **Standing-dry sources unchanged, nothing else clears the bar.** Economic consulting (Analysis
+> Group, Cornerstone, CRA, Compass Lexecon, Brattle, NERA): all checked again directly, still
+> summer-only/JS-gated/no off-cycle track, consistent with every prior sweep. SimplifyJobs off-season
+> README (37,218 lines, parsed programmatically): still carries no BD/Strategy/Growth/Partnerships
+> category at all; one new open Tesla req found (job/278620, Cell Engineering Intern – Cell
+> Qualification, Palo Alto) but excluded on function (battery/hardware test engineering, not
+> Data/PM/Strategy) rather than added as a sixth Tesla row. Intern Insider term and role-facet pages,
+> BuiltIn NYC/Austin/SF, GradConnection Sydney: nothing new beyond already-tracked/already-excluded
+> rows. Tokyo (`coralcap.co/jobs` still 404, `japan-dev.com`, `tokyodev.com/jobs`): still
+> structurally SWE-only, zero non-engineering internships. Uber, DoorDash, Flexport: no
+> Strategy/Ops/BD internship track found (DoorDash's `careersatdoordash.com` still blocks direct
+> fetch). Palantir: `jobs.lever.co/palantir` opened directly and does list 2 internship-tagged
+> "Deployment Strategist" reqs (Paris, Honolulu) — correcting yesterday's note that no internship req
+> exists for the title at all, which was a rendering miss, not a real change — both remain wrong
+> location, not addable, same as every prior sweep back to 2026-09-03.)
+> Prior: **2026-09-13** (daily sweep — full network access confirmed (all fetches returned
 > content: simplify.jobs 200, raw.githubusercontent.com SimplifyJobs off-season README 200 (37,394
 > lines, fetched raw and parsed programmatically with grep/python rather than relying on WebFetch's
 > summarization, which had truncated the PM/DS sections on the first pass), interninsider.me role-facet
@@ -477,7 +526,7 @@ recomputed once the resume is uploaded.
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
-| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | Fully remote (US or India) | Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
+| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA / Remote (US) | In-person or Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
 | A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
@@ -492,6 +541,7 @@ recomputed once the resume is uploaded.
 | A87 | GutGutGoose | Growth (founding team) — new posting | Growth | San Francisco, CA | In-person | YC S26 | Trial + FT decision Sept 20 2026 ⚠ | Unconfirmed | $19–22/hr trial → $120K+ FT | 1 | ~3 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/105105) |
 | A88 | FairwAI | Project Management Fellow | PM/Partnerships | Remote (NYC/SF/Austin listed) | **Remote** | Early | 3–6 mo, flexible start | Rolling | Unpaid | 2 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3251810-project-management-fellow) |
 | A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
+| A127 | The Boring Company | Operations Internships — Business/Project Development track (Winter/Spring 2027) | BD/Strategy & Ops | Bastrop, TX (also Las Vegas, NV / Nashville, TN) | In-person | Private (Musk-founded infra) | Winter/Spring 2027 (tagged) | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~3 | Med | unverified | [Boring Company careers → application](https://jobs.gem.com/the-boring-company/am9icG9zdDqxHfxcQ--wXDcxkn-GcrPC) |
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
 | A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
