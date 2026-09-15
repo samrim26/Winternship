@@ -5,7 +5,111 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-14** (daily sweep — full network access confirmed (workatastartup.com 301,
+> Last swept: **2026-09-15** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions, matching every prior day). **One correction, three new Tier A rows, no closures.**
+>
+> **A70 (Base Power Company) corrected — the tracked URL now serves a different role.** Re-opening
+> `builtinaustin.com/job/growth-intern/10000211` directly no longer shows "Growth Intern" at all —
+> the page's own `<title>` now reads "Sales Intern - Base Power Company," reposted 26 days ago, and
+> the body copy is now customer-acquisition/outbound/HubSpot sales work, not growth. Same URL-reuse
+> pattern already documented for A22 (CertiK) on 2026-08-20. Corrected in place rather than closed,
+> since the posting is genuinely live today, just a different req under the same slug: Role → "Sales
+> Intern," Function Growth → Sales, Fit trimmed ~4 → ~3 and Priority Med → Low/Med to reflect Sales
+> sitting lower in `PROFILE.md`'s function ranking than Growth. A fresh crawl of Base Power's own
+> `builtinaustin.com/company/base-power-company/jobs` page (checked directly rather than trusting the
+> stale tracked link) turned up no "Growth Intern" title anywhere in its current 20-req listing — the
+> original role appears genuinely gone, not just relabeled.
+>
+> **New: A128 and A129, both Base Power Company (Austin, TX), both found on the same company-page
+> crawl above, both `live`, both posted within the last 12 hours.** **A128 (Business Operations
+> Intern, Commercial Partnerships)** is a strong Strategy/Partnerships match — market and competitive
+> analysis, financial modeling, GTM planning for channel partnerships, identifying and evaluating new
+> partners — real cross-functional generalist work in the home market, no relocation cost. **A129
+> (Finance – Analytics Intern)** is a solid quantitative-adjacent Data find — budgeting, forecasting,
+> variance analysis, financial modeling — leaning Finance rather than core DS/analytics, so scored a
+> notch below A128. Both are dateless/rolling on the primary source (no season tag, no pay stated),
+> consistent with how A70 was originally tracked before its own correction above. Two sibling reqs
+> from the same page were checked and excluded: "Business Operations, MBA Intern" explicitly requires
+> current MBA enrollment ("for the summer" as an MBA cohort) — wrong candidate level for a UT
+> undergrad rising junior; "Quantitative Developer Intern" reads as a Markets-team software-engineer
+> role requiring "strong software engineering practices" — the excluded pure-engineering lane, same
+> reasoning that has excluded Point72's and Audax's "Developer"-titled reqs in past sweeps.
+>
+> **New: A130 (Kodiak Robotics), Winter 2027 Intern, Data Engineering — Mountain View, CA, `live`.**
+> Sourced from the SimplifyJobs off-season README's Data Science table (Winter 2027 tag, 10 days old,
+> not locked), then independently confirmed by opening the Greenhouse posting directly (primary
+> source, no access blocker). The single best dates-fit find of this sweep: the posting states "Start
+> Date: January 2027. Our internship program is 12-16 weeks; the end date is flexible based on
+> individual needs" — an explicit, named solution to the March hard-stop constraint, the same kind of
+> direct language that made A5 (Dalus) a standout in an earlier sweep. Pay is listed as a flat "$10,000
+> USD" range (ambiguous whether that's a full-stipend or a malformed hourly/monthly field — flagged
+> rather than assumed). Function is pipeline/ETL/dashboarding-leaning data engineering (AuroraDB,
+> ElasticSearch, QuickSight) rather than core analytics — same cautious Fit treatment already applied
+> to Tesla's Data Engineer Intern rows (A68/A122/A125) — but the confirmed flexible end date and full
+> primary-source confirmation (no 403/JS-gating, unlike every Tesla row) earns it `live` status and a
+> Med priority rather than Low.
+>
+> **Full re-verification of the 19+ near-term-relevant `live`/`unverified` Tier A rows found zero
+> drift beyond A70 above.** The 8 workatastartup.com/YC rows (A5, A9, A10, A13, A65, A75, A82, A83)
+> were re-checked via the Inertia.js `data-page` JSON, worked around today's 406 by adding a fuller
+> browser header set (`Accept`, `Accept-Language`, `Sec-Fetch-*`, `Upgrade-Insecure-Requests`) rather
+> than UA alone — all 8 held exactly as tracked, including A75's commission structure ($150/qualified
+> meeting, $750/converted meeting, 10% first-year ACV, OTE now phrased "$120K–$220K/year" in the
+> description text but consistent with the tracked $10–20K/mo structured field). A92 (TraceRoot.AI,
+> fetched via the YC company-page URL) confirmed unchanged — still "Developer Marketing Intern," still
+> ≥3-days-onsite hybrid. A22 (CertiK, Lever), A98 (Cresta, Greenhouse), and A121 (Ankura, Workday CXS
+> API — still `canApply: true`, still no `applicationDeadline` field in the schema) all held with zero
+> drift. A14 (Celonis), A88 (FairwAI), A96 (Crowe Global — "WINTER 2027" still explicit), A112/A114
+> (TikTok, GradConnection — both still closing 25 Dec 2026 3:59pm Sydney time), A120 (MTA, Jobvite),
+> and A127 (Boring Company — "UNIVERSITY INTERNSHIP" and "Winter/Spring 2027" both still present on
+> `boringcompany.com/careers`) were all independently re-opened and confirmed unchanged.
+>
+> **Fresh sweep of all ten sources otherwise found nothing else that clears the quality bar.** Economic
+> consulting: Analysis Group still 404s on `/careers/students/`; Cornerstone still generic
+> program-description-only; Charles River Associates' Greenhouse board (`charlesriverassociates`) still
+> shows only the two Brussels/Düsseldorf/Munich "Intern (European Competition practice)" reqs among 50
+> total postings, no new US intern req; Brattle still 403s; NERA's FAQ still final-year/summer-only;
+> Compass Lexecon's Workday CXS endpoint still rejects every pattern tried (`HTTP_400`). Palantir's
+> `jobs.lever.co/palantir` was crawled in full (314 distinct postings parsed) — the "Deployment
+> Strategist, Internship" reqs are still exactly Paris and Honolulu, unchanged since 2026-09-03; no new
+> location appeared despite a much larger overall internship-req count this run (Forward Deployed SWE,
+> Product Designer, and Software Engineer internship families all expanded, Strategy did not). Uber's
+> careers site 406'd directly. DoorDash: the specific "Intern, Growth and Strategy – Drive" req found
+> via WebSearch (`startup.jobs`, blocked by Cloudflare direct) resolved via its Greenhouse ID
+> (`doordashusa/jobs/7253155`) to `?error=true` — that specific requisition has been pulled — and the
+> live board's first 50 listings contain zero "intern" titles, consistent with every prior sweep's
+> summer-only finding. Flexport: still only the one Tradelane Operations Intern req, Paris/Shenzhen.
+> Tokyo: `coralcap.co/jobs` and `/jobs/` both still 404; `japan-dev.com/jobs` has exactly one
+> "Business Development" req and it explicitly requires "Japanese Required," excluded per `PROFILE.md`
+> (Sam doesn't claim Japanese ability); `tokyodev.com/jobs` (redirects, followed) still has zero
+> "intern" titles anywhere. GradConnection Sydney's business-and-commerce board still shows only
+> already-tracked/already-excluded employers (ANZ, Deloitte, Dept. of the Treasury, EY, KPMG, NTT,
+> Pitcher Partners, SG Fleet, SW Australia, TikTok) — no new company. SimplifyJobs off-season README
+> (fetched raw, 37,746 lines, PM and DS tables parsed programmatically — 250 and 1,911 rows
+> respectively — and cross-filtered for target cities × Winter/Spring 2027 tags): beyond A130 (Kodiak,
+> above) and the already-tracked Tesla rows, every other match was either explicitly 🔒-locked in the
+> source (Kroll's "Intern Technology – Data Engineering" turned out Toronto anyway, not NYC; S&P
+> Global's two Data Engineer Intern reqs; Bloom Energy's Data Analyst Intern) or wrong-degree-level
+> (Block's PhD/Graduate Co-op, X Development's PhD Residencies). Intern Insider's five role-facet pages
+> (`consulting-strategy`, `sales-business-development`, `data-science`, `product-management`,
+> `operations-supply-chain`) surfaced one promising-looking lead checked and excluded: Dow Jones's
+> "Commercial Strategy and Business Development Intern" (and its Data Analyst/Marketing Data Science/
+> Commercial Strategy sibling reqs) explicitly states "a 10-week summer program," hard-excluded on
+> term; the rest of all five facets was overwhelmingly wrong-function/wrong-season large-corporate
+> noise (RSM, CBIZ, Guardian Life, Allegion, BASF, Land O'Lakes, Jordan's Furniture). BuiltIn NYC/SF
+> internship pages (25 and 25 listings respectively): NYC is now dominated by PwC's Winter 2027 "Deals
+> – CMAAS Intern" (same accounting/CPA-eligibility mismatch that excluded this exact title on an
+> earlier sweep) plus Smartly's "Creative Strategy Intern" and "Product Marketing Intern," both
+> explicitly Smartly's "Fall 2026 Internship Program" (term-excluded) and the Creative Strategy role
+> additionally sits on the excluded trend/social-content side of the substance test; SF's page is
+> 100% PwC audit/tax/consulting Summer or Winter 2028 reqs, all accounting-track, none addable. YC's
+> Winter 2027 batch status checked directly: applications close Nov 2 2026, decisions land Dec 11
+> 2026 — later than this file's standing "~November 2026" batch-landing assumption; worth recalibrating
+> the November sweep-harder reminder to early-to-mid December in a future update, noted here rather
+> than changed unilaterally this run.
+>
+> Prior: **2026-09-14** (daily sweep — full network access confirmed (workatastartup.com 301,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions). **One correction, one new Tier A row, no closures.**
 >
@@ -521,7 +625,7 @@ recomputed once the resume is uploaded.
 | A29 | Rocket Internet SE | Founders' Associate Intern | BD | San Francisco | In-person | Global | Unconfirmed | Unconfirmed | Unpaid | 3 | ~4 | Med | unverified | [Built In](https://builtin.com/job/founders-associate-intern/6196290) |
 | A30 | Guidepoint | Business Development Intern | BD | New York, NY | In-person | Public | Unconfirmed | Unconfirmed | ~$25K (program stipend) | 3 | ~3 | Low | unverified | [Built In](https://builtin.com/job/business-development-intern-class-2028/10728729) |
 | A31 | Global Pathways AI | Product & Go-to-Market Internship | PM | San Francisco | Remote | Early | Rolling | Rolling | Unpaid (may become paid) | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4570560-product-go-to-market-internship-opportunities) |
-| A70 | Base Power Company | Growth Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Rolling | Unconfirmed | 2 | ~4 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/growth-intern/10000211) |
+| A70 | Base Power Company | Sales Intern (was: Growth Intern) | Sales | Austin, TX | In-person | Startup | Unconfirmed | Rolling | Unconfirmed | 2 | ~3 | Low/Med | live | [Built In Austin](https://www.builtinaustin.com/job/growth-intern/10000211) |
 | A71 | Zettabyte Inc | Growth Operations Intern | Growth | Bay Area, CA | Flexible | Startup | 3–6 mo, flexible | Rolling | Unconfirmed | 2 | ~4 | Med | unverified | [Built In SF](https://www.builtinsf.com/job/growth-operations-intern/8794820) |
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
@@ -576,6 +680,46 @@ recomputed once the resume is uploaded.
 | A124 | Tesla | Commercial Charging Product Management Intern, Energy Engineering | PM | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed (sibling reqs ~$20–50/hr) | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283156) |
 | A125 | Tesla | Data Engineer Intern, Fleet Data – Self-Driving | Data | Palo Alto, CA | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/281612) |
 | A126 | Tesla | Machine Learning Engineer Intern, Charging Data Modeling | Data (ML-eng skew) | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/281940) |
+| A128 | Base Power Company | Business Operations Intern, Commercial Partnerships | Strategy/Partnerships | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~4 | High | live | [Built In Austin](https://www.builtinaustin.com/job/business-operations-intern-commercial-partnerships/11174864) |
+| A129 | Base Power Company | Finance – Analytics Intern | Data/Finance | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/finance-analytics-intern/11174862) |
+| A130 | Kodiak Robotics | Winter 2027 Intern, Data Engineering | Data | Mountain View, CA | In-person | Late-stage (autonomous trucking) | **Start Jan 2027, 12–16 wks, end date flexible** | Confirm ≤ Mar 12 | $10,000 (range unclear — flat figure) | 3 | ~3 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/kodiak/jobs/4396622009) |
+
+**2026-09-15 sweep — one correction (A70), three new Tier A rows (A128–A130), no closures.** Full
+detail is in the header summary above; per-row notes below.
+
+**A70 (Base Power) corrected, not closed.** The tracked `builtinaustin.com/job/growth-intern/10000211`
+URL now serves "Sales Intern," reposted 26 days ago — customer acquisition, HubSpot relationship
+management, outbound lead generation, supporting sales targets. Same URL-reuse pattern as A22
+(CertiK) on 2026-08-20. Function moved Growth → Sales (`PROFILE.md`'s #3 priority function down to
+#8), Fit trimmed ~4 → ~3, Priority Med → Low/Med. Kept `live` since the posting itself is genuinely
+open today, just not the role originally tracked.
+
+**A128 (Base Power), Business Operations Intern, Commercial Partnerships — Austin, TX. Added `live`,
+High priority.** Found via a direct crawl of Base Power's own `builtinaustin.com/company/base-power-
+company/jobs` listing (triggered by investigating the A70 URL-reuse above), posted 12 hours before
+this sweep. Real Strategy/Partnerships generalist work — market and competitive analysis, financial
+modeling, GTM planning, identifying and standing up new channel partnerships — home market, no
+relocation cost, no stated season/dates (same as A70's original pattern).
+
+**A129 (Base Power), Finance – Analytics Intern — Austin, TX. Added `live`, Med priority.** Sibling
+req from the same company-page crawl, posted 12 hours before this sweep. Budgeting, forecasting,
+variance analysis, and financial modeling work — genuinely quantitative but leans Finance more than
+core Data/DS, so scored a notch below A128. Two other sibling reqs from the same page were checked
+and excluded: "Business Operations, MBA Intern" requires current MBA enrollment (wrong candidate
+level); "Quantitative Developer Intern" is a Markets-team software-engineering role requiring "strong
+software engineering practices" (excluded pure-engineering lane).
+
+**A130 (Kodiak Robotics), Winter 2027 Intern, Data Engineering — Mountain View, CA. Added `live`, Med
+priority.** Sourced from the SimplifyJobs off-season README's Data Science table, confirmed directly
+on Greenhouse (primary source, no access blocker — unlike every Tesla Data Engineer row in this
+tracker). The posting states explicitly: "Start Date: January 2027. Our internship program is 12-16
+weeks; the end date is flexible based on individual needs" — a direct, named solution to the March
+hard-stop constraint, on par with A5 (Dalus)'s "fits around your studies" language. Function is
+pipeline/ETL/dashboarding-leaning (AuroraDB, ElasticSearch, QuickSight), so Fit is scored cautiously
+in line with Tesla's Data Engineer Intern rows, but full primary-source confirmation plus the explicit
+date flexibility justify `live`/Med rather than `unverified`/Low. Pay shown as a flat "$10,000 USD"
+range — likely a stipend total rather than an hourly/monthly rate, but the posting doesn't clarify;
+flagged rather than assumed.
 
 **2026-09-13 sweep — 3 new Tier A rows (A124, A125, A126, all Tesla, all access-blocked/inferred),
 1 exclusion checked (BeamNG), no closures.** Full detail is in the header summary above; per-row
