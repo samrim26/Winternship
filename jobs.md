@@ -5,7 +5,73 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-16** (daily sweep — full network access confirmed (workatastartup.com 301,
+> Last swept: **2026-09-17** (daily sweep — full network access confirmed (workatastartup.com 301,
+> wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
+> regressions, matching every prior day). **Two corrections, one new Tier A row (unverified), no
+> closures.**
+>
+> **A127 (The Boring Company) corrected — Nashville, TN dropped from the location field.** Re-fetched
+> `jobs.gem.com` directly and this time got real content instead of the empty JS-gated response every
+> prior sweep hit — the Business/Project Development track is explicitly labeled "(Part-Time)" and
+> lists only Bastrop, TX and Las Vegas, NV; Nashville does not appear anywhere on the live posting.
+> Title updated to include "(Part-Time)," location trimmed accordingly. No other field changed.
+>
+> **A136 (Acxiom, Enterprise Solutions Consulting Intern) corrected — location conflict flagged, not
+> resolved.** Independently corroborated on Acxiom's own Workday ATS for the first time (previous
+> sweeps couldn't reach it). Acxiom has no req literally titled "Enterprise Solutions Consulting
+> Intern" — the matching job body text ("As an Enterprise Solutions Consulting Intern...") belongs to
+> a req titled "Intern - Solution Consultant" (JR014438), whose structured location field reads
+> "Remote/Homebased," not New York/in-person as Intern Insider states. The same job body also carries
+> boilerplate referencing a Conway, Arkansas office, suggesting a templated description reused across
+> reqs rather than role-specific copy. Location/mode changed to reflect the unresolved conflict and
+> Fit/Priority trimmed a notch pending direct confirmation. The other three Acxiom siblings (A134,
+> A135, A137) were also independently corroborated on Workday this run and held with zero drift — the
+> two-attempt "timeout, then HTTP 500" access problem from 2026-09-16 didn't recur.
+>
+> **New: A138 (Heron Power), Intern, Business Development Associate — Scotts Valley, CA, `unverified`.**
+> An a16z-backed power-electronics/grid startup, found via Ashby and opened directly at its own JSON
+> payload (not a search snippet) — confirmed in-person, genuine BD/Strategy-adjacent substance (CRM/
+> pipeline ownership, account research, partnership materials for a commercial team selling into
+> solar/BESS/data-center developers), clearing the analytical-BD bar rather than reading as outbound-
+> only sales. Kept `unverified` rather than dropped: the title's "Fall 2026/Winter 2027" tag carries no
+> explicit start/end date or `applicationDeadline` in the schema, so it's genuinely unclear whether
+> this is one continuous Fall-into-Winter term (which could start before 4 Jan and/or not wrap by 12
+> Mar) or a per-season offering — worth a direct email before applying. Location is Scotts Valley in
+> Santa Cruz County, ~30–40 min from San Jose — Bay-Area-adjacent rather than a core target metro,
+> flagged rather than scored as if it were downtown SF.
+>
+> **Full re-verification of all near-term-relevant `live`/`unverified` Tier A rows found zero drift
+> beyond A127/A136 above.** The imminent-deadline TikTok rows (A112, A114) both reconfirmed unchanged
+> — still closing 30 Sep 2026, now ~13 days out. The seven rows added 2026-09-15/16 (A128–A133 Base
+> Power, A130 Kodiak) all reconfirmed unchanged. The four standing-`unverified` Tesla rows (A122,
+> A124, A125, A126) all 403'd again on tesla.com, consistent with every prior sweep — not retried
+> further. A spot-check of the eight workatastartup.com/YC rows (A5, A9, A10, A13, A65, A75, A82, A83)
+> via their embedded Inertia.js `data-page` JSON, plus A22 (CertiK), A70 (Base Power Sales Intern),
+> A88 (FairwAI), A92 (TraceRoot.AI), A96 (Crowe Global), A98 (Cresta), A120 (MTA), and A121 (Ankura,
+> via the Workday CXS API), all held with zero drift.
+>
+> **Fresh sweep of all ten sources otherwise found nothing else that clears the quality bar.** One
+> lead was checked and deliberately left out rather than padded in as a conflict row: Heron Power was
+> added (above) rather than excluded since its dates, while unclear, aren't confirmed to actually
+> overrun — a genuine unverified case, not a conflict. Economic consulting: the six core firms plus
+> three peers checked for the first time this sweep (Edgeworth Economics, Secretariat, Bates White)
+> all came back with no retrievable internship listings — summer-only, JS-gated ATS pages, or bare
+> "current openings" landing pages with nothing behind them. Palantir's Deployment Strategist filter
+> returned zero postings this run (previously Paris/Honolulu) — worth a full board crawl next sweep to
+> confirm those reqs actually closed rather than just being filtered out. Uber, DoorDash (403 again),
+> and Flexport unchanged. Tokyo: Coral Capital still 404, Japan Dev and TokyoDev still structurally
+> SWE-only or Japanese-fluency-gated. GradConnection Sydney and Melbourne: zero new companies beyond
+> already-tracked TikTok. SimplifyJobs off-season README (1.68MB, 38,914 lines, parsed
+> programmatically): 21 candidate rows surfaced, all already-tracked, 🔒-locked, wrong-function, or
+> marginal (UT Austin's own "Baseball Video/Analytics Intern" — sports ops, not a real function fit);
+> a full-file regex pass for Strategy/BD/Growth/Partnerships/Sales titles against Winter/Spring 2027 +
+> target locations returned zero rows, reconfirming this README carries no such category. BuiltIn
+> NYC/Austin/SF unchanged (Summer 2027/Winter 2028 PwC and engineering noise). Two candidates surfaced
+> by search and excluded on the merits: Athelo Group's BD/Partnership Intern (Norwalk, CT — wrong
+> metro, Jan 11–Jun 30 2027 — wrong dates) and Stoke Space/Boltline's "Growth Intern" (Kent, WA,
+> Summer 2027 only).
+>
+> Prior: **2026-09-16** (daily sweep — full network access confirmed (workatastartup.com 301,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions, matching every prior day). **Two corrections (imminent-deadline fix), seven new Tier
 > A rows, no closures.**
@@ -705,7 +771,7 @@ recomputed once the resume is uploaded.
 | A87 | GutGutGoose | Growth (founding team) — new posting | Growth | San Francisco, CA | In-person | YC S26 | Trial + FT decision Sept 20 2026 ⚠ | Unconfirmed | $19–22/hr trial → $120K+ FT | 1 | ~3 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/105105) |
 | A88 | FairwAI | Project Management Fellow | PM/Partnerships | Remote (NYC/SF/Austin listed) | **Remote** | Early | 3–6 mo, flexible start | Rolling | Unpaid | 2 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3251810-project-management-fellow) |
 | A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
-| A127 | The Boring Company | Operations Internships — Business/Project Development track (Winter/Spring 2027) | BD/Strategy & Ops | Bastrop, TX (also Las Vegas, NV / Nashville, TN) | In-person | Private (Musk-founded infra) | Winter/Spring 2027 (tagged) | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~3 | Med | unverified | [Boring Company careers → application](https://jobs.gem.com/the-boring-company/am9icG9zdDqxHfxcQ--wXDcxkn-GcrPC) |
+| A127 | The Boring Company | Operations Internships (Part-Time) — Business/Project Development track (Winter/Spring 2027) | BD/Strategy & Ops | Bastrop, TX (also Las Vegas, NV) | In-person | Private (Musk-founded infra) | Winter/Spring 2027 (tagged) | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~3 | Med | unverified | [Boring Company careers → application](https://jobs.gem.com/the-boring-company/am9icG9zdDqxHfxcQ--wXDcxkn-GcrPC) |
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
 | A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
@@ -748,8 +814,9 @@ recomputed once the resume is uploaded.
 | A133 | Base Power Company | Deployments Operations Intern | Strategy (field ops) | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~2 | Low | live | [Built In Austin](https://www.builtinaustin.com/job/deployments-operations-intern/11184062) |
 | A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
 | A135 | Acxiom | Intern, Product Management | PM | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~3 | Low/Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-management-30a0e8ee-b65a-43d1-acbd-2d6f995e3beb) |
-| A136 | Acxiom | Enterprise Solutions Consulting Intern | Strategy | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
+| A136 | Acxiom | Enterprise Solutions Consulting Intern (aka "Intern - Solution Consultant" on Acxiom's own ATS) | Strategy | **Conflicting: NY in-person (Intern Insider) vs. Remote/Homebased (Acxiom Workday) — unresolved, see note** | Unconfirmed ⚠ | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~3 | Low/Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
 | A137 | Acxiom | Intern, Financial Analyst | Data/Finance | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-financial-analyst-7d934d45-ad65-48dc-aead-3a42da19e9cf) |
+| A138 | Heron Power | Intern, Business Development Associate (Fall 2026/Winter 2027) | BD | Scotts Valley, CA (Bay Area-adjacent, not core metro) | In-person | a16z-backed (power electronics/grid) | Fall 2026/Winter 2027 (tagged); term boundaries unclear ⚠ | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Low | unverified | [Ashby](https://jobs.ashbyhq.com/heron-power/823aab95-be9b-485e-a8fc-4024440a91cd) |
 
 **2026-09-16 sweep — two corrections (A112, A114 — imminent deadline pulled forward from Dec to
 Sep), seven new Tier A rows (A131–A137), no closures.** Full detail is in the header summary above;
