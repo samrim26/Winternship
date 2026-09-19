@@ -5,7 +5,106 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-18** (daily sweep — full network access confirmed (workatastartup.com 200,
+> Last swept: **2026-09-19** (daily sweep — full network access confirmed (workatastartup.com 200 with
+> a full browser header set, after an initial 406 on a bare-UA request — same recovery pattern as most
+> prior sweeps; wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com
+> 200, no regressions). **No corrections, five new Tier A rows (four `unverified`, one `conflict`), no
+> closures.**
+>
+> **Re-verification found zero drift on every row checked.** A112/A114 (TikTok) re-opened directly via
+> GradConnection's embedded JSON `interval` field — still `end: 2026-09-30T13:59:00+00:00`, "Closing in
+> 11 days" on the live page today, unchanged. A115 (Workiva Commercial Strategy Intern) — the next-
+> closest deadline on the board — was also re-checked directly on Intern Insider: still "Apply by Sep
+> 27 · 9 days left," unchanged. Three workatastartup.com/YC rows (A5 Dalus, A9 Lambda Robotics, A82
+> Soren) all resolved 200 with no closed/filled banners.
+>
+> **New: A146 (Gemini), Product Management Intern (Winter 2027) — New York, NY, `conflict`.** Found via
+> the SimplifyJobs off-season README (posted today, 0 days old) and confirmed directly on Gemini's own
+> Greenhouse API payload (not a snippet). Gemini is the Winklevoss-founded, now publicly traded crypto
+> exchange. The posting is explicit and unambiguous on dates: "a semester long internship program with
+> 3 days a week in person at our New York City, NY office **from January to April 2027**" — a genuine,
+> stated structural conflict with the 12 Mar hard stop (runs roughly 5–6 weeks past it), so `conflict`
+> rather than `unverified`. Kept rather than dropped per the never-silently-drop rule: the role itself
+> is an unusually strong functional match (data-driven PM work — research pulled from Databricks,
+> product requirements docs, cross-functional alignment with engineering) and worth a direct ask about
+> a shortened Jan–Mar slice. No pay stated in the posting.
+>
+> **New: A147 (Tesla), Service Program & Project Management Intern — Austin, TX, `unverified`.** A
+> seventh distinct Tesla req tracked, and the first one in Austin rather than Palo Alto — surfaced on
+> the SimplifyJobs README's Data Science section (Spring 2027 tag, posted 2 days ago). Same standing
+> tesla.com 403-on-direct-fetch pattern as every other Tesla row (re-confirmed this sweep); kept
+> `unverified` per convention rather than dropped. Home-market location scores it above the Palo Alto
+> Tesla siblings despite the identical access limitation.
+>
+> **New: A148 (Clearwater Analytics), Product Management Intern (Technical Product Manager) — New
+> York, NY, `unverified`.** Surfaced by a direct scan of Built In NYC's homepage listing for `intern`-
+> slugged URLs (three near-identical reqs posted 2026-09-18/19, same description, likely re-posted
+> copies of one role) rather than the usual term-search pages, then confirmed directly on the posting's
+> own JSON-LD schema (not a snippet) — `employmentType: INTERN`, NYC office (1 Rockefeller Plaza). Two
+> real caveats, not resolved: the role explicitly requires "a four-year degree in Computer Science or
+> related field" (Economics/Stats & DS is an arguable but not clean match), and the JSON-LD posting
+> itself carries no season/date field at all — SimplifyJobs' own README tags an apparently-related
+> Clearwater PM req "Winter 2026," which given today's date could mean an already-running cycle rather
+> than the Jan 2027 window this tracker targets. Flagged rather than treated as disqualifying; worth a
+> direct question before applying.
+>
+> **New: A149 (MetLife), Group Benefits Sales Intern — New York, NY, `unverified`.** Also surfaced via
+> the Built In NYC direct scan, confirmed on the posting's own JSON-LD — $24/hr confirmed via the
+> `baseSalary` field, not inferred. Sales function, structured curriculum + Capstone-project format.
+> No season or date range stated anywhere in the posting (unusual for a large-enterprise program, most
+> of which run summer-only per this tracker's standing pattern — flagged as a real risk, not assumed
+> either way) and one soft eligibility note: "Preferably a rising senior" (Sam is a rising junior),
+> stated as a preference rather than a requirement so not treated as disqualifying.
+>
+> **New: A150 (HP), Personal Systems Product Management Intern — Austin, TX, `unverified`.** Surfaced
+> on the SimplifyJobs README's Product Management section, confirmed directly on HP's own Workday CXS
+> API (not a snippet) — $29–33/hr stated explicitly in the posting's own pay-range field, no visa
+> sponsorship offered (fine for Sam as a US citizen, a non-issue here). Real caveat: HP's own posting
+> body states no season or date range at all; SimplifyJobs tags it "Winter 2026," which given today's
+> date is ambiguous — could denote an HP-internal Nov–Feb "Winter" cycle already underway rather than
+> the Jan 2027 window this tracker targets. Flagged rather than assumed either way. **Resolves a
+> standing follow-up from the 2026-09-18 sweep**: HP's separately-flagged "Strategy Intern - Palo Alto"
+> req was tracked down this sweep (Intern Insider → its own JSON-LD, fetched directly) and is
+> explicitly gated to "current enrollment in an MBA or related graduate program" — a hard eligibility
+> mismatch for a rising-junior undergrad, so it was checked and deliberately excluded rather than added.
+>
+> **Fresh sweep of all ten sources otherwise found nothing else that clears the quality bar.** Economic
+> consulting: Analysis Group (still summer-only, confirmed via direct page text), Compass Lexecon (no
+> internship program content beyond nav labels), CRA (still only a 2019 summer-internship blog post, no
+> open reqs), NERA (no internship page reachable). One notable non-job finding: **Cornerstone
+> Research's own careers domain (`cornerstone-research.com`) now 301-redirects site-wide, including the
+> bare root, to an unrelated company's page (`eversana.com/solutions/...`)** — not just the previously-
+> noted reworked careers page, the whole domain has been repointed. Doesn't affect any tracked row
+> (Cornerstone was never `live`/`unverified` here), but worth knowing the domain is no longer usable as
+> a monitoring source at all. GradConnection Sydney's business-and-commerce board (confirmed again via
+> direct fetch): zero new companies beyond already-tracked/already-excluded (TikTok, ANZ, Deloitte, EY,
+> KPMG, NTT, SG Fleet, SW Australia, Treasury) — Deloitte and SW Australia's listings are both Big-4-
+> style vacationer/tax-advisory programs, the same excluded pattern as every prior sweep. Tokyo: Coral
+> Capital's `/jobs` path is still a hard 404, Japan Dev's `/jobs` page is still a client-rendered Vue
+> app with zero server-rendered listings even with the intern filter applied via query string, TokyoDev
+> unchanged. SimplifyJobs off-season README (1.70MB, 38,994 lines, PM and DS tables parsed
+> programmatically for target-city × Winter/Spring-2027 × unlocked rows): beyond A146/A147 above, every
+> other match was already-tracked (A15/UT Austin baseball, A120/MTA EAM Analyst — identical URL, a dup
+> not a new row), graduate-only (Integra FEC's Data Scientist Intern - PhD, and MTA's own new
+> "Ridership Analysis and Modeling, Emerging Talent Intern (Spring)" — checked directly on MTA's
+> Jobvite page and found gated to "matriculated in a graduate program," a hard mismatch for an
+> undergrad, so deliberately excluded rather than added), or wrong-location (Audax Group's "Data
+> Engineer Co-op," tagged NYC on Simplify but its own Greenhouse posting states Boston as the actual
+> office, plus a Jan–June 2027 co-op cycle that overruns the hard stop by over two months — excluded on
+> both location and dates). Built In NYC/Austin/SF: NYC's direct-fetch homepage scan is what surfaced
+> A148/A149 above; Austin and SF added nothing beyond already-tracked/excluded reqs. Intern Insider's
+> consulting-strategy, sales-business-development, product-management, and data-science role-facet
+> pages were fetched in full: beyond the HP Strategy Intern exclusion above and a second Intern Insider
+> listing for E3's existing Consulting Internship (same underlying role as the already-tracked A145,
+> not a distinct req), the ~140 other companies across the four facets were checked by name and, where
+> ambiguous, spot-fetched — all either already-tracked, large-corporate Summer-2027 noise (Visa, USAA,
+> NVIDIA, PwC, Salesforce and similar), or outside target cities. wellfound.com/jobs and
+> workatastartup.com's general listing pages remain pure client-rendered carousels, unchanged from
+> every prior sweep; individual job-page URLs (used for the re-verification above) remain the only
+> workable path in. YC's Winter 2027 batch timeline is unchanged from prior sweeps (applications close
+> Nov 2 2026, decisions Dec 11 2026) — still not the high-yield window it will become in November.
+>
+> Prior: **2026-09-18** (daily sweep — full network access confirmed (workatastartup.com 200,
 > wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200, no
 > regressions, matching every prior day). **No corrections, seven new Tier A rows (two `live`, five
 > `unverified`), no closures.**
@@ -923,6 +1022,11 @@ recomputed once the resume is uploaded.
 | A143 | CBIZ | Business Operations Intern (Spring 2027) | Strategy | New York, NY | Hybrid (≥3 days/wk onsite) | Enterprise (accounting/advisory) | Spring 2027 (tagged) | Unconfirmed | $45–55K/yr (aggregator estimate, not employer-stated) | 3 | ~3 | Low/Med | unverified | [CBIZ Careers](https://ebez.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/6474) |
 | A144 | Rundoo | Product Manager Intern | PM | Redwood City, CA | In-person | Series-funded ($48M raised; Battery/Bessemer/CRV) | Rolling (candidate proposes start) | Rolling | $2,461/wk (~$122K/yr annualized) | 2 | ~5 | **High** | live | [Ashby](https://jobs.ashbyhq.com/rundoo/b7d71a5a-4a88-4e97-a6db-e0446eefb389) |
 | A145 | Energy and Environmental Economics (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA | In-person | Boutique (energy economics consulting) | Flexible, 8–12 wk min ⚠ (grad-year eligibility unclear) | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
+| A146 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | In-person (3 days/wk) | Public (crypto/Web3 exchange) | **"January to April 2027" (explicit, semester-long) ⚠** | Unconfirmed | Unconfirmed | 3 | 4 | Low | conflict | [Greenhouse](https://boards.greenhouse.io/embed/job_app?for=gemini&token=8214332&gh_jid=8214332) |
+| A147 | Tesla | Service Program & Project Management Intern | PM | Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | 3 | Med | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283443) |
+| A148 | Clearwater Analytics (CWAN) | Product Management Intern (Technical Product Manager) | PM | New York, NY | Unconfirmed | Public (NYSE: CWAN) | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | Unconfirmed | 3 | 3 | Low/Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/11265249) |
+| A149 | MetLife | Group Benefits Sales Intern | Sales | New York, NY | Hybrid | Public (Fortune 100) | Unconfirmed ⚠ (no season stated) | Unconfirmed | $24/hr | 4 | 3 | Low | unverified | [Built In NYC](https://www.builtinnyc.com/job/group-benefits-sales-intern-new-york-ny/11265346) |
+| A150 | HP (Hewlett Packard) | Personal Systems Product Management Intern | PM | Austin, TX | Unconfirmed | Public | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | $29–33/hr | 3 | 3 | Low/Med | unverified | [HP Workday](https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Austin-Texas-United-States-of-America/Personal-Systems-Product-Management-Intern_UNI4755) |
 
 **2026-09-16 sweep — two corrections (A112, A114 — imminent deadline pulled forward from Dec to
 Sep), seven new Tier A rows (A131–A137), no closures.** Full detail is in the header summary above;
