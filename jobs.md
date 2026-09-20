@@ -5,7 +5,133 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-19** (daily sweep — full network access confirmed (workatastartup.com 200 with
+> Last swept: **2026-09-20** (daily sweep — full network access confirmed: `workatastartup.com` 301,
+> `wellfound.com` 200, `simplify.jobs` 200, `job-boards.greenhouse.io` 302, `www.builtinnyc.com` 200 —
+> no regressions. **Twelve corrections (a genuine access breakthrough on Acxiom's own ATS drove most of
+> them), one new Tier A row (`live`), no silent drops.**
+>
+> **Correction — Acxiom's own Workday CXS API is now directly queryable (`acxiomllc.wd5.myworkdayjobs.com`),
+> the first time this domain has returned real content after many sweeps of timeouts/HTTP 500s.**
+> Queried the live job-search API directly (POST to `/wday/cxs/acxiomllc/AcxiomUSA/jobs`) and pulled all
+> 19 open `Intern -` reqs plus each one's full job-description JSON. This resolves or corrects every
+> standing Acxiom row: **A134 (Agency Partnerships)** and **A140 (Data Scientist)** are both upgraded
+> `unverified → live` — independently confirmed on the primary source, Jan 11 2027 start, and each
+> posting's own graduation-window clause ("anticipated graduation date between December 2027 - May
+> 2028" / "December 2027 - May 2028") explicitly brackets Sam's Class-of-2028 (~May 2028) graduation, so
+> no eligibility concern. **A135 (Product Management), A136 (Enterprise Solutions Consulting / "Intern -
+> Solution Consultant"), A137 (Financial Analyst), and A142 (Product Strategy & Innovation)** are also
+> upgraded `unverified → live` (all four independently confirmed live on the same API), but each one's
+> own graduation-window clause reads **"May 2027 or December 2027"** — a full year earlier than Sam's
+> Class-of-2028 track — a real, primary-source-confirmed eligibility mismatch not previously known.
+> Fit trimmed hard (2–4 → 2 on all four) and Priority dropped to Low; kept `live` rather than pulled,
+> since the postings are genuinely open and the requirement is phrased as an expectation ("should have")
+> rather than an unambiguous hard gate — worth a direct question before ruling it out entirely. **A136's
+> standing location conflict is now fully resolved**: the same primary-source query independently
+> reconfirms Remote/Homebased (not the New York/in-person that Intern Insider's aggregator page states),
+> so the "conflicting" framing is removed from the location field. **A141 (Data Engineer)** — the one
+> Acxiom sibling already flagged for a 2027-only graduation window — no longer appears anywhere among
+> the 19 current `Intern -` reqs on Acxiom's own API at all (searched both by "intern" and by "Data
+> Engineer" directly); moved `unverified → closed` rather than left stale. Two Acxiom functions turned up
+> for the first time on this pass — **Intern - Product Operations** (five parallel reqs, JR014477–81)
+> and **Intern - Marketing Operations** (JR014468) — both checked directly and both carry the same
+> disqualifying "May 2027 or December 2027" graduation window as A135/A136/A137/A142, so neither was
+> added as a new row (same reasoning already applied to the sibling cluster, not worth a duplicate).
+>
+> **Correction — A115/A117/A118 (Workiva, all three Winter/Spring 2027 reqs closing Sept 27 2026, 7
+> days out): each posting's own "What you'll need" section names a closed list of qualifying majors that
+> does not include Economics, Statistics, or Data Science.** Opened all three directly on Intern
+> Insider (still the only reachable copy; Workiva's own careers site remains an unfetchable client-
+> rendered SPA) and quoted the qualifications section verbatim for the first time this sweep rather than
+> just the dates. **A115 (Commercial Strategy Intern):** "Currently pursuing an undergraduate degree in
+> Business Administration, pre-law, or Legal Studies" — no other major named. **A117 (Product Management
+> Intern):** "pursuing a degree in Computer Science, Business Administration, Computer Engineering, or a
+> related field" plus "prior experience in software development or a similar field" — already flagged
+> for the software-development clause, now also missing Sam's actual majors from the primary list.
+> **A118 (Intern – Partnerships):** "Marketing or Business Administration" — no other major named. None
+> of the three is a hard programmatic gate we can independently verify (Workiva's ATS itself is
+> unreachable, so this is Intern Insider's transcription of the posting, not Workiva's own structured
+> data), and the imminent Sept 27 deadline means acting on a false negative would be costly — so all
+> three are kept `unverified` rather than closed, but Fit is trimmed hard (2–4 → 2 across all three) and
+> Priority dropped Med → Low to reflect a real, newly-surfaced barrier. **Flagging this now matters**:
+> these three deadlines fall inside the three-week window (see below) — worth a direct question to
+> Workiva about whether "related field" is read broadly before spending an application on any of them.
+>
+> **Correction — A93 (NewsBreak, Growth Engineer Intern, Mountain View, deadline Oct 12 2026): the
+> posting's own requirements were re-read in full for the first time (prior sweeps tracked only the pay/
+> deadline/location) and state "3+ years of growth engineering or technical product experience" plus a
+> "BS/MS/PhD in Computer Science or related field."** This is a senior-level bar mislabeled with an
+> "Intern" title, not a rising-junior-accessible role — Diff raised 3 → 4, Fit cut 4 → 1, Priority
+> dropped Med → Low. Kept `unverified` (still a real, open posting) rather than closed, since the
+> mismatch is on experience/degree rather than the posting itself being expired.
+>
+> **Correction — A99 (Scale AI, AI Builder Intern) moved `conflict → closed`.** Its own Intern Insider
+> page now reads "This internship has closed — Applications closed on August 27, 2026" verbatim — the
+> Sept 4 2026 deadline this tracker carried had already lapsed by the time of this sweep, and the
+> posting itself now confirms closure rather than just an overrun deadline. No other tracked field
+> changed.
+>
+> **New: A151 (Kroll), Intern, Trade and Customs — New York, NY, `live`.** The best find of this sweep,
+> and the second real economic-consulting-adjacent hit after A121 (Ankura) — Kroll is a global risk,
+> financial advisory, and forensic/valuation firm in the same functional lane PROFILE.md flags as the
+> single best match on the board. Surfaced via a fresh search after the Intern Insider consulting-
+> strategy facet page (working again this sweep after several sweeps of 404s) turned up Kroll's name,
+> then confirmed directly on Kroll's own careers site (`careers.kroll.com`, not an aggregator snippet) —
+> no removal notice, unlike a sibling M&A req at the same firm (see below). Trade compliance and tariff
+> analysis for Fortune 500 clients: analyzing financial customs/tariff data, Harmonized Tariff Schedule
+> classification, industry research, client interviews, report writing — genuinely quantitative and
+> policy-adjacent, not clerical. Economics is explicitly named as a qualifying major ("Economics,
+> Finance, Business Administration or Management ... or other degree with a minimum of four Junior and/
+> or Senior level courses in Economics or Finance"), and the stated graduation window ("December 2027
+> and August 2028") directly matches Sam's Class-of-2028 track. Two real caveats: a stated "Major GPA of
+> 3.2" requirement (unconfirmed whether Sam clears it) and no term/date range stated anywhere on the
+> posting (same "Rolling, no stated term" pattern as A121 Ankura) — kept `live` rather than `unverified`
+> per the same logic as A121, since the primary source opened cleanly with real content; window tracked
+> as `Confirm ≤ Mar 12`. Two sibling Kroll reqs were checked and excluded rather than added: **"Junior
+> Intern, Mergers & Acquisitions"** (New York, same grad window, Economics-eligible) was already removed
+> as of Aug 26 2026 per its own posting; **"Intern, Expert Services"** (New York, forensic accounting/
+> valuation, Accounting/Finance-weighted majors) closed Sept 17 2026 per Intern Insider. Both are
+> genuinely gone, not merely unreachable, so neither was added as a row — noted here per the
+> never-silently-drop spirit even though no ref was allocated to already-closed leads.
+>
+> **Fresh sweep of all ten sources**: the SimplifyJobs off-season README (1.69MB, 38,634 lines) was
+> re-downloaded and the Product Management, Data Science, and Quantitative Finance tables were parsed
+> programmatically (regex over the raw HTML tables, not a summarized read) and filtered for exact target-
+> city matches (excluding "CA"/"TX" as bare substrings this time, which had been silently matching
+> "Canada" in an earlier draft of this sweep's own tooling — caught and fixed before any row was added).
+> Beyond the Kroll find above, two PM-table leads were chased and excluded: **Box's Product Management
+> Intern** (San Carlos, CA) requires a "December 2026 - June 2027" graduation window — a full cycle
+> before Sam's — excluded; **Crusoe's Product Manager Intern** (SF) is no longer listed among Crusoe's
+> own current open reqs on its public Ashby API at all (the specific job ID found via search returns a
+> null posting) — already closed, not added. Everything else in the PM/DS/QF tables that matched a
+> target city was Winter-2027-tagged **Canada** co-op noise (Royal Bank of Canada, TD Bank, Loblaw, BMO,
+> Definity, Mackenzie Investments — dozens of rows, all Toronto/Waterloo/Montreal, out of scope) or
+> already-tracked/excluded (Tesla, Gemini, Google's PhD-gated apprenticeship, Audax's Boston-not-NYC Data
+> Engineer Co-op). Intern Insider's five role-facet pages are reachable again this sweep (they 404'd as
+> recently as 2026-09-16) — re-fetched all five directly (261 distinct company/role pairs after
+> deduplication) and, beyond the Kroll find, spot-checked three plausible Strategy-titled leads: Cerity
+> Partners' two Strategy Analyst internships (NYC) and J.S. Held's IP Valuation & Management Consulting
+> Internship (Chicago) are both Summer 2027; Cox Enterprises' Corporate Strategy Intern is Atlanta, not a
+> target metro. The remaining ~155 companies on the five facet pages were checked by name against the
+> same large-corporate-Summer-2027-noise pattern documented in every prior sweep (PwC, USAA, Salesforce,
+> CrowdStrike, NVIDIA and similar) and yielded nothing further. Economic consulting: Analysis Group
+> (summer-analyst/summer-associate tracks only), Charles River Associates (no dated internship content
+> beyond a 2019 retrospective blog post), and NERA ("we offer summer internships... no off-cycle track")
+> all re-confirmed directly, no change; Brattle 403s again, unchanged. Built In NYC/Austin/SF: the
+> `/jobs/internships` paths (not tried directly in recent sweeps) were fetched fresh — NYC and SF are
+> both now ~90%+ PwC Summer/Winter-2028 accounting-track noise plus already-tracked Clearwater/MetLife/
+> Smartly reqs; Austin surfaced nothing beyond already-excluded CrowdStrike/PwC/Cox Summer-2027 rows. A
+> direct re-crawl of **Base Power Company's** own Built In Austin company page found all five currently-
+> tracked Austin reqs (A128, A129, A131, A132, A133) still open, unchanged — plus a freshly-posted
+> ("yesterday") **"Growth Intern"** listing whose description text is near-identical to the GTM/HubSpot/
+> outbound-lead-generation copy already tracked as A70's current "Sales Intern" content (the same
+> URL-reuse pattern A70 was corrected for on 2026-09-16); treated as a repost of the same underlying role
+> rather than a distinct new req, so no new ref was allocated. Tokyo: `coralcap.co/jobs` still 404s;
+> TokyoDev and Japan Dev were both re-fetched and, beyond already-tracked/excluded companies, surfaced
+> only full-time/senior roles, nothing at the internship level. GradConnection Sydney: zero new companies
+> beyond the nine already tracked or excluded (TikTok, Deloitte, EY, KPMG, SG Fleet, ANZ, NTT DATA,
+> Treasury, SW Australia).
+>
+> Prior: **2026-09-19** (daily sweep — full network access confirmed (workatastartup.com 200 with
 > a full browser header set, after an initial 406 on a bare-UA request — same recovery pattern as most
 > prior sweeps; wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com
 > 200, no regressions). **No corrections, five new Tier A rows (four `unverified`, one `conflict`), no
@@ -973,13 +1099,13 @@ recomputed once the resume is uploaded.
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
 | A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
-| A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
+| A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 4 | ~1 | Low | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
 | A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Closed Aug 26 2026 | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
 | A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Removed Aug 31 2026 | Unconfirmed | 3 | ~3 | Low | closed | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
 | A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
-| A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Sept 4 2026 | Unconfirmed | 4 | ~4 | Low | conflict | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
+| A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Closed Aug 27 2026 | Unconfirmed | 4 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
 | A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Expired (Nov 24 2025) | Unconfirmed | 2 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
 | A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | closed | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
 | A104 | Direct Agents | AI Business Strategy & Operations Intern | Strategy | Culver City, CA | In-person | Established (2003) | Rolling, no stated minimum | Rolling | Unconfirmed | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/direct-agents/ai-business-strategy-operations-intern-115edaa5-1508-48e8-a5b2-84ba5a0a7cb2) |
@@ -993,9 +1119,9 @@ recomputed once the resume is uploaded.
 | A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | **Closing 30 Sep 2026 ⚠ (corrected from 25 Dec 2026)** | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-2/) |
 | A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
 | A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Hybrid | Enterprise | Dec 2026 (approx); candidate states own start/end dates | **Closing 30 Sep 2026 ⚠ (corrected from 25 Dec 2026)** | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
-| A115 | Workiva | Commercial Strategy Intern (Winter 2027 cycle) | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | **Confirmed: Winter 2027 term starts Jan 4, 2027**, 15–20 hrs/wk | **Sept 27 2026 (confirmed on this exact posting)** | Unconfirmed on this title | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/commercial-strategy-intern-8a881fb9-e31b-4b13-98cd-c67aadac2ade) |
-| A117 | Workiva | Product Management Intern (Spring 2027 cycle) | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | $40/hr | 2 | ~3 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/product-management-intern-57ede0f8-ae81-466d-aea5-01f0ac3e17a5) |
-| A118 | Workiva | Intern – Partnerships (Winter 2027 cycle) | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: Winter 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/workiva/intern-partnerships-1e922333-06b0-4297-9902-2f9dad6cbfdd) |
+| A115 | Workiva | Commercial Strategy Intern (Winter 2027 cycle) | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | **Confirmed: Winter 2027 term starts Jan 4, 2027**, 15–20 hrs/wk | **Sept 27 2026 (confirmed on this exact posting)** | Unconfirmed on this title | 2 | ~2 | Low | unverified | [Intern Insider](https://interninsider.me/internships/workiva/commercial-strategy-intern-8a881fb9-e31b-4b13-98cd-c67aadac2ade) |
+| A117 | Workiva | Product Management Intern (Spring 2027 cycle) | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | $40/hr | 2 | ~2 | Low | unverified | [Intern Insider](https://interninsider.me/internships/workiva/product-management-intern-57ede0f8-ae81-466d-aea5-01f0ac3e17a5) |
+| A118 | Workiva | Intern – Partnerships (Winter 2027 cycle) | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: Winter 2027 term starts **Jan 4, 2027**, 15–20 hrs/wk | Sept 27 2026 | Paid (amount unconfirmed) | 2 | ~2 | Low | unverified | [Intern Insider](https://interninsider.me/internships/workiva/intern-partnerships-1e922333-06b0-4297-9902-2f9dad6cbfdd) |
 | A119 | Zipline | Commercial Strategy & Operations Intern (Winter 2027 term) | Strategy | Austin, TX (+ Houston/Phoenix/San Antonio/Dallas/LA) | In-person | Series C | "Winter 2027" term offered (sibling reqs A105/A107 confirm Zipline's Winter 2027 label = Jan–Apr) ⚠ | Rolling | Paid (amount unconfirmed) | 2 | ~4 | Med | conflict | [Intern Insider](https://interninsider.me/internships/zipline/commercial-strategy-operations-intern-d75db0e8-2047-4484-b916-c7909405d22d) |
 | A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent | Data | New York, NY (Manhattan) | In-person | Public agency | Confirm ≤ Jan 2027 (tagged "Spring 2027" by aggregator; primary posting states no exact dates) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
 | A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $34/hr | 3 | ~4 | Med | live | [Ankura Workday, req R104943](https://ankura.wd5.myworkdayjobs.com/Ankura/job/New-York-NY/University-Intern--Forensic-Data---Analytics_R104943) |
@@ -1010,15 +1136,15 @@ recomputed once the resume is uploaded.
 | A131 | Base Power Company | Financial Planning Intern | Data/Finance | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/finance-planning-intern/11174868) |
 | A132 | Base Power Company | Marketing Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/marketing-intern/11184090) |
 | A133 | Base Power Company | Deployments Operations Intern | Strategy (field ops) | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~2 | Low | live | [Built In Austin](https://www.builtinaustin.com/job/deployments-operations-intern/11184062) |
-| A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
-| A135 | Acxiom | Intern, Product Management | PM | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~3 | Low/Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-management-30a0e8ee-b65a-43d1-acbd-2d6f995e3beb) |
-| A136 | Acxiom | Enterprise Solutions Consulting Intern (aka "Intern - Solution Consultant" on Acxiom's own ATS) | Strategy | **Conflicting: NY in-person (Intern Insider) vs. Remote/Homebased (Acxiom Workday) — unresolved, see note** | Unconfirmed ⚠ | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~3 | Low/Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
-| A137 | Acxiom | Intern, Financial Analyst | Data/Finance | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-financial-analyst-7d934d45-ad65-48dc-aead-3a42da19e9cf) |
+| A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
+| A135 | Acxiom | Intern, Product Management | PM | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-management-30a0e8ee-b65a-43d1-acbd-2d6f995e3beb) |
+| A136 | Acxiom | Enterprise Solutions Consulting Intern (aka "Intern - Solution Consultant" on Acxiom's own ATS) | Strategy | Remote/Homebased (resolved — see note) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
+| A137 | Acxiom | Intern, Financial Analyst | Data/Finance | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-financial-analyst-7d934d45-ad65-48dc-aead-3a42da19e9cf) |
 | A138 | Heron Power | Intern, Business Development Associate (Fall 2026/Winter 2027) | BD | Scotts Valley, CA (Bay Area-adjacent, not core metro) | In-person | a16z-backed (power electronics/grid) | Fall 2026/Winter 2027 (tagged); term boundaries unclear ⚠ | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Low | unverified | [Ashby](https://jobs.ashbyhq.com/heron-power/823aab95-be9b-485e-a8fc-4024440a91cd) |
 | A139 | Tesla | Product Manager Intern, Residential Energy Engineering | PM | Palo Alto, CA | Unconfirmed | Public | Winter 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283841) |
-| A140 | Acxiom | Data Scientist Intern | Data | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/data-scientist-intern-4cbf6892-4c7d-4cdc-b96a-0ce4b538fd8c) |
-| A141 | Acxiom | Data Engineer Intern | Data | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~3 | Low/Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/data-engineer-intern-6c7445b5-ef99-4431-8856-72ecbe810648) |
-| A142 | Acxiom | Intern - Product Strategy & Innovation | Strategy | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-strategy-innovation-637d488b-b4f8-4e61-a1fa-e06ce51470d0) |
+| A140 | Acxiom | Data Scientist Intern | Data | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | live | [Intern Insider](https://interninsider.me/internships/acxiom/data-scientist-intern-4cbf6892-4c7d-4cdc-b96a-0ce4b538fd8c) |
+| A141 | Acxiom | Data Engineer Intern | Data | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | N/A — no longer posted | Paid (amount unconfirmed) | 2 | ~3 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/data-engineer-intern-6c7445b5-ef99-4431-8856-72ecbe810648) |
+| A142 | Acxiom | Intern - Product Strategy & Innovation | Strategy | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-strategy-innovation-637d488b-b4f8-4e61-a1fa-e06ce51470d0) |
 | A143 | CBIZ | Business Operations Intern (Spring 2027) | Strategy | New York, NY | Hybrid (≥3 days/wk onsite) | Enterprise (accounting/advisory) | Spring 2027 (tagged) | Unconfirmed | $45–55K/yr (aggregator estimate, not employer-stated) | 3 | ~3 | Low/Med | unverified | [CBIZ Careers](https://ebez.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/6474) |
 | A144 | Rundoo | Product Manager Intern | PM | Redwood City, CA | In-person | Series-funded ($48M raised; Battery/Bessemer/CRV) | Rolling (candidate proposes start) | Rolling | $2,461/wk (~$122K/yr annualized) | 2 | ~5 | **High** | live | [Ashby](https://jobs.ashbyhq.com/rundoo/b7d71a5a-4a88-4e97-a6db-e0446eefb389) |
 | A145 | Energy and Environmental Economics (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA | In-person | Boutique (energy economics consulting) | Flexible, 8–12 wk min ⚠ (grad-year eligibility unclear) | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
@@ -1027,6 +1153,7 @@ recomputed once the resume is uploaded.
 | A148 | Clearwater Analytics (CWAN) | Product Management Intern (Technical Product Manager) | PM | New York, NY | Unconfirmed | Public (NYSE: CWAN) | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | Unconfirmed | 3 | 3 | Low/Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/11265249) |
 | A149 | MetLife | Group Benefits Sales Intern | Sales | New York, NY | Hybrid | Public (Fortune 100) | Unconfirmed ⚠ (no season stated) | Unconfirmed | $24/hr | 4 | 3 | Low | unverified | [Built In NYC](https://www.builtinnyc.com/job/group-benefits-sales-intern-new-york-ny/11265346) |
 | A150 | HP (Hewlett Packard) | Personal Systems Product Management Intern | PM | Austin, TX | Unconfirmed | Public | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | $29–33/hr | 3 | 3 | Low/Med | unverified | [HP Workday](https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Austin-Texas-United-States-of-America/Personal-Systems-Product-Management-Intern_UNI4755) |
+| A151 | Kroll | Intern, Trade and Customs | Strategy (economic/policy analysis, econ-consulting-adjacent) | New York, NY | In-person | Established (global risk/financial advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $20–35/hr | 3 | 4 | Med | live | [Kroll Careers](https://careers.kroll.com/en/job/new-york/intern-trade-and-customs/21014747) |
 
 **2026-09-16 sweep — two corrections (A112, A114 — imminent deadline pulled forward from Dec to
 Sep), seven new Tier A rows (A131–A137), no closures.** Full detail is in the header summary above;
