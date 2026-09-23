@@ -5,7 +5,85 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-20** (daily sweep — full network access confirmed: `workatastartup.com` 301,
+> Last swept: **2026-09-23** (daily sweep — full network access confirmed: `workatastartup.com` 301,
+> `wellfound.com` 200, `simplify.jobs` 200, `job-boards.greenhouse.io` 406, `www.builtinnyc.com` 200 —
+> no regressions (the 406 on greenhouse's bare root is the same non-blocking API-response pattern
+> seen before, not a fetch failure). **No corrections, two new Tier A rows (one `live`, one
+> `unverified`), no closures.**
+>
+> **Re-verification of the two nearest-term deadlines found zero drift.** A115 (Workiva, Commercial
+> Strategy Intern) reconfirmed directly on Intern Insider — still "Apply by Sep 27 · 4 days left,"
+> unchanged, still `unverified` for the same major-mismatch reason documented 2026-09-20. A112/A114
+> (TikTok, GradConnection) reconfirmed directly via the embedded campaign page — still closing
+> "30th September 2026 at 1:59pm" / "Closing in 7 days," unchanged.
+>
+> **New: A152 (GE Aerospace), SaaS – Flight Analytics Platform Data Science Co-op (Spring 2027) —
+> Austin, TX, `unverified`.** Surfaced via a fresh regex parse of the SimplifyJobs off-season README's
+> Data Science table (target-city × Winter/Spring-2027 filter, posted 2 days ago), then independently
+> confirmed on GE Aerospace's own Workday CXS API directly (`geaerospace.wd5.myworkdayjobs.com`, not a
+> snippet) — real, current content. Genuinely quantitative Data Science substance: dashboards,
+> A/B testing, KPI tracking, data cleaning/feature engineering for a SaaS product team, majors
+> explicitly including Statistics and "another relevant STEM field." Pay stated explicitly: "$24/hour
+> and increase[s] for each undergraduate year completed," plus relocation/housing assistance. Two real,
+> unresolved caveats, not treated as disqualifying: the posting's own `timeType` field reads "Full
+> time" and states no explicit start/end date beyond the "Spring 2027" tag — co-ops at large firms
+> commonly run a full 16-week semester, which risks overrunning the 12 Mar hard stop, and a full-time
+> day commitment sits in tension with Sam's "staying enrolled, light load" constraint (PROFILE.md
+> says flag rather than drop roles like this). Kept `unverified` rather than `conflict` since no
+> stated date actually confirms an overrun — worth a direct question about exact term length and
+> whether a part-time or Jan–Mar-only arrangement is possible before applying. Home-market Austin,
+> no relocation cost if the schedule works.
+>
+> **New: A153 (Contoro Robotics), Business Development Intern — Austin, TX, `live`.** Surfaced via a
+> direct scan of Built In Austin's internships page (posted yesterday), confirmed directly on the
+> posting's own page (builtin.com, not a search snippet) — real description content pulled, not a
+> summary. Genuine analytical-BD substance clearing the analytical-BD bar this tracker applies: CRM
+> and sales-pipeline management, account research, outbound campaigns, proposals, customer reporting.
+> One real caveat: the role requires a valid driver's license and willingness to travel to customer
+> sites including overnight trips (field-BD, not desk-only) — flagged, not disqualifying. No season,
+> pay, or deadline stated anywhere reachable; kept `live` rather than `unverified` consistent with the
+> established Built In Austin treatment (A128–A133), since the posting opened cleanly with real content
+> rather than a JS-gated shell.
+>
+> **Fresh sweep of the remaining sources found nothing else that clears the quality bar.** Economic
+> consulting: Analysis Group (`/careers/`, still summer-analyst/summer-associate tracks only, confirmed
+> via direct page text), Charles River Associates (still only a 2019 summer-internship retrospective
+> blog post, no dated internship content), Compass Lexecon (careers page lists only "Students &
+> Graduates / Ph.D. & Experienced Hires / Business Professionals" hiring categories with no internship
+> detail), NERA (`nera.com/careers.html` 301-redirects to a generic "why NERA" page, no internship
+> content), Brattle (`brattle.com/careers/` 403s again, unchanged) — all re-confirmed directly, no
+> change from 2026-09-20. SimplifyJobs off-season README (1.70MB, re-downloaded and parsed
+> programmatically by `<tr>`/`<td>` extraction rather than a summarized read, PM/DS/QF tables filtered
+> for target-city × Winter/Spring-2027): beyond A152 above, every other match was already-tracked
+> (Tesla ×7 siblings, UT Austin baseball) or a hard exclusion — Rivian's "MBA Intern Co-op" (Palo Alto)
+> requires current MBA enrollment, wrong candidate level; a Tesla "Data Scientist Intern - PhD" (Austin)
+> is graduate-only; Block's "Applied Research Intern PhD/Graduate Co-op" (Oakland) is graduate-only;
+> several more Tesla Winter/Spring-2027 reqs (Solar Hardware, Computer Vision, Robotics Physics
+> Modeling, Audio & Sensor Software, Data Engineer – Cell Engineering, Cell Qualification, Automation
+> Development & Tooling) are all pure hardware/software engineering, the standing excluded lane; MTA's
+> "Technology Support Intern" (Brooklyn) is IT helpdesk, already excluded; a Crowe "AI Functional
+> Intern" 37-location listing (Winter 2027, Austin among the locations) reads as the same underlying
+> role already tracked as A96 via Built In Austin's own URL, not a distinct req. Intern Insider's
+> Winter 2027 and Spring 2027 term pages (3,964 and 261 listed roles respectively) were fetched fresh
+> and scanned for target-city × target-function matches: zero hits on either — both pages are
+> presently dominated by Disney/J&J/Klaviyo/CIBC-style large-corporate engineering, IT, audit, and
+> actuarial noise with no Strategy/Data/Growth/BD/Partnerships/PM/Sales content in a target metro; the
+> Klaviyo listing that surfaced ("people analytics, marketing operations") was chased into the
+> SimplifyJobs README directly and resolved to five Boston, MA co-op reqs — wrong metro, excluded.
+> Built In NYC/Austin/SF homepage intern scans: beyond A153 above, NYC surfaced only already-tracked
+> (Clearwater A148 — three near-identical reposts confirmed, no new distinct req; MetLife A149) or
+> Summer-2027 noise (Mastercard, PwC, Smartly's Customer Success/Onboarding/Product Marketing/Creative
+> Strategy reqs — all already-tracked/excluded); Austin surfaced only Summer-2027 noise beyond A153
+> (CrowdStrike ×2, Cox Enterprises, BAE Systems); SF surfaced only already-tracked (Rundoo A144, both
+> a PM and a new "Marketing Engineering Intern" req — technical/engineering-skewed, not added) or
+> Summer-2027 noise (PwC ×3+, Atlassian ×2). `workatastartup.com` and `wellfound.com` remain pure
+> client-rendered carousels on direct fetch, unchanged from every prior sweep — YC's Winter 2027 batch
+> (applications close Nov 2 2026) is still not the high-yield window it becomes in November. Coral
+> Capital's `/jobs` path is still a hard 404. GradConnection Sydney's business-and-commerce board:
+> zero new companies beyond the same nine already tracked/excluded (TikTok, Deloitte, EY, KPMG, SW
+> Australia, SG Fleet, ANZ, Treasury, Allens).
+>
+> Prior: **2026-09-20** (daily sweep — full network access confirmed: `workatastartup.com` 301,
 > `wellfound.com` 200, `simplify.jobs` 200, `job-boards.greenhouse.io` 302, `www.builtinnyc.com` 200 —
 > no regressions. **Twelve corrections (a genuine access breakthrough on Acxiom's own ATS drove most of
 > them), one new Tier A row (`live`), no silent drops.**
@@ -1154,6 +1232,8 @@ recomputed once the resume is uploaded.
 | A149 | MetLife | Group Benefits Sales Intern | Sales | New York, NY | Hybrid | Public (Fortune 100) | Unconfirmed ⚠ (no season stated) | Unconfirmed | $24/hr | 4 | 3 | Low | unverified | [Built In NYC](https://www.builtinnyc.com/job/group-benefits-sales-intern-new-york-ny/11265346) |
 | A150 | HP (Hewlett Packard) | Personal Systems Product Management Intern | PM | Austin, TX | Unconfirmed | Public | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | $29–33/hr | 3 | 3 | Low/Med | unverified | [HP Workday](https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Austin-Texas-United-States-of-America/Personal-Systems-Product-Management-Intern_UNI4755) |
 | A151 | Kroll | Intern, Trade and Customs | Strategy (economic/policy analysis, econ-consulting-adjacent) | New York, NY | In-person | Established (global risk/financial advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $20–35/hr | 3 | 4 | Med | live | [Kroll Careers](https://careers.kroll.com/en/job/new-york/intern-trade-and-customs/21014747) |
+| A152 | GE Aerospace | SaaS – Flight Analytics Platform, Data Science Co-op (Spring 2027) | Data | Austin, TX | In-person | Public (Fortune 500 aerospace) | Spring 2027 (tagged); full-time co-op, no exact term dates stated ⚠ | Confirm ≤ Mar 12 | $24/hr+ (rises per undergrad year) | 3 | ~4 | Med | unverified | [GE Workday, req R5040450](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Austin/SaaS---Flight-Analytics-Platform---Data-Science-Co-op---Spring-2027_R5040450-2) |
+| A153 | Contoro Robotics | Business Development Intern | BD | Austin, TX | In-person | Early-stage (robotics) | Rolling, no stated term | Rolling | Unconfirmed | 2 | ~4 | Med | live | [Built In Austin](https://builtin.com/job/business-development-intern/11318430) |
 
 **2026-09-16 sweep — two corrections (A112, A114 — imminent deadline pulled forward from Dec to
 Sep), seven new Tier A rows (A131–A137), no closures.** Full detail is in the header summary above;
