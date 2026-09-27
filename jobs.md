@@ -5,45 +5,60 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-26** (daily sweep — full network access confirmed: `workatastartup.com` 301,
+> Last swept: **2026-09-27** (daily sweep — full network access confirmed: `workatastartup.com` 301,
 > `wellfound.com` 200, `simplify.jobs` 200, `job-boards.greenhouse.io` 302, `www.builtinnyc.com` 200 —
-> no regressions. **Three corrections (A115/A117/A118 Workiva upgraded unverified → live, two with
-> pay newly confirmed), one new Tier A row (A154, Compass Lexecon Madrid, blocked).**
+> no regressions. **No corrections — full re-verification of all 36 `live` Tier A rows found every
+> previously-logged caveat still accurate, nothing drifted. One new Tier A row (A155, Clearwater
+> Analytics NYC Data Management & Reporting Intern, unverified).**
 >
-> **Correction: A115/A117/A118 (Workiva) unverified → live.** Re-verified directly on Workiva's own
-> Workday (`workiva.wd503.myworkdayjobs.com/careers`, not the 403'ing workiva.com/careers or the
-> Intern Insider aggregator previously relied on) — all three confirmed still open, closing Sept 27
-> 2026 as flagged, Jan 4 2027 start unchanged. Pay newly confirmed for A115 ($22/hr) and A118 ($21/hr,
-> which also turned out to be two separate live reqs sharing one title, R12268/R12269). Workiva's own
-> site labels this intake "Spring 2027" (A117: "Spring & Summer 2027"), not "Winter 2027" as tracked —
-> a label correction only, the Jan 4 start date itself is unchanged.
+> **Re-verification (36 live rows checked):** the 7 `workatastartup.com`-hosted rows (A5, A9, A13,
+> A65, A75, A82, A83) remain unreadable via WebFetch — pure client-rendered JS shells, page resolves
+> (not 404) but no body content — same standing limitation as every prior sweep, no status change.
+> Everything else opened cleanly with real content and matched the tracker exactly: A92 (TraceRoot.AI)
+> confirmed unchanged (SF hybrid ≥3 days onsite, $4–6K/mo, visa sponsorship offered — all already
+> logged); A88 (FairwAI) confirmed unpaid/remote as tracked; A22 (CertiK) confirmed 5 hrs/wk + $1K/mo
+> as tracked; A70/A128–A133 (Base Power, 6 reqs) all confirmed live and in-person Austin, postings
+> 5–12 days old; A96 (Crowe Global) confirmed Winter 2027 title, $27–42/hr, in-office Austin; A98
+> (Cresta) confirmed remote US, no dates; A120 (MTA) confirmed onsite NYC, $19–21/hr; A121 (Ankura)
+> confirmed $34/hr, grad window (Dec 2027–Jun 2028) matches Class of 2028, no new deadline data; A130
+> (Kodiak) confirmed Mountain View CA (Bay Area, in scope), $10K flat stipend, Jan start / 12–16wk
+> flexible end; A145 (E3) confirmed San Francisco in-person, grad-year eligibility caveat unchanged;
+> A151 (Kroll) confirmed $20–35/hr, grad window matches; A153 (Contoro) confirmed in-office Austin,
+> posted 5 days ago. **No drift found anywhere — this tracker's caveats from prior sweeps were already
+> accurate**, so no corrections were needed this run.
 >
-> **New: A154, Compass Lexecon (FTI Consulting) — Intern, Competition Practice, Madrid.** Found on the
-> firm's own Workday ATS via the every-run economic-consulting search — genuine hit at PROFILE.md's
-> #1-named firm, in a target market (Madrid). Kept `blocked*` rather than `live`: gated on the same
-> unresolved Spain convenio de prácticas question as the Barcelona/Madrid Tier C rows (UT Austin has
-> not yet been asked to sign), and the posting's own language ("3–6 months, during/in-between/shortly
-> after the degree," hires "in their final year") leaves an actual Jan–Mar 2027 start unconfirmed.
-> Full detail in the sweep-note paragraph under the Tier A table.
+> **New: A155, Clearwater Analytics (CWAN) — Data Management & Reporting Intern, New York.** A second,
+> distinct CWAN NYC intern req (companion to A148's PM Intern, same office/company) — SQL/Python/
+> Tableau/Power BI reporting work on CWAN's platform, and unlike A148 explicitly names **Economics**
+> as a qualifying major for a sophomore/junior. Kept `unverified` (not `live`) for the same reason as
+> A148: the posting's own schema.org metadata carries no season/term field at all, so a Jan–Mar 2027
+> fit is unconfirmed. Listed pay is broken placeholder data ($0–$10,000,000/yr), not real.
 >
-> **Re-verified the imminent-deadline rows via primary sources:** A112/A114 (TikTok) unchanged, still
-> closing **30 Sep 2026, 1:59pm** — 4 days out. The Acxiom Winter 2027 cluster (A134/A135/A136/A137,
-> A140, A142 — 8 distinct reqs) all reconfirmed open/live directly on Acxiom's own Workday tenant
-> (`acxiomllc.wd5.myworkdayjobs.com/AcxiomUSA` — the correct tenant; a prior note's domain guess was
-> wrong), Jan 11 2027 start unchanged across the board. Aggregator-stated deadlines (30 Sep / 2 Oct /
-> 8 Oct) remain uncorroborated on Acxiom's own ATS, same standing caveat as every prior sweep.
+> **Considered and correctly left out:** Compass Lexecon's sibling US req ("2027 Analyst Interns – US,"
+> JR261385, Chicago/NYC/Boston/LA/DC, $50/hr) — explicitly Summer 2027 (June–Aug), confirmed still out
+> of window; this was already identified and deliberately excluded in the 2026-09-26 sweep (see A154's
+> note), re-confirmed rather than re-added. Envoy's SF "Solutions Engineering Intern" (found via the
+> SimplifyJobs off-season README) was checked and left out: no dates/pay/eligibility stated anywhere,
+> and the actual substance is AI/LLM-agent tooling work, not the customer-facing pre-sales lane
+> PROFILE.md targets — too thin and too poor a fit to clear the quality bar.
 >
-> **Fresh sweep of the remaining every-run sources found nothing else clearing the bar:**
-> `workatastartup.com` and `wellfound.com/jobs` still pure client-rendered shells / full-time-only
-> respectively (YC Winter 2027 batch not expected until ~November 2026); Analysis Group, Cornerstone
-> Research, CRA, Brattle, and NERA's own careers pages showed no internship-specific req this run
-> (CRA's jobs subdomain failed to resolve — inconclusive, not confirmed-empty, worth another look);
-> Palantir's Lever board still shows only full-time Deployment Strategist reqs (Tel Aviv, Copenhagen,
-> London, NYC-Government), no internship version.
+> **Fresh sweep of every-run sources, nothing else clearing the bar:** `workatastartup.com` still a
+> pure client-rendered shell with zero visible postings (YC Winter 2027 batch not expected until
+> ~November 2026); `wellfound.com/jobs` general listing is full-time-only this run; Analysis Group,
+> Cornerstone Research, and NERA's own careers pages show nothing intern-relevant (NERA's search-hit
+> postings are now 410 Gone); CRA's Greenhouse board has only EU (Brussels/Düsseldorf/Munich) intern
+> reqs, no US; Brattle's live-openings page is bot-gated (403/empty shell both direct and via WebFetch)
+> — genuinely inconclusive, not confirmed-empty, worth another fetch method next sweep. Peer firms
+> Bates White and BRG both confirmed summer-only programs; Edgeworth has no intern-level roles at all.
+> Coral Capital, TokyoDev, and japan-dev.com re-checked — no Tokyo internships in scope (existing
+> full-time-only / residency-required patterns unchanged). Australia's GradConnection Sydney page
+> checked directly: EY and Treasury vacationer programs are citizen/PR-only (hard-blocked for a 462
+> visa); KPMG's rolling-intake vacationer program runs only 3–8 weeks from ~November, too short and
+> too early for the Jan 4 window.
 >
-> Prior: **2026-09-25** (daily sweep — 2 corrections, A10 Naive closed and A144 Rundoo downgraded to
-> conflict, from a full re-verification of all 34 `live` Tier A rows; no new rows. See the archived
-> entry below the Tier A table for detail.)
+> Prior: **2026-09-26** (daily sweep — 3 corrections, A115/A117/A118 Workiva unverified → live; 1 new
+> Tier A row, A154 Compass Lexecon Madrid, blocked. See the archived entry below the Tier A table for
+> detail.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -249,6 +264,7 @@ recomputed once the resume is uploaded.
 | A152 | GE Aerospace | SaaS – Flight Analytics Platform, Data Science Co-op (Spring 2027) | Data | Austin, TX | In-person | Public (Fortune 500 aerospace) | Spring 2027 (tagged); full-time co-op, no exact term dates stated ⚠ | Confirm ≤ Mar 12 | $24/hr+ (rises per undergrad year) | 3 | ~4 | Med | unverified | [GE Workday, req R5040450](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Austin/SaaS---Flight-Analytics-Platform---Data-Science-Co-op---Spring-2027_R5040450-2) |
 | A153 | Contoro Robotics | Business Development Intern | BD | Austin, TX | In-person | Early-stage (robotics) | Rolling, no stated term | Rolling | Unconfirmed | 2 | ~4 | Med | live | [Built In Austin](https://builtin.com/job/business-development-intern/11318430) |
 | A154 | Compass Lexecon (FTI Consulting) | Intern, Competition Practice | Strategy | Madrid, Spain | Hybrid | Established (economic consulting) | No fixed start stated; firm describes 3–6 month internships "during, in-between, or shortly after" the economics degree ⚠ | Rolling review; apps close 26 Feb 2027 | Unconfirmed ("competitive salary and benefits") | 3 | ~4 | Low | blocked* | [Compass Lexecon Workday, req JR261344](https://fticonsulting.wd108.myworkdayjobs.com/CompassLexeconCareers/job/Madrid-Spain/Intern---Competition-Practice---Madrid_JR261344) |
+| A155 | Clearwater Analytics (CWAN) | Data Management & Reporting Intern | Data | New York, NY (1 Rockefeller Plaza) | Hybrid | Public (NYSE: CWAN) | Unconfirmed (no season/term field on posting; datePosted 2026-09-23, validThrough 2026-10-23 is an application window, not a term) | Unconfirmed | Unconfirmed (listing shows a $0–$10,000,000/yr placeholder — clearly bad data, not real) | 3 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/data-management-reporting-intern/11340560) |
 
 **2026-09-26 sweep — three corrections (A115/A117/A118 Workiva upgraded unverified → live), one new
 Tier A row (A154 Compass Lexecon Madrid, blocked).** Re-verified the imminent-deadline rows via
