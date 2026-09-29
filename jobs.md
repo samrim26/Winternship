@@ -5,11 +5,38 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-28** (daily sweep — full network access confirmed: `workatastartup.com` 301,
-> `wellfound.com` 200, `simplify.jobs` 200, `job-boards.greenhouse.io` 302, `www.builtinnyc.com` 200 —
-> no regressions. **One correction (A115/A117/A118 Workiva live → closed — all three reqs closed on
-> schedule at their Sept 27 deadline). One new Tier A row (A156, Workiva Spring 2027 Intern – Data
-> Analytics, live — deadline Sept 30 2026, two days out).**
+> Last swept: **2026-09-29** (daily sweep — urgent re-verification of the two rows with Sept 30
+> deadlines: **A156 (Workiva Data Analytics, req R12319) re-confirmed live** by querying Workiva's own
+> Workday CXS API directly — `canApply:true`, `endDate:2026-09-30`, and the API's own countdown read
+> "15 hours left to apply" at time of check. **This is the last day — apply today if pursuing.** The
+> job description also reveals the role is internally titled "Data Product Management Intern" (10–12
+> weeks, Data & Analytics org, Snowflake/dbt/Atlan/Jira/BI exposure) despite the posting title reading
+> "Data Analytics" — still a solid Data-function fit, just more PM-flavored than the title suggests.
+> **A112/A114 (TikTok Sydney) re-confirmed live** on GradConnection — both still read "Closing Date:
+> 30th Sep 2026, 1:59 pm" exactly as tracked, no drift. **Also the last day.** No status changes needed
+> for any of the three since all remain open as of this sweep; flagged loudly in the report instead.
+> No corrections and no new Tier A rows this sweep — see the full source-by-source rundown below.
+>
+> **Full sweep of new-role sources, nothing cleared the bar:** `workatastartup.com` and
+> `wellfound.com/jobs` still render as engineering/full-time-only (YC W27 batch not expected until
+> ~November 2026). Economic consulting firms' own pages (Analysis Group, Cornerstone, CRAI, Brattle,
+> Compass Lexecon, NERA) all still link out to generic ATS portals with no internship postings visible
+> — CRA's own jobs page now lists ten "2027 graduates" Analyst/Associate reqs (incl. Economics
+> Consulting, NY/Boston/Chicago/Oakland/DC) but these require a completed degree, not an internship
+> for an enrolled junior, so out of scope. Palantir's Lever board (Deployment Strategist + Internship
+> filter combo) returned zero this run — filter-UI quirk, not a tracked-row change, since Palantir has
+> never had an in-target-metro internship req to track. Flexport Greenhouse: 0 intern jobs. Uber/
+> DoorDash boards inaccessible this run (blank/403) — not treated as a finding either way.
+> SimplifyJobs' off-season README, both Intern Insider term-browse pages (winter-2027, spring-2027),
+> and simplify.jobs' own Winter/Spring list were all fetched directly — surfaced nothing in target
+> functions/locations beyond roles already tracked (Clearwater PM is London, not target metro; E3 SF
+> consulting internship is already A145). BuiltIn NYC/Austin/SF `/jobs/internships` pages re-checked —
+> newest postings are Citadel/JPMorgan/CrowdStrike/Atlassian/PwC, all either wrong function (social
+> media, sales-program-coordination) or explicitly Summer 2027 cycle, out of window. GradConnection
+> Sydney's business-and-commerce feed surfaced EY/KPMG/SG Fleet 2026/27 vacationer programs — already
+> investigated and excluded (citizen/PR-only, hard-blocked for the 462 visa route) per the standing
+> note in this log. Coral Capital's portfolio page 404'd; Japan Dev and TokyoDev re-checked — still
+> engineering/senior-only, no business-function internships at Tokyo companies.
 >
 > **A115/A117/A118 (Workiva) — closed.** Queried Workiva's own Workday CXS search API directly by req
 > number (R12317, R12355, R12268/R12269): all now return zero results, and none of the three titles
@@ -45,6 +72,9 @@
 > Intern Austin, Atlassian SF) but all are fixed Summer 2027 programs, out of window. GradConnection
 > Sydney, Coral Capital, Japan Dev, and TokyoDev all re-checked — no new in-scope leads (Sydney board
 > is Big-4/accounting vacationer programs; Tokyo sources remain engineering-only or empty).
+>
+> Prior: **2026-09-28** (daily sweep — 1 correction, A115/A117/A118 Workiva live → closed on schedule;
+> 1 new Tier A row, A156 Workiva Spring 2027 Intern – Data Analytics, live. See below.)
 >
 > Prior: **2026-09-27** (daily sweep — no corrections, full re-verification of all 36 live Tier A rows
 > found no drift; 1 new Tier A row, A155 Clearwater Analytics NYC Data Mgmt & Reporting Intern,
