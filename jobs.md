@@ -5,7 +5,73 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-09-30** (daily sweep — **3 corrections, all closures.** Yesterday's sweep flagged
+> Last swept: **2026-10-01** (daily sweep — **5 corrections, 2 new Tier A rows.**
+> Corrections: **A5 (Dalus)** — Mode resolved from "Remote" to "In-person (SF/Munich/Melbourne) or
+> Remote, candidate's choice" — the posting does offer an actual SF in-person seat, closing an open
+> question flagged in a prior sweep. **A75 (Surface Labs)** — Mode flipped again, continuing this
+> role's established pattern of oscillating between SF-only and SF/India-remote on repeat fetches:
+> now reads "Remote (SF preferred; India also accepted)," no on-site requirement found this time;
+> newly confirmed the commission-only pay applies only to the first 3 months, after which the role
+> converts to full-time with base salary + equity. **A88 (FairwAI)** — Austin is not actually among
+> the posting's listed hub cities (NYC/SF/Boston/Atlanta/Cincinnati/LA/Philadelphia/Pittsburgh +
+> Canada/Europe/UK/Scandinavia); removed from Location. Also newly confirmed unpaid, 10–20 hrs/week.
+> **A120 (MTA)** — the posting's own title now explicitly reads "...Intern, Emerging Talent (Spring)",
+> resolving the prior sweep's "Confirm ≤ Jan 2027" flag to a direct in-window match. **A145 (E3)** —
+> Mode corrected from "In-person" to "Hybrid (≥3 days/wk from the office)"; Location expanded from
+> SF-only to San Francisco / Boston / New York / Calgary (any of the four); Pay updated from
+> "Unconfirmed" to $30–45/hr (new info).
+>
+> Checked and NOT changed: **A136 (Acxiom Enterprise Solutions Consulting Intern)** — Intern
+> Insider's mirror again shows "New York, New York (On-site)," conflicting with Acxiom's own Workday
+> data (Remote/Homebased) that already resolved this exact conflict on 2026-09-20 in the Workday
+> data's favor; treated as the same stale/templated Intern Insider copy, not re-flipped without a
+> fresh direct Workday query. **A134/A135/A137/A140/A142 (Acxiom siblings)** — Intern Insider's
+> rolling "Apply by" countdown badge has advanced (now showing Sep 30 / Oct 2 / Oct 8) exactly as
+> expected for the non-authoritative, auto-generated badge already documented in this tracker (see
+> A134/A140 notes); not a real deadline, no action needed. **A82 (Soren) / A83 (Relling)** — location
+> (San Francisco) reconfirmed live, but this sweep's fetch did not surface explicit in-person/remote
+> language either way; the existing "In-person" classification is not independently reconfirmed this
+> round — flagged for a closer look next sweep, not changed on partial evidence. **A65 (Peakflo)** —
+> a secondary aggregator (not the primary YC posting) describes this as a fixed 3-month full-time
+> internship, which would contradict the tracked "Rolling" / part-time-friendly read; the primary
+> source itself states no fixed term, so left as-is with this flagged as worth a direct follow-up.
+> **A121 (Ankura)** — the Workday req (R104943) still would not render for automated fetch; a
+> same-titled posting found elsewhere carries a "Winter 2026" cohort label and could not be confirmed
+> as the same requisition — needs a manual, non-automated recheck, not downgraded on inconclusive
+> evidence.
+>
+> **2 new Tier A rows, both live, both verified at source (not search-snippet-only):**
+> **A157 (Scout)** — Growth & Operations Intern, San Francisco (remote by default, in-person SF
+> optional), $20/hr, rolling. Growth/ops/research-heavy, but one listed task is drafting and
+> publishing LinkedIn posts — a minor content-creation slice inside an otherwise analytical role;
+> flagged per PROFILE.md's substance test rather than excluded outright. **A158 (Utilyze)** —
+> Partnerships Intern, onsite-or-remote candidate's choice across Austin / Boston / New York /
+> San Antonio / San Francisco (Austin is Sam's home market), unpaid with potential equity/commission
+> and academic-credit support, rolling. Direct BD/partnerships work (AI model/inference providers,
+> academic labs, startups) — a clean function match, thinner signal than a paid/dated listing.
+>
+> Full re-sweep of standing sources, nothing else cleared the bar: economic consulting firms checked
+> directly — Charles River Associates' Greenhouse board (US side) still only full-time
+> "2027 Bachelor's/Master's graduates" reqs, no change; Analysis Group, Cornerstone Research, Brattle,
+> and NERA remain unreachable for individual postings via static fetch (JS-rendered/bot-gated career
+> pages, no working direct-listing URL found); Compass Lexecon's existing A154 lead not independently
+> re-touched this run. DoorDash's Greenhouse slug (`doordashusa`) is reachable now (was 404 last
+> sweep) — zero intern/strategy-ops postings found there, but noting the working slug for future
+> sweeps. Flexport Greenhouse (205 jobs) and Palantir Lever (Deployment Strategist Intern) both
+> re-verified with no new postings or metros. YC's `workatastartup.com` and `wellfound.com/jobs`
+> swept exhaustively (client-rendered shells, routed through WebSearch + direct fetch of each
+> candidate posting) beyond the two adds above — several other leads checked and rejected as dead
+> (HTTP 410), full-time, or already tracked. `simplify.jobs`, the SimplifyJobs off-season README,
+> `interninsider.me`, BuiltIn NYC/Austin/SF, GradConnection Sydney/Melbourne/Brisbane, and the Tokyo
+> boards (coralcap.co, japan-dev.com, tokyodev.com) were all swept directly; findings were
+> overwhelmingly Summer 2027 cycles, Australian "vacationer" programs explicitly excluding
+> working-holiday-visa holders (Sam's only AU path), or Tokyo full-time/engineering roles — nothing
+> fit the window and target functions. **No application deadlines inside three weeks.**
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-09-30** (daily sweep — **3 corrections, all closures.** Yesterday's sweep flagged
 > A112, A114 (TikTok Sydney) and A156 (Workiva Data Analytics, req R12319) as closing "today" (30 Sep
 > 2026) and re-confirmed all three still open at time of check. Re-verified again today, later in the
 > day: **all three have now closed.**
@@ -49,10 +115,6 @@
 >
 > Prior: **2026-09-28** (daily sweep — 1 correction, A115/A117/A118 Workiva live → closed on schedule;
 > 1 new Tier A row, A156 Workiva Spring 2027 Intern – Data Analytics, live. See below.)
->
-> Prior: **2026-09-27** (daily sweep — no corrections, full re-verification of all 36 live Tier A rows
-> found no drift; 1 new Tier A row, A155 Clearwater Analytics NYC Data Mgmt & Reporting Intern,
-> unverified. See the archived entry below the Tier A table for detail.)
 
 ## 🔴 Scope: Jan 4 – Mar 12, 2027 only
 
@@ -144,7 +206,7 @@ recomputed once the resume is uploaded.
 | A2 | Magnet Media | Social Media Intern (Spring 2027) | Growth/Marketing | New York, NY | In-person | Small | Spring 2027 | Rolling | Verify | 2 | ~2 | Low | closed | [Magnet Media careers](https://magnetmediafilms.com/careers?gh_jid=8036360) |
 | A3 | Glovo | Marketing/Finance & Controlling Internship Program | Growth/Data | Barcelona | In-person | Unicorn | 6-mo min ⚠ | Rolling | Paid | 3 | ~4 | Low | conflict | [Glovo careers](https://jobs.glovoapp.com/) |
 | A4 | Zipline | Community Engagement Intern (Spring 2027) | Growth/Community | Austin, TX | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $30/hr | 3 | ~4 | Low | closed | [Techstars board](https://jobs.techstars.com/companies/zipline/jobs/63567774-community-engagement-intern-summer-2026) |
-| A5 | Dalus (YC W25) | GTM Intern | GTM | SF / Melbourne, AU / Munich / Remote | Remote | YC W25 | Rolling, part-time | Rolling | $18–25/hr | 2 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/99648) |
+| A5 | Dalus (YC W25) | GTM Intern | GTM | SF / Melbourne, AU / Munich / Remote | In-person (SF/Munich/Melbourne) or Remote | YC W25 | Rolling, part-time | Rolling | $18–25/hr | 2 | ~4 | **High** | live | [Work at a Startup](https://www.workatastartup.com/jobs/99648) |
 | A6 | Uplane (YC F25) | Business Development Intern | BD | San Francisco (or Berlin/Remote) | In-person | YC F25 | Rolling, 3-mo min ⚠ | Rolling | $4K/mo | 2 | ~5 | Med | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/97366) |
 | A7 | Uplane (YC F25) | AI Marketing Strategist Intern | Growth | San Francisco | In-person | YC F25 | Rolling, 4-mo min ⚠ | Rolling | $4K/mo | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/93708) |
 | A8 | GutGutGoose (YC S26) | Growth Intern (founding team) | Growth | San Francisco | In-person | YC S26 | "Beginning whenever you can" | Rolling | $19–25/hr | 1 | ~4 | Low | closed | [Work at a Startup](https://www.workatastartup.com/jobs/102677) |
@@ -181,7 +243,7 @@ recomputed once the resume is uploaded.
 | A72 | Jean Martin Inc | Market Research and Business Development Intern | BD/Data | New York, NY | In-person | Unconfirmed | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/market-research-and-business-development-intern/10732902) |
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
-| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA / Remote (US) | In-person or Remote | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only, no base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
+| A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA / India | Remote (SF preferred; India also accepted) | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only for first 3mo, then FT + base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
 | A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
@@ -194,7 +256,7 @@ recomputed once the resume is uploaded.
 | A85 | Dedalus Labs | Product Manager Intern (posted as Summer 2027) | PM | San Francisco, CA | In-person | Early-stage AI infra | Summer 2027 ⚠ | Unconfirmed | $4–8K/mo | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/98000) |
 | A86 | Sixtyfour | Growth Intern (posted as Fall 2026) | Growth | San Francisco, CA | In-person | Startup (compliance-data AI) | Fall 2026 ⚠ | Unconfirmed | $30–50/hr | 2 | ~3 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/105487) |
 | A87 | GutGutGoose | Growth (founding team) — new posting | Growth | San Francisco, CA | In-person | YC S26 | Trial + FT decision Sept 20 2026 ⚠ | Unconfirmed | $19–22/hr trial → $120K+ FT | 1 | ~3 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/105105) |
-| A88 | FairwAI | Project Management Fellow | PM/Partnerships | Remote (NYC/SF/Austin listed) | **Remote** | Early | 3–6 mo, flexible start | Rolling | Unpaid | 2 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3251810-project-management-fellow) |
+| A88 | FairwAI | Project Management Fellow | PM/Partnerships | Remote (NYC/SF/Boston + other hubs; no Austin) | **Remote** | Early | 3–6 mo, flexible start | Rolling | Unpaid (10–20 hrs/wk) | 2 | ~3 | Low | live | [Wellfound](https://wellfound.com/jobs/3251810-project-management-fellow) |
 | A89 | Peggy | Growth & PR Intern (Part-Time) | Growth (ambiguous — PR/comms) | Remote (ET preferred) | **Remote** | Early | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589467-growth-pr-intern-part-time-help-launch-an-ai-app-for-parents) |
 | A127 | The Boring Company | Operations Internships (Part-Time) — Business/Project Development track (Winter/Spring 2027) | BD/Strategy & Ops | Bastrop, TX (also Las Vegas, NV) | In-person | Private (Musk-founded infra) | Winter/Spring 2027 (tagged) | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~3 | Med | unverified | [Boring Company careers → application](https://jobs.gem.com/the-boring-company/am9icG9zdDqxHfxcQ--wXDcxkn-GcrPC) |
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
@@ -224,7 +286,7 @@ recomputed once the resume is uploaded.
 | A117 | Workiva | Product Management Intern (Workiva's own site: "Spring & Summer 2027 Intern - Product Management") | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring option starts **Jan 4, 2027**, 15–20 hrs/wk (a Summer option starting May 17 2027 also exists on the same req, not relevant here) | **Closed Sept 27 2026 (confirmed — req returns 0 results)** | $40/hr (confirmed, req R12355) | 2 | ~2 | Low | closed | [Workiva Workday, req R12355](https://workiva.wd503.myworkdayjobs.com/careers) |
 | A118 | Workiva | Intern – Partnerships (Workiva's own site labels this intake "Spring 2027") | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: term starts **Jan 4, 2027**, 15–20 hrs/wk. Two separate live reqs share this exact title (R12268, R12269) | **Closed Sept 27 2026 (confirmed — reqs return 0 results)** | $21.00/hr (confirmed directly) | 2 | ~2 | Low | closed | [Workiva Workday, reqs R12268/R12269](https://workiva.wd503.myworkdayjobs.com/careers) |
 | A119 | Zipline | Commercial Strategy & Operations Intern (Winter 2027 term) | Strategy | Austin, TX (+ Houston/Phoenix/San Antonio/Dallas/LA) | In-person | Series C | "Winter 2027" term offered (sibling reqs A105/A107 confirm Zipline's Winter 2027 label = Jan–Apr) ⚠ | Rolling | Paid (amount unconfirmed) | 2 | ~4 | Med | conflict | [Intern Insider](https://interninsider.me/internships/zipline/commercial-strategy-operations-intern-d75db0e8-2047-4484-b916-c7909405d22d) |
-| A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent | Data | New York, NY (Manhattan) | In-person | Public agency | Confirm ≤ Jan 2027 (tagged "Spring 2027" by aggregator; primary posting states no exact dates) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
+| A120 | Metropolitan Transportation Authority (MTA) | EAM Analyst Intern, Emerging Talent (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | **Spring (title confirms)** | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oZuEAfwr) |
 | A121 | Ankura | University Intern, Forensic Data & Analytics | Data/Strategy (forensic/litigation consulting) | New York, NY | In-person | Established (global advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $34/hr | 3 | ~4 | Med | live | [Ankura Workday, req R104943](https://ankura.wd5.myworkdayjobs.com/Ankura/job/New-York-NY/University-Intern--Forensic-Data---Analytics_R104943) |
 | A122 | Tesla | Data Engineer Intern, Fleet Analytics | Data | Palo Alto, CA | Unconfirmed | Public | Winter/Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~3 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283138) |
 | A123 | Zipline | Data Analytics Intern (Spring 2027) | Data | South San Francisco, CA | In-person | Series C | Jan 2027 (inferred); Spring 2027 tag | Apr 2027 ⚠ (inferred from sibling reqs) | Unconfirmed | 3 | ~4 | Low | conflict | [Zipline careers](https://www.zipline.com/open-roles/7990420003) |
@@ -248,7 +310,7 @@ recomputed once the resume is uploaded.
 | A142 | Acxiom | Intern - Product Strategy & Innovation | Strategy | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-strategy-innovation-637d488b-b4f8-4e61-a1fa-e06ce51470d0) |
 | A143 | CBIZ | Business Operations Intern (Spring 2027) | Strategy | New York, NY | Hybrid (≥3 days/wk onsite) | Enterprise (accounting/advisory) | Spring 2027 (tagged) | Unconfirmed | $45–55K/yr (aggregator estimate, not employer-stated) | 3 | ~3 | Low/Med | unverified | [CBIZ Careers](https://ebez.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/6474) |
 | A144 | Rundoo | Product Manager Intern | PM | Redwood City, CA | In-person | Series-funded ($48M raised; Battery/Bessemer/CRV) | **Summer 2027 term (confirmed) ⚠** | Rolling | $2,461/wk (~$122K/yr annualized) | 2 | ~5 | Low | conflict | [Ashby](https://jobs.ashbyhq.com/rundoo/b7d71a5a-4a88-4e97-a6db-e0446eefb389) |
-| A145 | Energy and Environmental Economics (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA | In-person | Boutique (energy economics consulting) | Flexible, 8–12 wk min ⚠ (grad-year eligibility unclear) | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
+| A145 | Energy and Environmental Economics (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA / Boston, MA / New York, NY / Calgary, AB | Hybrid (≥3 days/wk office) | Boutique (energy economics consulting) | Flexible, 8–12 wk min ⚠ (grad-year eligibility unclear) | Confirm ≤ Mar 12 | $30–45/hr | 3 | ~3 | Med | live | [Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
 | A146 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | In-person (3 days/wk) | Public (crypto/Web3 exchange) | **"January to April 2027" (explicit, semester-long) ⚠** | Unconfirmed | Unconfirmed | 3 | 4 | Low | conflict | [Greenhouse](https://boards.greenhouse.io/embed/job_app?for=gemini&token=8214332&gh_jid=8214332) |
 | A147 | Tesla | Service Program & Project Management Intern | PM | Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | 3 | Med | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283443) |
 | A148 | Clearwater Analytics (CWAN) | Product Management Intern (Technical Product Manager) | PM | New York, NY | Unconfirmed | Public (NYSE: CWAN) | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | Unconfirmed | 3 | 3 | Low/Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/11265249) |
@@ -260,6 +322,34 @@ recomputed once the resume is uploaded.
 | A154 | Compass Lexecon (FTI Consulting) | Intern, Competition Practice | Strategy | Madrid, Spain | Hybrid | Established (economic consulting) | No fixed start stated; firm describes 3–6 month internships "during, in-between, or shortly after" the economics degree ⚠ | Rolling review; apps close 26 Feb 2027 | Unconfirmed ("competitive salary and benefits") | 3 | ~4 | Low | blocked* | [Compass Lexecon Workday, req JR261344](https://fticonsulting.wd108.myworkdayjobs.com/CompassLexeconCareers/job/Madrid-Spain/Intern---Competition-Practice---Madrid_JR261344) |
 | A155 | Clearwater Analytics (CWAN) | Data Management & Reporting Intern | Data | New York, NY (1 Rockefeller Plaza) | Hybrid | Public (NYSE: CWAN) | Unconfirmed (no season/term field on posting; datePosted 2026-09-23, validThrough 2026-10-23 is an application window, not a term) | Unconfirmed | Unconfirmed (listing shows a $0–$10,000,000/yr placeholder — clearly bad data, not real) | 3 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/data-management-reporting-intern/11340560) |
 | A156 | Workiva | Spring 2027 Intern – Data Analytics | Data | Remote (US); hybrid option near NYC/SF/Austin office hub | Remote | Public (NASDAQ: WK) | Same Spring 2027 cycle pattern as closed sibling reqs A115/A117/A118 (Jan 4, 2027 start, 15–20 hrs/wk) — inferred, not independently confirmed on this specific req's own page ⚠ | **Closed 30 Sep 2026 (confirmed — req returns 0 results)** | $22.00/hr (confirmed, req R12319) | 2 | ~3 | Med | closed | [Workiva Workday, req R12319](https://workiva.wd503.myworkdayjobs.com/careers/job/USA---Remote/Spring-2027-Intern---Data-Analytics_R12319) |
+| A157 | Scout (YC) | Growth & Operations Intern | Growth | San Francisco, CA | Remote (in-person SF optional) | YC-backed | Rolling | Rolling | $20/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/68076) |
+| A158 | Utilyze | Partnerships Intern | Partnerships | Austin, TX / Boston, MA / New York, NY / San Antonio, TX / San Francisco, CA | In-person or Remote (candidate's choice) | Early-stage | Rolling | Rolling | Unpaid (equity/commission possible; academic credit supported) | 1 | ~4 | Med | live | [Wellfound](https://wellfound.com/jobs/4658879-investment-marketing-intern-clone) |
+
+**2026-10-01 sweep — 5 corrections, 2 new Tier A rows (A157, A158), no closures.** New: **A157,
+Scout** — a YC-backed CPG-focused startup's Growth & Operations Intern, San Francisco, $20/hr,
+remote by default with an in-person SF seat available, verified directly on the YC mirror page
+(workatastartup.com itself is still a client-rendered shell for automated fetch, same standing
+limitation as A5/A9/A13/A65/A75/A82/A83). One listed task — drafting/publishing LinkedIn posts —
+is a content-creation sliver inside an otherwise ops/data-research role; kept rather than excluded
+per PROFILE.md's substance test, but flagged. **A158, Utilyze** — Partnerships Intern, unpaid,
+in-person-or-remote candidate's choice across five cities including Austin (home market); found on
+Wellfound under a mislabeled "Investment Marketing Intern" URL slug left over from a cloned listing,
+but the live page content is the Partnerships Intern role — direct BD/partnerships work matching a
+named-priority function. Corrections: A5 (Dalus) mode resolved to confirm an actual SF in-person
+seat exists; A75 (Surface Labs) mode flipped again in its ongoing oscillation, now SF-preferred/
+India-remote with a newly-confirmed 3-month commission-only → full-time conversion; A88 (FairwAI)
+dropped Austin from its hub-city list (never actually listed) and added the unpaid/10–20 hrs-wk
+detail; A120 (MTA) resolved its "Confirm ≤ Jan 2027" flag — the posting's own title now reads
+"...(Spring)"; A145 (E3) corrected from in-person/SF-only to hybrid (≥3 days/wk office) across four
+cities (SF/Boston/NYC/Calgary), plus a newly-found $30–45/hr pay figure. Checked without changing:
+A136's Intern Insider mirror re-asserted the NYC-on-site claim this tracker already resolved in
+Workday's favor on 2026-09-20 (left as Remote/Homebased); A134/A135/A137/A140/A142's Intern Insider
+"Apply by" badges advanced to Sep 30/Oct 2/Oct 8 exactly as the already-documented non-authoritative
+countdown pattern predicts (not real deadlines); A82/A83's in-person classification could not be
+independently re-confirmed this round (location only) — worth a closer look, not downgraded on
+partial evidence; A65's "rolling" read stands against the primary YC source despite a secondary
+aggregator describing a fixed 3-month term; A121's Workday req still wouldn't render for fetch, and
+an external same-titled posting carries a different, unconfirmed cohort label.
 
 **2026-09-27 sweep — no corrections, full re-verification of all 36 `live` Tier A rows found every
 previously-logged caveat still accurate, nothing drifted.** The 7 `workatastartup.com`-hosted rows
