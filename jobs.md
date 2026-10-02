@@ -5,71 +5,42 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-01** (daily sweep — **5 corrections, 2 new Tier A rows.**
-> Corrections: **A5 (Dalus)** — Mode resolved from "Remote" to "In-person (SF/Munich/Melbourne) or
-> Remote, candidate's choice" — the posting does offer an actual SF in-person seat, closing an open
-> question flagged in a prior sweep. **A75 (Surface Labs)** — Mode flipped again, continuing this
-> role's established pattern of oscillating between SF-only and SF/India-remote on repeat fetches:
-> now reads "Remote (SF preferred; India also accepted)," no on-site requirement found this time;
-> newly confirmed the commission-only pay applies only to the first 3 months, after which the role
-> converts to full-time with base salary + equity. **A88 (FairwAI)** — Austin is not actually among
-> the posting's listed hub cities (NYC/SF/Boston/Atlanta/Cincinnati/LA/Philadelphia/Pittsburgh +
-> Canada/Europe/UK/Scandinavia); removed from Location. Also newly confirmed unpaid, 10–20 hrs/week.
-> **A120 (MTA)** — the posting's own title now explicitly reads "...Intern, Emerging Talent (Spring)",
-> resolving the prior sweep's "Confirm ≤ Jan 2027" flag to a direct in-window match. **A145 (E3)** —
-> Mode corrected from "In-person" to "Hybrid (≥3 days/wk from the office)"; Location expanded from
-> SF-only to San Francisco / Boston / New York / Calgary (any of the four); Pay updated from
-> "Unconfirmed" to $30–45/hr (new info).
+> Last swept: **2026-10-02** (daily sweep — **3 status corrections, no new rows, no closures.**
+> Corrections: **A93 (NewsBreak)** and **A95 (Parkdepot)** — both re-opened and confirmed directly
+> (not just a search snippet) via Intern Insider: postings, deadlines (Oct 12 / Oct 17 2026), pay, and
+> requirements all still match the tracker exactly; upgraded `unverified` → `live` now that both are
+> independently confirmed. **A121 (Ankura)** — re-queried the Workday CXS API directly (req R104943)
+> for the second time running; still open (`canApply: true`), still no deadline field, same $34/hr and
+> Dec 2027–June 2028 graduation-window eligibility as previously recorded. No change, but resolves the
+> prior sweep's "flagged for a direct CXS-API recheck" note.
 >
-> Checked and NOT changed: **A136 (Acxiom Enterprise Solutions Consulting Intern)** — Intern
-> Insider's mirror again shows "New York, New York (On-site)," conflicting with Acxiom's own Workday
-> data (Remote/Homebased) that already resolved this exact conflict on 2026-09-20 in the Workday
-> data's favor; treated as the same stale/templated Intern Insider copy, not re-flipped without a
-> fresh direct Workday query. **A134/A135/A137/A140/A142 (Acxiom siblings)** — Intern Insider's
-> rolling "Apply by" countdown badge has advanced (now showing Sep 30 / Oct 2 / Oct 8) exactly as
-> expected for the non-authoritative, auto-generated badge already documented in this tracker (see
-> A134/A140 notes); not a real deadline, no action needed. **A82 (Soren) / A83 (Relling)** — location
-> (San Francisco) reconfirmed live, but this sweep's fetch did not surface explicit in-person/remote
-> language either way; the existing "In-person" classification is not independently reconfirmed this
-> round — flagged for a closer look next sweep, not changed on partial evidence. **A65 (Peakflo)** —
-> a secondary aggregator (not the primary YC posting) describes this as a fixed 3-month full-time
-> internship, which would contradict the tracked "Rolling" / part-time-friendly read; the primary
-> source itself states no fixed term, so left as-is with this flagged as worth a direct follow-up.
-> **A121 (Ankura)** — the Workday req (R104943) still would not render for automated fetch; a
-> same-titled posting found elsewhere carries a "Winter 2026" cohort label and could not be confirmed
-> as the same requisition — needs a manual, non-automated recheck, not downgraded on inconclusive
-> evidence.
+> Also checked and ruled out: a general-purpose research pass flagged **A112/A114 (TikTok Sydney)** as
+> possibly reopened, based on a gradconnection search snippet reading "Accepts International." Opened
+> both postings directly — both still show "Closed · Closed 2 days ago," closing date 30 Sep 2026 1:59pm
+> unchanged; the snippet was stale search-index data, not a reopening. Not re-flipped. Also surfaced an
+> **EY 2026/27 Vacationer Program (Economics)**, Sydney/Brisbane/Canberra/Melbourne/Perth, hybrid,
+> closing 16 Oct 2026 — opened the posting directly and it requires **Australian/NZ citizenship or PR**,
+> which a US citizen on a subclass 462 visa does not hold; excluded on work-authorization grounds, not
+> added.
 >
-> **2 new Tier A rows, both live, both verified at source (not search-snippet-only):**
-> **A157 (Scout)** — Growth & Operations Intern, San Francisco (remote by default, in-person SF
-> optional), $20/hr, rolling. Growth/ops/research-heavy, but one listed task is drafting and
-> publishing LinkedIn posts — a minor content-creation slice inside an otherwise analytical role;
-> flagged per PROFILE.md's substance test rather than excluded outright. **A158 (Utilyze)** —
-> Partnerships Intern, onsite-or-remote candidate's choice across Austin / Boston / New York /
-> San Antonio / San Francisco (Austin is Sam's home market), unpaid with potential equity/commission
-> and academic-credit support, rolling. Direct BD/partnerships work (AI model/inference providers,
-> academic labs, startups) — a clean function match, thinner signal than a paid/dated listing.
->
-> Full re-sweep of standing sources, nothing else cleared the bar: economic consulting firms checked
-> directly — Charles River Associates' Greenhouse board (US side) still only full-time
-> "2027 Bachelor's/Master's graduates" reqs, no change; Analysis Group, Cornerstone Research, Brattle,
-> and NERA remain unreachable for individual postings via static fetch (JS-rendered/bot-gated career
-> pages, no working direct-listing URL found); Compass Lexecon's existing A154 lead not independently
-> re-touched this run. DoorDash's Greenhouse slug (`doordashusa`) is reachable now (was 404 last
-> sweep) — zero intern/strategy-ops postings found there, but noting the working slug for future
-> sweeps. Flexport Greenhouse (205 jobs) and Palantir Lever (Deployment Strategist Intern) both
-> re-verified with no new postings or metros. YC's `workatastartup.com` and `wellfound.com/jobs`
-> swept exhaustively (client-rendered shells, routed through WebSearch + direct fetch of each
-> candidate posting) beyond the two adds above — several other leads checked and rejected as dead
-> (HTTP 410), full-time, or already tracked. `simplify.jobs`, the SimplifyJobs off-season README,
-> `interninsider.me`, BuiltIn NYC/Austin/SF, GradConnection Sydney/Melbourne/Brisbane, and the Tokyo
-> boards (coralcap.co, japan-dev.com, tokyodev.com) were all swept directly; findings were
-> overwhelmingly Summer 2027 cycles, Australian "vacationer" programs explicitly excluding
-> working-holiday-visa holders (Sam's only AU path), or Tokyo full-time/engineering roles — nothing
-> fit the window and target functions. **No application deadlines inside three weeks.**
+> Full re-sweep of standing sources (workatastartup.com, wellfound.com, the five economic consulting
+> firms' own careers pages plus Charles River Associates' Greenhouse board, simplify.jobs, the
+> SimplifyJobs off-season README, interninsider.me winter/spring term pages, BuiltIn NYC/Austin/SF,
+> GradConnection Sydney, and the Tokyo boards) found nothing new that clears the bar: economic
+> consulting firms show only Summer Analyst/Associate programs for 2027 (CRA's Greenhouse board
+> confirmed it does sometimes run winter/spring off-cycle slots in other practices — e.g. a past
+> Winter/Spring 2026 Labor & Employment analyst intern in College Station TX/Tallahassee FL — worth
+> re-checking that board periodically for a 2027 equivalent, but nothing posted yet); YC/Wellfound/
+> BuiltIn/Simplify remain dominated by Summer 2027 and engineering postings; Tokyo boards (japan-dev,
+> tokyodev) have no non-technical roles open to non-resident/non-Japanese-fluent candidates. **No
+> application deadlines inside three weeks** (nearest are A93 Oct 12 and A95 Oct 17, both >3 weeks out).
 >
 > Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
 > simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-01** (daily sweep — 5 corrections [A5 Dalus, A75 Surface Labs, A88 FairwAI, A120
+> MTA, A145 E3], 2 new Tier A rows added, both live: **A157 Scout** (Growth & Operations Intern, SF,
+> $20/hr) and **A158 Utilyze** (Partnerships Intern, Austin/Boston/NYC/San Antonio/SF, unpaid).)
 >
 > Prior: **2026-09-30** (daily sweep — **3 corrections, all closures.** Yesterday's sweep flagged
 > A112, A114 (TikTok Sydney) and A156 (Workiva Data Analytics, req R12319) as closing "today" (30 Sep
@@ -262,9 +233,9 @@ recomputed once the resume is uploaded.
 | A90 | AxentraOS | Market Research Intern | Data/BD | Remote (US) | **Remote** | Early | 2–3 months | Unconfirmed | Unpaid | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/3647210-market-research-intern) |
 | A91 | Trellis AI | Business Operations Intern | BD/Ops (founder's-associate generalist) | San Francisco, CA | In-person | Early (AI healthcare) | Rolling | N/A | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/trellis-ai/business-operations-intern-3d9acb03-f6b8-41ae-bca8-829c31255e4c) |
 | A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
-| A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 4 | ~1 | Low | unverified | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
+| A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Oct 12 2026 | $40–60/hr | 4 | ~1 | Low | live | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
 | A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Closed Aug 26 2026 | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
-| A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
+| A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | live | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Removed Aug 31 2026 | Unconfirmed | 3 | ~3 | Low | closed | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
 | A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
