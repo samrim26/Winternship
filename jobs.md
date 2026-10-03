@@ -5,7 +5,50 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-02** (daily sweep — **3 status corrections, no new rows, no closures.**
+> Last swept: **2026-10-03** (daily sweep — **no corrections, no new rows, no closures.** Re-verified
+> all six rows with the nearest-term risk via direct fetch: **A93 (NewsBreak)** and **A95
+> (Parkdepot)** — both still open, deadlines unchanged (Oct 12 / Oct 17 2026 respectively; both now
+> sit inside the 3-week window from today and are the nearest deadlines in the tracker — **A95 is the
+> only one not already queued/applied**). **A96 (Crowe Global)**, **A151 (Kroll)**, **A153 (Contoro
+> Robotics)**, **A98 (Cresta)** — all confirmed still live, no field drift (location, mode, pay, dates
+> all match).
+>
+> Full re-sweep of every standing source found nothing new that clears the bar. **Economic
+> consulting** — Analysis Group and Cornerstone Research still summer-only/final-year-only; Charles
+> River Associates' Greenhouse board (queried directly, correct slug `charlesriverassociates`, 89 live
+> reqs) resolves the standing watch-item from the 2026-10-02 note: its **"Analyst Intern (Labor &
+> Employment practice) – Winter/Spring 2027"** req (College Station, TX / Tallahassee, FL,
+> Jan–May 2027, 20–25 hrs/wk) is real and timing-compatible, but explicitly requires candidates
+> **"graduating Summer/Fall 2027"** (i.e. a current senior, not a rising junior) and neither location
+> is a target metro — disqualified on eligibility, not added. Compass Lexecon's Workday board (28
+> live reqs) re-confirmed the already-tracked Madrid req (A154) unchanged, plus a new **"2027 Analyst
+> Interns – US"** req (JR261385, Chicago/NYC/Boston/LA/DC, $50/hr, eligible at Sam's class year) —
+> but it's explicitly Summer 2027 (June–Aug), out of window. Brattle (51 reqs) and NERA (board
+> currently empty; NERA's own page states summer/final-year-only by policy) unchanged. **Palantir's**
+> Lever board (319 reqs, queried directly) still shows only the Paris and Honolulu (US-gov,
+> clearance-required) Deployment Strategist Internship reqs — no NY/SF/Austin req. Uber, DoorDash,
+> and Flexport checked directly — no Strategy & Ops or general internship reqs in the target window
+> (DoorDash's board is Cloudflare-protected and could only be checked via search, lower confidence).
+>
+> `workatastartup.com` and `wellfound.com` swept via targeted WebSearch plus direct fetch of
+> individual postings (both sites' browse/search UIs remain client-rendered shells) — all leads found
+> were either already tracked or excluded on a hard criterion: FOX News Media and Disney NYC data
+> internships both confirmed via direct fetch to run into April/June, past the cutoff; Weekday (YC)
+> Account Manager Intern requires senior class standing; Wardstone (YC) is LA-based with a
+> military-background preference; Axo Longevity (Barcelona) is majority content/creative production,
+> landing on the excluded side of the social-media line. `simplify.jobs` and the SimplifyJobs
+> off-season README re-checked, no new non-engineering listings. **BuiltIn NYC/Austin/SF** — all
+> candidate roles are Summer 2027 cohorts (PwC, CrowdStrike, Atlassian, Capital One, etc.) or already
+> tracked (A149 MetLife). **GradConnection Sydney** — the two non-TikTok/EY/Treasury candidates found
+> (SW Australia, DT Infrastructure) both explicitly require Australian citizenship/PR/graduate-visa,
+> excluding a subclass 462 holder. **Tokyo** (coralcap.co, japan-dev.com, tokyodev.com) — confirmed
+> again these remain engineering-first; the one non-technical-adjacent English-friendly listing found
+> (japan-dev BD role) requires Japanese fluency and residency.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-02** (daily sweep — **3 status corrections, no new rows, no closures.**
 > Corrections: **A93 (NewsBreak)** and **A95 (Parkdepot)** — both re-opened and confirmed directly
 > (not just a search snippet) via Intern Insider: postings, deadlines (Oct 12 / Oct 17 2026), pay, and
 > requirements all still match the tracker exactly; upgraded `unverified` → `live` now that both are
