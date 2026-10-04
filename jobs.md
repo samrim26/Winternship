@@ -5,7 +5,54 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-03** (daily sweep — **no corrections, no new rows, no closures.** Re-verified
+> Last swept: **2026-10-04** (daily sweep — **2 corrections (both reopenings), no new rows, no
+> closures.** **A112 (TikTok, Client Solution Intern) and A114 (TikTok, AI Product Manager Intern)**
+> — both Sydney reqs, previously marked `closed` after lapsing 30 Sep 2026, were found reopened under
+> new GradConnection URLs (`-3`/`-4` suffix for A112, `-2` for A114), new closing date confirmed
+> directly: **30 Oct 2026, 1:59pm Sydney**. Both flipped `closed` → `live`, links updated to the new
+> reqs. One caveat: the new reqs' work-rights list is truncated on the page (shows "ACCEPTS
+> INTERNATIONAL: Yes" but the full visa list is behind a "...show more" that didn't resolve) — the
+> same employer/campaign named the Australian Working Visa (subclass 462) explicitly on the prior
+> (now-superseded) reqs, so this isn't flagged as a new risk, but worth a direct re-check next sweep.
+>
+> Re-verified the two nearest-term deadlines via direct fetch: **A93 (NewsBreak)** and **A95
+> (Parkdepot)** — both still open, deadlines unchanged (Oct 12 / Oct 17 2026), locations/pay/mode
+> match the tracker. No drift.
+>
+> Full re-sweep of every standing source found nothing new that clears the bar, run via two parallel
+> passes. **Pass 1 (YC/Wellfound/economic consulting/Simplify):** `workatastartup.com` and
+> `wellfound.com/jobs` remain client-rendered shells for direct fetch — targeted searches against both
+> surfaced only already-tracked or out-of-window hits. Economic consulting firms (Analysis Group,
+> Cornerstone, Charles River Associates' Greenhouse board, Compass Lexecon, Brattle, NERA) unchanged
+> from the 2026-10-03 findings; Brattle's careers page and NERA's students page were inconclusive
+> (bot-gated / 404) rather than confirmed-empty — worth another direct look. `simplify.jobs` and the
+> SimplifyJobs off-season README (parsed programmatically end-to-end, 251 PM + 1,971 Data Science/AI/ML
+> rows filtered to target cities) turned up nothing new: a Disney NYC "Marketplace & Portfolio
+> Insights Intern" confirmed Jan–Jun 2027 (same overrun pattern as A110's family, not added), an MTA
+> "EAM Value Realization" req that's near-certainly the same program as already-tracked A120 under a
+> reworded title (careers.mta.org 403'd, couldn't independently confirm as distinct — not added), and
+> a Wurl Data Science Intern that's Winter 2026 (wrong cycle) and PhD/MSc-only. Palantir's Lever board
+> returned zero Deployment Strategist Internship results this run (previously showed Paris/Honolulu) —
+> no target-metro req either way. Uber/DoorDash/Flexport: only Summer 2026 postings found; their
+> 2027–2028 cycle isn't posted yet in off-cycle form.
+>
+> **Pass 2 (BuiltIn/Intern Insider/GradConnection/Tokyo):** BuiltIn NYC/Austin/SF candidate roles are
+> all Summer 2027 cohort or wrong-function. Intern Insider's Winter-2027 and Spring-2027 term pages
+> fully enumerated — Figure's Supply Chain Analytics Intern (Jan–Apr 2027, rising-senior-only, double
+> exclusion) and Gemini's Prediction Markets Operations Intern (Jan–Apr 2027, same overrun as A146)
+> both checked and excluded; Dispatch's Mission Operations Intern is real but pure aerospace-ops
+> engineering, wrong function. GradConnection Sydney re-confirmed DT Infrastructure and SW Australia
+> both explicitly require AU citizenship/PR/graduate-visa (excluded) — no change. Tokyo boards
+> (japan-dev.com, tokyodev.com) remain engineering-first; the non-engineering hits found (Channel BD,
+> Treasure Data/AI Solutions Architect/PM roles, PayPay/Mercari/Kraken data analyst roles) are all
+> full-time, experienced-hire, and/or business-Japanese-required — not internship candidates.
+> coralcap.co's jobs-board path 404'd this run — a genuine access gap, not a confirmed-empty result,
+> worth retrying next sweep.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-03** (daily sweep — **no corrections, no new rows, no closures.** Re-verified
 > all six rows with the nearest-term risk via direct fetch: **A93 (NewsBreak)** and **A95
 > (Parkdepot)** — both still open, deadlines unchanged (Oct 12 / Oct 17 2026 respectively; both now
 > sit inside the 3-week window from today and are the nearest deadlines in the tracker — **A95 is the
@@ -293,9 +340,9 @@ recomputed once the resume is uploaded.
 | A109 | Qureos | Business Development Intern | BD | New York, NY | In-person | Unconfirmed | Rolling | Unconfirmed | Unconfirmed | 1 | ~3 | Low | unverified | [Intern Insider](https://interninsider.me/internships/qureos/business-development-intern-d9aec99e-36ef-43d6-8692-aacf913d8029) |
 | A110 | The Walt Disney Company | ABC News Insights and Analytics Intern (Spring 2027) | Data | New York, NY | In-person | Enterprise | Jan–Jun 2027 ⚠ | Rolling | $23/hr | 4 | ~4 | Low | conflict | [Disney Workday](https://disney.wd5.myworkdayjobs.com/disneycareer/job/New-York-NY-USA/ABC-News-Insights-and-Analytics-Intern--Spring-2027_10158500) |
 | A111 | Motive | Sales Development Intern | Sales | Austin, TX | Hybrid | Startup | Summer 2027 ⚠ (as posted) | Unconfirmed | Unconfirmed | 2 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/gomotive/jobs/8431778002) |
-| A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | **Closed 30 Sep 2026 (deadline passed)** | Unconfirmed | 4 | ~4 | High | closed | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-2/) |
+| A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | **Reopened — closing 30 Oct 2026, 1:59pm Sydney** | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-3/) |
 | A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
-| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Hybrid | Enterprise | Dec 2026 (approx); candidate states own start/end dates | **Closed 30 Sep 2026 (deadline passed)** | Unconfirmed | 4 | ~3 | Med | closed | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start/) |
+| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Hybrid | Enterprise | Dec 2026 (approx); candidate states own start/end dates | **Reopened — closing 30 Oct 2026, 1:59pm Sydney** | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start-2/) |
 | A115 | Workiva | Commercial Strategy Intern (Workiva's own site labels this intake "Spring 2027") | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | **Confirmed: term starts Jan 4, 2027**, 15–20 hrs/wk | **Closed Sept 27 2026 (confirmed — req returns 0 results)** | $22.00/hr (confirmed directly, req R12317) | 2 | ~2 | Low | closed | [Workiva Workday, req R12317](https://workiva.wd503.myworkdayjobs.com/careers) |
 | A117 | Workiva | Product Management Intern (Workiva's own site: "Spring & Summer 2027 Intern - Product Management") | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring option starts **Jan 4, 2027**, 15–20 hrs/wk (a Summer option starting May 17 2027 also exists on the same req, not relevant here) | **Closed Sept 27 2026 (confirmed — req returns 0 results)** | $40/hr (confirmed, req R12355) | 2 | ~2 | Low | closed | [Workiva Workday, req R12355](https://workiva.wd503.myworkdayjobs.com/careers) |
 | A118 | Workiva | Intern – Partnerships (Workiva's own site labels this intake "Spring 2027") | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: term starts **Jan 4, 2027**, 15–20 hrs/wk. Two separate live reqs share this exact title (R12268, R12269) | **Closed Sept 27 2026 (confirmed — reqs return 0 results)** | $21.00/hr (confirmed directly) | 2 | ~2 | Low | closed | [Workiva Workday, reqs R12268/R12269](https://workiva.wd503.myworkdayjobs.com/careers) |
