@@ -5,7 +5,55 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-04** (daily sweep — **2 corrections (both reopenings), no new rows, no
+> Last swept: **2026-10-05** (daily sweep — **no corrections, 1 new Tier A row (A159 Wonder,
+> unverified), no closures.** Re-verified the two nearest-term deadlines via direct fetch: **A93
+> (NewsBreak)** and **A95 (Parkdepot)** — both still live, deadlines unchanged (Oct 12 / Oct 17 2026),
+> no drift. Also re-confirmed **A96 (Crowe Global)** still live/open (no deadline), and both reopened
+> **A112/A114 (TikTok Sydney)** rows still live, closing 30 Oct 2026 1:59pm Sydney unchanged — the
+> work-rights "...show more" truncation listing subclass 462 explicitly still could not be resolved on
+> a static fetch (only Australian PR/Bridging visa visible before the cut); treated as unconfirmed,
+> not a new risk, same caveat as 2026-10-04. **A121 (Ankura)** — the Workday posting returned blank
+> on this run (JS-rendered, no bot-block message); could not independently verify, left unchanged
+> pending a better access method.
+>
+> **New row: A159, Wonder** — Growth & Marketing Analytics Intern, New York NY, hybrid (3 days/wk,
+> up to 5), $36/hr, found via Simplify's off-season list and opened directly on Wonder's own Workday
+> board. Role, pay, location, and mode confirmed; the posting itself states no explicit start/end
+> date (only generic "first 30/60 days" onboarding language) and Simplify's own tag reads "Winter
+> 2026," which may mean this exact req predates the 2027 cycle — added as `unverified` rather than
+> `live` on that ambiguity, real application URL kept, Fit provisional given strong function match
+> (growth/marketing analytics is a top-priority fit for the econ+stats profile). Flag the Jan 4–Mar 12
+> 2027 window explicitly in the first conversation per the disclosure rule.
+>
+> Full re-sweep of every standing source, two parallel passes. **Pass 1 (YC/Wellfound/economic
+> consulting/Simplify):** workatastartup.com and wellfound.com remain client-rendered shells for
+> direct fetch — no non-engineering target-function hit beyond what's already tracked. Compass
+> Lexecon's Workday re-confirmed its only req ("2027 Analyst Interns – US") is Summer 2027 (June–Aug),
+> unchanged. Analysis Group, Cornerstone, Brattle, NERA direct careers pages remain
+> summer-only/inconclusive on direct fetch, unchanged. Charles River Associates' Greenhouse board has
+> a new posting, **"Analyst Intern (Labor & Employment) – Winter/Spring 2027"** (JR 8243522, posted
+> 2026-09-30) — College Station TX / Tallahassee FL (not a target metro), runs into early May 2027
+> (past the Mar 12 hard stop), and requires Summer/Fall 2027 graduates (current seniors) — excluded on
+> all three counts, not added. A Gemini "Product Management Intern (Winter 2027)" lead resurfaced from
+> Simplify but is already tracked as **A146** (same Greenhouse req, same Jan–Apr 2027 overrun, already
+> `conflict`) — not re-added.
+>
+> **Pass 2 (BuiltIn/Intern Insider/GradConnection/Tokyo):** BuiltIn NYC/Austin/SF — the one
+> Winter-2027-labeled hit found (Capital One's "Intern, Data Analytics Engineering – Winter 2027") is
+> based in Toronto, Canada, requiring Canadian work rights — excluded. Intern Insider's Winter/Spring
+> 2027 term pages fully re-enumerated; one plausible hit, **Energy and Environmental Economics (E3)
+> Consulting Internship**, requires candidates graduating within the year (already excluded, same
+> eligibility pattern as already-tracked A145's sibling) — not added. GradConnection Sydney — two new
+> **Gradability** "internship" listings found are pay-to-play placement brokerages ($450 upfront +
+> $500/mo for 3 months to be placed with a host company, not a direct paid role); not recommended as
+> genuine leads, left out. Tokyo boards (coralcap.co, japan-dev.com, tokyodev.com) — coralcap.co's
+> jobs path still 404s; japan-dev/tokyodev non-engineering postings remain either
+> Japanese-fluency-required or full-time experienced-hire — no change.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-04** (daily sweep — **2 corrections (both reopenings), no new rows, no
 > closures.** **A112 (TikTok, Client Solution Intern) and A114 (TikTok, AI Product Manager Intern)**
 > — both Sydney reqs, previously marked `closed` after lapsing 30 Sep 2026, were found reopened under
 > new GradConnection URLs (`-3`/`-4` suffix for A112, `-2` for A114), new closing date confirmed
@@ -385,6 +433,11 @@ recomputed once the resume is uploaded.
 | A156 | Workiva | Spring 2027 Intern – Data Analytics | Data | Remote (US); hybrid option near NYC/SF/Austin office hub | Remote | Public (NASDAQ: WK) | Same Spring 2027 cycle pattern as closed sibling reqs A115/A117/A118 (Jan 4, 2027 start, 15–20 hrs/wk) — inferred, not independently confirmed on this specific req's own page ⚠ | **Closed 30 Sep 2026 (confirmed — req returns 0 results)** | $22.00/hr (confirmed, req R12319) | 2 | ~3 | Med | closed | [Workiva Workday, req R12319](https://workiva.wd503.myworkdayjobs.com/careers/job/USA---Remote/Spring-2027-Intern---Data-Analytics_R12319) |
 | A157 | Scout (YC) | Growth & Operations Intern | Growth | San Francisco, CA | Remote (in-person SF optional) | YC-backed | Rolling | Rolling | $20/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/68076) |
 | A158 | Utilyze | Partnerships Intern | Partnerships | Austin, TX / Boston, MA / New York, NY / San Antonio, TX / San Francisco, CA | In-person or Remote (candidate's choice) | Early-stage | Rolling | Rolling | Unpaid (equity/commission possible; academic credit supported) | 1 | ~4 | Med | live | [Wellfound](https://wellfound.com/jobs/4658879-investment-marketing-intern-clone) |
+| A159 | Wonder | Growth & Marketing Analytics Intern | Growth/Data | New York, NY | Hybrid (3 days/wk, up to 5) | Late-stage (food-tech, Marc Lore-founded) | Unconfirmed — no explicit dates in posting; Simplify tags "Winter 2026" term ⚠ | Confirm ≤ Mar 12 | $36/hr | 3 | ~5 | Med | unverified | [Workday](https://wonder.wd1.myworkdayjobs.com/WG/job/New-York-NY/Growth---Marketing-Analytics-Intern_JR101323) |
+
+**2026-10-05 sweep — no corrections, 1 new Tier A row (A159 Wonder, unverified), no closures.** See
+the "Last swept" header at the top of this file for full detail on today's re-verification pass and
+both sweep passes.
 
 **2026-10-01 sweep — 5 corrections, 2 new Tier A rows (A157, A158), no closures.** New: **A157,
 Scout** — a YC-backed CPG-focused startup's Growth & Operations Intern, San Francisco, $20/hr,
