@@ -5,7 +5,64 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-05** (daily sweep — **no corrections, 1 new Tier A row (A159 Wonder,
+> Last swept: **2026-10-06** (daily sweep — **no status corrections, 1 note-only correction, 1 new
+> Tier A row (A160 MTA, unverified), no closures.** Re-verified every at-risk Tier A row via direct
+> fetch: **A93 (NewsBreak)** — still "Actively hiring," deadline unchanged (Oct 12 2026, 6 days out),
+> requirements unchanged (3+ yrs growth-engineering experience, BS/MS/PhD CS — the senior-level bar
+> already reflected in its low Fit score). **A95 (Parkdepot)** — still live, deadline unchanged (Oct
+> 17 2026). **A96 (Crowe Global)** — still live, no deadline, pay/location/mode unchanged ($27–42/hr,
+> Austin, In-Office). **A121 (Ankura)** — the Workday CXS API (req R104943) queried directly again:
+> `canApply: true`, still no deadline field, same eligibility window (Dec 2027–June 2028 grads); the
+> page-render issue flagged 2026-10-05 doesn't affect the API route. **A112/A114 (TikTok Sydney)** —
+> both re-opened directly via curl+browser-UA; closing date reconfirmed unchanged (30 Oct 2026, 1:59pm
+> Sydney) via both the static "Closing Date:" text and the campaign's embedded JSON `interval` field.
+> **Note-only correction:** the work-rights truncation caveat standing since 2026-10-04/05 is now
+> resolved — the full list is not actually cut off at the data layer, and both reqs explicitly name
+> "Australian Working Visa," confirming subclass-462 eligibility as previously inferred rather than
+> directly observed. Both dashboard notes updated to record this; no status change (both stay `live`).
+>
+> **New row: A160, MTA "Ridership Analysis and Modeling, Emerging Talent Intern (Spring)"** — found
+> via the SimplifyJobs off-season README's Data Science section, same "Emerging Talent" program
+> family as already-tracked A120 but a distinct req (transportation ridership data analysis/modeling,
+> NYC, In-person). Added `unverified` rather than `live`: the Jobvite posting is a client-rendered
+> shell on direct curl, so a browser-rendering fetch was used instead, and it reported a "matriculated
+> in a graduate program, 2.8 GPA" eligibility line with only a $21/hr grad pay tier (no undergrad tier
+> shown, unlike A120's sibling req) — if accurate, this would exclude Sam on class-standing grounds;
+> flagged explicitly rather than dropped, confirm directly before applying.
+>
+> Full re-sweep of every standing source: `workatastartup.com`/`wellfound.com` WebSearched directly
+> (targeted queries for spring/winter 2027 growth/BD/strategy/founder's-associate roles) — all hits
+> either already tracked or Summer 2027. Economic consulting — Charles River Associates' Greenhouse
+> board re-queried via its public API (90 live reqs): the only Winter/Spring 2027 req remains the
+> already-excluded College Station TX/Tallahassee FL Labor & Employment analyst intern (Summer/Fall
+> 2027-grad requirement, non-target metro), unchanged since 2026-09-30. Compass Lexecon, Analysis
+> Group, Cornerstone, Brattle, NERA direct careers pages re-checked (Analysis Group's and Cornerstone's
+> own pages fetched directly this run) — all still summer-only/no distinct off-cycle posting. Palantir's
+> Lever board queried directly (316 reqs) — still only the Paris and Honolulu (US-gov) Deployment
+> Strategist Internship reqs, no target-metro req. Uber and DoorDash's Greenhouse boards both return
+> zero postings at those tokens (consistent with them not running a public Greenhouse board there);
+> Flexport's board (197 reqs) has zero "intern" titles. SimplifyJobs off-season README parsed
+> programmatically end-to-end (251 PM + 1,985 DS rows) for every target-city/Winter-or-Spring-2027 hit:
+> besides A160 above, the only other plausible-looking leads were a Cloudflare "People Analytics Data
+> Engineering Intern (Winter/Spring 2027)," Austin — opened directly on Greenhouse and excluded on
+> **two** independent grounds (requires "currently enrolled in a graduate program," and its own "12
+> week internship, January - May" term runs seven weeks past the Mar 12 hard stop) — and a Google "Data
+> Analytics Apprenticeship, February 2027 Start" — excluded on its own stated terms ("not currently
+> enrolled in... a Bachelor's... degree program," plus an application deadline of Sept 21 2026 already
+> passed). Intern Insider's Winter-2027 and Spring-2027 term pages fully re-enumerated — no new
+> non-engineering, target-function, in-window hit beyond what's already tracked or excluded (E3
+> Consulting's graduating-this-year requirement, same as prior sweeps). BuiltIn NYC/Austin/SF's
+> `/jobs/internships` pages checked directly — all Winter/Spring-2027-labeled hits are either already
+> tracked (Crowe) or wrong function/cycle; the Cloudflare DE role surfaced here too, same exclusion.
+> GradConnection's Sydney business-and-commerce listing re-enumerated — no new non-TikTok/EY/DT
+> Infrastructure candidate; EY's Vacationer Program reqs remain AU-citizenship/PR-gated (excluded,
+> unchanged). Tokyo boards (coralcap.co, japan-dev.com, tokyodev.com) — no new non-engineering,
+> English-accessible lead surfaced this run.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-05** (daily sweep — **no corrections, 1 new Tier A row (A159 Wonder,
 > unverified), no closures.** Re-verified the two nearest-term deadlines via direct fetch: **A93
 > (NewsBreak)** and **A95 (Parkdepot)** — both still live, deadlines unchanged (Oct 12 / Oct 17 2026),
 > no drift. Also re-confirmed **A96 (Crowe Global)** still live/open (no deadline), and both reopened
@@ -434,6 +491,11 @@ recomputed once the resume is uploaded.
 | A157 | Scout (YC) | Growth & Operations Intern | Growth | San Francisco, CA | Remote (in-person SF optional) | YC-backed | Rolling | Rolling | $20/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/68076) |
 | A158 | Utilyze | Partnerships Intern | Partnerships | Austin, TX / Boston, MA / New York, NY / San Antonio, TX / San Francisco, CA | In-person or Remote (candidate's choice) | Early-stage | Rolling | Rolling | Unpaid (equity/commission possible; academic credit supported) | 1 | ~4 | Med | live | [Wellfound](https://wellfound.com/jobs/4658879-investment-marketing-intern-clone) |
 | A159 | Wonder | Growth & Marketing Analytics Intern | Growth/Data | New York, NY | Hybrid (3 days/wk, up to 5) | Late-stage (food-tech, Marc Lore-founded) | Unconfirmed — no explicit dates in posting; Simplify tags "Winter 2026" term ⚠ | Confirm ≤ Mar 12 | $36/hr | 3 | ~5 | Med | unverified | [Workday](https://wonder.wd1.myworkdayjobs.com/WG/job/New-York-NY/Growth---Marketing-Analytics-Intern_JR101323) |
+| A160 | Metropolitan Transportation Authority (MTA) | Ridership Analysis and Modeling, Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $21/hr (Grad) — undergrad tier unconfirmed | 2 | ~3 | Low | unverified | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oW1PAfw6) |
+
+**2026-10-06 sweep — no corrections to status, 1 new Tier A row (A160 MTA, unverified), no
+closures.** See the "Last swept" header at the top of this file for full detail on today's
+re-verification pass and source sweep.
 
 **2026-10-05 sweep — no corrections, 1 new Tier A row (A159 Wonder, unverified), no closures.** See
 the "Last swept" header at the top of this file for full detail on today's re-verification pass and
