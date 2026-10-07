@@ -5,7 +5,101 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-06** (daily sweep — **no status corrections, 1 note-only correction, 1 new
+> Last swept: **2026-10-07** (daily sweep — **1 real correction (A160 MTA Ridership downgraded
+> `unverified` → `blocked` on confirmed grad-only eligibility), 3 new Tier A rows (A161 MTA EAM
+> Value Realization, live; A162 VaynerMedia Resident - Data Analytics, conflict; A163 Fenwick &amp;
+> West Forward Deployed Operations Intern, unverified), no closures.**
+>
+> Re-verified every at-risk Tier A row via direct fetch: **A93 (NewsBreak)** — still "Actively
+> hiring," deadline unchanged (**Oct 12 2026, 5 days out — inside the 3-week window**); the posting
+> also describes a "rolling term structure," so the Oct 12 date may function as a soft cutoff rather
+> than a hard one — treat the 5-day window with some caution. **A95 (Parkdepot)** — still live,
+> deadline text unchanged (**Oct 17 2026, 10 days out — inside the 3-week window**); caveat: the
+> page shows "Posted 170 days ago," long enough that the Oct 17 deadline string could be a
+> stale/evergreen template value rather than a true hard date — couldn't independently resolve this
+> run, flagging for awareness rather than treating as a correction. **A96 (Crowe Global)** — still
+> live, no deadline, pay/location/mode unchanged ($27–42/hr, Austin, In-Office). **A121 (Ankura)** —
+> the Workday CXS API (req R104943) queried directly again: `canApply: true`, same $34/hr, same Dec
+> 2027–June 2028 grad-window eligibility, rolling, unchanged. **A112/A114 (TikTok Sydney)** — both
+> re-confirmed open directly, closing date unchanged (30 Oct 2026, 1:59pm Sydney — 23 days out, just
+> outside the 3-week window but close enough to keep watching). **A159 (Wonder)** — stays
+> **unverified**: the Workday CXS API endpoint now returns a 403 (bot-protected, unlike Ankura's
+> equivalent endpoint) and the human-readable page is a JS shell on direct fetch — could not resolve
+> whether this req targets the Jan–Mar 2027 cycle or an older "Winter 2026" cycle; needs a
+> browser-rendering fetch to settle.
+>
+> **Correction: A160 (MTA, Ridership Analysis and Modeling) downgraded `unverified` → `blocked`.**
+> A second, independent direct fetch (not browser-rendered this time) reproduced the exact same
+> result as the 2026-10-06 finding: only a $21/hr grad pay tier appears on the page, with the
+> eligibility line reading "matriculated in a graduate program in good standing with at least a 2.8
+> GPA" — no undergrad tier or alternate GPA line anywhere on the page. This sweep also turned up a
+> genuine sibling req (A161, below) that explicitly carries both a $19/hr undergrad and $21/hr grad
+> tier on its own primary source — confirming A160's single-tier eligibility language is a real,
+> distinguishing feature of this specific req rather than a fetch/rendering artifact. Fit lowered
+> ~3 → ~1; kept per the never-delete rule.
+>
+> **New row: A161, MTA "EAM Value Realization, Emerging Talent Intern (Spring)"** — a third,
+> distinct req in the same "Emerging Talent" program family as A120 (EAM Analyst) and A160 (Ridership
+> Analysis). This resolves the 2026-10-04 sweep's open item, which had flagged a similarly-named MTA
+> req as "near-certainly the same program as A120... couldn't independently confirm as distinct, not
+> added" — confirmed via direct fetch to be a real, separate Jobvite posting (job/orDQAfwe). Both pay
+> tiers confirmed on the primary source ($19/hr Undergrad, 2.5 GPA / $21/hr Grad, 2.8 GPA) — unlike
+> A160. Added `live`, matching A120's own bar (primary source confirmed real/open/in-person/NYC;
+> exact start/end dates still unstated on the posting itself, same "Confirm ≤ Mar 12" treatment as
+> A120).
+>
+> **New row: A162, VaynerMedia "Resident - Data Analytics"** — found via the SimplifyJobs off-season
+> README, opened directly on VaynerMedia's own Greenhouse board (gh_jid=8126062). NYC HQ, hybrid
+> (3–4 days/wk onsite), $20/hr ($30/hr OT), strong growth/marketing-analytics function fit. Added
+> `conflict` rather than live: the posting describes a fixed three-month "residency" program with
+> "the next residency class" starting January 2027 — a literal 3 months from an early-Jan start runs
+> into early April, past the Mar 12 hard stop by roughly 2–3 weeks, and an agency's own named cohort
+> program reads as less negotiable than a startup's rolling hire. Real application URL kept; disclose
+> the Jan 4–Mar 12 window immediately in case they'd consider a shorter slice.
+>
+> **New row: A163, Fenwick &amp; West "Forward Deployed Operations Intern"** — found via the
+> SimplifyJobs off-season README, opened directly on Fenwick's own Workday board (req R2964).
+> AI-native workflow tooling for BD/competitive-intelligence/legal-ops strategy at an AmLaw 100 firm;
+> candidate's choice of office including New York and Silicon Valley/SF (also Boston/Seattle/Santa
+> Monica/DC); part-time, in-office "on occasion" (commuting distance required, not daily onsite);
+> $21–25/hr confirmed directly. Eligibility language explicitly welcomes "quantitative social science
+> such as economics" alongside CS/data science/industrial engineering — an unusually direct fit for
+> the econ+stats profile, and a notable brand name. Added `unverified` rather than dropped: the
+> posting states the role is "expected to run through fall of 2026 and into winter of 2027," which
+> reads like one continuing cohort rather than a fresh January intake, and it's unclear whether a
+> Jan-2027 starter would join mid-cohort or a new cohort begins then — confirm the actual start/end
+> structure directly before applying.
+>
+> Full re-sweep of every standing source, two parallel passes. **YC/Wellfound** remain
+> client-rendered shells on direct fetch; targeted search surfaced nothing new in scope (expected —
+> the YC Winter 2027 batch isn't due until ~November 2026). **Economic consulting** — Charles River
+> Associates' Greenhouse board re-queried directly: still only the already-excluded College Station
+> TX / Tallahassee FL Labor &amp; Employment analyst req (JR 8243522); Analysis Group, Cornerstone,
+> Compass Lexecon, Brattle, NERA direct careers pages unchanged/inconclusive on direct fetch, same as
+> every prior sweep. **SimplifyJobs off-season README** parsed programmatically end-to-end (253 PM +
+> 2,001 Data Science rows) for every target-city/function/cycle hit — besides A161–A163 above,
+> several plausible-looking leads were opened directly and excluded on hard criteria: KQED SF
+> Audience Intelligence Intern (Jan 19–Jun 25 2027, overruns), FOX News Media Data Analytics Intern
+> NYC (Feb 8–Apr 16 2027, overruns), Mastercard "AI &amp; Data Co-Op" (Northeastern-University-
+> restricted, plus runs to May 2027 — double exclusion), Vialto Partners Client Technology Services
+> Intern (mid-Jan–mid-Apr 2027, overruns), Audax Group Data Engineer Co-op (Boston not NYC as
+> mislabeled on Simplify, Jan 4–Jun 25 2027, overruns — already excluded in a prior sweep,
+> re-confirmed). **Intern Insider's** Winter/Spring 2027 term pages re-fetched, zero
+> target-function/target-city hits on this pass. **BuiltIn NYC/Austin/SF** `/jobs/internships` — no
+> new Winter/Spring-2027-tagged postings beyond what's tracked. **GradConnection Sydney** — only
+> pay-to-play placement brokerages and a full-time (not internship) Accenture program surfaced;
+> nothing new. **Tokyo** (coralcap.co, japan-dev.com, tokyodev.com) — coralcap.co's jobs path still
+> 404s (standing access gap, not confirmed-empty); japan-dev/tokyodev nothing new
+> non-engineering/English-accessible. **Palantir's** Lever board re-queried directly (74 reqs) —
+> still only the Paris and Honolulu Deployment Strategist **Internship** reqs; the Madrid/NYC/
+> Chicago/Tokyo "Deployment Strategist" reqs on the same board are full-time, not internships.
+> **Uber/DoorDash** still return zero postings at their Greenhouse tokens; **Flexport** (198 reqs)
+> has zero "intern" titles.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-06** (daily sweep — **no status corrections, 1 note-only correction, 1 new
 > Tier A row (A160 MTA, unverified), no closures.** Re-verified every at-risk Tier A row via direct
 > fetch: **A93 (NewsBreak)** — still "Actively hiring," deadline unchanged (Oct 12 2026, 6 days out),
 > requirements unchanged (3+ yrs growth-engineering experience, BS/MS/PhD CS — the senior-level bar
@@ -491,7 +585,15 @@ recomputed once the resume is uploaded.
 | A157 | Scout (YC) | Growth & Operations Intern | Growth | San Francisco, CA | Remote (in-person SF optional) | YC-backed | Rolling | Rolling | $20/hr | 2 | ~3 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/68076) |
 | A158 | Utilyze | Partnerships Intern | Partnerships | Austin, TX / Boston, MA / New York, NY / San Antonio, TX / San Francisco, CA | In-person or Remote (candidate's choice) | Early-stage | Rolling | Rolling | Unpaid (equity/commission possible; academic credit supported) | 1 | ~4 | Med | live | [Wellfound](https://wellfound.com/jobs/4658879-investment-marketing-intern-clone) |
 | A159 | Wonder | Growth & Marketing Analytics Intern | Growth/Data | New York, NY | Hybrid (3 days/wk, up to 5) | Late-stage (food-tech, Marc Lore-founded) | Unconfirmed — no explicit dates in posting; Simplify tags "Winter 2026" term ⚠ | Confirm ≤ Mar 12 | $36/hr | 3 | ~5 | Med | unverified | [Workday](https://wonder.wd1.myworkdayjobs.com/WG/job/New-York-NY/Growth---Marketing-Analytics-Intern_JR101323) |
-| A160 | Metropolitan Transportation Authority (MTA) | Ridership Analysis and Modeling, Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $21/hr (Grad) — undergrad tier unconfirmed | 2 | ~3 | Low | unverified | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oW1PAfw6) |
+| A160 | Metropolitan Transportation Authority (MTA) | Ridership Analysis and Modeling, Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $21/hr (Grad only — no undergrad tier found, confirmed twice) | 2 | ~1 | Low | blocked | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oW1PAfw6) |
+| A161 | Metropolitan Transportation Authority (MTA) | EAM Value Realization, Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/orDQAfwe) |
+| A162 | VaynerMedia | Resident - Data Analytics | Growth | New York, NY | Hybrid (3–4 days/wk onsite) | Established (agency) | "Next residency class" starts Jan 2027; fixed 3-month term ⚠ | Apr 2027 ⚠ (inferred, 3mo from Jan start) | $20/hr ($30/hr OT) | 3 | ~4 | Low | conflict | [VaynerMedia careers](https://vaynermedia.com/careers?gh_jid=8126062) |
+| A163 | Fenwick & West | Forward Deployed Operations Intern | Strategy (technical-adjacent) | New York, NY / San Francisco, CA (candidate's choice; also Boston/Seattle/Santa Monica/DC) | In-person, part-time ("on occasion") | Established (AmLaw 100) | "Expected to run through fall of 2026 and into winter of 2027" — ambiguous cohort ⚠ | Confirm ≤ Mar 12 | $21–25/hr | 3 | ~4 | Med | unverified | [Fenwick Workday, req R2964](https://fenwick.wd1.myworkdayjobs.com/Fenwick_External_Careers/job/Silicon-Valley/Forward-Deployed-Operations-Intern_R2964) |
+
+**2026-10-07 sweep — 1 correction (A160 downgraded `unverified` → `blocked` on confirmed grad-only
+eligibility), 3 new Tier A rows (A161 MTA, live; A162 VaynerMedia, conflict; A163 Fenwick & West,
+unverified), no closures.** See the "Last swept" header at the top of this file for full detail on
+today's re-verification pass and both sweep passes.
 
 **2026-10-06 sweep — no corrections to status, 1 new Tier A row (A160 MTA, unverified), no
 closures.** See the "Last swept" header at the top of this file for full detail on today's
