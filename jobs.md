@@ -5,7 +5,79 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-07** (daily sweep — **1 real correction (A160 MTA Ridership downgraded
+> Last swept: **2026-10-08** (daily sweep — **no status corrections; two rows re-verified with notes
+> strengthened (A152 GE Aerospace, A163 Fenwick &amp; West — both stay `unverified`), 3 new Tier A
+> rows (A164 Energy and Environmental Economics "E3" Consulting Internship, conflict; A165 Figma
+> Data Science Intern, unverified; A166 Stripe Data Analyst Intern, unverified), no closures.**
+>
+> **Re-verification pass.** **A112/A114 (TikTok Sydney)** — both tracked GradConnection URLs
+> re-opened directly: closing date unchanged at 30 Oct 2026, 1:59pm Sydney on both, no drift (22
+> days out — inside the 3-week deadline window). **A152 (GE Aerospace)** — the Workday page renders
+> as an empty JS shell on direct fetch, but its CXS JSON API confirmed directly: `timeType: "Full
+> time"` — the full-time classification is now *confirmed*, not merely suspected as in the
+> 2026-09-23 entry. Still no explicit term length or start/end date anywhere in the posting itself
+> (the `jobPostingEndDateAsText` field is the application-posting expiry, not the internship term —
+> not conflated). Kept `unverified` rather than downgraded to `conflict`: full-time hours during a
+> short co-op don't by themselves overrun 12 Mar, and no date confirms an overrun; the real open
+> question (exact term length, and whether it tolerates concurrent light enrollment) stays
+> unresolved — worth asking directly. **A163 (Fenwick &amp; West)** — same JS-shell-on-page /
+> working-CXS-API pattern; the API confirmed verbatim: "This is a part-time, non-exempt role
+> expected to run through fall of 2026 and into winter of 2027." No other cohort-timing language
+> exists anywhere in the source — the mid-cohort-vs-fresh-January-start question is genuinely
+> unanswerable from the posting itself, not just missed on a prior pass. Also confirmed unchanged:
+> still open (`canApply: true`), part-time min. 16 hrs/wk, $21–25/hr. Kept `unverified`. **A159
+> (Wonder)** — the human-readable page is still an empty JS shell, and this sweep additionally tried
+> the same Workday-CXS-API route that worked for A152/A163 — this tenant returns `HTTP 403 {errorCode:
+> "S22", message: "permission denied"}` on every attempt (varied UA/referer/cookies), unlike GE's and
+> Fenwick's tenants. The Winter-2026-vs-Jan-2027-cycle question remains fully unresolved; a
+> browser-rendering fetch is still the only path left untried. No change — stays `unverified`. **A93
+> (NewsBreak)** and **A95 (Parkdepot)** — neither row carries a direct URL precise enough to
+> re-locate the exact tracked listing via search this pass (multiple NewsBreak/Nearby.ai and
+> Parkdepot-adjacent postings turned up, none matching the tracked req); both Oct-2026 deadlines
+> (NewsBreak Oct 12, now 4 days out; Parkdepot Oct 17, now 9 days out) stay unconfirmed either way —
+> not treated as lapsed, not treated as reconfirmed. Resolve with a browser-rendered fetch of the
+> tracked URLs directly next run.
+>
+> **New row: A164, Energy and Environmental Economics, Inc. ("E3") "2027 Consulting Internship."**
+> Boutique energy/climate-policy economics consulting firm — a peer, if narrower-niche, addition to
+> the named econ-consulting lane. Found via general search after an InternInsider snippet 404'd;
+> confirmed directly on E3's own Lever board (jobs.lever.co/ethree), not a snippet. 8–12 week
+> consulting internship on electricity-market topics (renewables, rate design, transmission, climate
+> policy) supporting consultants' live client work; economics is explicitly named as a welcome major
+> alongside science/engineering/business/public policy. Added `conflict` rather than `live`: E3's own
+> posting states its hiring cycle runs "September through early 2027, with interviews in January and
+> decisions in February" — if an offer doesn't land until February, an 8–12-week term starting then
+> overruns 12 Mar by weeks; the posting's "flexible dates" language describes which of Spring/Summer/
+> Fall cohort a student joins, not a guaranteed Jan start. Kept per the never-drop rule — the posting
+> explicitly invites candidates to propose their own dates, so a direct early application disclosing
+> Jan 4 availability is still worth trying. No pay rate stated beyond "full time hourly." Calgary
+> office would need separate Canadian work authorization — stick to the three US offices.
+>
+> **New row: A165, Figma "Data Science Intern (2027)."** Found via a fresh SimplifyJobs off-season
+> README parse (Data Science section), confirmed directly on Figma's own Greenhouse board. SQL/
+> Python/R-based quantitative analysis connecting data findings to product decisions — a clean Data-
+> function fit with skills-based (not major-gated) eligibility. Pay confirmed directly: $46/hr plus a
+> housing stipend and travel reimbursement — a real relocation-supported internship, not local-only.
+> Added `unverified`: the posting states no season, term length, or start/end date anywhere, only an
+> "expected graduation date" field on the application form, so a Jan–Mar 2027 fit is not confirmed
+> either way — not on inability to open the posting, which opened cleanly. Mode assumed in-person
+> (relocation support implies onsite) rather than confirmed.
+>
+> **New row: A166, Stripe "Data Analyst, Intern."** Found via the same README parse, confirmed
+> directly on Stripe's own careers board — the clearest API/dev-tool-company Data-function match in
+> PROFILE.md's named-ideal-company category. Eligibility explicitly targets expected graduation
+> December 2027 or spring/summer 2028 — matches Sam's Class-of-2028 track precisely; qualifying
+> skills (SQL, cross-functional collaboration, AI-tool proficiency) are a clean fit. Two real,
+> unresolved caveats kept this `unverified` rather than `live`: (1) the posting states a single
+> $117,000/yr figure in its base-salary field — an annual-salary framing unusual for a fixed-term
+> internship, suggesting this may be an evergreen/year-round req rather than a dated Jan–Mar 2027
+> cohort slot; (2) no term length or start/end date is stated anywhere on the posting. Kept per the
+> never-drop rule — worth a direct question about term structure before applying.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-07** (daily sweep — **1 real correction (A160 MTA Ridership downgraded
 > `unverified` → `blocked` on confirmed grad-only eligibility), 3 new Tier A rows (A161 MTA EAM
 > Value Realization, live; A162 VaynerMedia Resident - Data Analytics, conflict; A163 Fenwick &amp;
 > West Forward Deployed Operations Intern, unverified), no closures.**
@@ -589,6 +661,15 @@ recomputed once the resume is uploaded.
 | A161 | Metropolitan Transportation Authority (MTA) | EAM Value Realization, Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~4 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/orDQAfwe) |
 | A162 | VaynerMedia | Resident - Data Analytics | Growth | New York, NY | Hybrid (3–4 days/wk onsite) | Established (agency) | "Next residency class" starts Jan 2027; fixed 3-month term ⚠ | Apr 2027 ⚠ (inferred, 3mo from Jan start) | $20/hr ($30/hr OT) | 3 | ~4 | Low | conflict | [VaynerMedia careers](https://vaynermedia.com/careers?gh_jid=8126062) |
 | A163 | Fenwick & West | Forward Deployed Operations Intern | Strategy (technical-adjacent) | New York, NY / San Francisco, CA (candidate's choice; also Boston/Seattle/Santa Monica/DC) | In-person, part-time ("on occasion") | Established (AmLaw 100) | "Expected to run through fall of 2026 and into winter of 2027" — ambiguous cohort ⚠ | Confirm ≤ Mar 12 | $21–25/hr | 3 | ~4 | Med | unverified | [Fenwick Workday, req R2964](https://fenwick.wd1.myworkdayjobs.com/Fenwick_External_Careers/job/Silicon-Valley/Forward-Deployed-Operations-Intern_R2964) |
+| A164 | Energy and Environmental Economics, Inc. (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA / New York, NY / Boston, MA / Calgary, AB (candidate's choice) | Hybrid (min. 3 days/wk in-office) | Established (boutique energy/climate-policy econ consulting) | 8–12 weeks, candidate-proposed dates; hiring cycle interviews Jan / decisions Feb 2027 ⚠ | Confirm ≤ Mar 12 | Unconfirmed ("full time hourly internship position") | 3 | ~4 | Med | conflict | [E3 Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
+| A165 | Figma | Data Science Intern (2027) | Data | San Francisco, CA / New York, NY | In-person (assumed; not explicitly labeled) | Established (public, design/dev-tool) | Unconfirmed — no season or dates stated anywhere in posting ⚠ | Unconfirmed | $46/hr + housing stipend + travel reimbursement | 4 | ~4 | Med | unverified | [Figma Greenhouse](https://job-boards.greenhouse.io/figma/jobs/6178857004) |
+| A166 | Stripe | Data Analyst, Intern | Data | Chicago, IL / New York, NY / Seattle, WA / South San Francisco, CA | Hybrid (min. 50% time in local office stated) | Established (public-adjacent, API/fintech) | Unconfirmed — no term length/dates stated; eligibility targets Dec 2027/Spring-Summer 2028 grads ⚠ | Unconfirmed | $117,000/yr stated as base-salary field — unusual annual framing for an internship, flagged ⚠ | 5 | ~4 | Med | unverified | [Stripe careers](https://stripe.com/jobs/search?gh_jid=8194291) |
+
+**2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
+GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
+newly confirmed facts, status unchanged on both), 3 new Tier A rows (A164 E3 Consulting Internship,
+conflict; A165 Figma Data Science Intern, unverified; A166 Stripe Data Analyst Intern, unverified),
+no closures.** See the "Last swept" header at the top of this file for full detail.
 
 **2026-10-07 sweep — 1 correction (A160 downgraded `unverified` → `blocked` on confirmed grad-only
 eligibility), 3 new Tier A rows (A161 MTA, live; A162 VaynerMedia, conflict; A163 Fenwick & West,
