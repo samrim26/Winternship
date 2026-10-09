@@ -5,7 +5,51 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-08** (daily sweep — **no status corrections; two rows re-verified with notes
+> Last swept: **2026-10-09** (daily sweep — **no status corrections, no new Tier A rows, no
+> closures.** Re-verified every near-term-deadline and at-risk row via direct fetch: **A93
+> (NewsBreak)** — still "Actively hiring," deadline unchanged (Oct 12 2026, **3 days out** — inside
+> the 3-week window, the nearest deadline in the tracker). **A95 (Parkdepot)** — still live, deadline
+> unchanged (Oct 17 2026, 8 days out — inside the 3-week window). **A112/A114 (TikTok Sydney)** —
+> both re-opened directly, closing date unchanged (30 Oct 2026, 1:59pm Sydney — 21 days out, right at
+> the edge of the 3-week window). **A159 (Wonder)** — tried a fresh WebFetch-rendered pass at the
+> Workday posting in addition to a direct fetch; still returns an empty JS shell, same as every prior
+> attempt this cycle — stays `unverified`, genuinely unresolved rather than untried. Spot-checked a
+> sample of plain `live` rows not directly re-touched in recent sweeps: **A22 (CertiK)**, **A98
+> (Cresta)**, **A153 (Contoro Robotics)** — all confirmed unchanged (pay, location, mode, open status
+> all match the tracker).
+>
+> Full re-sweep of every standing source found nothing new that clears the bar. **YC/Wellfound**
+> remain client-rendered shells on direct fetch (expected — the YC Winter 2027 batch isn't due until
+> ~November 2026); targeted search surfaced nothing new in scope. **Economic consulting** — Analysis
+> Group, NERA, and Brattle searched directly: every current posting found is Summer 2027 only
+> (Analysis Group Boston/Montreal Summer Analyst reqs, NERA London Summer Intern 2027); Cornerstone
+> Research and Compass Lexecon returned no new hits at all this run. **SimplifyJobs off-season
+> README** downloaded and parsed programmatically end-to-end (251 PM + 2,007 Data Science rows) for
+> every target-city/function/cycle hit: besides rows already tracked, the only candidates surfaced
+> were excluded on hard criteria — a Stripe **"PhD Data Scientist, Intern"** sibling to already-
+> tracked A166 (explicitly PhD-program-only, excludes an undergrad, not added); an MTA "Technology
+> Support, Emerging Talent Intern" tagged Spring 2027 on Simplify, but the only confirmable posting
+> under that exact title is tagged **Fall**, not Spring, and no verifiable Spring-dated posting could
+> be found at all — didn't clear the bar for even an `unverified` row given no real link exists, not
+> added; and two Disney "Insights and Analytics" variants (Marketplace & Portfolio Insights Intern,
+> and an ABC News variant), both independently confirmed via search to run **January–June 2027**, the
+> same 6-month overrun that already excludes A110's family — not added. **Palantir's** Lever board
+> re-checked — still only the Paris/Honolulu/2026-grad-only Deployment Strategist Internship reqs, no
+> new target-metro req. **Uber** — only a 2026-cycle "Operations & Logistics Intern" surfaced (wrong
+> year, wrong metros, July/Dec 2027 grad-only eligibility); **DoorDash** — only a full-time Strategy &
+> Operations Associate role, not an internship; **Flexport** — nothing. **BuiltIn NYC/Austin/SF** —
+> the one explicit "Winter 2027" hit (Friedom Partners "AI Systems Analyst," remote, investment-firm
+> analyst role) is outside target functions, not added. **GradConnection Sydney** — nothing beyond
+> already-tracked TikTok reqs and citizen/PR-gated graduate programs. **Tokyo** (coralcap.co,
+> japan-dev.com, tokyodev.com) — coralcap.co's `/jobs` path still 404s (standing access gap, unchanged
+> from every prior sweep); the one promising-looking lead, a TikTok Tokyo GBS "Business
+> Intelligence/Analysis Project Intern," explicitly requires business-level Japanese — excluded on
+> language grounds, consistent with every prior Tokyo GBS finding.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-08** (daily sweep — **no status corrections; two rows re-verified with notes
 > strengthened (A152 GE Aerospace, A163 Fenwick &amp; West — both stay `unverified`), 3 new Tier A
 > rows (A164 Energy and Environmental Economics "E3" Consulting Internship, conflict; A165 Figma
 > Data Science Intern, unverified; A166 Stripe Data Analyst Intern, unverified), no closures.**
