@@ -5,7 +5,60 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-10** (daily sweep — **no status corrections, no new Tier A rows, no
+> Last swept: **2026-10-11** (daily sweep — **no status corrections, no new Tier A rows, no
+> closures.** Re-verified the nearest-term-deadline/at-risk rows via direct fetch: **A93
+> (NewsBreak)** — still "Actively hiring," deadline unchanged (Oct 12 2026, **1 day out — nearest
+> deadline in the tracker**). **A95 (Parkdepot)** — still "Actively hiring," deadline unchanged (Oct
+> 17 2026, 6 days out). **A112/A114 (TikTok Sydney)** — both still open, closing date unchanged (30
+> Oct 2026, 1:59pm Sydney, 19 days out — inside the 3-week window), work-rights list still truncated
+> behind "...show more" exactly as before. **A159 (Wonder)** — re-tried a direct fetch of the Workday
+> posting; still an empty JS shell, same as every prior attempt — stays `unverified`, genuinely
+> unresolved rather than untried.
+>
+> Full re-sweep of every standing source found nothing new that clears the bar. **YC/Wellfound** —
+> workatastartup.com remains a client-rendered shell with zero visible postings on direct fetch
+> (expected — the YC Winter 2027 batch isn't due until ~November 2026; note the bare domain now
+> returns a `406` without an `Accept` header and `200` with one — a bot-challenge quirk, not an
+> access regression, since the curl sanity check always sends one). **Economic consulting** —
+> Cornerstone Research's own page was reachable this run, resolving the 2026-10-10 DNS-failure
+> access gap: confirmed summer-only (Analyst/Associate categories for undergrad/grad/PhD, no
+> winter/spring req). Charles River Associates' Greenhouse board re-queried directly — still only the
+> three EU-only (Brussels/Munich/London) Antitrust & Competition intern/analyst reqs, Summer 2027 or
+> Master's/PhD-gated, unchanged. Compass Lexecon and Brattle's own careers pages remain inconclusive
+> on direct fetch (no reqs rendered in the fetched content; their Workday/current-openings subpages
+> weren't reachable this pass) — not confirmed-empty, worth another look. NERA's own page confirms
+> summer-only-by-policy, unchanged. **SimplifyJobs off-season README** downloaded and parsed
+> programmatically end-to-end (3,131 rows across all categories) for every target-city/function/term
+> hit: 16 rows matched on location+function+Winter-or-Spring-2027 tag, and all 16 are either
+> already-tracked (Gemini A146, GE Aerospace A152, Zipline A123, MTA A120/A161, NBCUniversal C70) or
+> already-excluded on a hard criterion (FOX NYC Data Analytics Intern and Mastercard AI & Data Co-op,
+> both excluded in a prior sweep; Audax Group Data Engineer Co-op, Boston-not-NYC and overruns, same
+> as before; Royal Bank of Canada's two NYC reqs are investment-banking/capital-markets analyst roles,
+> wrong function; ITT's Orchard Park/Boston-NY co-op and Moog's Buffalo co-op are outside target
+> metros). One genuinely new-looking lead, **Crusoe Energy's "Product Manager Intern," San
+> Francisco** (Simplify tag: Winter 2026/Spring 2027/Summer 2027) — chased across three sources
+> (a WorkInGreen mirror marked the listing **"Expired"** with a garbled eligibility line
+> ["graduating between December 2026 Spring 2027"], an MCJ/Dragonfly mirror link 404'd, and Crusoe's
+> own Ashby board showed zero open internships) — no live primary source could be found despite
+> trying; excluded as stale/expired rather than added `unverified`, consistent with the quality bar
+> favoring primary-source confirmation over aggregator mirrors. **Intern Insider's** Winter/Spring
+> 2027 term pages spot-checked (too large to enumerate fully — 5,100 Winter + 405 Spring rows) — no
+> new target-function/target-city hit found in the sampled pages; closest misses (Key Capture Energy
+> Albany ops intern, wrong metro) don't clear location. **BuiltIn NYC/Austin/SF** — no new
+> Winter/Spring-2027-tagged hit beyond the already-excluded VelocityEHS remote CX intern and
+> Cloudflare SWE intern (both noted 2026-10-10). **GradConnection Sydney** — nothing beyond
+> already-tracked TikTok reqs and pay-to-play placement brokerages (Premium Graduate Placements,
+> Nestlé YEP) — not recommended as genuine leads. **Tokyo** — coralcap.co's `/jobs` path still 404s
+> (standing access gap, unchanged for months); tokyodev.com returned a 403 this run (new, isolated —
+> not one of the five sanity-check domains, no broader access issue indicated); japan-dev.com's
+> non-engineering hits (Polymer Capital trading-systems support, Qubitcore R&D PM) are both
+> technical/senior, not internships.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 200 with a browser
+> `Accept` header — see note above; wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io
+> 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-10** (daily sweep — **no status corrections, no new Tier A rows, no
 > closures.** Re-verified all four at-risk/near-term-deadline rows via direct fetch: **A93
 > (NewsBreak)** — still "Actively hiring," deadline unchanged (Oct 12 2026, **2 days out** — nearest
 > deadline in the tracker). **A95 (Parkdepot)** — still "Actively hiring," deadline unchanged (Oct 17
