@@ -5,7 +5,95 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-11** (daily sweep — **no status corrections, no new Tier A rows, no
+> Last swept: **2026-10-12** (daily sweep — **1 correction (A147 Tesla Service Program &amp;
+> Project Management Intern downgraded `unverified` → `blocked`), 1 new Tier A row (A167 Dell
+> Technologies Corporate Strategy Undergraduate Intern, unverified), no closures.**
+>
+> **Correction: A147 (Tesla, Service Program &amp; Project Management Intern, Austin).** A fresh
+> programmatic parse of the SimplifyJobs off-season README (40,778 lines, downloaded and grepped
+> directly, not summarized by search) found this exact req (job 283443 — the same URL already
+> tracked) tagged with Simplify's standard 🎓 marker, which that platform uses to flag roles
+> requiring a current Master's/advanced-degree enrollment rather than an undergrad. Tesla's own
+> careers site returned `403 Forbidden` on every direct-fetch attempt this run, as it has on every
+> prior attempt — the grad-only language could not be independently re-confirmed on the primary
+> source itself, only inferred from the platform's tagging convention plus an exact req-ID match.
+> Downgraded `unverified` → `blocked` on that basis rather than left unchanged, since the signal is
+> specific (an exact req match, not a guess) even though the primary source stayed unreachable;
+> kept per the never-delete rule rather than removed. Re-open this one if a direct view of the
+> posting ever becomes possible and contradicts it.
+>
+> **New row: A167, Dell Technologies, "Corporate Strategy Undergraduate Intern," Austin, TX.**
+> Found via a fresh BuiltIn/Intern Insider sweep pass, confirmed directly on Intern Insider's own
+> listing page (not a search snippet): $27.10–$31.80/hr, deadline Oct 17 2026 (still open, 5 days
+> out), eligibility explicitly welcomes Economics majors by name alongside Finance/CS/Engineering/
+> Information Systems — a clean Strategy-function, home-market (Austin) match with an unusually
+> direct econ-major callout. Added `unverified` rather than `live`: no term length, duration, or
+> start date is stated anywhere on the aggregator page, and three separate attempts to locate Dell's
+> own primary posting (jobs.dell.com and its enterpriseplatform.dell.com redirect target) returned
+> only "page not found" — Dell's applicant site appears to be JS-rendered and not directly
+> fetchable, the same access pattern seen on Tesla's and GE's career sites. Kept per the never-drop
+> rule with the real Intern Insider application URL; worth confirming term structure directly
+> before applying, and worth trying a browser-rendered fetch of Dell's own site on a future sweep.
+>
+> **Re-verification pass.** Re-verified the nearest-term-deadline/at-risk rows via direct fetch: **A93
+> (NewsBreak)** — still "Actively hiring"; deadline reads "Apply by Oct 12" — **today, the hard
+> cutoff** (pay range $40–60/hr not visible on this pass, could not independently confirm or refute,
+> same aggregator-reliability caveat as always). Treat as closing today if not already applied. **A95
+> (Parkdepot)** — still "Actively hiring," deadline unchanged (Oct 17 2026, 5 days out). **A112/A114
+> (TikTok Sydney)** — both still open, closing date unchanged (30 Oct 2026, 1:59pm, 18 days out —
+> inside the 3-week window), work-rights list still truncated behind "...show more" exactly as before
+> — Working Holiday/subclass 462 still neither confirmed nor refuted on the rendered page. **A159
+> (Wonder)** — direct Workday fetch still an empty JS shell and the CXS API guess still returns
+> `403`, same as every prior attempt. New this pass: a WebSearch surfaced a likely-matching listing on
+> Wonder's VC-hosted mirror (jobs.accel.com, req 92073413 — title/team/location match but not
+> confirmed to be the same requisition as the tracked JR101323) showing the same $36/hr rate already
+> tracked, posted Sep 3 2026, listed oddly as "full-time" employment type, and currently marked **"No
+> longer accepting applications."** Still no term/cohort date anywhere on that mirror either. Kept
+> `unverified` rather than flipped to `closed`: the mirror match to the exact tracked req isn't
+> confirmed, so this is elevated risk, not a confirmed closure — worth a priority browser-rendered
+> check of the canonical Workday link next sweep.
+>
+> Full re-sweep of every standing source. **YC/Wellfound** — workatastartup.com and wellfound.com
+> remain client-rendered shells with zero indexed postings surfaced via direct fetch or targeted
+> WebSearch (expected — the YC Winter 2027 batch isn't due until ~November 2026). **Economic
+> consulting** — Analysis Group's own FAQ explicitly states no off-cycle internships (summer-only,
+> June–Aug); Cornerstone Research confirmed 2027 program applications don't open until March 1, 2027
+> (summer cycle only); Charles River Associates' Greenhouse board re-queried directly — still only
+> three EU-only (Brussels/Munich/London) Antitrust & Competition reqs, Summer 2027, unchanged;
+> Compass Lexecon, Brattle, NERA — no new postings beyond already-known Summer 2027 cycles. **Palantir's**
+> Lever board re-checked — still only the Paris/Honolulu Deployment Strategist Internship reqs.
+> **Uber/DoorDash/Flexport** — no Strategy & Operations or Business Operations internship at any of
+> the three (Uber's University page lists only full-time Strategy/Ops roles, no term dates; DoorDash
+> and Flexport searches surfaced only full-time Associate-level Strategy & Ops roles; Flexport's and
+> DoorDash's own careers pages both 403'd directly, relied on Greenhouse search instead). **SimplifyJobs
+> off-season README** downloaded fresh and grepped programmatically end-to-end (40,778 lines) for
+> every target-city/function/term hit — this is also the source of the A147 correction above. Other
+> hits, all already-tracked or excluded: GE Aerospace Data Science Co-op (already A152, same req
+> R5040450); VaynerMedia Data Analytics Resident NYC Winter 2027 variant (same req as already-tracked
+> A162); MTA "EAM Analyst Intern" (same Emerging Talent family as A120/A160/A161, no distinct live
+> posting locatable); FOX News Media NYC Data Analytics Intern (confirmed directly: Feb 8–Apr 16 2027,
+> overruns by 5 weeks, excluded); Disney "Insights and Analytics Intern" (ABC News) and "Marketplace &
+> Portfolio Insights Intern" NYC (both confirmed Jan–June 2027, 6-month overrun, same pattern as
+> A110's family, excluded); Tesla "Data Analyst Intern – People Products" (Palo Alto/Austin, min.
+> 12-week commitment from a ~Jan start likely overruns, deadline on the Intern Insider mirror already
+> read Oct 10 — passed — excluded rather than added); Domino Data Lab "Forward Deployed Engineer
+> Intern" NYC (good functional fit in principle — dev-tool FDE — but the only locatable posting is
+> tagged Spring **2028**, targeting Spring 2028 graduates, not the 2027 cycle; no live 2027-specific
+> req found, not added); Zipline Data Analytics Intern Spring 2027 (same already-excluded Jan–Apr
+> cohort as the rest of Zipline's family). **BuiltIn NYC/Austin/SF** — re-fetched directly; the only
+> new find was **A167 above (Dell)**; everything else Winter/Spring-2027-tagged is Summer 2027,
+> already-tracked, or wrong function (Notion/Cloudflare SWE, engineering, out of scope).
+> **GradConnection Sydney** — nothing beyond already-tracked TikTok reqs and pay-to-play placement
+> brokerages (Premium Graduate Placements). **Tokyo** — coralcap.co/jobs still 404s, but coralcap.co/careers
+> loaded this time: 4 openings, none internships (Content Producer is content-marketing, excluded by
+> function; the rest require business Japanese). japan-dev.com and tokyodev.com — the only
+> non-engineering internship found (HENNGE Full-Stack Pathway) is itself engineering; no new lead.
+> Madrid/Barcelona — no results on any source this pass.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-11** (daily sweep — **no status corrections, no new Tier A rows, no
 > closures.** Re-verified the nearest-term-deadline/at-risk rows via direct fetch: **A93
 > (NewsBreak)** — still "Actively hiring," deadline unchanged (Oct 12 2026, **1 day out — nearest
 > deadline in the tracker**). **A95 (Parkdepot)** — still "Actively hiring," deadline unchanged (Oct
@@ -777,7 +865,7 @@ recomputed once the resume is uploaded.
 | A144 | Rundoo | Product Manager Intern | PM | Redwood City, CA | In-person | Series-funded ($48M raised; Battery/Bessemer/CRV) | **Summer 2027 term (confirmed) ⚠** | Rolling | $2,461/wk (~$122K/yr annualized) | 2 | ~5 | Low | conflict | [Ashby](https://jobs.ashbyhq.com/rundoo/b7d71a5a-4a88-4e97-a6db-e0446eefb389) |
 | A145 | Energy and Environmental Economics (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA / Boston, MA / New York, NY / Calgary, AB | Hybrid (≥3 days/wk office) | Boutique (energy economics consulting) | Flexible, 8–12 wk min ⚠ (grad-year eligibility unclear) | Confirm ≤ Mar 12 | $30–45/hr | 3 | ~3 | Med | live | [Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
 | A146 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | In-person (3 days/wk) | Public (crypto/Web3 exchange) | **"January to April 2027" (explicit, semester-long) ⚠** | Unconfirmed | Unconfirmed | 3 | 4 | Low | conflict | [Greenhouse](https://boards.greenhouse.io/embed/job_app?for=gemini&token=8214332&gh_jid=8214332) |
-| A147 | Tesla | Service Program & Project Management Intern | PM | Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | 3 | Med | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283443) |
+| A147 | Tesla | Service Program & Project Management Intern | PM | Austin, TX | Unconfirmed | Public | Spring 2027 (tagged); SimplifyJobs README tags this exact req 🎓 (advanced-degree marker) ⚠ | Unconfirmed | Unconfirmed | 4 | 3 | Med | blocked | [Tesla Careers](https://www.tesla.com/careers/search/job/283443) |
 | A148 | Clearwater Analytics (CWAN) | Product Management Intern (Technical Product Manager) | PM | New York, NY | Unconfirmed | Public (NYSE: CWAN) | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | Unconfirmed | 3 | 3 | Low/Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/11265249) |
 | A149 | MetLife | Group Benefits Sales Intern | Sales | New York, NY | Hybrid | Public (Fortune 100) | Unconfirmed ⚠ (no season stated) | Unconfirmed | $24/hr | 4 | 3 | Low | unverified | [Built In NYC](https://www.builtinnyc.com/job/group-benefits-sales-intern-new-york-ny/11265346) |
 | A150 | HP (Hewlett Packard) | Personal Systems Product Management Intern | PM | Austin, TX | Unconfirmed | Public | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | $29–33/hr | 3 | 3 | Low/Med | unverified | [HP Workday](https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Austin-Texas-United-States-of-America/Personal-Systems-Product-Management-Intern_UNI4755) |
@@ -797,6 +885,7 @@ recomputed once the resume is uploaded.
 | A164 | Energy and Environmental Economics, Inc. (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA / New York, NY / Boston, MA / Calgary, AB (candidate's choice) | Hybrid (min. 3 days/wk in-office) | Established (boutique energy/climate-policy econ consulting) | 8–12 weeks, candidate-proposed dates; hiring cycle interviews Jan / decisions Feb 2027 ⚠ | Confirm ≤ Mar 12 | Unconfirmed ("full time hourly internship position") | 3 | ~4 | Med | conflict | [E3 Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
 | A165 | Figma | Data Science Intern (2027) | Data | San Francisco, CA / New York, NY | In-person (assumed; not explicitly labeled) | Established (public, design/dev-tool) | Unconfirmed — no season or dates stated anywhere in posting ⚠ | Unconfirmed | $46/hr + housing stipend + travel reimbursement | 4 | ~4 | Med | unverified | [Figma Greenhouse](https://job-boards.greenhouse.io/figma/jobs/6178857004) |
 | A166 | Stripe | Data Analyst, Intern | Data | Chicago, IL / New York, NY / Seattle, WA / South San Francisco, CA | Hybrid (min. 50% time in local office stated) | Established (public-adjacent, API/fintech) | Unconfirmed — no term length/dates stated; eligibility targets Dec 2027/Spring-Summer 2028 grads ⚠ | Unconfirmed | $117,000/yr stated as base-salary field — unusual annual framing for an internship, flagged ⚠ | 5 | ~4 | Med | unverified | [Stripe careers](https://stripe.com/jobs/search?gh_jid=8194291) |
+| A167 | Dell Technologies | Corporate Strategy Undergraduate Intern | Strategy | Austin, TX | In-person | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere ⚠ | Oct 17 2026 | $27.10–$31.80/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/dell-technologies/corporate-strategy-undergraduate-intern-5d8b93b4-cec5-46fa-8607-0970c493600a) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
