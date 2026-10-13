@@ -5,7 +5,57 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-12** (daily sweep — **1 correction (A147 Tesla Service Program &amp;
+> Last swept: **2026-10-13** (daily sweep — **1 note-only correction (A93 NewsBreak: stated
+> deadline passed without the listing closing, resolving last sweep's "hard cutoff" framing —
+> see below), no new Tier A rows, no closures.**
+>
+> **Correction: A93 (NewsBreak, Growth Engineer Intern, Mountain View).** The 2026-10-12 sweep
+> flagged Oct 12 as "the hard cutoff." Re-opened directly today (Oct 13, one day past that date):
+> the listing is unchanged — still tagged "Actively hiring," still reads "Apply by Oct 12" / "Best
+> applied by Oct 12." The identical "Apply by X" / "Best applied by X" phrasing also appears on
+> A95 (Parkdepot)'s Oct 17 deadline, which that posting's own "rolling" term tag frames as a
+> recommendation, not a hard cutoff. Since A93's stated deadline has now passed with no closure,
+> that reading is confirmed for A93 too: softened "hard cutoff" language from the prior note.
+> Status unchanged (`live`, Priority Low).
+>
+> **Re-verification pass.** Re-verified the remaining at-risk/near-term rows via direct fetch:
+> **A95 (Parkdepot)** — still "Actively hiring," deadline unchanged (Oct 17 2026, 4 days out).
+> **A112/A114 (TikTok Sydney)** — both still open, closing date unchanged (30 Oct 2026, 1:59pm
+> Sydney, 17 days out — inside the 3-week window); work-rights list still truncated behind "...show
+> more" on this pass, but both reqs confirmed "Australian Working Visa" explicitly on the prior
+> (2026-10-06) sweep and nothing suggests a narrower policy this time. **A159 (Wonder)** — direct
+> Workday fetch still an empty JS shell, same as every prior attempt; no new mirror evidence found
+> this pass — stays `unverified`, unchanged. **A167 (Dell)** — Intern Insider listing unchanged:
+> still "Apply by Oct 17," no term/duration/start date stated; stays `unverified`, unchanged.
+>
+> Full re-sweep of every standing source found nothing new that clears the bar. **YC/Wellfound** —
+> workatastartup.com still a client-rendered empty shell on direct fetch; wellfound.com rendered
+> but surfaced only full-time/non-internship roles outside target functions — expected, the YC
+> Winter 2027 batch isn't due until ~November 2026. **Economic consulting** — Charles River
+> Associates' Greenhouse board re-queried directly: still only the same EU-only (London/Brussels/
+> Munich) reqs plus a US Forensic Services Billing Analyst (not internship-relevant), Summer 2027
+> or ungated-by-year, unchanged. Analysis Group's careers page confirms summer-only language
+> directly ("seeking full-time and summer internship opportunities"), unchanged. Compass Lexecon's
+> main careers page states no timing detail and no current openings list (its Workday openings
+> board isn't directly fetchable); not confirmed-empty, consistent with prior inconclusive passes.
+> Brattle's careers page again gives no program-timing detail on direct fetch; its own
+> Current-Openings subpage wasn't reachable this pass either — inconclusive, unchanged. **Palantir's**
+> Lever board re-checked — still only the Paris and Honolulu Deployment Strategist Internship reqs,
+> neither term-dated. **SimplifyJobs off-season README** spot-checked (Software Engineering section
+> only, given yesterday's full 40,778-line programmatic parse already covered every category) — no
+> new target-function hit in the section sampled. **BuiltIn Austin** — re-fetched directly: Cox
+> Enterprises PM Intern and Itron Data Science Intern are both Summer 2027 (excluded); CrowdStrike's
+> Sales Excellence/Global Programs interns are Summer 2027 and borderline-function at best. **BuiltIn
+> NYC** — all visible postings are PwC/Citadel Summer 2027 reqs, wrong term. **GradConnection
+> Sydney** — 17 non-TikTok postings checked; all are Australian summer-vacationer/EOI programs (EY,
+> ANZ, Treasury, Allens, Jemena-Zinfra) aimed at Australian-enrolled students or starting outside
+> the window (ANZ's starts Nov 2027), plus the same pay-to-play brokerages as before — none add.
+> **Tokyo** — coralcap.co/jobs still 404s, the same standing access gap as every prior sweep.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-12** (daily sweep — **1 correction (A147 Tesla Service Program &amp;
 > Project Management Intern downgraded `unverified` → `blocked`), 1 new Tier A row (A167 Dell
 > Technologies Corporate Strategy Undergraduate Intern, unverified), no closures.**
 >
