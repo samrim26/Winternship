@@ -5,7 +5,77 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-13** (daily sweep — **1 note-only correction (A93 NewsBreak: stated
+> Last swept: **2026-10-14** (daily sweep — **1 note-only correction (A112/A114 TikTok Sydney:
+> subclass-462 work-rights confirmation re-done at the per-req level rather than the page-wide
+> list, resolving the recurring truncation ambiguity for good — see below), no new Tier A rows,
+> no closures.**
+>
+> **Correction: A112/A114 (TikTok, Sydney).** Past sweeps resolved the "...show more" work-rights
+> truncation by grepping the rendered page for "Australian Working Visa," but that page also lists
+> several unrelated TikTok Sydney reqs sharing an identical generic work-rights taxonomy, so a
+> bare page-wide match was always at risk of confirming the wrong job's block. This pass isolated
+> each req's own `work_rights` JSON array directly and confirmed "Australian Working Visa" is
+> listed specifically for A112 and for A114, not just inferred from a sibling req. Subclass 462
+> eligibility is now confirmed at the correct scope. No status or date change — both stay `live`,
+> closing 30 Oct 2026, 1:59pm Sydney, unchanged.
+>
+> **Re-verification pass.** **A93 (NewsBreak)** — unchanged, still "Actively hiring," still reads
+> "Apply by Oct 12" verbatim two days past that date with no closure — confirms the soft-deadline
+> reading. **A95 (Parkdepot)** — unchanged, "Apply by Oct 17," 3 days out. **A159 (Wonder)** — the
+> Workday posting is still an empty JS shell on every attempt; no headless-render path available in
+> this environment; stays `unverified`, unchanged. **A167 (Dell)** — Intern Insider listing
+> unchanged (still "Apply by Oct 17," no term/duration/start date stated). Dell's own primary site
+> (jobs.dell.com) now confirmed systemically unreachable rather than an intermittent fetch issue:
+> every URL pattern tried (a known-valid job-detail URL, the search endpoint, a keyword search)
+> returns an HTML page literally titled "Page not found," by raw curl, not just WebFetch — the 4th
+> consecutive sweep with this exact result. A secondary lead (a Bentley University CareerEdge mirror
+> of a similarly-titled "Strategy & Operations Undergraduate Intern" req) returned HTTP 410 behind a
+> student login wall and carries a different title than the tracked req — not usable as independent
+> confirmation, not pursued. Stays `unverified`, unchanged. Spot-checked three `live` rows not
+> recently re-touched — **A22 (CertiK)**, **A65 (Peakflo)**, **A92 (TraceRoot.AI)** — all confirmed
+> unchanged.
+>
+> Full re-sweep of every standing source found nothing that clears the quality bar for addition.
+> **YC/Wellfound** — workatastartup.com returned `406` on this pass rather than the usual `301`;
+> consistent with the bot-challenge quirk noted on 2026-10-11 (a bare request without a browser
+> `Accept` header gets a different status than one with it) rather than a genuine access regression
+> — WebFetch still renders an empty client-side shell either way, expected ahead of the ~November
+> 2026 YC Winter 2027 batch. wellfound.com rendered but surfaced zero internship listings on the
+> sampled page. **Economic consulting** — Analysis Group, Cornerstone Research, Charles River
+> Associates (including its jobs-board subpage, not just the landing page), Compass Lexecon, Brattle
+> (including its Current-Openings subpage, a client-rendered shell), and NERA all re-fetched directly
+> — all still summer-only or inconclusive, unchanged. **SimplifyJobs off-season README** downloaded
+> fresh (41,082 lines) and parsed programmatically across all five sections for every target-city +
+> function + 2027-term hit: two new-looking candidates surfaced (Kodiak Robotics "Data Engineering
+> Intern," Mountain View, and Bayer "Data Science Co-Op," Berkeley) but neither cleared the quality
+> bar — Kodiak's posting states a 12–16 week term from a January start, which at the 12-week floor
+> still overruns 12 Mar by ~2.5 weeks, and the role reads as genuinely technical data-engineering
+> work rather than the analytics/commercial-adjacent lane this profile targets, with a garbled
+> $10,000–$10,000 pay field; Bayer's posting is simultaneously tagged "Winter 2027" and "Summer
+> 2027" with no explicit dates (reads as an evergreen multi-cycle req, not a dated Jan–Mar slot) and
+> its eligibility language leans PhD-preferred with an ambiguous "or an undergraduate degree" clause
+> echoing the MTA A160 grad-only precedent. Both excluded as marginal rather than added at Priority
+> Low, per the tightened quality bar. Confirmed zero rows in the README mention Sydney, Madrid, or
+> (non-Melbourne-FL) Melbourne, and no distinct Strategy/Growth/BD/Partnerships/Sales category exists
+> in this repo at all. **Intern Insider's** Winter/Spring 2027 term pages — only the already-excluded
+> Bayer lead, no other target-function/city hit. **BuiltIn NYC/Austin/SF** — nothing new; all
+> target-function-adjacent hits remain Summer 2027. **GradConnection Sydney** — nothing beyond the
+> already-tracked TikTok reqs and pay-to-play brokerages. **Tokyo** — coralcap.co/jobs still 404s
+> (standing gap); coralcap.co/careers loaded (4 postings, all already-excluded); japan-dev.com's
+> non-engineering hits all explicitly require Japanese, ruling them out per the English-first
+> positioning; tokyodev.com/jobs returned a new `403` on direct fetch (not one of the five
+> sanity-check domains, isolated, not treated as a broader regression). **Palantir's** Lever board
+> re-checked unfiltered (44 "Internship" reqs) — still only the Paris and Honolulu Deployment
+> Strategist Internship reqs. **Uber** — careers site remains a client-rendered shell, no internship
+> confirmed either way. **DoorDash** — found its Greenhouse board moved to the slug `doordashusa`
+> (the old `doordash` slug now 404s, useful for future sweeps); no internship postings visible.
+> **Flexport** — no internship postings site-wide.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 406 — see bot-challenge
+> note above, not a regression; wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 200,
+> www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-13** (daily sweep — **1 note-only correction (A93 NewsBreak: stated
 > deadline passed without the listing closing, resolving last sweep's "hard cutoff" framing —
 > see below), no new Tier A rows, no closures.**
 >
