@@ -8,3 +8,4 @@ resume/*.docx
 
 # Claude Code agent worktrees / session scratch data — not repo content
 .claude/
+__pycache__/
