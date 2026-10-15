@@ -5,6 +5,13 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
+> Liveness check **2026-10-15 22:08 UTC** (`check_links.py`, 95 open rows): **2 closed** —
+> A136, A137 (both Acxiom, Intern Insider "Closed:" page title). 11 `UNKNOWN`: 6 Tesla 403s
+> (standing, unchanged); 5 BuiltIn NYC 429s (new this pass — a Cloudflare challenge page, not a
+> real rate limit) resolved directly with a spaced-out browser-UA retry: 4 of 5 (A18, A148, A149,
+> A155) returned 200 with normal, non-"Closed" titles — confirmed still live, no status change;
+> A14 stayed challenge-walled after a second retry, left `unverified`/unchanged per protocol.
+> 0 `SUSPECT`.
 > Liveness check **2026-10-14 22:25 UTC** (`check_links.py`, 107 open rows): **12 closed** —
 > A6, A84, A85, A87 (WAAS 404), A78, A88, A90 (Wellfound 410), A80 (Notion Ashby board dropped
 > the req), A81 (Intern Insider 404), A111 (Greenhouse API 404), A109, A140 (Intern Insider
@@ -1042,8 +1049,8 @@ recomputed once the resume is uploaded.
 | A133 | Base Power Company | Deployments Operations Intern | Strategy (field ops) | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~2 | Low | live | [Built In Austin](https://www.builtinaustin.com/job/deployments-operations-intern/11184062) |
 | A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
 | A135 | Acxiom | Intern, Product Management | PM | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-management-30a0e8ee-b65a-43d1-acbd-2d6f995e3beb) |
-| A136 | Acxiom | Enterprise Solutions Consulting Intern (aka "Intern - Solution Consultant" on Acxiom's own ATS) | Strategy | Remote/Homebased (resolved — see note) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
-| A137 | Acxiom | Intern, Financial Analyst | Data/Finance | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-financial-analyst-7d934d45-ad65-48dc-aead-3a42da19e9cf) |
+| A136 | Acxiom | Enterprise Solutions Consulting Intern (aka "Intern - Solution Consultant" on Acxiom's own ATS) | Strategy | Remote/Homebased (resolved — see note) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
+| A137 | Acxiom | Intern, Financial Analyst | Data/Finance | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-financial-analyst-7d934d45-ad65-48dc-aead-3a42da19e9cf) |
 | A138 | Heron Power | Intern, Business Development Associate (Fall 2026/Winter 2027) | BD | Scotts Valley, CA (Bay Area-adjacent, not core metro) | In-person | a16z-backed (power electronics/grid) | Fall 2026/Winter 2027 (tagged); term boundaries unclear ⚠ | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Low | unverified | [Ashby](https://jobs.ashbyhq.com/heron-power/823aab95-be9b-485e-a8fc-4024440a91cd) |
 | A139 | Tesla | Product Manager Intern, Residential Energy Engineering | PM | Palo Alto, CA | Unconfirmed | Public | Winter 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/283841) |
 | A140 | Acxiom | Data Scientist Intern | Data | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/acxiom/data-scientist-intern-4cbf6892-4c7d-4cdc-b96a-0ce4b538fd8c) |
