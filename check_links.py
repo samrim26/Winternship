@@ -30,7 +30,7 @@ def get(url, data=None, headers=None):
     req = urllib.request.Request(url, data=data, headers={**UA, **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=15) as r:
-            return r.status, r.geturl(), r.read(400_000).decode("utf-8", "replace")
+            return r.status, r.geturl(), r.read(4_000_000).decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
         return e.code, url, ""
     except Exception as e:
