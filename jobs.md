@@ -10,7 +10,70 @@
 > the req), A81 (Intern Insider 404), A111 (Greenhouse API 404), A109, A140 (Intern Insider
 > "Closed:"). The daily sweep had missed all twelve: it only re-opened a handful of rows per run.
 >
-> Last swept: **2026-10-14** (daily sweep — **1 note-only correction (A112/A114 TikTok Sydney:
+> Last swept: **2026-10-15** (full sweep — **1 checker-bug correction (false `DEAD` on A138
+> Heron Power, caused by `check_links.py` truncating ATS API reads at 400KB — fixed, see below),
+> no new Tier A rows, no closures.**
+>
+> **Correction: A138 (Heron Power) — false `DEAD` from a checker bug, not a real closure.**
+> `check_links.py`'s liveness pass flagged A138 as `DEAD` ("ashby board no longer lists id"). Before
+> closing it per the liveness protocol, confirmed directly: fetched Heron Power's Ashby job-board API
+> payload in full (580KB) and found the job id present (`isListed: true`), and fetched the posting
+> page itself directly — 200, correct `<title>`, live Apply button, no closed signal anywhere. Root
+> cause: the checker's `get()` helper only reads the first 400,000 bytes of any response, and this
+> particular job id happens to sit at byte offset ~409,934 in Heron Power's (unusually large) board
+> JSON — past the cutoff, so the id-presence check always missed it. Fixed by raising the read cap to
+> 4MB; re-ran the full checker clean afterward (0 `DEAD`, 0 `SUSPECT`). A138 stays `unverified`,
+> unchanged — it was never actually dead.
+>
+> **Liveness check (`check_links.py`, post-fix): 95 open rows, 0 `DEAD`, 0 `SUSPECT`, 7 `UNKNOWN`.**
+> All 7 `UNKNOWN` are standing, already-understood access gaps, not new signals: six are Tesla's
+> careers site (`www.tesla.com/careers/search/job/…`, HTTP 403 on every attempt for months — A68,
+> A122, A124–A126, A139), one is a LinkedIn 429 rate-limit on A1 (Brilliant Infotech, already
+> `conflict` status, transient). No status changes from this pass.
+>
+> **Substance spot-checks (live rows not recently re-touched).** **A167 (Dell Technologies, Corporate
+> Strategy Undergrad Intern)** — re-opened directly on Intern Insider: unchanged, still "Apply by Oct
+> 17" (now **2 days out**), no term/duration/start date still stated anywhere. **A95 (Parkdepot,
+> Marketing Analyst Intern)** — re-opened directly: still "Actively hiring," deadline unchanged ("Apply
+> by Oct 17," also **2 days out**). **A161 (MTA, EAM Value Realization)** — Jobvite posting re-opened
+> directly, title/page unchanged, no closed signal. **A153 (Contoro Robotics, BD Intern)** — Built In
+> posting re-opened directly, unchanged, no closed signal. All four confirmed live and substantively
+> unchanged from their tracked details.
+>
+> **Full re-sweep of every standing source (delegated sub-pass) found nothing that clears the quality
+> bar for addition.** **YC/Wellfound** — workatastartup.com reachable (200) but still an empty
+> client-rendered shell (no listings extracted, even on an internship-filtered query) — Winter 2027
+> batch not live yet, as expected ahead of ~November 2026; wellfound.com reachable, zero internship
+> postings on the sampled page. **Economic consulting** — all six named firms (Analysis Group,
+> Cornerstone, Charles River Associates, Compass Lexecon, Brattle, NERA) reachable and re-checked
+> directly; CRA's own board (91 open reqs) is entirely full-time Bachelor's/Master's-2027 Analyst/
+> Associate hiring or PhD Senior Associate roles, no internships, no Jan–Mar dates; the rest remain
+> summer-only or render empty, unchanged. **SimplifyJobs off-season README** downloaded fresh (41,258
+> lines, +176 since 2026-10-14) and parsed programmatically end-to-end for every target-city/function/
+> term hit — every match (MTA ×4, Tesla Data Analyst Intern, FOX Data Analytics Intern, GE Aerospace
+> Flight Analytics Co-op, Zipline, Disney Insights/Marketplace ×2, Cloudflare People Analytics Data
+> Engineer Intern, J&amp;J AI/ML/DS Intern) is already a tracked row or an already-logged exclusion —
+> no net-new hit. **Intern Insider's** Winter/Spring 2027 term pages re-sampled — only flagged hit is
+> E3 (already tracked as A145/A164 — confirmed these are genuine duplicate rows for the same posting,
+> worth merging on a future pass, not done this run to avoid losing either row's distinct note
+> history). **BuiltIn NYC/Austin/SF** — no new Winter/Spring-2027-tagged hit, only Summer 2027/2028
+> postings (PwC Strategy&amp; NYC, CrowdStrike/Cox/Optiver/Itron Austin). **GradConnection Sydney** —
+> nothing beyond already-tracked TikTok reqs and already-excluded employers (Capgemini, Nestlé YEP, DT
+> Infrastructure, ANZ, EY, Treasury, CommBank). **Tokyo** — coralcap.co/jobs still 404s (standing gap);
+> coralcap.co/careers loaded (4 postings, all requiring business Japanese or VC experience, none
+> match); tokyodev.com/jobs 403'd again (two sweeps running, isolated, not a sanity-check domain);
+> japan-dev.com loaded, no non-engineering English-first match. **Palantir's** Lever board re-checked
+> unfiltered — still only the Paris/Honolulu Deployment Strategist Internship reqs; a new "Meritocracy
+> Fellowship (Business Development)" req, NYC, was found and rejected — it's explicitly a recent-
+> high-school-graduate program (not current-college-student eligible), not added. **Uber** — remains a
+> client-rendered shell even on an intern-query URL, no listings extracted. **DoorDash**
+> (job-boards.greenhouse.io/doordashusa, 458 reqs) — no internship titles found. **Flexport** — no
+> internship postings site-wide.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior: **2026-10-14** (daily sweep — **1 note-only correction (A112/A114 TikTok Sydney:
 > subclass-462 work-rights confirmation re-done at the per-req level rather than the page-wide
 > list, resolving the recurring truncation ambiguity for good — see below), no new Tier A rows,
 > no closures.**
