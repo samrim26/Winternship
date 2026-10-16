@@ -5,6 +5,36 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
+> Last swept: **2026-10-16** (full sweep — **1 new Tier A row (A168 xAI Business Operations
+> Internship/Co-op, conflict), no closures beyond the liveness pass below, no corrections.**
+>
+> **New: A168 (xAI) — Business Operations Internship/Co-op, Palo Alto, CA.** Found via a direct
+> Greenhouse fetch (`job-boards.greenhouse.io/xai/jobs/5255113007`), confirmed on xAI's own ATS, not
+> an aggregator. Strategy & Operations generalist role at a frontier-AI company — no major gate
+> (Econ not excluded; 3+ months of corporate/business-function experience required, which the
+> posting explicitly lists as satisfiable by data analysis, finance, HR, IT, gov affairs, legal,
+> advertising, or sales), $24.50–26/hr depending on class standing plus relocation stipend.
+> **Dates don't cleanly fit**: the posting requires "full time, onsite for a minimum of 12
+> consecutive weeks beginning in January or March 2027" — a Jan 4 start plus the 12-week floor runs
+> to roughly Mar 29, ~2.5 weeks past the Mar 12 hard stop; a March start is worse. Added as
+> `conflict` per the never-drop rule rather than excluded — worth an early direct application with
+> explicit up-front disclosure of the Jan 4–Mar 12 window (per `PROFILE.md`'s disclosure protocol),
+> in case they'll flex the floor for the right candidate. Substance spot-checks this run (A96 Crowe,
+> A128 Base Power, A151 Kroll, A82 Soren, A92 TraceRoot) all confirmed unchanged. Delegated board
+> sweep (YC, Wellfound, Simplify, Intern Insider, BuiltIn, GradConnection, Tokyo, Palantir, Uber,
+> DoorDash, all six named economic-consulting firms, plus a deeper pass on Instacart/Faire/Stripe/
+> Twilio/Ramp/Brex/Mercury/Plaid/Segment/Deel/Rippling ATS boards) found nothing else that clears
+> the quality bar — YC/Wellfound still empty ahead of the Winter 2027 batch, economic consulting
+> firms still summer-only/full-time-only, no new target-metro hits elsewhere. Plaid/Segment/Deel/
+> Rippling boards 404'd on standard ATS slugs this pass — not confirmed empty, worth retrying with
+> correct slugs next sweep, not a new access gap.
+>
+> Liveness check **2026-10-16 13:20 UTC** (`check_links.py`, 94 open rows after adding A168): **0
+> closed**, 0 `SUSPECT`, 9 `UNKNOWN` — all standing known gaps: 6 Tesla 403s (unchanged for months)
+> and 3 BuiltIn NYC 429s (A18, A72, A149 — a Cloudflare challenge page, not a real rate limit),
+> all three resolved directly with a spaced-out browser-UA retry — 200, normal non-"Closed" titles,
+> confirmed still live, no status change.
+>
 > Liveness check **2026-10-15 22:08 UTC** (`check_links.py`, 95 open rows): **2 closed** —
 > A136, A137 (both Acxiom, Intern Insider "Closed:" page title). 11 `UNKNOWN`: 6 Tesla 403s
 > (standing, unchanged); 5 BuiltIn NYC 429s (new this pass — a Cloudflare challenge page, not a
@@ -1081,6 +1111,7 @@ recomputed once the resume is uploaded.
 | A165 | Figma | Data Science Intern (2027) | Data | San Francisco, CA / New York, NY | In-person (assumed; not explicitly labeled) | Established (public, design/dev-tool) | Unconfirmed — no season or dates stated anywhere in posting ⚠ | Unconfirmed | $46/hr + housing stipend + travel reimbursement | 4 | ~4 | Med | unverified | [Figma Greenhouse](https://job-boards.greenhouse.io/figma/jobs/6178857004) |
 | A166 | Stripe | Data Analyst, Intern | Data | Chicago, IL / New York, NY / Seattle, WA / South San Francisco, CA | Hybrid (min. 50% time in local office stated) | Established (public-adjacent, API/fintech) | Unconfirmed — no term length/dates stated; eligibility targets Dec 2027/Spring-Summer 2028 grads ⚠ | Unconfirmed | $117,000/yr stated as base-salary field — unusual annual framing for an internship, flagged ⚠ | 5 | ~4 | Med | unverified | [Stripe careers](https://stripe.com/jobs/search?gh_jid=8194291) |
 | A167 | Dell Technologies | Corporate Strategy Undergraduate Intern | Strategy | Austin, TX | In-person | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere ⚠ | Oct 17 2026 | $27.10–$31.80/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/dell-technologies/corporate-strategy-undergraduate-intern-5d8b93b4-cec5-46fa-8607-0970c493600a) |
+| A168 | xAI | Business Operations Internship/Co-op (Spring 2027) | Strategy (Business Ops) | Palo Alto, CA | In-person (onsite required) | Frontier AI (private) | Jan or Mar 2027 start, 12-wk min — overruns Mar 12 by ~2.5 wks ⚠ | Rolling | $24.50–$26/hr + relocation stipend | 5 | ~4 | Med | conflict | [xAI Greenhouse](https://job-boards.greenhouse.io/xai/jobs/5255113007) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
