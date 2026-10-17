@@ -5,7 +5,40 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-16** (full sweep — **1 new Tier A row (A168 xAI Business Operations
+> Last swept: **2026-10-17** (full sweep — **3 new Tier A rows (A169 MTA Data Analysis/Supplier
+> Relations, live; A170 FOX News Media Data Analytics, conflict; A171 MTA Operations Support, live),
+> 2 closures from the liveness pass below (A135, A142 Acxiom), no substance corrections.**
+>
+> **New: A169 (MTA) — Data Analysis (Supplier Relations), Emerging Talent Intern (Spring), New York,
+> NY.** Sibling req to A120/A160/A161, found via the SimplifyJobs off-season README's Data Science
+> section and confirmed directly on MTA's own Jobvite ATS (`jobs.jobvite.com/.../oOvWAfwz`).
+> Undergraduate-eligible at $19/hr, same onsite/20-hrs-min pattern as the rest of the MTA cluster.
+> **New: A170 (FOX News Media) — Spring 2027 Internship Program, Data Analytics, New York, NY.**
+> Found via the same SimplifyJobs README parse, confirmed directly on FOX's own Workday CXS API
+> (req R50033950, `canApply: true`). In-person, part-time (16–24 hrs/wk), $20/hr, sophomore+
+> eligible. Added `conflict` rather than excluded: FOX's own posting states no exact dates, but a
+> web search of FOX's historical spring cohorts (e.g. spring 2025 ran Feb 10–Apr 18) shows the
+> program runs February–April, ~5 weeks past the Mar 12 hard stop — worth asking directly whether a
+> shortened block is possible given the real brand-name/Data-function fit.
+> **New: A171 (MTA) — Operations Support, Emerging Talent Intern (Spring), Brooklyn, NY.** Fourth
+> MTA "Emerging Talent" sibling, found via a direct Intern Insider winter-2027-term crawl and
+> confirmed on MTA's own Jobvite ATS. Based at 130 Livingston Street (Department of Subways
+> Operations Support), distinct team/office from the Manhattan HQ rows. Undergraduate-eligible at
+> $19/hr, same onsite pattern as A120/A161/A169.
+>
+> **Substance spot-checks this run (A98 Cresta, A120 MTA EAM Analyst, A145 E3, A121 Ankura — the
+> last could not be re-rendered, left unchanged per protocol): all confirmed unchanged** — no
+> corrections to report.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Liveness check **2026-10-17 13:05 UTC** (`check_links.py`, 94 open rows before adding A169–A171):
+> **2 closed** — A135, A142 (both Acxiom, Intern Insider "Closed:" page title, same pattern as the
+> A136/A137 closures on 2026-10-15). 7 `UNKNOWN`: 6 Tesla 403s (standing, unchanged for months), 1
+> LinkedIn 429 on A1 (standing, transient). 0 `SUSPECT`.
+>
+> Prior: **2026-10-16** (full sweep — **1 new Tier A row (A168 xAI Business Operations
 > Internship/Co-op, conflict), no closures beyond the liveness pass below, no corrections.**
 >
 > **New: A168 (xAI) — Business Operations Internship/Co-op, Palo Alto, CA.** Found via a direct
@@ -1112,6 +1145,9 @@ recomputed once the resume is uploaded.
 | A166 | Stripe | Data Analyst, Intern | Data | Chicago, IL / New York, NY / Seattle, WA / South San Francisco, CA | Hybrid (min. 50% time in local office stated) | Established (public-adjacent, API/fintech) | Unconfirmed — no term length/dates stated; eligibility targets Dec 2027/Spring-Summer 2028 grads ⚠ | Unconfirmed | $117,000/yr stated as base-salary field — unusual annual framing for an internship, flagged ⚠ | 5 | ~4 | Med | unverified | [Stripe careers](https://stripe.com/jobs/search?gh_jid=8194291) |
 | A167 | Dell Technologies | Corporate Strategy Undergraduate Intern | Strategy | Austin, TX | In-person | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere ⚠ | Oct 17 2026 | $27.10–$31.80/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/dell-technologies/corporate-strategy-undergraduate-intern-5d8b93b4-cec5-46fa-8607-0970c493600a) |
 | A168 | xAI | Business Operations Internship/Co-op (Spring 2027) | Strategy (Business Ops) | Palo Alto, CA | In-person (onsite required) | Frontier AI (private) | Jan or Mar 2027 start, 12-wk min — overruns Mar 12 by ~2.5 wks ⚠ | Rolling | $24.50–$26/hr + relocation stipend | 5 | ~4 | Med | conflict | [xAI Greenhouse](https://job-boards.greenhouse.io/xai/jobs/5255113007) |
+| A169 | Metropolitan Transportation Authority (MTA) | Data Analysis (Supplier Relations), Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) | 2 | ~3 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oOvWAfwz) |
+| A170 | FOX News Media | Spring 2027 FOX News Media Internship Program – Data Analytics (New York) | Data | New York, NY | In-person, part-time (16–24 hrs/wk) | Enterprise (FOX Corp subsidiary) | **Spring 2027 — FOX's own spring cohort historically runs Feb–Apr, ~10 wks (e.g. spring 2025 ran Feb 10–Apr 18) ⚠** | Apr 2027 ⚠ (inferred from historical cohort pattern; posting itself states no exact dates) | Unconfirmed | 4 | ~3 | Low | conflict | [FOX Workday](https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Spring-2027-FOX-News-Media-Internship-Program---Data-Analytics---New-York_R50033950) |
+| A171 | Metropolitan Transportation Authority (MTA) | Operations Support, Emerging Talent Intern (Spring) | Data/Ops | Brooklyn, NY | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~3 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oBqYAfwj) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
@@ -2356,15 +2392,22 @@ FTI Consulting ×2, Corient, Praytell, Jomboy Media, Tessera Labs) that don't cl
 
 | # | Company / Program | Role | Function | Location | Mode | Opens | Window | Pay | Diff | Fit | Priority | Status | Link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| B1 | Charles Schwab | 2027 Internship Program | Data/Business | Austin, TX + others | In-person | **Sept–Nov 2026** | 2027 cycles | Paid | 3 | ~3 | **High** | monitor | [Schwab Jobs](https://www.schwabjobs.com/internship-academy) |
+| B1 | Charles Schwab | 2027 Internship Program | Data/Business | Austin, TX + others | In-person | **Sept–Nov 2026** | 2027 cycles | Paid | 3 | ~3 | **High** | closed | [Schwab Jobs](https://www.schwabjobs.com/internship-academy) |
 | B2 | Citi | Summer Analyst — Commercial Banking, APAC | BD/Strategy | Sydney, AU | In-person | Rolling | 10 wks, Dec–Feb | Paid | 4 | ~3 | Med | monitor | [Citi Careers](https://jobs.citi.com/) |
 | B3 | Bank of America | Global IB & Capital Markets Summer Analyst 2026/27 | Finance | Sydney, AU | In-person | Rolling | Dec–Feb | Paid | 5 | ~2 | Low | monitor | [BofA Careers](https://careers.bankofamerica.com/en-us/students) |
 | B4 | Big 4 advisory (Deloitte / PwC / EY / KPMG) | Advisory & Analytics spring intern | Data/Strategy | Austin, NYC, SF | Hybrid | **Aug–Sept 2026** | Jan–Apr 2027 | Paid | 3 | ~3 | **High** | monitor | search each careers site |
 
 
-**Confirm the end date on every Tier B row before applying.** B1 and B4 are structured programs whose
-spring cycles commonly run into April or May. If they cannot finish by 12 March, they are out —
+**Confirm the end date on every Tier B row before applying.** B4 is a structured program whose
+spring cycle commonly runs into April or May. If it cannot finish by 12 March, it is out —
 see the scope note at the top of this file.
+
+**B1 (Charles Schwab) closed 2026-10-17.** Checked directly on Schwab's own Intern Academy page since
+the row's "opens" window (Sept–Nov 2026) was active as of this sweep. Schwab's 2027 program is
+summer-only — a nine-week cohort running June 7–August 6, 2027, with the page stating "we are not able
+to make exceptions" on those dates. No spring or winter cycle exists. This was tracked as "monitor" on
+the assumption a spring cycle might open in this window; confirmed that assumption was wrong, so closed
+per the hard exclusion on anything that can't finish by Mar 12 (this one hasn't even started by then).
 
 ---
 
