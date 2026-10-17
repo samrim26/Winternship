@@ -16,10 +16,10 @@
 > Undergraduate-eligible at $19/hr, same onsite/20-hrs-min pattern as the rest of the MTA cluster.
 > **New: A170 (FOX News Media) — Spring 2027 Internship Program, Data Analytics, New York, NY.**
 > Found via the same SimplifyJobs README parse, confirmed directly on FOX's own Workday CXS API
-> (req R50033950). In-person, part-time (16–24 hrs/wk), pay unconfirmed, sophomore+
-> eligible. Added `conflict` rather than excluded: FOX's own posting states no exact dates, but a
-> web search of FOX's historical spring cohorts (e.g. spring 2025 ran Feb 10–Apr 18) shows the
-> program runs February–April, ~5 weeks past the Mar 12 hard stop — worth asking directly whether a
+> (req R50033950). In-person, part-time (16–24 hrs/wk), $20.00/hr (employer-stated pay-disclosure
+> footer), sophomore+ eligible. Added `conflict` rather than excluded: the posting's own "SPRING 2027
+> SCHEDULE" block states explicit dates of Monday, February 8, 2027 – Friday, April 16, 2027
+> (deadline Nov 22, 2026) — about 5 weeks past the Mar 12 hard stop — worth asking directly whether a
 > shortened block is possible given the real brand-name/Data-function fit.
 > **New: A171 (MTA) — Operations Support, Emerging Talent Intern (Spring), Brooklyn, NY.** Fourth
 > MTA "Emerging Talent" sibling, found via a direct Intern Insider winter-2027-term crawl and
