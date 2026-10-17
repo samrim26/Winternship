@@ -7,7 +7,8 @@
 > continue from the highest ref in that array — not from this file.
 > Last swept: **2026-10-17** (full sweep — **3 new Tier A rows (A169 MTA Data Analysis/Supplier
 > Relations, live; A170 FOX News Media Data Analytics, conflict; A171 MTA Operations Support, live),
-> 2 closures from the liveness pass below (A135, A142 Acxiom), no substance corrections.**
+> 2 closures from the liveness pass below (A135, A142 Acxiom), 1 Tier B correction (B1 Charles Schwab
+> `monitor` → `closed` — its 2027 program is summer-only, no spring/winter cycle exists).**
 >
 > **New: A169 (MTA) — Data Analysis (Supplier Relations), Emerging Talent Intern (Spring), New York,
 > NY.** Sibling req to A120/A160/A161, found via the SimplifyJobs off-season README's Data Science
@@ -15,7 +16,7 @@
 > Undergraduate-eligible at $19/hr, same onsite/20-hrs-min pattern as the rest of the MTA cluster.
 > **New: A170 (FOX News Media) — Spring 2027 Internship Program, Data Analytics, New York, NY.**
 > Found via the same SimplifyJobs README parse, confirmed directly on FOX's own Workday CXS API
-> (req R50033950, `canApply: true`). In-person, part-time (16–24 hrs/wk), $20/hr, sophomore+
+> (req R50033950). In-person, part-time (16–24 hrs/wk), pay unconfirmed, sophomore+
 > eligible. Added `conflict` rather than excluded: FOX's own posting states no exact dates, but a
 > web search of FOX's historical spring cohorts (e.g. spring 2025 ran Feb 10–Apr 18) shows the
 > program runs February–April, ~5 weeks past the Mar 12 hard stop — worth asking directly whether a
@@ -26,9 +27,36 @@
 > Operations Support), distinct team/office from the Manhattan HQ rows. Undergraduate-eligible at
 > $19/hr, same onsite pattern as A120/A161/A169.
 >
-> **Substance spot-checks this run (A98 Cresta, A120 MTA EAM Analyst, A145 E3, A121 Ankura — the
-> last could not be re-rendered, left unchanged per protocol): all confirmed unchanged** — no
-> corrections to report.
+> **Correction: B1 (Charles Schwab) closed.** The row's own "opens" window (Sept–Nov 2026) was active
+> as of this sweep, so checked directly on Schwab's Intern Academy page rather than waiting further.
+> Schwab's entire 2027 program is a single summer cohort, June 7–August 6, 2027 — "we are not able to
+> make exceptions" on those dates, no spring/winter cycle exists. Closed per the hard exclusion on
+> anything that can't finish by Mar 12.
+>
+> **Substance spot-checks this run (A5 Dalus, A98 Cresta, A120 MTA EAM Analyst, A121 Ankura, A145
+> E3): all confirmed unchanged** — no corrections to report. **A167 (Dell) and A95 (Parkdepot)** both
+> carry an "Apply by Oct 17" badge landing today — re-opened directly, both still "Actively hiring"
+> with active Apply buttons, no "Closed" signal, consistent with the already-documented pattern that
+> these Intern Insider badges are soft/rolling. No status change on either.
+>
+> **Economic consulting firms checked again this run** (per standing instruction): analysisgroup.com,
+> cornerstone.com, crai.com, compasslexecon.com, brattle.com, plus peers Bates White, Berkeley
+> Research Group, Edgeworth Economics, and NERA. All confirmed summer-cycle-only or JS-gated with no
+> listings reachable; Compass Lexecon's own recruiting post explicitly targets students entering
+> their **final year in fall 2027** (disqualifying for Sam's junior-year timeline). No off-cycle
+> econ-consulting opening found anywhere in this family, same as every prior sweep.
+>
+> **Also checked and confirmed empty this run:** YC (workatastartup.com — Winter 2027 batch still
+> hasn't landed, as expected before November), Wellfound, Simplify.jobs's Top internships list,
+> GradConnection Sydney, Coral Capital / Japan Dev / TokyoDev (Tokyo — no internships for
+> non-Japanese-speaking undergrads found), Plaid/Segment/Deel/Rippling ATS boards (resolving last
+> run's flagged gap — genuinely empty of non-engineering intern postings right now, not a
+> slug/access problem), and Uber/DoorDash/Flexport/Palantir Deployment Strategist (Palantir's own NY
+> Deployment Strategist internship requires graduating in 2026 as one's final internship — a hard
+> eligibility mismatch for Sam's Class-of-2028 timeline, not just a date conflict; no Uber/DoorDash/
+> Flexport internship-length Strategy & Ops opening found for 2027). One false lead ruled out:
+> aggregator copies of a "SpaceX Spring 2027 Business Operations Internship/Co-op" resolve to the
+> same Greenhouse requisition as A168 (xAI) — mislabeled by the aggregator, not a second company.
 >
 > Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
 > simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
