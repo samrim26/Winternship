@@ -1184,6 +1184,41 @@ recomputed once the resume is uploaded.
 | A169 | Metropolitan Transportation Authority (MTA) | Data Analysis (Supplier Relations), Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) | 2 | ~3 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oOvWAfwz) |
 | A170 | FOX News Media | Spring 2027 FOX News Media Internship Program – Data Analytics (New York) | Data | New York, NY | In-person, part-time (16–24 hrs/wk) | Enterprise (FOX Corp subsidiary) | **Monday, February 8, 2027 – Friday, April 16, 2027 (explicit, employer-stated)** | **Apr 16 2027 ⚠** (explicit, ~5 wks past hard stop) | $20.00/hr (employer-stated pay disclosure) | 4 | ~3 | Low | conflict | [FOX Workday](https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Spring-2027-FOX-News-Media-Internship-Program---Data-Analytics---New-York_R50033950) |
 | A171 | Metropolitan Transportation Authority (MTA) | Operations Support, Emerging Talent Intern (Spring) | Data/Ops | Brooklyn, NY | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~3 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oBqYAfwj) |
+| A172 | Tesla | Data Analyst Intern, People Products | Data | Palo Alto, CA / Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/286085) |
+| A173 | Pennant (YC S26) | Founder Fellow – GTM, Growth & Strategy | Strategy | New York, NY | In-person (IRL required) | YC S26 | Seasonal, rolling — no fixed dates stated | Confirm ≤ Mar 12 | Unconfirmed (no pay listed on posting) | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/111722) |
+| A174 | Zipline | Change Management Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 (explicit) ⚠ | Rolling | Unconfirmed | 4 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/flyzipline/jobs/7990677003) |
+
+**2026-10-18 sweep — `check_links.py`: 0 DEAD, 2 SUSPECT, 6 UNKNOWN (unchanged pattern), 86 OK.**
+**A95 (Parkdepot) and A167 (Dell)** — both flagged SUSPECT on a passed "Oct 17" deadline; opened both
+directly, same result as the prior two sweeps: still "Actively hiring," rolling/no-year-stated
+deadline, Apply button live. No closure, no status change. **A68/A122/A124–A126/A139 (Tesla)** —
+still 403 on direct fetch and via WebFetch; left `unverified`, unchanged, per the standing pattern.
+**Substance re-verification sample of live rows (High-priority subset: A5, A82, A92, A96, A112,
+A128)** — all six confirmed unchanged against the tracker's claims (same pay, location, mode) via
+direct re-fetch. One live-row addition to the record: **A112 (TikTok Client Solution Intern, Sydney)**
+now shows a firm closing date, **30 Oct 2026**, inside the three-week deadline window — flagged below.
+**2 new Tier A rows.** **A172 (Tesla), Data Analyst Intern, People Products — Palo Alto, CA / Austin,
+TX.** New distinct Tesla req (286085) found via the SimplifyJobs off-season Data Science section,
+not a duplicate of any existing Tesla row (A68 Cell Engineering, A122 Fleet Analytics, A124/A139 PM,
+A125 Fleet Data, A126 ML Charging). Same 403-on-direct-fetch pattern as every other Tesla row; added
+`unverified` on the same basis. **A173 (Pennant, YC S26), Founder Fellow – GTM, Growth & Strategy —
+New York, NY.** Found via a direct workatastartup.com sweep (role=sales filter). In-person required
+("IRL is a must"), seasonal/rolling with no fixed dates (startup sets the term), substance is market
+research, competitor analysis, growth-metric tracking, and GTM experiments — squarely Strategy/Growth,
+not the excluded content lane. No pay listed on the posting itself (other Pennant FTE roles show
+$150–250K, so this may simply be an unpaid/stipend seasonal fellow role — flagged Unconfirmed rather
+than assumed). Two other workatastartup.com candidates surfaced in the same sweep (Growth & Operations
+Intern @ Juno, GTM & Content Marketing Intern @ Lance, GTM Intern @ Revyl) were excluded on the
+substance test — all three are centrally about recruiting/managing creators, producing short-form
+video, and running a social posting calendar, not analysis. Dalus's GTM Intern listing (job 99648) is
+the same posting already tracked as A5 — confirmed unchanged, not re-added.
+**Lane coverage note:** wellfound.com's job-title search is a React-select widget that would not drive
+via direct URL params or scripted clicks within this run's time budget — no Wellfound sweep this run;
+flagging for a future run to either script the widget properly or fall back to manual category URLs.
+Economic consulting direct-careers sweep (Analysis Group, Cornerstone, CRA, Compass Lexecon, Brattle,
+NERA) repeated this run: all six still show summer-only programs or general "Students & Graduates"
+pages with no individual off-cycle reqs; CRA's own job board lists only full-time "2027 graduate"
+Analyst/Associate hires (not internships, not addable). No change from the 2026-08-22 finding.
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
