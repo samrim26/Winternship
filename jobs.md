@@ -5,13 +5,68 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-18** (full sweep, in progress — interim note). **Liveness/substance pass so
-> far: 1 closure (A9 Lambda Robotics — its workatastartup.com job id now resolves to a different
-> company, "Runtime.si, Founding GTM," confirming the original posting is gone), 2 SUSPECT rows
-> (A95 Parkdepot, A167 Dell) re-opened directly and confirmed still "Actively hiring" with a soft/
-> rolling deadline past its stated date — no status change, dated note added to each. 1 more
-> substance spot-check confirmed unchanged (A14 Celonis, A70 Base Power, A134 Acxiom, A158 Utilyze).
-> Board sweep (new-role search) still in progress — will be updated below once complete.**
+> Last swept: **2026-10-18** (full sweep — **3 new Tier A rows (A172 Tesla Data Analyst Intern/People
+> Products, unverified; A173 Pennant Founder Fellow, live; A174 Zipline Change Management Intern,
+> conflict), 1 closure (A9 Lambda Robotics), 0 `DEAD` on the liveness pass, 2 SUSPECT rows resolved
+> with no status change.**
+>
+> **Closure: A9 (Lambda Robotics) — Founding GTM, San Francisco.** Its workatastartup.com job id now
+> resolves to a different company's listing ("Runtime.si, Founding GTM") — the original posting is
+> gone, the id was reassigned/reused. Closed per the liveness/substance pass.
+>
+> **Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`, 6 `UNKNOWN`, 86 `OK`.** The 2 `SUSPECT`
+> rows — **A95 (Parkdepot)** and **A167 (Dell)**, both flagged on a passed "Oct 17" deadline — were
+> both re-opened directly: still "Actively hiring," rolling/no-year-stated deadline, Apply button
+> live. No closure, no status change; dated note added to each. The 6 `UNKNOWN` are the standing
+> Tesla 403s (A68, A122, A124–A126, A139) — still blocked on direct fetch and via WebFetch,
+> unchanged for months; left `unverified` per the standing pattern.
+>
+> **Substance spot-checks this run:** A5 Dalus, A14 Celonis, A70 Base Power, A82 Soren, A92
+> TraceRoot, A96 Crowe, A112/A114 TikTok Sydney, A128 Base Power, A130 Kodiak, A134 Acxiom, A145 E3,
+> A154 Compass Lexecon Madrid, A157 Scout, A158 Utilyze — all confirmed unchanged against the
+> tracker's claims (pay, location, mode, dates), except **A112 (TikTok, Client Solution Intern,
+> Sydney)** which now shows a firm closing date, **30 Oct 2026** — inside the three-week deadline
+> window, flagged below.
+>
+> **New: A172 (Tesla) — Data Analyst Intern, People Products, Palo Alto, CA / Austin, TX.** New
+> distinct Tesla req (286085), found via the SimplifyJobs off-season README's Data Science section —
+> not a duplicate of A68/A122/A124–126/A139. Same standing 403-on-direct-fetch pattern as every other
+> Tesla row; added `unverified` on that basis.
+> **New: A173 (Pennant, YC S26) — Founder Fellow – GTM, Growth & Strategy, New York, NY.** Found via
+> a direct workatastartup.com sweep. In-person required ("IRL is a must"), seasonal/rolling with no
+> fixed dates (startup sets the term) — substance is market research, competitor analysis,
+> growth-metric tracking, and GTM experiments, squarely Strategy/Growth and clear of the
+> content-marketing exclusion. No pay listed on this posting; other Pennant FTE roles show
+> $150–250K, so this may be an unpaid/stipend seasonal-fellow structure — flagged Unconfirmed.
+> **New: A174 (Zipline) — Change Management Intern (Spring 2027), South San Francisco, CA.** Fourth
+> distinct Zipline Spring 2027 req (sibling to A4/A16/A64/A123), found via the same SimplifyJobs
+> README; confirmed directly on Zipline's own Greenhouse-backed careers page (job 7990677003, board
+> token `flyzipline`). On the New Product Introduction team — builds internal tools for hardware
+> change management (Python/SQL/dashboards) rather than pure growth or ops. Posting states plainly
+> "we will host our Spring 2027 interns from January to April" — the same Jan–Apr conflict pattern
+> as every other Zipline Spring row. Eligibility lists ME/CS/info-systems/data-science majors;
+> flagged as a genuine ambiguity (the Stats &amp; DS minor plausibly qualifies) rather than assumed.
+>
+> **Also checked, nothing added:** three other workatastartup.com candidates (Growth & Operations
+> Intern @ Juno, GTM & Content Marketing Intern @ Lance, GTM Intern @ Revyl) excluded on the
+> substance test — all three are centrally about recruiting/managing creators, producing short-form
+> video, and running a social posting calendar, not analysis. Dalus's GTM Intern (job 99648) is the
+> same posting already tracked as A5 — confirmed unchanged, not re-added. Economic consulting direct
+> careers pages (Analysis Group, Cornerstone, CRA, Compass Lexecon, Brattle, NERA) — all six still
+> summer-only or general "Students & Graduates" pages with no off-cycle reqs; CRA's own board lists
+> only full-time "2027 graduate" Analyst/Associate hires, not internships. Compass Lexecon's Madrid
+> intern req (A154) independently re-verified live via its own Workday CXS API — unchanged, still
+> `blocked*` pending the UT Austin convenio question. Palantir's Lever board, Uber/DoorDash/Flexport,
+> BuiltIn NYC/Austin/SF, Coral Capital/TokyoDev/Japan Dev, and GradConnection Sydney all re-checked —
+> nothing beyond already-tracked rows or out-of-window (Summer 2027) postings.
+>
+> **Lane coverage note:** wellfound.com's job-title search is a React-select widget that would not
+> drive via direct URL params or scripted clicks within this run's time budget — no dedicated
+> Wellfound sweep this run beyond the general jobs page; flagging for a future run to script the
+> widget properly or use manual category URLs.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
 >
 > Prior — Last swept: **2026-10-17** (full sweep — **3 new Tier A rows (A169 MTA Data Analysis/Supplier
 > Relations, live; A170 FOX News Media Data Analytics, conflict; A171 MTA Operations Support, live),
@@ -1187,38 +1242,6 @@ recomputed once the resume is uploaded.
 | A172 | Tesla | Data Analyst Intern, People Products | Data | Palo Alto, CA / Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/286085) |
 | A173 | Pennant (YC S26) | Founder Fellow – GTM, Growth & Strategy | Strategy | New York, NY | In-person (IRL required) | YC S26 | Seasonal, rolling — no fixed dates stated | Confirm ≤ Mar 12 | Unconfirmed (no pay listed on posting) | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/111722) |
 | A174 | Zipline | Change Management Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 (explicit) ⚠ | Rolling | Unconfirmed | 4 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/flyzipline/jobs/7990677003) |
-
-**2026-10-18 sweep — `check_links.py`: 0 DEAD, 2 SUSPECT, 6 UNKNOWN (unchanged pattern), 86 OK.**
-**A95 (Parkdepot) and A167 (Dell)** — both flagged SUSPECT on a passed "Oct 17" deadline; opened both
-directly, same result as the prior two sweeps: still "Actively hiring," rolling/no-year-stated
-deadline, Apply button live. No closure, no status change. **A68/A122/A124–A126/A139 (Tesla)** —
-still 403 on direct fetch and via WebFetch; left `unverified`, unchanged, per the standing pattern.
-**Substance re-verification sample of live rows (High-priority subset: A5, A82, A92, A96, A112,
-A128)** — all six confirmed unchanged against the tracker's claims (same pay, location, mode) via
-direct re-fetch. One live-row addition to the record: **A112 (TikTok Client Solution Intern, Sydney)**
-now shows a firm closing date, **30 Oct 2026**, inside the three-week deadline window — flagged below.
-**2 new Tier A rows.** **A172 (Tesla), Data Analyst Intern, People Products — Palo Alto, CA / Austin,
-TX.** New distinct Tesla req (286085) found via the SimplifyJobs off-season Data Science section,
-not a duplicate of any existing Tesla row (A68 Cell Engineering, A122 Fleet Analytics, A124/A139 PM,
-A125 Fleet Data, A126 ML Charging). Same 403-on-direct-fetch pattern as every other Tesla row; added
-`unverified` on the same basis. **A173 (Pennant, YC S26), Founder Fellow – GTM, Growth & Strategy —
-New York, NY.** Found via a direct workatastartup.com sweep (role=sales filter). In-person required
-("IRL is a must"), seasonal/rolling with no fixed dates (startup sets the term), substance is market
-research, competitor analysis, growth-metric tracking, and GTM experiments — squarely Strategy/Growth,
-not the excluded content lane. No pay listed on the posting itself (other Pennant FTE roles show
-$150–250K, so this may simply be an unpaid/stipend seasonal fellow role — flagged Unconfirmed rather
-than assumed). Two other workatastartup.com candidates surfaced in the same sweep (Growth & Operations
-Intern @ Juno, GTM & Content Marketing Intern @ Lance, GTM Intern @ Revyl) were excluded on the
-substance test — all three are centrally about recruiting/managing creators, producing short-form
-video, and running a social posting calendar, not analysis. Dalus's GTM Intern listing (job 99648) is
-the same posting already tracked as A5 — confirmed unchanged, not re-added.
-**Lane coverage note:** wellfound.com's job-title search is a React-select widget that would not drive
-via direct URL params or scripted clicks within this run's time budget — no Wellfound sweep this run;
-flagging for a future run to either script the widget properly or fall back to manual category URLs.
-Economic consulting direct-careers sweep (Analysis Group, Cornerstone, CRA, Compass Lexecon, Brattle,
-NERA) repeated this run: all six still show summer-only programs or general "Students & Graduates"
-pages with no individual off-cycle reqs; CRA's own job board lists only full-time "2027 graduate"
-Analyst/Associate hires (not internships, not addable). No change from the 2026-08-22 finding.
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
