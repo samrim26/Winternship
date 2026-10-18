@@ -5,7 +5,15 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-17** (full sweep — **3 new Tier A rows (A169 MTA Data Analysis/Supplier
+> Last swept: **2026-10-18** (full sweep, in progress — interim note). **Liveness/substance pass so
+> far: 1 closure (A9 Lambda Robotics — its workatastartup.com job id now resolves to a different
+> company, "Runtime.si, Founding GTM," confirming the original posting is gone), 2 SUSPECT rows
+> (A95 Parkdepot, A167 Dell) re-opened directly and confirmed still "Actively hiring" with a soft/
+> rolling deadline past its stated date — no status change, dated note added to each. 1 more
+> substance spot-check confirmed unchanged (A14 Celonis, A70 Base Power, A134 Acxiom, A158 Utilyze).
+> Board sweep (new-role search) still in progress — will be updated below once complete.**
+>
+> Prior — Last swept: **2026-10-17** (full sweep — **3 new Tier A rows (A169 MTA Data Analysis/Supplier
 > Relations, live; A170 FOX News Media Data Analytics, conflict; A171 MTA Operations Support, live),
 > 2 closures from the liveness pass below (A135, A142 Acxiom), 1 Tier B correction (B1 Charles Schwab
 > `monitor` → `closed` — its 2027 program is summer-only, no spring/winter cycle exists).**
@@ -1049,7 +1057,7 @@ recomputed once the resume is uploaded.
 | A6 | Uplane (YC F25) | Business Development Intern | BD | San Francisco (or Berlin/Remote) | In-person | YC F25 | Rolling, 3-mo min ⚠ | Rolling | $4K/mo | 2 | ~5 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/97366) |
 | A7 | Uplane (YC F25) | AI Marketing Strategist Intern | Growth | San Francisco | In-person | YC F25 | Rolling, 4-mo min ⚠ | Rolling | $4K/mo | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/93708) |
 | A8 | GutGutGoose (YC S26) | Growth Intern (founding team) | Growth | San Francisco | In-person | YC S26 | "Beginning whenever you can" | Rolling | $19–25/hr | 1 | ~4 | Low | closed | [Work at a Startup](https://www.workatastartup.com/jobs/102677) |
-| A9 | Lambda Robotics (YC F26) | Founding GTM | Growth | San Francisco | In-person | YC F26 | Rolling | Rolling | $6–9K/mo | 3 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/104228) |
+| A9 | Lambda Robotics (YC F26) | Founding GTM | Growth | San Francisco | In-person | YC F26 | Rolling | Rolling | $6–9K/mo | 3 | ~4 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/104228) |
 | A10 | Naive (YC P25) | Growth Engineer Intern | Growth | SF / Remote | In-person or Remote (candidate's choice, not blended) | YC P25 | Rolling | N/A — posting 404'd | $20–40/hr | 2 | ~4 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/94648) |
 | A11 | Claim Health (YC P25) | Content Marketing Intern | Growth | New York, NY | In-person | YC P25 | 10–12 wks, rolling | Rolling | Stipend | 2 | ~3 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/94958) |
 | A12 | Mosaic (YC W25) | Growth Intern | Growth | San Francisco | In-person | YC W25 | Rolling | Rolling | $5–10K/mo | 3 | ~4 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/74610) |
