@@ -5,7 +5,66 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-18** (full sweep — **3 new Tier A rows (A172 Tesla Data Analyst Intern/People
+> Last swept: **2026-10-19** (full sweep — **3 new Tier A rows (A175 GE Aerospace Data Science Co-op,
+> unverified; A176 Gemini Product Management Intern, conflict; A177 Snowflake Product
+> Marketing/GTM Intern, live — function ambiguity flagged), 0 closures, 0 `DEAD` on the liveness pass,
+> 2 SUSPECT rows (A95 Parkdepot, A167 Dell) re-opened and confirmed unchanged.**
+>
+> **Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`, 7 `UNKNOWN`, 87 `OK`.** A95 (Parkdepot)
+> and A167 (Dell) both flagged SUSPECT on their passed deadline text; both re-opened directly — still
+> "Actively hiring." A167's deadline text has itself rolled forward on the page, from "Apply by Oct 17"
+> to **"Apply by Nov 1"** — confirms a rolling aggregator deadline that keeps advancing, not a stale
+> page; no status change. The 7 `UNKNOWN` are the standing Tesla 403s (A68, A122, A124–A126, A139,
+> A172) — still blocked on direct fetch and WebFetch alike, unchanged for months; left `unverified`.
+>
+> **Substance spot-checks this run:** A98 Cresta, A120 MTA (EAM Analyst), A121 Ankura, A151 Kroll,
+> A129 Base Power (Finance–Analytics), A153 Contoro Robotics, A161 MTA (EAM Value Realization) — all
+> confirmed unchanged against the tracker's claims (location, mode, pay where stated). **A121 (Ankura)**
+> specifically re-verified live via Workday's own CXS API (`canApply: true`, `posted: true`), bypassing
+> the JS-shell that blocks a plain fetch. **A75 (Surface Labs)** — WebFetch returned only the page
+> title, not the full posting; inconclusive this run, no change made pending a fuller re-check.
+>
+> **New: A175 (GE Aerospace) — "SaaS – Flight Analytics Platform" Data Science Co-op, Austin, TX.**
+> Found via the SimplifyJobs off-season README's Data Science section, confirmed directly on GE's own
+> Workday CXS API (`canApply: true`). Clean Data-function, home-market match — but no term length,
+> dates, pay, or mode stated anywhere on the posting; added `unverified` per the A165 Figma/A166
+> Stripe convention, not for failure to open it. Flagged in the note: GE co-ops have historically run
+> full-semester (~6-month) blocks, so the "Spring 2027" title tag is not read as confirming a Jan–Mar
+> fit.
+> **New: A176 (Gemini) — Product Management Intern (Winter 2027), New York, NY.** Found via the same
+> README's Product Management section, confirmed directly on Gemini's own Greenhouse board (job
+> 8214332, not SimplifyJobs' embed link). Genuinely data-driven PM work (Databricks, PRDs, release
+> planning) — strong PM-function fit — $45/hr, hybrid (3 days/wk in-person stated). Real conflict: the
+> posting states explicitly "semester long... from January to April 2027," ~3 weeks past the Mar 12
+> hard stop. Added `conflict` per the never-drop rule rather than excluded — strong brand and pay,
+> worth an early application disclosing the Jan 4–Mar 12 window up front.
+> **New: A177 (Snowflake) — "Product Marketing, AI-Powered Data Engineering Intern" (Winter 2027),
+> Menlo Park, CA.** Found via Intern Insider's winter/spring-2027 terms pages; the title is misleading
+> — the actual role (customer-story sourcing, launch planning, sales-enablement assets) reads as
+> GTM/product marketing, not data engineering. Kept per the ambiguity rule (substance is unclear
+> against the content-marketing exclusion, not a clean exclude) — scored Growth, Fit marked down
+> accordingly. 12 weeks, on-site, $40–47/hr, strong brand; no direct Snowflake ATS link found (JS-
+> rendered site), kept the Intern Insider link per the A93/A95/A167 pattern.
+>
+> **Also checked, nothing added:** Economic consulting direct careers pages (Analysis Group, Brattle,
+> NERA) re-checked — still summer/associate-only, no winter/spring internship cycle found; consistent
+> with prior runs' findings for the full six-firm set. Intern Insider's winter-2027 and spring-2027
+> terms pages scanned beyond Snowflake — remaining hits were out-of-market (Canada, Midwest) or
+> already tracked (MTA Ops Support = A171, E3 = A164). SimplifyJobs README Data Science/PM sections:
+> several 🎓-tagged roles (Together AI, Genentech, Block) excluded as advanced-degree/PhD-targeted;
+> Rivian/Brain Co./Composio excluded as core software/ML engineering, not an analytics fit; KQED
+> "Audience Intelligence Intern" (SF, clean Data substance, $19.61/hr) excluded rather than flagged
+> `conflict` — its stated term is Jan 19–Jun 25 2027 (~22 weeks), more than double the 10-week target
+> with no flexibility signal from a structured nonprofit program, and pay/prestige are both low — judged
+> marginal rather than "strong but date-conflicted." workatastartup.com, Wellfound, BuiltIn
+> NYC/Austin/SF, GradConnection Sydney, and the Tokyo boards (Coral Capital/Japan Dev/TokyoDev) were
+> not re-swept this run (all checked within the last 1–2 full runs with nothing beyond already-tracked
+> rows, and YC's W27 batch has not yet landed) — due for a fresh pass once the November YC batch lands.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior — Last swept: **2026-10-18** (full sweep — **3 new Tier A rows (A172 Tesla Data Analyst Intern/People
 > Products, unverified; A173 Pennant Founder Fellow, live; A174 Zipline Change Management Intern,
 > conflict), 1 closure (A9 Lambda Robotics), 0 `DEAD` on the liveness pass, 2 SUSPECT rows resolved
 > with no status change.**
@@ -1234,7 +1293,7 @@ recomputed once the resume is uploaded.
 | A164 | Energy and Environmental Economics, Inc. (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA / New York, NY / Boston, MA / Calgary, AB (candidate's choice) | Hybrid (min. 3 days/wk in-office) | Established (boutique energy/climate-policy econ consulting) | 8–12 weeks, candidate-proposed dates; hiring cycle interviews Jan / decisions Feb 2027 ⚠ | Confirm ≤ Mar 12 | Unconfirmed ("full time hourly internship position") | 3 | ~4 | Med | conflict | [E3 Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
 | A165 | Figma | Data Science Intern (2027) | Data | San Francisco, CA / New York, NY | In-person (assumed; not explicitly labeled) | Established (public, design/dev-tool) | Unconfirmed — no season or dates stated anywhere in posting ⚠ | Unconfirmed | $46/hr + housing stipend + travel reimbursement | 4 | ~4 | Med | unverified | [Figma Greenhouse](https://job-boards.greenhouse.io/figma/jobs/6178857004) |
 | A166 | Stripe | Data Analyst, Intern | Data | Chicago, IL / New York, NY / Seattle, WA / South San Francisco, CA | Hybrid (min. 50% time in local office stated) | Established (public-adjacent, API/fintech) | Unconfirmed — no term length/dates stated; eligibility targets Dec 2027/Spring-Summer 2028 grads ⚠ | Unconfirmed | $117,000/yr stated as base-salary field — unusual annual framing for an internship, flagged ⚠ | 5 | ~4 | Med | unverified | [Stripe careers](https://stripe.com/jobs/search?gh_jid=8194291) |
-| A167 | Dell Technologies | Corporate Strategy Undergraduate Intern | Strategy | Austin, TX | In-person | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere ⚠ | Oct 17 2026 | $27.10–$31.80/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/dell-technologies/corporate-strategy-undergraduate-intern-5d8b93b4-cec5-46fa-8607-0970c493600a) |
+| A167 | Dell Technologies | Corporate Strategy Undergraduate Intern | Strategy | Austin, TX | In-person | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere ⚠ | Nov 1 2026 (rolled from Oct 17) | $27.10–$31.80/hr | 3 | ~4 | Med | unverified | [Intern Insider](https://interninsider.me/internships/dell-technologies/corporate-strategy-undergraduate-intern-5d8b93b4-cec5-46fa-8607-0970c493600a) |
 | A168 | xAI | Business Operations Internship/Co-op (Spring 2027) | Strategy (Business Ops) | Palo Alto, CA | In-person (onsite required) | Frontier AI (private) | Jan or Mar 2027 start, 12-wk min — overruns Mar 12 by ~2.5 wks ⚠ | Rolling | $24.50–$26/hr + relocation stipend | 5 | ~4 | Med | conflict | [xAI Greenhouse](https://job-boards.greenhouse.io/xai/jobs/5255113007) |
 | A169 | Metropolitan Transportation Authority (MTA) | Data Analysis (Supplier Relations), Emerging Talent Intern (Spring) | Data | New York, NY (Manhattan) | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) | 2 | ~3 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oOvWAfwz) |
 | A170 | FOX News Media | Spring 2027 FOX News Media Internship Program – Data Analytics (New York) | Data | New York, NY | In-person, part-time (16–24 hrs/wk) | Enterprise (FOX Corp subsidiary) | **Monday, February 8, 2027 – Friday, April 16, 2027 (explicit, employer-stated)** | **Apr 16 2027 ⚠** (explicit, ~5 wks past hard stop) | $20.00/hr (employer-stated pay disclosure) | 4 | ~3 | Low | conflict | [FOX Workday](https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Spring-2027-FOX-News-Media-Internship-Program---Data-Analytics---New-York_R50033950) |
@@ -1242,6 +1301,9 @@ recomputed once the resume is uploaded.
 | A172 | Tesla | Data Analyst Intern, People Products | Data | Palo Alto, CA / Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/286085) |
 | A173 | Pennant (YC S26) | Founder Fellow – GTM, Growth & Strategy | Strategy | New York, NY | In-person (IRL required) | YC S26 | Seasonal, rolling — no fixed dates stated | Confirm ≤ Mar 12 | Unconfirmed (no pay listed on posting) | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/111722) |
 | A174 | Zipline | Change Management Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 (explicit) ⚠ | Rolling | Unconfirmed | 4 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/flyzipline/jobs/7990677003) |
+| A175 | GE Aerospace | SaaS – Flight Analytics Platform, Data Science Co-op (Spring 2027) | Data | Austin, TX | Unconfirmed | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~4 | Med | unverified | [GE Workday](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Austin/SaaS---Flight-Analytics-Platform---Data-Science-Co-op---Spring-2027_R5040450-2) |
+| A176 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | Hybrid (3 days/wk in-person stated) | Public (crypto/Web3) | Jan–Apr 2027 (explicit, "January to April 2027") ⚠ | Apr 2027 ⚠ | $45/hr | 4 | ~4 | Med | conflict | [Gemini Greenhouse](https://job-boards.greenhouse.io/gemini/jobs/8214332) |
+| A177 | Snowflake | Product Marketing, AI-Powered Data Engineering Intern (Winter 2027) | Growth (ambiguous — GTM/storytelling, flagged) | Menlo Park, CA | In-person | Public (cloud data platform) | Winter 2027, 12 wks (exact dates unconfirmed) | Confirm ≤ Mar 12 | $40–47/hr | 5 | ~3 | Med | live | [Intern Insider](https://interninsider.me/internships/snowflake/product-marketing-ai-powered-data-engineering-intern-bce11b17-b8bc-41f3-aaf2-82f86d363f52) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
