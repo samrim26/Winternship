@@ -24,6 +24,11 @@
 > the JS-shell that blocks a plain fetch. **A75 (Surface Labs)** — WebFetch returned only the page
 > title, not the full posting; inconclusive this run, no change made pending a fuller re-check.
 >
+> **Liveness check 2026-10-19 22:00 UTC: 1 `DEAD` → closed (A98 Cresta, Greenhouse API 404 and
+> job page redirects to `/cresta?error=true`), 2 `SUSPECT` re-opened and confirmed unchanged (A95
+> Parkdepot, A167 Dell — both still "Actively hiring"), 7 `UNKNOWN` unchanged (standing Tesla 403s).
+> 89 `OK`. No new rows this run (liveness-only pass).**
+>
 > **New: A175 (GE Aerospace) — "SaaS – Flight Analytics Platform" Data Science Co-op, Austin, TX.**
 > Found via the SimplifyJobs off-season README's Data Science section, confirmed directly on GE's own
 > Workday CXS API (`canApply: true`). Clean Data-function, home-market match — but no term length,
@@ -1228,7 +1233,7 @@ recomputed once the resume is uploaded.
 | A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | live | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Removed Aug 31 2026 | Unconfirmed | 3 | ~3 | Low | closed | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
-| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Unconfirmed (see note) | Unconfirmed | 3 | ~4 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
+| A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Closed Oct 19 2026 | Unconfirmed | 3 | ~4 | Med | closed | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
 | A99 | Scale AI | AI Builder Intern | Growth/Strategy (technical-adjacent) | San Francisco or New York | In-person | Late-stage | Summer 2027 ⚠ | Closed Aug 27 2026 | Unconfirmed | 4 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/scale-ai/ai-builder-intern-b83435b3-da10-4b18-87f4-3bebcf6d72e2) |
 | A100 | APX (now Aster) | Developer Relations Intern | DevRel | United States (city unconfirmed) | In-person | Crypto/dev platform | Rolling | Expired (Nov 24 2025) | Unconfirmed | 2 | ~4 | Low | closed | [Intern Insider](https://interninsider.me/internships/apx-now-aster/developer-relations-intern-ab244e84-2b9d-40db-8cf3-3f27f1e048e0) |
 | A101 | Advancy Partners | Strategy Consulting Intern (2026 Intake) | Data/Strategy | Sydney, AU | In-person | Boutique consulting | 2–6 months, flexible | Rolling | Paid (amount unconfirmed) | 3 | ~4 | Med | closed | [Advancy](https://advancy.recruitee.com/o/sydney-strategy-consulting-intern-2026-intake) |
