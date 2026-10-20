@@ -5,7 +5,45 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Last swept: **2026-10-19** (full sweep — **3 new Tier A rows (A175 GE Aerospace Data Science Co-op,
+> Last swept: **2026-10-20** (full sweep — **0 new rows, 0 closures, 0 `DEAD` on the liveness pass**.
+> Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`, 7 `UNKNOWN`, 89 `OK`. The 2 `SUSPECT`
+> rows — **A95 (Parkdepot)** and **A167 (Dell)** — both re-opened directly: still "Actively hiring,"
+> deadline text unchanged ("Apply by Nov 1" on A167, no year stated on A95), no status change. The
+> 7 `UNKNOWN` remain the standing Tesla 403s (A68, A122, A124–A126, A139, A172) — confirmed still
+> blocked on direct fetch and WebFetch alike this run too; left `unverified`.
+>
+> **Substance spot-checks this run:** A13 DeepAware AI, A22 CertiK, A65 Peakflo, A83 Relling, A93
+> NewsBreak, A131/A133 Base Power (Financial Planning / Deployments Operations), A169/A171 MTA
+> (Data Analysis–Supplier Relations / Operations Support), A173 Pennant — all confirmed unchanged
+> against the tracker's claims where the posting was readable. **A13, A65, A83, A173**
+> (workatastartup.com) returned only the bare listing title via WebFetch — same standing JS-shell
+> limitation as A75 (Surface Labs); inconclusive this run, no change made.
+>
+> **Sweep (full depth, pre-November — YC W27 batch has not yet landed):** SimplifyJobs Off-Season
+> README (Software Engineering, PM, Data Science/AI/ML, and mixed/quant-finance tables) —
+> everything in-market was either pure engineering, out-of-window (Summer 2027 or an already-past
+> "Winter 2026"), Canada-based, or already tracked (GE Aerospace, Stripe, Figma, Zipline, MTA,
+> Tesla variants). Economic consulting direct pages (Analysis Group, Cornerstone, CRA, Compass
+> Lexecon, Brattle, NERA) re-checked again — still summer-analyst/full-time-only; CRA's own board
+> lists only "2027 graduate" Analyst/Associate full-time hires. simplify.jobs top list: one marginal
+> hit (Copart Technology Product Analyst Intern, Dallas) excluded on location. BuiltIn NYC/Austin/SF:
+> a few borderline strategy/ops/PM internships (PwC Strategy&amp;, Atlantic PM intern, Four Hands Biz
+> Ops Austin) found, all **Summer 2027**, out of window. GradConnection Sydney: 20 listings, all
+> either Australian Summer 2027/28 (Nov 2027 start — wrong hemisphere cycle) or notify-me/virtual-
+> experience placeholders with no real posting. Palantir's Lever board filtered to Deployment
+> Strategy: zero postings. Flexport: no internships listed. workatastartup.com and wellfound.com:
+> same standing JS-shell/widget limitation as prior runs (WebFetch and curl both return only a bare
+> page title or an empty static list) — no dedicated sweep possible from this environment pending a
+> scripted-browser approach; due for a fresh pass once the November YC batch lands regardless.
+> **Access problems this run:** DoorDash careers (403), tokyodev.com/jobs (403 via WebFetch and
+> curl), coralcap.co (no browsable openings list at /careers/ or /coral-careers/), Uber careers page
+> (JS job list never renders for WebFetch), japan-dev.com's one Tokyo hit (HENNGE Full-Stack GIP) is
+> engineering, excluded on function.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior — Last swept: **2026-10-19** (full sweep — **3 new Tier A rows (A175 GE Aerospace Data Science Co-op,
 > unverified; A176 Gemini Product Management Intern, conflict; A177 Snowflake Product
 > Marketing/GTM Intern, live — function ambiguity flagged), 0 closures, 0 `DEAD` on the liveness pass,
 > 2 SUSPECT rows (A95 Parkdepot, A167 Dell) re-opened and confirmed unchanged.**
