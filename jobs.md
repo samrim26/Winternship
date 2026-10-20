@@ -5,6 +5,11 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
+> Liveness check 2026-10-20 22:03 UTC: closed A134 Acxiom (Intern Insider title "Closed:
+> Intern - Agency Partnerships at Acxiom," banner "This internship has closed," applications
+> closed Oct 19 2026). A95 (Parkdepot) and A167 (Dell) re-flagged SUSPECT on passed deadline
+> text, both confirmed still "Actively hiring" directly — no change. 7 standing Tesla UNKNOWNs
+> (A68, A122, A124–A126, A139, A172) still 403 on direct fetch — left unverified.
 > Last swept: **2026-10-20** (full sweep — **0 new rows, 0 closures, 0 `DEAD` on the liveness pass**.
 > Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`, 7 `UNKNOWN`, 89 `OK`. The 2 `SUSPECT`
 > rows — **A95 (Parkdepot)** and **A167 (Dell)** — both re-opened directly: still "Actively hiring,"
@@ -1303,7 +1308,7 @@ recomputed once the resume is uploaded.
 | A131 | Base Power Company | Financial Planning Intern | Data/Finance | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/finance-planning-intern/11174868) |
 | A132 | Base Power Company | Marketing Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/marketing-intern/11184090) |
 | A133 | Base Power Company | Deployments Operations Intern | Strategy (field ops) | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~2 | Low | live | [Built In Austin](https://www.builtinaustin.com/job/deployments-operations-intern/11184062) |
-| A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | live | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
+| A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
 | A135 | Acxiom | Intern, Product Management | PM | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-management-30a0e8ee-b65a-43d1-acbd-2d6f995e3beb) |
 | A136 | Acxiom | Enterprise Solutions Consulting Intern (aka "Intern - Solution Consultant" on Acxiom's own ATS) | Strategy | Remote/Homebased (resolved — see note) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/enterprise-solutions-consulting-intern-945140ee-5605-4c76-8729-56777cdc8f52) |
 | A137 | Acxiom | Intern, Financial Analyst | Data/Finance | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-financial-analyst-7d934d45-ad65-48dc-aead-3a42da19e9cf) |
