@@ -5,6 +5,13 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
+>
+> **Liveness check 2026-10-21 22:05 UTC:** 1 closure — **A76 (Novaflow, Growth Intern)**, confirmed
+> `DEAD` by `check_links.py` and WebFetch alike (workatastartup.com/jobs/92868 now 404); was
+> `conflict`, now `closed`. 2 `SUSPECT` (A95 Parkdepot, A167 Dell) re-opened directly — both still
+> "Actively hiring," no change. 7 `UNKNOWN` (standing Tesla 403s: A68, A122, A124–A126, A139, A172)
+> confirmed still blocked via WebFetch — unchanged for months, left `unverified`.
+>
 > Last swept: **2026-10-21** (full sweep — **1 closure (A14 Celonis, Business Development
 > Representative Sales Intern — Built In NYC confirms "this job was removed at 08:09 a.m. (EST) on
 > Monday, Oct 19, 2026"), 0 new rows, 0 `DEAD` on the liveness pass.**
@@ -1312,7 +1319,7 @@ recomputed once the resume is uploaded.
 | A73 | DEUNA | Data Science Intern | Data | San Francisco, CA | Hybrid | Startup | Unconfirmed | Unconfirmed | Unpaid | 2 | ~3 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/data-science-intern/9973177) |
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
 | A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA / India | Remote (SF preferred; India also accepted) | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only for first 3mo, then FT + base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
-| A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | conflict | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
+| A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | closed | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
 | A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
 | A79 | Zeminent | Business Development & Lead Generation Intern | BD | Remote (Gurgaon, India hrs) | Remote | Small | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4436924-business-development-lead-generation-intern) |
