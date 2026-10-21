@@ -5,7 +5,66 @@
 > **Reference numbers:** the `RAW` array in `dashboard.html` is authoritative. Tier C numbering in
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
-> Liveness check 2026-10-20 22:03 UTC: closed A134 Acxiom (Intern Insider title "Closed:
+> Last swept: **2026-10-21** (full sweep — **1 closure (A14 Celonis, Business Development
+> Representative Sales Intern — Built In NYC confirms "this job was removed at 08:09 a.m. (EST) on
+> Monday, Oct 19, 2026"), 0 new rows, 0 `DEAD` on the liveness pass.**
+>
+> **Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`, 7 `UNKNOWN`, 97 `OK`.** A95 (Parkdepot)
+> and A167 (Dell) both re-flagged SUSPECT (passed-deadline text); both re-opened directly — still
+> "Actively hiring," no change. The 7 `UNKNOWN` are the standing Tesla 403s (A68, A122, A124–A126,
+> A139, A172) — confirmed still blocked via WebFetch and a browser-UA curl alike; left `unverified`.
+>
+> **Substance spot-checks this run:** A121 (Ankura, Workday CXS API — unchanged, canApply:true),
+> A130 (Kodiak, Greenhouse — unchanged, Jan 2027 start/12–16 wks confirmed), A176 (Gemini, Greenhouse
+> — unchanged, Jan–Apr 2027 conflict confirmed), A154 (Compass Lexecon Madrid, Workday CXS API —
+> unchanged, still open, apps close 26 Feb 2027), A96 (Crowe Global, Built In Austin — unchanged,
+> rolling), A112/A114 (TikTok GBS AU, GradConnection — unchanged, **deadline 30 Oct 2026 1:59pm
+> Sydney, now inside three weeks**). A14 (Celonis) closed per above.
+>
+> **Sweep (full depth):** SimplifyJobs Off-Season README parsed programmatically (Product Management
+> + Data Science/AI/ML tables) for target-city/2027 hits — all either already tracked (Tesla A172,
+> MTA, Gemini A176, Fenwick A163, NBCUniversal C70) or out of scope (Stand Together "Policy Data
+> Analyst Intern," NYC-tagged but the posting's own text gives the office as **Albany, NY** — not a
+> target metro — states the role is **full-time**, and references a June 3–4 in-person summit in
+> Arlington, VA that implies a cohort running well past Mar 12; excluded on the combination rather
+> than added weak). Built In NYC/Austin/SF direct scans: Austin and SF returned zero results this
+> run; NYC surfaced IDeaS "Marketing Analytics Intern" (NY-tagged) but IDeaS is Bloomington,
+> MN–headquartered with no corroborating direct listing found — left out, not enough to verify.
+> **Economic consulting** — Compass Lexecon's own Workday board opened directly: "2027 Analyst
+> Interns - US" confirmed **Summer 2027 only** (10 weeks, June–Aug, via the Workday CXS API) —
+> excluded; the Madrid Competition-practice intern req is the already-tracked A154, reconfirmed
+> unchanged. Brattle's full Greenhouse board pulled directly (56 reqs): every Research
+> Analyst/Associate Intern title is **Summer 2027**; "Research Associate Intern" (SF) is explicitly
+> for candidates "who have advanced beyond the Research Analyst level" — too senior, not an
+> undergrad entry point. CRA's Greenhouse board (89 reqs) has a new "Analyst Intern (Labor &amp;
+> Employment practice) - Winter/Spring 2027" req, but it's located College Station, TX / Tallahassee,
+> FL only (campus-specific, not a target metro) and reads as a semester-long pipeline-to-full-time
+> program — excluded on location. Analysis Group and NERA: summer-analyst/full-time-only, unchanged.
+> **Palantir's** Lever board re-checked directly (306 reqs): the only "Deployment Strategist,
+> Internship" titles remain the already-tracked Paris and Honolulu reqs — no NYC/SF opening.
+> **DoorDash's** Greenhouse board (458 reqs, finally reachable directly) has zero Strategy &amp;
+> Operations internship — only a full-time Senior Associate role and Summer-2027 SWE/ML/design
+> internships. **Flexport's** Greenhouse board (204 reqs): zero intern titles, unchanged. **Uber's**
+> career site still would not render for either a direct fetch or a headless-browser fetch (30s
+> timeout on networkidle) — standing access gap, unchanged. **workatastartup.com**: the `/jobs`
+> listing page itself now renders (200, with a browser UA + Accept header), but the job board is a
+> client-side React app that requires a logged-in session to populate — confirmed via a headless
+> Chromium render (page loads, "Log in" present, no job data in the DOM or any embedded JSON); not a
+> simple JS-shell problem as previously assumed, but an auth gate. **wellfound.com**: similarly
+> renders without login for its generic `/jobs` feed (49 real listings extracted), but none were
+> intern-level in that sample, and the role-specific landing pages (`/role/&lt;slug&gt;`) are SEO/signup
+> pages with no listings in the page source. Both remain effectively unswept pending the November YC
+> batch and/or an authenticated approach. **Tokyo**: tokyodev.com is behind a Cloudflare bot check
+> (unreachable); japan-dev.com's full 278-listing board pulled directly — two non-engineering hits
+> (Product Manager and Sales Engineer at Mujin/Axelspace) are both full-time, Japanese-required,
+> ¥6–10M roles, not internships — no match. coralcap.co returned 503 (Retry-After 3600) both times
+> checked this run. GradConnection Sydney: Capgemini/Jemena/Treasury hits are all outside the Dec
+> 2026–Feb 2027 intake or already excluded (TikTok rows already tracked as A112/A114).
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior — Liveness check 2026-10-20 22:03 UTC: closed A134 Acxiom (Intern Insider title "Closed:
 > Intern - Agency Partnerships at Acxiom," banner "This internship has closed," applications
 > closed Oct 19 2026). A95 (Parkdepot) and A167 (Dell) re-flagged SUSPECT on passed deadline
 > text, both confirmed still "Actively hiring" directly — no change. 7 standing Tesla UNKNOWNs
@@ -1224,7 +1283,7 @@ recomputed once the resume is uploaded.
 | A11 | Claim Health (YC P25) | Content Marketing Intern | Growth | New York, NY | In-person | YC P25 | 10–12 wks, rolling | Rolling | Stipend | 2 | ~3 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/94958) |
 | A12 | Mosaic (YC W25) | Growth Intern | Growth | San Francisco | In-person | YC W25 | Rolling | Rolling | $5–10K/mo | 3 | ~4 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/74610) |
 | A13 | DeepAware AI (YC S25) | Business Development Intern | BD | San Francisco | In-person | YC S25 | Rolling | Rolling | Not listed | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/100904) |
-| A14 | Celonis | Business Development Representative Sales Intern (Part-Time) | BD | New York, NY | Hybrid | Public | Unconfirmed | Unconfirmed | $58,240 (FTE-annualized, PT title) | 3 | ~4 | Med | live | [Built In NYC](https://www.builtinnyc.com/job/business-development-representative-sales-intern-part-time/10648137) |
+| A14 | Celonis | Business Development Representative Sales Intern (Part-Time) | BD | New York, NY | Hybrid | Public | Unconfirmed | Unconfirmed | $58,240 (FTE-annualized, PT title) | 3 | ~4 | Med | closed | [Built In NYC](https://www.builtinnyc.com/job/business-development-representative-sales-intern-part-time/10648137) |
 | A15 | UT Austin Athletics | Video and Analytics Intern — Baseball | Data | Austin, TX | In-person | On-campus | Winter/Spring 2027 (tagged) | TBC | Unconfirmed | 1 | ~2 | Low | unverified | [UT Workday](https://utaustin.wd1.myworkdayjobs.com/utstudent/job/UT-MAIN-CAMPUS/Video-and-Analytics-Intern--Baseball_R_00047706) |
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
