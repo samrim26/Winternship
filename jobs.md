@@ -6,7 +6,49 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
-> **Liveness check 2026-10-21 22:05 UTC:** 1 closure — **A76 (Novaflow, Growth Intern)**, confirmed
+> **Sweep 2026-10-22 (full):** 0 new rows, 0 closures. Liveness check (`check_links.py`): 0 `DEAD`,
+> 2 `SUSPECT` (A95 Parkdepot, A167 Dell — both re-opened directly, still "Actively hiring," no
+> change; A167's "Apply by Nov 1" reconfirmed as the same rolling aggregator deadline seen since
+> Oct 19, not a fixed date), 7 `UNKNOWN` (standing Tesla 403s — A68, A122, A124–A126, A139, A172,
+> sampled one directly via WebFetch, still 403, unchanged). Substance re-checks: A92 (TraceRoot,
+> YC listing page — unchanged: Developer Marketing Intern, $4–6K/mo, hybrid ≥3 days/wk onsite),
+> A128 (Base Power, Built In Austin — unchanged: in-office Austin, no pay/dates stated), A5/A82
+> (Dalus, Soren — workatastartup.com detail pages still require login; titles/status reconfirmed
+> live via the page shell, substance not independently re-verifiable beyond what's already
+> recorded, unchanged).
+>
+> Last swept: **2026-10-22** (full sweep — **0 new rows, 0 closures, 0 `DEAD` on the liveness
+> pass**.)
+>
+> **Sweep (full depth):** workatastartup.com/jobs re-confirmed auth-gated for listing detail
+> (standing, unchanged); wellfound.com/jobs sampled — no intern-level matches in target functions.
+> SimplifyJobs Off-Season README re-parsed — nothing beyond already-tracked/excluded rows; two new
+> candidates surfaced (Bombardier "Intern, Business Strategy," Pointe-Claire, Quebec; MLSE
+> "Business Strategy & Product Management (AI) Intern," Toronto) both excluded on location — not
+> target metros. **Economic consulting:** Analysis Group, CRA, and NERA public careers pages link
+> only to internal application portals with no visible open-req list (not a change — same gap as
+> prior sweeps); Brattle's Greenhouse board (59 reqs, pulled via API) — all Research
+> Analyst/Associate Intern titles remain Summer 2027 or (new req, "2026/27 Research Analyst —
+> International Arbitration — Madrid") a full-time entry-level hire, not an internship — excluded;
+> Compass Lexecon's Workday CXS board unchanged (A154 only). **Palantir's** Lever board (304 reqs,
+> via API) — only the already-tracked Paris and Honolulu "Deployment Strategist, Internship" reqs
+> exist, unchanged. **DoorDash's** Greenhouse board (458 reqs, via API, correct token
+> `doordashusa` found this run) — zero Strategy & Operations internship titles (all S&amp;O titles
+> are full-time Associate/Manager), unchanged. **Flexport's** Greenhouse board (194 reqs, via API)
+> — zero intern titles, unchanged. **Uber's** career site still returns HTTP 406 on direct fetch —
+> standing access gap, unchanged. Built In NYC/Austin/SF direct scans: NYC surfaced only
+> already-summer-cycle rows (Gusto, PwC, Citadel, Circle, MetLife); Austin and SF returned zero
+> internship results. Intern Insider Winter/Spring 2027 term pages: nothing new in scope (E3
+> Consulting Internship, SF, already tracked as A145; TikTok Sydney rows already tracked as
+> A112/A114). **GradConnection Sydney:** nothing beyond already-tracked TikTok reqs and
+> pay-to-play placement brokerages. **Tokyo:** coralcap.co/jobs 404, tokyodev.com/jobs 403
+> (both standing), japan-dev.com's board (282 listings) — no English-friendly, non-Japanese-
+> required, entry-level non-engineering match.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com
+> 200, simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Prior — Liveness check 2026-10-21 22:05 UTC: 1 closure — **A76 (Novaflow, Growth Intern)**, confirmed
 > `DEAD` by `check_links.py` and WebFetch alike (workatastartup.com/jobs/92868 now 404); was
 > `conflict`, now `closed`. 2 `SUSPECT` (A95 Parkdepot, A167 Dell) re-opened directly — both still
 > "Actively hiring," no change. 7 `UNKNOWN` (standing Tesla 403s: A68, A122, A124–A126, A139, A172)
