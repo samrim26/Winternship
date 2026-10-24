@@ -15,10 +15,41 @@
 > unchanged). Substance re-checks: A96 (Crowe Global, Built In Austin — unchanged, still "Apply Now"),
 > A120 (MTA, Jobvite — unchanged, 200 OK), A121 (Ankura, Workday CXS API — unchanged: canApply true,
 > $34/hr), A130 (Kodiak, Greenhouse API — unchanged, updated_at 2026-10-20, still open), A143 (CBIZ,
-> Oracle Cloud ATS — unchanged, 200 OK). Board sweep (new-role discovery) in progress — see below for
-> result.
+> Oracle Cloud ATS — unchanged, 200 OK).
 >
-> **Sweep 2026-10-23 (full):** 2 new rows, 0 closures. Liveness check (`check_links.py`): 0 `DEAD`,
+> **Board sweep: 0 new rows.** Economic consulting (Analysis Group, Cornerstone, CRA, Brattle, NERA)
+> checked directly at source again — all remain summer-analyst-only, no winter/spring or rolling
+> track; CRA's own board shows only full-time 2027-grad reqs, no internships. SimplifyJobs Off-Season
+> README (Data Science + PM sections) parsed in full — every Winter/Spring 2027 + target-city match
+> was already tracked or excluded on verification: Google's "Data Analytics Apprenticeship" (18-month
+> DOL program, no-bachelor's-required, application window already closed — wrong shape entirely),
+> Cloudflare's "People Analytics Data Engineer Intern" (Austin) confirmed gone via Cloudflare's own
+> Greenhouse API — Simplify's entry was stale, and Stand Together's "KIP Policy Data Analyst Intern"
+> (Lever API) turned out to be **Albany, NY**, not NYC as tagged — a location-tagging error — plus a
+> mandatory June Arlington, VA summit past the Japan departure — conflict, excluded. workatastartup.com
+> login-gated this pass (no public listing reachable); wellfound.com and Built In (Austin/NYC/SF) spot
+> checks surfaced only already-tracked or summer-cycle roles (Citadel's Operations Analyst intern
+> looked promising on duration but citadel.com blocked fetch and no third party confirmed an
+> off-cycle cohort — left unverified rather than added on an unconfirmed guess). GradConnection Sydney:
+> Australian Treasury program requires Australian citizenship (hard exclude); nothing else new. Tokyo
+> (coralcap.co, tokyodev.com, japan-dev.com): no non-engineering internship matches. Named priority
+> companies checked directly: Uber/DoorDash don't run on Greenhouse; Uber's actual 2027 Strategic
+> Finance/Ops cohort is Amsterdam/Berlin/London, 6 months from February — wrong city and length;
+> DoorDash's 2027 cycle is summer-only. Flexport's Greenhouse board (190 live reqs) has no "intern"
+> title right now. Palantir's Deployment Strategist internship postings target 2026-grads with a
+> security-clearance-gated government track — no 2027-cohort posting found. **Worth a direct cold
+> email, not a tracked row:** Clera (SF, pre-seed, Founders Associate Intern, $38–53/hr, in-person,
+> runs recurring short cohorts) — its most recent posting was Fall 2026 and is now inactive, no live
+> Spring 2027 req to link, but the back-to-back-cohort pattern makes it a good outreach target per the
+> cold-email playbook.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Last swept: **2026-10-24** (full sweep — **0 new rows, 1 closure (A144 Rundoo), 1 `DEAD` on the
+> liveness pass**.)
+>
+> Prior — **Sweep 2026-10-23 (full):** 2 new rows, 0 closures. Liveness check (`check_links.py`): 0 `DEAD`,
 > 2 `SUSPECT` (A95 Parkdepot, A167 Dell — both re-opened directly, still "Actively hiring," no
 > change, same standing text as prior runs), 7 `UNKNOWN` (standing Tesla 403s — A68, A122, A124–A126,
 > A139, A172, sampled one directly via WebFetch, still 403, unchanged). Substance re-checks: A145 (E3,
