@@ -6,6 +6,18 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Sweep 2026-10-24 (full, 13:00 UTC):** Liveness check (`check_links.py`): 1 `DEAD` (**A144 Rundoo —
+> closed**: Ashby's job-board API for `rundoo` no longer lists this posting id at all, confirmed
+> directly against the live API response, which now shows a different, unrelated set of open roles;
+> was `conflict`), 2 `SUSPECT` (A95 Parkdepot, A167 Dell — both re-opened directly, still "Actively
+> hiring," no change, same standing rolling-deadline pattern as prior runs), 7 `UNKNOWN` (standing
+> Tesla 403s — A68, A122, A124–A126, A139, A172, sampled one directly via WebFetch, still 403,
+> unchanged). Substance re-checks: A96 (Crowe Global, Built In Austin — unchanged, still "Apply Now"),
+> A120 (MTA, Jobvite — unchanged, 200 OK), A121 (Ankura, Workday CXS API — unchanged: canApply true,
+> $34/hr), A130 (Kodiak, Greenhouse API — unchanged, updated_at 2026-10-20, still open), A143 (CBIZ,
+> Oracle Cloud ATS — unchanged, 200 OK). Board sweep (new-role discovery) in progress — see below for
+> result.
+>
 > **Sweep 2026-10-23 (full):** 2 new rows, 0 closures. Liveness check (`check_links.py`): 0 `DEAD`,
 > 2 `SUSPECT` (A95 Parkdepot, A167 Dell — both re-opened directly, still "Actively hiring," no
 > change, same standing text as prior runs), 7 `UNKNOWN` (standing Tesla 403s — A68, A122, A124–A126,
@@ -1481,7 +1493,7 @@ recomputed once the resume is uploaded.
 | A141 | Acxiom | Data Engineer Intern | Data | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | N/A — no longer posted | Paid (amount unconfirmed) | 2 | ~3 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/data-engineer-intern-6c7445b5-ef99-4431-8856-72ecbe810648) |
 | A142 | Acxiom | Intern - Product Strategy & Innovation | Strategy | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-strategy-innovation-637d488b-b4f8-4e61-a1fa-e06ce51470d0) |
 | A143 | CBIZ | Business Operations Intern (Spring 2027) | Strategy | New York, NY | Hybrid (≥3 days/wk onsite) | Enterprise (accounting/advisory) | Spring 2027 (tagged) | Unconfirmed | $45–55K/yr (aggregator estimate, not employer-stated) | 3 | ~3 | Low/Med | unverified | [CBIZ Careers](https://ebez.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/6474) |
-| A144 | Rundoo | Product Manager Intern | PM | Redwood City, CA | In-person | Series-funded ($48M raised; Battery/Bessemer/CRV) | **Summer 2027 term (confirmed) ⚠** | Rolling | $2,461/wk (~$122K/yr annualized) | 2 | ~5 | Low | conflict | [Ashby](https://jobs.ashbyhq.com/rundoo/b7d71a5a-4a88-4e97-a6db-e0446eefb389) |
+| A144 | Rundoo | Product Manager Intern | PM | Redwood City, CA | In-person | Series-funded ($48M raised; Battery/Bessemer/CRV) | **Summer 2027 term (confirmed) ⚠** | Rolling | $2,461/wk (~$122K/yr annualized) | 2 | ~5 | Low | closed | [Ashby](https://jobs.ashbyhq.com/rundoo/b7d71a5a-4a88-4e97-a6db-e0446eefb389) |
 | A145 | Energy and Environmental Economics (E3) | 2027 Consulting Internship | Strategy | San Francisco, CA / Boston, MA / New York, NY / Calgary, AB | Hybrid (≥3 days/wk office) | Boutique (energy economics consulting) | Flexible, 8–12 wk min ⚠ (grad-year eligibility unclear) | Confirm ≤ Mar 12 | $30–45/hr | 3 | ~3 | Med | live | [Lever](https://jobs.lever.co/ethree/4e029b3e-2c44-4f90-a04c-3980f4dedd57) |
 | A146 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | In-person (3 days/wk) | Public (crypto/Web3 exchange) | **"January to April 2027" (explicit, semester-long) ⚠** | Unconfirmed | Unconfirmed | 3 | 4 | Low | conflict | [Greenhouse](https://boards.greenhouse.io/embed/job_app?for=gemini&token=8214332&gh_jid=8214332) |
 | A147 | Tesla | Service Program & Project Management Intern | PM | Austin, TX | Unconfirmed | Public | Spring 2027 (tagged); SimplifyJobs README tags this exact req 🎓 (advanced-degree marker) ⚠ | Unconfirmed | Unconfirmed | 4 | 3 | Med | blocked | [Tesla Careers](https://www.tesla.com/careers/search/job/283443) |
