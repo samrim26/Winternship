@@ -6,7 +6,42 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
-> **Sweep 2026-10-24 (full, 13:00 UTC):** Liveness check (`check_links.py`): 1 `DEAD` (**A144 Rundoo —
+> **Sweep 2026-10-25 (full, 13:00 UTC):** Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`
+> (A95 Parkdepot, A167 Dell — both re-verified directly, titles unchanged, no closed/filled signal,
+> same standing rolling-deadline pattern as prior runs), 7 `UNKNOWN` (standing Tesla 403s — A68, A122,
+> A124–A126, A139, A172, sampled A172 directly, still 403, unchanged). Substance re-checks: A22 CertiK
+> (Lever API — unchanged, still open, NY), A145 E3 (Lever API — unchanged, still open, SF), A151 Kroll
+> (200 OK, unchanged), A161 &amp; A169 MTA (Jobvite — unchanged, titles match tracker). No closures,
+> no corrections this run.
+>
+> **Board sweep: 1 new row.** Economic consulting firms (Analysis Group, Cornerstone, CRA, Compass
+> Lexecon, Brattle, NERA) checked directly at source again — all remain summer-analyst-only, zero
+> internship reqs (CRA's own 91-posting board confirmed full-time-2027-grad only). workatastartup.com
+> still login/JS-gated to a direct fetch (standing, unchanged since yesterday); wellfound.com showed no
+> internship postings this pass. SimplifyJobs Off-Season README re-parsed — no new Data/Strategy/
+> Growth/BD/PM matches beyond what's already tracked. Intern Insider winter/spring-2027 term pages,
+> Built In (Austin/NYC/SF) internships pages, and Tokyo sources (coralcap.co, japan-dev.com — one
+> listing but engineering; tokyodev.com 403) all surfaced nothing new. GradConnection Sydney
+> business/commerce: TikTok rows already tracked; everything else is Australian-citizenship-gated
+> (Treasury), next-cycle (Summer 2027/28), or wrong function (Capgemini Melbourne, mechanical/CAD).
+>
+> **New: A180 (Metis Strategy)** — "Strategy & Management Consultant Intern," found via
+> simplify.jobs' Top Winter/Spring Internships list. Boutique C-level/executive advisory consulting —
+> genuine Strategy-function fit, closest thing on the board to the named economic-consulting lane
+> outside the five named firms. Walnut Creek, CA (East Bay, adjacent to SF). Could not confirm term,
+> dates, hours, or a company-ATS link — metisstrategy.com/careers is JS-rendered and didn't surface
+> its own ATS posting; kept the Simplify aggregator link as the real application URL per the
+> never-drop rule. **Genuine risk flag:** the aggregator list page itself is titled "Winter & Spring
+> 2026," raising a real possibility this is a stale prior-cycle listing rather than 2027 — added
+> `unverified` with that risk stated explicitly rather than assumed either way.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Last swept: **2026-10-25** (full sweep — **1 new row (A180, unverified), 0 closures, 0 `DEAD` on the
+> liveness pass**.)
+>
+> Prior — **Sweep 2026-10-24 (full, 13:00 UTC):** Liveness check (`check_links.py`): 1 `DEAD` (**A144 Rundoo —
 > closed**: Ashby's job-board API for `rundoo` no longer lists this posting id at all, confirmed
 > directly against the live API response, which now shows a different, unrelated set of open roles;
 > was `conflict`), 2 `SUSPECT` (A95 Parkdepot, A167 Dell — both re-opened directly, still "Actively
@@ -1560,6 +1595,7 @@ recomputed once the resume is uploaded.
 | A177 | Snowflake | Product Marketing, AI-Powered Data Engineering Intern (Winter 2027) | Growth (ambiguous — GTM/storytelling, flagged) | Menlo Park, CA | In-person | Public (cloud data platform) | Winter 2027, 12 wks (exact dates unconfirmed) | **Apply by Oct 23 (year unstated, presumed 2026) ⚠ — 4 days out** | $40–47/hr | 5 | ~3 | Med | live | [Intern Insider](https://interninsider.me/internships/snowflake/product-marketing-ai-powered-data-engineering-intern-bce11b17-b8bc-41f3-aaf2-82f86d363f52) |
 | A178 | 1Password | Data Intern – Product Analytics (Winter 2027) | Data | Remote (US/Canada) | Remote | Private, late-stage ($500M+ ARR security) | **Jan–Apr 2027 (explicit, "4 months") ⚠** | Apr 2027 ⚠ | Unconfirmed | 3 | ~3 | Med | conflict | [Ashby](https://jobs.ashbyhq.com/1password/412c1aac-13ce-4cc9-9c81-90a9a7a2ee48) |
 | A179 | Four Hands | Business Operations Analyst Intern (Spring 2027) | Strategy | Austin, TX | In-person (listing tagged Hybrid, inconsistent) | Private, mid-size (furniture/home goods) | **Jan–Apr 2027 (explicit, through Spring term) ⚠** | Apr 2027 ⚠ | Unconfirmed | 2 | ~3 | Med | conflict | [Built In Austin](https://builtin.com/job/business-operations-analyst-intern/11757970) |
+| A180 | Metis Strategy | Strategy & Management Consultant Intern | Strategy | Walnut Creek, CA (East Bay) | In-person (stated) | Boutique (C-level/executive advisory) | Unconfirmed — no term, duration, or start/end date stated | Confirm ≤ Mar 12 | Unconfirmed (bonus-eligible mentioned, no base rate) | 3 | ~4 | Med | unverified | [Simplify.jobs listing](https://simplify.jobs/p/936f4d3a-b666-4fd0-9058-179c23beac04/Strategy--Management-Consultant-Intern) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
