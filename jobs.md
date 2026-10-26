@@ -6,7 +6,46 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
-> **Sweep 2026-10-25 (full, 13:00 UTC):** Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`
+> **Sweep 2026-10-26 (full, 13:06 UTC):** Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`
+> (A95 Parkdepot, A167 Dell — both re-verified directly, still "Actively hiring," same standing
+> rolling-deadline pattern as every prior run, no change), 7 `UNKNOWN` (standing Tesla 403s — A68,
+> A122, A124–A126, A139, A172, sampled A172 directly via WebFetch, still 403, unchanged). Substance
+> re-checks: A5 (Dalus, workatastartup.com — title unchanged; board is login/JS-gated to a direct
+> fetch, standing), A13 (DeepAware AI, workatastartup.com — same), A18 (Datadog, Built In NYC —
+> unchanged: hybrid NYC, Jan 4–Apr 23 2027, $100–110K, still `conflict`). **A16 (Zipline)** — attempted
+> re-verification on the Techstars/Getro portfolio board; the board is JS-rendered with no static job
+> data, and Getro's own search API now blocks scraping requests outright ("contact us for API
+> access"). Could not confirm the listing is still live — same class of access limitation as the
+> Tesla 403s. Left status (`conflict`) unchanged rather than guessing.
+>
+> **Board sweep: 0 new rows.** Economic consulting (Analysis Group, Cornerstone, CRA, Compass
+> Lexecon, Brattle, NERA) checked directly at source again — all remain summer-analyst-only / full-time-
+> 2027-grad only (CRA's own board: 91 live postings, zero internships; confirmed directly). YC
+> (workatastartup.com) and wellfound.com both JS/login-gated to a direct fetch this pass (standing,
+> unchanged — full exhaustive YC sweep still pending the Winter 2027 batch landing in November per the
+> playbook). simplify.jobs' Top Winter/Spring list unchanged — still titled "Winter &amp; Spring 2026,"
+> only function match is Metis Strategy (already tracked as A180). SimplifyJobs Off-Season README
+> re-parsed (Software Engineering + partial Data Science/PM sections): every Data/PM match in target
+> cities was already tracked (Gemini A146/A176, Clearwater A148/A155) except **Emerson Electric**'s
+> "Software Product Management Intern" (Austin, TX, Oracle Cloud ATS, aggregator-tagged "Winter 2026")
+> — evaluated and excluded rather than added: the posting page is JS-rendered and gave no term, mode,
+> or pay beyond the aggregator tag, and PM sits near the bottom of the function priority list, so an
+> unverified add here didn't clear the quality bar. Intern Insider spring-2027 term page: no Data/
+> Strategy/Growth/BD/Partnerships/PM/Sales match in target cities (closest hits — E3's consulting
+> internship, Electric Power Engineers R&amp;D — are wrong function). Built In Austin/SF internship
+> pages: every Data/Strategy/PM/Sales match found is tagged Summer 2027 — wrong cycle, excluded.
+> GradConnection Sydney business/commerce: TikTok rows already tracked, nothing else new (Capgemini
+> generalist program, wrong function). Tokyo (coralcap.co, japan-dev.com, tokyodev.com): coralcap.co's
+> "Coral Careers" page no longer lists individual portfolio postings (site redesign — now a
+> warm-intro service, not a browsable board); japan-dev.com showed one Tokyo internship (HENNGE Global
+> Internship Program) but it's an engineering track, not a function match; tokyodev.com 403 (standing).
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Last swept: **2026-10-26** (full sweep — **0 new rows, 0 closures, 0 `DEAD` on the liveness pass**.)
+>
+> Prior — **Sweep 2026-10-25 (full, 13:00 UTC):** Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`
 > (A95 Parkdepot, A167 Dell — both re-verified directly, titles unchanged, no closed/filled signal,
 > same standing rolling-deadline pattern as prior runs), 7 `UNKNOWN` (standing Tesla 403s — A68, A122,
 > A124–A126, A139, A172, sampled A172 directly, still 403, unchanged). Substance re-checks: A22 CertiK
