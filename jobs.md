@@ -6,6 +6,15 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Liveness check 2026-10-26 22:00 UTC:** `check_links.py` flagged 1 `DEAD` — **A178 (1Password)**,
+> confirmed directly (1Password's own Ashby job-board API no longer lists job id 412c1aac...; direct
+> posting URL now returns HTTP 404) — closed, was `conflict`. Also 2 `SUSPECT` (A95 Parkdepot, A167
+> Dell — both re-opened directly, still "Actively hiring," same standing rolling-deadline pattern, no
+> change) and 7 `UNKNOWN` (standing Tesla 403s — A68, A122, A124–A126, A139, A172; sampled A172 via
+> WebFetch, still 403, unchanged). Access check: all five sanity-check domains reachable
+> (workatastartup.com 301, wellfound.com 200, simplify.jobs 200, job-boards.greenhouse.io 302,
+> www.builtinnyc.com 200) — no regression.
+>
 > **Sweep 2026-10-26 (full, 13:06 UTC):** Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`
 > (A95 Parkdepot, A167 Dell — both re-verified directly, still "Actively hiring," same standing
 > rolling-deadline pattern as every prior run, no change), 7 `UNKNOWN` (standing Tesla 403s — A68,
@@ -1632,7 +1641,7 @@ recomputed once the resume is uploaded.
 | A175 | GE Aerospace | SaaS – Flight Analytics Platform, Data Science Co-op (Spring 2027) | Data | Austin, TX | Unconfirmed | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~4 | Med | unverified | [GE Workday](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Austin/SaaS---Flight-Analytics-Platform---Data-Science-Co-op---Spring-2027_R5040450-2) |
 | A176 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | Hybrid (3 days/wk in-person stated) | Public (crypto/Web3) | Jan–Apr 2027 (explicit, "January to April 2027") ⚠ | Apr 2027 ⚠ | $45/hr | 4 | ~4 | Med | conflict | [Gemini Greenhouse](https://job-boards.greenhouse.io/gemini/jobs/8214332) |
 | A177 | Snowflake | Product Marketing, AI-Powered Data Engineering Intern (Winter 2027) | Growth (ambiguous — GTM/storytelling, flagged) | Menlo Park, CA | In-person | Public (cloud data platform) | Winter 2027, 12 wks (exact dates unconfirmed) | **Apply by Oct 23 (year unstated, presumed 2026) ⚠ — 4 days out** | $40–47/hr | 5 | ~3 | Med | live | [Intern Insider](https://interninsider.me/internships/snowflake/product-marketing-ai-powered-data-engineering-intern-bce11b17-b8bc-41f3-aaf2-82f86d363f52) |
-| A178 | 1Password | Data Intern – Product Analytics (Winter 2027) | Data | Remote (US/Canada) | Remote | Private, late-stage ($500M+ ARR security) | **Jan–Apr 2027 (explicit, "4 months") ⚠** | Apr 2027 ⚠ | Unconfirmed | 3 | ~3 | Med | conflict | [Ashby](https://jobs.ashbyhq.com/1password/412c1aac-13ce-4cc9-9c81-90a9a7a2ee48) |
+| A178 | 1Password | Data Intern – Product Analytics (Winter 2027) | Data | Remote (US/Canada) | Remote | Private, late-stage ($500M+ ARR security) | **Jan–Apr 2027 (explicit, "4 months") ⚠** | Apr 2027 ⚠ | Unconfirmed | 3 | ~3 | Med | closed | [Ashby](https://jobs.ashbyhq.com/1password/412c1aac-13ce-4cc9-9c81-90a9a7a2ee48) |
 | A179 | Four Hands | Business Operations Analyst Intern (Spring 2027) | Strategy | Austin, TX | In-person (listing tagged Hybrid, inconsistent) | Private, mid-size (furniture/home goods) | **Jan–Apr 2027 (explicit, through Spring term) ⚠** | Apr 2027 ⚠ | Unconfirmed | 2 | ~3 | Med | conflict | [Built In Austin](https://builtin.com/job/business-operations-analyst-intern/11757970) |
 | A180 | Metis Strategy | Strategy & Management Consultant Intern | Strategy | Walnut Creek, CA (East Bay) | In-person (stated) | Boutique (C-level/executive advisory) | Unconfirmed — no term, duration, or start/end date stated | Confirm ≤ Mar 12 | Unconfirmed (bonus-eligible mentioned, no base rate) | 3 | ~4 | Med | unverified | [Simplify.jobs listing](https://simplify.jobs/p/936f4d3a-b666-4fd0-9058-179c23beac04/Strategy--Management-Consultant-Intern) |
 
