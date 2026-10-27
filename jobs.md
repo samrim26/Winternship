@@ -6,7 +6,41 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
-> **Liveness check 2026-10-26 22:00 UTC:** `check_links.py` flagged 1 `DEAD` — **A178 (1Password)**,
+> **Sweep 2026-10-27 (full, 13:33 UTC):** Liveness check (`check_links.py`): 0 `DEAD`, 2 `SUSPECT`
+> (A95 Parkdepot, A167 Dell — both re-opened directly via WebFetch, still "Actively hiring," no
+> closed/filled signal, same standing rolling-deadline pattern as every prior run; dated lines added
+> to both notes), 8 `UNKNOWN` (standing Tesla 403s — A68, A122, A124–A126, A139, A172 — plus A149/A155
+> Built In NYC, which hit a transient HTTP 429 on this run's automated pass; both re-opened directly
+> via WebFetch immediately after and returned 200 with no closed/filled signal — treated as rate-limit
+> noise, not a real signal, no status change).
+>
+> **Board sweep: 1 new row.** Economic consulting direct (analysisgroup.com, cornerstone.com,
+> crai.com, compasslexecon.com's own Workday board, brattle.com) checked again — all remain
+> summer-analyst/associate-only, no internship or off-cycle reqs surfaced; NERA's careers URL now
+> redirects to a dead marketing page (noted, not acted on — no application function lost since no
+> internship req existed there anyway). workatastartup.com and wellfound.com still JS/login-gated to
+> a direct fetch (standing, full YC sweep still pending the Winter 2027 batch landing in November).
+> simplify.jobs' Top Winter/Spring list re-checked — still titled "Winter &amp; Spring 2026," only
+> function match is Metis Strategy (already tracked, A180). SimplifyJobs Off-Season README
+> (Software Engineering table, Product Management/Data Science sections not reachable in this pass
+> due to file size) and Intern Insider winter-2027/spring-2027 term pages surfaced nothing new in
+> target functions/cities. **Built In NYC direct company-page scan surfaced A181 (PatientPoint,
+> Business Development Intern, NYC, unverified→live, $20–23/hr)** — see note on the row; mode is
+> flagged as a possible onsite-that's-really-remote case. Built In Austin surfaced only
+> already-excluded Summer-2027 rows (Cox PM intern, Emerson S&OP intern) and borderline non-matches
+> (Four Hands, White Cap). GradConnection Sydney surfaced three new postings (ANZ 2027/28 Summer
+> Intern EOI — Nov 2027 start, wrong cycle; Grant Thornton 2027/2028 Vacation Program EOI — wrong
+> cycle, Australian summer not Jan–Mar; Premium Graduate Placements — no 2027 date stated) — all
+> evaluated and excluded, not padded in. coralcap.co's portfolio board remains a warm-intro service
+> with no browsable postings (standing); tokyodev.com 403 (standing).
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
+> Last swept: **2026-10-27** (full sweep — **1 new row (A181, live), 0 closures, 0 `DEAD` on the
+> liveness pass**.)
+>
+> Prior — **Liveness check 2026-10-26 22:00 UTC:** `check_links.py` flagged 1 `DEAD` — **A178 (1Password)**,
 > confirmed directly (1Password's own Ashby job-board API no longer lists job id 412c1aac...; direct
 > posting URL now returns HTTP 404) — closed, was `conflict`. Also 2 `SUSPECT` (A95 Parkdepot, A167
 > Dell — both re-opened directly, still "Actively hiring," same standing rolling-deadline pattern, no
@@ -1644,6 +1678,7 @@ recomputed once the resume is uploaded.
 | A178 | 1Password | Data Intern – Product Analytics (Winter 2027) | Data | Remote (US/Canada) | Remote | Private, late-stage ($500M+ ARR security) | **Jan–Apr 2027 (explicit, "4 months") ⚠** | Apr 2027 ⚠ | Unconfirmed | 3 | ~3 | Med | closed | [Ashby](https://jobs.ashbyhq.com/1password/412c1aac-13ce-4cc9-9c81-90a9a7a2ee48) |
 | A179 | Four Hands | Business Operations Analyst Intern (Spring 2027) | Strategy | Austin, TX | In-person (listing tagged Hybrid, inconsistent) | Private, mid-size (furniture/home goods) | **Jan–Apr 2027 (explicit, through Spring term) ⚠** | Apr 2027 ⚠ | Unconfirmed | 2 | ~3 | Med | conflict | [Built In Austin](https://builtin.com/job/business-operations-analyst-intern/11757970) |
 | A180 | Metis Strategy | Strategy & Management Consultant Intern | Strategy | Walnut Creek, CA (East Bay) | In-person (stated) | Boutique (C-level/executive advisory) | Unconfirmed — no term, duration, or start/end date stated | Confirm ≤ Mar 12 | Unconfirmed (bonus-eligible mentioned, no base rate) | 3 | ~4 | Med | unverified | [Simplify.jobs listing](https://simplify.jobs/p/936f4d3a-b666-4fd0-9058-179c23beac04/Strategy--Management-Consultant-Intern) |
+| A181 | PatientPoint | Business Development Intern | BD | New York, NY | Hybrid (listing header says "In-Office," but company copy on the same posting describes PatientPoint as "remote-first" with a "Hybrid Workspace," "Typical time on-site: Flexible" — flagged as the classic onsite-that's-really-remote pattern) | Private, mid-size (healthcare/patient-engagement tech) | Unconfirmed — no season stated on the NYC posting itself; a sibling PatientPoint internship (Inside Sales, Cincinnati, same $20–23/hr band, posted Oct 23 2026) is explicitly an 8-week rolling term with "flexible working hours to accommodate academic schedules," comfortably inside the 10-week window if this role runs the same way | Confirm ≤ Mar 12 | $20–23/hr | 2 | ~3 | Med | live | [Built In NYC](https://builtin.com/job/business-development-intern/11883424) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
