@@ -6,6 +6,21 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Liveness check 2026-10-28 13:00 UTC:** closed **A18** (Datadog, Product Management Intern —
+> Winter session) — checker returned `UNKNOWN` (HTTP 429, transient rate-limit), but a direct fetch
+> showed "Sorry, this job was removed at 04:18 p.m. (EST) on Tuesday, Oct 27, 2026." Was `conflict`
+> (dates ran past the hard stop anyway). `check_links.py` otherwise — 0 `DEAD`, 1 `SUSPECT`, 8
+> `UNKNOWN`, 86 `OK`. **A95** (Parkdepot) re-flagged `SUSPECT` on the same standing passed-deadline signal;
+> re-opened directly — still "Actively hiring," full-time, on-site SF, rolling start; page now
+> explicitly states "Paid internship" — **Pay corrected Unconfirmed → Paid (amount unconfirmed)**
+> in both files. 7 standing `UNKNOWN` Tesla 403s (A68, A122, A124–A126, A139, A172) re-tried, still
+> 403 — no change. FULL-run substance re-check: sampled 15 other `live` Tier A/B rows (A5, A13, A22,
+> A65, A75, A92, A96, A112, A120, A121, A130, A145, A151, A173, A177) by opening each posting directly
+> — all matched the tracker exactly (dates, location, mode, hours, pay where stated); several
+> workatastartup.com/YC listings only returned a bare title via fetch (JS-rendered, as usual) and
+> could not be re-verified this way, consistent with prior runs. No corrections beyond A95's Pay
+> field. Remaining live rows not sampled this run are due for a future pass.
+>
 > **Liveness check 2026-10-27 22:00 UTC:** closed **A167** (Dell Technologies, Corporate Strategy
 > Undergraduate Intern) — checker returned `DEAD`, confirmed directly: page title now reads "Closed:
 > Corporate Strategy Undergraduate Intern at Dell…", status text "This internship has closed" /
@@ -1559,7 +1574,7 @@ recomputed once the resume is uploaded.
 | A15 | UT Austin Athletics | Video and Analytics Intern — Baseball | Data | Austin, TX | In-person | On-campus | Winter/Spring 2027 (tagged) | TBC | Unconfirmed | 1 | ~2 | Low | unverified | [UT Workday](https://utaustin.wd1.myworkdayjobs.com/utstudent/job/UT-MAIN-CAMPUS/Video-and-Analytics-Intern--Baseball_R_00047706) |
 | A16 | Zipline | Strategic Engagements & Events Intern (Spring 2027) | Partnerships | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 ⚠ | Rolling | $34/hr | 3 | ~4 | Med | conflict | [Techstars board](https://jobs.techstars.com/companies/zipline) |
 | A17 | Axo Longevity | Intern (Growth & Creative) | Growth | Barcelona | **Remote** | Early | Unconfirmed | Unconfirmed | Likely unpaid | 1 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3628609-intern-growth-creative) |
-| A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | conflict | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
+| A18 | Datadog | Product Management Intern (Winter session) | PM | New York, NY | Hybrid | Public | Jan 4 – Apr 23 2027 ⚠ | Unconfirmed | $100K–110K (annualized) | 4 | ~4 | Low | closed | [Built In NYC](https://www.builtinnyc.com/job/product-management-intern/10710775) |
 | A19 | IBM | Technology Sales Engineer Intern, Entry-Level Sales Program 2027 | Sales/Solutions Engineer | Austin, TX (+ SF, NYC, RTP, and others) | Hybrid | Enterprise | Unconfirmed | Expired Sept 1 2026 | $71,100–$130,350/yr | 3 | ~4 | Med | closed | [Mirror via Clemson](https://career.clemson.edu/jobs/ibm-technology-sales-engineer-intern-entry-level-sales-program-2027-2/) |
 | A64 | Zipline | Supply Chain Business Operations Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr/May 2027 ⚠ | Rolling | Unconfirmed | 3 | ~4 | Low | conflict | [Built In SF](https://www.builtinsf.com/job/supply-chain-business-operations-intern-spring-2027/10751227) |
 | A65 | Peakflo | Product Manager Intern (Paid) | PM | India | Remote | YC W22 | Rolling | Rolling | ₹360–480K/yr (~$4.3–5.8K) | 2 | ~2 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/95821) |
@@ -1604,7 +1619,7 @@ recomputed once the resume is uploaded.
 | A92 | TraceRoot.AI (YC S25) | Developer Marketing Intern (was: GTM Engineer Intern) | Growth (technical-adjacent) | San Francisco, CA | Hybrid (≥3 days onsite) | YC S25 | Rolling | Unconfirmed (see note) | $4–6K/mo | 2 | ~5 | **High** | live | [YC / Work at a Startup](https://www.ycombinator.com/companies/traceroot-ai/jobs/dk1ep2K-gtm-engineer-intern) |
 | A93 | NewsBreak | Growth Engineer Intern | Growth | Mountain View, CA | In-person | Growth-stage | Rolling | Jan 10 2027 | $40–60/hr | 4 | ~1 | Low | live | [Intern Insider](https://interninsider.me/internships/newsbreak/growth-engineer-intern-b3921cc9-7d80-45ae-acd0-e6397c0506e3) |
 | A94 | NewForm | Business Development Intern | BD | New York, NY | Hybrid | Startup | Rolling admission | Closed Aug 26 2026 | Unconfirmed | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/newform/business-development-intern-b44b60d3-aa91-4d74-8bf7-b9d00d044884) |
-| A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Unconfirmed | 2 | ~3 | Low | live | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
+| A95 | Parkdepot | Marketing Analyst Intern | Growth/Data (quantitative) | San Francisco, CA | In-person | Startup | Rolling, "full-time commitment" ⚠ | Oct 17 2026 | Paid (amount unconfirmed) | 2 | ~3 | Low | live | [Intern Insider](https://interninsider.me/internships/parkdepot/marketing-analyst-intern-fceac396-5267-4c7b-af85-dfba02481761) |
 | A96 | Crowe Global | AI Functional Intern (Winter 2027) | Data/Strategy (technical-adjacent) | Austin, TX | In-office | Enterprise | **Winter 2027 (explicit)** | Ongoing | $27–42/hr | 3 | ~4 | **High** | live | [Built In Austin](https://www.builtinaustin.com/job/ai-functional-intern-winter-2027/10769798) |
 | A97 | Cadence Design Systems | AI & Strategic Marketing Intern | Data/Strategy | Austin, TX | In-office | Public | Unconfirmed | Removed Aug 31 2026 | Unconfirmed | 3 | ~3 | Low | closed | [Built In Austin](https://www.builtinaustin.com/job/ai-strategic-marketing-intern/10787551) |
 | A98 | Cresta | Data Science Intern (Customer Success) | Data | Remote (US) | **Remote** | Growth-stage | Rolling | Closed Oct 19 2026 | Unconfirmed | 3 | ~4 | Med | closed | [Greenhouse](https://job-boards.greenhouse.io/cresta/jobs/5213417008) |
