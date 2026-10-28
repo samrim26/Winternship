@@ -21,6 +21,28 @@
 > could not be re-verified this way, consistent with prior runs. No corrections beyond A95's Pay
 > field. Remaining live rows not sampled this run are due for a future pass.
 >
+> **Sweep 2026-10-28 (full, 13:13 UTC): 0 new rows.** Economic consulting direct (analysisgroup.com,
+> cornerstone.com, crai.com, compasslexecon.com, brattle.com, nera.com) checked again — all still
+> summer-analyst/associate-cycle only, no off-cycle reqs. Palantir Deployment Strategist (Lever)
+> checked and excluded — role explicitly requires the application be "your final internship before
+> graduating"; Sam graduates 2028, doesn't qualify. DoorDash and Flexport careers pages surfaced no
+> 2027 internship postings, only full-time Strategy &amp; Ops reqs. SimplifyJobs Off-Season README
+> (raw) partially re-read (~200K of ~1.5M chars) — nothing new in target functions/cities in the
+> portion covered. Intern Insider winter-2027/spring-2027 term pages — no new matches. Built In
+> Austin/SF — nothing with confirmed Jan–Mar 2027 dates in target functions (mostly Summer-2027
+> cycle or wrong location). GradConnection Sydney — TikTok Client Solution Intern and AI PM Intern
+> postings found, both already tracked as **A112**/**A114**, status and deadlines confirmed current.
+> Energy and Environmental Economics (E3) 2027 Consulting Internship found again — already tracked,
+> **twice**, as **A145** and **A164** — flagging this existing duplicate for cleanup on a future
+> pass, not acted on here. coralcap.co and tokyodev.com — 403/404 this run (standing, no access
+> change). workatastartup.com and wellfound.com root/search pages still return no listings to a
+> direct fetch (JS-rendered; `site:` search operators aren't honored by the search engine for either
+> domain) — standing issue, full YC sweep still pending the Winter 2027 batch landing in November.
+> Nothing cleared the bar for addition this run.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
 > **Liveness check 2026-10-27 22:00 UTC:** closed **A167** (Dell Technologies, Corporate Strategy
 > Undergraduate Intern) — checker returned `DEAD`, confirmed directly: page title now reads "Closed:
 > Corporate Strategy Undergraduate Intern at Dell…", status text "This internship has closed" /
@@ -60,7 +82,10 @@
 > Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
 > simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
 >
-> Last swept: **2026-10-27** (full sweep — **1 new row (A181, live), 0 closures, 0 `DEAD` on the
+> Last swept: **2026-10-28** (full sweep — **0 new rows, 1 closure (A18 Datadog), 0 `DEAD` on the
+> liveness pass**.)
+>
+> Prior — Last swept: **2026-10-27** (full sweep — **1 new row (A181, live), 0 closures, 0 `DEAD` on the
 > liveness pass**.)
 >
 > Prior — **Liveness check 2026-10-26 22:00 UTC:** `check_links.py` flagged 1 `DEAD` — **A178 (1Password)**,
