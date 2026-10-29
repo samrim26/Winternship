@@ -6,6 +6,41 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Sweep 2026-10-29 (full, 13:29 UTC): 0 new rows, 1 closure.** `check_links.py` — 0 `DEAD`,
+> 1 `SUSPECT`, 7 `UNKNOWN`, 87 `OK`. Closed **A153** (Contoro Robotics, Business Development Intern,
+> Austin) — checker returned `OK` (http 200, false negative), but a direct fetch of the posting now
+> reads "Sorry, this job was removed at 06:52 p.m. (UTC) on Monday, Oct 19, 2026." Was `live`. **A95**
+> (Parkdepot) re-flagged `SUSPECT` on the same standing passed-deadline signal; re-opened directly —
+> unchanged, still "Actively hiring," paid, rolling start. 7 standing `UNKNOWN` Tesla 403s (A68, A122,
+> A124–A126, A139, A172) re-tried via WebFetch, still 403 — no change. FULL-run substance re-check:
+> sampled 7 `live` Tier A/B rows not sampled in recent runs (A70, A114, A128, A153, A161, A169, A181)
+> by opening each posting directly — all matched the tracker (dates, location, mode, pay where
+> stated) except A153 above; **A114** (TikTok AI PM Intern, Sydney) confirmed still open, closing
+> **30 Oct 2026, 1:59pm Sydney time — inside 24 hours**, flagging for urgency. Board sweep: YC
+> (workatastartup.com) and Wellfound root/search pages again returned no listings to a direct fetch
+> (JS-rendered; Winter 2027 YC batch still not landed) — standing issue. Economic consulting direct
+> (analysisgroup.com, brattle.com, crai.com, compasslexecon.com, cornerstone.com, nera.com) checked
+> again — all still summer-cycle only (NERA's own FAQ explicitly limits its internship program to
+> final-year undergrads and grad students — Sam doesn't qualify as a junior regardless of cycle).
+> DoorDash and Flexport careers pages surfaced no 2027 internship postings. Built In NYC/Austin/SF
+> surfaced two candidates that were investigated and excluded as **already-excluded repeats**: IDeaS
+> "Marketing Analytics Intern" (Bloomington, MN HQ, no target-city corroboration — same exclusion as
+> prior runs) and Emerson "Business Operations Intern" (Austin, hybrid, but no term stated and company
+> runs fixed-season programs — same exclusion class as the already-tracked Emerson S&amp;OP intern
+> exclusion). Citadel "Operations Analyst – Intern (US)" (NYC, $2,200–2,300/wk) investigated —
+> Citadel's own careers pages return 403 to direct fetch; the only cached listing (Built In) shows the
+> role removed Dec 17 2025 and the pay band/11-week structure match Citadel's standard **summer**
+> analyst-intern program, not an off-cycle cohort — excluded on strong summer-cycle likelihood rather
+> than added speculatively. Metis Strategy "Strategy &amp; Management Consultant Intern" surfaced again
+> on a different source (Built In via Walnut Creek, CA search) — already tracked as **A180**;
+> metisstrategy.com's own careers page lists no open roles directly (boutique firm, third-party-board
+> only, consistent with using Simplify exclusively), but `check_links.py` confirms A180's actual
+> Simplify.jobs listing still returns `OK` — no change. GradConnection Sydney — TikTok rows already tracked
+> (A112/A114), confirmed current. Nothing else cleared the bar for addition this run.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
 > **Liveness check 2026-10-28 13:00 UTC:** closed **A18** (Datadog, Product Management Intern —
 > Winter session) — checker returned `UNKNOWN` (HTTP 429, transient rate-limit), but a direct fetch
 > showed "Sorry, this job was removed at 04:18 p.m. (EST) on Tuesday, Oct 27, 2026." Was `conflict`
@@ -82,7 +117,10 @@
 > Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
 > simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
 >
-> Last swept: **2026-10-28** (full sweep — **0 new rows, 1 closure (A18 Datadog), 0 `DEAD` on the
+> Last swept: **2026-10-29** (full sweep — **0 new rows, 1 closure (A153 Contoro Robotics), 0 `DEAD`
+> on the liveness pass (closure found via substance re-check, not the checker)**.)
+>
+> Prior — Last swept: **2026-10-28** (full sweep — **0 new rows, 1 closure (A18 Datadog), 0 `DEAD` on the
 > liveness pass**.)
 >
 > Prior — Last swept: **2026-10-27** (full sweep — **1 new row (A181, live), 0 closures, 0 `DEAD` on the
@@ -1698,7 +1736,7 @@ recomputed once the resume is uploaded.
 | A150 | HP (Hewlett Packard) | Personal Systems Product Management Intern | PM | Austin, TX | Unconfirmed | Public | Unconfirmed ("Winter 2026" tag ambiguous ⚠) | Unconfirmed | $29–33/hr | 3 | 3 | Low/Med | unverified | [HP Workday](https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Austin-Texas-United-States-of-America/Personal-Systems-Product-Management-Intern_UNI4755) |
 | A151 | Kroll | Intern, Trade and Customs | Strategy (economic/policy analysis, econ-consulting-adjacent) | New York, NY | In-person | Established (global risk/financial advisory) | Rolling, no stated term ⚠ | Rolling (no deadline set — see note) | $20–35/hr | 3 | 4 | Med | live | [Kroll Careers](https://careers.kroll.com/en/job/new-york/intern-trade-and-customs/21014747) |
 | A152 | GE Aerospace | SaaS – Flight Analytics Platform, Data Science Co-op (Spring 2027) | Data | Austin, TX | In-person | Public (Fortune 500 aerospace) | Spring 2027 (tagged); full-time co-op, no exact term dates stated ⚠ | Confirm ≤ Mar 12 | $24/hr+ (rises per undergrad year) | 3 | ~4 | Med | unverified | [GE Workday, req R5040450](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Austin/SaaS---Flight-Analytics-Platform---Data-Science-Co-op---Spring-2027_R5040450-2) |
-| A153 | Contoro Robotics | Business Development Intern | BD | Austin, TX | In-person | Early-stage (robotics) | Rolling, no stated term | Rolling | Unconfirmed | 2 | ~4 | Med | live | [Built In Austin](https://builtin.com/job/business-development-intern/11318430) |
+| A153 | Contoro Robotics | Business Development Intern | BD | Austin, TX | In-person | Early-stage (robotics) | Rolling, no stated term | Rolling | Unconfirmed | 2 | ~4 | Med | closed | [Built In Austin](https://builtin.com/job/business-development-intern/11318430) |
 | A154 | Compass Lexecon (FTI Consulting) | Intern, Competition Practice | Strategy | Madrid, Spain | Hybrid | Established (economic consulting) | No fixed start stated; firm describes 3–6 month internships "during, in-between, or shortly after" the economics degree ⚠ | Rolling review; apps close 26 Feb 2027 | Unconfirmed ("competitive salary and benefits") | 3 | ~4 | Low | blocked* | [Compass Lexecon Workday, req JR261344](https://fticonsulting.wd108.myworkdayjobs.com/CompassLexeconCareers/job/Madrid-Spain/Intern---Competition-Practice---Madrid_JR261344) |
 | A155 | Clearwater Analytics (CWAN) | Data Management & Reporting Intern | Data | New York, NY (1 Rockefeller Plaza) | Hybrid | Public (NYSE: CWAN) | Unconfirmed (no season/term field on posting; datePosted 2026-09-23, validThrough 2026-10-23 is an application window, not a term) | Unconfirmed | Unconfirmed (listing shows a $0–$10,000,000/yr placeholder — clearly bad data, not real) | 3 | ~4 | Med | unverified | [Built In NYC](https://www.builtinnyc.com/job/data-management-reporting-intern/11340560) |
 | A156 | Workiva | Spring 2027 Intern – Data Analytics | Data | Remote (US); hybrid option near NYC/SF/Austin office hub | Remote | Public (NASDAQ: WK) | Same Spring 2027 cycle pattern as closed sibling reqs A115/A117/A118 (Jan 4, 2027 start, 15–20 hrs/wk) — inferred, not independently confirmed on this specific req's own page ⚠ | **Closed 30 Sep 2026 (confirmed — req returns 0 results)** | $22.00/hr (confirmed, req R12319) | 2 | ~3 | Med | closed | [Workiva Workday, req R12319](https://workiva.wd503.myworkdayjobs.com/careers/job/USA---Remote/Spring-2027-Intern---Data-Analytics_R12319) |
