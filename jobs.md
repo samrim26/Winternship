@@ -6,6 +6,14 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Liveness check 2026-10-30 22:04 UTC:** closed **A77** (hoop.shop, Performance Marketing & Social
+> Creative Intern) — `check_links.py` flagged `DEAD` (http 410), confirmed directly. **A95** (Parkdepot)
+> re-checked on its standing passed-deadline `SUSPECT` signal — still "Actively hiring," unchanged. 7
+> standing Tesla `UNKNOWN` 403s (A68, A122, A124–A126, A139, A172) re-tried via WebFetch and a JSON
+> Accept header — still 403, no change. Git-state note: found `main` detached from `HEAD` again with
+> 10 unmerged local commits from prior runs (Oct 27–30); fast-forwarded `main` to `HEAD` — `origin/main`
+> already had all 10 commits, so nothing was lost, but the branch pointer had drifted for several runs.
+>
 > **Sweep 2026-10-30 (full, 13:45 UTC): 1 new row (A182, live), 2 closures.** `check_links.py` — 0
 > `DEAD`, 1 `SUSPECT`, 7 `UNKNOWN`, 84 `OK`. **A95** (Parkdepot) re-flagged `SUSPECT` on the same
 > standing passed-deadline signal; re-opened directly — unchanged, still "Actively hiring." 7 standing
@@ -1715,7 +1723,7 @@ recomputed once the resume is uploaded.
 | A74 | Workato | Intern, AI Engineering | Data (ML-eng skew) | San Francisco, CA | In-person | Growth-stage | Winter 2026 & Spring 2027 (stated) | Unconfirmed | Unconfirmed | 3 | ~2 | Low | unverified | [Built In SF](https://www.builtinsf.com/job/intern-ai-engineering/9010182) |
 | A75 | Surface Labs | AI GTM Engineer Intern | Growth/Sales (technical-adjacent) | San Francisco, CA / India | Remote (SF preferred; India also accepted) | YC-backed | Rolling, 3-mo | Confirm ≤ Mar 12 | Commission-only for first 3mo, then FT + base ⚠ (OTE ~$10–20K/mo; equity 0.01–1.00%) | 2 | ~3 | Low | live | [Work at a Startup](https://www.workatastartup.com/jobs/93375) |
 | A76 | Novaflow | Growth Intern | Growth | San Francisco, CA | Remote or in-person | YC-backed | Summer 2026 (as posted) ⚠ | Summer 2026 (as posted) ⚠ | $25–30/hr | 2 | ~4 | Low | closed | [Work at a Startup](https://www.workatastartup.com/jobs/92868) |
-| A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
+| A77 | hoop.shop | Performance Marketing & Social Creative Intern | Growth (ambiguous) | New York, NY (listed) / Remote | Remote | Early | Unconfirmed | Unconfirmed | Unconfirmed | 2 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/4589449-performance-marketing-social-creative-freelance-clone) |
 | A78 | FairwAI | Data Analyst Intern, Policy + Ethics | Data | Remote (Boston/NYC/SF/Europe) | Remote | Early | Spring 2026 stated; 2027 TBC ⚠ | Unconfirmed | Unpaid | 2 | ~3 | Low | closed | [Wellfound](https://wellfound.com/jobs/3257803-data-analyst-intern-policy-ethics) |
 | A79 | Zeminent | Business Development & Lead Generation Intern | BD | Remote (Gurgaon, India hrs) | Remote | Small | Unconfirmed | Unconfirmed | Unconfirmed | 1 | ~2 | Low | unverified | [Wellfound](https://wellfound.com/jobs/4436924-business-development-lead-generation-intern) |
 | A80 | Notion | Data Science Intern (Winter 2027) | Data | San Francisco, CA / New York, NY | In-person | Late-stage | **Jan 25 2027** | **Apr 16 2027 ⚠** | $55/hr (Bachelor's) / $59/hr (Master's) | 5 | ~5 | Med | closed | [Ashby](https://jobs.ashbyhq.com/notion/a67d6f2b-7c13-41d0-b36b-b2f662c9873e/application) |
