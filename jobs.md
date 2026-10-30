@@ -6,6 +6,46 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Sweep 2026-10-30 (full, 13:45 UTC): 1 new row (A182, live), 2 closures.** `check_links.py` — 0
+> `DEAD`, 1 `SUSPECT`, 7 `UNKNOWN`, 84 `OK`. **A95** (Parkdepot) re-flagged `SUSPECT` on the same
+> standing passed-deadline signal; re-opened directly — unchanged, still "Actively hiring." 7 standing
+> `UNKNOWN` Tesla 403s (A68, A122, A124–A126, A139, A172) re-tried via WebFetch, still 403 — no change.
+> FULL-run substance re-check (13 live Tier A/B rows not recently sampled: A82, A83, A93, A96, A120,
+> A129, A131, A132, A133, A151, A157, A158, A171) surfaced two closures the checker missed (same
+> false-negative-`OK` pattern as A153 on 2026-10-29): **A131** (Base Power Company, Financial Planning
+> Intern, Austin) — direct fetch shows "Sorry, this job was removed at 11:42 a.m. (CST) on Monday, Oct
+> 26, 2026." Was `live`. **A132** (Base Power Company, Marketing Intern, Austin) — direct fetch shows
+> "Sorry, this job was removed at 05:38 p.m. (CST) on Friday, Oct 23, 2026." Was `live`. Base Power's
+> two remaining open reqs in this cluster (A129 Finance–Analytics, A133 Deployments Operations) still
+> show "Be an Early Applicant," no removal notice — unchanged. The other 9 sampled rows (A82, A83, A93,
+> A96, A120, A151, A157, A158, A171) matched the tracker on dates/location/mode/pay where stated — no
+> corrections. One git-state note (not a jobs.md issue): local `main` had fallen 9 commits behind a
+> detached-HEAD checkout from prior runs (Oct 26–29 work was present but the branch pointer hadn't
+> moved); fast-forwarded `main` to catch up — no data was lost, origin already had the commits.
+> Board sweep: added **A182** (PatientPoint, Client Sales Intern, New York NY, Hybrid, $20–23/hr,
+> Sales) via a direct Built In NYC company-page scan — same company as A181 (BD Intern), same mode
+> ambiguity (listing header "In-Office" vs. body text "Hybrid Schedule"), three near-identical listing
+> IDs tracked as one row. workatastartup.com and wellfound.com root/jobs pages again returned no
+> browsable listings to a direct fetch (JS-rendered; W2027 YC batch still not landed — standing issue).
+> Economic consulting direct (analysisgroup.com, cornerstone.com, crai.com, compasslexecon.com,
+> brattle.com) checked again — none of the five careers pages lists specific internship openings or
+> dates on the page itself (all point to Analyst/Associate summer-cycle application funnels or a
+> Workday portal); no off-cycle req surfaced. DoorDash careers page returned 403 to direct fetch;
+> Flexport's lists no internships at all, only full-time strategy/ops and rotational roles. tokyodev.com
+> 403 (standing); coralcap.co/jobs 404 (link form changed — flagging for a future check at a corrected
+> URL); japan-dev.com surfaced only HENNGE's "Full-Stack Pathway" internship (engineering, out of
+> scope). SimplifyJobs Off-Season README (raw, Winter-2027 and Spring-2027 term pages via
+> interninsider.me) and Built In Austin/SF — nothing in target functions/cities cleared the bar; IDeaS
+> "Marketing Analytics Intern" resurfaced under both Austin and SF Bay Area searches (remote/hybrid,
+> no real target-city presence) — excluded again as the same already-tracked-exclusion class. Built In
+> NYC also surfaced Tapestry MBA-level Strategy/E-Commerce intern postings — excluded, MBA-level, not
+> a junior-undergrad fit. au.gradconnection.com Sydney — TikTok rows already tracked (A112/A114),
+> confirmed current, both closing within hours of this check per the page. Nothing else cleared the
+> bar for addition this run.
+>
+> Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
+> simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
+>
 > **Liveness check 2026-10-29 22:00 UTC: closed A107 (Zipline), A177 (Snowflake).** `check_links.py`
 > flagged both `DEAD`; confirmed directly via fetch — both pages now show title "Closed: …" and status
 > text "This internship has closed" / "Applications closed on October 28, 2026." A107 was `conflict`,
@@ -125,7 +165,11 @@
 > Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
 > simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
 >
-> Last swept: **2026-10-29** (full sweep — **0 new rows, 1 closure (A153 Contoro Robotics), 0 `DEAD`
+> Last swept: **2026-10-30** (full sweep — **1 new row (A182, live), 2 closures (A131/A132 Base
+> Power), 0 `DEAD` on the liveness pass (both closures found via substance re-check, not the
+> checker)**.)
+>
+> Prior — Last swept: **2026-10-29** (full sweep — **0 new rows, 1 closure (A153 Contoro Robotics), 0 `DEAD`
 > on the liveness pass (closure found via substance re-check, not the checker)**.)
 >
 > Prior — Last swept: **2026-10-28** (full sweep — **0 new rows, 1 closure (A18 Datadog), 0 `DEAD` on the
@@ -1722,8 +1766,8 @@ recomputed once the resume is uploaded.
 | A128 | Base Power Company | Business Operations Intern, Commercial Partnerships | Strategy/Partnerships | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~4 | High | live | [Built In Austin](https://www.builtinaustin.com/job/business-operations-intern-commercial-partnerships/11174864) |
 | A129 | Base Power Company | Finance – Analytics Intern | Data/Finance | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/finance-analytics-intern/11174862) |
 | A130 | Kodiak Robotics | Winter 2027 Intern, Data Engineering | Data | Mountain View, CA | In-person | Late-stage (autonomous trucking) | **Start Jan 2027, 12–16 wks, end date flexible** | Confirm ≤ Mar 12 | $10,000 (range unclear — flat figure) | 3 | ~3 | Med | live | [Greenhouse](https://job-boards.greenhouse.io/kodiak/jobs/4396622009) |
-| A131 | Base Power Company | Financial Planning Intern | Data/Finance | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/finance-planning-intern/11174868) |
-| A132 | Base Power Company | Marketing Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~3 | Med | live | [Built In Austin](https://www.builtinaustin.com/job/marketing-intern/11184090) |
+| A131 | Base Power Company | Financial Planning Intern | Data/Finance | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 3 | ~3 | Med | closed | [Built In Austin](https://www.builtinaustin.com/job/finance-planning-intern/11174868) |
+| A132 | Base Power Company | Marketing Intern | Growth | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~3 | Med | closed | [Built In Austin](https://www.builtinaustin.com/job/marketing-intern/11184090) |
 | A133 | Base Power Company | Deployments Operations Intern | Strategy (field ops) | Austin, TX | In-person | Startup | Unconfirmed | Confirm ≤ Mar 12 | Unconfirmed | 2 | ~2 | Low | live | [Built In Austin](https://www.builtinaustin.com/job/deployments-operations-intern/11184062) |
 | A134 | Acxiom | Intern, Agency Partnerships | Partnerships | New York, NY | In-person | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~4 | Med | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-agency-partnerships-042301fe-a2b3-4883-81c4-1b56a2cc4c38) |
 | A135 | Acxiom | Intern, Product Management | PM | Remote (US) | Remote | Enterprise (IPG subsidiary) | **Winter 2027, starts Jan 11 2027** | Confirm ≤ Mar 12 | Paid (amount unconfirmed) | 2 | ~2 | Low | closed | [Intern Insider](https://interninsider.me/internships/acxiom/intern-product-management-30a0e8ee-b65a-43d1-acbd-2d6f995e3beb) |
@@ -1773,6 +1817,7 @@ recomputed once the resume is uploaded.
 | A179 | Four Hands | Business Operations Analyst Intern (Spring 2027) | Strategy | Austin, TX | In-person (listing tagged Hybrid, inconsistent) | Private, mid-size (furniture/home goods) | **Jan–Apr 2027 (explicit, through Spring term) ⚠** | Apr 2027 ⚠ | Unconfirmed | 2 | ~3 | Med | conflict | [Built In Austin](https://builtin.com/job/business-operations-analyst-intern/11757970) |
 | A180 | Metis Strategy | Strategy & Management Consultant Intern | Strategy | Walnut Creek, CA (East Bay) | In-person (stated) | Boutique (C-level/executive advisory) | Unconfirmed — no term, duration, or start/end date stated | Confirm ≤ Mar 12 | Unconfirmed (bonus-eligible mentioned, no base rate) | 3 | ~4 | Med | unverified | [Simplify.jobs listing](https://simplify.jobs/p/936f4d3a-b666-4fd0-9058-179c23beac04/Strategy--Management-Consultant-Intern) |
 | A181 | PatientPoint | Business Development Intern | BD | New York, NY | Hybrid (listing header says "In-Office," but company copy on the same posting describes PatientPoint as "remote-first" with a "Hybrid Workspace," "Typical time on-site: Flexible" — flagged as the classic onsite-that's-really-remote pattern) | Private, mid-size (healthcare/patient-engagement tech) | Unconfirmed — no season stated on the NYC posting itself; a sibling PatientPoint internship (Inside Sales, Cincinnati, same $20–23/hr band, posted Oct 23 2026) is explicitly an 8-week rolling term with "flexible working hours to accommodate academic schedules," comfortably inside the 10-week window if this role runs the same way | Confirm ≤ Mar 12 | $20–23/hr | 2 | ~3 | Med | live | [Built In NYC](https://builtin.com/job/business-development-intern/11883424) |
+| A182 | PatientPoint | Client Sales Intern | Sales | New York, NY | Hybrid (listing header says "In-Office," but the role description itself says "Hybrid Schedule" — same onsite-that's-really-remote ambiguity as A181) | Private, mid-size (healthcare/patient-engagement tech) | Unconfirmed — no season stated; same sibling-program logic as A181 | Confirm ≤ Mar 12 | $20–23/hr | 2 | ~3 | Med | live | [Built In NYC](https://builtin.com/job/client-sales-intern/11916671) |
 
 **2026-10-08 sweep — no corrections to status (A112/A114 TikTok Sydney re-verified, no drift; A152
 GE Aerospace and A163 Fenwick & West re-verified via direct Workday API fetch, notes updated with
