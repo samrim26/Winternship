@@ -1,7 +1,7 @@
 # Sam Rimland — Candidate Profile
 
 > Canonical context file. Every session in this folder should read this first.
-> Last updated: 2026-08-02
+> Last updated: 2026-11-01 (resume uploaded; system rebuilt around it)
 
 ---
 
@@ -14,21 +14,42 @@ Entering **junior year** (Fall 2026).
 - **Minor:** Statistics & Data Science
 - **Email:** scottishdolphinsocks@gmail.com
 
-<!-- PENDING RESUME UPLOAD -->
-<!--
-  Resume has NOT been uploaded yet. Drop the PDF into ./resume/ and tell Claude.
-  On upload, regenerate: the Experience section below, the Keyword Bank,
-  the Fit Scoring Rubric, and recompute every Fit score in jobs.md.
--->
+Resume uploaded 2026-11-01 (text copy in `resume/`, gitignored). GPA 3.70. Certificate: Japanese.
+
+> **Date check:** the resume lists *Sophia University, Tokyo — Summer 2027*, but this file has the
+> Japan hard stop as **1 April 2027**. All filtering uses 1 April until Sam confirms. If Japan
+> actually starts in summer, every `conflict` row (spring internships ending April/May) becomes viable.
 
 ### Experience
 
-*Pending resume upload. Placeholder.*
+- **Cordatus Resource Group — Operations & Sales Intern** (remote, May–Jul 2026). Outbound email
+  campaigns in Clay, La Growth Machine and HubSpot (1,000+ prospects, 30 campaigns). ClickUp and
+  Power Automate workflows for performance reviews, HR notices, a feedback dashboard. Curated
+  TalentLMS training for 100+ employees.
+- **Ualett — Risk Management Intern** (Jersey City, May–Aug 2025). Credit-loss and pre-tax P&L ratio
+  analysis in Excel on a $30M+ receivables portfolio for the CFO and risk team. 50-state lending
+  requirements compliance memo. Competitor research on merchant-cash-advance pricing and terms.
+- **FEVO — Strategic Partnerships Intern** (NYC, Jul–Aug 2023). Researched and ranked 70+ sports/tech
+  partners. Cold-emailed top-ranked companies to open partnership conversations.
+- **STIZ — Founder** (Feb 2026–present). Play-money stock-trading app (iOS + web) built with Claude Code,
+  Supabase, Vercel, Xcode. 10-user beta, 300+ trades, fixed 3 bugs.
+- **Leadership:** Epsilon Nu Tau Director of Logistics (10+ CEO/founder speakers and 10+ events a
+  semester). Sigma Alpha Mu Alumni Chair (2,000+ alumni database, newsletters). Founded the Irvington
+  Alumni Association (≈800-person network, 3 virtual events of 100+).
 
 ### Skills
 
-*Pending resume upload. Placeholder — expected to include coursework in econometrics,
-statistics, and data science tooling.*
+Excel, SQL, R, Python (treat SQL/R/Python as **basic** for scoring), HubSpot, Clay, La Growth Machine,
+Supabase, Vercel. Intermediate Spanish and Japanese.
+
+### Honest read — how competitive Sam is
+
+Solid, not elite. Three real internships at small companies, no brand name, GPA 3.70, no finance or
+consulting training, light quantitative tooling. **Score every role a notch below face value.**
+Strongest, most credible lanes: **outbound sales / SDR / BD**, **sales & business ops**, **lending
+and fintech risk ops**, **partnerships research**, **events and live-music logistics**. Out of reach:
+elite programs (big tech, IB, MBB, top econ consulting), data science requiring real Python/ML,
+selective PM programs.
 
 ---
 
@@ -72,24 +93,21 @@ programs at large firms explicitly require leave — those get flagged in `jobs.
 
 ### Functions I want
 
-Ranked, roughly, by interest:
+Ranked by realistic odds from the resume, not by aspiration:
 
-1. **Data science / data analytics** — direct fit with the stats & DS minor
-2. **Strategy** — two distinct lanes, both open:
-   - **Economic consulting** (Analysis Group, Cornerstone Research, Charles River Associates,
-     Compass Lexecon). Litigation, antitrust and policy work built on econometrics. **The closest
-     match on the whole board to an econ major with a stats minor** — the coursework *is* the job.
-     They recruit this exact profile and staff case-by-case, so an off-cycle block is easier for
-     them to absorb than for a fixed-cohort programme.
-   - **Strategy & Operations** (Uber, DoorDash, Flexport) and **Deployment Strategist** (Palantir).
-     Own a metric, find why it moved, ship the fix. Heavy SQL plus commercial judgement.
-3. **Growth** — quantitative + commercial, strong econ fit
-4. **Business development**
-5. **Strategic partnerships**
-6. **Technical-adjacent commercial** — solutions/sales engineering, solutions architect, technical
-   account management, developer relations, partnerships at API companies, product ops, revenue ops
-7. **Product management** (APM / PM intern)
-8. **Sales** (prefer strategic/enterprise over pure SDR volume work)
+1. **Sales / business development**: SDR, inside sales, BD intern. The Cordatus outbound record is the strongest line.
+2. **Operations**: sales ops, business ops, event and festival ops, catalog/content ops.
+3. **Partnerships**: research and outreach (FEVO).
+4. **Risk / lending ops** at fintechs and small-business lenders (Ualett).
+5. **Growth / marketing ops** where the work is numbers and process, not content.
+6. **Entry-level analyst roles** where the bar is Excel, not Python.
+
+**Industries:** any, startups and mid-size preferred. **Music and live events are explicitly in
+scope** (labels, publishers, distributors, ticketing, promoters, festivals, venues). FEVO ticketing
+experience is the bridge.
+
+**Not in scope:** elite/branded programs, YC companies and the YC batch strategy (dropped
+2026-11-01), economic-consulting majors, technical PM, ML/data-science roles.
 
 ### Explicitly NOT wanted
 
@@ -289,42 +307,33 @@ as solving a problem for them.
 
 ## Keyword Bank
 
-*To be refined from the resume once uploaded.*
-
 ### Search terms — role titles
-`off-cycle intern` · `spring intern` · `winter intern` · `January start` ·
-`Q1 intern` · `part-time intern` · `data analyst intern` · `data science intern` ·
-`business analyst intern` · `growth intern` · `growth associate` · `BD intern` ·
-`business development representative` · `APM intern` · `product management intern` ·
-`partnerships associate` · `strategic partnerships intern` · `GTM intern` ·
-`strategy & operations` · `biz ops` · `chief of staff intern` · `founder's associate`
+`spring intern` · `winter intern` · `January start` · `part-time intern` · `sales intern` ·
+`sales development intern` · `business development intern` · `inside sales intern` ·
+`sales operations intern` · `business operations intern` · `operations intern` ·
+`partnerships intern` · `events intern` · `festival intern` · `music business intern` ·
+`label intern` · `ticketing intern` · `risk intern` · `credit operations intern` · `marketing operations intern`
 
-> `founder's associate` and `chief of staff` are high-signal at startups — they're
-> generalist hustle roles that map directly onto the stated interests and are far less
-> competitive than branded internship programs.
-
-### Qualification terms to match against
-`SQL` · `Python` · `R` · `econometrics` · `regression` · `A/B testing` ·
-`experimentation` · `statistical modeling` · `Excel` · `financial modeling` ·
-`Tableau` · `Looker` · `dbt` · `CRM` · `Salesforce` · `HubSpot` · `outbound` ·
-`pipeline` · `stakeholder management` · `cross-functional` · `market research` ·
-`competitive analysis` · `KPI` · `cohort analysis` · `funnel`
+### Resume terms to match against
+`outbound` · `HubSpot` · `Clay` · `CRM` · `Salesforce` · `prospecting` · `cold email` · `Excel` ·
+`credit risk` · `P&L` · `compliance` · `merchant cash advance` · `lending` · `workflow automation` ·
+`Power Automate` · `ClickUp` · `partnerships` · `market research` · `event logistics` · `scheduling` ·
+`ticketing` · `live events` · `music`
 
 ---
 
 ## Fit Scoring Rubric
 
-*Provisional until resume upload. Scores in `jobs.md` carrying a `~` are estimates from
-this profile only.*
+Scored against the real resume (2026-11-01), then **rounded down one notch**.
 
-**Difficulty (1–5)** — how hard to get in. Higher = harder.
-Inputs: brand recognition, expected applicant volume vs. headcount, requirements above
-junior-year level, whether it's a known feeder program.
+**Fit (1–5):** 5 = the posting describes work Sam has already done (outbound campaigns, credit-loss
+analysis, partner research, event logistics). 3 = adjacent and learnable in week one. 1–2 = wants
+skills he lacks (real Python, financial modeling, design). Don't add anything below 3.
 
-**Fit (1–5)** — how well the profile matches stated qualifications. Higher = better.
+**Difficulty (1–5):** 1 = small team or warm contact. 3 = mid-size company with an open posting.
+4–5 = branded program or hot startup. **Don't add 5s.** A 4 needs a specific resume reason.
 
-**Priority** — composite of Fit, in-person bonus, pay, and deadline urgency.
-Drives the default sort so the top of the table is the actual next action.
+**Priority:** Fit × odds × in-window. A role ending after Apr 1 is never High.
 
 ---
 
@@ -333,9 +342,9 @@ Drives the default sort so the top of the table is the actual next action.
 - [ ] Use Claude to search through keywords and qualifications
 - [ ] Maintain dashboard: position, difficulty ranking, fit-vs-resume, application deadline
 - [ ] Optimize resume per role; track salary
-- [ ] **Upload resume** → unblocks real fit scoring
+- [x] **Upload resume** — done 2026-11-01
 - [ ] **Contact UT Austin Texas Global** re: Spain convenio (long lead time)
-- [ ] **Confirm Masa eligibility** re: Israel
+- [ ] **Confirm the Japan start date** (resume says Summer 2027, this file says 1 Apr 2027)
 - [ ] **Apply for Australian 462 visa early** if pursuing Australia (annual cap)
 
 ---

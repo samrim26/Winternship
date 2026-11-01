@@ -2,7 +2,7 @@
 
 Off-cycle internship search — **Monday 4 January to Friday 12 March 2027** (10 weeks).
 
-Hard stop: study abroad in Japan begins **1 April 2027**.
+Hard stop: study abroad in Japan begins **1 April 2027** (to confirm: the resume says Sophia University, Summer 2027).
 
 Sam Rimland · UT Austin, Class of 2028 · Economics, minor in Statistics & Data Science.
 
@@ -18,25 +18,20 @@ Sam Rimland · UT Austin, Class of 2028 · Economics, minor in Statistics & Data
 
 ## How it's organized
 
-Roles sit in one of three tiers:
+Two lists, both screened against the actual resume (realistic roles only, not reaches):
 
-- **Tier A** — live now, applyable today.
-- **Tier B** — opens on a known date. Monitor it.
-- **Tier C** — no posting exists. Direct-outreach targets.
+- **List 1 — Posted jobs.** Real postings in any allowed location or remote. `conflict` rows are
+  realistic but end after the Apr 1 hard stop.
+- **List 2 — Cold-email targets.** Austin and NYC only. No posting exists, but the resume gives a
+  specific reason to email. Warm leads (FEVO, Ualett) first.
 
-For a January start at a startup, **Tier C is the primary route, not the fallback.** Most off-cycle
-roles get posted in January through March 2027 — at or after the intended start date. Cold outreach
-in October beats a job board in February.
-
-Fit scores marked `~` are provisional, estimated from the profile alone. They get recomputed against
-real qualifications once the resume is uploaded.
+Music and live events are in scope. YC is not.
 
 ## Automation
 
-A cloud routine sweeps the job boards **daily at 09:00 ET**, commits new roles into `jobs.md` and
-`dashboard.html`, and pushes. See *Automated monitoring* and *Sweep agent network access* in
-[`jobs.md`](jobs.md) — the sweep environment blocks most job boards, so unverifiable leads are
-recorded as `unverified` with their real URL rather than discarded.
+A cloud routine runs twice daily (13:00 and 22:00 UTC). It checks every List 1 posting with
+`check_links.py`, closes dead ones, adds realistic new roles to both lists, commits, and
+republishes the dashboard Artifact.
 
 ## The three long-lead items
 

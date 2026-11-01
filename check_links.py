@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Liveness pass over every open Tier A/B posting in dashboard.html.
+"""Liveness pass over every open List 1 (posted) row in dashboard.html.
 
 Prints one line per row: REF  VERDICT  reason  url
   DEAD    — strong closed signal (404/410, ATS API says gone/canApply false, "no longer accepting")
@@ -100,7 +100,7 @@ def rows():
         line = line.strip().rstrip(",")
         if line.startswith('["'):
             r = json.loads(line)
-            if r[1] in "AB" and r[15] in OPEN:
+            if r[1] == "P" and r[15] in OPEN:  # List 1 only; List 2 (E) has no posting to check
                 out.append(r)
     return out
 
