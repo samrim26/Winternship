@@ -9,3 +9,6 @@ resume/*.docx
 # Claude Code agent worktrees / session scratch data — not repo content
 .claude/
 __pycache__/
+
+# Application drafts hold personal contact info — keep local
+applications/
