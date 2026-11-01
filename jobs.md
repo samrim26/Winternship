@@ -6,6 +6,20 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
+> **Sweep 2026-11-01 (full, 13:07 UTC): liveness pass done, board sweep in progress — this entry covers
+> liveness only; new-row findings follow in a separate entry once the board sweep completes.** Network
+> check clean (all 5 domains responded, codes 301/200/200/302/200). `check_links.py` — 1 `DEAD`, 1
+> `SUSPECT`, 7 `UNKNOWN`, 79 `OK`. **Closed A173** (Pennant, YC S26, Founder Fellow – GTM/Growth/Strategy,
+> New York) — `check_links.py` flagged `DEAD` (http 404), confirmed directly via WebFetch (HTTP 404 Not
+> Found on workatastartup.com/jobs/111722). Was `live`. **A95** (Parkdepot) re-checked on its standing
+> passed-deadline `SUSPECT` signal — still "Actively hiring" (194 days posted, no deadline shown),
+> unchanged. 7 standing Tesla `UNKNOWN` 403s (A68, A122, A124–A126, A139, A172) retried via WebFetch and
+> a direct JSON-Accept curl — still 403, no change (standing limitation). Also spot-checked A5 (Dalus)
+> and A13 (DeepAware AI) via WebFetch — both still return only a bare page title (standing JS-rendered
+> shell limitation), no drift detected. Git-state note: found `main` detached from `HEAD` again, 2
+> unmerged local commits from the prior run (2026-10-31 sweep + liveness check); fast-forwarded `main`
+> to `HEAD` — `origin/main` already matched after push, nothing lost.
+>
 > **Sweep 2026-10-31 (full, 13:xx UTC): 0 new rows, 2 closures.** Network check clean (all 5 domains
 > responded). `check_links.py` — 0 `DEAD`, 1 `SUSPECT`, 7 `UNKNOWN`, 81 `OK`. **Closed A112 and A114**
 > (TikTok, Sydney, Client Solution Intern / AI Product Manager Intern) — both reopened reqs' closing
@@ -1850,7 +1864,7 @@ recomputed once the resume is uploaded.
 | A170 | FOX News Media | Spring 2027 FOX News Media Internship Program – Data Analytics (New York) | Data | New York, NY | In-person, part-time (16–24 hrs/wk) | Enterprise (FOX Corp subsidiary) | **Monday, February 8, 2027 – Friday, April 16, 2027 (explicit, employer-stated)** | **Apr 16 2027 ⚠** (explicit, ~5 wks past hard stop) | $20.00/hr (employer-stated pay disclosure) | 4 | ~3 | Low | conflict | [FOX Workday](https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Spring-2027-FOX-News-Media-Internship-Program---Data-Analytics---New-York_R50033950) |
 | A171 | Metropolitan Transportation Authority (MTA) | Operations Support, Emerging Talent Intern (Spring) | Data/Ops | Brooklyn, NY | In-person | Public agency | Spring (title confirms) | Confirm ≤ Mar 12 | $19/hr (Undergrad) / $21/hr (Grad) | 2 | ~3 | Med | live | [MTA/Jobvite](https://jobs.jobvite.com/metropolitantransportationauthority/job/oBqYAfwj) |
 | A172 | Tesla | Data Analyst Intern, People Products | Data | Palo Alto, CA / Austin, TX | Unconfirmed | Public | Spring 2027 (tagged) | Unconfirmed | Unconfirmed | 4 | ~4 | Low | unverified | [Tesla Careers](https://www.tesla.com/careers/search/job/286085) |
-| A173 | Pennant (YC S26) | Founder Fellow – GTM, Growth & Strategy | Strategy | New York, NY | In-person (IRL required) | YC S26 | Seasonal, rolling — no fixed dates stated | Confirm ≤ Mar 12 | Unconfirmed (no pay listed on posting) | 2 | ~4 | Med | live | [Work at a Startup](https://www.workatastartup.com/jobs/111722) |
+| A173 | Pennant (YC S26) | Founder Fellow – GTM, Growth & Strategy | Strategy | New York, NY | In-person (IRL required) | YC S26 | Seasonal, rolling — no fixed dates stated | Confirm ≤ Mar 12 | Unconfirmed (no pay listed on posting) | 2 | ~4 | Med | closed | [Work at a Startup](https://www.workatastartup.com/jobs/111722) |
 | A174 | Zipline | Change Management Intern (Spring 2027) | Data/Ops | South San Francisco, CA | In-person | Series C | Jan–Apr 2027 (explicit) ⚠ | Rolling | Unconfirmed | 4 | ~3 | Low | conflict | [Greenhouse](https://job-boards.greenhouse.io/flyzipline/jobs/7990677003) |
 | A175 | GE Aerospace | SaaS – Flight Analytics Platform, Data Science Co-op (Spring 2027) | Data | Austin, TX | Unconfirmed | Enterprise (public) | Unconfirmed — no term/duration/start date stated anywhere | Confirm ≤ Mar 12 | Unconfirmed | 4 | ~4 | Med | unverified | [GE Workday](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Austin/SaaS---Flight-Analytics-Platform---Data-Science-Co-op---Spring-2027_R5040450-2) |
 | A176 | Gemini | Product Management Intern (Winter 2027) | PM | New York, NY | Hybrid (3 days/wk in-person stated) | Public (crypto/Web3) | Jan–Apr 2027 (explicit, "January to April 2027") ⚠ | Apr 2027 ⚠ | $45/hr | 4 | ~4 | Med | conflict | [Gemini Greenhouse](https://job-boards.greenhouse.io/gemini/jobs/8214332) |
