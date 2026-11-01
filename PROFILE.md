@@ -16,9 +16,7 @@ Entering **junior year** (Fall 2026).
 
 Resume uploaded 2026-11-01 (text copy in `resume/`, gitignored). GPA 3.70. Certificate: Japanese.
 
-> **Date check:** the resume lists *Sophia University, Tokyo — Summer 2027*, but this file has the
-> Japan hard stop as **1 April 2027**. All filtering uses 1 April until Sam confirms. If Japan
-> actually starts in summer, every `conflict` row (spring internships ending April/May) becomes viable.
+> **Japan start confirmed 2026-11-01: 1 April 2027.** The resume's "Sophia University, Summer 2027" label is wrong; the hard stop is April 1.
 
 ### Experience
 
@@ -344,7 +342,8 @@ skills he lacks (real Python, financial modeling, design). Don't add anything be
 - [ ] Optimize resume per role; track salary
 - [x] **Upload resume** — done 2026-11-01
 - [ ] **Contact UT Austin Texas Global** re: Spain convenio (long lead time)
-- [ ] **Confirm the Japan start date** (resume says Summer 2027, this file says 1 Apr 2027)
+- [x] **Japan start confirmed:** 1 Apr 2027
+- [ ] **Fix the resume's Sophia line** (says Summer 2027; should reflect an April 2027 start)
 - [ ] **Apply for Australian 462 visa early** if pursuing Australia (annual cap)
 
 ---

@@ -2,7 +2,7 @@
 
 Off-cycle internship search — **Monday 4 January to Friday 12 March 2027** (10 weeks).
 
-Hard stop: study abroad in Japan begins **1 April 2027** (to confirm: the resume says Sophia University, Summer 2027).
+Hard stop: study abroad in Japan begins **1 April 2027**.
 
 Sam Rimland · UT Austin, Class of 2028 · Economics, minor in Statistics & Data Science.
 
