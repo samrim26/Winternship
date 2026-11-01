@@ -6,12 +6,11 @@
 > this file diverged from it during the 2026-08-02 rebuild, so when allocating a ref for a new role,
 > continue from the highest ref in that array — not from this file.
 >
-> **Sweep 2026-11-01 (full, 13:07 UTC): liveness pass done, board sweep in progress — this entry covers
-> liveness only; new-row findings follow in a separate entry once the board sweep completes.** Network
-> check clean (all 5 domains responded, codes 301/200/200/302/200). `check_links.py` — 1 `DEAD`, 1
-> `SUSPECT`, 7 `UNKNOWN`, 79 `OK`. **Closed A173** (Pennant, YC S26, Founder Fellow – GTM/Growth/Strategy,
-> New York) — `check_links.py` flagged `DEAD` (http 404), confirmed directly via WebFetch (HTTP 404 Not
-> Found on workatastartup.com/jobs/111722). Was `live`. **A95** (Parkdepot) re-checked on its standing
+> **Sweep 2026-11-01 (full, 13:07 UTC): 0 new rows, 1 closure, 2 reopenings.** Network check clean (all
+> 5 domains responded, codes 301/200/200/302/200). `check_links.py` — 1 `DEAD`, 1 `SUSPECT`, 7 `UNKNOWN`,
+> 79 `OK`. **Closed A173** (Pennant, YC S26, Founder Fellow – GTM/Growth/Strategy, New York) —
+> `check_links.py` flagged `DEAD` (http 404), confirmed directly via WebFetch (HTTP 404 Not Found on
+> workatastartup.com/jobs/111722). Was `live`. **A95** (Parkdepot) re-checked on its standing
 > passed-deadline `SUSPECT` signal — still "Actively hiring" (194 days posted, no deadline shown),
 > unchanged. 7 standing Tesla `UNKNOWN` 403s (A68, A122, A124–A126, A139, A172) retried via WebFetch and
 > a direct JSON-Accept curl — still 403, no change (standing limitation). Also spot-checked A5 (Dalus)
@@ -19,6 +18,31 @@
 > shell limitation), no drift detected. Git-state note: found `main` detached from `HEAD` again, 2
 > unmerged local commits from the prior run (2026-10-31 sweep + liveness check); fast-forwarded `main`
 > to `HEAD` — `origin/main` already matched after push, nothing lost.
+>
+> **Board sweep** (YC Work at a Startup — JS-shell, no listings readable; Wellfound — no internships
+> in target functions/cities; Simplify Top-W&S-Internships — nothing in target functions; economic
+> consulting direct (Analysis Group, Cornerstone, CRA, Compass Lexecon, Brattle, NERA) — still
+> summer-analyst/associate-cycle only, no off-cycle reqs, consistent with every prior run; SimplifyJobs
+> Off-Season README — only Austin hits, wrong window or already tracked; InternInsider Winter/Spring
+> 2027 — closest matches already tracked (E3/A145, PatientPoint/A181, Tesla BD standing JS-shell);
+> BuiltIn NYC/Austin/SF — Cloudflare PM Intern Austin confirmed Summer 2027 only (excluded), Exowatt MBA
+> Spring Intern Austin requires current MBA enrollment + 2yrs work exp (excluded), Cisco Data/Business
+> Analyst "Intern" postings have no location/term and salary-band pay reading like FTE comp, too
+> ambiguous to add; GradConnection Sydney/Melbourne/Brisbane — only the TikTok reopenings below, rest
+> are EOI/virtual placeholders already known; economic consulting peers search (Secretariat — all
+> Summer 2027 cycle or non-econ practice areas; Edgeworth Economics — zero internship postings; Berkeley
+> Research Group — JS-rendered Workday shell, standing limitation; Exponent — no student-specific
+> listing surfaced) — nothing new; Coral Capital — 404 (dead link, worth fixing); TokyoDev — 403;
+> Japan Dev — reachable, only mid/senior engineering roles requiring Japanese/residency, no
+> non-engineering entry-level hits; targeted web searches for "deployment strategist" (still Palantir,
+> still targets 2026-grad rising seniors, excluded per standing precedent), "founder's associate
+> January/Spring 2027" (all EU-based, wrong locations) — nothing new) surfaced **0 new candidates**
+> clearing the quality bar. **Reopened A112 and A114** (TikTok, Sydney, Client Solution Intern GBS AU /
+> AI Product Manager Intern Live-Revenue) — both closed earlier this run for the passed 30 Oct 2026
+> deadline — under the same standing monthly-recompete pattern documented on these rows since September
+> (4th cycle observed): new live reqs at `-5` and `-3` URL suffixes respectively, new closing date 30
+> Nov 2026 1:59pm Sydney, confirmed directly via WebFetch. Flipped closed → live, URLs and deadlines
+> updated, dated notes appended on both rows and in `dashboard.html`.
 >
 > **Sweep 2026-10-31 (full, 13:xx UTC): 0 new rows, 2 closures.** Network check clean (all 5 domains
 > responded). `check_links.py` — 0 `DEAD`, 1 `SUSPECT`, 7 `UNKNOWN`, 81 `OK`. **Closed A112 and A114**
@@ -221,7 +245,14 @@
 > Access check: all five sanity-check domains reachable (workatastartup.com 301, wellfound.com 200,
 > simplify.jobs 200, job-boards.greenhouse.io 302, www.builtinnyc.com 200) — no regression.
 >
-> Last swept: **2026-10-30** (full sweep — **1 new row (A182, live), 2 closures (A131/A132 Base
+> Last swept: **2026-11-01** (full sweep — **0 new rows, 1 closure (A173 Pennant, 404 on the liveness
+> pass), 2 reopenings (A112/A114 TikTok Sydney, 4th monthly-recompete cycle)**.)
+>
+> Prior — Last swept: **2026-10-31** (full sweep — **0 new rows, 2 closures (A112/A114 TikTok Sydney,
+> deadline passed), 0 `DEAD` on the liveness pass — note: this "Last swept" block was not updated after
+> that run; backfilled here.**.)
+>
+> Prior — Last swept: **2026-10-30** (full sweep — **1 new row (A182, live), 2 closures (A131/A132 Base
 > Power), 0 `DEAD` on the liveness pass (both closures found via substance re-check, not the
 > checker)**.)
 >
@@ -1805,9 +1836,9 @@ recomputed once the resume is uploaded.
 | A109 | Qureos | Business Development Intern | BD | New York, NY | In-person | Unconfirmed | Rolling | Unconfirmed | Unconfirmed | 1 | ~3 | Low | closed | [Intern Insider](https://interninsider.me/internships/qureos/business-development-intern-d9aec99e-36ef-43d6-8692-aacf913d8029) |
 | A110 | The Walt Disney Company | ABC News Insights and Analytics Intern (Spring 2027) | Data | New York, NY | In-person | Enterprise | Jan–Jun 2027 ⚠ | Rolling | $23/hr | 4 | ~4 | Low | conflict | [Disney Workday](https://disney.wd5.myworkdayjobs.com/disneycareer/job/New-York-NY-USA/ABC-News-Insights-and-Analytics-Intern--Spring-2027_10158500) |
 | A111 | Motive | Sales Development Intern | Sales | Austin, TX | Hybrid | Startup | Summer 2027 ⚠ (as posted) | Unconfirmed | Unconfirmed | 2 | ~3 | Low | closed | [Greenhouse](https://job-boards.greenhouse.io/gomotive/jobs/8431778002) |
-| A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | Closed 30 Oct 2026, 1:59pm Sydney | Unconfirmed | 4 | ~4 | High | closed | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-3/) |
+| A112 | TikTok | Client Solution Intern (GBS AU) — 2027 Start | Sales/BD (analytics-adjacent) | Sydney, AU | In-person (assumed; not explicitly stated) | Enterprise | Candidate states own start/end dates; posting shows ~Dec 2026 (approx) | Closed 30 Nov 2026, 1:59pm Sydney | Unconfirmed | 4 | ~4 | High | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-client-solution-intern-gbs-au-2027-start-5/) |
 | A113 | TikTok | Revenue Product Operations Intern (TikTok LIVE-Revenue) — 2027 Start | PM/Product Ops | Sydney, AU | Unconfirmed | Enterprise | Rolling; explicit 6-month commitment required ⚠ | Closing 19 Oct 2026 | Unconfirmed | 4 | ~3 | Low | conflict | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-revenue-product-operations-intern-tiktok-live-revenue-2027-start/) |
-| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Hybrid | Enterprise | Dec 2026 (approx); candidate states own start/end dates | Closed 30 Oct 2026, 1:59pm Sydney | Unconfirmed | 4 | ~3 | Med | closed | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start-2/) |
+| A114 | TikTok | AI Product Manager Intern (TikTok Live-Revenue) — 2027 Start | PM | Sydney, AU | Hybrid | Enterprise | Dec 2026 (approx); candidate states own start/end dates | Closed 30 Nov 2026, 1:59pm Sydney | Unconfirmed | 4 | ~3 | Med | live | [GradConnection](https://au.gradconnection.com/employers/tiktok/jobs/tiktok-ai-product-manager-intern-tiktok-live-revenue-2027-start-3/) |
 | A115 | Workiva | Commercial Strategy Intern (Workiva's own site labels this intake "Spring 2027") | Strategy | Remote (US); NYC/SF/Austin office hubs available for hybrid | Remote | Public (NASDAQ: WK) | **Confirmed: term starts Jan 4, 2027**, 15–20 hrs/wk | **Closed Sept 27 2026 (confirmed — req returns 0 results)** | $22.00/hr (confirmed directly, req R12317) | 2 | ~2 | Low | closed | [Workiva Workday, req R12317](https://workiva.wd503.myworkdayjobs.com/careers) |
 | A117 | Workiva | Product Management Intern (Workiva's own site: "Spring & Summer 2027 Intern - Product Management") | PM | Remote (US); hybrid near a Workiva office hub | Remote | Public (NASDAQ: WK) | Confirmed: Spring option starts **Jan 4, 2027**, 15–20 hrs/wk (a Summer option starting May 17 2027 also exists on the same req, not relevant here) | **Closed Sept 27 2026 (confirmed — req returns 0 results)** | $40/hr (confirmed, req R12355) | 2 | ~2 | Low | closed | [Workiva Workday, req R12355](https://workiva.wd503.myworkdayjobs.com/careers) |
 | A118 | Workiva | Intern – Partnerships (Workiva's own site labels this intake "Spring 2027") | Partnerships | New York, NY (hybrid near NYC hub) or Remote (US) | Remote | Public (NASDAQ: WK) | Confirmed: term starts **Jan 4, 2027**, 15–20 hrs/wk. Two separate live reqs share this exact title (R12268, R12269) | **Closed Sept 27 2026 (confirmed — reqs return 0 results)** | $21.00/hr (confirmed directly) | 2 | ~2 | Low | closed | [Workiva Workday, reqs R12268/R12269](https://workiva.wd503.myworkdayjobs.com/careers) |
