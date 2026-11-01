@@ -23,7 +23,7 @@ Two lists, both screened against the actual resume (realistic roles only, not re
 - **List 1 — Posted jobs.** Real postings in any allowed location or remote. `conflict` rows are
   realistic but end after the Apr 1 hard stop.
 - **List 2 — Cold-email targets.** Austin and NYC only. No posting exists, but the resume gives a
-  specific reason to email. Warm leads (FEVO, Ualett) first.
+  specific reason to email.
 
 Music and live events are in scope. YC is not.
 

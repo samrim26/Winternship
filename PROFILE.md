@@ -104,7 +104,7 @@ Ranked by realistic odds from the resume, not by aspiration:
 scope** (labels, publishers, distributors, ticketing, promoters, festivals, venues). FEVO ticketing
 experience is the bridge.
 
-**Not in scope:** elite/branded programs, YC companies and the YC batch strategy (dropped
+**Not in scope:** FEVO and Ualett as targets (Sam's call, 2026-11-01), elite/branded programs, YC companies and the YC batch strategy (dropped
 2026-11-01), economic-consulting majors, technical PM, ML/data-science roles.
 
 ### Explicitly NOT wanted

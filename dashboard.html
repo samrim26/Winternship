@@ -321,10 +321,10 @@
         <div class="tl-spine"><div class="tl-dot"></div></div>
         <div class="tl-body">
           <span class="tl-tag">Do now</span>
-          <div class="tl-title">Apply and send the warm emails</div>
+          <div class="tl-title">Apply and start cold emailing</div>
           <ul>
             <li><strong>Workiva Commercial Strategy (P16) closes Nov 2.</strong> Too Lost reviews spring applications through Nov 6.</li>
-            <li><strong>Email FEVO and Ualett first (E1, E2).</strong> Return stints are the highest-odds yes you have.</li>
+            <li><strong>Send your first five cold emails</strong> from the High-priority rows in List 2.</li>
             <li>Apply to every High-priority row in List 1. Most take 15 minutes.</li>
           </ul>
         </div>
@@ -799,8 +799,6 @@ const RAW = [
 ["P19","P","Too Lost","Operations Intern — Catalog Operations (Spring 2027)","Ops","New York, NY","In-person Mon–Thu, 15–24 hrs/wk","Mon 25 Jan 2027","Wed 5 May 2027 ⚠","Low","Unpaid (credit only)",2,1,4,"Med","conflict","https://jobs.lever.co/too-lost/e8412264-4574-4a27-9161-92f46914809e","Music distribution company. Release QA, metadata and catalog ops. Applications reviewed through Nov 6 2026. Unpaid and for credit only, and it runs to May 5. Only worth applying if you ask up front for a mid-March end.",["music distribution","operations","metadata","google sheets","catalog management"]],
 ["P20","P","Fox","Spring Paid Intern — Ad Sales","Sales","New York, NY","Primarily on-site, 16–24 hrs/wk","Mon 8 Feb 2027","Fri 16 Apr 2027 ⚠","Low","$20/hr",4,3,3,"Low","conflict","https://www.entertainmentcareers.net/fox/spring-paid-intern-ad-sales/job/532570/","Ad sales, partnerships and account-management placements. Deadline Nov 22 2026. Runs to Apr 16, past your Apr 1 hard stop.",["ad sales","partnerships","account management","media"]],
 ["P21","P","Taylor Corporation","Sales Intern (Enterprise Sales)","Sales","Remote (US)","Remote, 15–20 hrs/wk","Mon 11 Jan 2027","Fri 23 Apr 2027 ⚠","Low","$19/hr",2,2,4,"Low","conflict","https://olivia.paradox.ai/co/Taylor1/Job?job_id=R30340_1","Remote enterprise-sales internship, business majors, $19/hr. Very realistic for you, but it ends Apr 23.",["sales","enterprise sales","prospecting","crm"]],
-["E1","E","FEVO","Partnerships / sales — return stint","Partnerships","New York, NY","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Ask",2,1,5,"High","target","https://www.fevo.com/","WARM. You interned here in 2023. Email your old manager first: \"I’m free Jan 4–Mar 12 and would love to come back.\" Social-ticketing company, so it doubles as your music/live-events entry.",["partnerships","ticketing","live events","outreach","sports"]],
-["E2","E","Ualett","Risk / operations — return stint","Data","Jersey City, NJ (NYC metro)","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","High","Ask",2,1,5,"High","target","https://www.ualett.com/","WARM. Your summer 2025 internship. Email the CFO/risk lead you worked for. Q1 is a natural time to refresh the credit-loss analysis you already know. Highest-odds yes in NYC.",["risk management","excel","credit analysis","fintech","compliance"]],
 ["E3","E","Songtrust (Downtown Music)","Operations / client services","Ops","New York, NY","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,2,4,"High","target","https://www.songtrust.com/careers","Music publishing admin platform with a history of business/data interns. Pitch the ops and data-cleanup side: your ClickUp/Power Automate builds and Excel analysis.",["music publishing","operations","data","excel","client services"]],
 ["E4","E","UnitedMasters","Distribution ops / partnerships","Partnerships","Brooklyn, NY","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Paid",3,3,4,"Med","target","https://unitedmasters.com/","Independent-artist distribution with a brand-partnerships arm. Runs a “Come Up” intern program, so the budget exists. Lead with FEVO partnerships research plus your outbound volume.",["music","partnerships","distribution","outreach","research"]],
 ["E5","E","Too Lost","Operations / BD (off-cycle ask)","Ops","New York, NY","In-person","Mon 4 Jan 2027","Fri 12 Mar 2027","Med","Ask",2,1,4,"High","target","https://jobs.lever.co/too-lost","Their posted spring program runs to May 5 (see P19). Email the NY ops lead and offer a shorter Jan 4–Mar 12 block. A small team that already takes interns is the easiest kind of yes.",["music distribution","operations","metadata","business development"]],
@@ -895,7 +893,7 @@ const FILTERS = { "f-loc":"loc", "f-fn":"fn", "f-flex":"flex", "f-status":"statu
 let LIST = "P";
 const BLURB = {
   P: "Real postings you can apply to today, across every allowed location plus remote. Screened against your resume, and the cream of the crop is left out on purpose. Rows marked conflict are real and realistic but end after your Apr 1 hard stop. Apply only if you'll ask them up front for a shortened stint ending mid-March.",
-  E: "No posting exists. These are companies in Austin or NYC where your resume gives you a specific reason to email. Warm leads (former employers) first, then music and live events, lenders and fintech (your Ualett angle), and outbound-heavy sales teams (your Cordatus angle)."
+  E: "No posting exists. These are companies in Austin or NYC where your resume gives you a specific reason to email. Music and live events, lenders and fintech (your Ualett angle), and outbound-heavy sales teams (your Cordatus angle)."
 };
 for (const [id,key] of Object.entries(FILTERS)) {
   const vals = [...new Set(ROWS.map(r => r[key]))].sort();
