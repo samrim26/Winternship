@@ -43,6 +43,8 @@
 | P32 | Empire Center for Public Policy (Koch Internship Program) | Policy Data Analyst Intern (KIP Spring 2027) | Data | Remote (NY) | Remote, part- or full-time | Spring 2027 → Confirm ≤ Mar 12 | Paid (KIP stipend) | 3 | 3 | Med | unverified | [posting](https://jobs.lever.co/standtogether/35deb481-fc0b-4513-abf5-68880006189b) |
 | P33 | Empire Center for Public Policy (Koch Internship Program) | Development Intern (KIP Spring 2027) | Partnerships | Remote (NY) | Remote, part- or full-time | Spring 2027 → Confirm ≤ Mar 12 | Paid (KIP stipend) | 3 | 3 | Med | unverified | [posting](https://jobs.lever.co/standtogether/16119bd8-d4bf-46bb-8435-30e0b12a0473) |
 | P34 | Fair For All (Koch Internship Program) | Strategic Leadership Intern (KIP Spring 2027) | Strategy | New York, NY or remote | In-office or remote | Spring 2027 → Confirm ≤ Mar 12 | $6–8K (program) | 3 | 3 | Low | unverified | [posting](https://jobs.lever.co/standtogether/d02174fe-d16c-4dbc-9298-84df32618c68) |
+| P35 | HERE (OpenFin) | Product Enablement Intern (Fall/Winter) | Ops | New York, NY | Hybrid (office Tue–Thu, flexible to classes) | Winter 2027 (12 weeks) → ~12 weeks from start (Jan start ends late Mar) | Unconfirmed | 3 | 4 | High | live | [posting](https://boards.greenhouse.io/hereio/jobs/8311184) |
+| P36 | Vendelux | Data Intern | Data | New York, NY | Hybrid, 3–4 days/wk, 20+ hrs/wk | Rolling → Confirm ≤ Mar 12 | $18–20/hr | 3 | 3 | Low | unverified | [posting](https://jobs.ashbyhq.com/vendelux/ec44a794-9622-444e-a789-491fa12726dd) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
@@ -114,3 +116,11 @@
 | `target` | List 2: no posting, cold-email target |
 | `applied` / `interviewing` | Set by hand |
 | `closed` | Posting gone. Hidden on the dashboard |
+
+
+## Other channels (see the "More places to look" section on the dashboard)
+
+- **Network:** Epsilon Nu Tau speakers, Sigma Alpha Mu alumni, UT Handshake, Liberal Arts Career Services.
+- **Project work:** Parker Dewey micro-internships; Clay community part-time jobs and the Clay Experts directory.
+- **Communities:** RevGenius; Capital Factory Austin Startup Meetup (Dec 7); Startup Grind NYC; eChai NYC.
+- **VC job boards on Getro** (the sweep queries `POST https://api.getro.com/api/v2/collections/<id>/search/jobs`): Capital Factory 719, LiveOak 946, S3 684, Silverton 230, Primary 1124, Lerer Hippeau 120, Greycroft 616, RRE 114, Tech:NYC 1543, Techstars 89, General Catalyst 222, Accel 8672, Insight 246, Thrive 2105, NFX 307, Antler 7715, Maveron 810.
