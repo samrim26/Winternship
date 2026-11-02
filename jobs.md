@@ -32,6 +32,10 @@
 | P19 | Too Lost | Operations Intern — Catalog Operations (Spring 2027) | Ops | New York, NY | In-person Mon–Thu, 15–24 hrs/wk | Mon 25 Jan 2027 → Wed 5 May 2027 ⚠ | Unpaid (credit only) | 1 | 4 | Med | conflict | [posting](https://jobs.lever.co/too-lost/e8412264-4574-4a27-9161-92f46914809e) |
 | P20 | Fox | Spring Paid Intern — Ad Sales | Sales | New York, NY | Primarily on-site, 16–24 hrs/wk | Mon 8 Feb 2027 → Fri 16 Apr 2027 ⚠ | $20/hr | 3 | 3 | Low | conflict | [posting](https://www.entertainmentcareers.net/fox/spring-paid-intern-ad-sales/job/532570/) |
 | P21 | Taylor Corporation | Sales Intern (Enterprise Sales) | Sales | Remote (US) | Remote, 15–20 hrs/wk | Mon 11 Jan 2027 → Fri 23 Apr 2027 ⚠ | $19/hr | 2 | 4 | Low | conflict | [posting](https://olivia.paradox.ai/co/Taylor1/Job?job_id=R30340_1) |
+| P22 | Novogradac | 2027 Staff Accountant Intern (busy season) | Data | Austin, TX | In-office, full-time | Jan 2027 → End of Mar 2027 | $27/hr | 3 | 3 | Med | live | [posting](https://novoco.wd108.myworkdayjobs.com/Novogradac/job/Austin-TX/XMLNAME-2027-Staff-Accountant-Intern_JR100020) |
+| P23 | Rodeo Austin | Operations Support Intern (Spring 2027) | Ops | Austin, TX | In-person, 40 hrs/wk | Mon 18 Jan 2027 → Thu 15 Apr 2027 ⚠ | Paid | 2 | 4 | Med | conflict | [posting](https://rodeoaustin.com/wp-content/uploads/2026/08/2027-Operations-Support-Intern-Job-Ad.pdf) |
+| P24 | Risepoint | Marketing & Operations Strategy Co-op (Spring 2027) | Strategy | Remote (US) | Remote, full-time | Spring 2027 → Confirm ≤ Mar 12 | $18–24/hr (one listing; others say TBD) | 3 | 4 | Med | unverified | [posting](https://simplify.jobs/p/bf8f42f0-81c9-43c8-b6bf-708a077e5d48) |
+| P25 | Power Digital Marketing | PPC Intern (Spring 2027) | Growth | Remote (US) | Remote, 15–20 hrs/wk | Spring 2027 → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 3 | Low | live | [posting](https://interninsider.me/internships/power-digital-marketing/ppc-intern-40b58cf6-8e12-43e9-b053-0e2d206673f2) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
@@ -60,6 +64,8 @@
 | E23 | ZenBusiness | Sales / customer ops | Ops | Austin, TX | 2 | 3 | Med | target | Austin small-business formation platform. Your 50-state compliance memo at Ualett maps onto their state-filing world. | [site](https://www.zenbusiness.com/careers/) |
 | E24 | Literati | Partnerships / ops | Partnerships | Austin, TX | 2 | 3 | Low | target | Austin book-club/education company. School and partner outreach is a fit for your alumni-network-building record. | [site](https://literati.com/careers) |
 | E25 | Tecovas | Retail / ops analytics | Ops | Austin, TX | 2 | 3 | Low | target | Austin consumer brand (boots). Retail ops and Excel analysis. A safe, lower-competition ask. | [site](https://www.tecovas.com/pages/careers) |
+| E26 | Austin FC | Ticket sales / partnerships intern | Sales | Austin, TX | 3 | 4 | High | target | Austin FC's 2027 internships are expected to post around mid-November, in 1–3 week windows. Email the ticket sales manager now so you're known before they post. Lead with your 30 outbound campaigns to 1,000+ prospects; ticket sales is outbound work. Set a TeamWork Online alert. | [site](https://www.teamworkonline.com/soccer-jobs/austin-fc/austin-fc-jobs) |
+| E27 | NYCFC | Ticket sales & service intern | Sales | New York, NY | 3 | 4 | Med | target | NYCFC has run a paid ticket sales and service internship (~$17/hr, 30 hrs/wk). No 2027 date is posted. Email the ticket sales director about a Jan–Mar stint ahead of the season. Lead with outbound volume and your FEVO ticketing background. | [site](https://www.nycfc.com/) |
 
 ## Notes on List 1
 
