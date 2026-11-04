@@ -61,6 +61,11 @@
 | P52 | 1Password | Product Management Intern, End User Experience (Winter 2027) | Product | Remote (US) | Remote, full-time | Jan 2027 → Apr 2027 | Unconfirmed | 4 | 3 | Med | conflict | [posting](https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003) |
 | P53 | Eudia | Product Intern | Product Ops | Palo Alto, CA | In-person | Rolling → Confirm ≤ Mar 12 | Unconfirmed | 3 | 3 | Med | unverified | [posting](https://job-boards.greenhouse.io/eudia/jobs/4379570009) |
 | P54 | Doorstep AI | Product Intern | Product | New York, NY | In-person | Rolling → Confirm ≤ Mar 12 | Unconfirmed | 3 | 3 | Med | unverified | [posting](https://doorstep.ai/careers/?job=20) |
+| P55 | Jomboy Media | Business Intelligence Intern (Spring 2027) | Analytics | New York, NY | Hybrid, 20–30 hrs/wk around classes | Jan 19, 2027 → May 14, 2027 | Unconfirmed | 2 | 4 | High | conflict | [posting](https://job-boards.greenhouse.io/jomboymedia/jobs/4477954009) |
+| P56 | Gemini | Product Management Intern (Winter 2027) | Product | New York, NY | Hybrid, 3 days/wk in office | Jan 2027 → Apr 2027 | $45/hr | 4 | 3 | Med | conflict | [posting](https://job-boards.greenhouse.io/gemini/jobs/8214332) |
+| P57 | Emerson | Business Operations Intern (AI & automation) | Ops / Product Ops | Austin, TX | Hybrid | Rolling → Confirm ≤ Mar 12 | Unconfirmed | 3 | 4 | High | unverified | [posting](https://www.builtinaustin.com/job/business-operations-intern/11482838) |
+| P58 | Applied Materials | Data Analytics & Business Operations Spring Co-op | Ops / Analytics | Austin, TX | On-site, full-time | Spring 2027 → Spring co-op (likely past Apr 1) | Unconfirmed | 3 | 3 | Med | conflict | [posting](https://amat.wd1.myworkdayjobs.com/External/job/AustinTX/XMLNAME-2027-Data-Analytics---Business-Operations-Spring-Co-Op-or-Summer-Intern--Bachelor-s-Master-s--Austin--TX-_R2626381) |
+| P59 | Power Digital Marketing | Marketing Operations Intern (Spring 2027) | Marketing Ops | Remote (US) | Remote, part-time | Spring 2027 → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 3 | Low | live | [posting](https://job-boards.greenhouse.io/powerdigitalmarketing/jobs/4346777007) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
@@ -171,4 +176,6 @@
 - **a16z board** (custom Next.js; `sweeps/a16z_sweep.py`): `https://jobs.a16z.com/jobs?internships=1&q=<keyword>`, 25 results per query with job JSON embedded in the HTML, so fan out over keywords. a16z also runs the free [a16z Jobs newsletter](https://a16zjobs.substack.com) and the College Talent Network.
 - **Consider boards** (`sweeps/consider_sweep.py`): GET `/jobs` for the `csrfToken` and session cookie, then POST `/api-boards/search-jobs` with an `x-csrf-token` header and page via `meta.sequence`. Boards: Sequoia, Kleiner, Lightspeed, Bessemer, Felicis, Forerunner, USV, Battery, Bain Capital Ventures, GV, First Round, CRV, Costanoa.
 - **Startup job lists (PDF exports):** Jobbie (8,691 roles at 576 startups; its links resolve to Greenhouse/Lever/Ashby boards you can sweep directly) is useful. Backdoor's "1,000 startup hiring leads" is all YC, so skip it.
+- **Simplify off-season list:** `https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json` (filter `terms` for Winter/Spring 2027, `active`). It is tech-heavy but catches spring PM and BI roles.
+- **Big-company Workday boards** (`POST https://<t>.<wd>.myworkdayjobs.com/wday/cxs/<t>/<site>/jobs`): Warner Music `wmg/wd1/WMGUS`, UMG `umusic/wd5/UMGUS`, Disney `disney/wd5/disneycareer`, Applied Materials `amat/wd1/External`. Music labels post only summer roles so far.
 - **Newsletters:** a16z Jobs, VC Hiring (vchiring.substack.com), Ali Rohde Jobs.
