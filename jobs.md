@@ -12,7 +12,6 @@
 
 | Ref | Company | Role | Function | Location | Mode | Dates | Pay | Diff | Fit | Priority | Status | Link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| P1 | SXSW | Spring Paid Intern — Planning | Ops | Austin, TX | In-person, part-time (16 hrs/wk) | Spring 2027 semester → Runs through SXSW in mid-March (confirm exact end) | $12/hr | 2 | 4 | High | live | [posting](https://www.entertainmentcareers.net/sxsw/spring-paid-intern-planning/job/532693/) |
 | P2 | Base Power Company | Sales Intern | Sales | Austin, TX | In-person | Rolling → Rolling | Unconfirmed | 3 | 4 | High | live | [posting](https://www.builtinaustin.com/job/growth-intern/10000211) |
 | P3 | Base Power Company | Business Operations Intern, Commercial Partnerships | Partnerships | Austin, TX | In-person | Rolling → Confirm ≤ Mar 12 | Unconfirmed | 3 | 3 | Med | live | [posting](https://www.builtinaustin.com/job/business-operations-intern-commercial-partnerships/11174864) |
 | P4 | PatientPoint | Client Sales Intern | Sales | New York, NY | Hybrid | Rolling (no term stated) → Confirm ≤ Mar 12 | $20–23/hr | 2 | 4 | High | live | [posting](https://builtin.com/job/client-sales-intern/11916671) |
