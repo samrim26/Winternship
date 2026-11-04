@@ -730,6 +730,57 @@ Sam Rimland
 
 ---
 
+### E77 · Braze
+**Send to:** An Austin BDR manager (find them on LinkedIn)
+**Subject:** UT student, free Jan to March
+
+Hi [First name],
+
+You're hiring BDRs in Austin. I'd like to give your team ten weeks of outbound help this winter, before I leave for Japan in April.
+
+I'm a junior at UT, free from January 4 to March 12 and in the office whenever you need. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot, so I've done the job from the sender's side.
+
+Could I help with list building and sequences for a few months? Glad to come by for a coffee.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E78 · 6sense
+**Send to:** Austin BDR manager or Sales Development lead
+**Subject:** Ten weeks on your Austin BDR team
+
+Hi [First name],
+
+I saw the BDR opening in Austin. I'm not able to go full-time yet, but I could help that team from January 4 to March 12.
+
+I'm a junior at UT. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot, so I know what good intent data saves a rep. At FEVO I researched and ranked 70+ partners before any outreach went out.
+
+Would a short winter stint be useful while you hire? Happy to grab coffee near the office.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E79 · Bazaarvoice
+**Send to:** Marketing Operations or Sales Operations lead
+**Subject:** UT student, free Jan to March
+
+Hi [First name],
+
+Bazaarvoice sits between brands and retailers, the same partner world I researched at FEVO, and I'd like to help your team for ten weeks this winter.
+
+I'm a junior at UT studying economics and statistics, free from January 4 to March 12 and in person whenever you need. At FEVO I researched and ranked 70+ brand and tech partners, and this summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+Could I support marketing or sales ops for a few months? Glad to come by for a coffee.
+
+Thanks,
+Sam Rimland
+
+---
+
 ## Follow-up (reply in the same thread, 5–7 business days later)
 
 Hi [First name], bumping this in case it got buried. I'm still free January 4 to March 12 and happy to start wherever is most useful. No worries if the timing doesn't work.
