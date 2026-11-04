@@ -218,6 +218,295 @@ Sam Rimland
 
 ---
 
+### E58 · Rho
+**Send to:** Head of Operations or Head of Growth (NYC or Austin)
+**Subject:** Jan to March help at Rho
+
+Hi [First name],
+
+I've been reading about how Rho is trying to replace a startup's bank, card and bill pay with one account. It's the small-business finance problem I got a close look at last year.
+
+I'm a junior at UT Austin, free full-time from January 4 to March 12. I can be in New York or Austin, whichever team needs the help. At Ualett I did Excel analysis on a $30M+ lending portfolio for the CFO, and this summer I built ClickUp and Power Automate workflows that replaced manual processes at a consulting firm.
+
+I'd like to spend those ten weeks on whatever ops or reporting backlog is piling up. Worth 15 minutes next week?
+
+Thanks,
+Sam Rimland
+
+---
+
+### E59 · Lithic
+**Send to:** Business Operations lead
+**Subject:** Ten weeks of ops help at Lithic
+
+Hi [First name],
+
+You're hiring for business operations and treasury ops. I'd like to offer a shorter version of that while I'm in New York this winter.
+
+I'm a junior at UT Austin, free full-time from January 4 to March 12. I've built workflow automations in ClickUp and Power Automate that cut out manual tracking, and I did portfolio analysis in Excel for a lender's CFO, so card-program data doesn't scare me.
+
+Could I take some program-management or reporting work off the team's plate for ten weeks? Happy to do a quick call.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E60 · Hanover Park
+**Send to:** Head of Operations
+**Subject:** Fund ops help, Jan to March
+
+Hi [First name],
+
+Fund admin looks like a business where getting the details exactly right is the whole job, and that's the kind of work I like.
+
+I'm a junior at UT Austin studying economics and statistics, free full-time in New York from January 4 to March 12. At Ualett I did Excel analysis on a $30M+ portfolio for the CFO. This summer I automated HR and feedback workflows with ClickUp and Power Automate.
+
+Would a ten-week stint helping your operations team be useful? I'd love 15 minutes to find out.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E61 · Sydecar
+**Send to:** Head of Sales or the BDR team lead
+**Subject:** Outbound help for Sydecar, Jan to March
+
+Hi [First name],
+
+I noticed you're hiring a BDR in New York. I can't take a full-time seat yet, but I could give you ten weeks of outbound this winter.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. At FEVO I researched and ranked 70+ partners before reaching out, so I'm used to doing the homework first.
+
+Fund managers and emerging VCs seem like an audience I'd enjoy researching. Open to a quick call?
+
+Thanks,
+Sam Rimland
+
+---
+
+### E62 · Tabs
+**Send to:** Head of Sales or Growth lead
+**Subject:** Ten weeks of outbound for Tabs
+
+Hi [First name],
+
+You're hiring BDRs in New York, and I'd like to help in the meantime as a winter intern.
+
+I'm a junior at UT Austin, free full-time from January 4 to March 12. This summer I ran 30 outbound campaigns to over 1,000 prospects using Clay and HubSpot. I study econ, so billing and receivables are a problem I actually understand.
+
+Could I spend ten weeks building lists and running sequences for your team? Happy to show you the campaigns I ran.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E63 · Rillet
+**Send to:** Head of Growth or Sales lead
+**Subject:** Jan to March at Rillet
+
+Hi [First name],
+
+Finance teams switching ERPs because of AI is a fun pitch to watch, and it looks like you're scaling the team behind it.
+
+I'm a junior at UT Austin studying economics, free full-time in New York from January 4 to March 12. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. Before that I did Excel analysis on a $30M+ portfolio for a lender's CFO, so I can talk to controllers in their own language.
+
+Would ten weeks of outbound or customer support help be useful? I'd love a quick call.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E64 · Basis
+**Send to:** RevOps or Operations lead
+**Subject:** RevOps help, Jan to March
+
+Hi [First name],
+
+You're hiring for RevOps and finance roles, and I'd like to help out for ten weeks this winter.
+
+I'm a junior at UT Austin studying economics and statistics, free full-time in New York from January 4 to March 12. This summer I built ClickUp and Power Automate workflows that replaced manual processes at a consulting firm, and I ran outbound out of HubSpot, so I know what a messy CRM looks like.
+
+Could I take on reporting or CRM cleanup while I'm in town? Happy to do 15 minutes next week.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E65 · Footprint
+**Send to:** Head of Sales or SDR manager
+**Subject:** Spring SDR stint at Footprint
+
+Hi [First name],
+
+I saw you're hiring a Summer 2027 SDR. I'm in New York earlier than that and would love to do the same work from January 4 to March 12.
+
+I'm a junior at UT Austin. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also did credit analysis for a small-business lender, so I understand why fintechs care about fraud and identity.
+
+Would a ten-week winter version of the SDR role work for your team? Happy to chat.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E66 · Miter
+**Send to:** Head of Sales or SDR manager
+**Subject:** Outbound help for Miter, Jan to March
+
+Hi [First name],
+
+You're hiring SDRs in New York. I'd like to help for ten weeks this winter before I head to Japan in April.
+
+I'm a junior at UT Austin, free full-time from January 4 to March 12. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I'm comfortable calling and emailing people who didn't ask to hear from me.
+
+Construction owners seem like a tough but fun audience. Could I run outbound or help support for a few months? I'd love 15 minutes.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E67 · Partiful
+**Send to:** Community or Operations lead
+**Subject:** Winter help at Partiful
+
+Hi [First name],
+
+Partiful sits right where my event work is: invites, RSVPs and getting people in the room. I'd love to help build it for a few months.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. I book 10+ founder speakers and coordinate venues for 10+ events a semester, and at FEVO I worked on ticketing partnerships for live events.
+
+Could I help your community or support team for ten weeks? Happy to grab a quick call.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E68 · ShopMy
+**Send to:** Client Strategy lead or Head of Partnerships
+**Subject:** Jan to March at ShopMy
+
+Hi [First name],
+
+You're hiring client strategy associates and a BDR in New York. I'd like to offer ten weeks of that work this winter.
+
+I'm a junior at UT Austin, free full-time from January 4 to March 12. At FEVO I researched and ranked 70+ partners and cold-emailed the top ones. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+I'd love to put that to work on brand research and outreach for your team. Do you have 15 minutes next week?
+
+Thanks,
+Sam Rimland
+
+---
+
+### E69 · Strella
+**Send to:** Head of Marketing or Growth lead
+**Subject:** Events and outbound help, Jan to March
+
+Hi [First name],
+
+You're hiring for events marketing and a BDR, and I'd like to help with both for ten weeks this winter.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. I coordinate venues and speakers for 10+ events a semester for a professional fraternity, and this summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+Could I help run your NYC events and the outreach behind them? Happy to do a quick call.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E70 · Metaview
+**Send to:** Events Marketing lead (NYC)
+**Subject:** NYC events help, Jan to March
+
+Hi [First name],
+
+I saw you're hiring an events marketer for New York. I'd love to support that team for ten weeks this winter.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. Each semester I book 10+ founder speakers and handle venues for 10+ events, and I've run outbound to over 1,000 prospects in Clay and HubSpot to fill rooms.
+
+Could I help with event logistics and invites while I'm in town? I'd love 15 minutes.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E71 · Suno
+**Send to:** NYC office lead or People/Workplace lead
+**Subject:** Help for the NYC team, Jan to March
+
+Hi [First name],
+
+I saw the NYC office coordinator posting. I'm not looking for a long-term contract, but I'd love to help the New York team for ten weeks this winter.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. I coordinate venues and logistics for 10+ events a semester, and I've built ClickUp and Power Automate workflows that keep teams organized.
+
+Could I help with office, event or ops work while I'm here? Happy to chat.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E72 · Imprint
+**Send to:** Head of Program Operations
+**Subject:** Program ops help, Jan to March
+
+Hi [First name],
+
+You're hiring for program operations. I'd like to offer ten weeks of that work this winter while I'm in New York.
+
+I'm a junior at UT Austin studying economics, free full-time from January 4 to March 12. At Ualett I did Excel analysis on a $30M+ lending portfolio for the CFO, and at FEVO I researched brand partners. Co-branded card programs sit right where those two meet.
+
+Could I support a card program's day-to-day ops for ten weeks? I'd love 15 minutes.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E73 · Cardless
+**Send to:** Partnerships or Operations lead
+**Subject:** Partner research for Cardless, Jan to March
+
+Hi [First name],
+
+Co-branded cards for sports teams sit close to what I worked on at FEVO: sports and ticketing partnerships.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. At FEVO I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. At Ualett I did Excel analysis on a $30M+ lending portfolio for the CFO.
+
+Could I spend ten weeks researching and reaching out to your next brand partners? Happy to do a quick call.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E74 · Passionfroot
+**Send to:** Creator Program Manager or Growth lead (NYC)
+**Subject:** Creator outreach help, Jan to March
+
+Hi [First name],
+
+You're hiring for creator programs and creator-marketing sales in New York. I'd like to help that team for ten weeks this winter.
+
+I'm a junior at UT Austin, free full-time in New York from January 4 to March 12. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot, and at FEVO I researched and ranked 70+ partners before reaching out.
+
+Could I help source creators and brands for you while I'm in town? I'd love 15 minutes.
+
+Thanks,
+Sam Rimland
+
+---
+
 ## Austin
 
 ### E15 · C3 Presents
@@ -401,6 +690,40 @@ I'm a UT student and Tecovas is one of the Austin brands I'd most like to see fr
 I'm a junior and I'm free from January 4 to March 12, in person. I've done Excel analysis on a $30M+ portfolio for a lender's CFO and built workflow automations in ClickUp and Power Automate for a consulting firm.
 
 I'd like to help your retail or business ops team with reporting and process work for ten weeks. Do you have time for a coffee?
+
+Thanks,
+Sam Rimland
+
+---
+
+### E75 · Truemed
+**Send to:** Head of Operations or Growth lead
+**Subject:** UT student, free Jan to March
+
+Hi [First name],
+
+Paying for health products with HSA money is clever, and it looks like you're growing the Austin team.
+
+I'm a junior at UT studying economics and statistics, free from January 4 to March 12 and in person whenever you need. At Ualett I did Excel analysis on a $30M+ portfolio for the CFO, and this summer I built ClickUp and Power Automate workflows that cut out manual work.
+
+Could I take on merchant research or ops work for ten weeks? Glad to come by for a coffee.
+
+Thanks,
+Sam Rimland
+
+---
+
+### E76 · Partly
+**Send to:** US sales lead (Austin)
+**Subject:** Outbound help for Partly's Austin team
+
+Hi [First name],
+
+I saw you're building a US sales team in Austin, and I'd like to help it ramp for ten weeks this winter.
+
+I'm a junior at UT, free from January 4 to March 12 and in person whenever you need. This summer I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+Could I build lists and run outbound to repair shops and dealers while you hire? Happy to come by for a coffee.
 
 Thanks,
 Sam Rimland
