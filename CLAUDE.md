@@ -2,7 +2,7 @@
 
 Off-cycle Spring 2027 internship search (Jan–Mar 2027).
 
-**Read [PROFILE.md](PROFILE.md) first** — candidate context, constraints, work
+**Read [PROFILE.md](PROFILE.md) first**, then [HANDOFF.md](HANDOFF.md) for current state and standing rules — candidate context, constraints, work
 authorization, location feasibility, and scoring rubric all live there.
 
 Tracked listings: [jobs.md](jobs.md). Dashboard source: [dashboard.html](dashboard.html).
