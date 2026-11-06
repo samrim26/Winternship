@@ -21,7 +21,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 |---|---|
 | Board (live) | https://claude.ai/artifact/C7fZaovmBMKwAhEmrrAz9P, built from `dashboard.html` (RAW array, 19 fields per row) |
 | Listings mirror | `jobs.md` (List 1 = P rows, List 2 = E rows). "Other channels" section documents every source and API |
-| Cold emails, repo copy | `cold_emails.md`: all 77 (E3–E79), approved template, signature placeholder |
+| Cold emails, repo copy | `cold_emails.md`: all 76 (E3–E79, no E32), approved template, signature placeholder |
 | Cold emails, send-ready | `applications/cold_emails_ready.md`: same emails with the full signature |
 | Email generator | `applications/build_emails.py`: one table (hook, team, proof keys) produces both files. Edit the table and rerun; don't hand-edit the .md files |
 | Application drafts | `applications/applications.md`: standard answers, work history, per-role answers |
@@ -41,15 +41,22 @@ to ask…", then "I attached my resume", then the full signature. Austin version
 
 ## Next tasks, in order
 
-1. **Check connectors.** Run `/mcp`; Gmail should show as connected. Then `/chrome`, or have Sam
-   relaunch with `claude --chrome`.
-2. **Block sending.** List the Gmail tool names, then add a `permissions.deny` rule for the send
-   tool in `.claude/settings.json` (use the `update-config` skill). Tell Sam the exact rule.
-3. **Contact research for all 77 List 2 companies.** Find a named person matching each
-   "Send to" line from team pages, LinkedIn and press. Work out the email pattern; mark guessed
-   addresses. Don't probe SMTP. Store names and emails in `applications/` (gitignored), not the repo.
-4. **Gmail drafts.** Fill in `[First name]`, attach the resume if the tool allows. Batches of
-   15–20, shown to Sam first. Drafts only.
+1. ~~Check connectors.~~ Done 2026-11-05: Gmail connected. **Chrome tools not loaded**; Sam must
+   relaunch with `claude --chrome` before tasks 3b and 5.
+2. ~~Block sending.~~ Done: `.claude/settings.json` denies `mcp__claude_ai_Gmail__send_message`,
+   `__reply`, `__forward` (verified: tools vanished from session). Only `create_draft` remains.
+3. **Contact research, pass 1 done** → `applications/contacts.md`. 46/76 named (press, team pages),
+   30 unnamed (mid-level roles only findable on LinkedIn). Email patterns: only 4 guessed so far;
+   vendor data (LeadIQ/Prospeo/Mailmo) often contradicts itself.
+   3b. With Chrome: fill the 30 gaps from LinkedIn, then patterns for all named contacts.
+   List 2 is now **76**: E32 Austin Music Foundation dropped (suspended ops Sep 2023); E31 renamed
+   Sonic Guild (ex-Black Fret, ED Bobby Garza). Emails regenerated.
+4. **Gmail drafts.** Blocked on Sam: (a) unnamed contacts — wait for LinkedIn or use "Hi there"/
+   founder? (b) guessed addresses OK for drafts? Fill in `[First name]`, attach the resume if the
+   tool allows. Batches of 15–20, shown to Sam first. Drafts only.
+4b. **New List 1 rows P60–P62** (from Sam's LinkedIn paste, 2026-11-05): Black Diamond Networks
+   sales intern (High), Verkada SDR intern (Med), Matthews CRE brokerage (Low, likely unpaid). All
+   need a "can I do Jan 4 – Mar 12?" check before applying.
 5. **Applications in Chrome.** Approved and still live: #3 PatientPoint (P4/P5), #4–5 Base
    Power (P2/P3), #6 MTA (P6–P8), #7 Kroll (P12). #2 SXSW and #8 Utilyze have closed.
    Fill each form and stop before Submit.

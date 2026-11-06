@@ -1556,40 +1556,17 @@ Sam
 
 ---
 
-### E31 · Black Fret
-**Send to:** Executive Director or Member Programs lead
-**Subject:** Jan–Mar internship at Black Fret
+### E31 · Sonic Guild
+**Send to:** Executive Director (Bobby Garza)
+**Subject:** Jan–Mar internship at Sonic Guild
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Black Fret's member-funded model for Austin music depends on bringing in new members and sponsors, and that's the outreach I'd like to help with.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Sonic Guild's member-funded model for Austin music depends on bringing in new members and sponsors, and with a new executive director rebuilding the Austin chapter, that's the outreach I'd like to help with.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your member and partner outreach team.
 
 At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
-
-You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
-
-I attached my resume for context. Thank you!
-
-Best,
-Sam
-
-[signature block: see applications/cold_emails_ready.md]
-
----
-
-### E32 · Austin Music Foundation
-**Send to:** Programs or Partnerships lead
-**Subject:** Jan–Mar internship at Austin Music Foundation
-
-Hi [First name],
-
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. SXSW season must be the busiest stretch of the year for the Austin Music Foundation, and I'd like to help with events and sponsor outreach during it.
-
-I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your programs team.
-
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
