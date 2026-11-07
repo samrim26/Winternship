@@ -154,7 +154,6 @@
 ## Notes on List 1
 
 - **Most structured spring internships end in April or May.** Fox, Too Lost, Taylor and Four Hands all run past Apr 1 (C3 Presents too, and its roles are already filled). They are tracked as `conflict`: apply only if you ask up front for a shortened stint ending mid-March.
-- **SXSW (P1)** is the best fit for the window: Austin, paid, logistics-heavy, and it ends with the festival in mid-March.
 - **No realistic postings were found in Tokyo, Australia, Madrid or Barcelona.** The routine keeps looking.
 
 ## Status key
