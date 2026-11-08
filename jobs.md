@@ -68,6 +68,7 @@
 | P60 | Black Diamond Networks | Sales Internship (TX) | Sales | Austin, TX | On-site (spring session may be remote) | Spring session → Confirm ≤ Mar 12 | $15–17/hr + bonus | 1 | 2 | High | unverified | [posting](https://blackdiamond.recruitee.com/o/sales-internship-tx) |
 | P61 | Verkada | Sales Development Representative, Internship | Sales | Austin, TX (or San Mateo, CA) | On-site, 5 days/wk | Unconfirmed → Confirm ≤ Mar 12 | $25/hr + housing stipend | 4 | 4 | Med | unverified | [posting](https://job-boards.greenhouse.io/verkada/jobs/4866879007) |
 | P62 | Matthews Real Estate Investment Services | Internship — Real Estate Brokerage | Sales | Austin, TX | In-office | Unconfirmed → Confirm ≤ Mar 12 | Likely unpaid | 2 | 2 | Low | unverified | [posting](https://www.tealhq.com/job/intern_7ea1afd8285066d7f22369e2d70dc7adaa782) |
+| P63 | Fox Sports | Spring Paid Intern — Corporate Partnerships | Partnerships | New York, NY | Primarily on-site, 16–24 hrs/wk | Mon 8 Feb 2027 → Fri 16 Apr 2027 ⚠ | $20/hr | 3 | 4 | Med | conflict | [posting](https://www.entertainmentcareers.net/fox-sports/spring-paid-intern-corporate-partnerships/job/535460/) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
