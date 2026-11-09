@@ -1512,7 +1512,145 @@ Sam
 
 ---
 
+### E82 · MUSIC
+**Send to:** Founder & CEO (Matt Pincus)
+**Subject:** Jan–Mar internship at MUSIC
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. MUSIC invests across labels, publishing and music tech, and I'd like to learn how a music investor sizes up a company by doing the research behind it.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your investment team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E83 · Waverley Capital
+**Send to:** Managing Partner (Daniel Leff)
+**Subject:** Jan–Mar internship at Waverley Capital
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Waverley backs media and music companies like Hook, and I'd like to help with the sourcing and market research behind those investments.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your investment team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E84 · Courtside Ventures
+**Send to:** Partner or Associate (name TBD)
+**Subject:** Jan–Mar internship at Courtside Ventures
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Courtside invests where sports, media and tech meet, and that's the part of the market I've spent the most time researching.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your investment team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
 ## Austin
+
+### E85 · Capital Factory
+**Send to:** Venture Principal or Venture Associate (name TBD)
+**Subject:** Jan–Mar internship at Capital Factory
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Capital Factory meets with nearly every startup founder in Austin, and I'd like to help with the founder outreach and events behind that.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your venture and events team.
+
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E86 · Springdale Ventures
+**Send to:** Co-founder & Managing Partner (Genevieve Gilbreath)
+**Subject:** Jan–Mar internship at Springdale Ventures
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Springdale backs early consumer brands, and I'd like to help with the sourcing and market research behind new deals.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your investment team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E87 · Next Coast Ventures
+**Send to:** Partner (name TBD)
+**Subject:** Jan–Mar internship at Next Coast Ventures
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Next Coast backs early-stage companies from Austin, and I'd like to help your team with sourcing and research while I'm here.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your investment team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
 
 ### E26 · Austin FC
 **Send to:** Ticket Sales manager

@@ -21,7 +21,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 |---|---|
 | Board (live) | https://claude.ai/artifact/C7fZaovmBMKwAhEmrrAz9P, built from `dashboard.html` (RAW array, 19 fields per row) |
 | Listings mirror | `jobs.md` (List 1 = P rows, List 2 = E rows). "Other channels" section documents every source and API |
-| Cold emails, repo copy | `cold_emails.md`: all 78 (E3–E81, no E32), approved template, signature placeholder |
+| Cold emails, repo copy | `cold_emails.md`: all 84 (E3–E87, no E32), approved template, signature placeholder |
 | Cold emails, send-ready | `applications/cold_emails_ready.md`: same emails with the full signature |
 | Email generator | `applications/build_emails.py`: one table (hook, team, proof keys) produces both files. Edit the table and rerun; don't hand-edit the .md files |
 | Application drafts | `applications/applications.md`: standard answers, work history, per-role answers |
@@ -58,6 +58,10 @@ to ask…", then "I attached my resume", then the full signature. Austin version
 4b. **New List 1 rows P60–P62** (from Sam's LinkedIn paste, 2026-11-05): Black Diamond Networks
    sales intern (High), Verkada SDR intern (Med), Matthews CRE brokerage (Low, likely unpaid). All
    need a "can I do Jan 4 – Mar 12?" check before applying.
+4c. **VC batch (2026-11-09):** E80 Hook, E81 Duetti (Sam's picks, NYC music). VC cold targets E82 MUSIC,
+   E83 Waverley, E84 Courtside (NYC); E85 Capital Factory, E86 Springdale, E87 Next Coast (Austin). Plus
+   P64 HOF Capital (rolling VC intern, needs a Jan–Mar ask). VC odds are low except Capital Factory and
+   Springdale; E84/E85/E87 need named contacts (LinkedIn, task 3b).
 5. **Applications in Chrome.** Approved and still live: #3 PatientPoint (P4/P5), #4–5 Base
    Power (P2/P3), #6 MTA (P6–P8), #7 Kroll (P12). #2 SXSW and #8 Utilyze have closed.
    Fill each form and stop before Submit.
