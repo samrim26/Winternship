@@ -1,7 +1,7 @@
 # Sam Rimland — Candidate Profile
 
 > Canonical context file. Every session in this folder should read this first.
-> Last updated: 2026-11-01 (resume uploaded; system rebuilt around it)
+> Last updated: 2026-11-09 (new resume version; wording synced, fit scores re-checked)
 
 ---
 
@@ -14,7 +14,10 @@ Entering **junior year** (Fall 2026).
 - **Minor:** Statistics & Data Science
 - **Email:** scottishdolphinsocks@gmail.com
 
-Resume uploaded 2026-11-01 (text copy in `resume/`, gitignored). GPA 3.70. Certificate: Japanese.
+**Current resume (2026-11-09):** `resume/Samuel_Rimland_Resume.pdf`, text copy `resume/resume.txt`
+(whole folder gitignored, contains phone). Upload this PDF to every application. GPA 3.70. Certificate: Japanese.
+Resume header uses **Sam Rimland** and **samuelrimland@utexas.edu**; application forms currently use
+samuel.rimland@gmail.com (see `applications/applications.md`).
 
 > **Japan start confirmed 2026-11-01: 1 April 2027.** The resume's "Sophia University, Summer 2027" label is wrong; the hard stop is April 1.
 
@@ -29,16 +32,18 @@ Resume uploaded 2026-11-01 (text copy in `resume/`, gitignored). GPA 3.70. Certi
   requirements compliance memo. Competitor research on merchant-cash-advance pricing and terms.
 - **FEVO — Strategic Partnerships Intern** (NYC, Jul–Aug 2023). Researched and ranked 70+ sports/tech
   partners. Cold-emailed top-ranked companies to open partnership conversations.
-- **STIZ — Founder** (Feb 2026–present). Play-money stock-trading app (iOS + web) built with Claude Code,
-  Supabase, Vercel, Xcode. 10-user beta, 300+ trades, fixed 3 bugs.
-- **Leadership:** Epsilon Nu Tau Director of Logistics (10+ CEO/founder speakers and 10+ events a
-  semester). Sigma Alpha Mu Alumni Chair (2,000+ alumni database, newsletters). Founded the Irvington
+- **STIZ — Founder** (Feb 2026–present). Demonstration stock-trading app (iOS + web) built with Claude Code,
+  Supabase, Vercel, Xcode. Private test with 10 users, 300+ trades, fixed 3 bugs.
+- **Leadership:** Epsilon Nu Tau Director of Logistics (coordinates venues and scheduling for 10+ events a
+  semester with 10+ CEO/founder speakers; team pitch with local first responders placed 3rd in chapter
+  competition). **Say "coordinate", never "book" the speakers** — the resume no longer claims booking. Sigma Alpha Mu Alumni Chair (2,000+ alumni database, newsletters). Founded the Irvington
   Alumni Association (≈800-person network, 3 virtual events of 100+).
 
 ### Skills
 
 Excel, SQL, R, Python (treat SQL/R/Python as **basic** for scoring), HubSpot, Clay, La Growth Machine,
-Supabase, Vercel. Intermediate Spanish and Japanese.
+Supabase, Vercel. Intermediate Spanish and Japanese. Interests: music production and psychology,
+weightlifting, shounen anime, pickup basketball, March Madness.
 
 ### Honest read — how competitive Sam is
 
@@ -316,13 +321,15 @@ as solving a problem for them.
 `outbound` · `HubSpot` · `Clay` · `CRM` · `Salesforce` · `prospecting` · `cold email` · `Excel` ·
 `credit risk` · `P&L` · `compliance` · `merchant cash advance` · `lending` · `workflow automation` ·
 `Power Automate` · `ClickUp` · `partnerships` · `market research` · `event logistics` · `scheduling` ·
-`ticketing` · `live events` · `music`
+`ticketing` · `live events` · `music` · `event coordination` · `venue` · `alumni relations` ·
+`newsletter` · `database management` · `training content` · `LMS` · `AI tools` · `Supabase`
 
 ---
 
 ## Fit Scoring Rubric
 
-Scored against the real resume (2026-11-01), then **rounded down one notch**.
+Scored against the real resume (2026-11-01, re-checked 2026-11-09: changes were wording only, no score
+moved), then **rounded down one notch**.
 
 **Fit (1–5):** 5 = the posting describes work Sam has already done (outbound campaigns, credit-loss
 analysis, partner research, event logistics). 3 = adjacent and learnable in week one. 1–2 = wants
@@ -356,4 +363,4 @@ skills he lacks (real Python, financial modeling, design). Don't add anything be
 | `CLAUDE.md` | One-liner pointing here so it auto-loads each session. |
 | `jobs.md` | Tracked listings. Source of truth for the dashboard. |
 | `dashboard.html` | Published sortable/filterable dashboard. |
-| `resume/` | Drop the resume PDF here. |
+| `resume/` | Current resume PDF + text copy. Gitignored. Replace the PDF when the resume changes, then rerun the update contract. |

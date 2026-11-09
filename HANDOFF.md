@@ -1,4 +1,4 @@
-# Handoff — 2026-11-05
+# Handoff — 2026-11-09
 
 For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this file.
 
@@ -25,6 +25,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 | Cold emails, send-ready | `applications/cold_emails_ready.md`: same emails with the full signature |
 | Email generator | `applications/build_emails.py`: one table (hook, team, proof keys) produces both files. Edit the table and rerun; don't hand-edit the .md files |
 | Application drafts | `applications/applications.md`: standard answers, work history, per-role answers |
+| Resume (upload this) | `resume/Samuel_Rimland_Resume.pdf` (2026-11-09), text in `resume/resume.txt`. Gitignored. Claims must match it word for word: Epsilon Nu Tau = "coordinate venues and scheduling … with 10+ speakers" (never "book"); STIZ = "demonstration app", "private test" |
 | Sweep scripts | `sweeps/`: a16z, Consider boards, Getro, Workday CXS, ATS detail printer |
 | Link checker | `SSL_CERT_FILE=/etc/ssl/cert.pem python3 check_links.py` |
 

@@ -161,7 +161,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your New York city team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -506,7 +506,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your community team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -552,7 +552,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your marketing team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -575,7 +575,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your events marketing team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -598,7 +598,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your New York office team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -851,7 +851,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your label team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -874,7 +874,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your venue operations team.
 
-At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -897,7 +897,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your events and operations team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -943,7 +943,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your label operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1012,7 +1012,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your music booking and festivals team.
 
-At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1058,7 +1058,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your venue operations team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1081,7 +1081,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your festival operations team.
 
-At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1106,7 +1106,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your festival operations team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1129,7 +1129,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your sales and partnerships team.
 
-This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1152,7 +1152,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your booking and production team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1497,7 +1497,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your underwriting or events team.
 
-This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1520,7 +1520,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your development and events team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1566,7 +1566,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your member and partner outreach team.
 
-At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also book 10+ founder speakers and run 10+ events a semester for my business fraternity.
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1704,7 +1704,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your events and store operations team.
 
-On campus I book 10+ founder speakers and run 10+ events a semester as Director of Logistics for my business fraternity. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
