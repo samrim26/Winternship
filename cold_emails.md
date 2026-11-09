@@ -1464,6 +1464,56 @@ Sam
 
 ---
 
+## New York
+
+### E80 · Hook
+**Send to:** CEO (Gaurav Sharma)
+**Subject:** Jan–Mar internship at Hook
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Hook's licensed-remix model depends on labels and publishers saying yes, and that partner side is what I researched at FEVO.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your label partnerships or data team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E81 · Duetti
+**Send to:** COO (Christopher Nolte)
+**Subject:** Jan–Mar internship at Duetti
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Duetti buys catalogs one independent artist at a time, so deal sourcing looks a lot like the outbound I ran this summer.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your catalog deal sourcing team.
+
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## Austin
+
 ### E26 · Austin FC
 **Send to:** Ticket Sales manager
 **Subject:** Jan–Mar internship at Austin FC

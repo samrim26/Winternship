@@ -21,7 +21,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 |---|---|
 | Board (live) | https://claude.ai/artifact/C7fZaovmBMKwAhEmrrAz9P, built from `dashboard.html` (RAW array, 19 fields per row) |
 | Listings mirror | `jobs.md` (List 1 = P rows, List 2 = E rows). "Other channels" section documents every source and API |
-| Cold emails, repo copy | `cold_emails.md`: all 76 (E3–E79, no E32), approved template, signature placeholder |
+| Cold emails, repo copy | `cold_emails.md`: all 78 (E3–E81, no E32), approved template, signature placeholder |
 | Cold emails, send-ready | `applications/cold_emails_ready.md`: same emails with the full signature |
 | Email generator | `applications/build_emails.py`: one table (hook, team, proof keys) produces both files. Edit the table and rerun; don't hand-edit the .md files |
 | Application drafts | `applications/applications.md`: standard answers, work history, per-role answers |
