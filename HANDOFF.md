@@ -14,6 +14,8 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 - **Window:** Jan 4 – Mar 12, 2027. Hard stop April 1. Don't mention Japan in cold emails.
 - Be realistic: downgrade fit a notch. Never invent facts about Sam (no "big fan of…").
 - Personal contact info (phone, address) lives only in gitignored `applications/`.
+- **No overlap (2026-11-10):** never cold-email a company Sam is applying to officially. That List 2 row gets status `skip` (E80 Hook, E88 Base Power).
+- **Window rule (2026-11-09):** apply officially only where the term ends by Apr 1 or has no fixed term; otherwise cold-email. Sam's exception: Base Power (5 roles filled 2026-11-09).
 
 ## Where things are
 
