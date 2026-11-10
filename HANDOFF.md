@@ -21,7 +21,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 |---|---|
 | Board (live) | https://claude.ai/artifact/C7fZaovmBMKwAhEmrrAz9P, built from `dashboard.html` (RAW array, 19 fields per row) |
 | Listings mirror | `jobs.md` (List 1 = P rows, List 2 = E rows). "Other channels" section documents every source and API |
-| Cold emails, repo copy | `cold_emails.md`: all 84 (E3–E87, no E32), approved template, signature placeholder |
+| Cold emails, repo copy | `cold_emails.md`: all 94 (E3–E97, no E32), approved template, signature placeholder |
 | Cold emails, send-ready | `applications/cold_emails_ready.md`: same emails with the full signature |
 | Email generator | `applications/build_emails.py`: one table (hook, team, proof keys) produces both files. Edit the table and rerun; don't hand-edit the .md files |
 | Application drafts | `applications/applications.md`: standard answers, work history, per-role answers |
@@ -42,7 +42,7 @@ to ask…", then "I attached my resume", then the full signature. Austin version
 
 ## Next tasks, in order
 
-**START HERE (2026-11-09): `applications/BATCH_1.md`** — 10 cold-email drafts (Sam schedules 8 AM CST)
+**START HERE (2026-11-09): `applications/BATCH_1.md`** (see its "Part B status" and "Window rule" sections: 6 forms filled awaiting Sam's Submit; E88–E97 cold emails added for postings that run past Apr 1, 9 drafted) — 10 cold-email drafts (Sam schedules 8 AM CST)
 and 10 applications, prioritized, with step-by-step rules. Work history is now verbatim resume bullets
 in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
 
@@ -71,7 +71,7 @@ in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
    Power (P2/P3), #6 MTA (P6–P8), #7 Kroll (P12). #2 SXSW and #8 Utilyze have closed.
    Fill each form and stop before Submit.
 6. **Waiting on Sam:**
-   - Approve or skip batch 2 (#18–27). **#18 Whitney is due Nov 9.**
+   - Approve or skip batch 2 (#19–27). #18 Whitney skipped (Sam, 2026-11-09).
    - P37–P59 have no drafts yet.
    - Decide on Apollo.io.
    - Confirm the LinkedIn note for Patrick at The Boring Company (P48, referral from Eyal Kauf), which was drafted in chat.

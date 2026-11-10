@@ -1951,6 +1951,248 @@ Sam
 
 ---
 
+### E88 · Base Power
+**Send to:** Cole Jones, Head of Growth
+**Subject:** Jan–Mar internship at Base Power
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Sales and Commercial Partnerships internships. Their spring term runs through April 30 and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your sales and partnerships team.
+
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. Before that, at FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## New York
+
+### E89 · Brennan Center for Justice
+**Send to:** Katherine Storch, Director, Institutional Relations
+**Subject:** Jan–Mar internship at Brennan Center for Justice
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Development internship. It runs for the full semester and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your development team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## Austin
+
+### E90 · Four Hands
+**Send to:** Mary Bell, VP of Sales Operations
+**Subject:** Jan–Mar internship at Four Hands
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Operations Analyst internship. It runs through April and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your sales operations team.
+
+This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## New York
+
+### E91 · Fox
+**Send to:** Emilee Cavis, VP, Sports Brand Partnerships, FOX Sports
+**Subject:** Jan–Mar internship at Fox
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring paid internships in Corporate Partnerships and Ad Sales. They run through April 16 and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your corporate partnerships team.
+
+At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E92 · Magnet Media
+**Send to:** Megan Cunningham, Founder & CEO
+**Subject:** Jan–Mar internship at Magnet Media
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Operations internship. It runs through May and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business operations team.
+
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also built ClickUp and Power Automate workflows there that replaced manual HR and feedback processes.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## Austin
+
+### E93 · Zipline
+**Send to:** Danny Pocus, Launch & Scale
+**Subject:** Jan–Mar internship at Zipline
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Community Engagement internship for the Austin launch. It runs through April and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your community engagement team.
+
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E94 · Exowatt
+**Send to:** Kalyan Bhamidi, Head of Supply Chain & Manufacturing
+**Subject:** Jan–Mar internship at Exowatt
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring Buyer / Supply Chain internship. It runs through April 16 and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your supply chain team.
+
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## New York
+
+### E95 · Jomboy Media
+**Send to:** Andrew Patterson, CEO
+**Subject:** Jan–Mar internship at Jomboy Media
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Intelligence internship. It runs through May and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business intelligence team.
+
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+### E96 · Gemini
+**Send to:** Hiring manager for the posted internship (contact TBD)
+**Subject:** Jan–Mar internship at Gemini
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Winter 2027 Product Management internship. It runs through April and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your product team.
+
+On my own, I created STIZ, a demonstration stock-trading app for iOS and the web, with Claude Code, Supabase and Vercel, and ran a private test with 10 users who made over 300 trades. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
+## Austin
+
+### E97 · Applied Materials
+**Send to:** Teri Nissen, Technical Program Management and Analytics
+**Subject:** Jan–Mar internship at Applied Materials
+
+Hi [First name],
+
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring Data Analytics & Business Operations co-op. It runs past March and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+
+I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business operations team.
+
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+
+You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
+
+I attached my resume for context. Thank you!
+
+Best,
+Sam
+
+[signature block: see applications/cold_emails_ready.md]
+
+---
+
 ## Follow-up (reply in the same thread, 5–7 business days later)
 
 Hi [First name], bumping this in case it got buried. I'm still free January 4 to March 12 and happy to start wherever is most useful. No worries if the timing doesn't work.
