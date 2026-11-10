@@ -34,13 +34,15 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 A scheduled routine also pushes to `main` (liveness checks remove dead P rows, and it sometimes
 adds E rows). **Always `git pull --rebase` before editing**, and renumber on collisions.
 
-## Approved cold email template (2026-11-05)
+## Approved cold email template (revised 2026-11-10)
 
-Subject `Jan–Mar internship at {Company}`. Structure: intro (UT Austin econ junior, stats and data
-science minor), then one company-specific line, then "free full-time in {city} Jan 4 – Mar 12, … intern on
-your {team} team", then 1–2 proof lines with numbers, then "You wouldn't need to set up a program
-for me… flexible on pay. Would you be open to a 10-minute call this week? If someone else is better
-to ask…", then "I attached my resume", then the full signature. Austin version offers "a call or a coffee".
+Subject `Winter internship at {Company}`. ~100 words, plain language (research: short emails, simple wording,
+one easy ask). Structure: "I'm Sam, an econ junior at UT Austin." + one company-specific line, then "I'm in Austin / I'll be
+in {city} and free from early January through mid-March, and could spend that time helping your {team} team." + 1–2
+short proof lines, then "No formal program needed, and I'm flexible on pay. Would you be open to a quick call (or coffee, Austin)?
+If someone else is better to ask, I'd appreciate a pointer." then "Resume attached. Thanks!" and the full signature
+(LinkedIn as https://www.linkedin.com/in/samuelrimland). No exact start/end dates in cold emails. Postings that run past
+Apr 1: "I saw your spring X internship, which runs through April. Could a shorter version work?"
 
 ## Next tasks, in order
 
