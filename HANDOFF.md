@@ -42,6 +42,11 @@ to ask…", then "I attached my resume", then the full signature. Austin version
 
 ## Next tasks, in order
 
+**START HERE (2026-11-09): `applications/BATCH_1.md`** — 10 cold-email drafts (Sam schedules 8 AM CST)
+and 10 applications, prioritized, with step-by-step rules. Work history is now verbatim resume bullets
+in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
+
+
 1. ~~Check connectors.~~ Done 2026-11-05: Gmail connected. **Chrome tools not loaded**; Sam must
    relaunch with `claude --chrome` before tasks 3b and 5.
 2. ~~Block sending.~~ Done: `.claude/settings.json` denies `mcp__claude_ai_Gmail__send_message`,
