@@ -23,7 +23,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -65,11 +65,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 operations internship. It runs through May and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 operations internship, which runs through May. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -115,7 +115,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your artist and venue partnerships team.
 
-At FEVO, a ticketing startup, I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+At FEVO I researched and ranked 70+ sports and tech partners and cold-emailed the top ones. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -161,7 +161,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your New York city team.
 
-On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also started an alumni network for my hometown and grew it to nearly 800 people in under a year by reaching out one person at a time.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -253,7 +253,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your sales development team.
 
-This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also built ClickUp and Power Automate workflows there that replaced manual HR and feedback processes.
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also set up ClickUp and Power Automate workflows there that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -299,7 +299,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York or Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -322,7 +322,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -345,7 +345,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -437,7 +437,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your RevOps team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -548,7 +548,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. You're hiring for events marketing and a BDR, and those are the two things I've spent the last year doing.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw you're hiring for events marketing and a BDR. I've done a version of both: event logistics on campus and outbound sales this summer.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your marketing team.
 
@@ -598,7 +598,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your New York office team.
 
-On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -663,7 +663,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. You're hiring for creator programs and creator-marketing sales in New York, and sourcing creators and brands is the work I'd like to help with.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw you're hiring for creator programs and sales in New York. Finding the right creators and brands is the part I'd like to help with.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your creator programs team.
 
@@ -782,7 +782,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your royalty or catalog operations team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -805,7 +805,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -828,7 +828,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your label services team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -920,7 +920,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -943,7 +943,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your label operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. On campus I also coordinate venues and scheduling for 10+ events a semester, with 10+ founder speakers, for my business fraternity.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1148,7 +1148,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Resound books a lot of the Texas shows I'd want to work on, and I'd love to help behind the scenes before SXSW gets busy.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Resound books a lot of Austin's shows, and I'd love to help behind the scenes before SXSW gets busy.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your booking and production team.
 
@@ -1286,11 +1286,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. State-by-state filing rules are a mess, and I spent part of a summer untangling them for a lender, so ZenBusiness caught my eye.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I once compiled every state's lending rules for a lender, so a company that handles state filings for small businesses caught my eye.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-At Ualett, a small lender, I compiled lending requirements for all 50 states into a compliance memo for the risk team. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1313,7 +1313,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your partnerships team.
 
-This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also started an alumni network for my hometown and grew it to nearly 800 people in under a year by reaching out one person at a time.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1336,7 +1336,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your retail or business operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1359,7 +1359,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1708,7 +1708,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your development and events team.
 
-On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also started an alumni network for my hometown and grew it to nearly 800 people in under a year by reaching out one person at a time.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1731,7 +1731,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your development team.
 
-I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
+I also started an alumni network for my hometown and grew it to nearly 800 people in under a year by reaching out one person at a time. This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1750,7 +1750,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Sonic Guild's member-funded model for Austin music depends on bringing in new members and sponsors, and with a new executive director rebuilding the Austin chapter, that's the outreach I'd like to help with.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. Sonic Guild's member-funded model for Austin music depends on bringing in new members and sponsors, and that's the outreach I'd like to help with.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your member and partner outreach team.
 
@@ -1800,7 +1800,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-At Ualett, a small lender, I compiled lending requirements for all 50 states into a compliance memo for the risk team. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I compiled lending requirements for all 50 states into a compliance memo for the risk team. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1823,7 +1823,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1869,7 +1869,7 @@ My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a 
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your retail or wholesale operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -1957,7 +1957,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Sales and Commercial Partnerships internships. Their spring term runs through April 30 and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Sales and Commercial Partnerships internships, which runs through April 30. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your sales and partnerships team.
 
@@ -1982,7 +1982,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Development internship. It runs for the full semester and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Development internship, which runs for the full semester. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your development team.
 
@@ -2007,11 +2007,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Operations Analyst internship. It runs through April and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Operations Analyst internship, which runs through April. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your sales operations team.
 
-This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
+This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes. Before that, at Ualett, a small lender, I did Excel analysis on a $30M+ receivables portfolio for the CFO.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -2032,7 +2032,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring paid internships in Corporate Partnerships and Ad Sales. They run through April 16 and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring paid internships in Corporate Partnerships and Ad Sales, which run through April 16. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your corporate partnerships team.
 
@@ -2055,11 +2055,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Operations internship. It runs through May and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Operations internship, which runs through May. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business operations team.
 
-This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also built ClickUp and Power Automate workflows there that replaced manual HR and feedback processes.
+This summer at Cordatus, a consulting firm, I ran 30 outbound campaigns to over 1,000 prospects in Clay and HubSpot. I also set up ClickUp and Power Automate workflows there that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -2080,11 +2080,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Community Engagement internship for the Austin launch. It runs through April and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Community Engagement internship for the Austin launch, which runs through April. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your community engagement team.
 
-On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also founded an alumni association for my hometown that has grown to about 800 people through cold outreach.
+On campus, as Director of Logistics for my business fraternity, I coordinate venues and scheduling for 10+ events a semester with 10+ CEO and founder speakers. I also started an alumni network for my hometown and grew it to nearly 800 people in under a year by reaching out one person at a time.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -2103,11 +2103,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring Buyer / Supply Chain internship. It runs through April 16 and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring Buyer / Supply Chain internship, which runs through April 16. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your supply chain team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -2128,11 +2128,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Intelligence internship. It runs through May and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Spring 2027 Business Intelligence internship, which runs through May. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business intelligence team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call this week? If someone else is better to ask, I'd be grateful for a pointer.
 
@@ -2151,7 +2151,7 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Winter 2027 Product Management internship. It runs through April and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your Winter 2027 Product Management internship, which runs through April. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm free full-time in New York from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your product team.
 
@@ -2176,11 +2176,11 @@ Sam
 
 Hi [First name],
 
-My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring Data Analytics & Business Operations co-op. It runs past March and I can only commit to January 4 through March 12, so I wanted to ask whether a shorter version could work.
+My name is Sam Rimland, and I'm a junior at UT Austin studying economics with a minor in statistics and data science. I saw your spring Data Analytics & Business Operations co-op, which runs past March. That's longer than I can commit to, so I wanted to ask whether a shorter version could work.
 
 I'm local and free full-time in Austin from January 4 to March 12, and I'd like to spend those ten weeks as an intern on your business operations team.
 
-At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I built ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
+At Ualett, a small lender, I analyzed credit losses and pre-tax P&L ratios on a $30M+ receivables portfolio for the CFO. This summer at Cordatus, a consulting firm, I set up ClickUp and Power Automate workflows that replaced manual HR and feedback processes.
 
 You wouldn't need to set up a program for me. I'm happy to take whatever is piling up, and I'm flexible on pay. Would you be open to a 10-minute call or a coffee this week? If someone else is better to ask, I'd be grateful for a pointer.
 
