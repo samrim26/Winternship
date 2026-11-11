@@ -15,7 +15,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 - Be realistic: downgrade fit a notch. Never invent facts about Sam (no "big fan of…").
 - Personal contact info (phone, address) lives only in gitignored `applications/`.
 - **No overlap (2026-11-10):** never cold-email a company Sam is applying to officially. That List 2 row gets status `skip` (E80 Hook, E88 Base Power).
-- **Window rule (2026-11-09):** apply officially only where the term ends by Apr 1 or has no fixed term; otherwise cold-email. Sam's exception: Base Power (5 roles filled 2026-11-09).
+- **Window rule (2026-11-09):** apply officially where the term has no fixed end or ends by **Apr 19, 2027** (Mar 25 + 25 days, Sam 2026-11-10); otherwise cold-email. Sam's exception: Base Power (5 roles filled 2026-11-09).
 
 ## Where things are
 
