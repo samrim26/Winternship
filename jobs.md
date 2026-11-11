@@ -64,6 +64,8 @@
 | P62 | Matthews Real Estate Investment Services | Internship — Real Estate Brokerage | Sales | Austin, TX | In-office | Unconfirmed (no season stated) → Confirm ≤ Mar 12 | Likely unpaid (other markets' postings say unpaid) | 2 | 3 | Low | unverified | [posting](https://www.tealhq.com/job/intern_7ea1afd8285066d7f22369e2d70dc7adaa782) |
 | P63 | Fox Sports | Spring Paid Intern — Corporate Partnerships | Partnerships | New York, NY | Primarily on-site, 16–24 hrs/wk | Mon 8 Feb 2027 → Fri 16 Apr 2027 ⚠ | $20/hr | 3 | 4 | Med | live | [posting](https://www.entertainmentcareers.net/fox-sports/spring-paid-intern-corporate-partnerships/job/535460/) |
 | P64 | HOF Capital | Venture Capital Investment Intern (rolling; Fall 2026 posting) | VC | New York, NY (or remote) | Full- or part-time | Fall 2026 posting, rolling 3–12 months → Ask for Jan 4 – Mar 12 | $1K–6K/mo stipend | 4 | 3 | Low | unverified | [posting](https://www.workstream.us/j/b3ae1199/hof-capital/new-york-27646/venture-capital-investment-intern-fall-2026-66411a4b) |
+| P65 | GigFinesse | Sales Market Research Intern (Spring 2027) | Sales | Austin, TX | In-person or remote | Spring 2027 (no dates stated) → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 4 | High | live | [posting](https://job-boards.greenhouse.io/gigfinesse/jobs/4725847006) |
+| P66 | GigFinesse | Artist Relations Intern (Spring 2027) | Partnerships | Austin, TX | In-person or remote | Spring 2027 (no dates stated) → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 3 | Med | live | [posting](https://job-boards.greenhouse.io/gigfinesse/jobs/4725900006) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
