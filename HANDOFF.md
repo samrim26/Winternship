@@ -7,8 +7,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 - **Never send an email or submit an application.** Draft only. Sam sends and submits.
   Gmail: create drafts only. Applications: fill the form, stop before Submit.
 - **Show each batch before acting** (drafts, form fills). "Run it by me first."
-- **No YC companies** on either list. Apollo.io (YC W16) was offered as an exception and Sam
-  hasn't answered.
+- **No YC companies** on either list. **Exception: Apollo.io (YC W16) is allowed** (Sam, 2026-11-10).
 - **List 1 = real internship postings only.** Allowed locations: NYC, SF/Bay Area, Austin, Tokyo,
   Australia, Madrid, Barcelona, or remote US. **List 2 = cold-email targets, Austin/NYC only.**
 - **Window:** Jan 4 – Mar 12, 2027. Hard stop April 1. Don't mention Japan in cold emails.
@@ -80,7 +79,7 @@ in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
 6. **Waiting on Sam:**
    - Approve or skip batch 2 (#19–27). #18 Whitney skipped (Sam, 2026-11-09).
    - P37–P59 have no drafts yet.
-   - Decide on Apollo.io.
+   - Apollo.io: allowed (2026-11-10). Check for a live posting (List 1) — remote/SF, not a cold-email city.
    - Confirm the LinkedIn note for Patrick at The Boring Company (P48, referral from Eyal Kauf), which was drafted in chat.
 
 ## Gotchas
@@ -97,7 +96,7 @@ in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
 
 ## Open questions for Sam (ask once, record answer here)
 
-- Email on forms: `samuelrimland@utexas.edu` (resume) or `samuel.rimland@gmail.com`?
-- Resume says study abroad "Summer 2027". It actually starts April 1, 2027. Fix the resume, or leave it?
-- Which Gmail account do drafts land in? It must be the one Sam sends from.
-- Apollo.io (YC exception): yes or no?
+- ~~Email on forms~~ **Answered 2026-11-09: `samuelrimland@utexas.edu`.**
+- ~~Resume study-abroad date~~ **Answered 2026-11-10: leave "Summer 2027" as is.**
+- ~~Which Gmail account?~~ **Answered 2026-11-09: utexas (samuelrimland@utexas.edu); the Gmail connector drafts there.**
+- ~~Apollo.io~~ **Answered 2026-11-10: yes, allowed.**
