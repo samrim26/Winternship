@@ -91,6 +91,7 @@ in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
 - **Python SSL:** needs `cafile=/etc/ssl/cert.pem`.
 - **grep** is aliased to ugrep, which skips gitignored files (`applications/`, `resume/`). Use `/usr/bin/grep`.
 - **git push hangs sometimes:** `GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=20 git push`. macOS has no `timeout`.
+- **Gmail connector mangles links:** plain-text URLs in `create_draft` bodies show up as visible `https://www.google.com/url?q=...` text. Fix in the Gmail compose window before sending (replace the anchor's text/href with linkedin.com/in/samuelrimland), or send htmlBody with a proper <a>.
 - **PDF text:** no pdftotext/pypdf. Resume text is already in `resume/resume.txt`.
 - **~/.zshrc:** editing it was blocked. Sam changes his own PATH.
 
