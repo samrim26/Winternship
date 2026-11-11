@@ -14,6 +14,7 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 - Be realistic: downgrade fit a notch. Never invent facts about Sam (no "big fan of…").
 - Personal contact info (phone, address) lives only in gitignored `applications/`.
 - **No overlap (2026-11-10):** never cold-email a company Sam is applying to officially. That List 2 row gets status `skip` (E80 Hook, E88 Base Power).
+- **Backup addresses + bounce check (Sam, 2026-11-10):** every cold email needs 1–2 backup addresses logged in `applications/contacts.md` before sending. ~15 min after each send, search Gmail for bounces (`from:mailer-daemon newer_than:1d`) and redraft bounced emails to the next backup.
 - **Cold-email addresses:** no SMTP probing. Pattern-derived addresses are marked `(guess)` and used only with Sam's OK.
 - **Say "coordinate" speakers, never "book".** Resume claims go in word for word (see `applications/applications.md`).
 - **Sam picked these targets himself:** Hook and Duetti (NYC music). The VC batch (E82–E87) was added at his request.
