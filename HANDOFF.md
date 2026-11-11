@@ -1,4 +1,4 @@
-# Handoff — 2026-11-09
+# Handoff — 2026-11-10
 
 For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this file.
 
@@ -15,6 +15,9 @@ For the next Claude session. Read `CLAUDE.md` and `PROFILE.md` first, then this 
 - Be realistic: downgrade fit a notch. Never invent facts about Sam (no "big fan of…").
 - Personal contact info (phone, address) lives only in gitignored `applications/`.
 - **No overlap (2026-11-10):** never cold-email a company Sam is applying to officially. That List 2 row gets status `skip` (E80 Hook, E88 Base Power).
+- **Cold-email addresses:** no SMTP probing. Pattern-derived addresses are marked `(guess)` and used only with Sam's OK.
+- **Say "coordinate" speakers, never "book".** Resume claims go in word for word (see `applications/applications.md`).
+- **Sam picked these targets himself:** Hook and Duetti (NYC music). The VC batch (E82–E87) was added at his request.
 - **Window rule (2026-11-09):** apply officially where the term has no fixed end or ends by **Apr 19, 2027** (Mar 25 + 25 days, Sam 2026-11-10); otherwise cold-email. Sam's exception: Base Power (5 roles filled 2026-11-09).
 
 ## Where things are
@@ -87,3 +90,14 @@ in `applications/applications.md`. Never Submit/Send/Schedule — Sam does.
 - **Escaping in RAW strings:** `&` becomes `&amp;`, `'` becomes `&#39;`.
 - **zsh:** doesn't word-split `$var`.
 - **Python SSL:** needs `cafile=/etc/ssl/cert.pem`.
+- **grep** is aliased to ugrep, which skips gitignored files (`applications/`, `resume/`). Use `/usr/bin/grep`.
+- **git push hangs sometimes:** `GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=20 git push`. macOS has no `timeout`.
+- **PDF text:** no pdftotext/pypdf. Resume text is already in `resume/resume.txt`.
+- **~/.zshrc:** editing it was blocked. Sam changes his own PATH.
+
+## Open questions for Sam (ask once, record answer here)
+
+- Email on forms: `samuelrimland@utexas.edu` (resume) or `samuel.rimland@gmail.com`?
+- Resume says study abroad "Summer 2027". It actually starts April 1, 2027. Fix the resume, or leave it?
+- Which Gmail account do drafts land in? It must be the one Sam sends from.
+- Apollo.io (YC exception): yes or no?
