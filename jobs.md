@@ -65,6 +65,8 @@
 | P64 | HOF Capital | Venture Capital Investment Intern (rolling; Fall 2026 posting) | VC | New York, NY (or remote) | Full- or part-time | Fall 2026 posting, rolling 3–12 months → Ask for Jan 4 – Mar 12 | $1K–6K/mo stipend | 4 | 3 | Low | unverified | [posting](https://www.workstream.us/j/b3ae1199/hof-capital/new-york-27646/venture-capital-investment-intern-fall-2026-66411a4b) |
 | P65 | GigFinesse | Sales Market Research Intern (Spring 2027) | Sales | Austin, TX | In-person or remote | Spring 2027 (no dates stated) → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 4 | High | live | [posting](https://job-boards.greenhouse.io/gigfinesse/jobs/4725847006) |
 | P66 | GigFinesse | Artist Relations Intern (Spring 2027) | Partnerships | Austin, TX | In-person or remote | Spring 2027 (no dates stated) → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 3 | Med | live | [posting](https://job-boards.greenhouse.io/gigfinesse/jobs/4725900006) |
+| P67 | Warner Music Group | Spring Paid Intern — ETAP (Atlantic Music Group) | Ops | New York, NY | Hybrid, 20–25 hrs/wk | Tue 19 Jan 2027 → Fri 26 Mar 2027 | $17–18.42/hr | 4 | 3 | Med | live | [posting](https://www.entertainmentcareers.net/warner-music-group/spring-paid-intern-emerging-talent-associate-atlantic-music-group/job/535590/) |
+| P68 | Rodeo Austin | Operations Support Intern (Spring 2027) | Ops | Austin, TX | In-person | Mon 18 Jan 2027 → Thu 15 Apr 2027 ⚠ | Unconfirmed | 2 | 4 | Med | conflict | [posting](https://rodeoaustin.com/wp-content/uploads/2026/08/2027-Operations-Support-Intern-Job-Ad.pdf) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
@@ -166,6 +168,7 @@
 | E97 | Applied Materials | Business operations (off-cycle ask) | Ops / Analytics | Austin, TX | 3 | 3 | Med | skip | From P58: spring co-op likely past Apr 1. Big company, long shot; cold ask for Jan 4 – Mar 12. Lead with Ualett Excel analysis. | [posting](https://amat.wd1.myworkdayjobs.com/External/job/AustinTX/XMLNAME-2027-Data-Analytics---Business-Operations-Spring-Co-Op-or-Summer-Intern--Bachelor-s-Master-s--Austin--TX-_R2626381) |
 | E98 | Backd Business Funding | Risk / credit ops | Data | Austin, TX | 2 | 4 | Med | target | Austin alternative small-business lender (since 2018, Fortress-backed credit facility). Same lane as Ualett: lead with your credit-loss and P&L analysis, and offer to run the same kind of MCA-lender comparison you did there against Backd's own book. | [site](https://backd.com/careers) |
 | E99 | Premium Merchant Funding | Sales / risk ops | Data | New York, NY | 2 | 3 | Low | target | NYC merchant-cash-advance broker. Lead with your Ualett MCA pricing/terms research, direct overlap with their product. Listed roles skew commission-only sales-trainee positions with pay info that varies by job board, so confirm the compensation structure before you invest time. | [site](https://pmfus.com/careers) |
+| E100 | Lendflow | Credit ops / growth support | Data | Austin, TX | 2 | 4 | Med | target | Austin embedded-credit startup (lending partnerships, credit decisioning) — same lane as Ualett. Lead with your credit-loss/P&L analysis and MCA-pricing research. It currently has open Account Executive (Growth) roles, so the sales/growth team is actively hiring. | [site](https://www.lendflow.com/careers) |
 
 ## Notes on List 1
 
