@@ -67,6 +67,10 @@
 | P66 | GigFinesse | Artist Relations Intern (Spring 2027) | Partnerships | Austin, TX | In-person or remote | Spring 2027 (no dates stated) → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 3 | Med | live | [posting](https://job-boards.greenhouse.io/gigfinesse/jobs/4725900006) |
 | P67 | Warner Music Group | Spring Paid Intern — ETAP (Atlantic Music Group) | Ops | New York, NY | Hybrid, 20–25 hrs/wk | Tue 19 Jan 2027 → Fri 26 Mar 2027 | $17–18.42/hr | 4 | 3 | Med | live | [posting](https://www.entertainmentcareers.net/warner-music-group/spring-paid-intern-emerging-talent-associate-atlantic-music-group/job/535590/) |
 | P68 | Rodeo Austin | Operations Support Intern (Spring 2027) | Ops | Austin, TX | In-person | Mon 18 Jan 2027 → Thu 15 Apr 2027 ⚠ | Unconfirmed | 2 | 4 | Med | conflict | [posting](https://rodeoaustin.com/wp-content/uploads/2026/08/2027-Operations-Support-Intern-Job-Ad.pdf) |
+| P69 | Zipline | Australia Community Engagement Internship (Expansion Fellow) | Partnerships | Lake Macquarie / Sydney, NSW, Australia | Hybrid, part-time | Unconfirmed → Unconfirmed | $50 AUD/hr | 3 | 3 | Med | unverified | [posting](https://job-boards.greenhouse.io/flyzipline/jobs/7861323003) |
+| P70 | GigFinesse | A&R + Admin Internship (Spring 2027, Private Events) | Partnerships | Austin, TX | In-person or remote | Spring 2027 (no dates stated) → Confirm ≤ Mar 12 | Unpaid (college credit) | 2 | 4 | Med | live | [posting](https://job-boards.greenhouse.io/gigfinesse/jobs/4725848006) |
+| P71 | Adaptive Security | GTM Intern (Winter/Spring) | Sales | New York, NY (Financial District) or Los Angeles, CA (Beverly Hills) | In-person, 2–3 days/wk, 20–35 hrs/wk | Jan 2027 or sooner → Through the school year ⚠ | $35/hr | 4 | 4 | Med | conflict | [posting](https://jobs.ashbyhq.com/adaptivesecurity/65a632db-db1a-47ae-9d10-1057c5640c24) |
+| P72 | Beli | Growth Intern (School Year) | Growth | New York, NY | Unconfirmed, part-time 15–20 hrs/wk | Jan 2027 → May 2027 ⚠ | Unconfirmed | 2 | 3 | Low | conflict | [posting](https://beli.breezy.hr/p/bdb9a1531d83-growth-intern-school-year) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
