@@ -68,6 +68,8 @@
 | P71 | Adaptive Security | GTM Intern (Winter/Spring) | Sales | New York, NY (Financial District) or Los Angeles, CA (Beverly Hills) | In-person, 2–3 days/wk, 20–35 hrs/wk | Jan 2027 or sooner → Through the school year ⚠ | $35/hr | 4 | 4 | Med | conflict | [posting](https://jobs.ashbyhq.com/adaptivesecurity/65a632db-db1a-47ae-9d10-1057c5640c24) |
 | P72 | Beli | Growth Intern (School Year) | Growth | New York, NY | Unconfirmed, part-time 15–20 hrs/wk | Jan 2027 → May 2027 ⚠ | Unconfirmed | 2 | 3 | Low | conflict | [posting](https://beli.breezy.hr/p/bdb9a1531d83-growth-intern-school-year) |
 | P73 | FamFluence Talent Management | Influencer Sales Internship (Winter/Spring 2027) | Sales | Austin, TX | Remote (listing says 100% virtual; header says in-office Austin) | Mon 11 Jan 2027 → Fri 28 May 2027 ⚠ | Unpaid (college credit only; $250/mo reimbursement) | 2 | 4 | Med | conflict | [posting](https://www.builtinaustin.com/job/influencer-sales-internship-winter-spring-2027/10314681) |
+| P74 | The Brydon Group (Portfolio Companies) | Spring 2027 Sales Intern | Sales | Remote (US) | Remote, part- or full-time (varies by portfolio company) | Spring 2027 → Confirm ≤ Mar 12 | $18–20/hr | 2 | 4 | High | live | [posting](https://builtin.com/job/spring-2027-sales-intern-brydon-portfolio-companies/12118306) |
+| P75 | Bask Health | Sales Development Intern | Sales | Remote (US) — HQ New York, NY | Remote | Unconfirmed → Confirm ≤ Mar 12 | Unconfirmed | 2 | 4 | Med | unverified | [posting](https://builtin.com/job/sales-development-intern/12299400) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
