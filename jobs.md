@@ -66,6 +66,7 @@
 | P77 | Brilliant PR & Marketing | Business Development Internship (Winter/Spring 2027) | Sales | New York, NY | Remote (listing says 100% virtual; location says NYC — confirm) | Mon 11 Jan 2027 → May/June 2027 ⚠ | Unpaid ($250/mo expense reimbursement) | 2 | 3 | Low | conflict | [posting](https://www.builtinnyc.com/job/business-development-internship-winter-spring-2027/10407875) |
 | P78 | Warner Music Group | Spring Paid Intern — ETAP (Warner Music Group) | Ops | New York, NY | Hybrid, 20–25 hrs/wk | Tue 19 Jan 2027 → Fri 26 Mar 2027 | $17.00–$18.42/hr | 4 | 3 | Med | live | [posting](https://www.entertainmentcareers.net/warner-music-group/spring-paid-intern-emerging-talent-associate-warner-music-group/job/535611/) |
 | P79 | FreeFellow | Partnerships and Sales Intern | Sales | New York, NY | Hybrid (mostly remote, one in-person session/week) | Jan 2027 → May 2027 ⚠ | $22/hr | 1 | 4 | Med | conflict | [posting](https://freefellow.org/careers/partnerships-sales-intern) |
+| P81 | Austin FC | Business Strategy Internship | Strategy | Austin, TX | In-person, 15–20 hrs/wk | Jan 2027 → May 2027 ⚠ | $15/hr | 3 | 3 | Med | unverified | [posting](https://www.teamworkonline.com/soccer-jobs/austin-fc/austin-fc-jobs/business-strategy-internship-2140839) |
 
 ## List 2 — Cold-email targets (Austin & NYC only)
 
